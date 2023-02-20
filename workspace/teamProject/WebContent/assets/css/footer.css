@@ -10,10 +10,6 @@ article, main, section {
     display: block;
 }
 
-body li, body ol, body ul {
-    list-style: none;
-}
-
 .web-footer {
     --white-68: hsla(0,0%,100%,0.68);
     --black-84: rgba(0,0,0,0.84);
@@ -228,10 +224,6 @@ footer.inner-utils .FooterContainer_container__3LibG {
     font-weight: 400;
 }
 
-.FooterInfo_info__1aB0e li {
-    display: inline;
-    color: #495057;
-}
 /* after */
 .FooterInfo_info__1aB0e li:after {
     content: "|";
@@ -403,6 +395,7 @@ footer.inner-utils .FooterContainer_container__3LibG {
     font-weight: 500;
     margin: 4px 0;
     width: 100%;
+    background: #fff;
 }
 
 .FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_buttonBlock__FQR2E .FooterContainer_directBtn__2ICcT:nth-child(2) {

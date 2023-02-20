@@ -1,0 +1,405 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap');
+
+:root {
+    --scrollbar-width: 0;
+}
+
+body {
+    line-height: 1.33;
+    font-family: Roboto,Noto Sans KR,-apple-system,Dotum,sans-serif;
+}
+
+body {
+    overflow-y: scroll;
+    line-height: 1.5em;
+    letter-spacing: -.02em;
+    color: rgba(0,0,0,.84);
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, body button, body input, body select, body textarea {
+    font-family: roboto,Noto Sans KR,-apple-system,dotum,sans-serif;
+}
+
+body, html {
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: Roboto, 'Noto Sans KR', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a, address, article, aside, audio, b, body, button, canvas, caption, dd, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, img, input, label, legend, li, nav, ol, p, pre, section, small, span, strong, summary, table, tbody, td, th, thead, time, tr, ul, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+article, blockquote, body, dd, div, dl, dt, h1, h2, h3, h4, html, li, main, ol, p, section, table, tbody, td, th, thead, tr, ul {
+    margin: 0;
+    padding: 0;
+}
+
+article, main, section {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body a {
+    text-decoration: none;
+}
+
+a, a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wz.container, body a {
+    color: rgba(0,0,0,.84);
+}
+
+input, optgroup, select, textarea {
+    color: inherit;
+}
+
+.account-drop {
+    background: #fff;
+    font-weight: 400;
+}
+
+
+.account-drop .wrap {
+    margin: 0 auto;
+    padding: 43px 16px 64px;
+}
+
+.account-drop h1, .account-drop h2, .account-drop p {
+    margin-bottom: 8px;
+}
+
+.account-drop h1 {
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.account-drop p {
+    line-height: 28px;
+    letter-spacing: -.4px;
+    color: #44484b;
+    font-size: 17px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.account-drop .message-box {
+    margin: 20px auto;
+    border: 1px solid #babdc0;
+    background: #f5f7fa;
+    padding: 16px;
+}
+
+.account-drop dl {
+    margin-bottom: 20px;
+    border-top: 1px solid #e6eaed;
+}
+
+.account-drop .message-box dl {
+    margin-bottom: 0;
+    border-top: 0;
+}
+
+.account-drop dl dt, .account-drop dl dd {
+    line-height: 24px;
+    letter-spacing: -.4px;
+}
+
+.account-drop dl dt {
+    padding-top: 16px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.account-drop .message-box dt, .account-drop .message-box dd {
+    line-height: 24px;
+}
+
+.account-drop .message-box dt {
+    padding-top: 0;
+    letter-spacing: -.3px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.account-drop dl dd {
+    border-bottom: 1px solid #e6eaed;
+    padding-bottom: 20px;
+    color: #44484b;
+    font-size: 13px;
+}
+
+.account-drop .message-box dd {
+    margin-bottom: 20px;
+    border-bottom: 0;
+    padding-bottom: 0;
+    letter-spacing: -.2px;
+    color: #44484b;
+    font-size: 13px;
+}
+
+.account-drop .message-box a {
+    transition: color .2s;
+    text-decoration: underline;
+    color: #395bbf;
+}
+
+.account-drop .message-box dd:last-child {
+    margin-bottom: 0;
+}
+
+.account-drop h2 {
+    margin-top: 64px;
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.selectbox {
+    width: 100%;
+    height: 44px;
+    border-color: #e7e7e7;
+    margin-bottom: 7px;
+    padding-left: 20px;
+    color: #4a4a4a;
+}
+
+.account-drop .selectbox {
+    position: relative;
+    margin: 24px 0;
+    border: 1px solid #e6eaed;
+    background: #fff;
+    max-width: 350px;
+    height: auto;
+    font-size: 0;
+}
+
+
+.account-drop .selectbox:after, .account-drop .selectbox select, .account-drop .selectbox span {
+    padding: 16px;
+    line-height: 25px;
+}
+
+.account-drop .selectbox select {
+    position: relative;
+    opacity: 0;
+    z-index: 2;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+}
+
+.account-drop .selectbox span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-right: 43px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #60656a;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+.account-drop .selectbox em, .account-drop .reason-text em {
+    display: block;
+    color: #f66;
+    font-size: 13px;
+}
+
+.account-drop .selectbox em {
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    line-height: 1.3em;
+}
+
+.account-drop .reason-text em {
+    margin-top: 2px;
+}
+
+element.style {
+    display: none;
+}
+
+.account-drop .selectbox:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    line-height: 25px;
+    font-size: 24.99px;
+    display: inline-block;
+    margin-top: -0.2em;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: wadizicon!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    speak: none;
+    content: "\e94e";
+}
+
+.account-drop .reason-text {
+    margin-top: 40px;
+    max-width: 350px;
+}
+
+.account-drop .reason-text input, .account-drop .verify-box .user-verify input, .account-drop .verify-box .user-verify-confirm input {
+    margin-bottom: 0;
+    padding: 0 16px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 17px;
+}
+
+.account-drop .reason-text input {
+    width: 100%;
+}
+
+.account-drop p em {
+    letter-spacing: -.5px;
+    color: #f25555;
+    font-size: 15px;
+}
+
+.account-drop p label {
+    margin-right: 0;
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 15px;
+}
+
+label.wz.checkbox {
+    display: block;
+}
+
+.account-drop p label input {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+label.wz.checkbox>input {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+label.wz.checkbox>span {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 24px;
+    vertical-align: top;
+}
+/* 가상요소 */
+label.wz.checkbox>span:before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    transition: .25s;
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    content: "";
+}
+
+label.wz.checkbox>span:after {
+    display: inline-block;
+    margin-top: -0.2em;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: wadizicon!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    speak: none;
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================media============================================== */
+@media screen and (min-width: 732px){
+.account-drop .wrap {
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+    width: 700px;
+}
+
+.account-drop h1 {
+    line-height: 44px;
+    font-size: 36px;
+}
+
+.account-drop p {
+    margin-right: -16px;
+}
+
+.account-drop h2 {
+    margin-top: 80px;
+    line-height: 36px;
+    font-size: 28px;
+}
+
+}

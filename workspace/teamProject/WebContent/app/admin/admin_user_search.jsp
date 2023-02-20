@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>관리자 페이지</title>
-    <link rel="stylesheet" href="../../assets/css/admin_user.css" />
+    <link rel="stylesheet" href="../../assets/css/admin/admin_user.css" />
   </head>
   <body>
    <!-- 전체 박스 -->
@@ -294,36 +296,17 @@
                               class="fSelect"
                             >
                               <option value="" selected="selected">- 그룹명 -</option>
-                              <option value="네이버">네이버</option>
-                              <option value="다음">다음</option>
-                              <option value="기타">기타</option>
-                              <option value="네이트">네이트</option>
-                              <option value="구글">구글</option>
+                              <option value="진궁">진궁</option>
+                              <option value="부어치킨">부어치킨</option>
+                              <option value="막">막</option>
+                              <option value="이토코">이토코</option>
+                              <option value="새마을식당">새마을식당</option>
                             </select>
                           </td>
                         </tr>
                         <tr>
-                          <th scope="row">성별</th>
-                          <td>
-                            <label class="gLabel eSelected"
-                              ><input
-                                type="radio"
-                                name="gender"
-                                value="1"
-                                checked=""
-                                class="fChk"
-                              />
-                              전체</label>
-                            <label class="gLabel"
-                              ><input type="radio" name="gender" value="2" class="fChk" /> 남</label
-                            >
-                            <label class="gLabel"
-                              ><input type="radio" name="gender" value="3" class="fChk" /> 여</label
-                            >
-                          </td>
                           <th scope="row">기부현황</th>
-                          <td>
-                            
+                          <td colspan="3">
                             <label class="gLabel"
                               ><input type="radio" name="is_member_auth2" value="4" class="fChk" />
                               yes</label

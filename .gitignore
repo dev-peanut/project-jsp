@@ -1,6 +1,9 @@
 # tscode
 node_modules
 
+#Servers
+Servers/
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json

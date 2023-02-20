@@ -1,0 +1,439 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap');
+
+a, address, article, aside, audio, b, body, button, canvas, caption, dd, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, img, input, label, legend, li, nav, ol, p, pre, section, small, span, strong, summary, table, tbody, td, th, thead, time, tr, ul, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.33;
+    font-family: Roboto,Noto Sans KR,-apple-system,Dotum,sans-serif;
+}
+
+body {
+    overflow-y: scroll;
+    line-height: 1.5em;
+    letter-spacing: -.02em;
+    color: rgba(0,0,0,.84);
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, body button, body input, body select, body textarea {
+    font-family: roboto,Noto Sans KR,-apple-system,dotum,sans-serif;
+}
+
+li, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body, body button, body input, body li, body ol, body select, body textarea, body ul {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+article, aside, figcaption, figure, footer, header, nav, section {
+    display: block;
+}
+
+article, blockquote, body, dd, div, dl, dt, h1, h2, h3, h4, html, li, main, ol, p, section, table, tbody, td, th, thead, tr, ul {
+    margin: 0;
+    padding: 0;
+}
+
+article, main, section {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body a {
+    text-decoration: none;
+}
+
+.wz.container, body a {
+    color: rgba(0,0,0,.84);
+}
+
+a, a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+#page-container, #wadizTopBanner, body>#root {
+    transform-origin: 50% 0;
+    transition-property: opacity,transform;
+    transition-duration: 80ms;
+    transition-timing-function: ease-out;
+}
+
+body>#root, #wadizTopBanner, #page-container {
+    transform-origin: 50% 0;
+    transition-property: opacity,transform;
+    transition-duration: 80ms;
+    transition-timing-function: ease-out;
+}
+
+body li, body ol, body ul {
+    list-style: none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* 마이페이지 */
+#mypageWrap {
+    width: 100%;
+}
+
+#mypageWrap, #mypageWrap * {
+    font-family: Roboto,"Noto Sans KR",sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 서포터 프로필 */
+.SupporterProfile_supporterProfile__2JfLr {
+    margin: 0 auto;
+    padding: 8px 24px 32px;
+    max-width: 870px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    box-sizing: content-box;
+}
+
+.BlindText_textHidden__2VTV6 {
+    position: absolute;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* 프로필 이미지 */
+.SupporterProfile_inner__1C7Nk {
+    position: relative;
+}
+
+.Avatar_avatar__1TTEG {
+    display: inline-flex;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+}
+
+.SupporterProfileInfo_avatar__38dOD {
+    margin-bottom: 8px;
+}
+
+.Avatar_avatar__1TTEG>span {
+    display: block;
+    position: absolute;
+    opacity: 1;
+    border-radius: 100%;
+    background: no-repeat 50% / cover;
+    width: 100%;
+    height: 100%;
+}
+
+element.style {
+    background-image: url('https://static.wadiz.kr/assets/icon/profile-icon-4.png');
+    border: 1px solid rgb(221, 226, 230);
+}
+
+/* 프로필 정보 */
+.SupporterProfileInfo_infoBox__19gDw .SupporterProfileInfo_nickname__wbBbS {
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.SupporterProfileInfo_infoBox__19gDw .SupporterProfileInfo_accntTypeName__1yp6P {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    word-spacing: -1.5px;
+    color: #adb5bd;
+}
+
+.SupporterProfileInterestKeyword_interestList__2F6Wl {
+    margin-left: -4px;
+}
+
+/* after */
+.SupporterProfileInterestKeyword_interestList__2F6Wl:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/* 프로필 활동정보 횟수 */
+.SupporterProfileActivityInfo_infoCountBox__lSxat {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    text-align: center;
+    color: #495057;
+}
+
+/* 프로필 활동정보 - 참여 */
+.SupporterProfileActivityInfo_infoCountBox__lSxat>div {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 12px 10px 16px;
+}
+
+.SupporterProfileActivityInfo_infoCountBox__lSxat dt {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.SupporterProfileActivityInfo_infoCountBox__lSxat dd {
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* 프로필 편집 버튼 */
+.Button_button__2_6-I {
+    position: relative;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 9px 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    line-height: 1.43;
+    white-space: nowrap;
+    color: #495057;
+    font-size: 14px;
+    font-weight: 500;
+    box-sizing: border-box!important;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+.SupporterProfileInfoCTAButton_button__2aV08 {
+    margin-top: 8px;
+}
+
+a.Button_button__2_6-I {
+    display: inline-block;
+    align-items: center;
+    padding-top: 0.07em;
+    text-decoration: none;
+}
+
+.SupporterProfile_supporterProfile__2JfLr a {
+    color: inherit;
+}
+
+.Button_button__2_6-I.Button_block__39TGk {
+    width: 100%;
+}
+
+.Button_button__2_6-I.Button_md__3Z8Cw {
+    padding: 9px 16px;
+    line-height: 1.45;
+    font-size: 14px;
+}
+
+a.Button_button__2_6-I.Button_block__39TGk {
+    text-align: center;
+}
+
+.Button_button__2_6-I span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+.Button_button__2_6-I .Button_children__weH0H {
+    vertical-align: top;
+}
+
+/* 기부한 list */
+.mypage-project.bg {
+    background: #F5F7FA;
+    padding-bottom: 160px;
+}
+
+.mypage-project .tab-list {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 0 0 rgb(0 0 0 / 8%);
+    z-index: 100;
+    transition-property: background-color,-webkit-backdrop-filter,backdrop-filter;
+    transition-duration: .5s;
+}
+
+.mypage-project.bg .tab-list {
+    border-top: none;
+}
+
+.mypage-project .tab-list ul {
+    width: 100%;
+}
+
+.mypage-project .tab-list ul li {
+    float: left;
+    width: 33.33333%;
+}
+
+.mypage-project .tab-list ul li a {
+    display: block;
+    width: 100%;
+    height: 47px;
+    font-size: 15px;
+    line-height: 48px;
+    color: #90949c;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+}
+
+.mypage-project .tab-list ul li.active a {
+    color: #00c4c4;
+    height: 47px;
+    border-bottom: 2px solid #00c4c4;
+}
+
+/* after */
+.mypage-project .tab-list ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* 사이트에선 반응형으로 되어있는데 적용이 안됨 */
+/* @media screen and (min-width: 960px) {
+	.myprofile-wrap .mypage-project .card-list ul, .myprofile-wrap .mypage-project .tab-list ul, .myprofile-wrap .mypage-project .top-area {
+	width: 918px;
+}
+	.mypage-project .tab-list ul {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+	.mypage-project .tab-list ul li {
+    width: auto;
+    margin-right: 24px;
+}
+	.mypage-project .tab-list ul li.active a {
+    font-weight: 700;
+}
+	
+	
+} */
+/* 기본형으로 적용시킴 */
+.mypage-project .tab-list ul {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.myprofile-wrap .mypage-project .card-list ul, .myprofile-wrap .mypage-project .tab-list ul, .myprofile-wrap .mypage-project .top-area {
+	width: 918px;
+}
+
+.mypage-project .tab-list ul li {
+    width: auto;
+    margin-right: 24px;
+}
+
+.mypage-project .tab-list ul li.active a {
+    font-weight: 700;
+}
+
+/* project-list => 기부 리스트 */
+.mypage-project .project-list {
+    width: 100%;
+    padding: 0;
+    background: #F5F7FA;
+}
+
+.mypage-project .top-area {
+    position: relative;
+    padding: 16px 16px 24px;
+}
+
+.mypage-project .top-area .status-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #44484b;
+}
+
+/* @media screen and (min-width: 960px)  */
+.mypage-project .top-area .status-text {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+
+.mypage-project .card-list {
+    width: 100%;
+}
+
+#emptyProjectText {
+    display: none;
+    padding: 80px 0;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: -0.5;
+    font-size: 17px;
+    color: #44484B;
+}
+
+.mypage-project .card-list ul {
+    padding: 0 16px;
+    margin: 0;
+}
+/* @media screen and (min-width: 960px) */
+.mypage-project .card-list ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}

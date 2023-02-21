@@ -7,6 +7,7 @@
 <title>비밀번호 변경</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
 <link rel="stylesheet" href="../../assets/css/user/myPage.css">
+<link rel="stylesheet" href="../../assets/css/user/myPassword.css">
 <link rel="stylesheet" href="../../assets/css/component/footer.css">
 </head>
 <body>

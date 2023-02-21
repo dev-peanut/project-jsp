@@ -2,6 +2,45 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap');
 
+@font-face {
+    font-family: Noto Sans KR;
+    font-weight: 300;
+    font-style: normal;
+    src: url(https://static.wadiz.kr/assets/fonts/notosans/NotoSansKR-Light.woff2) format("woff2"),url(https://static.wadiz.kr/assets/fonts/notosans/NotoSansKR-Light.woff) format("woff"),url(https://static.wadiz.kr/assets/fonts/notosans/NotoSansKR-Light.otf) format("opentype");
+    unicode-range: u+0020-u+007e,u+1100-u+11f9,u+3131-u+318e,u+327f-u+327f,u+ac00-u+d7a3,u+ff01-u+ff60
+}
+
+@font-face {
+    font-family: Noto Sans KR;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://static.wadiz.kr/assets/fonts/notosans/NotoSansKR-Regular.woff2) format("woff2"),url(https://static.wadiz.kr/assets/fonts/notosans/NotoSansKR-Regular.woff) format("woff"),url(https://static.wadiz.kr/assets/fonts/notosans/NotoSansKR-Regular.otf) format("opentype");
+    unicode-range: u+0020-u+007e,u+1100-u+11f9,u+3131-u+318e,u+327f-u+327f,u+ac00-u+d7a3,u+ff01-u+ff60
+}
+
+@font-face {
+    font-family: Noto Sans KR;
+    font-weight: 500;
+    font-style: normal;
+    src: url(https://static.wadiz.kr/assets/fonts/notosans/NotoSansKR-Medium.woff2) format("woff2"),url(https://static.wadiz.kr/assets/fonts/notosans/NotoSansKR-Medium.woff) format("woff"),url(https://static.wadiz.kr/assets/fonts/notosans/NotoSansKR-Medium.otf) format("opentype");
+    unicode-range: u+0020-u+007e,u+1100-u+11f9,u+3131-u+318e,u+327f-u+327f,u+ac00-u+d7a3,u+ff01-u+ff60
+}
+
+@font-face {
+    font-family: Noto Sans KR;
+    font-weight: 700;
+    font-style: normal;
+    src: url(https://static.wadiz.kr/assets/fonts/notosans/NotoSansKR-Bold.woff2) format("woff2"),url(https://static.wadiz.kr/assets/fonts/notosans/NotoSansKR-Bold.woff) format("woff"),url(https://static.wadiz.kr/assets/fonts/notosans/NotoSansKR-Bold.otf) format("opentype");
+    unicode-range: u+0020-u+007e,u+1100-u+11f9,u+3131-u+318e,u+327f-u+327f,u+ac00-u+d7a3,u+ff01-u+ff60
+}
+
+@font-face {
+    font-family: wadizicon;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://static.wadiz.kr/static/web/media/wadizicon.1de1502a.eot#iefix) format("embedded-opentype"),url(https://static.wadiz.kr/static/web/media/wadizicon.f5cdf486.woff2) format("woff2"),url(https://static.wadiz.kr/static/web/media/wadizicon.9eb6b0a9.woff) format("woff"),url(https://static.wadiz.kr/static/web/media/wadizicon.e5379495.ttf) format("truetype"),url(https://static.wadiz.kr/static/web/media/wadizicon.077f5804.svg#wadizicon) format("svg")
+}
+
 strong {
     font-weight: 700;
 }
@@ -106,6 +145,21 @@ article, main, section {
 
 .icon-chevron-right:before, i.icon.chevron-right:before, i.wadizicon.wa-chevron-right:before {
     content: "";
+}
+
+.withIcon_icon__1ao4d {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.FooterMenu_openLinkIcon__3YMFQ {
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: text-top;
 }
 
 .FooterMenu_bar__22KhW .FooterMenu_left__3rQKu .FooterMenu_menu__3nRbk i:before, .FooterMenu_bar__22KhW .FooterMenu_left__3rQKu .FooterMenu_menu__3nRbk svg, .FooterMenu_bar__22KhW .FooterMenu_right__28Tuu .FooterMenu_menu__3nRbk i:before, .FooterMenu_bar__22KhW .FooterMenu_right__28Tuu .FooterMenu_menu__3nRbk svg {
@@ -285,6 +339,15 @@ footer.inner-utils .FooterContainer_container__3LibG {
     color: #212529;
 }
 /* before */
+/* google icon */
+.icon-google-play:before, i.icon.google-play:before, i.wadizicon.wa-google-play:before {
+    content: "";
+}
+/* apple icon */
+.icon-apple:before, i.icon.apple:before, i.wadizicon.wa-apple:before {
+    content: "";
+}
+
 .web-footer [class*=icon-]:before {
     color: #545a60;
     font-size: 24px;

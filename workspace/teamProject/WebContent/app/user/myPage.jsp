@@ -7,7 +7,6 @@
 <title>마이페이지</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
 <link rel="stylesheet" href="../../assets/css/user/myPage.css">
-<link rel="stylesheet" href="../../assets/css/components/footer.css">
 </head>
 <body>
 	<div id="page-container">
@@ -19,7 +18,7 @@
 			<div id="mypageWrap">
 				<div class="myprofile-wrap">
 					<link rel="stylesheet" href="https://static.wadiz.kr/static/iam/main.633c705f.css">
-					<div id="iam-supporter-profile-app" data-profile-image="https://static.wadiz.kr/assets/icon/profile-icon-4.png" data-nickname="별명" data-accnttype-name="개인 회원" data-is-valid-joined-premium-membership="false" data-my-self="true" data-my-funding-all-count="0" data-signature-cnt="0" data-follower-cnt="0" data-following-cnt="0" data-target-enc-user-id="" data-target-user-id="6034797" data-introduceme="" data-is-following="false" data-my-interest-user-keyword="">
+					<div id="iam-supporter-profile-app" data-profile-image="https://static.wadiz.kr/assets/icon/profile-icon-4.png" data-nickname="익명의 서포터 993" data-accnttype-name="개인 회원" data-is-valid-joined-premium-membership="false" data-my-self="true" data-my-funding-all-count="0" data-signature-cnt="0" data-follower-cnt="0" data-following-cnt="0" data-target-enc-user-id="" data-target-user-id="6034797" data-introduceme="" data-is-following="false" data-my-interest-user-keyword="">
 						<section class="SupporterProfile_supporterProfile__2JfLr">
 							<div class="SupporterProfile_inner__1C7Nk">
 								<h3 class="BlindText_textHidden__2VTV6"></h3>
@@ -58,6 +57,7 @@
 								</a>
 							</div>
 						</section>
+						</div>
 						<!-- 참여한, 찜한 list => 기부한 list -->
 						<div class="mypage-project bg">
 							<div class="tab-list">
@@ -83,7 +83,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
 			</div>
 		</div>

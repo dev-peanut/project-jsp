@@ -2,13 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap');
 
-:root {
-    --scrollbar-width: 0;
+@font-face {
+    font-family: wadizicon;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://static.wadiz.kr/static/web/media/wadizicon.1de1502a.eot#iefix) format("embedded-opentype"),url(https://static.wadiz.kr/static/web/media/wadizicon.f5cdf486.woff2) format("woff2"),url(https://static.wadiz.kr/static/web/media/wadizicon.9eb6b0a9.woff) format("woff"),url(https://static.wadiz.kr/static/web/media/wadizicon.e5379495.ttf) format("truetype"),url(https://static.wadiz.kr/static/web/media/wadizicon.077f5804.svg#wadizicon) format("svg")
 }
 
 body {
     line-height: 1.33;
-    font-family: Roboto,Noto Sans KR,-apple-system,Dotum,sans-serif;
+    font-family: Noto Sans KR;
 }
 
 body {
@@ -19,25 +22,11 @@ body {
     font-size: 15px;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
-}
-
-body, body button, body input, body select, body textarea {
-    font-family: roboto,Noto Sans KR,-apple-system,dotum,sans-serif;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body, html {
     -webkit-text-size-adjust: none;
-}
-
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-    font-family: Roboto, 'Noto Sans KR', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 a, address, article, aside, audio, b, body, button, canvas, caption, dd, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, img, input, label, legend, li, nav, ol, p, pre, section, small, span, strong, summary, table, tbody, td, th, thead, time, tr, ul, video {
@@ -81,8 +70,6 @@ body>#root, #wadizTopBanner, #page-container {
     transition-timing-function: ease-out;
 }
 
-
-
 .wz.container, body a {
     color: rgba(0,0,0,.84);
 }
@@ -106,6 +93,7 @@ body>#root, #wadizTopBanner, #page-container {
     padding: 35px 20px;
     padding-left: max(20px, env(safe-area-inset-left));
     padding-right: max(20px, env(safe-area-inset-right));
+    font-family: Noto Sans KR;
 }
 
 .account-wrap h2 {
@@ -167,21 +155,6 @@ body>#root, #wadizTopBanner, #page-container {
     float: left;
 }
 
-[class*=icon-]:before, i.icon:before, i.wadizicon {
-    display: inline-block;
-    margin-top: -0.2em;
-    vertical-align: middle;
-    text-transform: none;
-    line-height: 1;
-    font-family: wadizicon!important;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-style: normal;
-    font-variant: normal;
-    speak: none;
-}
-
 .my-info-btn i {
     color: #9b9b9b;
     line-height: 56px;
@@ -192,10 +165,25 @@ body>#root, #wadizTopBanner, #page-container {
 }
 
 /* 가상요소 */
+[class*=icon-]:before, i.icon:before, i.wadizicon {
+    display: inline-block;
+    margin-top: -0.2em;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: wadizicon !important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+}
+
 /* before */
 .icon-chevron-right:before, i.icon.chevron-right:before, i.wadizicon.wa-chevron-right:before {
-    content: "";
+	content: "";
 }
+
 /* after */
 .my-info:after {
     content: "";

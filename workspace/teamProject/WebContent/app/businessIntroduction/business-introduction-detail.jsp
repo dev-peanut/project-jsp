@@ -13,7 +13,7 @@
     <title>기부기업 소개 상세</title>
 </head>
 <body>
-    <jsp:include page="../component/header.jsp"></jsp:include>
+    <jsp:include page="${pageContext.request.contextPath}/app/components/header.jsp"></jsp:include>
     <main>
         <div id="whole-wrapper">
             <div id="inner-whole">

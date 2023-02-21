@@ -6,13 +6,13 @@
 <meta charset="UTF-8">
 <title>와디즈</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<link href="../../assets/css/main/main.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/assets/css/main/main.css" rel="stylesheet">
 </head>
 <body style="overflow: auto;">
 	<div id="page-container">
 		<main id="main-app">
 			<!-- 헤더 적용 -->
-			<jsp:include page="../component/header.jsp"></jsp:include>
+			<jsp:include page="../components/header.jsp"></jsp:include>
 			<div class="MainWrapper_content"> <!-- 메인 컨텐츠 적용 -->
 				<section class="container">
 			        <!-- 메인 배너 -->
@@ -156,12 +156,101 @@
 								</div>
 								<div class="ranking-section-inner-container-content">
 									<ol>
-										<li class="select-ranking-tab-content">
+										<li class="select-ranking-tab-content"> <!-- 실시간 랭킹1 -->
 											<div>
 												<a class="card-type-content-ranking" href="/web/campaign/detail/158604?_refer_section_st=ranking_0">
 													<article>
 														<div class="ranking-content">
-															
+															<div class="ranking-order">1</div>
+															<em class="ranking-content-title">개발비 1.5억ㅣ현대리바트 기술력  담아낸 3만원대 발 받침대 Comfy</em>
+															<p class="ranking-content-summary">
+																<span class="ranking-content-rate">24,236%</span>
+																홈·리빙
+															</p>
+														</div>
+														<div class="ranking-content-thumbnail">
+															<div class="ranking-content-thumbnail-image" style="background-image: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/");">
+															</div>
+														</div>
+													</article>
+												</a>
+											</div>
+										</li>
+										<li class="select-ranking-tab-content"> <!-- 실시간 랭킹2 -->
+											<div>
+												<a class="card-type-content-ranking" href="/web/campaign/detail/158604?_refer_section_st=ranking_0">
+													<article>
+														<div class="ranking-content">
+															<div class="ranking-order">2</div>
+															<em class="ranking-content-title">개발비 1.5억ㅣ현대리바트 기술력  담아낸 3만원대 발 받침대 Comfy</em>
+															<p class="ranking-content-summary">
+																<span class="ranking-content-rate">24,236%</span>
+																홈·리빙
+															</p>
+														</div>
+														<div class="ranking-content-thumbnail">
+															<div class="ranking-content-thumbnail-image" style="background-image: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/");">
+															</div>
+														</div>
+													</article>
+												</a>
+											</div>
+										</li>
+										<li class="select-ranking-tab-content"> <!-- 실시간 랭킹3 -->
+											<div>
+												<a class="card-type-content-ranking" href="/web/campaign/detail/158604?_refer_section_st=ranking_0">
+													<article>
+														<div class="ranking-content">
+															<div class="ranking-order">3</div>
+															<em class="ranking-content-title">개발비 1.5억ㅣ현대리바트 기술력  담아낸 3만원대 발 받침대 Comfy</em>
+															<p class="ranking-content-summary">
+																<span class="ranking-content-rate">24,236%</span>
+																홈·리빙
+															</p>
+														</div>
+														<div class="ranking-content-thumbnail">
+															<div class="ranking-content-thumbnail-image" style="background-image: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/");">
+															</div>
+														</div>
+													</article>
+												</a>
+											</div>
+										</li>
+										<li class="select-ranking-tab-content"> <!-- 실시간 랭킹4 -->
+											<div>
+												<a class="card-type-content-ranking" href="/web/campaign/detail/158604?_refer_section_st=ranking_0">
+													<article>
+														<div class="ranking-content">
+															<div class="ranking-order">4</div>
+															<em class="ranking-content-title">개발비 1.5억ㅣ현대리바트 기술력  담아낸 3만원대 발 받침대 Comfy</em>
+															<p class="ranking-content-summary">
+																<span class="ranking-content-rate">24,236%</span>
+																홈·리빙
+															</p>
+														</div>
+														<div class="ranking-content-thumbnail">
+															<div class="ranking-content-thumbnail-image" style="background-image: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/");">
+															</div>
+														</div>
+													</article>
+												</a>
+											</div>
+										</li>
+										<li class="select-ranking-tab-content"> <!-- 실시간 랭킹5 -->
+											<div>
+												<a class="card-type-content-ranking" href="/web/campaign/detail/158604?_refer_section_st=ranking_0">
+													<article>
+														<div class="ranking-content">
+															<div class="ranking-order">5</div>
+															<em class="ranking-content-title">개발비 1.5억ㅣ현대리바트 기술력  담아낸 3만원대 발 받침대 Comfy</em>
+															<p class="ranking-content-summary">
+																<span class="ranking-content-rate">24,236%</span>
+																홈·리빙
+															</p>
+														</div>
+														<div class="ranking-content-thumbnail">
+															<div class="ranking-content-thumbnail-image" style="background-image: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/");">
+															</div>
 														</div>
 													</article>
 												</a>
@@ -181,9 +270,9 @@
 				</div>
 			</div>
 			<!-- footer적용 -->
-			<jsp:include page="../component/footer.jsp"></jsp:include>
+			<jsp:include page="../components/footer.jsp"></jsp:include>
 		</main>
 	</div>
 </body>
-<script type="text/javascript" src="../../assets/js/main/main.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/main/main.js"></script>
 </html>

@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>footer</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-<link rel="stylesheet" href="../../assets/css/component/footer.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/components/footer.css">
 </head>
 <body>
 	<div id="page-container">

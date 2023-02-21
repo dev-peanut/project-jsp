@@ -1,6 +1,15 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap');
+@font-face {
+    font-family: wadizicon;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://static.wadiz.kr/static/web/media/wadizicon.1de1502a.eot#iefix) format("embedded-opentype"),url(https://static.wadiz.kr/static/web/media/wadizicon.f5cdf486.woff2) format("woff2"),url(https://static.wadiz.kr/static/web/media/wadizicon.9eb6b0a9.woff) format("woff"),url(https://static.wadiz.kr/static/web/media/wadizicon.e5379495.ttf) format("truetype"),url(https://static.wadiz.kr/static/web/media/wadizicon.077f5804.svg#wadizicon) format("svg")
+}
 
+div {
+    font-family: wadizicon;
+}
 
 
 .ReactModal__Body--open{
@@ -25,6 +34,7 @@
     --vh: 7.46px;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
+/*     background-color: rgba(0,0,0,.54); */
 }
 
 
@@ -530,6 +540,8 @@ ul.li{
 }
 
 .AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa_select{
+    color: #00a2a2;
+    pointer-events: none;
     display: block;
     position: relative;
     cursor: pointer;
@@ -1600,9 +1612,9 @@ border:none;
     max-width: 850px;
     box-sizing: border-box;
     margin-bottom: 32px;
-    line-height: 0.5;
+    line-height: 1.41;
     color: rgba(0,0,0,.84);
-    font-size: 14px;
+    font-size: 17px;
     -webkit-appearance: none;
     margin: 0;
     border: 0;
@@ -2615,7 +2627,7 @@ h4{
     -webkit-text-size-adjust: none;
 }
 
-.wz_input{
+.wz-input{
     display: block;
     position: relative;
     font-size: 17px;
@@ -2633,7 +2645,7 @@ h4{
     --vh: 7.46px;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
-} 
+}
 
 .wz.input::after {
     display: inline-block;

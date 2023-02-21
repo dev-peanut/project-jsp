@@ -119,7 +119,7 @@
                                     href="/studio/reward/191893/maker_service">메이커 서비스</a></li>
                             <li><a href="http://www.wadiz.kr/link/studio_makerguide"
                                     class="AppSidebarMenuList_navLink__1FytL" target="blank"
-                                    rel="nofollow noopener noreferrer">자료 및 도움말</a></li>
+                                    rel="nofollow noopener noreferrer">자료 및 도움말 </a></li>
                         </ul>
                     </nav>
                 </div>

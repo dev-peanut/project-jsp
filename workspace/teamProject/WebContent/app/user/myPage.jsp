@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>나눔의 집</title>
+<title>마이페이지</title>
 <link rel="stylesheet" href="../../assets/css/myPage.css">
 <link rel="stylesheet" href="../../assets/css/footer.css">
 </head>

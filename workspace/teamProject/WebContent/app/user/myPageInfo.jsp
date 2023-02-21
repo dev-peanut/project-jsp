@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>마이페이지 정보설정</title>
 <link rel="stylesheet" href="../../assets/css/myPage.css">
 <link rel="stylesheet" href="../../assets/css/footer.css">
 <link rel="stylesheet" href="../../assets/css/user/myPageInfo.css">

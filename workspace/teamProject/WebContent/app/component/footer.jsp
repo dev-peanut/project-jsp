@@ -6,7 +6,6 @@
 <meta charset="UTF-8">
 <title>footer</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-<link rel="stylesheet" href="../../assets/css/user/myPage.css">
 <link rel="stylesheet" href="../../assets/css/component/footer.css">
 </head>
 <body>
@@ -14,6 +13,7 @@
 		<div id="footer">
 			<footer id="footer" class="web-footer inner-utils">
                 <div class="FooterMenu_container__15kue">
+                	<!-- 정책약관, 개인정보처리방침 바 -->
                     <div class="FooterMenu_bar__22KhW">
                         <div class="FooterMenu_left__3rQKu">
                             <div class="FooterMenu_menu__3nRbk Linker_btnMore__1PEzz">
@@ -174,8 +174,8 @@
                         </ul>
                     </div>
                 </div>
-            </footer>
-		</div>
+			</footer>
+     	</div>
      </div>
 </body>
 </html>

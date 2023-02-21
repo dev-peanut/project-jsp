@@ -75,13 +75,15 @@
 		                    </button>
 	                    </div>
                     </div>
-            <div class="bottom-message"> <!-- 하단 메세지 -->
-                <p>아직 와디즈 계정이 없나요?
+		            <div class="bottom-message"> 
+		            <!-- 하단 메세지 -->
+                	<p>아직 와디즈 계정이 없나요?
                     <a class="join" href="/web/waccount/wAccountRegistIntro">회원가입</a>
                 </p>
             </div>
-                </div>
-            </div>
-            </main> <!-- login -->
+         </div>
+      </div>
+    </main>
+     <!-- login -->
 </body>
 </html>

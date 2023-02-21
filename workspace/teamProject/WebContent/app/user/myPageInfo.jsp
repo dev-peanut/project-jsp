@@ -4,16 +4,87 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>footer</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-<link rel="stylesheet" href="../../assets/css/component/footer.css">
+<title>마이페이지 정보설정</title>
+<link rel="stylesheet" href="../../assets/css/myPage.css">
+<link rel="stylesheet" href="../../assets/css/footer.css">
+<link rel="stylesheet" href="../../assets/css/user/myPageInfo.css">
 </head>
 <body>
 	<div id="page-container">
-		<div id="footer">
+		<!-- header -->
+		<div id="wz-header"></div>
+		<!-- main -->
+		<div id="accountWrap">
+            <!-- S : #newContainer -->
+            <div id="newContainer">
+                <!-- account-wrap with-footer -->
+                <div class="account-wrap with-footer">
+                    <h2 class="big">MY 정보설정</h2>
+                    <a class="my-info" href="/web/waccount/wAccountUpdateBasicInfo">
+                        <div class="my-info-text">
+                            <h3>기본 정보 설정</h3>
+                            <p>이름, 이메일, 휴대폰, SNS연동 등</p>
+                        </div>
+                        <div class="my-info-btn">
+                            <i class="wadizicon wa-chevron-right"></i>
+                        </div>
+                    </a>
+                    <a class="my-info" href="/web/waccount/wAccountUpdateAddPwd">
+                       <div class="my-info-text">
+                         <h3>비밀번호 등록</h3>
+                         <p>계정 비밀번호 등록</p>
+                       </div>
+                       <div class="my-info-btn">
+                         <i class="wadizicon wa-chevron-right"></i>
+                       </div>
+                    </a>
+                    <a class="my-info" href="/web/wmypage/myprofile/modifyprofile">
+                        <div class="my-info-text">
+                            <h3>프로필 정보 설정</h3>
+                            <p>프로필 사진, 경력, 학력, 관심분야</p>
+                        </div>
+                        <div class="my-info-btn">
+                            <i class="wadizicon wa-chevron-right"></i>
+                        </div>
+                    </a>
+                    <a class="my-info" href="/web/waccount/notificationSetting/marketing">
+                      <div class="my-info-text">
+                          <h3>이벤트 혜택 알림 설정</h3>
+                          <p>이메일, SMS 알림 설정</p>
+                      </div>
+                      <div class="my-info-btn">
+                          <i class="wadizicon wa-chevron-right"></i>
+                      </div>
+                    </a>
+                    <a class="my-info" href="/web/waccount/notificationSetting/fundingNews">
+                        <div class="my-info-text">
+                            <h3>새소식 알림 설정</h3>
+                            <p>프로젝트 별 새소식(메일, 앱 푸시) 수신</p>
+                        </div>
+                        <div class="my-info-btn">
+                            <i class="wadizicon wa-chevron-right"></i>
+                        </div>
+                    </a>
+                    <a class="my-info" href="/web/social/followingmaker">
+                      <div class="my-info-text">
+                          <h3>팔로잉 알림 설정</h3>
+                          <p>메이커 팔로잉, 소식 받기 알림 설정</p>
+                      </div>
+                      <div class="my-info-btn">
+                          <i class="wadizicon wa-chevron-right"></i>
+                      </div>
+                  </a>
+                    <div class="my-info">
+                        <h3><a href="/web/waccount/wAccountDropOutUser">회원 탈퇴</a></h3>
+                    </div>
+                </div>
+                <!-- //account-wrap with-footer -->
+            </div>
+            <!-- E : #newContainer -->
+        </div>
+        <div id="footer">
 			<footer id="footer" class="web-footer inner-utils">
                 <div class="FooterMenu_container__15kue">
-                	<!-- 정책약관, 개인정보처리방침 바 -->
                     <div class="FooterMenu_bar__22KhW">
                         <div class="FooterMenu_left__3rQKu">
                             <div class="FooterMenu_menu__3nRbk Linker_btnMore__1PEzz">
@@ -32,17 +103,17 @@
                            	</div>
                            	<a href="https://www.wadiz.kr/web/wboard/newsBoardList" class="FooterMenu_menu__3nRbk" target="_blank" rel="noopener noreferrer">
                                	공지사항
-								<svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon__1ao4d FooterMenu_openLinkIcon__3YMFQ" aria-hidden="true">
-									<path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
-									<path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
-								</svg>
+                               	<svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon__1ao4d FooterMenu_openLinkIcon__3YMFQ" aria-hidden="true">
+                                    <path d="M31.42 M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
+                                    <path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
+                               </svg>
                            	</a>
                            	<a href="https://www.job.wadiz.kr/" class="FooterMenu_menu__3nRbk" target="_blank" rel="noopener noreferrer">
                                	인재채용
-								<svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon__1ao4d FooterMenu_openLinkIcon__3YMFQ" aria-hidden="true">
-									<path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
-									<path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
-								</svg>
+                               	<svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon" aria-hidden="true">
+                                    <path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
+                                    <path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
+                               	</svg>
                            	</a>
                            	<div class="FooterMenu_menu__3nRbk Linker_btnMore__1PEzz">
                             	SNS
@@ -60,6 +131,7 @@
                 <div class="FooterContainer_container__3LibG">
                     <div class="FooterContainer_inner__3Nket">
                         <section class="FooterContainer_leftSection__2BtHF">
+                            <div class="FooterContainer_buttonBlock__FQR2E">
                             	<strong class="FooterContainer_title__1mcxQ">
                             		와디즈 고객센터
                             	</strong>
@@ -174,8 +246,8 @@
                         </ul>
                     </div>
                 </div>
-			</footer>
-     	</div>
-     </div>
+            </footer>
+		</div>
+	</div>
 </body>
 </html>

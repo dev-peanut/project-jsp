@@ -133,8 +133,9 @@
                                         style="background: url(&quot;https://static.wadiz.kr/studio/funding/static/media/wadiz-logo.549edcd7.svg&quot;) 50% center / contain no-repeat; width: 129px; height: 48px; cursor: pointer;">
                                     </div>
                                     <div class="AppNavbar_maker__2WVfm">
-                                        <div class="Avatar_avatar__2DI5d_Avatar_xs__i50kh"><span></span></div>
-                                        <div>정세인</div>
+                                        <div class="Avatar_avatar__2DI5d_Avatar_xs__i50kh">
+                                        <span class="Avatarspan"></span></div>
+                                        <div class="name">정세인</div>
                                     </div>
                                     <div class="AppNavbar_buttonGroup__UcLfm">
                                         <div class="PreviewButton_container__1P-_4">
@@ -382,7 +383,7 @@
                             <section class="Section_container__3md8M">
                                 <div style="max-width: 600px;">
                                     <div class="Section_header__1qwS7">
-                                        <h2 class="Section_title__ikPIm Section_isRequired__F8rij">프로젝트 요약</h2>
+                                        <h2 class="Section_title__ikPIm_Section_isRequired__F8rij">프로젝트 요약</h2>
                                         <div class="Section_guide__2xeJO"></div>
                                     </div>
                                     <div class="Section_description__10Uwo">소개 영상이나 사진과 함께 보이는 글이에요. 프로젝트를 쉽고 간결하게 소개해
@@ -410,7 +411,7 @@
                             </section>
                             <section class="Section_container__3md8M" style="max-width: 600px;">
                                 <div class="Section_header__1qwS7">
-                                    <h2 class="Section_title__ikPIm Section_isRequired__F8rij">스토리 광고 심의 동의</h2>
+                                    <h2 class="Section_title__ikPIm_Section_isRequired__F8rij">스토리 광고 심의 동의</h2>
                                     <div class="Section_guide__2xeJO"></div>
                                 </div>
                                 <div class="Section_description__10Uwo">스토리를 작성하기 전 와디즈에서 제공하는 광고 심의 가이드를 반드시 확인해 주세요.
@@ -454,14 +455,14 @@
                                         동의해 주세요!<br>
                                         동의해야 스토리 작성이 가능해요.</p>
                                     <button type="button"
-                                        class="wz button less StoryMakerAgreementNoticeBox_closeBtn__3lr1X">
+                                        class="wz_button_less_StoryMakerAgreementNoticeBox_closeBtn__3lr1X">
                                         <i class="icon-close" aria-hidden="true"></i></button>
                                 </div>
                             </div>
-                            <section class="Section_container__3md8M StoryEditorWrapperItemWeb_container__3bMs8"
+                            <section class="Section_container__3md8M_StoryEditorWrapperItemWeb_container__3bMs8"
                                 style="max-width: 720px;">
                                 <div class="Section_header__1qwS7 spacing-4">
-                                    <h2 class="Section_title__ikPIm Section_isRequired__F8rij">프로젝트 스토리</h2>
+                                    <h2 class="Section_title__ikPIm_Section_isRequired__F8rij">프로젝트 스토리</h2>
                                     <div class="Section_guide__2xeJO">
                                         <div class="Section_helperMessage__3V6GQ">
                                             <a class="link spacing-3 is-horizontal"
@@ -469,7 +470,7 @@
                                                 rel="nofollow noopener noreferrer" data-ga-category="펀딩_스토리_가이드"
                                                 data-ga-action="클릭">펀딩 스토리 작성 가이드
                                                 <svg viewBox="0 0 40 40" focusable="false" role="presentation"
-                                                    class="withIcon_icon__3lrgp withIcon_inline__3A3d_ icon"
+                                                    class="withIcon_icon__3lrgp_withIcon_inline__3A3d_icon"
                                                     aria-hidden="true" style="width: 14px; height: 14px;">
                                                     <path
                                                         d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z">
@@ -496,10 +497,10 @@
                                 </div>
                                 <div class="Section_content__3OkLZ">
                                     <div color="basic"
-                                        class="MessageBox_messageBox__3acWS MessageBox_basic__2vbop MessageBox_vertical__1mezf">
+                                        class="MessageBox_messageBox__3acWS_MessageBox_basic__2vbop_MessageBox_vertical__1mezf">
                                         <span>
                                             <svg viewBox="0 0 40 40" focusable="false" role="presentation"
-                                                class="withIcon_icon__1Oal1 MessageBox_icon__31KWI" aria-hidden="true">
+                                                class="withIcon_icon__1Oal1_MessageBox_icon__31KWI" aria-hidden="true">
                                                 <path fill="none" d="M0 0h40v40H0z"></path>
                                                 <path
                                                     d="M20 1a19 19 0 1 0 19 19A19.06 19.06 0 0 0 20 1zm1 28.6h-2v-13h2zm-1-15.84A1.8 1.8 0 1 1 21.8 12a1.8 1.8 0 0 1-1.8 1.76z">
@@ -509,18 +510,18 @@
                                             <p class="MessageBox_title__23TW6">서포터가 저절로 모여드는 스토리를 쓰려면?</p>
                                             <div class="MessageBox_description__1bCQv">
                                                 <ul>
-                                                    <li>통 이미지 사용을 지양해 주세요.</li>
-                                                    <li>이미지에 설명글을 꼭 추가해 주세요. 검색 결과에 상위 노출되거나 외부 포털 검색 결과에서도 노출되어 가장 손쉽게
+                                                    <li class="imagenotice">통 이미지 사용을 지양해 주세요.</li>
+                                                    <li class="imagenotice">이미지에 설명글을 꼭 추가해 주세요. 검색 결과에 상위 노출되거나 외부 포털 검색 결과에서도 노출되어 가장 손쉽게
                                                         프로젝트 홍보 효과를 누릴 수 있어요.</li>
-                                                    <li>스토리 흐름 구성이 어렵거나 어떤 내용을 쓸지 막막하다면 스토리 작성법을 확인해 주세요.</li>
+                                                    <li class="imagenotice">스토리 흐름 구성이 어렵거나 어떤 내용을 쓸지 막막하다면 스토리 작성법을 확인해 주세요.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div color="basic"
-                                        class="MessageBox_messageBox__3acWS MessageBox_basic__2vbop StoryEditorWrapperItemWeb_extraMessageBox__2Wmww spacing-3">
+                                        class="MessageBox_messageBox__3acWS MessageBox_basic__2vbop_StoryEditorWrapperItemWeb_extraMessageBox__2Wmww_spacing-3">
                                         <span><svg viewBox="0 0 40 40" focusable="false" role="presentation"
-                                                class="withIcon_icon__1Oal1 MessageBox_icon__31KWI MessageBox_withoutTitle__2S2r8"
+                                                class="withIcon_icon__1Oal1_MessageBox_icon__31KWI_MessageBox_withoutTitle__2S2r8"
                                                 aria-hidden="true">
                                                 <path fill="none" d="M0 0h40v40H0z"></path>
                                                 <path
@@ -530,26 +531,26 @@
                                         <div class="MessageBox_content__3db50">
                                             <div class="MessageBox_description__1bCQv">
                                                 <ul>
-                                                    <li>도서산간 배송비를 추가해야 한다면 정확한 추가 금액과 지불 방법을 리워드 발송 정보에 포함해 주세요.</li>
-                                                    <li>사전에 안내하지 않으면 서포터님들에게 추가 지불을 요청하기가 어려워져요.</li>
+                                                    <li class="imagenotice">도서산간 배송비를 추가해야 한다면 정확한 추가 금액과 지불 방법을 리워드 발송 정보에 포함해 주세요.</li>
+                                                    <li class="imagenotice">사전에 안내하지 않으면 서포터님들에게 추가 지불을 요청하기가 어려워져요.</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="WYSIWYGEditor_container__3MZO0 StoryEditorWrapperItemWeb_editor__3AvV7">
-                                        <button type="button" class="wz button less WYSIWYGEditor_editButton__1MLjp">미리
+                                    <div class="WYSIWYGEditor_container__3MZO0_StoryEditorWrapperItemWeb_editor__3AvV7">
+                                        <button type="button" class="wz_button_less_WYSIWYGEditor_editButton__1MLjp">미리
                                             보기</button>
-                                        <div class="WYSIWYGEditor_editor__V4Eam WYSIWYGEditor_disabled__1KqRM">
+                                        <div class="WYSIWYGEditor_editor__V4Eam_WYSIWYGEditor_disabled__1KqRM">
                                             <div class="wysiwyg-editor">
-                                                <div class="fr-box fr-basic fr-top" role="application">
-                                                    <div class="fr-toolbar fr-desktop fr-top fr-basic">
-                                                        <div class="fr-btn-grp fr-float-left">
+                                                <div class="fr-box_fr-basic_fr-top" role="application">
+                                                    <div class="fr-toolbar_fr-desktop_fr-top_fr-basic">
+                                                        <div class="fr-btn-grp_fr-float-left">
                                                             <button id="paragraphFormat-1" type="button" tabindex="-1"
                                                                 role="button"
                                                                 aria-controls="dropdown-menu-paragraphFormat-1"
                                                                 aria-expanded="false" aria-haspopup="true"
                                                                 title="문단 스타일"
-                                                                class="fr-command fr-btn fr-dropdown fr-selection"
+                                                                class="fr-command_fr-btn_fr-dropdown_fr-selection"
                                                                 data-cmd="paragraphFormat">
                                                                 <span style="width:80px">문단 스타일</span></button>
                                                             <div id="dropdown-menu-paragraphFormat-1"
@@ -616,7 +617,7 @@
                                                             </div>
                                                             <button id="bold-1" type="button" tabindex="-1"
                                                                 role="button" aria-pressed="false" title="굵게 (Ctrl+B)"
-                                                                class="fr-command fr-btn" data-cmd="bold">
+                                                                class="fr-command_fr-btn" data-cmd="bold">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
                                                                         <path
@@ -628,7 +629,7 @@
                                                                 <span class="fr-sr-only">굵게</span></button><button
                                                                 id="underline-1" type="button" tabindex="-1"
                                                                 role="button" aria-pressed="false" title="밑줄 (Ctrl+U)"
-                                                                class="fr-command fr-btn" data-cmd="underline">
+                                                                class="fr-command_fr-btn" data-cmd="underline">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
                                                                         <path
@@ -639,7 +640,7 @@
                                                                 </i>
                                                                 <span class="fr-sr-only">밑줄</span></button><button
                                                                 id="quote-1" type="button" tabindex="-1" role="button"
-                                                                title="인용" class="fr-command fr-btn" data-cmd="quote">
+                                                                title="인용" class="fr-command_fr-btn" data-cmd="quote">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
                                                                         <path
@@ -650,7 +651,7 @@
                                                                 </i>
                                                                 <span class="fr-sr-only">인용</span></button><button
                                                                 id="textColor-1" type="button" tabindex="-1"
-                                                                role="button" title="색상" class="fr-command fr-btn"
+                                                                role="button" title="색상" class="fr-command_fr-btn"
                                                                 data-cmd="textColor" data-popup="true">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
@@ -662,7 +663,7 @@
                                                                 </i>
                                                                 <span class="fr-sr-only">색상</span></button><button
                                                                 id="highlighter-1" type="button" tabindex="-1"
-                                                                role="button" title="형광펜" class="fr-command fr-btn"
+                                                                role="button" title="형광펜" class="fr-command_fr-btn"
                                                                 data-cmd="highlighter">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
@@ -676,7 +677,7 @@
                                                                 id="align-1" type="button" tabindex="-1" role="button"
                                                                 aria-controls="dropdown-menu-align-1"
                                                                 aria-expanded="false" aria-haspopup="true" title="정렬"
-                                                                class="fr-command fr-btn fr-dropdown" data-cmd="align">
+                                                                class="fr-command_fr-btn fr-dropdown" data-cmd="align">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
                                                                         <path
@@ -762,7 +763,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div><button id="formatOL-1" type="button" tabindex="-1"
-                                                                role="button" title="숫자 목록" class="fr-command fr-btn"
+                                                                role="button" title="숫자 목록" class="fr-command_fr-btn"
                                                                 data-cmd="formatOL">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
@@ -774,7 +775,7 @@
                                                                 </i>
                                                                 <span class="fr-sr-only">숫자 목록</span></button><button
                                                                 id="formatUL-1" type="button" tabindex="-1"
-                                                                role="button" title="점 목록" class="fr-command fr-btn"
+                                                                role="button" title="점 목록" class="fr-command_fr-btn"
                                                                 data-cmd="formatUL">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
@@ -786,7 +787,7 @@
                                                                 </i>
                                                                 <span class="fr-sr-only">점 목록</span></button><button
                                                                 id="insertHR-1" type="button" tabindex="-1"
-                                                                role="button" title="구분선" class="fr-command fr-btn"
+                                                                role="button" title="구분선" class="fr-command_fr-btn"
                                                                 data-cmd="insertHR">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
@@ -797,7 +798,7 @@
                                                                 <span class="fr-sr-only">구분선</span></button><button
                                                                 id="insertLink-1" type="button" tabindex="-1"
                                                                 role="button" title="링크 (Ctrl+K)"
-                                                                class="fr-command fr-btn" data-cmd="insertLink"
+                                                                class="fr-command_fr-btn" data-cmd="insertLink"
                                                                 data-popup="true">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
@@ -810,7 +811,7 @@
                                                                 <span class="fr-sr-only">링크</span></button><button
                                                                 id="insertImage-1" type="button" tabindex="-1"
                                                                 role="button" title="이미지 (Ctrl+P)"
-                                                                class="fr-command fr-btn" data-cmd="insertImage"
+                                                                class="fr-command_fr-btn" data-cmd="insertImage"
                                                                 data-popup="true">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
@@ -822,7 +823,7 @@
                                                                 </i>
                                                                 <span class="fr-sr-only">이미지</span></button><button
                                                                 id="insertVideo-1" type="button" tabindex="-1"
-                                                                role="button" title="동영상" class="fr-command fr-btn"
+                                                                role="button" title="동영상" class="fr-command_fr-btn"
                                                                 data-cmd="insertVideo" data-popup="true">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
@@ -834,7 +835,7 @@
                                                                 </i>
                                                                 <span class="fr-sr-only">동영상</span></button><button
                                                                 id="insertTable-1" type="button" tabindex="-1"
-                                                                role="button" title="표" class="fr-command fr-btn"
+                                                                role="button" title="표" class="fr-command_fr-btn"
                                                                 data-cmd="insertTable" data-popup="true">
                                                                 <i aria-hidden="true">
                                                                     <svg viewBox="0 0 24 24">
@@ -923,14 +924,14 @@
         .ab-iam-root.v3 {
             z-index: 9999;
         }
-    </style> --> --> -->
+    </style>   
     <script type="text/javascript" id="">function openWithEdge() { window.location = "microsoft-edge:" + window.location; setTimeout(function () { }, 1) }
         sessionStorage.getItem("wadiz-ie-alerted") || /MSIE \d|Trident.*rv:/.test(navigator.userAgent) && wadiz.dialog({
             html: '\x3cdiv\x3e\uc544\uc27d\uc9c0\ub9cc Microsoft\uc5d0\uc11c Internet Explorer \uacf5\uc2dd \uc9c0\uc6d0\uc744 \uc911\ub2e8\ud558\uc5ec Internet Explorer\uc5d0\uc11c \uc640\ub514\uc988 \uc11c\ube44\uc2a4 \uc774\uc6a9\uc774 \uc6d0\ud65c\ud558\uc9c0 \uc54a\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4.\x3cbr\x3eMicrosoft Edge \uc774\uc6a9\uc744 \uad8c\uc7a5\ub4dc\ub824\uc694.\x3cbr\x3e\x3cbr\x3e"\ud655\uc778"\uc744 \ub204\ub974\uc2dc\uba74 Edge\uc5d0\uc11c \uc640\ub514\uc988\uac00 \uc5f4\ub9bd\ub2c8\ub2e4.\x3c/a\x3e\x3c/div\x3e', onApprove: function () {
                 sessionStorage.setItem("wadiz-ie-alerted",
                     JSON.stringify(new Date)); openWithEdge()
             }
-        });</script> -->
+        });</script> 
     <script type="text/javascript" id="" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script>
     <script type="text/javascript" id="" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script>
     <div id="wp_tg_cts" style="display:none;">
@@ -946,7 +947,7 @@
     <script type="text/javascript" id="" src="//cdn.cresendo.net/Track.js"></script>
     <script type="text/javascript" id="" src="//dynamic.criteo.com/js/ld/ld.js?a=52808"></script>
     <script type="text/javascript" id="">kakaoPixel("5987212143106374074").pageView();</script>
-    <script type="text/javascript" id="">kakaoPixel("6461459061623272384").pageView();</script> -->
+    <script type="text/javascript" id="">kakaoPixel("6461459061623272384").pageView();</script> 
 
     <div id="criteo-tags-div" style="display: none;"></div>
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
@@ -1004,7 +1005,7 @@
         id="">if (!wcs_add) var wcs_add = {}; wcs_add.wa = "s_577200a05f81"; if (!_nasa) var _nasa = {}; wcs.inflow(); wcs_do(_nasa);</script>
     <div class="ReactModalPortal"></div>
     <div class="fr-popup fr-desktop" data-inst1="true">
-        <div class="fr-color-set fr-selected-set"> -->
+        <div class="fr-color-set fr-selected-set"> 
 
             <span role="button" class="fr-command fr-select-color" tabindex="-1" style="" data-cmd="unhighlight"
                 data-param1="[object Object]" data-param2="REMOVE" aria-selected="false"></span>
@@ -1021,7 +1022,7 @@
     </div>
     <div class="fr-popup fr-desktop" data-inst1="true">
         <div class="fr-buttons"><button id="quoteDefault-1" type="button" tabindex="-1" role="button" title="기본형"
-                class="fr-command fr-btn" data-cmd="quoteDefault">
+                class="fr-command_fr-btn" data-cmd="quoteDefault">
                 <i aria-hidden="true">
                     <svg viewBox="0 0 24 24">
                         <path
@@ -1031,12 +1032,12 @@
                     <label aria-hidden="true">기본형</label>
                 </i>
                 <span class="fr-sr-only">기본형</span></button><button id="quoteLine-1" type="button" tabindex="-1"
-                role="button" title="라인형" class="fr-command fr-btn" data-cmd="quoteLine">
+                role="button" title="라인형" class="fr-command_fr-btn" data-cmd="quoteLine">
                 <i class="icon-blockquote" aria-hidden="true">
                     <label aria-hidden="true">라인형</label>
                 </i>
                 <span class="fr-sr-only">라인형</span></button><button id="unquote-1" type="button" tabindex="-1"
-                role="button" title="초기화" class="fr-command fr-btn" data-cmd="unquote">
+                role="button" title="초기화" class="fr-command_fr-btn" data-cmd="unquote">
                 <i class="icon-menu" aria-hidden="true">
                     <label aria-hidden="true">초기화</label>
                 </i>

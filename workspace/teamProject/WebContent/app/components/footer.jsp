@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/components/footer.css">
 </head>
 <body>
-	<div id="page-container">
 		<div id="footer">
 			<footer id="footer" class="web-footer inner-utils">
                 <div class="FooterMenu_container__15kue">
@@ -176,6 +175,5 @@
                 </div>
 			</footer>
      	</div>
-     </div>
 </body>
 </html>

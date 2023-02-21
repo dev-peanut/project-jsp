@@ -47,7 +47,7 @@
 
 body {
     line-height: 1.33;
-    font-family: Roboto,Noto Sans KR,-apple-system,Dotum,sans-serif;
+    font-family: Noto Sans KR !important;
 }
 
 body {

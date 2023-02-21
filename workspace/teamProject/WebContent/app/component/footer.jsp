@@ -5,14 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>footer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<!-- <link rel="stylesheet" href="wadiz-findid-clone.css"> -->
-<link href="../../assets/css/footer.css" rel="stylesheet">
-<link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+<link rel="stylesheet" href="../../assets/css/user/myPage.css">
+<link rel="stylesheet" href="../../assets/css/component/footer.css">
 </head>
 <body>
+	<div id="page-container">
 		<div id="footer">
 			<footer id="footer" class="web-footer inner-utils">
                 <div class="FooterMenu_container__15kue">
@@ -34,17 +32,17 @@
                            	</div>
                            	<a href="https://www.wadiz.kr/web/wboard/newsBoardList" class="FooterMenu_menu__3nRbk" target="_blank" rel="noopener noreferrer">
                                	공지사항
-                               	<svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon__1ao4d FooterMenu_openLinkIcon__3YMFQ" aria-hidden="true">
-                                    <path d="M31.42 M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
-                                    <path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
-                               </svg>
+								<svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon__1ao4d FooterMenu_openLinkIcon__3YMFQ" aria-hidden="true">
+									<path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
+									<path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
+								</svg>
                            	</a>
                            	<a href="https://www.job.wadiz.kr/" class="FooterMenu_menu__3nRbk" target="_blank" rel="noopener noreferrer">
                                	인재채용
-                               	<svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon" aria-hidden="true">
-                                    <path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
-                                    <path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
-                               	</svg>
+								<svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon__1ao4d FooterMenu_openLinkIcon__3YMFQ" aria-hidden="true">
+									<path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
+									<path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
+								</svg>
                            	</a>
                            	<div class="FooterMenu_menu__3nRbk Linker_btnMore__1PEzz">
                             	SNS
@@ -62,7 +60,6 @@
                 <div class="FooterContainer_container__3LibG">
                     <div class="FooterContainer_inner__3Nket">
                         <section class="FooterContainer_leftSection__2BtHF">
-                            <div class="FooterContainer_buttonBlock__FQR2E">
                             	<strong class="FooterContainer_title__1mcxQ">
                             		와디즈 고객센터
                             	</strong>
@@ -178,5 +175,7 @@
                     </div>
                 </div>
             </footer>
+		</div>
+     </div>
 </body>
 </html>

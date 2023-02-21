@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="ko" style="--vh:7.46px;" class="">
 
@@ -129,8 +132,7 @@
                             </ol>
                             <nav class="DetailNavbar_container__3SkEf">
                                 <div class="AppNavbar_container__5uOnI">
-                                    <div class="make"
-                                        style="background: url(&quot;https://static.wadiz.kr/studio/funding/static/media/wadiz-logo.549edcd7.svg&quot;) 50% center / contain no-repeat; width: 129px; height: 48px; cursor: pointer;">
+                                    <div class="make" style="background: url(&quot;https://static.wadiz.kr/studio/funding/static/media/wadiz-logo.549edcd7.svg&quot;) 50% center / contain no-repeat; width: 129px; height: 48px; cursor: pointer;">
                                     </div>
                                     <div class="AppNavbar_maker__2WVfm">
                                         <div class="Avatar_avatar__2DI5d_Avatar_xs__i50kh">
@@ -139,10 +141,8 @@
                                     </div>
                                     <div class="AppNavbar_buttonGroup__UcLfm">
                                         <div class="PreviewButton_container__1P-_4">
-                                            <button
-                                                class="Button_button__1e2A2_Button_primary__PxOJr_Button_md__1FRMG_Button_circular__3NpOv"
-                                                type="button">
-                                                <span><span class="Button_children__q9VCZ">미리 보기</span></span></button>
+                                            <button class="Button_button__1e2A2_Button_primary__PxOJr_Button_md__1FRMG_Button_circular__3NpOv" type="button">
+                                                <span class="preview"><span class="Button_children__q9VCZ">미리 보기</span></span></button>
                                         </div>
                                         <button
                                             class="Button_button__1e2A2_Button_primary__PxOJr_Button_contained__TTXSM_Button_md__1FRMG_Button_circular__3NpOv"

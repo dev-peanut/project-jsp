@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
 <link rel="stylesheet" href="../../assets/css/user/myPage.css">
 <link rel="stylesheet" href="../../assets/css/component/footer.css">
-<link rel="stylesheet" href="../../assets/css/main/main.css">
 </head>
 <body>
 	<div id="page-container">

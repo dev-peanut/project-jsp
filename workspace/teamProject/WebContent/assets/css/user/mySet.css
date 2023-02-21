@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+:root {
+    --scrollbar-width: 0;
+}
+
+body {
+    line-height: 1.33;
+    font-family: Roboto,Noto Sans KR,-apple-system,Dotum,sans-serif;
+}
+
+body {
+    overflow-y: scroll;
+    line-height: 1.5em;
+    letter-spacing: -.02em;
+    color: rgba(0,0,0,.84);
+    font-size: 15px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, body button, body input, body select, body textarea {
+    font-family: roboto,Noto Sans KR,-apple-system,dotum,sans-serif;
+}
+
+body, html {
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    font-family: Roboto, 'Noto Sans KR', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a, address, article, aside, audio, b, body, button, canvas, caption, dd, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, img, input, label, legend, li, nav, ol, p, pre, section, small, span, strong, summary, table, tbody, td, th, thead, time, tr, ul, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+article, blockquote, body, dd, div, dl, dt, h1, h2, h3, h4, html, li, main, ol, p, section, table, tbody, td, th, thead, tr, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, em, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body, body button, body input, body li, body ol, body select, body textarea, body ul {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+input, optgroup, select, textarea {
+    color: inherit;
+}
+
+a, a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body a {
+    text-decoration: none;
+}
+
+.wz.container, body a {
+    color: rgba(0,0,0,.84);
+}
+
+#page-container, #wadizTopBanner, body>#root {
+    transform-origin: 50% 0;
+    transition-property: opacity,transform;
+    transition-duration: 80ms;
+    transition-timing-function: ease-out;
+}
+
+body>#root, #wadizTopBanner, #page-container {
+    transform-origin: 50% 0;
+    transition-property: opacity,transform;
+    transition-duration: 80ms;
+    transition-timing-function: ease-out;
+}
+
+#accountWrap {
+    width: 100%;
+    padding-bottom: 160px;
+    background: #f9f9f9;
+}
+
+#newContainer {
+    min-height: 100%;
+    background: #eee;
+}
+
+#accountWrap #newContainer {
+    background: #f9f9f9;
+}
+
+.account-wrap {
+    padding: 35px 20px;
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+}
+
+.account-wrap h2 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #4a4a4a;
+    font-weight: normal;
+}
+
+.email-input-wrap {
+    padding-top: 16px;
+}
+
+.input-text, textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+
+.input-text {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0 17px;
+    margin-bottom: 7px;
+    height: 46px;
+    line-height: 45px;
+    font-size: 13px;
+    color: #4a4a4a;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    outline: none;
+}
+
+.input-text {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.input-text.disable {
+    background: #e7e7e7;
+}
+
+.input-area.disabled .input-text, .input-text:disabled {
+    background: #e7e7e7;
+}
+
+.input-btn-wrap div {
+    float: left;
+}
+
+.input-btn-wrap .input {
+    width: 70%;
+}
+
+.input-btn-wrap .btn {
+    width: 28%;
+    margin-left: 4px;
+    display: block;
+    background: #8c8881;
+    height: 46px;
+    line-height: 46px;
+    border: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+.email-input-wrap span {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #4a4a4a;
+}
+
+.btn span {
+    line-height: 46px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+/* 가상요소 */
+.input-btn-wrap:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.limit_time {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    text-align: right;
+}
+
+.email-input-wrap span {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #4a4a4a;
+}
+
+.limit_time span {
+    color: #50e3c2;
+    font-size: 13px;
+}
+
+.error-text {
+    margin-bottom: 12px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #e54545;
+    display: none;
+}
+
+.info-text {
+    margin-bottom: 12px;
+    font-size: 11px;
+    line-height: 14px;
+    color: #2802D2;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================media================================ */
+@media screen and (min-width: 1000px) {
+.account-wrap {
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 75px;
+}
+
+}
+

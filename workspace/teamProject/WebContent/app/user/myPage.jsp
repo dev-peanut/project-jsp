@@ -13,7 +13,7 @@
 	<div id="page-container">
 		<div class="black-bg-wrap" style="display:none;"></div>
 		<!-- header -->
-		<jsp:include page="../component/header.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/app/components/header.jsp"></jsp:include>
 		<!-- 메인 컨텐츠 적용 -->
 		<div id="wadizContainer">
 			<div id="mypageWrap">

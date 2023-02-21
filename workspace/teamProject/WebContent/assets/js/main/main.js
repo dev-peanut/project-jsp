@@ -24,13 +24,13 @@ buttons.forEach(button => {
     });
 });
 
-imageDiv.forEach((div, i) => div.style.backgroundImage = `url(../../assets/image/00${i+1}.jpg)`)
+imageDiv.forEach((div, i) => div.style.backgroundImage = `url(../../img/00${i+1}.jpg)`)
 
 banner.appendChild(lastImageDiv);
-lastImageDiv.style.backgroundImage = `url(../../assets/image/001.jpg)`;
+lastImageDiv.style.backgroundImage = `url(../../img/001.jpg)`;
 
 banner.insertBefore(firstImageDiv, document.querySelector("div.banner div"));
-firstImageDiv.style.backgroundImage = `url(../../assets/image/00${imageDiv.length}.jpg)`
+firstImageDiv.style.backgroundImage = `url(../../img/00${imageDiv.length}.jpg)`
 
 banner.style.transform = `translate(-2543px)`;
 

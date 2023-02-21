@@ -59,7 +59,6 @@
                                     <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa"href="/studio/reward/191893/funding/contractInfo">대표자 및 정산 정보</a></li> -->
                                 </ul>
                             </li>
-<<<<<<< HEAD
                             <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarMenuList_disabled__3yitR"
                                     href="/studio/reward/191893/news">새소식
                                     <i class="icon-lock-o_AppSidebarMenuList_lockIcon__3H-rC" aria-hidden="true"></i>
@@ -103,8 +102,7 @@
                             <li><a href="http://www.wadiz.kr/link/studio_makerguide"
                                     class="AppSidebarMenuList_navLink__1FytL" target="blank"
                                     rel="nofollow noopener noreferrer">자료 및 도움말 </a></li>
-=======
->>>>>>> 3735321 (정세인 폼, 커뮤니티 제출 게시판 수정)
+
                         </ul>
                     </nav>
                 </div>

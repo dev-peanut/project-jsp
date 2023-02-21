@@ -8,7 +8,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<!-- <link rel="stylesheet" href="wadiz-findid-clone.css"> -->
 <link href="${pageContext.request.contextPath}/assets/css/components/footer.css" rel="stylesheet">
 <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
 </head>

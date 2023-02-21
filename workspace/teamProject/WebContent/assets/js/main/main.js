@@ -13,6 +13,8 @@ let count = 1;
 let auto = setInterval(autoSlide, 2000);
 let temp = buttons[0];
 
+console.log(`${pageContext.request.contextPath}`);
+
 HTMLCollection.prototype.forEach = Array.prototype.forEach;
 buttons.forEach(button => {
     button.addEventListener("click", () => {
@@ -25,13 +27,13 @@ buttons.forEach(button => {
     });
 });
 
-imageDiv.forEach((div, i) => div.style.backgroundImage = `url(${pageContext.request.contextPath}/assets/js/main/00${i+1}.jpg`)
+imageDiv.forEach((div, i) => div.style.backgroundImage = `url(${pageContext.request.contextPath}/images/main/00${i+1}.jpg`)
 
 banner.appendChild(lastImageDiv);
-lastImageDiv.style.backgroundImage = `url(../../assets/js/main/001.jpg)`;
+lastImageDiv.style.backgroundImage = `url(${pageContext.request.contextPath}/images/main/001.jpg)`;
 
 banner.insertBefore(firstImageDiv, document.querySelector("div.banner div"));
-firstImageDiv.style.backgroundImage = `url(../../assets/js/main/00${imageDiv.length}.jpg)`
+firstImageDiv.style.backgroundImage = `url(${pageContext.request.contextPath}/images/main/00${imageDiv.length}.jpg)`
 
 banner.style.transform = `translate(-100vw)`;
 

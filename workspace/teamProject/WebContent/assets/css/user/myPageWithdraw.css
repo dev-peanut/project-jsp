@@ -431,6 +431,44 @@ label.wz.checkbox>span:after {
     text-decoration: none;
 }
 
+.wz.button.primary, .wz.button.primary-outline {
+    border-color: #00c4c4;
+}
+
+.wz.button.primary {
+    background-color: #00c4c4;
+    color: #fff;
+}
+
+.wz.input {
+    display: block;
+    position: relative;
+    font-size: 17px;
+}
+
+.wz.input.action {
+    display: flex;
+    outline: none;
+}
+
+.account-drop .verify-box .user-verify, .account-drop .verify-box .user-verify-confirm {
+    position: relative;
+}
+
+.account-drop .verify-box .user-verify {
+    margin-bottom: 8px;
+    padding-right: 102px;
+}
+
+.wz.input.icon>i.icon, .wz.input>input, .wz.input>textarea {
+    color: rgba(0,0,0,.84);
+    font-size: 17px;
+    font-weight: 400;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+}
+
 
 
 

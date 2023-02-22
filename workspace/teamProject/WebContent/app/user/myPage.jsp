@@ -105,12 +105,48 @@
 											<a href="/web/campaign/detail/155943">
 												<div class="project-card">
 													<div class="card-img-section">
-                                  						<em class="project-img" style="background-image:url(../../assets/img/mandurang.jpg)"></em>
+                                  						<em class="project-img" style="background-image:url(/images/user/mandurang.jpg)"></em>
 														<em class="project-type reward">기부</em>
 													</div>
 													<div class="card-info-section">
-														<h4>[역삼역 맛집] 만두랑</h4>
-														<h5>만두 : 10kg 기부</h5>
+														<h4>만두랑 : 전골 10kg</h4>
+														<h5>일시 : 2023.02.20</h5>
+														<div class="card-category">
+															<span class="category1">만두·만두전골</span>
+															<span class="category2"></span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="reward " data-hiddentype="F" data-campaintype="RWD" data-campaignid="155943" data-campaignhiddenseq="">
+											<a href="/web/campaign/detail/155943">
+												<div class="project-card">
+													<div class="card-img-section">
+                                  						<em class="project-img" style="background-image:url(/images/user/mandurang.jpg)"></em>
+														<em class="project-type reward">기부</em>
+													</div>
+													<div class="card-info-section">
+														<h4>만두랑 : 밥 10kg</h4>
+														<h5>일시 : 2023.02.21</h5>
+														<div class="card-category">
+															<span class="category1">만두·만두전골</span>
+															<span class="category2"></span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="reward " data-hiddentype="F" data-campaintype="RWD" data-campaignid="155943" data-campaignhiddenseq="">
+											<a href="/web/campaign/detail/155943">
+												<div class="project-card">
+													<div class="card-img-section">
+                                  						<em class="project-img" style="background-image:url(/images/user/mandurang.jpg)"></em>
+														<em class="project-type reward">기부</em>
+													</div>
+													<div class="card-info-section">
+														<h4>만두랑 : 만두 5kg</h4>
+														<h5>일시 : 2023.02.22</h5>
 														<div class="card-category">
 															<span class="category1">만두·만두전골</span>
 															<span class="category2"></span>

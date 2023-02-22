@@ -10,8 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>가전제품 글쓰기 페이지</title>
     <link rel="stylesheet" href="../../assets/css/board/board_community_write.css">
-    <style>
-    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -310,14 +308,7 @@
                                     <p>서포터님들이 꼭 알아 주었으면 하는 리워드/프로젝트의 매력 포인트가 있다면 적어 주세요.</p>
                                 </div> -->
                             </section>
-         
-<!--             사이드박스 주석                    <div class="Section_guideMessage__3XqrM">
-                                    <h4><a class="link" href="https://www.wadiz.kr/link/picture_guide" target="blank" rel="nofollow noopener noreferrer">소개 영상·사진</a></h4>
-                                    <p>영상과 사진을 모두 업로드하면 영상만 보여요.</p><br>
-                                    <h4>영상 썸네일 이미지</h4>
-                                    <p class="notice">와디즈에서는 썸네일을 지정할 수 없어요. 대신 YouTube, Vimeo 등에서 영상 썸네일을 지정할 수 있어요.
-                                    </p>
-                                </div> -->
+      
                             </section>
                        <section class="Section_container__3md8M_StoryEditorWrapperItemWeb_container__3bMs8" style="max-width: 720px;">
                                 <div class="Section_header__1qwS7 spacing-4">
@@ -406,35 +397,8 @@
                                 </div>
                             </section> 
                                 </div>
-                                               
-<!--   오픈 예정서비스 신청 안내                           <div class="StoryEditorForComingWrapper_container__1cngW">
-                                <section class="Section_container__3md8M" style="max-width: 600px;">
-                                    <div class="Section_content__3OkLZ">
-                                        <div class="StoryEditorForComingWrapper_notice__17_eT">
-                                            <h4 class="StoryEditorForComingWrapper_title__3tgjs">오픈예정 스토리</h4>
-                                            <i class="icon-error-o StoryEditorForComingWrapper_icon__1vZQN" aria-hidden="true"></i>
-                                            <p class="StoryEditorForComingWrapper_description__210jK">오픈예정 서비스를 신청하지 않으셨네요?<br></p>
-                                            <button class="Button_button__1e2A2 StoryEditorForComingWrapper_link__3TjuV" type="button"><span><span class="Button_children__q9VCZ">오픈예정 서비스 신청하러 가기</span></span></button>
-                                            <div class="wz message OpenComingSoonAdMessage_container__39tu7">
-                                                <div class="OpenComingSoonAdMessage_title__1KnPv">70% 메이커가 오픈예정 서비스 이용 중!</div>
-                                                <div class="OpenComingSoonAdMessage_text__3K9jK">
-                                                <img class="OpenComingSoonAdMessage_image__1B2Zl" alt="emoji-pointing-up" src="https://static.wadiz.kr/studio/funding/static/media/emoji-pointing-up.5b356382.svg" aria-hidden="true">
-                                                오픈 직후 3일 내 전체 프로젝트 금액의 <strong>약 35% 모집</strong></div>
-                                                <div class="OpenComingSoonAdMessage_text__3K9jK">
-                                                <img class="OpenComingSoonAdMessage_image__1B2Zl" alt="emoji-victory-hand" src="https://static.wadiz.kr/studio/funding/static/media/emoji-victory-hand.f827b84f.svg" aria-hidden="true">평균 프로젝트 금액 <strong>3배 이상 달성</strong></div>
-                                                <ul class="OpenComingSoonAdMessage_description__3fldv">
-                                                    <li>데이터 기준: 2020.07 ~ 2020.12 종료된 프로젝트</li>
-                                                    <li>성공 프로젝트 평균 기준</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div> -->
                         </form>
-         <!--    save            <div class="FundingStoryContainer_btnWrapper__32tvJ">
-                        <button class="save_button" type="button" style="width: 420px; max-width: 100%;">
-                        <span><span class="Button_children__q9VCZ">저장하기</span></span></button> --></div>
+					</div>
                     </div>
                 </div>
             </div>

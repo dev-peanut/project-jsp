@@ -58,50 +58,6 @@
                                     <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa"href="/studio/reward/191893/funding/contractInfo">대표자 및 정산 정보</a></li> -->
                                 </ul>
                             </li>
-                            <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarMenuList_disabled__3yitR"
-                                    href="/studio/reward/191893/news">새소식
-                                    <i class="icon-lock-o_AppSidebarMenuList_lockIcon__3H-rC" aria-hidden="true"></i>
-                                    <div class="AppSidebarMenuList_helpFloating__3uu8D">프로젝트 공개 후 확인할 수 있어요.<br>
-                                        (오픈예정 신청한 경우, 오픈예정 공개 후 가능)</div>
-                                </a></li>
-                            <li>
-                                <a class="AppSidebarMenuList_navLink__1FytL_AppSidebarMenuList_disabled__3yitR"
-                                    href="/studio/reward/191893/dashboard/coming-report">오픈예정 현황
-                                    <i class="icon-lock-o_AppSidebarMenuList_lockIcon__3H-rC" aria-hidden="true"></i>
-                                    <div class="AppSidebarMenuList_helpFloating__3uu8D">오픈예정 공개 후 확인할 수 있어요.<br>
-                                        (오픈예정 서비스 신청자에 한함)</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="AppSidebarMenuList_navLink__1FytL_AppSidebarMenuList_disabled__3yitR"
-                                    href="/studio/reward/191893/dashboard/funding-report">프로젝트 현황
-                                    <i class="icon-lock-o_AppSidebarMenuList_lockIcon__3H-rC" aria-hidden="true"></i>
-                                    <div class="AppSidebarMenuList_helpFloating__3uu8D">프로젝트 공개 후 확인할 수 있어요.</div>
-                                </a>
-                            </li>
-                            <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarMenuList_disabled__3yitR"
-                                    href="/studio/reward/191893/dashboard/payment-report">결제 현황<i
-                                        class="icon-lock-o_AppSidebarMenuList_lockIcon__3H-rC" aria-hidden="true"></i>
-                                    <div class="AppSidebarMenuList_helpFloating__3uu8D">프로젝트 종료 후 확인할 수 있어요.</div>
-                                </a></li>
-                            <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarMenuList_disabled__3yitR"
-                                    href="/studio/reward/191893/supporter">발송∙환불 관리
-                                    <i class="icon-lock-o_AppSidebarMenuList_lockIcon__3H-rC" aria-hidden="true"></i>
-                                    <div class="AppSidebarMenuList_helpFloating__3uu8D">프로젝트 공개 후 확인할 수 있어요.</div>
-                                </a></li>
-                            <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarMenuList_disabled__3yitR"
-                                    href="/studio/reward/191893/settlement">수수료∙정산 관리
-                                    <i class="icon-lock-o_AppSidebarMenuList_lockIcon__3H-rC" aria-hidden="true"></i>
-                                    <div class="AppSidebarMenuList_helpFloating__3uu8D">프로젝트 제출 후 확인할 수 있어요.</div>
-                                </a></li>
-                            <li><a class="AppSidebarMenuList_navLink__1FytL" href="/studio/reward/191893/ads">와디즈 광고
-                                    서비스</a></li>
-                            <li><a class="AppSidebarMenuList_navLink__1FytL"
-                                    href="/studio/reward/191893/maker_service">메이커 서비스</a></li>
-                            <li><a href="http://www.wadiz.kr/link/studio_makerguide"
-                                    class="AppSidebarMenuList_navLink__1FytL" target="blank"
-                                    rel="nofollow noopener noreferrer">자료 및 도움말 </a></li>
-
                         </ul>
                     </nav>
                 </div>
@@ -215,17 +171,6 @@
 
 
                         <div class="HeaderLayout_container__3fXkO">
-                        <div class="HeaderLayout_guideWrapper__WXeX-">
-                                <div class="FundingLinkGuide_container__3eQXb">
-                                    <button class="FundingLinkGuide_link__3D_Pv_FundingLinkGuide_webLink__3jiMO"
-                                        type="button">
-                                        <div class="FundingLinkGuide_point__3TI2H">
-                                            <img src="https://static.wadiz.kr/studio/funding/static/media/guide_point.0910c96a.svg"
-                                                alt="포인트 이미지">
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
                             <div class="HeaderLayout_contents__F4hlC">
                                 <h2 class="FundingStoryContainer_title__1r0ZE">식품 기부하기</h2>
                                 <p class="FundingStoryContainer_description__1sMTR">사랑을 나누는 일은 결코 힘들거나 어려운 일이 아닙니다.</p>
@@ -276,7 +221,29 @@
                                 </div>
                             </section> 
                             
-                        <form class="wz_form_FundingStoryFormContainer_form__326Zc_Form_form__3ASTU">
+                                  <section class="Section_container__3md8M">
+                                <div style="max-width: 600px;">
+                                    <div class="Section_header__1qwS7">
+                                        <h2 class="Section_title__ikPIm_Section_isRequired__F8rij">픽업 날짜</h2>
+                                        <div class="Section_guide__2xeJO"></div>
+                                    </div>
+                                    <div class="Section_description__10Uwo">픽업차가 방문할 날짜를 작성해주세요.</div>
+                                    <div class="Section_content__3OkLZ">
+                                        <div class="StorySummaryField_container__25ePA">
+                                            <div class="field_Form_field__35I9T_FormFieldTextarea_field__33Ncu">
+                                                <div class="wide_column-2"></div>
+                                                <div class="wide_column-4">
+                                                    <div class="wz input">
+                                                        <textarea placeholder="음식 이름" helper="[object Object]" name="storyInfo.coreMessage" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
+                            <form class="wz_form_FundingStoryFormContainer_form__326Zc_Form_form__3ASTU">
                             <div class="Loader_loader__d9YUC_Form_loader__1YJ5I"></div>
                             <section class="Section_container__3md8M">
                                 <div style="max-width: 600px;">
@@ -305,28 +272,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                  <section class="Section_container__3md8M">
-                                <div style="max-width: 600px;">
-                                    <div class="Section_header__1qwS7">
-                                        <h2 class="Section_title__ikPIm_Section_isRequired__F8rij">픽업 날짜</h2>
-                                        <div class="Section_guide__2xeJO"></div>
-                                    </div>
-                                    <div class="Section_description__10Uwo">픽업차가 방문할 날짜를 작성해주세요.</div>
-                                    <div class="Section_content__3OkLZ">
-                                        <div class="StorySummaryField_container__25ePA">
-                                            <div class="field_Form_field__35I9T_FormFieldTextarea_field__33Ncu">
-                                                <div class="wide_column-2"></div>
-                                                <div class="wide_column-4">
-                                                    <div class="wz input">
-                                                        <textarea placeholder="음식 이름" helper="[object Object]" name="storyInfo.coreMessage" rows="3"></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </section>
                         </form></div>
                     </div>
                 </div>

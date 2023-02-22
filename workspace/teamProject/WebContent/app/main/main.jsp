@@ -56,11 +56,11 @@
 				        		<p class="banner-text-badge">펀딩</p>
 				        	</div>
 			            </div>
-						<!-- 배너 총 퍼센티지. 투명 바 -->
-						<div class="banner-total">
-							<div class="banner-active"></div> <!-- 배너 현재 퍼센티지. 흰색 바 -->
-						</div>
 			        </div>
+					<!-- 배너 총 퍼센티지. 투명 바 -->
+					<div class="banner-total">
+						<div class="banner-active"></div> <!-- 배너 현재 퍼센티지. 흰색 바 -->
+					</div>
 			        <div class="move-arrow">
 			            <!-- 이전 버튼 -->
 			            <div class="prev">

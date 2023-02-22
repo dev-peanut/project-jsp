@@ -7,58 +7,81 @@
 <title>마이페이지</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
 <link rel="stylesheet" href="../../assets/css/user/myPage.css">
-<link rel="stylesheet" href="../../assets/css/components/footer.css">
 </head>
 <body>
 	<div id="page-container">
-		<div class="black-bg-wrap" style="display:none;"></div>
-		<!-- header -->
+		<!-- 헤더 적용 -->
 		<jsp:include page="../components/header.jsp"></jsp:include>
 		<!-- 메인 컨텐츠 적용 -->
-		<div id="wadizContainer">
+		<div id="container">
 			<div id="mypageWrap">
 				<div class="myprofile-wrap">
-					<link rel="stylesheet" href="https://static.wadiz.kr/static/iam/main.633c705f.css">
-					<div id="iam-supporter-profile-app" data-profile-image="https://static.wadiz.kr/assets/icon/profile-icon-4.png" data-nickname="별명" data-accnttype-name="개인 회원" data-is-valid-joined-premium-membership="false" data-my-self="true" data-my-funding-all-count="0" data-signature-cnt="0" data-follower-cnt="0" data-following-cnt="0" data-target-enc-user-id="" data-target-user-id="6034797" data-introduceme="" data-is-following="false" data-my-interest-user-keyword="">
-						<section class="SupporterProfile_supporterProfile__2JfLr">
-							<div class="SupporterProfile_inner__1C7Nk">
-								<h3 class="BlindText_textHidden__2VTV6"></h3>
-								<div aria-hidden="true" class="Avatar_avatar__1TTEG SupporterProfileInfo_avatar__38dOD">
-									<span class="Avatar_hasImage__3msN0" style="background-image: url('https://static.wadiz.kr/assets/icon/profile-icon-4.png'); border: 1px solid rgb(221, 226, 230);"></span>
+					<div id="iam-profile-app" data-profile-image="https://static.wadiz.kr/assets/icon/profile-icon-4.png" data-nickname="익명의 서포터 993" data-accnttype-name="개인 회원" data-is-valid-joined-premium-membership="false" data-my-self="true" data-my-funding-all-count="0" data-signature-cnt="0" data-follower-cnt="0" data-following-cnt="0" data-target-enc-user-id="" data-target-user-id="6034797" data-introduceme="" data-is-following="false" data-my-interest-user-keyword="">
+						<section class="ProfileCorp">
+							<div class="ProfileCorp_inner">
+								<h3 class="BlindText"></h3>
+								<!-- 프로필 이미지 -->
+								<div aria-hidden="true" class="Avatar">
+									<span class="Avatar_image" style="background-image: url('https://static.wadiz.kr/assets/icon/profile-icon-4.png'); border: 1px solid rgb(221, 226, 230);"></span>
 								</div>
-								<div class="SupporterProfileInfo_supporterInfo__1y5hr">
-									<!-- 익명의 서포터(개인회원) => 회원정보 -->
-									<dl class="SupporterProfileInfo_infoBox__19gDw" aria-label="회원정보">
-										<dt class="BlindText_textHidden__2VTV6">회원 닉네임</dt>
-										<dd class="SupporterProfileInfo_nickname__wbBbS">닉네임</dd>
-										<dt class="BlindText_textHidden__2VTV6">회원유형</dt>
-										<dd class="SupporterProfileInfo_accntTypeName__1yp6P">개인 회원</dd>
+								<!-- 사업자 회원 정보 -->
+								<div class="ProfileCorp_info">
+									<dl class="ProfileInfo_box" aria-label="회원정보">
+										<dt class="BlindText">회원닉네임</dt>
+										<dd class="ProfileInfo_nickname">땅콩이</dd>
+										<dt class="BlindText">회원유형</dt>
+										<dd class="ProfileInfo_type">사업자 회원</dd>
 									</dl>
-									<strong class="BlindText_textHidden__2VTV6">관심 카테고리</strong>
-									<ul class="SupporterProfileInterestKeyword_interestList__2F6Wl"></ul>
-									<dl class="SupporterProfileActivityInfo_infoCountBox__lSxat">
-										<!-- 참여 횟수 => 기부참여 횟수 -->
+									<strong class="BlindText">관심 카테고리</strong>
+									<!-- 가상요소 -->
+									<ul class="ProfileInterestKeyword"></ul>
+									<!-- 카테고리 박스 -->
+									<dl class="ProfileActivityInfo_infoCountBox">
+										<div>
+											<dt>레벨</dt>
+											<dd>
+												0
+												<span class="BlindText"></span>
+											</dd>
+										</div>
 										<div>
 											<dt>기부</dt>
 											<dd>
 												0
-												<span class="BlindText_textHidden__2VTV6">회</span>
+												<span class="BlindText">회</span>
 											</dd>
 										</div>
-										<div></div>
-										<div></div>
-										<div></div>
+										<div>
+											<dt>기부</dt>
+											<dd>
+												0
+												<span class="BlindText">회</span>
+											</dd>
+										</div>
+										<div>
+											<dt>기부</dt>
+											<dd>
+												0
+												<span class="BlindText">회</span>
+											</dd>
+										</div>
 									</dl>
 								</div>
-								<!-- 프로필 편집 버튼 -->
-								<a href="https://www.wadiz.kr/web/wmypage/myprofile/modifyprofile" class="Button_button__2_6-I Button_md__3Z8Cw Button_block__39TGk SupporterProfileInfoCTAButton_button__2aV08">
+								<!-- 프로필 설정 버튼 -->
+								<a href="https://www.wadiz.kr/web/wmypage/myprofile/modifyprofile" class="ProfileSet Mint">
 									<span>
-										<span class="Button_children__weH0H">프로필 편집</span>
+										<span class="ProfileSet_button">배너 신청하기</span>
+									</span>
+								</a>
+								<a href="https://www.wadiz.kr/web/wmypage/myprofile/modifyprofile" class="ProfileSet">
+									<span>
+										<span class="ProfileSet_button">프로필 설정</span>
 									</span>
 								</a>
 							</div>
 						</section>
-						<!-- 참여한, 찜한 list => 기부한 list -->
+						</div>
+						<!-- 참여한 -->
 						<div class="mypage-project bg">
 							<div class="tab-list">
 								<ul role="tablist">
@@ -79,11 +102,45 @@
 								<div id="projectCardList" class="card-list">
 									<p id="emptyProjectText" style="display: block;">공개로 참여한 기부현황이 없습니다.</p>
 									<ul>
+										<li class="reward " data-hiddentype="F" data-campaintype="RWD" data-campaignid="155943" data-campaignhiddenseq="">
+											<div class="visibility-control">
+												<button type="button" class="btn-more"><i class="wadizicon wa-more-vert"></i></button>
+												<button type="button" class="btn-control hide">숨김</button>
+												<button type="button" class="btn-control show">숨김취소</button>
+											</div>
+											<a href="/web/campaign/detail/155943">
+												<div class="project-card">
+													<div class="card-img-section">
+                                  						<em class="project-img" style="background-image:url(https://www.wadiz.kr/wwwwadiz/green001/2023/0126/20230126132509684_155943.jpg)"></em>
+														<em class="project-type reward">펀딩</em>
+														<div class="progressbar-wrap">
+															<dl>
+																<dt>
+																	<span style="width:263%"></span>
+																</dt>
+																<dd>
+																	<span class="percent">263%</span>
+	                                                                <span class="amount">1,316,898원 달성</span>
+																	<span class="days">13일 남음</span>
+																</dd>
+															</dl>
+														</div>
+													</div>
+													<div class="card-info-section">
+														<h4>8,333원 베이비 워시/미국유명육아템 벤치마킹 품질Up! 가격Down!</h4>
+														<h5>주식회사 나실패밀리</h5>
+														<div class="card-category">
+															<span class="category1">베이비·키즈</span>
+															<span class="category2"></span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
 			</div>
 		</div>

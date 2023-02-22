@@ -41,10 +41,6 @@
     src: url(https://static.wadiz.kr/static/web/media/wadizicon.1de1502a.eot#iefix) format("embedded-opentype"),url(https://static.wadiz.kr/static/web/media/wadizicon.f5cdf486.woff2) format("woff2"),url(https://static.wadiz.kr/static/web/media/wadizicon.9eb6b0a9.woff) format("woff"),url(https://static.wadiz.kr/static/web/media/wadizicon.e5379495.ttf) format("truetype"),url(https://static.wadiz.kr/static/web/media/wadizicon.077f5804.svg#wadizicon) format("svg")
 }
 
-:root {
-    --scrollbar-width: 0;
-}
-
 body {
     line-height: 1.33;
     font-family: Noto Sans KR !important;
@@ -60,24 +56,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-body, body button, body input, body select, body textarea {
-    font-family: roboto,Noto Sans KR,-apple-system,dotum,sans-serif;
-}
-
-body, html {
-    -webkit-text-size-adjust: none;
-}
-
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-    font-family: Roboto, 'Noto Sans KR', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
 a, address, article, aside, audio, b, body, button, canvas, caption, dd, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, img, input, label, legend, li, nav, ol, p, pre, section, small, span, strong, summary, table, tbody, td, th, thead, time, tr, ul, video {
     margin: 0;
@@ -110,6 +88,12 @@ a, a:active, a:hover, a:visited {
     text-decoration: none;
     color: inherit;
 }
+
+button {
+    background: none;
+    color: inherit;
+}
+
 
 .wz.container, body a {
     color: rgba(0,0,0,.84);
@@ -469,11 +453,125 @@ label.wz.checkbox>span:after {
     -webkit-font-smoothing: antialiased;
 }
 
+.wz.input>input, .wz.input>textarea {
+    transition-property: border-color,height,padding-right,color;
+    transition-duration: .2s,0s;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.15);
+    background: #fff;
+    padding: 0 0.94118em;
+    width: 100%;
+    vertical-align: middle;
+    color: rgba(0,0,0,.84);
+    font-family: roboto,Noto Sans KR,-apple-system,dotum,sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+}
 
+.wz.input>input {
+    height: 48px;
+    line-height: 1.2em;
+    font-size: 17px;
+    font-weight: 300;
+}
 
+.wz.input>input[disabled], .wz.input>input[readonly], .wz.input>textarea[disabled], .wz.input>textarea[readonly] {
+    border-color: rgba(0,0,0,.15);
+    background-color: rgba(0,0,0,.06);
+    cursor: default;
+    pointer-events: none;
+}
 
+.wz.input>input[readonly], .wz.input>textarea[readonly] {
+    color: rgba(0,0,0,.84);
+}
 
+.wz.input.action>input {
+    padding-right: 5.88235em;
+    box-sizing: border-box;
+}
 
+.account-drop .verify-box .user-verify input, .account-drop .verify-box .user-verify-confirm input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wz.input.action>.wz.button, .wz.input.action>button {
+    position: absolute;
+    right: 0;
+    margin: 5px 5px 0 0;
+    outline: none;
+    padding-right: 1.06667em;
+    padding-left: 1.06667em;
+    height: 38px;
+    line-height: 38px;
+    word-break: keep-all;
+    font-size: .88235em;
+}
+
+.account-drop .verify-box .user-verify-confirm form {
+    margin-bottom: 2px;
+    padding-right: 121px;
+}
+
+.account-drop .verify-box .verify-code {
+    position: relative;
+    overflow: hidden;
+}
+
+.account-drop .verify-box .verify-code input {
+    padding-right: 50px;
+}
+
+.account-drop .verify-box .verify-code .timer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 9px;
+    line-height: 52px;
+    color: #557cf2;
+    font-size: 13px;
+}
+
+.wz.button.gray, .wz.button.gray-outline {
+    border-color: #90949c;
+}
+
+.wz.button.gray {
+    background-color: #90949c;
+    color: #fff;
+}
+
+.account-drop hr {
+    margin: 40px -16px 24px;
+    border: 0;
+    border-top: 1px solid #e6eaed;
+}
+
+.account-drop .verify-box .user-verify-confirm em {
+    color: #f66;
+    font-size: 13px;
+}
+
+.wz.button.disabled, .wz.button:disabled {
+    opacity: .45;
+    cursor: default;
+    color: rgba(0,0,0,.7);
+    pointer-events: none;
+}
+
+.wz.button.red, .wz.button.red-outline {
+    border-color: #f66;
+}
+
+.wz.button.red {
+    background-color: #f66;
+    color: #fff;
+}
+
+.wz.button.red.disabled, .wz.button.red:disabled {
+    color: hsla(0,0%,100%,.7);
+}
 
 /* =========================================media============================================== */
 @media screen and (min-width: 732px){

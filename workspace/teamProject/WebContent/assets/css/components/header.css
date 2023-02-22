@@ -255,9 +255,9 @@ svg:not(:root) {
     overflow-clip-margin: content-box;
     overflow: hidden;
 }
-:not(svg) { /* 해당 선택자 제외 적용 */
+/* :not(svg) { 해당 선택자 제외 적용
     transform-origin: 0px 0px;
-}
+} */
 .GNBDesktop_container__3X3Cg { /* 헤더 상단 카테고리 메뉴 - ul태그 */
     display: inline-block;
     position: static;

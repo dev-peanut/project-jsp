@@ -1,19 +1,20 @@
 /* main.jsp */
 HTMLCollection.prototype.forEach = Array.prototype.forEach;
-const banner = document.querySelector("div.banner");
-const imageDiv = document.querySelectorAll("div.banner div");
+const banner = document.querySelector("div.banners");
+const imageDiv = document.querySelectorAll("div.banners div.banner");
 const lastImageDiv = document.createElement("div");
 const firstImageDiv = document.createElement("div");
 const next = document.querySelector("div.next");
 const prev = document.querySelector("div.prev");
 const buttons = document.querySelectorAll(".buttons button");
+const $bannerActive = ${".banner-active"};
+const 
+
 /*const bannerWidth = $('body').innerWidth();*/
 let checkArrow = false;
 let count = 1;
 let auto = setInterval(autoSlide, 2000);
 let temp = buttons[0];
-
-console.log(`${pageContext.request.contextPath}`);
 
 HTMLCollection.prototype.forEach = Array.prototype.forEach;
 buttons.forEach(button => {
@@ -27,13 +28,12 @@ buttons.forEach(button => {
     });
 });
 
-imageDiv.forEach((div, i) => div.style.backgroundImage = `url(${pageContext.request.contextPath}/images/main/00${i+1}.jpg`)
+imageDiv.forEach((div, i) => div.style.backgroundImage = `url(/images/main/00${i+1}.jpg)`);
 
 banner.appendChild(lastImageDiv);
-lastImageDiv.style.backgroundImage = `url(${pageContext.request.contextPath}/images/main/001.jpg)`;
 
-banner.insertBefore(firstImageDiv, document.querySelector("div.banner div"));
-firstImageDiv.style.backgroundImage = `url(${pageContext.request.contextPath}/images/main/00${imageDiv.length}.jpg)`
+banner.insertBefore(firstImageDiv, document.querySelector("div.banners div.banner"));
+firstImageDiv.style.backgroundImage = `url(/images/main/00${imageDiv.length}.jpg)`
 
 banner.style.transform = `translate(-100vw)`;
 

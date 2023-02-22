@@ -269,8 +269,12 @@ em{
     color: #495057;
 }
 
-.story-img {
-  background-image: url("../../assets/img/notebook.jpg");
+.printphoto {
+    display: table-cell;
+    width: 670px;
+    height: 500px;
+    background: no-repeat center center #ddd;
+    background-size: cover;
 }
 
 body ul{
@@ -281,29 +285,6 @@ body ul{
     padding: 0;
 }
 
-
-
-
-/* 페이징 */
-.wcommunity-page-list { 
-    width: 100%;
-}
-
-.wcommunity-page-list ul {
-    text-align: center;
-    padding: 30px 0 10px;
-}
-
-.wcommunity-page-list ul li {
-    display: inline-block;
-}
-
-.wcommunity-page-list ul li button {
-    padding: 0 10px;
-    font-size: 14px;
-    background: none;
-    border: none;
-}
 
 /* 우측 사이드바 시작 */
 .wcommunity-search-area {
@@ -429,9 +410,11 @@ ol{
     font-weight: 400;
 }
 
-.wcommunity-best-list detail{
-	
+.wcommunity-best-list {
+    padding: 20px 0;
+    border-top: 1px solid #3B5998;
 }
+
 
 
 .btn-db-blue, a.btn-db-blue, button.btn-db-blue {
@@ -452,7 +435,194 @@ ol{
 .btn-wrap{
 	font-family: Roboto, "Noto Sans KR", sans-serif !important;
 }
-	
+
+/* 댓글 부분 */
+.wcommunity-comment-wrap {
+    padding-bottom: 30px;
+}
+
+.wcommunity-comment{
+	    padding: 20px 10px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.wcommunity-comment .comment-num {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.wcommunity-comment .comment-num em {
+    color: #3B5998;
+}
+
+.wcommunity-comment .main-comment {
+    padding-bottom: 20px;
+}
+
+#commentcnt{
+	overflow-y: hidden;
+    height: 78px;
+    resize: none;
+}
+
+.wcommunity-comment .main-comment textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 18px;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    box-sizing: border-box !important;
+}
+
+.wcommunity-comment-wrap .btn-wrap {
+    text-align: right; /* center -> 간격 조정 위해 바꿈 */
+}
+
+.btn-pd-blue, a.btn-pd-blue, button.btn-pd-blue {
+    display: inline-block;
+    padding: 0 12px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 14px;
+    background: #3B5998;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+ul{
+	box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style: none;
+}
+
+.top{
+	display: list-item;
+}
+
+.wcommunity-comment .comment-wrap {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+}
+
+.wcommunity-comment .comment-wrap .comment-info {
+    position: relative;
+    margin-bottom: 10px;
+    height: 35px;
+}
+
+.wcommunity-comment .comment-wrap .comment-info .name {
+    display: inline-block;
+    vertical-align: middle;
+    height: 35px;
+    line-height: 35px;
+    font-size: 13px;
+}
+
+.wcommunity-comment .comment-wrap .comment-content {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.wcommunity-comment .comment-wrap .comment-bottom button {
+    padding: 0 5px;
+    font-size: 12px;
+    vertical-align: middle;
+    line-height: 12px;
+    color: #3B5998;
+    background: none;
+    border: none;
+}
+
+.wcommunity-comment .comment-wrap.edit {
+    margin-top: 0;
+    display: none;
+    border-top: none;
+}
+
+.wcommunity-comment .comment-wrap.reply {
+    padding-left: 50px;
+}
+
+.wcommunity-comment .comment-wrap {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+}
+
+.wcommunity-comment .comment-wrap .comment-info {
+    position: relative;
+    margin-bottom: 10px;
+    height: 35px;
+}
+
+
+.wcommunity-other-story{
+    padding: 30px 0;
+    border-top: 1px solid #3B5998;
+}
+
+.wcommunity-other-story h4 {
+    padding: 0 10px;
+}
+
+.wcommunity-wrap h4 em {
+    color: #3B5998;
+}
+
+.wcommunity-webzine-list ul {
+    border-top: 1px solid rgba(0,0,0,.06);
+    list-style: none;
+}
+
+.wcommunity-webzine-list .wcommunity-story {
+    height: auto;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+.wcommunity-story{
+	    background: #fff;
+}
+
+.wcommunity-webzine-list .wcommunity-story .story-info {
+    float: left;
+}
+
+.wcommunity-webzine-list .wcommunity-story .img-wrap {
+    float: right;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.story-img{
+	background-image: url(https://cdn.wadiz.kr/ft/images/green001/2022/0624/20220624111515429_53.jpg/wadiz/resize/604/format/jpg/quality/80/optimize);
+}
+
+.wcommunity-other-story .btn-wrap {
+    padding-top: 30px;
+    text-align: center;
+}	
+
+
+
 /* 미디어 쿼리 */
 @media screen and (min-width: 960px){
 .wcommunity-top .wcommunity-topmenu {
@@ -497,6 +667,14 @@ ol{
 }
 
 @media screen and (min-width: 960px){
+.wcommunity-section1 {
+    float: left;
+    padding: 0;
+    width: 670px;
+}
+}
+
+@media screen and (min-width: 960px){
 .wcommunity-section2 {
     float: right;
     width: 290px;
@@ -530,5 +708,94 @@ ol{
     display: block;
 }
 }
+@media screen and (min-width: 960px){
+.wcommunity-best-list.detail {
+    display: block;
+}
+}
 
+@media screen and (min-width: 960px){
+.wcommunity-content-wrap:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+}
 
+@media screen and (min-width: 960px){
+.wcommunity-detail-bottom {
+    width: 960px;
+    margin: 0 auto;
+}
+}
+
+@media screen and (min-width: 960px){
+.wcommunity-comment-wrap {
+    width: 650px;
+}
+}
+
+@media screen and (min-width: 960px){
+.wcommunity-other-story {
+    width: 650px;
+}
+}
+
+@media screen and (min-width: 960px){
+.wcommunity-webzine-list ul {
+    width: 630px;
+}
+}
+
+@media screen and (min-width: 960px){
+.wcommunity-webzine-list .wcommunity-story {
+    position: relative;
+    padding: 0;
+}
+}
+
+@media screen and (min-width: 960px){
+.wcommunity-webzine-list .wcommunity-story .story-info {
+    width: 430px;
+    height: auto;
+    padding: 15px 0 15px 15px;
+}
+}
+
+@media screen and (min-width: 960px){
+.wcommunity-webzine-list .wcommunity-story .story-info p.summary {
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #7c8288;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+}
+
+@media screen and (min-width: 960px){
+.wcommunity-webzine-list .wcommunity-story .img-wrap {
+    width: 156px;
+}
+}
+
+@media screen and (min-width: 960px){
+.wcommunity-webzine-list .wcommunity-story .img-wrap .story-img {
+    width: 100%;
+    height: 108px;
+    background: no-repeat center center #ddd;
+    background-size: cover;
+}
+}
+
+@media screen and (min-width: 960px){
+.wcommunity-webzine-list .wcommunity-story:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+}

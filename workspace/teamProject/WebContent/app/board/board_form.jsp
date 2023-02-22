@@ -48,6 +48,15 @@
                                         <a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa_select" href="/studio/reward/191893/funding/plan">식품 기부</a>
                                     </li>
                                     <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa" href="/studio/reward/191893/funding/screening">가전제품 기부</a></li>
+                                 <!--    <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa_select" href="/studio/reward/191893/funding/baseinfo">기본 정보</a></li>
+                                    <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa" href="/studio/reward/191893/funding/story" aria-current="page">스토리 작성</a>
+                                    </li>
+                                    <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa" href="/studio/reward/191893/funding/condition">리워드 설계</a></li>
+                                    <li>
+                                        <a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa" href="/studio/reward/191893/funding/policy">정책</a>
+                                    </li>
+                                    <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa" href="/studio/reward/191893/funding/makerInfo">메이커 정보</a></li>
+                                    <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa"href="/studio/reward/191893/funding/contractInfo">대표자 및 정산 정보</a></li> -->
                                 </ul>
                             </li>
                         </ul>
@@ -79,25 +88,90 @@
                                         <div class="AnnouncementButton_container__1p1gr" role="button"></div>
                                         <img class="AnnouncementButton_icon__29AtY" src="https://static.wadiz.kr/studio/funding/static/media/announcement.56f4b8e3.svg" alt="" aria-hidden="true">
                                         <span class="Badge_container__3mdFR_AnnouncementButton_badge__2Jq25"></span>
+                                        <div class="AnnouncementPopover_container__51hBA">
+                                            <div class="AnnouncementList_container__3Y83C_AnnouncementPopover_list__2F5OR">
+                                                <h2 class="AnnouncementList_title__3ydqj">안내</h2>
+                                                <ul class="AnnouncementList_list__SiNbg">
+                                                    <li class="AnnouncementListItem_container__1RcK9">
+                                                        <div class="AnnouncementListItem_badgeArea__1SUhX">
+                                                            <span class="Badge_container__3mdFR_Badge_visible__2c54z">
+                                                                <span class="Badge_badge__zKi0D_Badge_label__2iNzD_Badge_md__YzReR Badge_info__MW_1H_Badge_tertiary__-ciUe">중요</span></span>
+                                                        </div>
+                                                    <li class="AnnouncementListItem_container__1RcK9">
+                                                        <div class="AnnouncementListItem_badgeArea__1SUhX"></div>
+                                                        <div class="AnnouncementListItem_content__JdK0M">
+                                                            <div class="AnnouncementListItem_info__3TWyQ">
+                                                                <div class="AnnouncementListItem_header__72g1V">정책</div>
+                                                                <div class="AnnouncementListItem_registeredDate__3QNjz">12월 2일</div>
+                                                            </div>
+                             
+                                                            <div class="AnnouncementListItem_title__3s-2e">펀딩 요금제 수수료 개편 안내 </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="AnnouncementListItem_container__1RcK9">
+                                                        <div class="AnnouncementListItem_badgeArea__1SUhX"></div>
+                                                        <div class="AnnouncementListItem_content__JdK0M">
+                                                            <div class="AnnouncementListItem_info__3TWyQ">
+                                                                <div class="AnnouncementListItem_header__72g1V">서비스
+                                                                </div>
+                                                                <div class="AnnouncementListItem_registeredDate__3QNjz">
+                                                                    11월 4일</div>
+                                                            </div>
+                                                            <div class="AnnouncementListItem_title__3s-2e">앵콜/글로벌 펀딩의 [프리오더] 노출</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="AnnouncementListItem_container__1RcK9">
+                                                        <div class="AnnouncementListItem_badgeArea__1SUhX"></div>
+                                                        <div class="AnnouncementListItem_content__JdK0M">
+                                                            <div class="AnnouncementListItem_info__3TWyQ">
+                                                                <div class="AnnouncementListItem_header__72g1V">정책</div>
+                                                                <div class="AnnouncementListItem_registeredDate__3QNjz"> 10월 18일</div>
+                                                            </div>
+                                                            <div class="AnnouncementListItem_title__3s-2e">개인 후원 펀딩 정책 개정 안내</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="AnnouncementListItem_container__1RcK9">
+                                                        <div class="AnnouncementListItem_badgeArea__1SUhX"></div>
+                                                        <div class="AnnouncementListItem_content__JdK0M">
+                                                            <div class="AnnouncementListItem_info__3TWyQ">
+                                                                <div class="AnnouncementListItem_header__72g1V">서비스
+                                                                </div>
+                                                                <div class="AnnouncementListItem_registeredDate__3QNjz">8월 30일</div>
+                                                            </div>
+                                                            <div class="AnnouncementListItem_title__3s-2e">리워드 옵션 단위 제한 수량 설정</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="AnnouncementListItem_container__1RcK9">
+                                                        <div class="AnnouncementListItem_badgeArea__1SUhX"></div>
+                                                        <div class="AnnouncementListItem_content__JdK0M">
+                                                            <div class="AnnouncementListItem_info__3TWyQ">
+                                                                <div class="AnnouncementListItem_header__72g1V">정책</div>
+                                                                <div class="AnnouncementListItem_registeredDate__3QNjz">5월 18일</div>
+                                                            </div>
+                                                            <div class="AnnouncementListItem_title__3s-2e">글로벌 펀딩 프로젝트 정책 개정 안내</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="AnnouncementDetailDrawer_container__3upVM AnnouncementPopover_drawer__2SiY_">
+                                                    <div class="AnnouncementDetailDrawer_buttonGroup__3uOYT">
+                                                        <button class="AnnouncementDetailDrawer_backButton__29Lhc" type="button">
+                                                            <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon__3lrgp AnnouncementDetailDrawer_icon__1Uxof" aria-hidden="true" style="width: 24px; height: 24px;">
+                                                                <path d="M12 20L25 7l1.4 1.4L14.8 20l11.6 11.6L25 33 12 20z">
+                                                                </path>
+                                                            </svg></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div> 
  								<button class="exit_button" type="button"><span>
                                 <span class="exit_span">나가기</span></span></button>
                                 </div>
                         </div>
-                        </nav> 
+                        </nav>
+
 
                         <div class="HeaderLayout_container__3fXkO">
-                        <!-- 가이드 이미지 <div class="HeaderLayout_guideWrapper__WXeX-">
-                                <div class="FundingLinkGuide_container__3eQXb">
-                                    <button class="FundingLinkGuide_link__3D_Pv_FundingLinkGuide_webLink__3jiMO"
-                                        type="button">
-                                        <div class="FundingLinkGuide_point__3TI2H">
-                                            <img src="https://static.wadiz.kr/studio/funding/static/media/guide_point.0910c96a.svg"
-                                                alt="포인트 이미지">
-                                        </div>
-                                    </button>
-                                </div>
-                            </div> -->
                             <div class="HeaderLayout_contents__F4hlC">
                                 <h2 class="FundingStoryContainer_title__1r0ZE">식품 기부하기</h2>
                                 <p class="FundingStoryContainer_description__1sMTR">사랑을 나누는 일은 결코 힘들거나 어려운 일이 아닙니다.</p>
@@ -147,7 +221,8 @@
                                     </div>
                                 </div>
                             </section> 
-							<section class="Section_container__3md8M">
+                            
+                                  <section class="Section_container__3md8M">
                                 <div style="max-width: 600px;">
                                     <div class="Section_header__1qwS7">
                                         <h2 class="Section_title__ikPIm_Section_isRequired__F8rij">픽업 날짜</h2>
@@ -167,8 +242,9 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </section>
-                        <form class="wz_form_FundingStoryFormContainer_form__326Zc_Form_form__3ASTU">
+                            <form class="wz_form_FundingStoryFormContainer_form__326Zc_Form_form__3ASTU">
                             <div class="Loader_loader__d9YUC_Form_loader__1YJ5I"></div>
                             <section class="Section_container__3md8M">
                                 <div style="max-width: 600px;">
@@ -187,14 +263,16 @@
 															<i class="icon-camera-o" aria-hidden="true"></i>등록하기</button>
                                                         <div class="wz_input_right_ImageFileButton_input__1Dnch">
                                                             <input accept="image/JPG,image/JPEG,image/GIF,image/PNG" name="uploadFile" placeholder="" type="file" value="">
-                                                        </div></label>
+                                                        </div>
+                                                    </label>
                                                     <em class="helper error"></em><em class="helper_ImageFormField_helper__3XC5c">2MB 이하의 JPG, JPEG, GIF, PNG 파일</em>
+<!--                                                     <em class="helper_ImageFormField_helper__3XC5c">해상도 630x400 픽셀 이상</em>
+                                                    <em class="helper_ImageFormField_helper__3XC5c">여러 장 등록돼요.</em> -->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
                         </form></div>
                     </div>
                 </div>

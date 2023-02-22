@@ -145,7 +145,7 @@
 			</div>
 		</div>
 		<!-- footer -->
-		<jsp:include page="../components/footer.jsp"></jsp:include>
+<%-- 		<jsp:include page="../components/footer.jsp"></jsp:include> --%>
 	</div>
 </body>
 </html>

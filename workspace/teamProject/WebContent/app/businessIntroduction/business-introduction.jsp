@@ -271,5 +271,6 @@
             </button>
         </div>
     </main>
+    <jsp:include page="../component/footer.jsp"></jsp:include>
 </body>
 </html>

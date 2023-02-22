@@ -25,25 +25,54 @@ section.container {
     overflow: hidden;
 }
 
-div.banner {
+div.buttons {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 5px;
+}
+
+div.buttons button {
+    background: white;
+}
+
+div.buttons button:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+div.banners {
     width: 800vw;/* calc(100vw - (100vw - 100%))*8; */ /* (배너 개수(6) + 앞,뒤(2)) * 배너 이미지 크기(2543) */
     transition: transform 0.3s;
+    position: relative;
     /* transform: translate(-90vw); */
 }
 
-div.banner div {
+div.banners div.banner {
     width: 100vw; /* calc(100vw - (100vw - 100%)); */
-    height: 41vh;
+    height: 40vh;
     float: left;
-    background-size: 100%;
+    background: no-repeat 50% / cover;
+    position: relative;
+}
+
+div.banners div.banner:before { /* 배너명암 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.08),rgba(0,0,0,.64));
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: 1;
 }
 
 div.move-arrow {
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
     display: flex;
     position: absolute;
-    right: 120px;
+    right: 170px;
     bottom: 30px;
     width: 80px;
     height: 40px;
@@ -56,12 +85,13 @@ div.move-arrow div {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 
 div.prev-icon:before {
     content: "";
     display: inline-block;
-    margin-top: -0.2em;
+    /* margin-top: -0.2em; */
     vertical-align: middle;
     text-transform: none;
     line-height: 1;
@@ -74,11 +104,131 @@ div.prev-icon:before {
     speak: none;
     color: #ffffff80;
     font-size: 24px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+div.next-icon:before {
+    content: "";
+    display: inline-block;
+    /* margin-top: -0.2em; */
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: wadizicon!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    speak: none;
+    color: #ffffff80;
+    font-size: 24px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+.banner-text-inner-wrapper{
+	display: block;
+	z-index: 3;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box!important;
+}
+.banner-text-inner-wrapper {
+	position: absolute;
+	left: 120px;
+}
+.banner-text-inner-wrapper {
+	display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box!important;
+    margin-left: 80px;
 }
 
-div.next-icon {
-	background-image: url('image/next.png');
+@media screend and (min-width: 1097px) {
+	.banner-text-inner-wrapper{
+	    padding: 40px 0 45px;
+	}
 }
+@media screend and (min-width: 769px) {
+	.banner-text-inner-wrapper{
+	    padding: 44px 44px 45px;
+	}
+}
+
+
+
+.banner-text-title {
+	display: block;
+	z-index: 3;
+    margin-bottom: 8px;
+    width: 280px;
+    line-height: 28px;
+    word-break: break-all;
+    letter-spacing: -.7px;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 769px) {
+	.banner-text-title {
+	    width: 460px;
+	    line-height: 40px;
+	    font-size: 32px;
+	    font-weight: 700;
+	}
+}
+
+.banner-text-badge {
+	z-index: 3;
+	line-height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 4px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.banner-total { /* 배너 총 퍼센트 (퍼센티지), 배너 바 총 */
+    position: absolute;
+    background: rgba(255,255,255,.3);
+    height: 2px;
+    bottom: 8px;
+    left: 16px;
+    z-index: 2;
+    box-sizing: border-box!important;
+}
+
+@media screen and (min-width: 1097px) {
+    .banner-total {
+        bottom: 20px;
+        left: 80px;
+        width: 375px;
+    }
+}
+@media screen and (min-width: 769px) {
+    .banner-total {
+        bottom: 20px;
+        left: 44px;
+    }
+}
+
+.banner-active { /* 배너 현재 퍼센트, 배너 바 현재 */
+    transition: width .3s;
+    background: #fff;
+    height: 100%;
+}
+
+
+
 
 div.buttons {
     position: absolute;
@@ -138,9 +288,9 @@ body a {
     text-decoration: none;
 }
 
-:not(svg) {
+/* :not(svg) {
     transform-origin: 0px 0px;
-}
+} */
 
 svg:not(:root) {
     overflow-clip-margin: content-box;
@@ -526,8 +676,9 @@ svg:not(:root) {
     opacity: 1;
 }
 
+
 /* ============================================== */
-/* contents-wrapper */
+/* contents-wrapper 시작 */
 #contents-wrapper {
     margin: 0 -12px;
     padding: 0;
@@ -542,7 +693,7 @@ svg:not(:root) {
 
 .content-wrapper {
     padding: 0 12px 24px;
-    width: 25%;
+    width: calc(100% / 5);
     float: left;
     box-sizing: border-box!important;
     margin: 0;
@@ -550,6 +701,10 @@ svg:not(:root) {
     text-align: center;
     color: #44484b;
 }
+
+/* .content-wrapper:not(:first-child) {
+	margin-left: 10px;
+} */
 
 .content {
     width: 222px;
@@ -609,7 +764,7 @@ svg:not(:root) {
 
 
 .text-box {
-    padding: 17px 17px 0;
+    /* padding: 17px 17px 0; */
     height: 136px;
     border-top: 0;
     background: #fff;
@@ -622,14 +777,15 @@ svg:not(:root) {
 }
 
 .text-top {
-    margin: 0 0 12px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
     display: -webkit-box;
+    margin-top: 8px;
     height: 40px;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 20px;
-    font-size: 15px;
-    font-weight: 500;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     padding: 0;
@@ -666,8 +822,33 @@ li{
     padding: 0;
 }
 
-em{
-    color: #34383a;
+.ul-lists:first-child {
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: Roboto,Noto Sans KR,sans-serif;
+    margin-top: 6px;
+}
+
+.ul-lists:nth-child(2) div{
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    left: 3px;
+}
+
+.star{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0idHJhbnNwYXJlbnQiIGQ9Ik0wIDBoMzJ2MzJIMHoiLz4KICAgICAgICA8cGF0aCBkPSJNMCAwaDMydjMySDB6Ii8+CiAgICAgICAgPHBhdGggZD0ibTE2IDI2Ljk5NC03LjYyIDQuNzFjLS45MzguNTgtMi4xNjQuMjgtMi43MzgtLjY2OS0uMjc0LS40NTQtLjM1OC0xLS4yMzctMS41MTlsMi4wNzEtOC43OS02Ljc4LTUuODc4YTIuMDMzIDIuMDMzIDAgMCAxLS4yMTctMi44NDIgMS45ODggMS45ODggMCAwIDEgMS4zNTUtLjY5OWw4Ljg5OC0uNzIxIDMuNDI5LTguMzQ1YTEuOTg0IDEuOTg0IDAgMCAxIDMuNjc4LjAwMWwzLjQyOCA4LjM0NCA4LjkuNzIxYTIuMDEgMi4wMSAwIDAgMSAxLjgyNyAyLjE3MSAyLjAyNSAyLjAyNSAwIDAgMS0uNjkgMS4zN2wtNi43ODEgNS44NzggMi4wNzIgOC43OWEyLjAxOCAyLjAxOCAwIDAgMS0xLjQ3NSAyLjQzIDEuOTczIDEuOTczIDAgMCAxLTEuNS0uMjQzTDE2IDI2Ljk5M3oiIGZpbGw9IiNGRkJFMUEiIGZpbGwtcnVsZT0ibm9uemVybyIvPgogICAgPC9nPgo8L3N2Zz4K);
+    background-size: contain;
+}
+
+.ul-lists:first-child em{
     font-style: normal;
     margin: 0;
     border: 0;
@@ -676,16 +857,40 @@ em{
     font: inherit;
     box-sizing: border-box;
     white-space: nowrap;
+
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #00b2b2;
+    margin-right: 2px;
+}
+
+.ul-lists:nth-child(2) em{
+    font-style: normal;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font: inherit;
+    box-sizing: border-box;
+    white-space: nowrap;
+
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 3px;
+    color: #495057;
+}
+
+.Main_wrap_2 .Main_inner_wrap_2 { /* 기존 flex에서 -> block으로 변경 */
+    display: block;
+    height: 25vw;
 }
 
 /* contents-wrapper 끝*/
 /* ============================================== */
-
-.Main_wrap_2 .Main_inner_wrap_2 { /*  */
-    display: block;
-    height: 800px;
-}
-
 
 @media screen and (min-width: 1097px) {
     .recommendation-section-inner-container-title {
@@ -715,7 +920,7 @@ em{
 @media screen and (min-width: 1097px) {
     .recommendation-card {
         float: left;
-        margin: 0 32px 16px 0;
+        margin: 0 20px 16px 0;
         width: calc(33.333% - 21.333px);
     }
 }

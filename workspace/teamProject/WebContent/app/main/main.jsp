@@ -26,7 +26,6 @@
 			            <div></div>
 			            <div></div>
 			        </div>
-			
 			        <div class="move-arrow">
 			            <!-- 이전 버튼 -->
 			            <div class="prev">

@@ -30,77 +30,78 @@
 				<li><details>
 						<summary class="nav-menu">
 							<h2 class="menu__title">회원</h2>
-							<img src="${pageContext.request.contextPath}/assets/img/dropdown.png" alt="icon"
-								class="menu__icon--drop-down" />
+							<img
+								src="${pageContext.request.contextPath}/assets/img/dropdown.png"
+								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
-							<li class="submenu__item"><a href="${pageContext.request.contextPath}/admin/user.admin">
-<!-- 							<li class="submenu__item"><a href="./user.html"> -->
-									<h3>회원정보</h3>
+							<li class="submenu__item"><a
+								href="${pageContext.request.contextPath}/admin/user.admin">
+									<!-- 							<li class="submenu__item"><a href="./user.html"> -->
+									<span id="sidelist">회원정보</span>
 							</a></li>
 							<!-- <li class="submenu__item"><a href="./user.html"> -->
-							<li class="submenu__item"><a href="${pageContext.request.contextPath}/admin/user.admin">
-									<h3>탈퇴회원</h3>
-							</a></li>
+							<%-- <li class="submenu__item"><a href="${pageContext.request.contextPath}/admin/user.admin">
+									<span id="sidelist">탈퇴회원</span>
+							</a></li> --%>
 						</ul>
 					</details></li>
 				<li><details>
 						<summary class="nav-menu">
 							<h2 class="menu__title">게시판</h2>
-							<img src="${pageContext.request.contextPath}/assets/img/dropdown.png" alt="icon"
-								class="menu__icon--drop-down" />
+							<img
+								src="${pageContext.request.contextPath}/assets/img/dropdown.png"
+								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
-							<a href="${pageContext.request.contextPath}/admin/guide.admin">	
-								<h3>
+							<a href="${pageContext.request.contextPath}/admin/guide.admin">
+								<span id="sidelist">
 									<li class="submenu__item">게시판 관리</li>
-								</h3>
+							</span>
 							</a>
-							
+
 						</ul>
 					</details></li>
 				<li><details>
 						<summary class="nav-menu">
-							<h2 class="menu__title">배너 및 홍보</h2>
-							<img src="${pageContext.request.contextPath}/assets/img/dropdown.png" alt="icon"
-								class="menu__icon--drop-down" />
+							<h2 class="menu__title">배너</h2>
+							<img
+								src="${pageContext.request.contextPath}/assets/img/dropdown.png"
+								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
-							<a href="./support.html">
-								<h3>
-									<li class="submenu__item">배너 관리</li>
-								</h3>
+							<a href="http://localhost:8090/teamProject/app/admin/banner.jsp"> <span id="sidelist">
+									<li class="submenu__item">배너 목록</li>
+							</span>
 							</a>
-							<a href="./support.html">
-								<h3>
-									<li class="submenu__item">홍보 관리</li>
-								</h3>
+							<a href=""> <span id="sidelist">
+									<li class="submenu__item">홍보 목록</li>
+							</span>
 							</a>
-							<a href="./support.html">
-								<h3>
+							<a href=""> <span id="sidelist">
 									<li class="submenu__item">결제</li>
-								</h3>
+							</span>
 							</a>
 						</ul>
 					</details></li>
 				<li><details>
 						<summary class="nav-menu">
 							<h2 class="menu__title">기부</h2>
-							<img src="${pageContext.request.contextPath}/assets/img/dropdown.png" alt="icon"
-								class="menu__icon--drop-down" />
+							<img
+								src="${pageContext.request.contextPath}/assets/img/dropdown.png"
+								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
-							<a href="./notice.html">
-								<h3>
+							<a href="./notice.html"> <span id="sidelist">
 									<li class="submenu__item">기부 관리</li>
-								</h3>
+							</span>
 							</a>
 						</ul>
 					</details></li>
-				 	<li><details>
+				<%-- <li><details>
 						<summary class="nav-menu">
 							<h2 class="menu__title">필요한것 추가하기</h2>
-							<img src="${pageContext.request.contextPath}/assets/img/dropdown.png" alt="icon"
+							<img src="${pageContext.request.contextPath}/assets/img/admin/icon/dropdown.png" alt="icon"
 								class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
@@ -116,7 +117,7 @@
 								</h3>
 							</a>
 						</ul>
-					</details></li>
+					</details></li> --%>
 			</ul>
 		</nav>
 	</aside>

@@ -25,9 +25,9 @@
                 class="Button_button__1e2A2 Button_primary__PxOJr Button_md__1FRMG Button_circular__3NpOv"
                 type="button"
               >
-                <span>
+                <!-- <span>
                   <span class="Button_children__q9VCZ">현재날짜 2023-02-18</span>
-                </span>
+                </span> -->
               </button>
             </div>
             <div class="AnnouncementButton_container__1p1gr" role="button">홈페이지</div>

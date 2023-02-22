@@ -1,5 +1,9 @@
-@charset "UTF-8";@charset "UTF-8";
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap');
+
 body {
+   font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -8,12 +12,13 @@ body {
 
 /* Sidebar Console */
 .sidebar {
+  font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
   position: fixed;
   width: 16vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #b9baba; 
+  background-color: #fff; 
   color: #ffffff;
   overflow-y: auto;
 }
@@ -59,7 +64,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   text-align: center;
-  background-image: linear-gradient(118deg,#d0d0d0,#4f595b);
+  background-image: linear-gradient(118deg,#81ed93,#71e2f5);
 }
 
 .sidebar > nav {
@@ -82,7 +87,7 @@ nav > ul > li:first-child {
 .nav-menu:hover,
 .submenu__item:hover,
 .user-info:hover {
-  background-color: #434343;
+  background-color: #c0d0c33b;
 }
 
 .nav-menu {
@@ -93,8 +98,8 @@ nav > ul > li:first-child {
   height: 100%;
   padding: 0 1.5rem 0 2rem;
   line-height: 3rem;
-  background-color: #8f8f8f;
-  color: #fff;
+  background-color: #fff;
+  color: #00a2a2;
 }
 
 .nav-menu > a {
@@ -125,21 +130,24 @@ nav > ul > li:first-child {
 .submenu__item {
   padding-left: 4.3em;
   line-height: 2.4rem;
-  background-color: #b9baba;
-  color: #ffffff;
+  background-color: #e5ebe829;
+  color: #000;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .menu--current {
- background-color: #8f8f8f;
+ background-color: #fff;
     font-weight: 700;
-    color: #fff;
+    color: #00a2a2;
 }
 
 .menu--current:hover {
-  background-color: #000;
+  background-color: #c0d0c33b;
+}
+#sidelist{
+	font-size: 14px;
 }
 
 .user-info {
@@ -184,6 +192,11 @@ nav > ul > li:first-child {
   color: #fff;
 }
 
+h4 {
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-weight: 15px;
+    line-height: inherit;
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 }
 
@@ -195,3 +208,4 @@ nav > ul > li:first-child {
     display: none;
   }
 }
+

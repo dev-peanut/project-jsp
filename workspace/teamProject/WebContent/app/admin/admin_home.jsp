@@ -59,13 +59,13 @@
 			</div>
 		</article>
 		<article class="module module--todo-today">
-			<p class="module__title">게시글 현황</p>
+			<p class="module__title">홍보글 현황</p>
 			<div class="mBoardList notice">
 				<ul>
 					<li><a data-gtm="DATA_notice_contents" href="#none"> <strong>[공지사항]
 								이용 주의사항</strong></a> <span class="date">2023-01-31</span></li>
 					<li><a data-gtm="DATA_notice_contents" href="#none">
-							[홍보게시판] 자바의신 윤민우가 추천하는 따즈아 강의!</a> <span class="date">2023-02-21</span>
+							[홍보게시판] 자바의 신 윤민우가 추천하는 따즈아 강의!</a> <span class="date">2023-02-21</span>
 					</li>
 					<li><a data-gtm="DATA_notice_contents" href="#none">
 							[홍보게시판] 김세윤이 좋아하는 부어치킨 8000원에서 7000원으로 할인중!! </a> <span class="date">2023-02-21</span>

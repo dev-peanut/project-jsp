@@ -123,37 +123,44 @@
                                     <input name="identification" placeholder="아이디 입력" type="text" class="email-field">
                                 </div>
                             </div><!-- email-field-input-continer -->
-                            <p class="identification-error"></p>
+                            <em class="identification-error error-message">아이디를 입력해주세요.</em>
                         </div><!-- email-field -->
                         <!-- 한줄 복사 -->
                         <div class="password-field"><label>비밀번호</label><!-- 비밀번호 -->
-                        <div class="password-field-text">
-                            <input name="password" placeholder="비밀번호 입력" type="password"
-                                class="input-password-container" id="password-input" aria-invalid="false">
-                            <button aria-label="비밀번호 보기" class="Button_TextField_icon" type="button">
-                                <span class="eye" id="eye1">
-	                                <span class="Button_children_pw">
-	                                </span>
-                                </span>
-                            </button>
+                            <div class="password-field-text">
+                                <input name="password" placeholder="비밀번호 입력" type="password"
+                                    class="input-password-container" id="password-input" aria-invalid="false">
+                                <button aria-label="비밀번호 보기" class="Button_TextField_icon" type="button">
+                                    <span class="eye" id="eye1">
+                                        <span class="Button_children_pw">
+                                            <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__1YH1P" aria-hidden="true">
+                                                <path d="M23.589 7.895l.411.001c10.56 0 20.16 6.504 23.34 15.78l.132.432-.144.396c-3.216 9.168-12.816 15.6-23.328 15.6A24.84 24.84 0 0 1 .684 24.492l-.168-.432.156-.42A24.804 24.804 0 0 1 24 7.896zM24 14.46a9.6 9.6 0 1 0 0 19.2 9.6 9.6 0 0 0 0-19.2zm0 4.14a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8z"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- password 1  -->
+                        <em class="password-error error-message">비밀번호를 입력해주세요.</em>
+                        <!-- password 1  -->
 
-                    <div class="recheck-password"><label></label>
-                        <div class="TextField_field__1B2AH">
-                            <input name="verifyPassword" placeholder="비밀번호 확인" type="password"
-                                class="re-input-password-container" aria-invalid="false">
-                            <button aria-label="비밀번호 보기" class="Button_TextField_icon" id="eye-wrapper" type="button">
-                               <span class="eye">
-	                                <span class="Button_children">
-	                                </span>
-                                </span>
-                           	</button>
+                        <div class="recheck-password"><label></label>
+                            <div class="TextField_field__1B2AH">
+                                <input name="verifyPassword" placeholder="비밀번호 확인" type="password"
+                                    class="re-input-password-container" aria-invalid="false">
+                                <button aria-label="비밀번호 보기" class="Button_TextField_icon" id="eye-wrapper" type="button">
+                                    <span class="eye">
+                                        <span class="Button_children">
+                                            <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__1YH1P" aria-hidden="true">
+                                                <path d="M23.589 7.895l.411.001c10.56 0 20.16 6.504 23.34 15.78l.132.432-.144.396c-3.216 9.168-12.816 15.6-23.328 15.6A24.84 24.84 0 0 1 .684 24.492l-.168-.432.156-.42A24.804 24.804 0 0 1 24 7.896zM24 14.46a9.6 9.6 0 1 0 0 19.2 9.6 9.6 0 0 0 0-19.2zm0 4.14a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8z"></path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </button>
+                            </div>
                         </div>
-                    </div>
                         <!-- test -->
-                        
+                        <em class="recheck-password-error error-message">비밀번호가 일치하지 않습니다.</em>
                         
                         <div class="email-field-container" id="nickName-title">
                             <label class="EmailAuthField">닉네임</label>
@@ -162,29 +169,31 @@
                                     <input name="nickName" placeholder="닉네임 입력" type="text" class="email-field">
                                 </div>
                             </div><!-- email-field-input-continer -->
-                            <p class="nickName-error"></p>
+                            <em class="nickName-error error-message">닉네임을 입력해주세요.</em>
                         </div><!-- email-field -->
                         <!-- 한줄 복사 -->
                         <div class="email-field-container">
-                            <label class="EmailAuthField">이름</label>
+                            <label class="EmailAuthField">이메일</label>
                             <div class="email-field-input-continer">
                                 <div class="EmailAuthField_inputField">
-                                    <input name="name" placeholder="이름 입력" type="text" class="email-field">
+                                    <input name="name" placeholder="이메일 입력" type="text" class="email-field">
                                 </div>
                             </div><!-- email-field-input-continer -->
-                            <p class="email-error"></p>
+                            <em class="email-error error-message">이메일을 입력해주세요.</em>
                         </div><!-- email-field -->
                 	</div>
-                    <div class="name-field" id="name-name"><label>이메일</label>
+                    <div class="name-field" id="name-name"><label>이름</label>
                         <div class="TextField_field__1B2AH">
-                            <input name="email" placeholder="이메일 입력" type="text" class="name-input">
+                            <input name="email" placeholder="이름 입력" type="text" class="name-input">
                         </div>
+                        <em class="name-error error-message">이름을 입력해주세요.</em>
                     </div>
-                    <!-- email 끝 -->
-                    <div class="name-field" id="name-name"><label>핸드폰 번호</label>
+                    <!-- 이름 끝 -->
+                    <div class="phone-field" id="phone-name"><label>핸드폰 번호</label>
                         <div class="TextField_field__1B2AH">
                             <input name="phoneNumber" placeholder="핸드폰 번호 입력" type="text" class="name-input" maxlength="11">
                         </div>
+                        <em class="phone-error error-message">핸드폰 번호를 입력해주세요.</em>
                     </div>
 					<!-- phoneNumber 끝 -->
                     <div class="SignUpAllCheckTermsCheckbox"> <!-- 회원 약관 동의 -->
@@ -225,4 +234,6 @@
         </main><!-- main -->
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/user/signUp.js"></script>
 </html>

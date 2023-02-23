@@ -20,13 +20,15 @@
 		</header>
 		<nav>
 			<ul>
-				<li><details>
-						<summary class="nav-menu menu--current">
-							<a href="./index.html">
-								<h2 class="menu__title">관리자 홈</h2>
-							</a>
-						</summary>
-					</details></li>
+				<label> <a
+					href="${pageContext.request.contextPath}/app/admin/admin_home.jsp">
+						<li><details>
+								<summary class="nav-menu menu--current">
+
+									<h2 class="menu__title">관리자 홈</h2>
+				</a> </summary> </details>
+					</li> </a>
+				</label>
 				<li><details>
 						<summary class="nav-menu">
 							<h2 class="menu__title">회원</h2>
@@ -35,11 +37,9 @@
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
-							<li class="submenu__item"><a
-								href="${pageContext.request.contextPath}/admin/user.admin">
-									<!-- 							<li class="submenu__item"><a href="./user.html"> -->
-									<span id="sidelist">회원정보</span>
-							</a></li>
+							<a href="${pageContext.request.contextPath}/app/admin/user.jsp">
+								<span id="sidelist"><li class="submenu__item">회원정보</li></span>
+							</a>
 							<!-- <li class="submenu__item"><a href="./user.html"> -->
 							<%-- <li class="submenu__item"><a href="${pageContext.request.contextPath}/admin/user.admin">
 									<span id="sidelist">탈퇴회원</span>
@@ -48,15 +48,22 @@
 					</details></li>
 				<li><details>
 						<summary class="nav-menu">
-							<h2 class="menu__title">게시판</h2>
+							<h2 class="menu__title">기부 관리</h2>
 							<img
 								src="${pageContext.request.contextPath}/assets/img/dropdown.png"
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
-							<a href="${pageContext.request.contextPath}/admin/guide.admin">
+							<a
+								href="${pageContext.request.contextPath}/app/admin/food_board.jsp">
 								<span id="sidelist">
-									<li class="submenu__item">게시판 관리</li>
+									<li class="submenu__item">식품 기부</li>
+							</span>
+							</a>
+							<a
+								href="${pageContext.request.contextPath}/app/admin/equipment_board.jsp">
+								<span id="sidelist">
+									<li class="submenu__item">가전 기부</li>
 							</span>
 							</a>
 
@@ -64,17 +71,18 @@
 					</details></li>
 				<li><details>
 						<summary class="nav-menu">
-							<h2 class="menu__title">배너</h2>
+							<h2 class="menu__title">배너 및 홍보</h2>
 							<img
 								src="${pageContext.request.contextPath}/assets/img/dropdown.png"
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
-							<a href="http://localhost:8090/teamProject/app/admin/banner.jsp"> <span id="sidelist">
+							<a href="${pageContext.request.contextPath}/app/admin/banner.jsp">
+								<span id="sidelist">
 									<li class="submenu__item">배너 목록</li>
 							</span>
 							</a>
-							<a href=""> <span id="sidelist">
+							<a href="${pageContext.request.contextPath}/app/admin/ad.jsp"> <span id="sidelist">
 									<li class="submenu__item">홍보 목록</li>
 							</span>
 							</a>
@@ -84,7 +92,7 @@
 							</a>
 						</ul>
 					</details></li>
-				<li><details>
+				<%-- <li><details>
 						<summary class="nav-menu">
 							<h2 class="menu__title">기부</h2>
 							<img
@@ -92,12 +100,14 @@
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
-							<a href="./notice.html"> <span id="sidelist">
+							<a
+								href="${pageContext.request.contextPath}/app/admin/donation.jsp">
+								<span id="sidelist">
 									<li class="submenu__item">기부 관리</li>
 							</span>
 							</a>
 						</ul>
-					</details></li>
+					</details></li> --%>
 				<%-- <li><details>
 						<summary class="nav-menu">
 							<h2 class="menu__title">필요한것 추가하기</h2>

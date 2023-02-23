@@ -15,10 +15,10 @@
 </head>
 <body>
 	<!-- header -->
-	<jsp:include page="/app/component/adminHeader.jsp"></jsp:include>
+	<jsp:include page="/app/components/adminHeader.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- aside -->
-	<jsp:include page="/app/component/adminAside.jsp"></jsp:include>
+	<jsp:include page="/app/components/adminAside.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- 페이지별로 class 이름 기능에 맞게 재설정 -->
 	<main class="module-container">
@@ -28,33 +28,33 @@
 		</article>
 		<article class="module module--resolution">
 			<p class="module__title">
-				접속 정보 <span class="text-default-bright header-badge badge-danger">1</span>
+				접속 정보 <span class="text-default-bright header-badge badge-danger">new</span>
 			</p>
 			<div class="card-body border-top today-table">
 				<div class="tt-list">
 					전체 접속자 
-					<span class="text-danger">1</span> 
+					<span class="text-danger">5</span> 
 					오늘 접속자 
-					<span class="text-danger">0</span> 
+					<span class="text-danger">2</span> 
 					어제 접속자 
-					<span class="text-danger">0</span>
-					현재 접속자 
-					<span class="text-danger">0</span>
+					<span class="text-danger">3</span>
+					현재 접속인원 
+					<span class="text-danger">2</span>
 				</div>
 			</div>
 		</article>
 		<article class="module module--daily-summary">
 			<p class="module__title">
-				회원 정보<span class="text-default-bright header-badge badge-danger">1</span>
+				회원 정보<span class="text-default-bright header-badge badge-danger">new</span>
 			</p>
 			<div class="card-body border-top today-table">
 				<div class="tt-list">
 					전체 가입자 
-					<span class="text-danger">1</span> 
+					<span class="text-danger">6</span> 
 					가입 회원 
-					<span class="text-danger">0</span> 
+					<span class="text-danger">7</span> 
 					탈퇴 회원 
-					<span class="text-danger">0</span>
+					<span class="text-danger">1</span>
 				</div>
 			</div>
 		</article>
@@ -90,7 +90,8 @@
 			</div>
 		</article>
 		<article class="module module--monthly-statistics">
-			<p class="module__title">배너 신청 현황</p>
+			<p class="module__title">배너 신청 현황 <span class="text-default-bright header-badge badge-danger">new</span>
+			</p>
 			<div class="card-body border-top today-table">
 				<div class="tt-list">
 					전체 배너 
@@ -101,14 +102,40 @@
 			</div>
 		</article>
 		<article class="module module--new-dispute">
-			<p class="module__title">추가하기</p>
+			<p class="module__title">식품기부 게시판</p>
+			<div class="mBoardList notice">
+				<ul>
+					<li><a data-gtm="DATA_notice_contents" href="#none"> <strong>[공지사항]
+								이용 주의사항</strong></a> <span class="date">2023-01-31</span>
+					</li>
+					<li><a data-gtm="DATA_notice_contents" href="#none">
+							[식품] 막 돈까스 기부합니다.</a> <span class="date">2023-02-17</span>
+					</li>
+					<li><a data-gtm="DATA_notice_contents" href="#none">
+							[식품] 1교시 끝나고 믹스커피 드실분? </a> <span class="date">2023-02-22</span>
+					</li>
+					<li><a data-gtm="DATA_notice_contents" href="#none">
+							[식품] 바나프레소 차가운 아이스아메리카노 기부합니다. </a> <span class="date">2023-02-22</span>
+					</li>
+					<!-- 스크롤 되나 안되나 연습 지워도 됨! -->
+					<li><a data-gtm="DATA_notice_contents" href="#none">
+							[식품] test</a> <span class="date">2023-02-17</span>
+					</li>
+					<li><a data-gtm="DATA_notice_contents" href="#none">
+							[식품] 1교시 끝나고 믹스커피 드실분? </a> <span class="date">2023-02-16</span>
+					</li>
+					<li><a data-gtm="DATA_notice_contents" href="#none">
+							[식품] 1교시 끝나고 믹스커피 드실분? </a> <span class="date">2023-02-15</span>
+					</li>
+					<!-- 주석부터 여기까지 지워도됨!  -->
+				</ul>
+			</div>
 		</article>
 		<article class="module module--closed-qna">
 			<p class="module__title">추가하기</p>
 		</article>
-		
 		<article class="module module--new-articles">
-			<p class="module__title">기부 게시판</p>
+			<p class="module__title">가전기부 게시판</p>
 			<div class="mBoardList notice">
 				<ul>
 					<li><a data-gtm="DATA_notice_contents" href="#none"> <strong>[공지사항]
@@ -118,7 +145,7 @@
 							[가전] KoreaIT 컴퓨터 전부 기부합니다.</a> <span class="date">2023-02-17</span>
 					</li>
 					<li><a data-gtm="DATA_notice_contents" href="#none">
-							[식품] 1교시 끝나고 믹스커피 드실분? </a> <span class="date">2023-02-22</span>
+							[가전] 역삼역에서 노트북 5년 쓴거 기부합니다. </a> <span class="date">2023-02-22</span>
 					</li>
 					<li><a data-gtm="DATA_notice_contents" href="#none">
 							[가전] 무선 마우스 기부합니다. </a> <span class="date">2023-02-22</span>
@@ -128,10 +155,10 @@
 							[가전] IT코리아 컴퓨터 전부 기부합니다.</a> <span class="date">2023-02-17</span>
 					</li>
 					<li><a data-gtm="DATA_notice_contents" href="#none">
-							[식품] 1교시 끝나고 믹스커피 드실분? </a> <span class="date">2023-02-16</span>
+							[가전] test </a> <span class="date">2023-02-16</span>
 					</li>
 					<li><a data-gtm="DATA_notice_contents" href="#none">
-							[식품] 1교시 끝나고 믹스커피 드실분? </a> <span class="date">2023-02-15</span>
+							[가전] test </a> <span class="date">2023-02-15</span>
 					</li>
 					<!-- 주석부터 여기까지 지워도됨!  -->
 					

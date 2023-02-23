@@ -188,19 +188,19 @@ body {
   flex: 0.5;
 }
 .title__title {
-  flex: 1.5;
-}
-.title__user-id {
   flex: 1;
 }
-.title__status {
+.title__type {
+  flex: 0.7;
+}
+.title__user {
   flex: 0.5;
 }
 .title__date-detail {
   flex: 0.5;
 }
 .title__date {
-  flex: 1;
+  flex: 0.8;
 }
 .title__date-post {
   flex: 1.5;
@@ -226,12 +226,12 @@ body {
   display: flex;
 }
 
-.module--content-controller:hover {
+.content-list__info-unit:hover {
 	background-color: #ddd;
     border-radius: 5px;
 }
 
-.module--content-summary:hover {
+.content-list__info-unit:hover {
 	background-color: #ddd;
     border-radius: 5px;
 }
@@ -255,22 +255,22 @@ body {
   flex: 0.5;
 }
 .content__title {
-  flex: 1.5;
+  flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.content__user-id {
-  flex: 1;
+.content__type {
+  flex: 0.7;
 }
-.content__status {
+.content__user {
   flex: 0.5;
 }
 .content__date-detail {
   flex: 0.5;
 }
 .content__date {
-  flex: 1;
+  flex: 0.8;
 }
 .content__date-post {
   flex: 1.5;
@@ -286,6 +286,14 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.title__detail {
+	flex: 0.6;
+}
+
+.user__detail {
+	flex: 0.6;
 }
 
 /* 스크롤 바*/
@@ -307,4 +315,16 @@ body {
 
 #scroll::-webkit-scrollbar-track {
 	background-color: #F5F5F5;
+}
+
+/*상세보기 버튼  */
+.btn-16 {
+  border: none;
+  color: #000;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.btn-16:hover {
+  color: #ff2c2c;
 }

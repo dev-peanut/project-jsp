@@ -15,14 +15,14 @@
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/css/admin/banner.css" />
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/admin/banner_modal.css" />
+	href="${pageContext.request.contextPath}/assets/css/components/banner_modal.css" />
 </head>
 <body>
 	<!-- header -->
-	<jsp:include page="/app/component/adminHeader.jsp"></jsp:include>
+	<jsp:include page="/app/components/adminHeader.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- aside -->
-	<jsp:include page="/app/component/adminAside.jsp"></jsp:include>
+	<jsp:include page="/app/components/adminAside.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- 페이지별로 class 이름 기능에 맞게 재설정 -->
 	<main class="module-container">
@@ -38,12 +38,13 @@
 				</form>
 			</div>
 		</article>
-		<article class="module module--content-controller">
-			<button type="button" class="modal_test" style="margin: 0px 0 0 -28px;">배너
+		<article class="module module--content-controller" id="show">
+			<button type="button" style="margin: 0 0 0 -33px; font-size: 16px;">배너
 				설정</button>
 		</article>
 		<article class="module module--content-summary">
-			<button type="button" class="modal_test" style="margin: 0 0 0 -15px;">삭제</button>
+			<button type="button" class="modal_test"
+				style="margin: 0 0 0 -33px; font-size: 16px;">선택 삭제</button>
 		</article>
 		<article class="module module--content-list">
 			<div class="content-list__title-container">
@@ -66,7 +67,7 @@
 						</ul> -->
 					<div class="content-list__info-unit">
 						<input type="checkbox" class="content__checkbox" id="hds"
-							name="checkbox" /> <label for="hds"
+							name="checkbox" /> <label for="kus"
 							class="content__checkbox--label">
 							<ul class="content-list__info">
 								<li class="content__id">00001</li>
@@ -83,26 +84,25 @@
 				<!-- 배너 추가 -->
 				<div class="content-list__info-container">
 					<div class="content-list__info-unit">
-						<input type="checkbox" class="content__checkbox" id="hds"
-							name="checkbox" /> <label for="hds"
-							class="content__checkbox--label">
-							<ul class="content-list__info">
-								<li class="content__id">00002</li>
-								<li class="content__user-id">dev-seyun</li>
-								<li class="content__title">부어치킨 배너</li>
-								<li class="content__status">종료</li>
-								<li class="content__date-detail">4개월</li>
-								<!--2개월 ,4개월  -->
-								<li class="content__date">2022-10-23</li>
-							</ul>
-						</label>
+						<input type="checkbox" class="content__checkbox" id="ksy"
+							name="checkbox" />
+						<ul class="content-list__info">
+							<li class="content__id">00002</li>
+							<li class="content__user-id">dev-seyun</li>
+							<li class="content__title">부어치킨 배너</li>
+							<li class="content__status">종료</li>
+							<li class="content__date-detail">4개월</li>
+							<!--2개월 ,4개월  -->
+							<li class="content__date">2022-10-23</li>
+						</ul>
+
 					</div>
 				</div>
 
 				<div class="content-list__info-container">
 					<div class="content-list__info-unit">
-						<input type="checkbox" class="content__checkbox" id="hds"
-							name="checkbox" /> <label for="hds"
+						<input type="checkbox" class="content__checkbox" id="ymw"
+							name="checkbox" /> <label for="ymw"
 							class="content__checkbox--label">
 							<ul class="content-list__info">
 								<li class="content__id">00004</li>
@@ -119,7 +119,24 @@
 
 				<div class="content-list__info-container">
 					<div class="content-list__info-unit">
-						<input type="checkbox" class="content__checkbox" id="hds"
+						<input type="checkbox" class="content__checkbox" id="kus"
+							name="checkbox" /> <label for="kus"
+							class="content__checkbox--label">
+							<ul class="content-list__info">
+								<li class="content__id">00test</li>
+								<li class="content__user-id">dev-test</li>
+								<li class="content__title">test</li>
+								<li class="content__status">test</li>
+								<li class="content__date-detail">test</li>
+								<!--2개월 ,4개월  -->
+								<li class="content__date">test</li>
+							</ul>
+						</label>
+					</div>
+				</div>
+				<div class="content-list__info-container">
+					<div class="content-list__info-unit">
+						<input type="checkbox" class="content__checkbox" id="kus"
 							name="checkbox" /> <label for="hds"
 							class="content__checkbox--label">
 							<ul class="content-list__info">
@@ -136,8 +153,8 @@
 				</div>
 				<div class="content-list__info-container">
 					<div class="content-list__info-unit">
-						<input type="checkbox" class="content__checkbox" id="hds"
-							name="checkbox" /> <label for="hds"
+						<input type="checkbox" class="content__checkbox" id="kus"
+							name="checkbox" /> <label for="kys"
 							class="content__checkbox--label">
 							<ul class="content-list__info">
 								<li class="content__id">00test</li>
@@ -153,8 +170,8 @@
 				</div>
 				<div class="content-list__info-container">
 					<div class="content-list__info-unit">
-						<input type="checkbox" class="content__checkbox" id="hds"
-							name="checkbox" /> <label for="hds"
+						<input type="checkbox" class="content__checkbox" id="kys"
+							name="checkbox" /> <label for="kys"
 							class="content__checkbox--label">
 							<ul class="content-list__info">
 								<li class="content__id">00test</li>
@@ -170,25 +187,8 @@
 				</div>
 				<div class="content-list__info-container">
 					<div class="content-list__info-unit">
-						<input type="checkbox" class="content__checkbox" id="hds"
-							name="checkbox" /> <label for="hds"
-							class="content__checkbox--label">
-							<ul class="content-list__info">
-								<li class="content__id">00test</li>
-								<li class="content__user-id">dev-test</li>
-								<li class="content__title">test</li>
-								<li class="content__status">test</li>
-								<li class="content__date-detail">test</li>
-								<!--2개월 ,4개월  -->
-								<li class="content__date">test</li>
-							</ul>
-						</label>
-					</div>
-				</div>
-				<div class="content-list__info-container">
-					<div class="content-list__info-unit">
-						<input type="checkbox" class="content__checkbox" id="hds"
-							name="checkbox" /> <label for="hds"
+						<input type="checkbox" class="content__checkbox" id="kys"
+							name="checkbox" /> <label for="kys"
 							class="content__checkbox--label">
 							<ul class="content-list__info">
 								<li class="content__id">00test</li>
@@ -208,15 +208,13 @@
 		</article>
 	</main>
 	<!-- modal -->
-	
+	<jsp:include page="/app/components/banner_modal.jsp"></jsp:include>
 	<!-- modal fin. -->
 </body>
 <script
 	src="${pageContext.request.contextPath}/assets/js/admin/banner.js"></script>
- <script
-	src="${pageContext.request.contextPath}/assets/js/admin/banner_modal.js"></script> 
-
-
+<script
+	src="${pageContext.request.contextPath}/assets/js/components/banner_modal.js"></script>
 
 
 </html>

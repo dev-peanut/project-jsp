@@ -15,10 +15,10 @@
 </head>
 <body>
 	<!-- header -->
-	<jsp:include page="/app/components/adminHeader.jsp"></jsp:include>
+	<jsp:include page="/app/component/adminHeader.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- aside -->
-	<jsp:include page="/app/components/adminAside.jsp"></jsp:include>
+	<jsp:include page="/app/component/adminAside.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- 페이지별로 class 이름 기능에 맞게 재설정 -->
 	<main class="module-container">

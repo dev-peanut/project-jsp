@@ -15,10 +15,10 @@
 </head>
 <body>
 	<!-- header -->
-	<jsp:include page="/app/component/adminHeader.jsp"></jsp:include>
+	<jsp:include page="/app/components/adminHeader.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- aside -->
-	<jsp:include page="/app/component/adminAside.jsp"></jsp:include>
+	<jsp:include page="/app/components/adminAside.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- 페이지별로 class 이름 기능에 맞게 재설정 -->
 	<main class="module-container">
@@ -30,17 +30,18 @@
 					<button type="button" class="search__searchbox__button"
 						style="position: relative; /* right: 0px; */ left: 410px;">
 						<img
-							src="${pageContext.request.contextPath}/assets/img/admin/icon/search.png"
+							src="${pageContext.request.contextPath}/assets/img/search.png"
 							alt="" />
 					</button>
 				</form>
 			</div>
 		</article>
-		<article class="module module--user-summary">
+		<!-- <article class="module module--user-summary">
 			<button type="button" style="margin: 0px 0 0 -28px;">정보 수정</button>
-		</article>
+		</article> -->
 		<article class="module module--user-controller">
-			<button type="button" style="margin: 0 0 0 -28px;">선택 삭제</button>
+			<button type="button" style="margin: 0 0 0 -33px; font-size: 16px;">선택
+				삭제</button>
 		</article>
 		<!--  <div class="buttonWrapper">
 	      <button type="button" id="deleteButton">선택 삭제</button>
@@ -76,7 +77,9 @@
 								<li class="user__phone" name="userPhoneNumber">010-1234-1234</li>
 								<li class="user__join" name="userDateJoin">2023.02.22</li>
 								<li class="user__status" name="">방금 전</li>
-								<li class="user__detail" name="userDetail">20대</li>
+								<li class="user__detail" name="userDetail"><button
+										class="custom-btn btn-16" style="font-weight: 10px;">상세
+										정보</button></li>
 							</ul>
 						</label>
 					</div>
@@ -96,7 +99,9 @@
 								<li class="user__phone" name="userPhoneNumber">010-1234-1234</li>
 								<li class="user__join" name="userDateJoin">2023.02.22</li>
 								<li class="user__status" name="">5분 전</li>
-								<li class="user__detail" name="userDetail">20대</li>
+								<li class="user__detail" name="userDetail"><button
+										class="custom-btn btn-16" style="font-weight: 10px;">상세
+										정보</button></li>
 							</ul>
 						</label>
 					</div>
@@ -115,7 +120,9 @@
 								<li class="user__phone" name="userPhoneNumber">010-1234-1234</li>
 								<li class="user__join" name="userDateJoin">2023.02.22</li>
 								<li class="user__status" name="">1시간 전</li>
-								<li class="user__detail" name="userDetail">20대</li>
+								<li class="user__detail" name="userDetail"><button
+										class="custom-btn btn-16" style="font-weight: 10px;">상세
+										정보</button></li>
 							</ul>
 						</label>
 					</div>
@@ -134,7 +141,9 @@
 								<li class="user__phone" name="userPhoneNumber">010-1234-1234</li>
 								<li class="user__join" name="userDateJoin">2023.02.22</li>
 								<li class="user__status" name="">1주 전</li>
-								<li class="user__detail" name="userDetail">20대</li>
+								<li class="user__detail" name="userDetail"><button
+										class="custom-btn btn-16" style="font-weight: 10px;">상세
+										정보</button></li>
 							</ul>
 						</label>
 					</div>
@@ -153,7 +162,9 @@
 								<li class="user__phone" name="userPhoneNumber">010-1234-1234</li>
 								<li class="user__join" name="userDateJoin">2023.02.22</li>
 								<li class="user__status" name="">1달 전</li>
-								<li class="user__detail" name="userDetail">20대</li>
+								<li class="user__detail" name="userDetail"><button
+										class="custom-btn btn-16" style="font-weight: 10px;">상세
+										정보</button></li>
 							</ul>
 						</label>
 					</div>

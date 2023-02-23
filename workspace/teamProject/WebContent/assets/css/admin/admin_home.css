@@ -19,7 +19,7 @@ body {
 	column-gap: 1rem;
 	row-gap: 1rem;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-areas: "w w w w" "a a b b" "e e c c" "d g h h" "k k j j";
+	grid-template-areas: "w w w w" "a a b b" "e e c c" "h h d g" "k k j j"
 }
 
 .module {
@@ -156,8 +156,7 @@ body {
 		margin: auto;
 		grid-auto-rows: minmax(150px, auto);
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-areas: "w w" "s s" "a a" "b b" "c c" "d d" "e e" "f f"
-			"g g" "h h";
+		grid-template-areas: "w w w w" "a a b b" "e e c c" "h h d g" "k k j j"
 	}
 	.module--welcome {
 		flex-direction: column;
@@ -172,7 +171,7 @@ div {
 
 /* 접속정보,등 타이틀 */
 .header-badge {
-	width: 28px;
+	width: 31px;
 	height: 18px;
 	display: inline-block;
 	text-align: center;
@@ -223,11 +222,10 @@ div {
 	box-sizing: content-box;
 	/* overflow-y: scroll; */
 	overflow: auto;
-	
 }
 
 ::-webkit-scrollbar {
-    display: none; 
+	display: none;
 }
 
 ul {
@@ -289,4 +287,3 @@ a:-webkit-any-link {
 .text-danger {
 	color: #fb4637 !important;
 }
-

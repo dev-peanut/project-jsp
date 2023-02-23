@@ -226,9 +226,14 @@ body {
   display: flex;
 }
 
-.content-list__info-unit:hover {
-  background-color: #ddd;
-  border-radius: 5px;
+.module--content-controller:hover {
+	background-color: #ddd;
+    border-radius: 5px;
+}
+
+.module--content-summary:hover {
+	background-color: #ddd;
+    border-radius: 5px;
 }
 
 .content__checkbox {
@@ -287,6 +292,7 @@ body {
 #scroll {
 	overflow: auto;
 	width: 100%;
+	margin: 1px 0px 0px 0px;
 }
 
 #scroll::-webkit-scrollbar {

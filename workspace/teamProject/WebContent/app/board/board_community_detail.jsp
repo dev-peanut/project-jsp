@@ -7,29 +7,23 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>가전제품 본문 페이지</title>
-<link rel="stylesheet"
-	href="../../assets/css/board/board_community_detail.css">
-<link
-	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-	rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/board/board_community_detail.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"
-	rel="stylesheet">
-<link rel="shortcut icon"
-	href="https://static.wadiz.kr/assets/icon/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../assets/img/logo.png">
 </head>
 <body>
 	<div id="page-container">
 		<div class="black-bg-wrap" style="display: none;"></div>
+		<jsp:include page="../components/header.jsp"></jsp:include>
 		<!-- 헤더 적용  -->
 		<div id="newContainer">
 			<div id="wcommunityWrap">
 				<div class="wcommunity-wrap">
 					<div class="wcommunity-top">
-						<h2>
-							<a href="/web/wcast/main"><em class="logo_wcommunity">wadiz</em></a>
-						</h2>
+						<h2><a href="/web/wcast/main"><em class="logo_wcommunity">wadiz</em></a></h2>
 						<!-- 배너 내 문구  -->
 						<div id="wcastTopPC" class="wcommunity-topmenu"></div>
 					</div>
@@ -52,12 +46,10 @@
 							<div class="wcommunity-detail-content">
 								<div class="inner-contents">
 									<p>새 제품을 선물받아 기부합니다. 역삼역 3번 출구로 오실 분</p>
-									<div class="story-img"
-										style="background-image: url(../../assets/img/notebook.jpg)"></div>
 									<br>
 									<p>
-										<em class="printphoto"
-											style="background-image: url(. ./ . ./ assets/ img/ notebook.jpg"></em>
+										<div class="printphoto"
+											style="background-image: url(../../assets/img/notebook.jpg"></div>
 									</p>
 								</div>
 								<div class="attach-list">
@@ -281,6 +273,7 @@
 				<!-- wcommunity-wrap -->
 			</div>
 			<!-- wcommunityWrap -->
+			<jsp:include page="../components/footer.jsp"></jsp:include>
 		</div>
 		<!-- newContainer -->
 	</div>

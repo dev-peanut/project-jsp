@@ -179,7 +179,7 @@ body {
 }
 
 .title__user-id {
-	flex: 1;
+	flex: 0.6;
 }
 
 .title__title {
@@ -187,7 +187,7 @@ body {
 }
 
 .title__content {
-	flex: 2;
+	flex: 1.7;
 }
 
 .title__date-post {
@@ -212,17 +212,17 @@ body {
 	margin-top: 0.2em;
 }
 
-.user-list__info-container:hover {
-	background-color: #ddd;
-	border-radius: 5px;
-}
 
 .support-list__info-unit {
 	width: 100%;
 	display: flex;
 }
 
-.support-list__info-unit:hover {
+.module--support-summary:hover {
+	background-color: #ddd;
+	border-radius: 5px;
+}
+.module--support-controller:hover {
 	background-color: #ddd;
 	border-radius: 5px;
 }
@@ -235,6 +235,7 @@ body {
 	width: 100%;
 	margin: 0.6em 0;
 }
+
 
 .support-list__info {
 	width: 100%;
@@ -251,7 +252,7 @@ body {
 }
 
 .support__user-id {
-	flex: 1;
+	flex: 0.6;
 }
 
 .support__title {
@@ -262,7 +263,7 @@ body {
 }
 
 .support__content {
-	flex: 2;
+	flex: 1.7;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -272,10 +273,19 @@ body {
 	flex: 1;
 }
 
+.title__detail {
+	flex: 0.6;
+}
+
+.user__detail {
+	flex: 0.6;
+}
+
 /* 스크롤 바*/
 #scroll {
 	overflow: auto;
 	width: 100%;
+	margin: 1px 0px 0px 0px;
 }
 
 #scroll::-webkit-scrollbar {
@@ -290,4 +300,16 @@ body {
 
 #scroll::-webkit-scrollbar-track {
 	background-color: #F5F5F5;
+}
+
+/*상세보기 버튼  */
+.btn-16 {
+  border: none;
+  color: #000;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.btn-16:hover {
+  color: #ff2c2c;
 }

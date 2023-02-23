@@ -16,7 +16,11 @@
       <div class="page-info">
         <img src="${pageContext.request.contextPath}/assets/img/menubar.png" alt="icon" class="page-info__icon" />
         <ul>
+        <a href="${pageContext.request.contextPath}/app/admin/admin_home.jsp">
+        	<span>
           <li class="page-info__detail page-info--current">관리자 홈</li>
+          </span>
+          </a>
         </ul>
       </div>
       <div class="page-language">

@@ -7,25 +7,61 @@
 <title>와디즈</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/assets/css/main/main.css" rel="stylesheet">
-<!-- 파비콘 마지막에 추가 예정 -->
-<!-- <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico"> -->
+<link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
 </head>
 <body style="overflow: auto;">
 	<div id="page-container">
 		<main id="main-app">
 			<!-- 헤더 적용 -->
 			<jsp:include page="../components/header.jsp"></jsp:include>
+			
 			<div class="MainWrapper_content"> <!-- 메인 컨텐츠 적용 -->
 				<section class="container">
 			        <!-- 메인 배너 -->
-			        <div class="banner">
-			            <div></div>
-			            <div></div>
-			            <div></div>
-			            <div></div>
-			            <div></div>
-			            <div></div>
+			        <div class="banners">
+						<div class="banner"></div> <!-- 0번 배너 = 6번 배너와 이미지 동일 -->
+			            <div class="banner"> <!-- 1번 배너 -->
+			            	<div class="banner-text-inner-wrapper">
+				        		<p class="banner-text-title">서포터클럽 이름 변경 안내<br>첫 달 무료로 이용하세요!</p>
+				        		<p class="banner-text-badge">서포터클럽 이벤트</p>
+				        	</div>
+			            </div>
+			            <div class="banner"> <!-- 2번 배너 -->
+			            	<div class="banner-text-inner-wrapper">
+				        		<p class="banner-text-title">먼저 사용해 보세요<br>무료 체험단 이벤트</p>
+				        		<p class="banner-text-badge">이벤트</p>
+				        	</div>
+			            </div>
+			            <div class="banner"> <!-- 3번 배너 -->
+			            	<div class="banner-text-inner-wrapper">
+				        		<p class="banner-text-title">최대 8O% 혜택<br>와디즈데이 바로가기</p>
+				        		<p class="banner-text-badge">이벤트</p>
+				        	</div>
+			            </div>
+			            <div class="banner"> <!-- 4번 배너 -->
+			            	<div class="banner-text-inner-wrapper">
+				        		<p class="banner-text-title">와디즈x청소연구소<br>2만원 집청소 쿠폰 받아 가세요!</p>
+				        		<p class="banner-text-badge">서포터클럽 이벤트</p>
+				        	</div>
+			            </div>
+			            <div class="banner"> <!-- 5번 배너 -->
+			            	<div class="banner-text-inner-wrapper">
+				        		<p class="banner-text-title">서포터클럽 이름 변경 안내<br>첫 달 무료로 이용하세요!</p>
+				        		<p class="banner-text-badge">서포터클럽 이벤트</p>
+				        	</div>
+			            </div>
+			            <div class="banner"> <!-- 6번 배너 -->
+			            	<div class="banner-text-inner-wrapper">
+				        		<p class="banner-text-title">개발비 1.5억 현대리바트의<br>갓성비 발받침대, COMFY</p>
+				        		<p class="banner-text-badge">펀딩</p>
+				        	</div>
+			            </div>
+						<div class="banner"></div> <!-- 7번 배너 = 1번 배너와 이미지 동일 -->
 			        </div>
+					<!-- 배너 총 퍼센티지. 투명 바 -->
+					<div class="banner-total">
+						<div class="banner-active"></div> <!-- 배너 현재 퍼센티지. 흰색 바 -->
+					</div>
 			        <div class="move-arrow">
 			            <!-- 이전 버튼 -->
 			            <div class="prev">
@@ -36,11 +72,15 @@
 			            	<div class="next-icon"></div>
 			            </div>
 			        </div>
-			
-			        <!-- 배너 총 퍼센티지. 투명 바 -->
-			        <div class="banenr_active">
-			        	<div></div> <!-- 배너 현재 퍼센티지. 흰색 바 -->
-		        	</div>
+					<!-- 선택 버튼 -->
+			        <div class="buttons" style="display: none;">
+			            <button>1</button>
+			            <button>2</button>
+			            <button>3</button>
+			            <button>4</button>
+			            <button>5</button>
+			            <button>6</button>
+			        </div>
 			    </section>
 				<div class="RecommendationDesktop_container Main_wrap_1"> <!-- 메인 컨텐츠1 - 추천관련 컨텐츠 묶음 -->
 					<div class="Main_inner_wrap">
@@ -67,6 +107,40 @@
 								</div>
 							</div>
 							<div class="recommendation-section-inner-container-content">
+								<div class="recommendation-card"> <!-- 추천 카드 썸네일 -->
+									<div>
+										<a class="card-type-recommendation-a" href="/web/campaign/detail/180055?_refer_section_st=PersonalCurator_0">
+											<article>
+												<div class="CardType_thumbnail">
+													<div aria-hidden="true" class="CardType_thumbnail_image" style="background-image: url(&quot;https://cdn.wadiz.kr/wwwwadiz/green001/2023/0201/20230201144847483_180055.png/wadiz/resize/240/format/jpg/quality/85/&quot;);"></div>
+												</div>
+												<div class="CardType_content">
+													<em class="commons_title_CardType_content">[월 2.5억인증]단 1년만에 억대연봉,월3천 벌게한 스마트스토어 노하우</em>
+													<p class="commons_summary_CardType_content">
+														<span class="commons_rate_CardType_content">24,292%</span>출판
+													</p>
+												</div>
+											</article>
+										</a>
+									</div>
+								</div>
+								<div class="recommendation-card"> <!-- 추천 카드 썸네일 -->
+									<div>
+										<a class="card-type-recommendation-a" href="/web/campaign/detail/180055?_refer_section_st=PersonalCurator_0">
+											<article>
+												<div class="CardType_thumbnail">
+													<div aria-hidden="true" class="CardType_thumbnail_image" style="background-image: url(&quot;https://cdn.wadiz.kr/wwwwadiz/green001/2023/0201/20230201144847483_180055.png/wadiz/resize/240/format/jpg/quality/85/&quot;);"></div>
+												</div>
+												<div class="CardType_content">
+													<em class="commons_title_CardType_content">[월 2.5억인증]단 1년만에 억대연봉,월3천 벌게한 스마트스토어 노하우</em>
+													<p class="commons_summary_CardType_content">
+														<span class="commons_rate_CardType_content">24,292%</span>출판
+													</p>
+												</div>
+											</article>
+										</a>
+									</div>
+								</div>
 								<div class="recommendation-card"> <!-- 추천 카드 썸네일 -->
 									<div>
 										<a class="card-type-recommendation-a" href="/web/campaign/detail/180055?_refer_section_st=PersonalCurator_0">
@@ -170,7 +244,7 @@
 															</p>
 														</div>
 														<div class="ranking-content-thumbnail">
-															<div class="ranking-content-thumbnail-image" style="background-image: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/");">
+															<div class="ranking-content-thumbnail-image" style = "background-image: url('https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/');">
 															</div>
 														</div>
 													</article>
@@ -190,7 +264,7 @@
 															</p>
 														</div>
 														<div class="ranking-content-thumbnail">
-															<div class="ranking-content-thumbnail-image" style="background-image: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/");">
+															<div class="ranking-content-thumbnail-image" style = "background-image: url('https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/');">
 															</div>
 														</div>
 													</article>
@@ -210,7 +284,7 @@
 															</p>
 														</div>
 														<div class="ranking-content-thumbnail">
-															<div class="ranking-content-thumbnail-image" style="background-image: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/");">
+															<div class="ranking-content-thumbnail-image" style = "background-image: url('https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/');">
 															</div>
 														</div>
 													</article>
@@ -230,7 +304,7 @@
 															</p>
 														</div>
 														<div class="ranking-content-thumbnail">
-															<div class="ranking-content-thumbnail-image" style="background-image: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/");">
+															<div class="ranking-content-thumbnail-image" style = "background-image: url('https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/');">
 															</div>
 														</div>
 													</article>
@@ -250,7 +324,7 @@
 															</p>
 														</div>
 														<div class="ranking-content-thumbnail">
-															<div class="ranking-content-thumbnail-image" style="background-image: url("https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/");">
+															<div class="ranking-content-thumbnail-image" style = "background-image: url('https://cdn.wadiz.kr/wwwwadiz/green001/2023/0215/20230215095501924_158604.jpg/wadiz/resize/91/format/jpg/quality/85/');">
 															</div>
 														</div>
 													</article>
@@ -264,7 +338,7 @@
 					</div>
 				</div>
 				<div class="Main_wrap_2 Main_wrap"> <!-- 메인 컨텐츠2 -->
-					<div class="Main_inner_wrap Main_inner_wrap_2">
+										<div class="Main_inner_wrap Main_inner_wrap_2">
 						<div class="contents-wrapper-title">
 							<div class="recommendation-section-inner-container-title-container">
 								<div class="recommendation-section-inner-container-subtitle">
@@ -294,11 +368,10 @@
 			                        <a href="" class="content-a">
 			                            <div class="content-img"></div>
 			                            <div class="text-box">
-			                                <p class="text-top">넥스트 뷰티 브랜드</p>
+			                                <p class="text-top">[평점5.0] 줄서서 먹는 남대문 맛집,금성관 나주곰탕!</p>
 			                                <ul class="text-box-ul">
 			                                    <li class="ul-lists">총 펀딩금액 <em>4,600,056,320</em>원</li>
-			                                    <li class="ul-lists">프로젝트 <em>37건</em></li>
-			                                    <li class="ul-lists">투자자 <em>16430</em>명</li>
+			                                    <li class="ul-lists"><span class="star"></span> <div><span>프로젝트</span> <em>37건</em></div></li>
 			                                </ul>
 			                            </div>
 			                        </a>
@@ -309,11 +382,10 @@
 			                        <a href="" class="content-a">
 			                            <div class="content-img"></div>
 			                            <div class="text-box">
-			                                <p class="text-top">넥스트 뷰티 브랜드</p>
+			                                <p class="text-top">[평점5.0] 줄서서 먹는 남대문 맛집,금성관 나주곰탕!</p>
 			                                <ul class="text-box-ul">
 			                                    <li class="ul-lists">총 펀딩금액 <em>4,600,056,320</em>원</li>
-			                                    <li class="ul-lists">프로젝트 <em>37건</em></li>
-			                                    <li class="ul-lists">투자자 <em>16430</em>명</li>
+			                                    <li class="ul-lists"><span class="star"></span> <div><span>프로젝트</span> <em>37건</em></div></li>
 			                                </ul>
 			                            </div>
 			                        </a>
@@ -324,11 +396,10 @@
 			                        <a href="" class="content-a">
 			                            <div class="content-img"></div>
 			                            <div class="text-box">
-			                                <p class="text-top">넥스트 뷰티 브랜드</p>
+			                                <p class="text-top">[평점5.0] 줄서서 먹는 남대문 맛집,금성관 나주곰탕!</p>
 			                                <ul class="text-box-ul">
 			                                    <li class="ul-lists">총 펀딩금액 <em>4,600,056,320</em>원</li>
-			                                    <li class="ul-lists">프로젝트 <em>37건</em></li>
-			                                    <li class="ul-lists">투자자 <em>16430</em>명</li>
+			                                    <li class="ul-lists"><span class="star"></span> <div><span>프로젝트</span> <em>37건</em></div></li>
 			                                </ul>
 			                            </div>
 			                        </a>
@@ -339,79 +410,35 @@
 			                        <a href="" class="content-a">
 			                            <div class="content-img"></div>
 			                            <div class="text-box">
-			                                <p class="text-top">넥스트 뷰티 브랜드</p>
+			                                <p class="text-top">[평점5.0] 줄서서 먹는 남대문 맛집,금성관 나주곰탕!</p>
 			                                <ul class="text-box-ul">
 			                                    <li class="ul-lists">총 펀딩금액 <em>4,600,056,320</em>원</li>
-			                                    <li class="ul-lists">프로젝트 <em>37건</em></li>
-			                                    <li class="ul-lists">투자자 <em>16430</em>명</li>
+			                                    <li class="ul-lists"><span class="star"></span> <div><span>프로젝트</span> <em>37건</em></div></li>
 			                                </ul>
 			                            </div>
 			                        </a>
 			                    </div>
 			                </div>
+			                <div class="content-wrapper">
+			                    <div class="content">
+			                        <a href="" class="content-a">
+			                            <div class="content-img"></div>
+			                            <div class="text-box">
+			                                <p class="text-top">[평점5.0] 줄서서 먹는 남대문 맛집,금성관 나주곰탕!</p>
+			                                <ul class="text-box-ul">
+			                                    <li class="ul-lists">총 펀딩금액 <em>4,600,056,320</em>원</li>
+			                                    <li class="ul-lists"><span class="star"></span> <div><span>프로젝트</span> <em>37건</em></div></li>
+			                                </ul>
+			                            </div>
+			                        </a>
+			                    </div>
+			                </div>
+			                
 			                <!------------------------------------------- 1 ----------------------------------------- -->
-			                <div class="content-wrapper">
-			                    <div class="content">
-			                        <a href="" class="content-a">
-			                            <div class="content-img content-img2"></div>
-			                            <div class="text-box">
-			                                <p class="text-top">넥스트 뷰티 브랜드</p>
-			                                <ul class="text-box-ul">
-			                                    <li class="ul-lists">총 펀딩금액 <em>4,600,056,320</em>원</li>
-			                                    <li class="ul-lists">프로젝트 <em>37건</em></li>
-			                                    <li class="ul-lists">투자자 <em>16430</em>명</li>
-			                                </ul>
-			                            </div>
-			                        </a>
-			                    </div>
-			                </div>
-			                <div class="content-wrapper">
-			                    <div class="content">
-			                        <a href="" class="content-a">
-			                            <div class="content-img content-img2"></div>
-			                            <div class="text-box">
-			                                <p class="text-top">넥스트 뷰티 브랜드</p>
-			                                <ul class="text-box-ul">
-			                                    <li class="ul-lists">총 펀딩금액 <em>4,600,056,320</em>원</li>
-			                                    <li class="ul-lists">프로젝트 <em>37건</em></li>
-			                                    <li class="ul-lists">투자자 <em>16430</em>명</li>
-			                                </ul>
-			                            </div>
-			                        </a>
-			                    </div>
-			                </div>
-			                <div class="content-wrapper">
-			                    <div class="content">
-			                        <a href="" class="content-a">
-			                            <div class="content-img content-img2"></div>
-			                            <div class="text-box">
-			                                <p class="text-top">넥스트 뷰티 브랜드</p>
-			                                <ul class="text-box-ul">
-			                                    <li class="ul-lists">총 펀딩금액 <em>4,600,056,320</em>원</li>
-			                                    <li class="ul-lists">프로젝트 <em>37건</em></li>
-			                                    <li class="ul-lists">투자자 <em>16430</em>명</li>
-			                                </ul>
-			                            </div>
-			                        </a>
-			                    </div>
-			                </div>
-			                <div class="content-wrapper">
-			                    <div class="content">
-			                        <a href="" class="content-a">
-			                            <div class="content-img content-img2"></div>
-			                            <div class="text-box">
-			                                <p class="text-top">넥스트 뷰티 브랜드</p>
-			                                <ul class="text-box-ul">
-			                                    <li class="ul-lists">총 펀딩금액 <em>4,600,056,320</em>원</li>
-			                                    <li class="ul-lists">프로젝트 <em>37건</em></li>
-			                                    <li class="ul-lists">투자자 <em>16430</em>명</li>
-			                                </ul>
-			                            </div>
-			                        </a>
-			                    </div>
-			                </div>
+			                
 			      		</div>
 					</div>
+
 				</div>
 				<div class="Main_wrap_3 Main_wrap"> <!-- 메인 컨텐츠3 -->
 				</div>
@@ -423,5 +450,6 @@
 		</main>
 	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/js/main/main.js"></script>
 </html>

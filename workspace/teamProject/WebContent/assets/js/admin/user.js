@@ -1,13 +1,11 @@
-/**
- * 
- */// user 목록 생성
+// user 목록 생성
 /* const UserInfoContainer = document.getElementsByClassName(
   "user-list__info-container"
 )[0];
 
 let user = {
   id: "365KOREAJ",
-  name: "한동석",
+  name: "김욱성",
   userID: "bugbug",
   email: "winterstone@cold.com",
   phone: "010-1004-5004",

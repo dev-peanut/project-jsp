@@ -16,7 +16,11 @@
       <div class="page-info">
         <img src="${pageContext.request.contextPath}/assets/img/menubar.png" alt="icon" class="page-info__icon" />
         <ul>
+        <a href="${pageContext.request.contextPath}/app/admin/admin_home.jsp">
+        	<span>
           <li class="page-info__detail page-info--current">관리자 홈</li>
+          </span>
+          </a>
         </ul>
       </div>
       <div class="page-language">
@@ -25,9 +29,9 @@
                 class="Button_button__1e2A2 Button_primary__PxOJr Button_md__1FRMG Button_circular__3NpOv"
                 type="button"
               >
-                <span>
+                <!-- <span>
                   <span class="Button_children__q9VCZ">현재날짜 2023-02-18</span>
-                </span>
+                </span> -->
               </button>
             </div>
             <div class="AnnouncementButton_container__1p1gr" role="button">홈페이지</div>

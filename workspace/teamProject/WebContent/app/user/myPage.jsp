@@ -52,16 +52,14 @@
 											</dd>
 										</div>
 										<div>
-											<dt>기부</dt>
+											<dt></dt>
 											<dd>
-												0
 												<span class="BlindText">회</span>
 											</dd>
 										</div>
 										<div>
-											<dt>기부</dt>
+											<dt></dt>
 											<dd>
-												0
 												<span class="BlindText">회</span>
 											</dd>
 										</div>
@@ -89,48 +87,66 @@
 									<li class="active">
 										<a href="https://www.wadiz.kr/web/wmypage/myprofile/fundinglist" role="tab" aria-selected="true" aria-controls="tabFunding" tabindex="0">기부한</a>
 									</li>
-									<!-- 찜한 -->
-									<li>
-										<a href="https://www.wadiz.kr/web/wmypage/myprofile/likelist/" role="tab" tabindex="-1">찜한</a>
-									</li>
 								</ul>
 							</div>
+							<!-- 기부 참여 리스트 -->
 							<div class="project-list" id="tabFunding" tabindex="0">
 								<div class="top-area">
 									<p id="fundingInfoMessage" class="status-text fundingCount" style="display: none">공개로 참여한 기부현황입니다.</p>
 								</div>
+								<!-- 공개 참여 현황 -->
 								<div id="projectCardList" class="card-list">
-									<p id="emptyProjectText" style="display: block;">공개로 참여한 기부현황이 없습니다.</p>
+									<p id="emptyProjectText" style="display: none;">공개로 참여한 기부현황이 없습니다.</p>
 									<ul>
+										<!-- 기부목록 -->
 										<li class="reward " data-hiddentype="F" data-campaintype="RWD" data-campaignid="155943" data-campaignhiddenseq="">
-											<div class="visibility-control">
-												<button type="button" class="btn-more"><i class="wadizicon wa-more-vert"></i></button>
-												<button type="button" class="btn-control hide">숨김</button>
-												<button type="button" class="btn-control show">숨김취소</button>
-											</div>
 											<a href="/web/campaign/detail/155943">
 												<div class="project-card">
 													<div class="card-img-section">
-                                  						<em class="project-img" style="background-image:url(https://www.wadiz.kr/wwwwadiz/green001/2023/0126/20230126132509684_155943.jpg)"></em>
-														<em class="project-type reward">펀딩</em>
-														<div class="progressbar-wrap">
-															<dl>
-																<dt>
-																	<span style="width:263%"></span>
-																</dt>
-																<dd>
-																	<span class="percent">263%</span>
-	                                                                <span class="amount">1,316,898원 달성</span>
-																	<span class="days">13일 남음</span>
-																</dd>
-															</dl>
-														</div>
+                                  						<em class="project-img" style="background-image:url(/images/user/mandurang.jpg)"></em>
+														<em class="project-type reward">기부</em>
 													</div>
 													<div class="card-info-section">
-														<h4>8,333원 베이비 워시/미국유명육아템 벤치마킹 품질Up! 가격Down!</h4>
-														<h5>주식회사 나실패밀리</h5>
+														<h4>만두랑 : 전골 10kg</h4>
+														<h5>일시 : 2023.02.20</h5>
 														<div class="card-category">
-															<span class="category1">베이비·키즈</span>
+															<span class="category1">만두·만두전골</span>
+															<span class="category2"></span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="reward " data-hiddentype="F" data-campaintype="RWD" data-campaignid="155943" data-campaignhiddenseq="">
+											<a href="/web/campaign/detail/155943">
+												<div class="project-card">
+													<div class="card-img-section">
+                                  						<em class="project-img" style="background-image:url(/images/user/mandurang.jpg)"></em>
+														<em class="project-type reward">기부</em>
+													</div>
+													<div class="card-info-section">
+														<h4>만두랑 : 밥 10kg</h4>
+														<h5>일시 : 2023.02.21</h5>
+														<div class="card-category">
+															<span class="category1">만두·만두전골</span>
+															<span class="category2"></span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li class="reward " data-hiddentype="F" data-campaintype="RWD" data-campaignid="155943" data-campaignhiddenseq="">
+											<a href="/web/campaign/detail/155943">
+												<div class="project-card">
+													<div class="card-img-section">
+                                  						<em class="project-img" style="background-image:url(/images/user/mandurang.jpg)"></em>
+														<em class="project-type reward">기부</em>
+													</div>
+													<div class="card-info-section">
+														<h4>만두랑 : 만두 5kg</h4>
+														<h5>일시 : 2023.02.22</h5>
+														<div class="card-category">
+															<span class="category1">만두·만두전골</span>
 															<span class="category2"></span>
 														</div>
 													</div>
@@ -141,9 +157,9 @@
 								</div>
 							</div>
 						</div>
+					</div>
 				</div>
 			</div>
-		</div>
 		<!-- footer -->
 		<jsp:include page="../components/footer.jsp"></jsp:include>
 	</div>

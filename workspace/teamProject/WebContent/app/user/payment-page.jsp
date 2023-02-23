@@ -5,12 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <title>주문 및 결제</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-<link rel="stylesheet" href="../../assets/css/user/payment-page.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/payment-page.css">
 </head>
 <body>
 	<div id="page-container">
 		<main id="main-app">
+			<!-- 헤더 적용 -->
+			<jsp:include page="../components/header.jsp"></jsp:include>
 			<div class="MainWrapper">
 				<div>
 					<div class="PaymentLayout">
@@ -28,7 +31,7 @@
 												</svg>
 											</span>
 											<div class="MessageBox_content">
-												<p class="MessageBox_title">펀딩에 성공하여 상시 판매하는 스토어 상품입니다.</p>
+												<p class="MessageBox_title">구매 후 관리자 확인 후 진행됩니다.</p>
 												<div class="MessageBox_description">
 													<ul>
 														<li>구매 후 관리자 확인 후 진행됩니다.</li>
@@ -43,7 +46,7 @@
 									<div class="PaymentSection_titleContainer">
 										<h3 class="PaymentSection_title">주문 정보</h3>
 									</div>
-									<div class="PaymentSection_sectionContent">
+									<div class="PaymentSection_sectionContent PaymentSection_active">
 										<div class="PaymentInformation">
 											<div class="PaymentInformation_row">
 												<span class="PaymentInformation_label">주문자명</span>
@@ -63,43 +66,44 @@
 								<!-- 주문 요청 사항(선택) -->
 								<form id="payment-submit">	
 									<section class="PaymentSection_container">
-										<div class="StorePaymentSection_titleContainer__gkoqg">
-											<h3 class="StorePaymentSection_title__DLi4F">주문 요청 사항 (선택)</h3>
+										<div class="PaymentSection_titleContainer">
+											<h3 class="PaymentSection_title">주문 요청 사항 (선택)</h3>
 										</div>
-										<div class="StorePaymentSection_sectionContent__1a3aW StorePaymentSection_active__2fVyM">
-											<input name="productRequestMessage" maxlength="100" placeholder="주문 요청 사항을 입력하세요" type="text" class="Input_input__11VYR Input_md__jEX3i" aria-invalid="false"></div>
+										<div class="PaymentSection_sectionContent PaymentSection_active">
+											<input name="productRequestMessage" maxlength="100" placeholder="주문 요청 사항을 입력하세요" type="text" class="Input_input Input_md" aria-invalid="false"></div>
 									</section>
 									<!-- 상품정보 -->
 									<section class="PaymentSection_container">
 										<div class="PaymentSection_titleContainer">
 											<h3 class="PaymentSection_title">상품 정보</h3>
 										</div>
-										<div class="StorePaymentSection_sectionContent__1a3aW StorePaymentSection_active__2fVyM">
-											<div class="StorePaymentProductInfo_storePaymentProductInfoContainer__1nu6T">
-												<div class="StorePaymentProductInfo_productInfoContainer__3ulGA">
-													<div class="StorePaymentProductInfo_productInfoTextContainer__CId20">
-														<p class="StorePaymentProductInfo_productName__1TK1V">피스코리아 자석 택배박스커터 블랙</p>
-														<p class="StorePaymentProductInfo_productDescription__3-3a_"></p>
-														<p class="StorePaymentProductInfo_optionsContainer__1w2Ov">
-															<span>자석 택배박스커터 블랙_LBS02479W0</span>
+										<div class="PaymentSection_sectionContent PaymentSection_active">
+											<div class="PaymentProductInfo">
+												<div class="PaymentProductInfo_container">
+													<div class="PaymentProductInfo_textContainer">
+														<p class="PaymentProductInfo_productName">홍보 배너</p>
+														<p class="PaymentProductInfo_productDescription"></p>
+														<p class="PaymentProductInfo_optionsContainer">
+															<span>1개월 패키지</span>
 														</p>
 													</div>
 												</div>
-												<div class="StorePaymentProductInfo_priceInfo__35XLT">
-													<span class="StorePaymentProductInfo_qty__3MWOa">수량: 1개</span>
-													<span class="StorePaymentProductInfo_price__2pYbN">8,900원</span>
+												<div class="PaymentProductInfo_priceInfo">
+													<span class="PaymentProductInfo_date">시작날짜: 3월 1일</span>
+													<span class="PaymentProductInfo_price">50,000원</span>
 												</div>
-												<div class="StorePaymentProductInfo_divider__2dEYa"></div>
+												<div class="PaymentProductInfo_divider"></div>
 											</div>
 										</div>
 									</section>
 									<!-- 쿠폰할인 -->
 									<section class="PaymentSection_container">
-										<div class="StorePaymentSection_titleContainer__gkoqg">
-											<h3 class="StorePaymentSection_title__DLi4F">쿠폰 할인</h3>
+										<div class="PaymentSection_titleContainer">
+											<h3 class="PaymentSection_title">레벨 별 할인</h3>
 										</div>
-										<div class="StorePaymentSection_sectionContent__1a3aW StorePaymentSection_active__2fVyM">
+										<div class="PaymentSection_sectionContent PaymentSection_active">
 											<div class="select-menu medium">
+											<!-- 여기서부터 코드 정리 안함 -->
 												<div class="select-menu--is-disabled css-14jk2my-container">
 													<span aria-live="polite" aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span>
 													<div class="select-menu__control select-menu__control--is-disabled css-1fhf3k1-control">
@@ -122,10 +126,10 @@
 									</section>
 									<!-- 결제수단 -->
 									<section class="PaymentSection_container">
-										<div class="StorePaymentSection_titleContainer__gkoqg">
-											<h3 class="StorePaymentSection_title__DLi4F">결제 수단</h3>
+										<div class="PaymentSection_titleContainer">
+											<h3 class="PaymentSection_title">결제 수단</h3>
 										</div>
-										<div class="StorePaymentSection_sectionContent__1a3aW StorePaymentSection_active__2fVyM">
+										<div class="PaymentSection_sectionContent PaymentSection_active">
 											<div class="StorePaymentChooseMode_storePaymentChooseMode__2yXk6">
 												<ul>
 													<li>
@@ -154,68 +158,70 @@
 									</section>
 								</form>
 							</div>
-							<!-- 결제금액 -->
-							<div class="PaymentLayout_floatingSectionContainer__2QCzS">
-								<div class="PaymentLayout_floatingSection__31pLD">
-									<section class="PaymentSection_container PaymentLayout_floating__3iHN0">
-										<div class="StorePaymentSection_titleContainer__gkoqg">
-											<h3 class="StorePaymentSection_title__DLi4F">결제 금액</h3>
-										</div>
-										<div class="StorePaymentSection_sectionContent__1a3aW StorePaymentSection_active__2fVyM">
-											<div class="DefaultPrice_container__1gf10">
-												<div class="DefaultPrice_title__3iw65">
-													<label class="Radio_radio__2k70h Radio_md__3xeXE DefaultPrice_radioButton__1nTXN">
-														<input type="radio" name="price" readonly="" value="DEFAULT" checked="">
-															<span class="Radio_icon__SObGY"></span>
-															<span class="Radio_label__14nd4"></span>
-													</label>일반 금액
-												</div>
-												<div class="TitleValuePrice_container__Hcpla">
-													<dl class="">
-														<dt>상품 금액</dt>
-														<dd>
-															<span>
-																<em class="TitleValuePrice_money__1Tu-B">8,900</em>
-																원
-															</span>
-														</dd>
-													</dl>
-												</div>
-												<div class="TitleValuePrice_container__Hcpla">
-													<dl class="">
-														<dt>쿠폰 할인 금액</dt>
-														<dd>
-															<span>0 원</span>
-														</dd>
-													</dl>
-												</div>
-												<div class="TitleValuePrice_container__Hcpla">
-													<hr class="TitleValuePrice_divide__2bMnX">
-													<dl class="TitleValuePrice_total__oJwm4">
-														<dt>최종 결제 금액</dt>
-														<dd>
-															<span><em class="">11,900 원</em></span>
-														</dd>
-													</dl>
-												</div>
+						</div>
+						<!-- 결제금액 -->
+						<div class="PaymentLayout_floatingSectionContainer__2QCzS">
+							<div class="PaymentLayout_floatingSection__31pLD">
+								<section class="PaymentSection_container PaymentLayout_floating__3iHN0">
+									<div class="PaymentSection_titleContainer">
+										<h3 class="PaymentSection_title">결제 금액</h3>
+									</div>
+									<div class="PaymentSection_sectionContent PaymentSection_active">
+										<div class="DefaultPrice_container__1gf10">
+											<div class="DefaultPrice_title__3iw65">
+												<label class="Radio_radio__2k70h Radio_md__3xeXE DefaultPrice_radioButton__1nTXN">
+													<input type="radio" name="price" readonly="" value="DEFAULT" checked="">
+														<span class="Radio_icon__SObGY"></span>
+														<span class="Radio_label__14nd4"></span>
+												</label>일반 금액
+											</div>
+											<div class="TitleValuePrice_container__Hcpla">
+												<dl class="">
+													<dt>상품 금액</dt>
+													<dd>
+														<span>
+															<em class="TitleValuePrice_money__1Tu-B">50,000</em>
+															원
+														</span>
+													</dd>
+												</dl>
+											</div>
+											<div class="TitleValuePrice_container__Hcpla">
+												<dl class="">
+													<dt>레벨 별 할인 금액</dt>
+													<dd>
+														<span>0 원</span>
+													</dd>
+												</dl>
+											</div>
+											<div class="TitleValuePrice_container__Hcpla">
+												<hr class="TitleValuePrice_divide__2bMnX">
+												<dl class="TitleValuePrice_total__oJwm4">
+													<dt>최종 결제 금액</dt>
+													<dd>
+														<span><em class="">50,000 원</em></span>
+													</dd>
+												</dl>
 											</div>
 										</div>
-									</section>
-									<section class="PaymentSection_container PaymentLayout_floating__3iHN0"><div class="StorePaymentSection_sectionContent__1a3aW StorePaymentSection_active__2fVyM">
+									</div>
+								</section>
+								<section class="PaymentSection_container PaymentLayout_floating__3iHN0">
+									<div class="PaymentSection_sectionContent PaymentSection_active">
 										<div class="StorePaymentTerms_StorePaymentTerms__1PQlB">
 											<label class="Checkbox_checkbox__pamoY Checkbox_lg__2FN3A Checkbox_labeled__zQ0mF StorePaymentTerms_termsCheckbox__3gruT">
 												<input name="paymentRequiredTerms" type="checkbox" class="Checkbox_input__3UBmW">
-													<span class="Checkbox_icon___4ktl" aria-hidden="true">
-														<svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon_icon__20lDO Checkbox_removeIcon__2VWZr" aria-hidden="true">
-															<path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
-														</svg>
-														<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__20lDO Checkbox_checkIcon__1uUVj" aria-hidden="true">
-															<path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
-														</svg>
-													</span>
-													<span class="Checkbox_content__2Ze7x">
-														<span>결제 진행 필수 동의</span>
-													</span>
+												<span class="Checkbox_icon___4ktl" aria-hidden="true">
+													<svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon_icon__20lDO Checkbox_removeIcon__2VWZr" aria-hidden="true">
+														<path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
+													</svg>
+													<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__20lDO Checkbox_checkIcon__1uUVj" aria-hidden="true">
+														<path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
+													</svg>
+												</span>
+												<span class="Checkbox_content__2Ze7x">
+													<span>결제 진행 필수 동의</span>
+												</span>
 											</label>
 											<div class="StorePaymentTerms_termsList__1ki8i">
 												<label for="serviceTerms" class="StorePaymentTerms_termsItem__CAG90">
@@ -258,19 +264,21 @@
 													</button>
 												</label>
 											</div>
-											<button form="payment-submit" class="Button_button__mRXZC Button_primary__1HJqX Button_contained__k9pMW Button_lg__22YWj Button_block__1LAUA PaymentLayout_submitButton__1fQJ4" type="submit">
-												<span>
-													<span class="Button_children__3HY2l">11,900원 결제하기</span>
-												</span>
-											</button>
 										</div>
-									</section>
-								</div>
+										<button form="payment-submit" class="Button_button__mRXZC Button_primary__1HJqX Button_contained__k9pMW Button_lg__22YWj Button_block__1LAUA PaymentLayout_submitButton__1fQJ4" type="submit">
+											<span>
+												<span class="Button_children__3HY2l">50,000원 결제하기</span>
+											</span>
+										</button>
+									</div>
+								</section>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- footer적용 -->
+			<jsp:include page="../components/footer.jsp"></jsp:include>
 		</main>
 	</div>
 </body>

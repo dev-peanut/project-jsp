@@ -52,16 +52,14 @@
 											</dd>
 										</div>
 										<div>
-											<dt>기부</dt>
+											<dt></dt>
 											<dd>
-												0
 												<span class="BlindText">회</span>
 											</dd>
 										</div>
 										<div>
-											<dt>기부</dt>
+											<dt></dt>
 											<dd>
-												0
 												<span class="BlindText">회</span>
 											</dd>
 										</div>

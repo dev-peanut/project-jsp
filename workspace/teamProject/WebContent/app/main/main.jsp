@@ -7,7 +7,7 @@
 <title>와디즈</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/assets/css/main/main.css" rel="stylesheet">
-<link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 </head>
 <body style="overflow: auto;">
 	<div id="page-container">

@@ -11,7 +11,6 @@ div {
     font-family: wadizicon;
 }
 
-
 .ReactModal__Body--open{
     pointer-events: auto!important;
     height: inherit;
@@ -842,6 +841,7 @@ ul.li{
 }
 
 .AppNavbar_container__5uOnI{
+	position: relative;
     box-shadow: 0 1px 0 0 rgb(10 22 70 / 6%);
     display: flex;
     position: fixed;
@@ -898,7 +898,6 @@ ul.li{
 .AppNavbar_maker__2WVfm{
     display: flex;
     position: absolute;
-    left: 50%;
     align-items: center;
     transform: translateX(-50%);
     grid-gap: 8px;
@@ -919,6 +918,7 @@ ul.li{
     --vh: 7.46px;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
+    left: 50%;
 }
 
 .Avatar_avatar__2DI5d_Avatar_xs__i50kh{
@@ -1017,7 +1017,13 @@ ul.li{
     --vh: 7.46px;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
+    left: 80%;
 }
+
+#formsubmit:hover{
+	background-color: #00b2b2;
+}
+
 
 .PreviewButton_container__1P-_4{
     display: inline;
@@ -1102,16 +1108,13 @@ ul.li{
 }
 
 .Button_button__1e2A2_Button_primary__PxOJr_Button_contained__TTXSM_Button_md__1FRMG_Button_circular__3NpOv{
-    color: #fff;
     padding: 9px 16px;
     line-height: 1.45;
     font-size: 14px;
-    border-color: #00c4c4;
-    background-color: #00c4c4;
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
-    border: 1px solid #cdd3d8;
+    border: 1px solid #00c4c4;
     cursor: pointer;
     vertical-align: middle;
     text-decoration: none;
@@ -1125,6 +1128,8 @@ ul.li{
     margin: 0;
     --vh: 7.46px;
 	border-radius: 999em;
+	background-color: #00c4c4;
+	width: 88.61px; /* 별도로 크기 지정함 */
 }
 
 .save_span{
@@ -1521,10 +1526,9 @@ ul.li{
 	 padding: 9px 16px;
     line-height: 1.45;
     font-size: 14px;
-    position: relative;
+    position: absolute;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
-/*     border: 1px solid #cdd3d8; */
 border:none;
     border-radius: 3px;
     cursor: pointer;
@@ -1537,6 +1541,7 @@ border:none;
     -webkit-font-smoothing: antialiased;
     font-family: inherit;
     background: none;
+    left: 90%;
 }
 .exit_span{
 	color: #495057;
@@ -2222,6 +2227,9 @@ border:none;
     -webkit-text-size-adjust: none;
 }
 
+#photosubmit:hover{
+	background-color:#60656A;
+}
 
 .icon-camera-o{
     margin-right: 4px;
@@ -2590,6 +2598,14 @@ h4{
     -webkit-text-size-adjust: none;
 }
 
+.title-warning{
+	display:none;
+}
+
+.content-warning{
+	display:none;
+}
+
 .wide_column-2{
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -2713,11 +2729,17 @@ h4{
     column-count: initial !important;
     word-break: keep-all;
     --vh: 7.46px;
+    padding: 12px 14.1177px; /* 따로 지정함  */
+    resize: none!important;
 }
+
+textarea:focus {
+    outline: none!important; 
+    border-color: #00c4c4!important;
+	}
 
 .wz.input.inline-block, .wz.input:after {
     display: inline-block;
-
     vertical-align: middle;
     text-transform: none;
     line-height: 1;

@@ -22,7 +22,6 @@
 <body>
 	<div id="page-container">
 		<div class="black-bg-wrap" style="display: none;"></div>
-		<jsp:include page="../component/header.jsp"></jsp:include>
 		<!-- 헤더 적용  -->
 		<div id="newContainer">
 			<div id="wcommunityWrap">

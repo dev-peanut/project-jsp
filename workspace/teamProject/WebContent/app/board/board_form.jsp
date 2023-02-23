@@ -16,11 +16,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
+    <link rel="shortcut icon" href="images/logo.png">
 </head>
 
-<body class="ReactModal__Body--open" aria-hidden="true">
-    <div class="body1" data-react-modal-body-trap="" tabinㄴdex="0" style="position: absolute; opacity: 0;"></div>
+<body>
+    <div class="body1"></div>
     <div id="root">
         <div id="AppLayout_Container" class="AppLayout_container__3zbzb">
             <div class="AppLayout_main__14bCi">
@@ -48,15 +48,6 @@
                                         <a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa_select" href="/studio/reward/191893/funding/plan">식품 기부</a>
                                     </li>
                                     <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa" href="/studio/reward/191893/funding/screening">가전제품 기부</a></li>
-                                 <!--    <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa_select" href="/studio/reward/191893/funding/baseinfo">기본 정보</a></li>
-                                    <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa" href="/studio/reward/191893/funding/story" aria-current="page">스토리 작성</a>
-                                    </li>
-                                    <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa" href="/studio/reward/191893/funding/condition">리워드 설계</a></li>
-                                    <li>
-                                        <a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa" href="/studio/reward/191893/funding/policy">정책</a>
-                                    </li>
-                                    <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa" href="/studio/reward/191893/funding/makerInfo">메이커 정보</a></li>
-                                    <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa"href="/studio/reward/191893/funding/contractInfo">대표자 및 정산 정보</a></li> -->
                                 </ul>
                             </li>
                         </ul>
@@ -69,6 +60,7 @@
                                 <li class="Breadcrumb_item__2r9Ym">기부하기</li>
                                 <li class="Breadcrumb_item__2r9Ym">식품 기부</li>
                             </ol>
+                            
                             <nav class="DetailNavbar_container__3SkEf">
                                 <div class="AppNavbar_container__5uOnI">
                                     <div class="make" style="background: url(&quot;https://static.wadiz.kr/studio/funding/static/media/wadiz-logo.549edcd7.svg&quot;) 50% center / contain no-repeat; width: 129px; height: 48px; cursor: pointer;">
@@ -79,12 +71,8 @@
                                         <div class="name">정세인</div>
                                     </div>
                                  <div class="AppNavbar_buttonGroup__UcLfm">
-                                        <div class="PreviewButton_container__1P-_4">
-                                            <button class="Button_button__1e2A2_Button_primary__PxOJr_Button_md__1FRMG_Button_circular__3NpOv" type="button">
-                                                <span class="preview"><span class="Button_children__q9VCZ">미리 보기</span></span></button>
-                                        </div>
-                                        <button class="Button_button__1e2A2_Button_primary__PxOJr_Button_contained__TTXSM_Button_md__1FRMG_Button_circular__3NpOv" type="button">
-                                            <span class="save_span"><span class="Button_children__q9VCZ">임시 저장</span></span></button>
+                                        <button class="Button_button__1e2A2_Button_primary__PxOJr_Button_contained__TTXSM_Button_md__1FRMG_Button_circular__3NpOv" type="submit" id="formsubmit">
+                                            <span class="save_span"><span class="Button_children__q9VCZ">등록하기</span></span></button>
                                         <div class="AnnouncementButton_container__1p1gr" role="button"></div>
                                         <img class="AnnouncementButton_icon__29AtY" src="https://static.wadiz.kr/studio/funding/static/media/announcement.56f4b8e3.svg" alt="" aria-hidden="true">
                                         <span class="Badge_container__3mdFR_AnnouncementButton_badge__2Jq25"></span>
@@ -104,7 +92,6 @@
                                                                 <div class="AnnouncementListItem_header__72g1V">정책</div>
                                                                 <div class="AnnouncementListItem_registeredDate__3QNjz">12월 2일</div>
                                                             </div>
-                             
                                                             <div class="AnnouncementListItem_title__3s-2e">펀딩 요금제 수수료 개편 안내 </div>
                                                         </div>
                                                     </li>
@@ -178,6 +165,7 @@
 								<p class="FundingStoryContainer_description__1sMTR">도움이 필요한 이웃들과 음식을 함께 나누는 기쁨! 음식나눔은 사랑의 실천입니다.</p>
                             </div>
                         </div>
+                        <form class="wz_form_FundingStoryFormContainer_form__326Zc_Form_form__3ASTU">
                         <!-- 음식 이름 -->
                             <section class="Section_container__3md8M">
                                 <div style="max-width: 600px;">
@@ -192,7 +180,8 @@
                                                 <div class="wide_column-2"></div>
                                                 <div class="wide_column-4">
                                                     <div class="wz input">
-                                                        <textarea placeholder="음식 이름" helper="[object Object]" name="storyInfo.coreMessage" rows="3"></textarea>
+                                                        <textarea placeholder="음식 이름" helper="[object Object]" name="storyInfo.coreMessage" rows="2" class="nameData"></textarea>
+                                                        <div id="name-warning">필수 정보입니다</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -213,7 +202,8 @@
                                                 <div class="wide_column-2"></div>
                                                 <div class="wide_column-4">
                                                     <div class="wz input">
-                                                    <textarea placeholder="음식 무게" helper="[object Object]" name="storyInfo.coreMessage" rows="3"></textarea>
+                                                    <textarea placeholder="음식 무게" helper="[object Object]" name="storyInfo.coreMessage" rows="3" class="weightData"></textarea>
+                                                     <div id="weight-warning"><p>필수 정보입니다</p></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -221,7 +211,6 @@
                                     </div>
                                 </div>
                             </section> 
-                            
                                   <section class="Section_container__3md8M">
                                 <div style="max-width: 600px;">
                                     <div class="Section_header__1qwS7">
@@ -235,7 +224,8 @@
                                                 <div class="wide_column-2"></div>
                                                 <div class="wide_column-4">
                                                     <div class="wz input">
-                                                        <textarea placeholder="음식 이름" helper="[object Object]" name="storyInfo.coreMessage" rows="3"></textarea>
+                                                        <textarea placeholder="픽업 날짜" helper="[object Object]" name="storyInfo.coreMessage" rows="1" class="dateData"></textarea>
+                                                         <div id="date-warning"><p>필수 정보입니다</p></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -244,7 +234,9 @@
                                 </div>
 
                             </section>
-                            <form class="wz_form_FundingStoryFormContainer_form__326Zc_Form_form__3ASTU">
+                            <section>
+                            
+                            
                             <div class="Loader_loader__d9YUC_Form_loader__1YJ5I"></div>
                             <section class="Section_container__3md8M">
                                 <div style="max-width: 600px;">
@@ -259,28 +251,29 @@
                                             <div class="field_Form_field__35I9T_required_ImageFormField_field__X1jTW_StoryImageField_field__3O6yy">
                                                 <div class="ImageFormField_buttonWrapper__su3pO">
                                                     <label class="wz_label_ImageFileButton_label__3thB2_Label_label__3oH0h">
-                                                        <button type="button" class="wz_button_gray_ImageFileButton_button__3gAHD">
-															<i class="icon-camera-o" aria-hidden="true"></i>등록하기</button>
+                                                        <button type="button" class="wz_button_gray_ImageFileButton_button__3gAHD" id="photosubmit">
+                                                            <i class="icon-camera-o" aria-hidden="true"></i>등록하기</button>
                                                         <div class="wz_input_right_ImageFileButton_input__1Dnch">
-                                                            <input accept="image/JPG,image/JPEG,image/GIF,image/PNG" name="uploadFile" placeholder="" type="file" value="">
+                                                            <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);"/>
                                                         </div>
                                                     </label>
                                                     <em class="helper error"></em><em class="helper_ImageFormField_helper__3XC5c">2MB 이하의 JPG, JPEG, GIF, PNG 파일</em>
-<!--                                                     <em class="helper_ImageFormField_helper__3XC5c">해상도 630x400 픽셀 이상</em>
-                                                    <em class="helper_ImageFormField_helper__3XC5c">여러 장 등록돼요.</em> -->
+                                                    <div class="image_space"></div><div id="image_container"></div></div>
+                  				     			 </section></form>
+					                                </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                            
                                 </div>
-                        </form></div>
+					</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <script src="https://www.amcharts.com/lib/4/core.js"></script>
 </body>
 <script type="text/javascript" src="../../assets/js/board/board_form.js"></script>
 </html>

@@ -17,10 +17,10 @@
        				<div id="tabContent1" class="tab-content">
 	       				<h5>프로필 사진</h5>
 	       				<div class="profileimg-wrap">
-	       					<button type="button" id="resultProfileImg" class="profileimg" onclick="$('#uploadProfileImg').click();"><em style="background-image:url(https://static.wadiz.kr/assets/icon/profile-icon-4.png)"></em></button>
+	       					<button type="button" id="resultProfileImg" class="profileimg" onclick="$('#uploadProfileImg').click();"><em id="image_container" style="background-image:url(https://static.wadiz.kr/assets/icon/profile-icon-4.png)"></em></button>
 	       					<p class="setting-profileimg">
 	       						<button type="button" onclick="$('#uploadProfileImg').click()" id="btn_updatePhoto">
-	       							<span>바꾸기</span>
+	       							<span id="img">바꾸기</span>
 	       						</button>
 	       						<button type="button" onclick="deletePhoto()" id="btn_deletePhoto">삭제</button>
 	       					</p>

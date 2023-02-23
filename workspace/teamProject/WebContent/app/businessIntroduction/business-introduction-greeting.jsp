@@ -12,7 +12,7 @@
 <title>인사말</title>
 </head>
 <body>
-    <jsp:include page="../component/header.jsp"></jsp:include>
+    <jsp:include page="../components/header.jsp"></jsp:include>
     <div id="whole-wrapper">
         <div class="title-wrapper" id="top">
             <h2 class="title">와디즈<br>어워즈</h2>
@@ -59,6 +59,6 @@
             <hr class="space">
         </div>
     </div>
-    <jsp:include page="../component/footer.jsp"></jsp:include>
+    <jsp:include page="../components/footer.jsp"></jsp:include>
 </body>
 </html>

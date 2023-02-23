@@ -13,7 +13,7 @@
 <link href="../../assets/css/notice/question.css" rel="stylesheet">
 </head>
 <body>
-    <jsp:include page="../component/header.jsp"></jsp:include>
+    <jsp:include page="../components/header.jsp"></jsp:include>
 	<div id="whole-wrapper">
         <div id="whole-inner">
             <p id="event-title">자주하는 질문</p>
@@ -245,6 +245,6 @@
             </div>
         </div>
     </div>
-    <jsp:include page="../component/footer.jsp"></jsp:include>
+    <jsp:include page="../components/footer.jsp"></jsp:include>
 </body>
 </html>

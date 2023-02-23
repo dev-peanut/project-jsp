@@ -226,10 +226,10 @@ div.next-icon:before {
 }
 
 .banner-active { /* 배너 현재 퍼센트, 배너 바 현재 */
-    transition: width .3s;
+    width: calc(100% / 6); /* 100%에서 배너 개수로 나눔. */
+    transition: width 0.3s;
     background: #fff;
     height: 100%;
-    width: 100 / ;
 }
 
 /* div.move-arrow {

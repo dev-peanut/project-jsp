@@ -7,8 +7,7 @@
 <title>와디즈</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/assets/css/main/main.css" rel="stylesheet">
-<!-- 파비콘 마지막에 추가 예정 -->
-<!-- <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico"> -->
+<link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
 </head>
 <body style="overflow: auto;">
 	<div id="page-container">
@@ -20,6 +19,7 @@
 				<section class="container">
 			        <!-- 메인 배너 -->
 			        <div class="banners">
+						<div class="banner"></div> <!-- 0번 배너 = 6번 배너와 이미지 동일 -->
 			            <div class="banner"> <!-- 1번 배너 -->
 			            	<div class="banner-text-inner-wrapper">
 				        		<p class="banner-text-title">서포터클럽 이름 변경 안내<br>첫 달 무료로 이용하세요!</p>
@@ -56,6 +56,7 @@
 				        		<p class="banner-text-badge">펀딩</p>
 				        	</div>
 			            </div>
+						<div class="banner"></div> <!-- 7번 배너 = 1번 배너와 이미지 동일 -->
 			        </div>
 					<!-- 배너 총 퍼센티지. 투명 바 -->
 					<div class="banner-total">

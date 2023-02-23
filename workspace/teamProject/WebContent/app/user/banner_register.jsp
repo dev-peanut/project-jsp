@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	    <jsp:include page="../components/header.jsp"></jsp:include>
+	<jsp:include page="../components/header.jsp"></jsp:include>
     <main>
         <div id="whole-wrapper">
             <div id="inner-whole">

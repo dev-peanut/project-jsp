@@ -11,7 +11,7 @@
 <body>
 	<div id="page-container">
 		<!-- 헤더 적용 -->
-		<jsp:include page="../components/header.jsp"></jsp:include>
+		<jsp:include page="../components/header-my.jsp"></jsp:include>
 		<!-- 메인 컨텐츠 적용 -->
 		<div id="container">
 			<div id="mypageWrap">

@@ -12,7 +12,7 @@
 	<div id="page-container">
 		<main id="main-app">
 			<!-- 헤더 적용 -->
-			<jsp:include page="../components/header.jsp"></jsp:include>
+			<jsp:include page="../components/header-my.jsp"></jsp:include>
 			<!-- main -->
 			<div id="accountWrap">
 	            <!-- S : #newContainer -->

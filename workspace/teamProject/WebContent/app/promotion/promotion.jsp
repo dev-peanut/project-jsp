@@ -24,14 +24,14 @@
                 <div><img src="https://www.lgdisplay.com/images/background/bg_graphic_tvdisplay01.png"></div>
                 <div><img src="https://www.lgdisplay.com/images/tech/lg-display-technology-oled-meta-technology-kv-d.jpg"></div>
                 <div><img src="https://www.lgdisplay.com/images/background/bg_graphic_tvdisplay01.png"></div> -->
-                <div><img src="${pageContext.request.contextPath}/assets/img/006.png"></div>
-                <div><img src="${pageContext.request.contextPath}/assets/img/001.png"></div>
-                <div><img src="${pageContext.request.contextPath}/assets/img/002.png"></div>
-                <div><img src="${pageContext.request.contextPath}/assets/img/003.png"></div>
-                <div><img src="${pageContext.request.contextPath}/assets/img/004.png"></div>
-                <div><img src="${pageContext.request.contextPath}/assets/img/005.png"></div>
-                <div><img src="${pageContext.request.contextPath}/assets/img/006.png"></div>
-                <div><img src="${pageContext.request.contextPath}/assets/img/001.png"></div>
+                <div><img src="${pageContext.request.contextPath}/images/user/006.png"></div>
+                <div><img src="${pageContext.request.contextPath}/images/user/001.png"></div>
+                <div><img src="${pageContext.request.contextPath}/images/user/002.png"></div>
+                <div><img src="${pageContext.request.contextPath}/images/user/003.png"></div>
+                <div><img src="${pageContext.request.contextPath}/images/user/004.png"></div>
+                <div><img src="${pageContext.request.contextPath}/images/user/005.png"></div>
+                <div><img src="${pageContext.request.contextPath}/images/user/006.png"></div>
+                <div><img src="${pageContext.request.contextPath}/images/user/001.png"></div>
             </div>
             <div id="mark-bottom"></div>
             <div id="mark-bottom2"></div>

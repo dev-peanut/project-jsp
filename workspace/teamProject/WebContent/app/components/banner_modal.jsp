@@ -14,7 +14,7 @@
 			<div class="popup">
 				<!-- x 이미지 -->
 				<label> <img id="exit"
-					src="${pageContext.request.contextPath}/assets/img/exit.png">
+					src="${pageContext.request.contextPath}/images/user/exit.png">
 					<button id="close"></button></label>
 				<!-- x 이미지 끝 -->
 				<!-- 배너설정 창  -->
@@ -88,34 +88,6 @@
 													<tbody data-testid="Tbody_tbody">
 														<tr class="css-5dt5vx eik1886">
 															<td width="35" class="css-4mcdtz eik1885">1</td>
-															<td width="50" class="css-5xaqdp eik1885"><div
-																	data-testid="getColumnData_MoveButtonWrap"
-																	class="css-umkjw1 e7abtep4">
-																	<button type="button" direction="up"
-																		data-testid="getColumnData_MoveButton"
-																		class="e7abtep3 css-du1sny esmk9vo0"></button>
-																	<button type="button" direction="down"
-																		data-testid="getColumnData_MoveButton_1"
-																		class="e7abtep3 css-k934s4 esmk9vo0"></button>
-																</div></td>
-															<td width="240" class="css-pxtcrr eik1885"><div
-																	class="css-1vr7vmn e118rsqf3">
-																	<button type="button"
-																		data-testid="ImageFilenameInput_Button"
-																		class="css-31q4q7 esmk9vo0">파일 선택</button>
-																	<input type="file"
-																		accept="image/jpeg,image/png,image/gif"
-																		class="e118rsqf2 css-19vfqwt ed83gly0">
-																	<div class="css-16lhuhp e118rsqf1">선택된 파일 없음</div>
-																</div></td>
-															<td class="css-1kbesc1 eik1885"><input type="text"
-																name="imageDetail.0.linkUrl"
-																class="ezgbbl70 css-bup7mq ed83gly0"></td>
-														</tr>
-													</tbody>
-													<tbody data-testid="Tbody_tbody">
-														<tr class="css-5dt5vx eik1886">
-															<td width="35" class="css-4mcdtz eik1885">2</td>
 															<td width="50" class="css-5xaqdp eik1885"><div
 																	data-testid="getColumnData_MoveButtonWrap"
 																	class="css-umkjw1 e7abtep4">

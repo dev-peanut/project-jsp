@@ -30,7 +30,7 @@
 					<input id="searchbox" type="text" placeholder="원하시는 키워드로 찾아보세요" />
 					<button type="button" class="search__searchbox__button">
 						<img
-							src="${pageContext.request.contextPath}/assets/img/search.png"
+							src="${pageContext.request.contextPath}/images/user/search.png"
 							alt="" />
 					</button>
 				</form>
@@ -244,6 +244,34 @@
 				</div>
 				<!-- 배너 추가 끝 -->
 			</div>
+			<div class="desktop-only">
+              <!-- 데스크탑용 버튼 -->
+              <button class="prev-page icon-chevron-left" onclick="movePage(0)" disabled="">
+                <span class="text-hidden">이전</span>
+              </button>
+
+              <!-- 데스크탑용 페이지 리스트 -->
+              
+                <a class="current" href="#" onclick="movePage(1)">1</a>
+              
+                <a href="#" onclick="movePage(2)">2</a>
+              
+                <a href="#" onclick="movePage(3)">3</a>
+              
+                <a href="#" onclick="movePage(4)">4</a>
+              
+                <a href="#" onclick="movePage(5)">5</a>
+              
+                <a href="#" onclick="movePage(6)">6</a>
+              
+              
+
+              <!-- 데스크탑용 버튼 -->
+              <button class="next-page icon-chevron-right" onclick="movePage(7)">
+                <span class="text-hidden">다음</span>
+              </button>
+            </div>
+			
 		</article>
 	</main>
 </body>

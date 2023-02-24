@@ -657,7 +657,7 @@ header{
     letter-spacing: -.3px;
     font-size: 16px;
     font-weight: 400;
-    padding-bottom: 8px;
+    
 }
 
 .password-field-text{
@@ -758,6 +758,7 @@ header{
 .recheck-password{
     display: block;
     position: relative;
+    padding-top: 8px;
 }
 
 .re-input-password-container{
@@ -940,4 +941,25 @@ input:focus {
 
 #name-name {
 	margin-top: 24px;
+}
+
+/* 에러 메시지 */
+.error-message {
+    /* ===== 에러 메시지 기본값 초기화 시작 ====== */
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font: inherit;
+    box-sizing: border-box;
+    /* ===== 에러 메시지 기본값 초기화 끝 =====*/
+    
+    color: #e54545;
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    display: none; /* 기본값 */
+    margin-top: 4px;
+    font-style: normal;
 }

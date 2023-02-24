@@ -14,7 +14,7 @@
 <body>
     <header class="page">
       <div class="page-info">
-        <img src="${pageContext.request.contextPath}/assets/img/menubar.png" alt="icon" class="page-info__icon" />
+        <img src="${pageContext.request.contextPath}/images/user/menubar.png" alt="icon" class="page-info__icon" />
         <ul>
         <a href="${pageContext.request.contextPath}/app/admin/admin_home.jsp">
         	<span>

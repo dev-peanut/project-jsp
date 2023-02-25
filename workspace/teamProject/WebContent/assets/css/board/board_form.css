@@ -28,7 +28,7 @@ body{
 }
 
 
-body1{
+.body1{
     position: absolute;
     opacity: 0;
     box-sizing: border-box;
@@ -884,6 +884,7 @@ ul.li{
     -webkit-text-size-adjust: none;
 } 
 
+
 .AppNavbar_maker__2WVfm{
     display: flex;
     position: absolute;
@@ -1555,6 +1556,17 @@ border:none;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
 }
+
+
+.Button_button__1e2A2{
+	width: 116.14px;
+	height: 52px;
+    max-width: 100%;
+    border-color: #00c4c4;
+    background-color: #00c4c4;
+    color: #fff;
+}
+
 
 .HeaderLayout_contents__F4hlC{
     flex: 1 1;
@@ -4473,3 +4485,4 @@ cursor: pointer;
     --vh: 7.46px;
 }
 
+ 

@@ -33,7 +33,7 @@
 						<summary class="nav-menu">
 							<h2 class="menu__title">회원</h2>
 							<img
-								src="${pageContext.request.contextPath}/assets/img/dropdown.png"
+								src="${pageContext.request.contextPath}/images/user/dropdown.png"
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
@@ -50,7 +50,7 @@
 						<summary class="nav-menu">
 							<h2 class="menu__title">기부 관리</h2>
 							<img
-								src="${pageContext.request.contextPath}/assets/img/dropdown.png"
+								src="${pageContext.request.contextPath}/images/user/dropdown.png"
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">

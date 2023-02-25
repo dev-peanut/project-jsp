@@ -11,7 +11,7 @@ div {
     font-family: wadizicon;
 }
 
-.ReactModal__Body--open{
+body{
     pointer-events: auto!important;
     height: inherit;
     overflow: initial;
@@ -33,7 +33,6 @@ div {
     --vh: 7.46px;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
-/*     background-color: rgba(0,0,0,.54); */
 }
 
 
@@ -812,6 +811,7 @@ ul.li{
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
 }
+-
 
 .DetailNavbar_container__3SkEf{
     box-shadow: 0 1px 0 0 rgb(10 22 70 / 6%);
@@ -894,6 +894,7 @@ ul.li{
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
 } 
+
 
 .AppNavbar_maker__2WVfm{
     display: flex;
@@ -1020,11 +1021,6 @@ ul.li{
     left: 80%;
 }
 
-#formsubmit:hover{
-	background-color: #00b2b2;
-}
-
-
 .PreviewButton_container__1P-_4{
     display: inline;
     position: relative;
@@ -1052,7 +1048,7 @@ ul.li{
     line-height: 1.45;
     font-size: 14px;
     border-color: #00c4c4;
-    color: #00a2a2;
+    color: #00c4c4;
     border-radius: 999em;
     position: relative;
     transition-property: background-color,border-color,color,opacity;
@@ -1130,6 +1126,10 @@ ul.li{
 	border-radius: 999em;
 	background-color: #00c4c4;
 	width: 88.61px; /* 별도로 크기 지정함 */
+}
+
+#formsubmit:hover{
+	background-color: #00b2b2;
 }
 
 .save_span{

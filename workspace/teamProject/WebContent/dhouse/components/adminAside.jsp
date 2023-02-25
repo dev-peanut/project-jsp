@@ -73,7 +73,7 @@
 						<summary class="nav-menu">
 							<h2 class="menu__title">배너 및 홍보</h2>
 							<img
-								src="${pageContext.request.contextPath}/assets/img/dropdown.png"
+								src="${pageContext.request.contextPath}/images/user/dropdown.png"
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">

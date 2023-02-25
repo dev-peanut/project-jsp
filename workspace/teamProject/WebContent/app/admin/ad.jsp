@@ -30,7 +30,7 @@
 					<input id="searchbox" type="text" placeholder="원하시는 키워드로 찾아보세요" />
 					<button type="button" class="search__searchbox__button">
 						<img
-							src="${pageContext.request.contextPath}/assets/img/search.png"
+							src="${pageContext.request.contextPath}/images/user/search.png"
 							alt="" />
 					</button>
 				</form>
@@ -202,67 +202,39 @@
 						</label>
 					</div>
 				</div>
-				<div class="support-list__info-container">
-					<div class="support-list__info-unit">
-						<input type="checkbox" class="support__checkbox" id="kus"
-							name="checkbox" /> <label for="kus"
-							class="support__checkbox--label">
-							<ul class="support-list__info">
-								<li class="support__id">test</li>
-								<li class="support__type">홍보</li>
-								<li class="support__user-id">testId</li>
-								<li class="support__title">title</li>
-								<li class="support__content">test</li>
-								<li class="support__date-post">yyyy-mm-dd</li>
-								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">상세
-										정보</button></li>
-							</ul>
-						</label>
-					</div>
-				</div>
-				<div class="support-list__info-container">
-					<div class="support-list__info-unit">
-						<input type="checkbox" class="support__checkbox" id="kus"
-							name="checkbox" /> <label for="kus"
-							class="support__checkbox--label">
-							<ul class="support-list__info">
-								<li class="support__id">test</li>
-								<li class="support__type">홍보</li>
-								<li class="support__user-id">testId</li>
-								<li class="support__title">title</li>
-								<li class="support__content">test</li>
-								<li class="support__date-post">yyyy-mm-dd</li>
-								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">상세
-										정보</button></li>
-							</ul>
-						</label>
-					</div>
-				</div>
-				<div class="support-list__info-container">
-					<div class="support-list__info-unit">
-						<input type="checkbox" class="support__checkbox" id="kus"
-							name="checkbox" /> <label for="kus"
-							class="support__checkbox--label">
-							<ul class="support-list__info">
-								<li class="support__id">test</li>
-								<li class="support__type">홍보</li>
-								<li class="support__user-id">testId</li>
-								<li class="support__title">title</li>
-								<li class="support__content">test</li>
-								<li class="support__date-post">yyyy-mm-dd</li>
-								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">상세
-										정보</button></li>
-							</ul>
-						</label>
-					</div>
-				</div>
+				
 
 
 				<!-- 스크롤 테스트 끝  -->
 			</div>
+			
+			<div class="desktop-only">
+              <!-- 데스크탑용 버튼 -->
+              <button class="prev-page icon-chevron-left" onclick="movePage(0)" disabled="">
+                <span class="text-hidden">이전</span>
+              </button>
+
+              <!-- 데스크탑용 페이지 리스트 -->
+              
+                <a class="current" href="#" onclick="movePage(1)">1</a>
+              
+                <a href="#" onclick="movePage(2)">2</a>
+              
+                <a href="#" onclick="movePage(3)">3</a>
+              
+                <a href="#" onclick="movePage(4)">4</a>
+              
+                <a href="#" onclick="movePage(5)">5</a>
+              
+                <a href="#" onclick="movePage(6)">6</a>
+              
+              
+
+              <!-- 데스크탑용 버튼 -->
+              <button class="next-page icon-chevron-right" onclick="movePage(7)">
+                <span class="text-hidden">다음</span>
+              </button>
+            </div>
 		</article>
 	</main>
 	<!-- modal -->

@@ -17,13 +17,6 @@
         <section class="container">
             <div class="arrow prev">&lt;</div>
             <div class="banner">
-                <!-- <div><img src="https://www.lgdisplay.com/images/tech/lg-display-technology-oled-meta-technology-kv-d.jpg"></div>
-                <div><img src="https://www.lgdisplay.com/images/background/bg_graphic_tvdisplay01.png"></div>
-                <div><img src="https://www.lgdisplay.com/images/tech/lg-display-technology-oled-meta-technology-kv-d.jpg"></div>
-                <div><img src="https://www.lgdisplay.com/images/background/bg_graphic_tvdisplay01.png"></div>
-                <div><img src="https://www.lgdisplay.com/images/background/bg_graphic_tvdisplay01.png"></div>
-                <div><img src="https://www.lgdisplay.com/images/tech/lg-display-technology-oled-meta-technology-kv-d.jpg"></div>
-                <div><img src="https://www.lgdisplay.com/images/background/bg_graphic_tvdisplay01.png"></div> -->
                 <div><img src="${pageContext.request.contextPath}/images/user/006.png"></div>
                 <div><img src="${pageContext.request.contextPath}/images/user/001.png"></div>
                 <div><img src="${pageContext.request.contextPath}/images/user/002.png"></div>

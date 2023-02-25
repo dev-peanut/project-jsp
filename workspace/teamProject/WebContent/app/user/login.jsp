@@ -57,7 +57,7 @@
 	                    <button class="kakaobutton"><span><span class="Button_children__weH0H"><svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__1YH1P SNSButtonList_kakaoIcon__1s6gw" aria-hidden="true"><path d="M16 4.64c-6.96 0-12.64 4.48-12.64 10.08 0 3.52 2.32 6.64 5.76 8.48l-.96 4.96 5.44-3.6 2.4.16c6.96 0 12.64-4.48 12.64-10.08S22.96 4.56 16 4.64z"></path></svg>카카오로 시작하기</span></span></button>
 	                    <button id="naver" class="loginbutton" type="button"><span id="naver-span"><span id="naver-span-span" class="Button_children__weH0H"><svg id="naver-svg" viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__1YH1P SNSButtonList_naverIcon__3TjPM" aria-hidden="true"><path d="M19.52 5.76v10.32L12.48 5.76H4.8v20.48h7.68V15.92l7.12 10.32h7.6V5.76z"></path></svg>네이버로 시작하기</span></span></button>
 <!-- 	                    <button id="naver" class="loginbutton"><span><span class="Button_children__weH0H"><svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__1YH1P SNSButtonList_naverIcon__3TjPM" aria-hidden="true"><path d="M19.52 5.76v10.32L12.48 5.76H4.8v20.48h7.68V15.92l7.12 10.32h7.6V5.76z"></path></svg>네이버로 시작하기</span></span></button> -->
-	                    <div class="snsbuttoncircle">
+	                    <!-- <div class="snsbuttoncircle">
 		                    <button id="google">
 			                    <span class="google">
 			                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><defs><path id="a" d="M0 0h348v46H0z"></path></defs><g fill="none" fill-rule="evenodd"><g transform="translate(-16 -13)"><use></use><path stroke="#DADCE0" d="M-.5-.5h349v47H-.5z"></path></g><path fill="#4285F4" d="M18.64 10.205c0-.639-.057-1.252-.164-1.841H10v3.481h4.844a4.14 4.14 0 0 1-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615z"></path><path fill="#34A853" d="M10 19c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H1.957v2.332A8.997 8.997 0 0 0 10 19z"></path><path fill="#FBBC05" d="M4.964 11.71A5.41 5.41 0 0 1 4.682 10c0-.593.102-1.17.282-1.71V5.958H1.957A8.996 8.996 0 0 0 1 10c0 1.452.348 2.827.957 4.042l3.007-2.332z"></path><path fill="#EA4335" d="M10 4.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C14.463 1.891 12.426 1 10 1a8.997 8.997 0 0 0-8.043 4.958L4.964 8.29C5.672 6.163 7.656 4.58 10 4.58z"></path><path d="M0 0h20v20H0z"></path></g></svg>
@@ -73,7 +73,7 @@
 			                        <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__1YH1P" aria-hidden="true"><path d="M24.96 26c-1.12 1.68-2.32 3.28-4.08 3.28s-2.32-1.04-4.4-1.04-2.64 1.04-4.4 1.12S9.04 27.6 7.92 26c-2.32-3.28-4-9.36-1.68-13.44 1.098-1.973 3.148-3.299 5.512-3.36 1.688 0 3.368 1.12 4.408 1.12s3.04-1.44 5.12-1.2a6.157 6.157 0 0 1 4.867 2.62c-1.691 1.087-2.82 2.936-2.867 5.053a5.926 5.926 0 0 0 3.562 5.352 13.472 13.472 0 0 1-1.913 3.901zm-7.6-21.36a6.072 6.072 0 0 1 3.894-1.998c.038.139.045.303.045.469 0 1.44-.521 2.759-1.386 3.777A4.871 4.871 0 0 1 16.04 8.8h-.042a6.886 6.886 0 0 1-.016-.451 5.66 5.66 0 0 1 1.384-3.716z"></path></svg>
 			                    </span>
 		                    </button>
-	                    </div>
+	                    </div> -->
                     </div>
 		            <div class="bottom-message"> 
 		            <!-- 하단 메세지 -->

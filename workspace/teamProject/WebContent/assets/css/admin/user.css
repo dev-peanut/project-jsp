@@ -9,7 +9,7 @@ body {
 
 /* main */
 .module-container {
-	/* position: relative; */
+	position: relative;
 	margin-left: 15.5vw;
 	padding: 5.5rem 7rem 9rem 6rem;
 	background-color: #fbfbfb;
@@ -18,7 +18,7 @@ body {
 	column-gap: 1.5rem;
 	row-gap: 1.5rem;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-areas: "s s a b" "c c c c";
+	grid-template-areas: "s s a b" "c c c c" "d d f f"
 }
 
 .module {
@@ -27,7 +27,7 @@ body {
 }
 
 .module--search {
-/* 	position: absolute; */
+	/* 	position: absolute; */
 	grid-area: s;
 	width: 110%;
 	height: 100%;
@@ -39,6 +39,15 @@ body {
 	display: flex;
 	align-items: center;
 	width: 100%;
+}
+
+.desktop-only {
+	position: absolute;
+    grid-area: d;
+    bottom: 77%;
+    font-size: 17px;
+    maring: 0 0 0px 0px;
+    letter-spacing: 9px;
 }
 
 #searchbox {
@@ -86,16 +95,16 @@ body {
 /* modules */
 .module--user-summary:hover {
 	background-color: #ddd;
-    border-radius: 5px;
+	border-radius: 5px;
 }
 
 .module--user-controller:hover {
 	background-color: #ddd;
-    border-radius: 5px;
+	border-radius: 5px;
 }
 
 .module--user-summary {
-	position: absolute; 
+	position: absolute;
 	grid-area: a;
 	width: 112px;
 	height: 44px;
@@ -103,7 +112,7 @@ body {
 	/* width: 94%; */
 	margin: 0 auto;
 	top: 17%;
-    right: 28%;
+	right: 28%;
 	padding-left: 3.8em;
 	font-size: 15px;
 	line-height: 3em;
@@ -114,18 +123,18 @@ body {
 }
 
 .module--user-controller {
-	position: absolute; 
+	position: absolute;
 	/*  top: 60%;
     left: -45%; */
 	grid-area: b;
 	/* font-size: 18px; */
-	width: 112px;
-	height: 44px;
+	width: 43%;
+	height: 42%;
 	/* text-align: center; */
 	/* width: 94%; */
 	margin: 0 auto;
-	top: 17%;
-    right: 20%;
+	top: 46%;
+	right: 5%;
 	padding-left: 3.8em;
 	font-size: 15px;
 	line-height: 3em;
@@ -133,6 +142,12 @@ body {
 	color: #434343;
 	border-radius: 16px;
 	box-shadow: 0px 3px 4px rgb(0 0 0/ 10%);
+	height: 42%;
+	/* text-align: center; */
+	/* width: 94%; */
+	margin: 0 auto;
+	top: 46%;
+	right: 5%;
 }
 
 .buttonWrapper {
@@ -154,8 +169,8 @@ body {
 
 .module--user-list {
 	grid-area: c;
-	width: 900px;
-	height: 38vh;
+	width: 100%;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -181,7 +196,6 @@ body {
 	height: 1px;
 	background-color: rgba(0, 0, 0, 0.3);
 } */
-
 .user-list__title-unit {
 	width: 100%;
 	display: flex;
@@ -205,11 +219,11 @@ body {
 	width: 100%;
 	margin-top: 0.2em;
 }
-.user-list__info-container:hover{
-	background-color: #ddd;
-    border-radius: 5px;
-}
 
+.user-list__info-container:hover {
+	background-color: #ddd;
+	border-radius: 5px;
+}
 
 .user-list__info-unit {
 	width: 100%;
@@ -344,14 +358,112 @@ body {
 
 /* 버튼 */
 .btn-16 {
-  border: none;
-  color: #000;
-  background-color: transparent;
-  border-radius: 10px;
+	border: none;
+	color: #000;
+	background-color: transparent;
+	border-radius: 10px;
 }
 
 .btn-16:hover {
-  color: #ff2c2c;
+	color: #ff2c2c;
 }
+
+/* 1,2,3,4 페이지 버튼 */
+@media screen and (min-width: 769px) {
+	.board .desktop-only {
+		display: block;
+	}
+}
+
+.board div, .board input, .board a {
+	box-sizing: border-box;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (min-width: 769px) {
+	.board-footer .pagination .prev-page {
+		margin-right: 16px;
+	}
+}
+
+.board-footer .pagination .prev-page {
+	left: 0;
+}
+
+@media screen and (min-width: 769px) {
+	.board-footer .pagination .prev-page, .board-footer .pagination .next-page
+		{
+		position: static;
+	}
+}
+
+.board-footer .pagination button {
+	padding: 0;
+	width: 36px;
+	height: 36px;
+	font-size: 21px;
+}
+
+button {
+	border-radius: 0;
+	cursor: pointer;
+	background: none;
+	color: inherit;
+	vertical-align: baseline;
+	font: inherit;
+	appearance: auto;
+	writing-mode: horizontal-tb !important;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: center;
+	aligsn-items: flex-start;
+}
+
+@media screen and (min-width: 769px){
+.board-footer .pagination .prev-page>span, .board-footer .pagination .next-page>span {
+    display: block;
+}}
+
+.board-footer .pagination .page span {
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+.board .text-hidden {
+    margin-top: -1px;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+span{
+	margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.board-footer .pagination .page a.current {
+    color: #34383a;
+    font-weight: 500;
+}
+
+.board-footer .pagination .page a {
+    display: inline-block;
+    width: 32px;
+    line-height: 34px;
+    color: #7c8288;
+}
+
 
 

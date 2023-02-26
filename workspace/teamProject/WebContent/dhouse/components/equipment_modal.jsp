@@ -34,6 +34,7 @@
 								<input type="text" id="text-content"
 									value="역삼역 근처에서 빠르게 거래합니다. 댓글 남겨주세요." class="user-input"
 									readonly >
+									readonly style="height:100px">
 
 							</div>
 							<!-- <div class="input-wrapper">

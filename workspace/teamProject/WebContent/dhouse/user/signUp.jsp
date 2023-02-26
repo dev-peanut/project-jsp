@@ -9,11 +9,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
-<link href="../../assets/css/user/signUp.css" rel="stylesheet">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
+<link href="${pageContext.request.contextPath}/assets/css/user/signUp.css" rel="stylesheet">
 </head>
 <body>
-    <jsp:include page="../user/user-header.jsp"></jsp:include>
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/user/user-header.jsp"></jsp:include>
 	<!-- <header>
 		<div id="wrapper">
 			<h1 id="header-logo">
@@ -121,7 +121,7 @@
                             <label class="EmailAuthField">아이디</label>
                             <div class="email-field-input-continer">
                                 <div class="EmailAuthField_inputField">
-                                    <input name="identification" placeholder="아이디 입력" type="text" class="email-field">
+                                    <input name="identification" placeholder="아이디 입력" type="text" class="email-field" id="identification-input">
                                 </div>
                             </div><!-- email-field-input-continer -->
                             <em class="identification-error error-message">아이디를 입력해주세요.</em>
@@ -167,17 +167,17 @@
                             <label class="EmailAuthField">닉네임</label>
                             <div class="email-field-input-continer">
                                 <div class="EmailAuthField_inputField">
-                                    <input name="nickName" placeholder="닉네임 입력" type="text" class="email-field">
+                                    <input name="nickName" placeholder="닉네임 입력" type="text" class="nickname-field email-field" id="nickname">
                                 </div>
                             </div><!-- email-field-input-continer -->
-                            <em class="nickName-error error-message">닉네임을 입력해주세요.</em>
+                            <em class="nickname-error error-message">최소 2자입니다.</em>
                         </div><!-- email-field -->
                         <!-- 한줄 복사 -->
                         <div class="email-field-container">
                             <label class="EmailAuthField">이메일</label>
                             <div class="email-field-input-continer">
                                 <div class="EmailAuthField_inputField">
-                                    <input name="name" placeholder="이메일 입력" type="text" class="email-field">
+                                    <input name="name" placeholder="이메일 입력" type="text" class="email-field" id="email-input">
                                 </div>
                             </div><!-- email-field-input-continer -->
                             <em class="email-error error-message">이메일을 입력해주세요.</em>
@@ -185,20 +185,20 @@
                 	</div>
                     <div class="name-field" id="name-name"><label>이름</label>
                         <div class="TextField_field__1B2AH">
-                            <input name="email" placeholder="이름 입력" type="text" class="name-input">
+                            <input name="email" placeholder="이름 입력" type="text" class="name-input" id="name-input">
                         </div>
                         <em class="name-error error-message">이름을 입력해주세요.</em>
                     </div>
                     <!-- 이름 끝 -->
-                    <div class="phone-field" id="phone-name"><label>핸드폰 번호</label>
+                    <div class="name-field phone-field" id="phone-name"><label>핸드폰 번호</label>
                         <div class="TextField_field__1B2AH">
-                            <input name="phoneNumber" placeholder="핸드폰 번호 입력" type="text" class="name-input" maxlength="11">
+                            <input name="phoneNumber" placeholder="핸드폰 번호 입력" type="text" class="name-input" id="input-phone-number" maxlength="11">
                         </div>
                         <em class="phone-error error-message">핸드폰 번호를 입력해주세요.</em>
                     </div>
 					<!-- phoneNumber 끝 -->
                     <div class="SignUpAllCheckTermsCheckbox"> <!-- 회원 약관 동의 -->
-                        <label for="termsUpdateRequestCheckBox" class="termscheckbox">
+                        <label for="termsUpdateRequestCheckBox" class="termscheckbox" id="termscheckbox">
                             <input id="termsUpdateRequestCheckBox" type="checkbox" class="Checkbox">
                             <span class="checkbox-icon" aria-hidden="true">
                                 <svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon_icon__1YH1P_Checkbox_removeIcon__12oZL" aria-hidden="true"><path fill-rule="evenodd" d="M0 0h16v2H0z"></path></svg>
@@ -234,7 +234,8 @@
             <!-- signup intro -->
         </main><!-- main -->
     </div>
+    
 </body>
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/js/user/signUp.js"></script>
 </html>

@@ -890,7 +890,7 @@ header{
     font-size: 16px;
     opacity: .45;
     cursor: default;
-    pointer-events: none;
+    /* pointer-events: none; */
     margin-top: 32px;
     position: relative;
     border: 1px solid #cdd3d8;
@@ -937,6 +937,7 @@ input:focus {
 	position: absolute;
 	top: 0;
 	background-color: #00c4c4;
+    display: none;
 }
 
 #name-name {

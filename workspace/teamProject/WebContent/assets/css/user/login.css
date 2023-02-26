@@ -357,10 +357,19 @@ input{
 
 .forgot{
     cursor: pointer;
-    float: right;
+    float: left;
     font-size: 13px;
     margin-bottom: 30px;
     color: #0000008a;
+    width: 50%;
+}
+
+.go-login-corp {
+    text-align: left;
+}
+
+.real-forgot {
+    text-align: right;
 }
 
 .forgot a{

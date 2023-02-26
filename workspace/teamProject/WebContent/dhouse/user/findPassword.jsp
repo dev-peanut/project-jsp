@@ -13,7 +13,8 @@
 </head>
 <body>
     <div id="page-container">
-	   	<header>
+        <jsp:include page="../user/user-header.jsp"></jsp:include>
+	   	<!-- <header>
 			<div id="wrapper">
 				<h1 id="header-logo">
 					<a href="#" id="header-a-tag">
@@ -30,7 +31,7 @@
 					</li>
 				</ul>
 			</div>
-		</header>
+		</header> -->
 		<!-- 헤더 -->
 
             <form id="forwardForm" method="get">

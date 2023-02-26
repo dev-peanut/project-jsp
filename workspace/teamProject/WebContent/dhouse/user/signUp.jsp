@@ -14,7 +14,8 @@
 <link href="${pageContext.request.contextPath}/assets/css/user/signUp.css" rel="stylesheet">
 </head>
 <body>
-	<header>
+    <jsp:include page="../user/user-header.jsp"></jsp:include>
+	<!-- <header>
 		<div id="wrapper">
 			<h1 id="header-logo">
 				<a href="#" id="header-a-tag">
@@ -31,7 +32,7 @@
 				</li>
 			</ul>
 		</div>
-	</header>
+	</header> -->
 
     <div id="page-container">
         <main id="iam-account-app"> <!-- main -->

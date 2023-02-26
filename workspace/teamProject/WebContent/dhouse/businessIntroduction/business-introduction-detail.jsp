@@ -12,7 +12,8 @@
 <title>기부기업 소개 상세</title>
 </head>
 <body>
-    <jsp:include page="../components/header.jsp"></jsp:include>
+    <!-- <jsp:include page="../components/header.jsp"></jsp:include> -->
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
 <main>
     <div id="whole-wrapper">
         <div id="inner-whole">
@@ -167,6 +168,7 @@
     </div>
 </div>
 <p></p>
-<jsp:include page="../components/footer.jsp"></jsp:include>
+<!-- <jsp:include page="../components/footer.jsp"></jsp:include> -->
+<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
 </html>

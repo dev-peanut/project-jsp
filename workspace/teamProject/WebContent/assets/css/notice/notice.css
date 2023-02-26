@@ -33,7 +33,21 @@ body{
     width: 1300px;
 }
 
-#event-title{
+#event-title {
+    font-family: NotoSansKR;
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 52px;
+    color: rgb(33, 37, 41);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0px 0px 30px;
+}
+
+/* #event-title{
     font-family: NotoSansKR;
     line-height: 1.5;
     font-weight: 700;
@@ -45,14 +59,21 @@ body{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     margin: 0px 0px 16px;
-}
+} */
 
 #menu-wrapper{
+    /* overflow: hidden;
+    min-height: 48px;
+    display: flex;
+    box-sizing: inherit;
+    font-family: NotoSansKR; */
     overflow: hidden;
     min-height: 48px;
     display: flex;
     box-sizing: inherit;
     font-family: NotoSansKR;
+    width: 50%;
+    margin: 0 auto;
 }
 
 #menu-menus{
@@ -66,8 +87,11 @@ body{
 }
 
 #menu-menu{
+    /* display: flex;
+    white-space: nowrap; */
     display: flex;
     white-space: nowrap;
+    justify-content: space-around;
 }
 
 #menu-menu a {
@@ -112,7 +136,7 @@ body{
     font-family: NotoSansKR;
     line-height: 1.5;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -133,7 +157,8 @@ body{
 }
 
 #middle {
-    margin-top: 60px;
+    margin-top: 40px;
+    /* margin-top: 60px; */
     width: 100%;
     display: block;
     font-family: NotoSansKR;

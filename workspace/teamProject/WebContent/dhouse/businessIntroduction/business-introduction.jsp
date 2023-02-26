@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/businessIntroduction/business-introduction.css">
 </head>
 <body>
-    <jsp:include page="../components/header.jsp"></jsp:include>
+    <!-- <jsp:include page="../components/header.jsp"></jsp:include> -->
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
     <main>
         <div id="whole-wrapper">
             <h2 id="title-text">협력 프로그램을 통해 오픈된 프로젝트입니다.</h2>
@@ -271,6 +272,7 @@
             </button>
         </div>
     </main>
-    <jsp:include page="../components/footer.jsp"></jsp:include>
+    <!-- <jsp:include page="../components/footer.jsp"></jsp:include> -->
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
 </html>

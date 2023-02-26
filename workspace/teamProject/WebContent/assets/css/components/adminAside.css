@@ -21,6 +21,7 @@ body {
   background-color: #fff; 
   color: #ffffff;
   overflow-y: auto;
+  z-index: 41;
 }
 
 .sidebar * {

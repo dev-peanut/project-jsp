@@ -14,13 +14,16 @@
 <!-- 아레에 페이지별로 갈아 끼워야할 CSS -->
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/css/admin/equipment_board.css" />
-</head>c
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/assets/css/components/equipment_modal.css" />
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
+</head>
 <body>
 	<!-- header -->
-	<jsp:include page="/app/components/adminHeader.jsp"></jsp:include>
+	<jsp:include page="/dhouse/components/adminHeader.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- aside -->
-	<jsp:include page="/app/components/adminAside.jsp"></jsp:include>
+	<jsp:include page="/dhouse/components/adminAside.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- 페이지별로 class 이름 기능에 맞게 재설정 -->
 	<main class="module-container">
@@ -54,7 +57,7 @@
 						<li class="title__contents">글 내용</li>
 						<li class="title__user">작성자</li>
 						<li class="title__date">등록일</li>
-						<li class="title__type">댓글 수</li> 
+						<li class="title__type">댓글 수</li>
 						<li class="title__detail">상세</li>
 
 					</ul>
@@ -78,7 +81,7 @@
 								<li class="content__date">2023-02-23</li>
 								<li class="content__type">11</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">상세
+										class="custom-btn btn-16" style="font-weight: 10px;" id="show">상세
 										정보</button></li>
 							</ul>
 						</label>
@@ -145,7 +148,7 @@
 						</label>
 					</div>
 				</div>
-				
+
 				<!-- 목록 테스트 추가 -->
 				<div class="content-list__info-container">
 					<div class="content-list__info-unit">
@@ -261,44 +264,45 @@
 						</label>
 					</div>
 				</div>
-				
+
 				<!-- 목록 테스트 추가  -->
 			</div>
 			<div class="desktop-only">
-              <!-- 데스크탑용 버튼 -->
-              <button class="prev-page icon-chevron-left" onclick="movePage(0)" disabled="">
-                <span class="text-hidden">이전</span>
-              </button>
+				<!-- 데스크탑용 버튼 -->
+				<button class="prev-page icon-chevron-left" onclick="movePage(0)"
+					disabled="">
+					<span class="text-hidden">이전</span>
+				</button>
 
-              <!-- 데스크탑용 페이지 리스트 -->
-              
-                <a class="current" href="#" onclick="movePage(1)">1</a>
-              
-                <a href="#" onclick="movePage(2)">2</a>
-              
-                <a href="#" onclick="movePage(3)">3</a>
-              
-                <a href="#" onclick="movePage(4)">4</a>
-              
-                <a href="#" onclick="movePage(5)">5</a>
-              
-                <a href="#" onclick="movePage(6)">6</a>
-              
-              
+				<!-- 데스크탑용 페이지 리스트 -->
 
-              <!-- 데스크탑용 버튼 -->
-              <button class="next-page icon-chevron-right" onclick="movePage(7)">
-                <span class="text-hidden">다음</span>
-              </button>
-            </div>
-			
+				<a class="current" href="#" onclick="movePage(1)">1</a> <a href="#"
+					onclick="movePage(2)">2</a> <a href="#" onclick="movePage(3)">3</a>
+
+				<a href="#" onclick="movePage(4)">4</a> <a href="#"
+					onclick="movePage(5)">5</a> <a href="#" onclick="movePage(6)">6</a>
+
+
+
+				<!-- 데스크탑용 버튼 -->
+				<button class="next-page icon-chevron-right" onclick="movePage(7)">
+					<span class="text-hidden">다음</span>
+				</button>
+			</div>
+
 		</article>
 	</main>
+	
+	<!-- modal -->
+	<jsp:include page="/dhouse/components/equipment_modal.jsp"></jsp:include>
+	<!-- modal fin. -->
+	
+	
 </body>
 <script
 	src="${pageContext.request.contextPath}/assets/js/admin/banner.js"></script>
-<%-- <script
-	src="${pageContext.request.contextPath}/assets/js/components/banner_modal.js"></script> --%>
+
+<script src="${pageContext.request.contextPath}/assets/js/components/equipment_modal.js"></script>
 
 
 </html>

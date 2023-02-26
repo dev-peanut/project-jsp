@@ -186,7 +186,7 @@
 	/*position: relative;*/
 	position: absolute;
 	cursor: pointer;
-	margin-top: 8%;
+	margin-top: 5px;
 	/*left: 20px;*/
 	z-index: 2;
 	/*visibility: hidden;*/
@@ -238,7 +238,7 @@
 /*    right: -195px;*/
 /*    !*right: -175px;*!*/
 /*}*/
-/* .delete-button {
+.delete-button {
 	height: 30px;
 	width: 76px;
 	color: #262626;
@@ -251,7 +251,5 @@
 	text-align: center;
 	box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px
 		0px 1px 1px;
-} */
-
+}
 /*------------------------------------------------------------------*/
-

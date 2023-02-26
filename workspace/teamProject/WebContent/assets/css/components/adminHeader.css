@@ -19,6 +19,7 @@ body {
   font-weight: 700;
   line-height: 1.5em;
   background-color: #fff;
+  z-index: 40;
 }
 
 .page * {
@@ -82,9 +83,9 @@ body {
 }
 
 .Button_button__1e2A2.Button_md__1FRMG {
-    padding: 9px 30px;
-   /*  line-height: 1.45; */
-    font-size: 14px;
+    padding: 0px 45px 0px 0px;
+    /* line-height: 1.45; */
+    font-size: 17px;
 }
 
 .Button_button__1e2A2.Button_primary__PxOJr {

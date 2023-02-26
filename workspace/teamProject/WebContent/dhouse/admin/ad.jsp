@@ -14,13 +14,14 @@
 	href="${pageContext.request.contextPath}/assets/css/admin/ad.css" />
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/css/components/ad_modal.css" />
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 </head>
 <body>
 	<!-- header -->
-	<jsp:include page="/app/components/adminHeader.jsp"></jsp:include>
+	<jsp:include page="/dhouse/components/adminHeader.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- aside -->
-	<jsp:include page="/app/components/adminAside.jsp"></jsp:include>
+	<jsp:include page="/dhouse/components/adminAside.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- 페이지별로 class 이름 기능에 맞게 재설정 -->
 	<main class="module-container">
@@ -64,7 +65,7 @@
 				</div>
 			</div>
 			<div id="scroll">
-				<div class="support-list__info-container">
+				<!-- <div class="support-list__info-container">
 					<div class="support-list__info-unit">
 						<input type="checkbox" class="support__checkbox" id="kus"
 							name="checkbox" /> <label for="kus"
@@ -78,12 +79,12 @@
 									일을 만들지 맙시다.</li>
 								<li class="support__date-post">2023.02.22</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;" >상세
+										class="custom-btn btn-16" style="font-weight: 10px;"  id="show">상세
 										정보</button></li>
 							</ul>
 						</label>
 					</div>
-				</div>
+				</div> -->
 
 
 				<div class="support-list__info-container">
@@ -99,7 +100,7 @@
 								<li class="support__content">부어치킨에서 한끼당 7000원으로 행사</li>
 								<li class="support__date-post">2023.02.22</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;" id="show">상세
+										class="custom-btn btn-16" style="font-weight: 10px;"  id="show">상세
 										정보</button></li>
 							</ul>
 						</label>
@@ -119,7 +120,7 @@
 								<li class="support__content">test</li>
 								<li class="support__date-post">yyyy-mm-dd</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;" >상세
+										class="custom-btn btn-16" style="font-weight: 10px;"  id="show" >상세
 										정보</button></li>
 							</ul>
 						</label>
@@ -238,12 +239,12 @@
 		</article>
 	</main>
 	<!-- modal -->
-	<jsp:include page="/app/components/ad_modal.jsp"></jsp:include>
+	<jsp:include page="/dhouse/components/ad_modal.jsp"></jsp:include>
 	<!-- modal fin. -->
 
 </body>
 <script src="${pageContext.request.contextPath}/assets/js/admin/ad.js"></script>
 
 <script
-	src="${pageContext.request.contextPath}/assets/js/components/banner_modal.js"></script>
+	src="${pageContext.request.contextPath}/assets/js/components/ad_modal.js"></script>
 </html>

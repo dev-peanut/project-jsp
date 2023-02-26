@@ -5,13 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>기본정보 설정</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/mySet.css">
 </head>
 <body>
 	<div>
 		<!-- 헤더 적용 -->
-		<jsp:include page="../components/header.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header-my.jsp"></jsp:include>
 		<!-- 메인 적용 -->
 		<div>
 			<div id="accountWrap">
@@ -147,6 +148,7 @@
             <!-- E : #newContainer -->
         </div>
 		</div>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

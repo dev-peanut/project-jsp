@@ -12,11 +12,102 @@
   
     <servlet>
   	<servlet-name>user</servlet-name>
-  	<servlet-class>com.app.user.UserFrontController</servlet-class>
+  	<servlet-class>com.dhouse.user.UserFrontController</servlet-class>
   </servlet>
   
   <servlet-mapping>
   	<servlet-name>user</servlet-name>
   	<url-pattern>*.user</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>myPage</servlet-name>
+  	<servlet-class>com.dhouse.mypage.MyPageFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>myPage</servlet-name>
+  	<url-pattern>*.myPage</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>myPageCorp</servlet-name>
+  	<servlet-class>com.dhouse.mypageCorp.MyPageCorpFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>myPageCorp</servlet-name>
+  	<url-pattern>*.myPageCorp</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>admin</servlet-name>
+  	<servlet-class>com.dhouse.admin.AdminFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>admin</servlet-name>
+  	<url-pattern>*.admin</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>corp</servlet-name>
+  	<servlet-class>com.dhouse.corp.CorpFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>corp</servlet-name>
+  	<url-pattern>*.corp</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>food</servlet-name>
+  	<servlet-class>com.dhouse.food.FoodFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>food</servlet-name>
+  	<url-pattern>*.food</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>reply</servlet-name>
+  	<servlet-class>com.dhouse.reply.ReplyFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>reply</servlet-name>
+  	<url-pattern>*.reply</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>file</servlet-name>
+  	<servlet-class>com.dhouse.file.FileFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>file</servlet-name>
+  	<url-pattern>*.file</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>board</servlet-name>
+  	<servlet-class>com.dhouse.board.BoardFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>board</servlet-name>
+  	<url-pattern>*.board</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>banner</servlet-name>
+  	<servlet-class>com.dhouse.banner.BannerFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>banner</servlet-name>
+  	<url-pattern>*.banner</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

@@ -71,9 +71,9 @@
 							class="content__checkbox--label">
 							<ul class="content-list__info">
 								<li class="content__id">00001</li>
-								<li class="content__user-id">master</li>
-								<li class="content__title">관리자 공지</li>
-								<li class="content__status">진행중</li>
+								<li class="content__user-id"><strong>master</strong></li>
+								<li class="content__title"><strong>관리자 공지</strong></li>
+								<li class="content__status">승인</li>
 								<li class="content__date-detail">1개월</li>
 								<!--2개월 ,4개월  -->
 								<li class="content__date">2023-02-23</li>
@@ -90,7 +90,7 @@
 							<li class="content__id">00002</li>
 							<li class="content__user-id">dev-seyun</li>
 							<li class="content__title">부어치킨 배너</li>
-							<li class="content__status">종료</li>
+							<li class="content__status">거절</li>
 							<li class="content__date-detail">4개월</li>
 							<!--2개월 ,4개월  -->
 							<li class="content__date">2022-10-23</li>
@@ -108,7 +108,7 @@
 								<li class="content__id">00004</li>
 								<li class="content__user-id">dev-minwoo</li>
 								<li class="content__title">베트남 쌀국수 배너</li>
-								<li class="content__status">진행</li>
+								<li class="content__status">대기</li>
 								<li class="content__date-detail">2개월</li>
 								<!--2개월 ,4개월  -->
 								<li class="content__date">2023-01-23</li>

@@ -12,6 +12,8 @@
 <!-- 아레에 페이지별로 갈아 끼워야할 CSS -->
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/css/admin/user.css" />
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/assets/css/components/user_modal.css" />	
 </head>
 <body>
 	<!-- header -->
@@ -79,7 +81,7 @@
 								<li class="user__join" name="userDateJoin">2023.02.22</li>
 								<li class="user__status" name="">방금 전</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">상세
+										class="custom-btn btn-16" style="font-weight: 10px;" id="show">상세
 										정보</button></li>
 							</ul>
 						</label>
@@ -204,6 +206,12 @@
 
 		</article>
 	</main>
+	
+	<!-- modal -->
+	<jsp:include page="/app/components/user_modal.jsp"></jsp:include>
+	<!-- modal fin. -->
 </body>
 <script src="${pageContext.request.contextPath}/assets/js/admin/user.js"></script>
+
+	<script src="${pageContext.request.contextPath}/assets/js/components/user_modal.js"></script>
 </html>

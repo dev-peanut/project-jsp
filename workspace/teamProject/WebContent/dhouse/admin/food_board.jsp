@@ -14,6 +14,8 @@
 <!-- 아레에 페이지별로 갈아 끼워야할 CSS -->
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/css/admin/food_board.css" />
+<link rel="stylesheet"
+	href="${pageContext.request.contextPath}/assets/css/components/food_modal.css" />	
 </head>
 <body>
 	<!-- header -->
@@ -79,7 +81,7 @@
 								<li class="content__date">2023-02-23</li>
 								<li class="content__type">승인</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">상세
+										class="custom-btn btn-16" style="font-weight: 10px;" id="show">상세
 										정보</button></li>
 							</ul>
 						</label>
@@ -97,7 +99,7 @@
 							<!-- <li class="content__date-detail">4개월</li> -->
 							<!--2개월 ,4개월  -->
 							<li class="content__date">2022-10-23</li>
-							<li class="content__type">승인</li>
+							<li class="content__type">거절</li>
 							<li class="user__detail" name="userDetail"><button
 									class="custom-btn btn-16" style="font-weight: 10px;">상세
 									정보</button></li>
@@ -118,7 +120,7 @@
 							<!-- 	<li class="content__date-detail">2개월</li> -->
 								<!--2개월 ,4개월  -->
 								<li class="content__date">2023-01-23</li>
-								<li class="content__type">승인</li>
+								<li class="content__type">대기</li>
 								<li class="user__detail" name="userDetail"><button
 										class="custom-btn btn-16" style="font-weight: 10px;">상세
 										정보</button></li>
@@ -274,11 +276,15 @@
 			
 		</article>
 	</main>
+	
+	<!-- modal -->
+	<jsp:include page="/app/components/food_modal.jsp"></jsp:include>
+	<!-- modal fin. -->
+	
 </body>
 <script
 	src="${pageContext.request.contextPath}/assets/js/admin/banner.js"></script>
-<%-- <script
-	src="${pageContext.request.contextPath}/assets/js/components/banner_modal.js"></script> --%>
+<script src="${pageContext.request.contextPath}/assets/js/components/food_modal.js"></script>
 
 
 </html>

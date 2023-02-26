@@ -78,7 +78,7 @@
 									일을 만들지 맙시다.</li>
 								<li class="support__date-post">2023.02.22</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;" >상세
+										class="custom-btn btn-16" style="font-weight: 10px;"  id="show">상세
 										정보</button></li>
 							</ul>
 						</label>
@@ -99,7 +99,7 @@
 								<li class="support__content">부어치킨에서 한끼당 7000원으로 행사</li>
 								<li class="support__date-post">2023.02.22</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;" id="show">상세
+										class="custom-btn btn-16" style="font-weight: 10px;"  id="show">상세
 										정보</button></li>
 							</ul>
 						</label>
@@ -119,7 +119,7 @@
 								<li class="support__content">test</li>
 								<li class="support__date-post">yyyy-mm-dd</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;" >상세
+										class="custom-btn btn-16" style="font-weight: 10px;"  id="show" >상세
 										정보</button></li>
 							</ul>
 						</label>
@@ -245,5 +245,5 @@
 <script src="${pageContext.request.contextPath}/assets/js/admin/ad.js"></script>
 
 <script
-	src="${pageContext.request.contextPath}/assets/js/components/banner_modal.js"></script>
+	src="${pageContext.request.contextPath}/assets/js/components/ad_modal.js"></script>
 </html>

@@ -17,6 +17,8 @@
 <<<<<<< HEAD:workspace/teamProject/WebContent/dhouse/promotion/promotion-write.jsp
 <body class="ReactModal__Body--open" aria-hidden="true">
     <jsp:include page="../components/header.jsp"></jsp:include>
+    <!-- <jsp:include page="../components/header.jsp"></jsp:include> -->
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
     <div class="body1" data-react-modal-body-trap="" tabindex="0" style="position: absolute; opacity: 0;"></div>
     <div id="root">
         <div id="AppLayout_Container" class="AppLayout_container__3zbzb">
@@ -116,6 +118,7 @@
                                 <li class="Breadcrumb_item__2r9Ym">홍보 글쓰기</li>
                             </ol>
 <<<<<<< HEAD:workspace/teamProject/WebContent/dhouse/promotion/promotion-write.jsp
+<<<<<<< HEAD:workspace/teamProject/WebContent/dhouse/promotion/promotion-write.jsp
                             
 =======
                          
@@ -149,10 +152,24 @@
                                                 <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__1VB4W" aria-hidden="true"><path d="M30.4 15.2H16.8V1.6h-1.6v13.6H1.6v1.6h13.6v13.6h1.6V16.8h13.6v-1.6z"></path></svg>
                                                 <span id="button-text">
                                                     작성 완료
+=======
+                            <div class="HeaderLayout_container__3fXkO">
+                                <div class="HeaderLayout_contents__F4hlC">
+                                    <h2 class="FundingStoryContainer_title__1r0ZE">홍보 게시글 작성하기<!-- 제출 버튼 -->
+                                        <button id="bottom-button">
+                                            <span id="button-inner-text">
+                                                <span id="button-icon">
+                                                    <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__1VB4W" aria-hidden="true"><path d="M30.4 15.2H16.8V1.6h-1.6v13.6H1.6v1.6h13.6v13.6h1.6V16.8h13.6v-1.6z"></path></svg>
+                                                    <span id="button-text">
+                                                        작성 완료
+                                                    </span>
+>>>>>>> 02.22/businessIntroduction:workspace/teamProject/WebContent/app/promotion/promotion-write.jsp
                                                 </span>
                                             </span>
                                         </span>
                                     </button></h2>
+                                        </button></h2>
+                                </div>
                             </div>
                         </div>
                         
@@ -290,6 +307,8 @@
     </div>
     </div>
     <jsp:include page="../components/footer.jsp"></jsp:include>
+    <!-- <jsp:include page="../components/footer.jsp"></jsp:include> -->
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
 <script type="text/javascript" src="../../assets/js/board/board_community_write.js"></script>
 </html>

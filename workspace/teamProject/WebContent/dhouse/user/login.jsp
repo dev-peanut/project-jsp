@@ -12,7 +12,8 @@
 <link href="${pageContext.request.contextPath}/assets/css/user/login.css" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<jsp:include page="../user/user-header.jsp"></jsp:include>
+	<!-- <header>
 		<div id="wrapper">
 			<h1 id="header-logo">
 				<a href="#" id="header-a-tag">
@@ -29,7 +30,7 @@
 				</li>
 			</ul>
 		</div>
-	</header>
+	</header> -->
 	<!-- 헤더 -->
         <main class="account-intro-login"> <!-- login -->
             <div class="wz-container">

@@ -14,13 +14,14 @@
 	href="${pageContext.request.contextPath}/assets/css/admin/ad.css" />
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/css/components/ad_modal.css" />
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 </head>
 <body>
 	<!-- header -->
-	<jsp:include page="/app/components/adminHeader.jsp"></jsp:include>
+	<jsp:include page="/dhouse/components/adminHeader.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- aside -->
-	<jsp:include page="/app/components/adminAside.jsp"></jsp:include>
+	<jsp:include page="/dhouse/components/adminAside.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- 페이지별로 class 이름 기능에 맞게 재설정 -->
 	<main class="module-container">
@@ -64,7 +65,7 @@
 				</div>
 			</div>
 			<div id="scroll">
-				<div class="support-list__info-container">
+				<!-- <div class="support-list__info-container">
 					<div class="support-list__info-unit">
 						<input type="checkbox" class="support__checkbox" id="kus"
 							name="checkbox" /> <label for="kus"
@@ -83,7 +84,7 @@
 							</ul>
 						</label>
 					</div>
-				</div>
+				</div> -->
 
 
 				<div class="support-list__info-container">
@@ -238,7 +239,7 @@
 		</article>
 	</main>
 	<!-- modal -->
-	<jsp:include page="/app/components/ad_modal.jsp"></jsp:include>
+	<jsp:include page="/dhouse/components/ad_modal.jsp"></jsp:include>
 	<!-- modal fin. -->
 
 </body>

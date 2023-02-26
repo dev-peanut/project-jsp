@@ -14,13 +14,14 @@
 	href="${pageContext.request.contextPath}/assets/css/admin/user.css" />
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/css/components/user_modal.css" />	
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">	
 </head>
 <body>
 	<!-- header -->
-	<jsp:include page="/app/components/adminHeader.jsp"></jsp:include>
+	<jsp:include page="/dhouse/components/adminHeader.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- aside -->
-	<jsp:include page="/app/components/adminAside.jsp"></jsp:include>
+	<jsp:include page="/dhouse/components/adminAside.jsp"></jsp:include>
 	<!-- -------------- header end --------------  -->
 	<!-- 페이지별로 class 이름 기능에 맞게 재설정 -->
 	<main class="module-container">
@@ -46,7 +47,7 @@
 			<button type="button" style="margin: 0 auto; font-size: 16px;">선택
 				삭제</button>
 		</article>
-		<!--  <div class="buttonWrapper">
+		<!--  <div class="buttonWrdhouseer">
 	      <button type="button" id="deleteButton">선택 삭제</button>
       	</div>  -->
 		<article class="module module--user-list">
@@ -208,7 +209,7 @@
 	</main>
 	
 	<!-- modal -->
-	<jsp:include page="/app/components/user_modal.jsp"></jsp:include>
+	<jsp:include page="/dhouse/components/user_modal.jsp"></jsp:include>
 	<!-- modal fin. -->
 </body>
 <script src="${pageContext.request.contextPath}/assets/js/admin/user.js"></script>

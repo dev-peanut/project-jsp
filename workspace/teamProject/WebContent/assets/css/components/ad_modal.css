@@ -33,7 +33,8 @@
 	background-color: #ffffff;
 	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
 	/* 임시 지정 */
-	width: 800px; height : 600px;
+	width: 800px;
+	height: 600px;
 	/* 초기에 약간 아래에 배치 */
 	transform: translate(-50%, -40%);
 	height: 600px;
@@ -53,126 +54,204 @@
 	top: 1.5%;
 }
 
-/* 배너 설정 */
+/* 모달 설정 */
+.modal {
+	font-family: Pretendard-Regular;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*   visibility: hidden; */
+}
 
-form, div{
+.modal-wrapper {
+	padding: 40px 32px;
 	display: block;
-	margin: 0px;
-    padding: 0px;
+	outline: none;
+	background-color: #fff;
+	border-radius: 8px;
+	width: 32%; height : 88%;
+	/*height: 550px;*/
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: 88%;
 }
 
-body{
-	font-size: 12px;
-	background-color: rgb(244, 245, 248);
-    color: rgb(27, 30, 38);
-    font-family: 돋움, dotum, "맑은 고딕", "malgun gothic", helvetica, "Apple SD Gothic Neo", sans-serif;
-    font-size: 12px;
-    text-size-adjust: none;
+#modal-title {
+	color: rgb(4, 5, 5);
+	text-align: left;
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 600;
+	/*display: block;*/
+	margin-bottom: 25px;
+	display: flex;
+	position: relative;
 }
 
-.css-12nko9l {
-    margin: 0px 0px 30px;
+#close-button {
+	width: 17px;
+	height: 17px;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
 }
 
-section {
-    display: block;
+.profile-wrapper {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	position: relative;
+	margin-bottom: 30px;
 }
 
-.css-1dcl64i {
-    margin: 18px 0px 10px;
+.profile-image-wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
 }
 
-.css-1dcl64i h2 {
-    display: inline-block;
-    font-family: "맑은 고딕", "Malgun Gothic", sans-serif;
-    vertical-align: middle;
+.profile-image {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 70%;
+	border: 0.2px solid #888888;
+	overflow: hidden;
+	/*box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;*/
+	/*box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;*/
+	box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+		rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-.css-1dcl64i::after {
-    clear: both;
-    content: "";
-    display: block;
+.input-wrapper {
+	width: 100%;
+	display: flex;
+	margin-bottom: 15px;
+	align-items: center;
+	text-align: left;
 }
 
-.css-9ct1p3 {
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(217, 218, 220);
-    border-right: 1px solid rgb(217, 218, 220);
-    line-height: 1.5;
-    margin-top: -1px;
-    width: 100%;
+.input-text {
+	width: 20%;
 }
 
-.css-1hsp21g {
-    display: table;
-    width: 100%;
+.user-input {
+	text-align: left;
+	padding: 0 16px;
+	border: 1px solid #e1e4e6;
+	border-radius: 4px;
+	display: block;
+	/*width: 100%;*/
+	width: 100%;
+	height: 40px;
+	color: #3c4144;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	letter-spacing: .02em;
+	margin-bottom: 5px;
+	margin-top: 5px;
 }
 
-.css-9ct1p3 .e3j22xw2 {
-    width: 155px;
+#modal-bottom {
+	width: 100%;
+	background-color: #2A7DE1;
+	position: relative;
 }
 
-.css-ovuw9r {
-    background-color: rgb(250, 250, 251);
-    border-left: 1px solid rgb(217, 218, 220);
-    border-top: 1px solid rgb(217, 218, 220);
-    box-sizing: border-box;
-    display: table-cell;
-    font-weight: normal;
-    padding: 9px 9px 7px;
-    text-align: left;
-    vertical-align: middle;
+#edit-button1 {
+	/*background-color: #2A7DE1;*/
+	background-color: #262626;
+	width: 100%;
+	height: 48px;
+	padding: 0 14px;
+	border-radius: 8px;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: .02em;
+	font-weight: 600;
+	color: #fff;
+	border: none;
+	/*display: flex;*/
+	align-items: center;
+	justify-content: center;
+	/*position: relative;*/
+	position: absolute;
+	cursor: pointer;
+	margin-top: 8%;
+	/*left: 20px;*/
+	z-index: 2;
+	/*visibility: hidden;*/
 }
 
-.css-r24zef {
-    border-left: 1px solid rgb(217, 218, 220);
-    border-top: 1px solid rgb(217, 218, 220);
-    box-sizing: border-box;
-    display: table-cell;
-    padding: 9px 9px 7px;
-    vertical-align: top;
-    width: auto;
+#edit-button2 {
+	/*background-color: #2A7DE1;*/
+	background-color: #262626;
+	width: 100%;
+	height: 48px;
+	padding: 0 14px;
+	border-radius: 8px;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: .02em;
+	font-weight: 600;
+	color: #fff;
+	border: none;
+	/*display: flex;*/
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	cursor: pointer;
+	margin-top: 5px;
+	/*left: 20px;*/
+	z-index: 1;
 }
 
-.css-19x2xk7:not([type="file"]) {
-    border: 1px solid rgb(214, 218, 225);
-    border-radius: 3px;
-    box-sizing: border-box;
-    height: 28px;
-    line-height: 28px;
-    max-width: 100%;
-    padding: 0px 8px;
-}
+/*#secession-button{*/
+/*    background-color: darkred;*/
+/*    !*background-color: #e92525;*!*/
+/*    !*background-color: crimson;*!*/
+/*    width: 30%;*/
+/*    height: 48px;*/
+/*    padding: 0 14px;*/
+/*    border-radius: 8px;*/
+/*    font-size: 16px;*/
+/*    line-height: 25px;*/
+/*    letter-spacing: .02em;*/
+/*    font-weight: 600;*/
+/*    color: #fff;*/
+/*    border: none;*/
+/*    !*display: flex;*!*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    position: relative;*/
+/*    cursor: pointer;*/
+/*    margin-top: 30px;*/
+/*    right: -195px;*/
+/*    !*right: -175px;*!*/
+/*}*/
+/* .delete-button {
+	height: 30px;
+	width: 76px;
+	color: #262626;
+	border-radius: 6px;
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 15px;
+	line-height: 30px;
+	padding: 0 10px;
+	text-align: center;
+	box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px
+		0px 1px 1px;
+} */
 
-input[type="text"], textarea {
-    outline: none 0px;
-}
-
-.css-19x2xk7 {
-    text-align: left;
-    width: 55%;
-}
-
-input[type="text"] {
-    outline: none 0px;
-}
-
-input, select, textarea, button {
-    color: rgb(27, 30, 38);
-    font-family: 돋움, dotum, "맑은 고딕", "malgun gothic", helvetica, "Apple SD Gothic Neo", sans-serif;
-    font-size: 12px;
-    vertical-align: middle;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+/*------------------------------------------------------------------*/
 

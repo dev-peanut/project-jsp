@@ -21,7 +21,7 @@
 		<nav>
 			<ul>
 				<label> <a
-					href="${pageContext.request.contextPath}/app/admin/admin_home.jsp">
+					href="${pageContext.request.contextPath}/dhouse/admin/admin_home.jsp">
 						<li><details>
 								<summary class="nav-menu menu--current">
 
@@ -37,7 +37,7 @@
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
-							<a href="${pageContext.request.contextPath}/app/admin/user.jsp">
+							<a href="${pageContext.request.contextPath}/dhouse/admin/user.jsp">
 								<span id="sidelist"><li class="submenu__item">회원정보</li></span>
 							</a>
 							<!-- <li class="submenu__item"><a href="./user.html"> -->
@@ -55,13 +55,13 @@
 						</summary>
 						<ul class="nav-menu-submenu">
 							<a
-								href="${pageContext.request.contextPath}/app/admin/food_board.jsp">
+								href="${pageContext.request.contextPath}/dhouse/admin/food_board.jsp">
 								<span id="sidelist">
 									<li class="submenu__item">식품 기부</li>
 							</span>
 							</a>
 							<a
-								href="${pageContext.request.contextPath}/app/admin/equipment_board.jsp">
+								href="${pageContext.request.contextPath}/dhouse/admin/equipment_board.jsp">
 								<span id="sidelist">
 									<li class="submenu__item">가전 기부</li>
 							</span>
@@ -77,19 +77,19 @@
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
-							<a href="${pageContext.request.contextPath}/app/admin/banner.jsp">
+							<a href="${pageContext.request.contextPath}/dhouse/admin/banner.jsp">
 								<span id="sidelist">
 									<li class="submenu__item">배너 목록</li>
 							</span>
 							</a>
-							<a href="${pageContext.request.contextPath}/app/admin/ad.jsp"> <span id="sidelist">
+							<a href="${pageContext.request.contextPath}/dhouse/admin/ad.jsp"> <span id="sidelist">
 									<li class="submenu__item">홍보 목록</li>
 							</span>
 							</a>
-							<a href=""> <span id="sidelist">
+							<!-- <a href=""> <span id="sidelist">
 									<li class="submenu__item">결제</li>
 							</span>
-							</a>
+							</a> -->
 						</ul>
 					</details></li>
 				<%-- <li><details>
@@ -101,7 +101,7 @@
 						</summary>
 						<ul class="nav-menu-submenu">
 							<a
-								href="${pageContext.request.contextPath}/app/admin/donation.jsp">
+								href="${pageContext.request.contextPath}/dhouse/admin/donation.jsp">
 								<span id="sidelist">
 									<li class="submenu__item">기부 관리</li>
 							</span>

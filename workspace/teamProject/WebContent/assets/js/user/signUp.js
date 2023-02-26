@@ -243,19 +243,29 @@ $phoneInput.on("blur", function() {
 
 
 
-const $checkBox = $(".termscheckbox");
-const $checkBoxImage = $(".check-box");
+const $checkBox = $("#termscheckbox");
+const $checkBoxImage = $("#check-box");
 let check = false; // 전체동의 미체크 상태
 
-$checkbox.on("click", function(){
+$checkBox.on("click", function(){
+    console.log("체크박스 들어옴.")
     if (!check) {
+        console.log("트루 체크박스 들어옴.")
+        // document.querySelector("#check-box").style.background = "black";
+        // $("#check-box").css("display", "block");
         $checkBoxImage.css("display", "block");
         check = true;
+        completeAllCheck();
+        return false;
     } else {
+        console.log("false 체크박스 들어옴.")
+        // document.querySelector("#check-box").style.display = "none";
         $checkBoxImage.css("display", "none");
         check = false;
+        completeAllCheck();
+        return false;
     }
-})
+});
 
 
 const $completeButton = $(".signup-submit-button");

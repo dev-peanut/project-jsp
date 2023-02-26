@@ -197,7 +197,7 @@
                     </div>
 					<!-- phoneNumber 끝 -->
                     <div class="SignUpAllCheckTermsCheckbox"> <!-- 회원 약관 동의 -->
-                        <label for="termsUpdateRequestCheckBox" class="termscheckbox">
+                        <label for="termsUpdateRequestCheckBox" class="termscheckbox" id="termscheckbox">
                             <input id="termsUpdateRequestCheckBox" type="checkbox" class="Checkbox">
                             <span class="checkbox-icon" aria-hidden="true">
                                 <svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon_icon__1YH1P_Checkbox_removeIcon__12oZL" aria-hidden="true"><path fill-rule="evenodd" d="M0 0h16v2H0z"></path></svg>

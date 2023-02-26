@@ -12,24 +12,26 @@
 <title>인사말</title>
 </head>
 <body>
-    <jsp:include page="../components/header.jsp"></jsp:include>
+    <!-- <jsp:include page="../components/header.jsp"></jsp:include> -->
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
     <div id="whole-wrapper">
         <div class="title-wrapper" id="top">
-            <h2 class="title">와디즈<br>어워즈</h2>
+            <h2 class="title">나눔의 집</h2>
             <p class="text">
-                와디즈는 매년 연말, 그 해 트렌드를 이끈 메이커에게 축하와 감사의 마음을 담아 상을 전합니다.
-        언제나 새롭고 놀라운 아이디어를 제시하는 메이커, 그들의 이야기를 듣고 기꺼이 손을 잡아주는 서포터.
-        이 모든 사람들이 와디즈에 모여 스스로의 일상과 소비, 라이프스타일의 변화를 이끌고 있습니다.
+                나눔의집 식품기부 사업은 1998년 IMF 외환위기 직후, 급격히 증가한 결식계층의 식생활 지원을 위해 시범 사업을 실시한 이후 시작하게 되었습니다. 주된 사업은 식품을 기부받아 취약계층에게 지원하는 복지 서비스로, 사회안전망 기능을 수행하며 사회복지 물적자원 전달체계의 핵심영역으로 성장 하였습니다.기부 참여는 자영업자의 자발적 참여를 유도하여 사업장 홍보 및 브랜드 가치를 높이고 있습니다.
+                <br>
+                <br>
+                기부 참여자는 식품 나눔을 통해 불필요하게 발생되는 음식물 쓰레기를 줄여 환경오염과 음식물 쓰레기 처리비용을 줄이고, 더 나아가 기부를 통해 더불어 사는 세상을 함께 만들어갈 수 있습니다.
+                이제 나눔의집은 단순히 굶주림을 해소하는 차원을 넘어 미래를 향해 나아갑니다. 개인 기부 참여자는 중고 가전제품을 필요한 이들이 사용할 수 있도록 기부 할 수 있습니다. 나눔의집은 결식 예방 및 해소뿐만이 아닌 지역사회 복지공동체를 구축하여 나눌수록 행복한, 나눔의 현장을 위해 혼신의 힘을 기울이고 있습니다.
+                <br>
+                시민 여러분의 많은 참여와 관심을 부탁드립니다.
             </p>
             <hr class="space">
         </div>
-        <div class="title-wrapper" id="middle">
-            <h2 class="title">수상자<br>선정</h2>
+        <!-- <div class="title-wrapper" id="middle">
+            <h2 class="title">홍보</h2>
             <p class="text">
-                우리는 모두 각자의 자리에서 작년 한 해 의미 있는 성과를 이루었습니다. 남들이 가지 않은 새로운 분야를 개척해 내기도 하고, 수많은 지지로 메이커를 성장시키기도 하며, 마음을
-                다한 소통으로 서로의 믿음직한 조력자가 되기도 합니다. <br>
-                그러기에 마지막 순간까지 아쉽게 선정되지 못한 메이커와 서포터들을 대표할 수 있는, 많은 사람이 공감할 성과를 이룬 수상자를 선정하기 위해 더욱 노력하고 있습니다.
-            </p>
+                우리는 모두 각자의 자리에서 작년 한 해 의미 있는 성과를 이루었습니다.             </p>
             <p class="text">
                 투표 대상자이신 Top 100 메이커는
                 진행한 펀딩 프로젝트의 펀딩모집금액, 서포터 수, 만족도 평점 등의 수치적 성과, 펀딩 성공 횟수, 스토어 입점 여부 등 메이커님을 믿어주는 서포터와 만남을 위한 꾸준한 도전 여부
@@ -44,7 +46,7 @@
                 사람들에게 도움이 되는 어워즈가 되길 바랍니다.
             </p>
             <hr class="space">
-        </div>
+        </div> -->
         <div class="title-wrapper" id="bottom">
             <h2 class="title">푸드뱅크란</h2>
             <p class="text">
@@ -59,6 +61,7 @@
             <hr class="space">
         </div>
     </div>
-    <jsp:include page="../components/footer.jsp"></jsp:include>
+    <!-- <jsp:include page="../components/footer.jsp"></jsp:include> -->
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
 </html>

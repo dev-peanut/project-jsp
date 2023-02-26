@@ -49,8 +49,10 @@
                 		</div>
                 	</div>
                 	<div class="login-action"></div>
-	                    <p class="forgot"><a href="https://www.wadiz.kr/web/waccount/find/pwd">로그인 정보를 잊으셨나요?</a>
-	                    </p>
+						<p class="forgot go-login-corp"><a href="https://www.wadiz.kr/web/waccount/find/pwd">기업회원으로 로그인</a>
+						</p>
+						<p class="forgot real-forgot"><a href="https://www.wadiz.kr/web/waccount/find/pwd">로그인 정보를 잊으셨나요?</a>
+						</p>
                    		<button class="loginbutton">로그인</button> <!-- login button -->
                 	</form>
                 	<div class="iam-account-app"> <!--SNS 사이트를 통한 로그인 -->

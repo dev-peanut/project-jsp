@@ -10,11 +10,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
-<<<<<<< HEAD:workspace/teamProject/WebContent/app/user/signUp.jsp
 <link href="../../assets/css/user/signUp.css" rel="stylesheet">
-=======
 <link href="${pageContext.request.contextPath}/assets/css/user/signUp.css" rel="stylesheet">
->>>>>>> 29eb99d66450572fcddd6ae50edebeb39fd83421:workspace/teamProject/WebContent/dhouse/user/signUp.jsp
 </head>
 <body>
 	<header>

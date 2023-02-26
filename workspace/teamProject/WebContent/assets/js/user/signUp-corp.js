@@ -1,5 +1,5 @@
 /**
- * signUp-corp.jsp
+ * signUp.jsp
  */
 
 // 아이디 변수 - 인풋

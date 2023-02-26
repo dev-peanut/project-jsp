@@ -120,16 +120,16 @@
                             <label class="EmailAuthField">아이디</label>
                             <div class="email-field-input-continer">
                                 <div class="EmailAuthField_inputField">
-                                    <input name="identification" placeholder="아이디 입력" type="text" class="email-field">
+                                    <input name="identification" placeholder="아이디 입력" type="text" class="email-field" id="identification-input">
                                 </div>
                             </div><!-- email-field-input-continer -->
-                            <p class="identification-error"></p>
+                            <em class="identification-error error-message">아이디를 입력해주세요.</em>
                         </div><!-- email-field -->
                         <!-- 한줄 복사 -->
                         <div class="password-field"><label>비밀번호</label><!-- 비밀번호 -->
                         <div class="password-field-text">
                             <input name="password" placeholder="비밀번호 입력" type="password"
-                                class="input-password-container" aria-invalid="false">
+                                class="input-password-container" id="password-input" aria-invalid="false">
                             <button aria-label="비밀번호 보기" class="Button_TextField_icon" type="button">
                                 <span class="eye">
 	                                <span class="Button_children_pw">
@@ -138,6 +138,7 @@
                             </button>
                         </div>
                     </div>
+                    <em class="password-error error-message">비밀번호를 입력해주세요.</em>
                     <!-- password 1  -->
 
                     <div class="recheck-password"><label></label>
@@ -152,17 +153,17 @@
                            	</button>
                         </div>
                     </div>
-                        <!-- test -->
-                        
+                    <!-- test -->
+                    <em class="recheck-password-error error-message">비밀번호가 일치하지 않습니다.</em>
                         
                         <div class="email-field-container" id="nickName-title">
                             <label class="EmailAuthField">닉네임</label>
                             <div class="email-field-input-continer">
                                 <div class="EmailAuthField_inputField">
-                                    <input name="nickName" placeholder="닉네임 입력" type="text" class="email-field">
+                                    <input name="nickName" placeholder="닉네임 입력" type="text" class="nickname-field email-field" id="nickname">
                                 </div>
                             </div><!-- email-field-input-continer -->
-                            <p class="nickName-error"></p>
+                            <em class="nickname-error error-message">최소 2자입니다.</em>
                         </div><!-- email-field -->
                         <!-- 한줄 복사 -->
                         <div class="email-field-container">
@@ -193,7 +194,7 @@
                         </div>
                     </div>
 					<!-- phoneNumber 끝 -->
-                    <div class="name-field" id="name-name"><label>기업 번호</label>
+                    <div class="name-field" id="name-name"><label>기업 등록 번호</label>
                         <div class="TextField_field__1B2AH">
                             <input name="corpNumber" placeholder="기업 번호 입력" type="text" class="name-input" maxlength="11">
                         </div>

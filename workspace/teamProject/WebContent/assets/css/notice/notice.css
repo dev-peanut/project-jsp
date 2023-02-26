@@ -254,6 +254,8 @@ td{
     height: 100%;
     -webkit-box-align: center;
     align-items: center;
+    position: relative;
+    top: 12px;
 }
 
 .text-top-inner {

@@ -42,10 +42,10 @@
 	       				<div class="btn-bottom">
 	       					<ul class="btn-div2">
 	       						<li>
-	       							<button type="button" class="wz button gray btn-darkgray" onclick="cancelModify()">취소</button>
+	       							<button type="button" class="wz button gray btn-darkgray" onclick="cancelModify()" id="mint">취소</button>
 	       						</li>
 	       						<li>
-	       							<button type="button" class="wz button primary btn-mint" onclick="modify()">확인</button>
+	       							<button type="button" class="wz button primary btn-mint" onclick="modify()" id="gray">확인</button>
 	       						</li>
 	       					</ul>
 	       				</div>

@@ -1,5 +1,6 @@
  /*board_form.js*/
 
+/*사진 첨부*/
      function setThumbnail(event) {
         var reader = new FileReader();
 
@@ -24,11 +25,14 @@ const weightWarning = document.querySelector("#weight-warning");
 const dateWarning = document.querySelector("#date-warning");
 
 // 저장하기 버튼
-const formSubmit = document.querySelector("#formsubmit");
+const formSubmit = document.querySelector('#formsubmit');
+
+const check = false;
 
 console.log(nameData);
 console.log(weightData);
 console.log(dateData);
+console.log(formSubmit);
 
 formSubmit.addEventListener("click", function(){
     var contentInputValue = document.querySelector(".nameData").value;
@@ -37,7 +41,7 @@ formSubmit.addEventListener("click", function(){
     	nameWarning.style.display = "block";
         nameWarning.innerHTML = "필수 정보입니다.";
   		nameWarning.style.color = "red";
-    }else{
+    }else{``
 		nameData.style.borderColor = "#00c4c4";
 		nameWarning.style.display = "none";
 	}

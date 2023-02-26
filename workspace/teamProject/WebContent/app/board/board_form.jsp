@@ -107,25 +107,21 @@
 						<div class="HeaderLayout_container__3fXkO">
 							<div class="HeaderLayout_contents__F4hlC">
 								<button class="Button_button__1e2A2" type="button"
-									style="width: 420px; max-width: 100%;">
+									style="width: 420px; max-width: 100%;" id="formsubmit">
 									<span><span class="Button_children__q9VCZ">저장하기</span></span>
 								</button>
 								<h2 class="FundingStoryContainer_title__1r0ZE">식품 기부하기</h2>
-								<p class="FundingStoryContainer_description__1sMTR">사랑을 나누는
-									일은 결코 힘들거나 어려운 일이 아닙니다.</p>
-								<p class="FundingStoryContainer_description__1sMTR">도움이 필요한
-									이웃들과 음식을 함께 나누는 기쁨! 음식나눔은 사랑의 실천입니다.</p>
+								<p class="FundingStoryContainer_description__1sMTR">사랑을 나누는 일은 결코 힘들거나 어려운 일이 아닙니다.</p>
+								<p class="FundingStoryContainer_description__1sMTR">도움이 필요한 이웃들과 음식을 함께 나누는 기쁨! 음식나눔은 사랑의 실천입니다.</p>
 							</div>
 						</div>
-						<form
-							class="wz_form_FundingStoryFormContainer_form__326Zc_Form_form__3ASTU">
+						<form class="wz_form_FundingStoryFormContainer_form__326Zc_Form_form__3ASTU" onSubmit="return Checkform()">
 
 							<!-- 음식 이름 -->
 							<section class="Section_container__3md8M">
 								<div style="max-width: 600px;">
 									<div class="Section_header__1qwS7">
-										<h2 class="Section_title__ikPIm_Section_isRequired__F8rij">음식
-											이름</h2>
+										<h2 class="Section_title__ikPIm_Section_isRequired__F8rij">음식 이름</h2>
 										<div class="Section_guide__2xeJO"></div>
 									</div>
 									<div class="Section_description__10Uwo">기부하실 음식의 이름을

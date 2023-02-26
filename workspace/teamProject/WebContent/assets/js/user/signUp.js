@@ -269,36 +269,7 @@ function completeAllCheck() {
     // let emailFlag = false; // 이메일
     // let nameFlag = false; // 이름
     // let phoneCheck = false; // 핸드폰
-	
-    // if (!identificationFlag) {
-    //     console.log("아이디 실패");
-    //     return;
-    // }else if (!passwordFlag) {
-    //     console.log("비밀번호1 실패");
-    //     return;
-    // }else if (!passwordCheckFlag) {
-    //     console.log("비밀번호2 실패");
-    //     return;
-    // }else if (!nicknameFlag) {
-    //     console.log("닉네임 실패");
-    //     return;
-    // }else if (!emailFlag) {
-    //     console.log("이메일 실패");
-    //     return;
-    // }else if (!nameFlag) {
-    //     console.log("이름 실패");
-    //     return;
-    // }else if (!phoneFlag) {
-    //     console.log("휴대폰 실패");
-    //     return;
-    // }else {
-    //     console.log("완료");
-    //     $completeButton.css("pointer-events", "auto");
-    //     $completeButton.css("cursor", "pointer");
-    //     $completeButton.css("border-color", "#00c4c4");
-    //     $completeButton.css("background-color", "#00c4c4");
-    //     $completeButton.css("opacity", "0.8");  //  opacity: 0.8;
-    //     $completeButton.css("color", "#fff");
+    
     if (identificationFlag && passwordFlag && passwordCheckFlag && nicknameFlag && emailFlag && emailFlag && nameFlag && phoneFlag && check) {
         console.log("완료");
         $completeButton.css("pointer-events", "auto");
@@ -316,17 +287,6 @@ function completeAllCheck() {
         $completeButton.css("opacity", "0.45");  //  비활성화 opacity: 0.45;
         $completeButton.css("color", "#fff");
     }
-
-    /* 버튼 활성화 조건 */
-    // if (identificationFlag && passwordFlag && passwordCheckFlag && nicknameFlag && emailFlag && nameFlag && phoneFlag /* && 동의 체크 시 */) {
-        
-    //     console.log("들어옴~");
-    //     $completeButton.css("pointer-events", "auto");
-    //     $completeButton.css("cursor", "pointer");
-    //     $completeButton.css("border-color", "#00b2b2");
-    //     $completeButton.css("background-color", "#00b2b2");
-    
-    // }
 
 }
 

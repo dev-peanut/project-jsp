@@ -13,7 +13,7 @@
 	<div id="page-container">
 		<main id="main-app">
 			<!-- 헤더 적용 -->
-			<jsp:include page="${pageContext.request.contextPath}/app/components/header.jsp"></jsp:include>
+			<jsp:include page="${pageContext.request.contextPath}/assets/components/header.jsp"></jsp:include>
 			
 			<div class="MainWrapper_content"> <!-- 메인 컨텐츠 적용 -->
 				<section class="container">
@@ -446,7 +446,7 @@
 				</div>
 			</div>
 			<!-- footer적용 -->
-			<jsp:include page="../components/footer.jsp"></jsp:include>
+			<jsp:include page="${pageContext.request.contextPath}/assets/components/footer.jsp"></jsp:include>
 		</main>
 	</div>
 </body>

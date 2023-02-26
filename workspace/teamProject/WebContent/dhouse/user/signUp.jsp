@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
-<link href="../../assets/css/user/signUp.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/assets/css/user/signUp.css" rel="stylesheet">
 </head>
 <body>
 	<header>

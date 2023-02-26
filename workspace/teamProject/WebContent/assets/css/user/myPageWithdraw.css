@@ -349,6 +349,8 @@ label.wz.checkbox>span {
     cursor: pointer;
     padding-left: 24px;
     vertical-align: top;
+    /* 추가함 */
+    line-height: 20px;
 }
 /* 가상요소 */
 label.wz.checkbox>span:before {

@@ -8,6 +8,15 @@
 	
 	<typeAliases>
 		<typeAlias type="com.dhouse.user.domain.UserVO" alias="userVO"/>
+		<typeAlias type="com.dhouse.corp.domain.CorpVO" alias="corpVO"/>
+		<typeAlias type="com.dhouse.admin.domain.AdminVO" alias="adminVO"/>
+		<typeAlias type="com.dhouse.mypage.domain.MyPageVO" alias="myPageVO"/>
+		<typeAlias type="com.dhouse.mypagecorp.domain.MyPageCorpVO" alias="myPageCorpVO"/>
+		<typeAlias type="com.dhouse.food.domain.FoodVO" alias="foodVO"/>
+		<typeAlias type="com.dhouse.reply.domain.ReplyVO" alias="replyVO"/>
+		<typeAlias type="com.dhouse.file.domain.FileVO" alias="fileVO"/>
+		<typeAlias type="com.dhouse.board.domain.BoardVO" alias="boardVO"/>
+		<typeAlias type="com.dhouse.banner.domain.BannerVO" alias="bannerVO"/>
 	</typeAliases>
 	
 	<environments default="mysql">
@@ -24,6 +33,15 @@
 	
 	<mappers>
 		<mapper resource="com/dhouse/mybatis/mapper/userMapper.xml"/>
+		<mapper resource="com/dhouse/mybatis/mapper/corpMapper.xml"/>
+		<mapper resource="com/dhouse/mybatis/mapper/adminMapper.xml"/>
+		<mapper resource="com/dhouse/mybatis/mapper/myPageMapper.xml"/>
+		<mapper resource="com/dhouse/mybatis/mapper/myPageCorpMapper.xml"/>
+		<mapper resource="com/dhouse/mybatis/mapper/foodMapper.xml"/>
+		<mapper resource="com/dhouse/mybatis/mapper/replyMapper.xml"/>
+		<mapper resource="com/dhouse/mybatis/mapper/fileMapper.xml"/>
+		<mapper resource="com/dhouse/mybatis/mapper/boardMapper.xml"/>
+		<mapper resource="com/dhouse/mybatis/mapper/bannerMapper.xml"/>
 	</mappers>
 </configuration>
 

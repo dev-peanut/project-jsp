@@ -13,7 +13,7 @@
 	<div id="page-container">
 		<main id="main-app">
 			<!-- 헤더 적용 -->
-			<jsp:include page="../components/header.jsp"></jsp:include>
+			<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header-my.jsp"></jsp:include>
 			<div class="MainWrapper">
 				<div>
 					<div class="PaymentLayout">
@@ -278,7 +278,7 @@
 				</div>
 			</div>
 			<!-- footer적용 -->
-			<jsp:include page="../components/footer.jsp"></jsp:include>
+			<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 		</main>
 	</div>
 </body>

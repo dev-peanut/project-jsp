@@ -4,14 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마이페이지</title>
+<title>마이페이지-개인</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-<link rel="stylesheet" href="../../assets/css/user/myPage.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/myPage.css">
 </head>
 <body>
 	<div id="page-container">
 		<!-- 헤더 적용 -->
-		<jsp:include page="../components/header-my.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header-my.jsp"></jsp:include>
 		<!-- 메인 컨텐츠 적용 -->
 		<div id="container">
 			<div id="mypageWrap">
@@ -30,7 +31,7 @@
 										<dt class="BlindText">회원닉네임</dt>
 										<dd class="ProfileInfo_nickname">땅콩이</dd>
 										<dt class="BlindText">회원유형</dt>
-										<dd class="ProfileInfo_type">사업자 회원</dd>
+										<dd class="ProfileInfo_type">개인 회원</dd>
 									</dl>
 									<strong class="BlindText">관심 카테고리</strong>
 									<!-- 가상요소 -->
@@ -38,14 +39,14 @@
 									<!-- 카테고리 박스 -->
 									<dl class="ProfileActivityInfo_infoCountBox">
 										<div>
-											<dt>레벨</dt>
+											<dt>게시글</dt>
 											<dd>
 												0
 												<span class="BlindText"></span>
 											</dd>
 										</div>
 										<div>
-											<dt>기부</dt>
+											<dt>댓글</dt>
 											<dd>
 												0
 												<span class="BlindText">회</span>
@@ -103,14 +104,14 @@
 											<a href="/web/campaign/detail/155943">
 												<div class="project-card">
 													<div class="card-img-section">
-                                  						<em class="project-img" style="background-image:url(/images/user/mandurang.jpg)"></em>
+                                  						<em class="project-img" style="background-image:url(/images/user/microwave.jpg)"></em>
 														<em class="project-type reward">기부</em>
 													</div>
 													<div class="card-info-section">
-														<h4>만두랑 : 전골 10kg</h4>
+														<h4>전자레인지 무료나눔</h4>
 														<h5>일시 : 2023.02.20</h5>
 														<div class="card-category">
-															<span class="category1">만두·만두전골</span>
+															<span class="category1">가전제품</span>
 															<span class="category2"></span>
 														</div>
 													</div>
@@ -121,14 +122,14 @@
 											<a href="/web/campaign/detail/155943">
 												<div class="project-card">
 													<div class="card-img-section">
-                                  						<em class="project-img" style="background-image:url(/images/user/mandurang.jpg)"></em>
+                                  						<em class="project-img" style="background-image:url(/images/user/washer.jpg)"></em>
 														<em class="project-type reward">기부</em>
 													</div>
 													<div class="card-info-section">
-														<h4>만두랑 : 밥 10kg</h4>
+														<h4>세탁기 무료나눔</h4>
 														<h5>일시 : 2023.02.21</h5>
 														<div class="card-category">
-															<span class="category1">만두·만두전골</span>
+															<span class="category1">가전제품</span>
 															<span class="category2"></span>
 														</div>
 													</div>
@@ -139,14 +140,14 @@
 											<a href="/web/campaign/detail/155943">
 												<div class="project-card">
 													<div class="card-img-section">
-                                  						<em class="project-img" style="background-image:url(/images/user/mandurang.jpg)"></em>
+                                  						<em class="project-img" style="background-image:url(/images/user/screen.png)"></em>
 														<em class="project-type reward">기부</em>
 													</div>
 													<div class="card-info-section">
-														<h4>만두랑 : 만두 5kg</h4>
+														<h4>모니터 무료나눔</h4>
 														<h5>일시 : 2023.02.22</h5>
 														<div class="card-category">
-															<span class="category1">만두·만두전골</span>
+															<span class="category1">가전제품</span>
 															<span class="category2"></span>
 														</div>
 													</div>
@@ -161,7 +162,7 @@
 				</div>
 			</div>
 		<!-- footer -->
-		<jsp:include page="../components/footer.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

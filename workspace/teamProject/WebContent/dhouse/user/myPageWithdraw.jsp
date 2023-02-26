@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>마이페이지 회원탈퇴</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/myPageWithdraw.css">
 </head>
@@ -13,7 +14,7 @@
 		<div id="wz-header"></div>
 		<main class="account-drop wzui">
 		<!-- 헤더 적용 -->
-			<jsp:include page="../components/header.jsp"></jsp:include>
+			<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header-my.jsp"></jsp:include>
 			  <div class="wrap">
 			    <h1>회원 탈퇴</h1>
 			    <p><strong>익명의 서포터 993</strong>님, 와디즈를 이용하시는데 혹시 아래와 같은 불편함이 있으셨으면, 아래 방법을 한번 이용해보세요.</p>
@@ -28,7 +29,7 @@
 			        <a href="#" data-intercom-message="회원 탈퇴 관련 질문">와디즈에 문의하기</a> ㅣ  1661-9056 ㅣ 카카오톡 친구추가 ‘와디즈’ ㅣ info@wadiz.kr</dd>
 			      </dl>
 			    </div>
-			    <h2>어떤 점이 불편하셨나요?</h2>
+<!-- 			<h2>어떤 점이 불편하셨나요?</h2>
 			    <p>와디즈를 이용하면서 불편했던 점을 말씀해주시면, 와디즈의 서비스 개선에 참고하도록 하겠습니다.</p>
 			    <div class="selectbox">
 			      <select id="selectDropOutReason" name="reason">
@@ -44,7 +45,7 @@
 			      </select>
 			      <span>탈퇴사유는 무엇인가요?</span>
 			      <em id="selectDropOutReasonError" style="display:none">탈퇴 사유를 선택해주세요.</em>
-			    </div>
+			    </div> -->
 			    <div class="reason-text" id="inputDropOutReason" style="display:none">
 			      <input type="text" name="reason-text" id="reason-text" placeholder="사유를 입력해 주세요." class="large" maxlength="64">
 			      <em id="inputDropOutReasonError" style="display:none">탈퇴 사유를 입력해주세요.</em>
@@ -67,7 +68,12 @@
 			      <dt>미상환 투자금 환급 불이익 감수</dt>
 			      <dd>아직 상환되지 않은 투자금이 있을때, 투자금을 돌려받지 못할 불이익과 위험 감수</dd>
 			    </dl>
-			    <p><label class="wz checkbox"><input type="checkbox" name="agree" value="Y" id="dropConfirm"><span>상기 와디즈 탈퇴 시 유의 사항을 확인하였습니다.</span></label></p>
+			    <p>
+				    <label class="wz checkbox">
+					<input type="checkbox" name="agree" value="Y" id="dropConfirm">
+					    <span>상기 와디즈 탈퇴 시 유의 사항을 확인하였습니다.</span>
+				    </label>
+			    </p>
 			    <h2>본인 확인</h2>
 			    <p>안전한 탈퇴를 위해 본인 인증 절차를 진행합니다. 본인확인하기 버튼을 클릭해주세요.</p>
 			    <div id="verify-step1" class="verify-box">
@@ -83,7 +89,7 @@
 			        <form name="verify-code-confirm" style="padding-right:0">
 			          <div class="wz input action verify-code">
 			            <input type="number" name="code" id="code" placeholder="인증번호 입력" maxlength="6">
-			            <span class="timer" id="timer" style="right:100px">00:00</span>
+			            <span class="timer" id="timer" style="right:100px;">00:00</span>
 			            <button type="button" class="wz button gray" id="verify-confirm">인증 확인</button>
 			          </div>
 			        </form>
@@ -98,7 +104,7 @@
 			  </div>
 			</main>
 		<!-- footer적용 -->
-		<jsp:include page="../components/footer.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

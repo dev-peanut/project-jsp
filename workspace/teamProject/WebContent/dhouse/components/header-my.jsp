@@ -67,7 +67,7 @@
 								<button type="button" class="User_btnSign__1URTs" style="visibility: hidden; cursor: none;">로그인</button>
 								<button data-event="" class="User_btnSign__1URTs">
 									<div class="button-mypage-wrapper">
-										<span class="mypage-button-image" style="background-image: url(https://static.wadiz.kr/assets/icon/profile-icon-1.png);"></span>
+										<span class="mypage-button-image" style="background-image: url(https://static.wadiz.kr/assets/icon/profile-icon-4.png);"></span>
 									</div>
 								</button>
 							</div>

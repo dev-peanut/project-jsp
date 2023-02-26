@@ -13,7 +13,7 @@
 <link href="${pageContext.request.contextPath}/assets/css/user/signUp-corp.css" rel="stylesheet">
 </head>
 <body>
-    <jsp:include page="../user/user-header.jsp"></jsp:include>
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/user/user-header.jsp"></jsp:include>
 	<!-- <header>
 		<div id="wrapper">
 			<h1 id="header-logo">
@@ -128,18 +128,18 @@
                         </div><!-- email-field -->
                         <!-- 한줄 복사 -->
                         <div class="password-field"><label>비밀번호</label><!-- 비밀번호 -->
-                        <div class="password-field-text">
-                            <input name="password" placeholder="비밀번호 입력" type="password"
-                                class="input-password-container" id="password-input" aria-invalid="false">
-                            <button aria-label="비밀번호 보기" class="Button_TextField_icon" type="button">
-                                <span class="eye">
-	                                <span class="Button_children_pw">
-	                                </span>
-                                </span>
-                            </button>
+                            <div class="password-field-text">
+                                <input name="password" placeholder="비밀번호 입력" type="password"
+                                    class="input-password-container" id="password-input" aria-invalid="false">
+                                <button aria-label="비밀번호 보기" class="Button_TextField_icon" type="button">
+                                    <span class="eye">
+                                        <span class="Button_children_pw">
+                                        </span>
+                                    </span>
+                                </button>
+                            </div>
+                            <em class="password-error error-message">최소 8자입니다.</em>
                         </div>
-                    </div>
-                    <em class="password-error error-message">비밀번호를 입력해주세요.</em>
                     <!-- password 1  -->
 
                     <div class="recheck-password"><label></label>
@@ -171,38 +171,48 @@
                             <label class="EmailAuthField">기업명</label>
                             <div class="email-field-input-continer">
                                 <div class="EmailAuthField_inputField">
-                                    <input name="coprName" placeholder="기업명 입력" type="text" class="email-field">
+                                    <input name="coprName" placeholder="기업명 입력" type="text" class="email-field corp-name-field" id="corp-name">
                                 </div>
                             </div><!-- email-field-input-continer -->
-                            <p class="email-error"></p>
+                            <em class="corp-name-error error-message">기업명을 입력하세요.</em>
                         </div><!-- email-field -->
                 	</div>
+                    <!-- <div class="name-field email-field" id="name-name"><label>이메일</label>
+                        <div class="TextField_field__1B2AH ">
+                            <input name="email" placeholder="이메일 입력" type="text" class="email-input" id="email-input">
+                        </div>
+                        <em class="email-error error-message">이메일을 입력해주세요.</em>
+                    </div> -->
                     <div class="name-field" id="name-name"><label>이메일</label>
                         <div class="TextField_field__1B2AH">
-                            <input name="email" placeholder="이메일 입력" type="text" class="name-input">
+                            <input name="email" placeholder="이메일 입력" type="text" class="name-input" id="email-input">
                         </div>
+                        <em class="email-error error-message">이메일을 입력해주세요.</em>
                     </div>
                     <!-- email 끝 -->
                     <div class="name-field" id="name-name"><label>대표 번호</label>
                         <div class="TextField_field__1B2AH">
-                            <input name="phoneNumber" placeholder="대표 번호 입력" type="text" class="name-input" maxlength="11">
+                            <input name="phoneNumber" placeholder="대표 번호 입력" type="text" class="name-input" id="input-phone-number" maxlength="11">
                         </div>
+                        <em class="phone-error error-message">핸드폰 번호를 입력해주세요.</em>
                     </div>
 					<!-- phoneNumber 끝 -->
                     <div class="name-field" id="name-name"><label>기업 주소</label>
                         <div class="TextField_field__1B2AH">
-                            <input name="corpAddress" placeholder="기업 주소 입력" type="text" class="name-input" maxlength="11">
+                            <input name="corpAddress" placeholder="기업 주소 입력" type="text" class="name-input" id="input-corp-address" maxlength="11">
                         </div>
+                        <em class="corp-address error-message">기업 주소를 입력해주세요.</em>
                     </div>
-					<!-- phoneNumber 끝 -->
+					<!-- 주소 끝 -->
                     <div class="name-field" id="name-name"><label>기업 등록 번호</label>
                         <div class="TextField_field__1B2AH">
-                            <input name="corpNumber" placeholder="기업 번호 입력" type="text" class="name-input" maxlength="11">
+                            <input name="corpNumber" placeholder="기업 번호 입력" type="text" class="name-input" id="input-corp-number" maxlength="12">
                         </div>
+                        <em class="corp-number error-message">기업 등록 번호를 입력해주세요.</em>
                     </div>
 					<!-- phoneNumber 끝 -->
                     <div class="SignUpAllCheckTermsCheckbox"> <!-- 회원 약관 동의 -->
-                        <label for="termsUpdateRequestCheckBox" class="termscheckbox">
+                        <label for="termsUpdateRequestCheckBox" class="termscheckbox"  id="termscheckbox">
                             <input id="termsUpdateRequestCheckBox" type="checkbox" class="Checkbox">
                             <span class="checkbox-icon" aria-hidden="true">
                                 <svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon_icon__1YH1P_Checkbox_removeIcon__12oZL" aria-hidden="true"><path fill-rule="evenodd" d="M0 0h16v2H0z"></path></svg>
@@ -239,7 +249,6 @@
         </main><!-- main -->
     </div>
 </body>
-<script type="text/javascript">
-
-</script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/user/signUp-corp.js"></script>
 </html>

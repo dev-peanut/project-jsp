@@ -1,15 +1,12 @@
-/**
- * signUp.jsp
- */
-
+/* 
+* signUp-corp.jsp
+*/
 // 아이디 변수 - 인풋
 const $identificationInput = $("#identification-input");
 const $identificationWarning = $(".identification-error");
-
 let identificationFlag = false;
 // 아이디 정규식 이벤트 사용 및 함수
 $identificationInput.on("blur", function(){
-    console.log("들어옴");
     var $identificationInputVal = $identificationInput.val();
     var identificationInputVal = $identificationInput.val();
 
@@ -41,15 +38,11 @@ $identificationInput.on("blur", function(){
 const $passwordInput = $("#password-input");
 // 비밀번호 에러 변수
 const $passwordWarning = $(".password-error");
-
 let passwordFlag = false;
 // 비밀번호 정규식 이벤트 사용 및 함수
 $passwordInput.on("blur", function(){
     var $passwordInputValue = $passwordInput.val();
     var passwordInputValue = $passwordInput.val();
-    var num = passwordInputValue.search(/[0-9]/g);
-    var eng = passwordInputValue.search(/[a-z]/ig);
-    var spe = passwordInputValue.search(/[`~!@@#$%^&*|₩₩₩'₩";:₩/?]/gi);
     // var num = passwordInputValue.search(/[0-9]/g);
     // var eng = passwordInputValue.search(/[a-z]/ig);
     // var spe = passwordInputValue.search(/[`~!@@#$%^&*|₩₩₩'₩";:₩/?]/gi);
@@ -63,32 +56,21 @@ $passwordInput.on("blur", function(){
         $passwordWarning.text("최소 8자입니다.");
         $passwordWarning.css("display", "block");
         $passwordInput.css("border-color", "#f66");
-    } else if($passwordInputValue.length < 8 || $passwordInputValue.length > 20){
-        $passwordWarning.text("영문,숫자,특수문자를 조합한 8자 이상");
-        $passwordWarning.css("display", "block");
-        $passwordInput.css("border-color", "#f66");
-        return false;
-    }else if(passwordInputValue.search(/\s/) != -1){
-        $passwordWarning.text("영문,숫자,특수문자를 조합한 8자 이상");
         passwordFlag = false;
     }else if($passwordInputValue.length > 20){
         $passwordWarning.text("최대 20자입니다.");
         $passwordWarning.css("display", "block");
         $passwordInput.css("border-color", "#f66");
-        return false;
-    }else if(num < 0 || eng < 0 || spe < 0 ){
         passwordFlag = false;
     }else if(!regExp.test($passwordInputValue)){
         console.log("들어옴");
         $passwordWarning.text("영문,숫자,특수문자를 조합한 8자 이상");
         $passwordWarning.css("display", "block");
         $passwordInput.css("border-color", "#f66");
-        return false;
         passwordFlag = false;
     }else {
         $passwordWarning.css("display", "none");
         $passwordInput.css("border-color", "#dde2e6");
-        return true;
         passwordFlag = true;
     }
     completeAllCheck();
@@ -98,7 +80,6 @@ $passwordInput.on("blur", function(){
 const $passwordCheckInput = $(".re-input-password-container");
 // 비밀번호 확인 에러 변수
 const $passwordCheckWarning = $(".recheck-password-error");
-
 let passwordCheckFlag = false;
 // 비밀번호 확인 정규식 이벤트 사용 및 함수
 $passwordCheckInput.on("blur", function(){
@@ -111,18 +92,15 @@ $passwordCheckInput.on("blur", function(){
         $passwordCheckWarning.text("동일한 비밀번호를 입력해주세요.");
         $passwordCheckWarning.css("display", "block");
         $passwordCheckInput.css("border-color", "#f66");
-        return false;
         passwordCheckFlag = false;
     } else if($passwordCheckInputValue == $passwordInputValue){
         $passwordCheckWarning.css("display", "none");
         $passwordCheckInput.css("border-color", "#dde2e6");
-        return true;
         passwordCheckFlag = true;
     } else {
         $passwordCheckWarning.text("동일한 비밀번호를 입력해주세요.");
         $passwordCheckWarning.css("display", "block");
         $passwordCheckInput.css("border-color", "#f66");
-        return false;
         passwordCheckFlag = false;
     }
     completeAllCheck();
@@ -130,7 +108,6 @@ $passwordCheckInput.on("blur", function(){
 
 const $nicknameInput = $("#nickname");
 const $nicknameWarning = $(".nickname-error");
-
 let nicknameFlag = false;
 // 닉네임 확인 정규식 이벤트 사용 및 함수
 $nicknameInput.on("blur", function(){
@@ -143,7 +120,6 @@ $nicknameInput.on("blur", function(){
         $nicknameWarning.text("최소 2자입니다.");
         $nicknameWarning.css("display", "block");
         $nicknameInput.css("border-color", "#f66");
-        return false;
         nicknameFlag = false;
     } else if ($nicknameInputVal.length > 20) {
         $nicknameWarning.text("닉네임 최대 길이는 20자 입니다. 확인해 주세요.");
@@ -153,8 +129,30 @@ $nicknameInput.on("blur", function(){
     } else {
         $nicknameWarning.css("display", "none");
         $nicknameInput.css("border-color", "#dde2e6");
-        return true;
         nicknameFlag = true;
+    }
+    completeAllCheck();
+});
+
+const $corpnameInput = $("#corp-name");
+const $corpnameWarning = $(".corp-name-error");
+let corpnameFlag = false;
+// 기업명 확인 정규식 이벤트 사용 및 함수
+$corpnameInput.on("blur", function(){
+    var $corpnameInputVal = $corpnameInput.val();
+    var $corpnameWarningVal = $corpnameWarning.val();
+
+    // $corpnameInput.css("border-color", "#f66");
+    // $corpnameInput.css("border-color", "#dde2e6");
+    if ($corpnameInputVal.length == 0) {
+        $corpnameWarning.text("기업명을 입력하세요.");
+        $corpnameWarning.css("display", "block");
+        $corpnameInput.css("border-color", "#f66");
+        corpnameFlag = false;
+    } else {
+        $corpnameWarning.css("display", "none");
+        $corpnameInput.css("border-color", "#dde2e6");
+        corpnameFlag = true;
     }
     completeAllCheck();
 });
@@ -164,9 +162,6 @@ $nicknameInput.on("blur", function(){
 const $emailInput = $("#email-input");
 // 이메일 에러 변수
 const $emailWarning = $(".email-error");
-
-
-// 이메일 정규식 이벤트 사용
 let emailFlag = false;
 // 이메일 정규식 이벤트 사용 및 함수
 $emailInput.on("blur", function() {
@@ -189,7 +184,6 @@ $emailInput.on("blur", function() {
         $emailWarning.text("이메일 주소를 다시 확인해주세요.");
         $emailWarning.css("display", "block");
         $emailInput.css("border-color", "#f66");
-
         emailFlag = false;
     } else {
         $emailWarning.css("display", "none");
@@ -199,62 +193,15 @@ $emailInput.on("blur", function() {
     completeAllCheck();
 });
 
-// 이메일 정규식 함수
 
 
-const $nameInput = $("#name-input");
-const $nameWarning = $(".name-error");
 
-let nameFlag = false;
-// 이름 정규식 이벤트 사용 및 함수
-$nameInput.on("blur", function(){
-    const $nameInputValue = $nameInput.val();
-    const nameInputValue = $nameInput.val();
-    var name = nameInputValue.search(/^[가-힣a-zA-Z]{2,20}$/);
-
-    // $nameInput.css("border-color", "#f66");
-    // $nameInput.css("border-color", "#dde2e6");
-    if($nameInputValue.length < 1){
-        $nameWarning.text("이름을 입력해주세요.");
-        $nameWarning.css("display", "block");
-        $nameInput.css("border-color", "#f66");
-        return false;
-        nameFlag = false;
-    }else if($nameInputValue.length < 2){
-        $nameWarning.text("최소 2자입니다.");
-        $nameWarning.css("display", "block");
-        $nameInput.css("border-color", "#f66");
-        return false;
-        nameFlag = false;
-    }else if(nameInputValue.search(/\s/) != -1){
-        $nameWarning.text("다시 확인해주세요.");
-        $nameWarning.css("display", "block");
-        $nameInput.css("border-color", "#f66");
-        return false;
-        nameFlag = false;
-    }else if(name < 0){
-        $nameWarning.text("다시 확인해주세요.");
-        $nameWarning.css("display", "block");
-        $nameInput.css("border-color", "#f66");
-        return false;
-        nameFlag = false;
-    }else {
-        $nameWarning.css("display", "none");
-        $nameInput.css("border-color", "#dde2e6");
-        return true;
-        nameFlag = true;
-    }
-    completeAllCheck();
-});
-
-
-//핸드폰 변수
+//대표 번호(핸드폰) 변수
 const $phoneInput = $('#input-phone-number');
-//핸드폰 에러 변수
+//대표 번호(핸드폰) 에러 변수
 const $phoneWarning = $('.phone-error');
-
 let phoneFlag = false;
-// 핸드폰 정규식 이벤트 함수 사용
+// 대표 번호(핸드폰) 정규식 이벤트 함수 사용
 $phoneInput.on("blur", function() {
     var isPhoneNum = /([01]{2,})([01679]{1,})([0-9]{3,4})([0-9]{4})/;
     var $phoneInputVal = $phoneInput.val();
@@ -264,7 +211,7 @@ $phoneInput.on("blur", function() {
     // $phoneInput.css("border-color", "#f66");
     // $phoneInput.css("border-color", "#dde2e6");
     if($phoneInputVal.length < 1) {
-        $phoneWarning.text("핸드폰 번호를 입력해주세요.");
+        $phoneWarning.text("대표 번호를 입력해주세요.");
         $phoneWarning.css("display", "block");
         $phoneInput.css("border-color", "#f66");
         phoneFlag = false;
@@ -282,6 +229,66 @@ $phoneInput.on("blur", function() {
     completeAllCheck();
 });
 
+const $corpnumberInput = $("#input-corp-number");
+const $corpnumberWarning = $(".corp-number");
+let corpnumberFlag = false;
+// let temp = "";
+// // 기업번호 숫자만 입력 받기
+// $corpnumberInput.on("keyup", function(){
+//     var $corpnumberInputVal = $corpnumberInput.val();
+//     var corpnumberInputVal = $corpnumberInput.val();
+
+//     if (corpnumberInputVal instanceof Number) {
+//         temp += corpnumberInputVal;
+//     } else {
+//         $corpnumberInput.text(temp);
+//     }
+// });
+
+
+// 사업자 등록 번호 하이픈 자동 추가
+// $corpnumberInput.on("keyup", function(){
+//     var $corpnumberInputVal = $corpnumberInput.val();
+//     var corpnumberInputVal = $corpnumberInput.val();
+
+//     if ($corpnumberInputVal.length < 4>) {
+//         corpnameInputVal.text($corpnumberInputVal + "-");
+//     } else if ($corpnumberInputVal.length < 7>) {
+//         corpnameInputVal.text($corpnumberInputVal + "-");
+//     }
+// });
+
+
+// 사업자 등록 번호 정규식 함수 및 실행
+$corpnumberInput.on("blur", function(){
+    var regExp = /^[0-9]{3}-[0-9]{2}-[0-9]{5}$/;
+    var $corpnumberInputVal = $corpnumberInput.val();
+
+    if ($corpnumberInputVal < 1) {
+        $corpnumberWarning.text("사업자등록번호를 입력하세요.");
+        $corpnumberWarning.css("display", "block");
+        $corpnumberInput.css("border-color", "#f66");
+        corpnumberFlag = false;
+    } else if (regExp.test($corpnumberInputVal)) {
+        $corpnumberWarning.text("잘못된 형식입니다.");
+        $corpnumberWarning.css("display", "block");
+        $corpnumberInput.css("border-color", "#f66");
+        corpnumberFlag = false;
+    } else {
+        $corpnumberWarning.css("display", "none");
+        $corpnumberInput.css("border-color", "#dde2e6");
+        corpnumberFlag = false;
+    }
+
+});
+
+
+
+
+
+
+
+
 
 
 const $checkBox = $("#termscheckbox");
@@ -291,7 +298,7 @@ let check = false; // 전체동의 미체크 상태
 $checkBox.on("click", function(){
     console.log("체크박스 들어옴.")
     if (!check) {
-        console.log("트루 체크박스 들어옴.")
+        console.log("true 체크박스 들어옴.")
         // document.querySelector("#check-box").style.background = "black";
         // $("#check-box").css("display", "block");
         $checkBoxImage.css("display", "block");
@@ -321,7 +328,7 @@ function completeAllCheck() {
     // let nameFlag = false; // 이름
     // let phoneCheck = false; // 핸드폰
     
-    if (identificationFlag && passwordFlag && passwordCheckFlag && nicknameFlag && emailFlag && emailFlag && nameFlag && phoneFlag && check) {
+    if (identificationFlag && passwordFlag && passwordCheckFlag && nicknameFlag && emailFlag && emailFlag && corpnameFlag && phoneFlag && check) {
         console.log("완료");
         $completeButton.css("pointer-events", "auto");
         $completeButton.css("cursor", "pointer");
@@ -340,8 +347,3 @@ function completeAllCheck() {
     }
 
 }
-
-    
-
-
-

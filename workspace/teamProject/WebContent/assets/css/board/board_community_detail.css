@@ -3,6 +3,7 @@
 
 html * {
     font-family: Roboto, "Noto Sans KR", sans-serif;
+    list-style:none;
 }
 
 html, body {
@@ -621,15 +622,20 @@ ul{
     text-align: center;
 }	
 
+.btn-pd-transp{
+display: inline-block;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #4a4a4a;
+    background: transparent;
+    border: 1px solid #e4e4e4;
+    cursor: pointer;
+}
 
 
 /* 미디어 쿼리 */
-@media screen and (min-width: 960px){
-.wcommunity-top .wcommunity-topmenu {
-    overflow-x :visible;
-    text-align: center;
-}
-}
 
 @media screen and (min-width: 960px){
 .wcommunity-content-wrap {

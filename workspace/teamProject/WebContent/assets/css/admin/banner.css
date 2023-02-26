@@ -235,12 +235,18 @@ body {
 	display: flex;
 }
 
-.module--content-controller:hover {
+.content-list__info-container:hover {
 	background-color: #ddd;
 	border-radius: 5px;
 }
 
-.module--content-summary:hover {
+.module--content-summary:hover{
+		background-color: #ddd;
+	border-radius: 5px;
+}
+
+
+.module--content-controller:hover {
 	background-color: #ddd;
 	border-radius: 5px;
 }

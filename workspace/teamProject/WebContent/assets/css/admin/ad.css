@@ -217,7 +217,7 @@ body {
 	display: flex;
 }
 
-.module--support-summary:hover {
+.support-list__info-unit:hover {
 	background-color: #ddd;
 	border-radius: 5px;
 }

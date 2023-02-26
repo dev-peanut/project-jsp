@@ -29,13 +29,13 @@
 									<div role="row" class="ColumnLayoutHeader css-ovuw9r e3j22xw2">제목</div>
 									<div role="cell" class="ColumnLayoutCell css-r24zef e3j22xw1">
 										<input type="text" maxlength="50" name="titleName"
-											class="e1wxeesg0 css-19x2xk7 ed83gly0">
+											class="e1wxeesg0 css-19x2xk7 ed83gly0" value="관리자 공지">
 									</div>
 								</div>
 
 
 								<div class="css-1hsp21g e3j22xw3">
-									<div role="row" class="ColumnLayoutHeader css-ovuw9r e3j22xw2">진행여부</div>
+									<div role="row" class="ColumnLayoutHeader css-ovuw9r e3j22xw2">상태</div>
 									<div role="cell" class="ColumnLayoutCell css-r24zef e3j22xw1">
 										<label class="css-1cthi19 ef3idoi0"><input
 											type="radio" name="processStatus"
@@ -43,15 +43,15 @@
 											value="W">대기</label><label class="css-1cthi19 ef3idoi0"><input
 											type="radio" name="processStatus"
 											data-testid="RadioItem_Input" class="css-57b9tf ed83gly0"
-											value="I">진행</label><label class="css-1cthi19 ef3idoi0"><input
+											value="I">승인</label><label class="css-1cthi19 ef3idoi0"><input
 											type="radio" name="processStatus"
 											data-testid="RadioItem_Input" class="css-57b9tf ed83gly0"
-											value="E">종료</label>
+											value="E">거절</label>
 									</div>
 								</div>
 							</div>
 							<div lang="ko_KR" class="css-1dcl64i e13qsip93">
-								<h2 data-testid="Typography_Component" class="css-16agecz">디자인</h2>
+								<h2 data-testid="Typography_Component" class="css-16agecz">이미지 및 등록기간</h2>
 							</div>
 							<div class="css-9ct1p3 e3j22xw0">
 								<div class="css-1hsp21g e3j22xw3">
@@ -82,7 +82,7 @@
 															<th colspan="1" width="240" class="css-1y5ihtu eik1887"><div
 																	data-testid="Thead_div">이미지 등록</div></th>
 															<th colspan="3" class="css-q4mo7h eik1887"><div
-																	data-testid="Thead_div">링크 URL</div></th>
+																	data-testid="Thead_div">내용</div></th>
 														</tr>
 													</thead>
 													<tbody data-testid="Tbody_tbody">
@@ -110,7 +110,7 @@
 																</div></td>
 															<td class="css-1kbesc1 eik1885"><input type="text"
 																name="imageDetail.0.linkUrl"
-																class="ezgbbl70 css-bup7mq ed83gly0"></td>
+																class="ezgbbl70 css-bup7mq ed83gly0" value=""></td>
 														</tr>
 													</tbody>
 												</table>

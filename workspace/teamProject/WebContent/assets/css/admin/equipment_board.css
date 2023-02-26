@@ -225,7 +225,7 @@ body {
   display: flex;
 }
 
-.content-list__info-unit:hover {
+.module--content-summary:hover {
 	background-color: #ddd;
     border-radius: 5px;
 }

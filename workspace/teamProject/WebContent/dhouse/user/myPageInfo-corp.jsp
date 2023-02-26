@@ -39,6 +39,15 @@
 	                         <i class="wadizicon wa-chevron-right"></i>
 	                       </div>
 	                    </a>
+	                    <a class="my-info" href="/web/wmypage/myprofile/modifyprofile">
+	                        <div class="my-info-text">
+	                            <h3>프로필 정보 설정</h3>
+	                            <p>프로필 사진, 주소</p>
+	                        </div>
+	                        <div class="my-info-btn">
+	                            <i class="wadizicon wa-chevron-right"></i>
+	                        </div>
+	                    </a>
 	                    <div class="my-info">
 	                        <h3><a href="/web/waccount/wAccountDropOutUser">회원 탈퇴</a></h3>
 	                    </div>
@@ -49,7 +58,7 @@
         	</div>
         </main>
        	<!-- footer적용 -->
-	<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

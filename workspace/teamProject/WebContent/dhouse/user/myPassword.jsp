@@ -5,12 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <title>비밀번호 변경</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/myPassword.css">
 </head>
 <body>
 	<div id="page-container">
-		<jsp:include page="../components/header.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header-my.jsp"></jsp:include>
 		<div id="accountWrap">
             <!-- S : #newContainer -->
             <div id="newContainer">
@@ -34,7 +35,7 @@
 	            </div>
             <!-- E : #newContainer -->
         </div>
-       	<jsp:include page="../components/footer.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

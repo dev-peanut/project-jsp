@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>마이페이지 회원탈퇴</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/myPageWithdraw.css">
 </head>
@@ -13,7 +14,7 @@
 		<div id="wz-header"></div>
 		<main class="account-drop wzui">
 		<!-- 헤더 적용 -->
-			<jsp:include page="../components/header.jsp"></jsp:include>
+			<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header-my.jsp"></jsp:include>
 			  <div class="wrap">
 			    <h1>회원 탈퇴</h1>
 			    <p><strong>익명의 서포터 993</strong>님, 와디즈를 이용하시는데 혹시 아래와 같은 불편함이 있으셨으면, 아래 방법을 한번 이용해보세요.</p>
@@ -103,7 +104,7 @@
 			  </div>
 			</main>
 		<!-- footer적용 -->
-		<jsp:include page="../components/footer.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

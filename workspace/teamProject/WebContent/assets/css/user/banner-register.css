@@ -3495,7 +3495,7 @@ cursor: pointer;
 
 .MessageBox_title__23TW6{
     margin-bottom: 8px;
-    line-height: 20px;
+    line-height: 8px;
     letter-spacing: 0;
     font-size: 14px;
     font-weight: 700;
@@ -4541,21 +4541,20 @@ cursor: pointer;
 }
 /* =========================================선택============================================== */
 
-.ProductSelectMenu_container__18idj {
+.SelectMenu1 {
     margin-bottom: 12px;
     border: 1px solid #dde2e6;
-    border-radius: 4px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-.ProductSelectMenu_container__18idj.ProductSelectMenu_unfold__95PrK {
+.SelectMenu1.SelectMenu2 {
     border: 1px solid #00c4c4;
 }
 
-.ProductSelect_container__1Xa66 {
+.Select1 {
     line-height: 20px;
     letter-spacing: 0;
     font-size: 14px;
@@ -4563,18 +4562,14 @@ cursor: pointer;
     cursor: pointer;
 }
 
-.ProductSelect_compensate__FfGdW {
-    padding: 0 3px 3.631px;
-}
-
-.ProductSelect_container__1Xa66 .ProductSelect_title__3FqMO {
+.Select1 .Select_title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 16px;
 }
 
-.ProductSelectMenu_container__18idj .ProductSelectMenu_defaultValue___MUYQ {
+.SelectMenu1 .DefaultValue {
     line-height: 28px;
     letter-spacing: -.3px;
     font-size: 16px;
@@ -4584,7 +4579,7 @@ cursor: pointer;
     white-space: nowrap;
 }
 
-.ProductSelect_container__1Xa66 .ProductSelect_moreButton__2P_Sz {
+.Select1 .MoreButton1 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -4600,24 +4595,28 @@ cursor: pointer;
     fill: currentColor;
 }
 
-.ProductSelect_container__1Xa66 .ProductSelect_moreButton__2P_Sz svg {
+.Select1 .MoreButton1 svg {
     width: 20px;
     height: 20px;
 }
 
-.ProductSelectMenu_container__18idj .ProductSelectMenu_content__39QFr {
+.Select1 .MoreButton2 svg {
+    transform: rotate(180deg);
+}
+
+.SelectMenu1 .content1 {
     max-height: 446px;
     overflow: auto;
 }
 
-.ProductSelectMenu_container__18idj .ProductSelectMenu_compensate__1arpC {
+.SelectMenu1 .content2 {
     margin: 0 -2.203px 0 -2.781px;
 }
 
-.ProductSelectMenuItem_container__2ubAS {
+.MenuItem {
     border-top: 1px solid #dde2e6;
     cursor: pointer;
-    padding: 16px 12px;
+    padding: 16px 16px;;
     word-break: break-all;
     overflow-wrap: break-word;
     -webkit-user-select: none;
@@ -4626,16 +4625,16 @@ cursor: pointer;
     user-select: none;
 }
 
-.ProductSelectMenuItem_container__2ubAS .ProductSelectMenuItem_titleWrapper__3A4A8 {
+.MenuItem .TitleWrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.ProductSelectMenuItem_container__2ubAS .ProductSelectMenuItem_titleWrapper__3A4A8 .ProductSelectMenuItem_title__3v1Qt {
+.MenuItem .TitleWrapper .ItemTitle {
     margin-right: 16px;
 }
 
-.ProductSelectMenuItem_container__2ubAS .ProductSelectMenuItem_titleWrapper__3A4A8 .ProductSelectMenuItem_title__3v1Qt .ProductSelectMenuItem_name__qDMQi {
+.MenuItem .TitleWrapper .ItemTitle .ItemName {
     line-height: 20px;
     letter-spacing: 0;
     font-size: 14px;
@@ -4644,27 +4643,7 @@ cursor: pointer;
     color: #212529;
 }
 
-.ProductSelectMenuItem_container__2ubAS .ProductSelectMenuItem_titleWrapper__3A4A8 .ProductSelectMenuItem_title__3v1Qt .ProductSelectMenuItem_description__Kroxl {
-    line-height: 18px;
-    letter-spacing: 0;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 4px;
-    color: #495057;
-}
-
-.ProductSelectMenuItem_container__2ubAS .ProductSelectMenuItem_shippingCharge__309uz {
-    display: inline-flex;
-    align-items: center;
-    line-height: 18px;
-    letter-spacing: 0;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 8px;
-    color: #495057;
-}
-
-.ProductSelectMenuItem_container__2ubAS .ProductSelectMenuItem_bottom__3SuP_ {
+.MenuItem .Itembottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -4678,11 +4657,11 @@ cursor: pointer;
 
 
 @media screen and (min-width: 769px) {
-.ProductSelectMenu_container__18idj {
+.SelectMenu1 {
     margin-bottom: 24px;
 }
 
-.ProductSelectMenu_container__18idj .ProductSelectMenu_content__39QFr {
+.SelectMenu1 .content1 {
     max-height: 392px;
 }
 }

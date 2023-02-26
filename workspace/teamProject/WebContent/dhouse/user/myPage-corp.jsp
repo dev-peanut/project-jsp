@@ -4,14 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마이페이지</title>
+<title>마이페이지-사업자</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-<link rel="stylesheet" href="../../assets/css/user/myPage.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/myPage.css">
 </head>
 <body>
 	<div id="page-container">
 		<!-- 헤더 적용 -->
-		<jsp:include page="../components/header-my.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header-my.jsp"></jsp:include>
 		<!-- 메인 컨텐츠 적용 -->
 		<div id="container">
 			<div id="mypageWrap">
@@ -161,7 +162,7 @@
 				</div>
 			</div>
 		<!-- footer -->
-		<jsp:include page="../components/footer.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

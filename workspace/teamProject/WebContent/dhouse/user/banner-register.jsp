@@ -34,7 +34,7 @@
 	                                            <span id="button-icon">
 	                                                <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__1VB4W" aria-hidden="true"><path d="M30.4 15.2H16.8V1.6h-1.6v13.6H1.6v1.6h13.6v13.6h1.6V16.8h13.6v-1.6z"></path></svg>
 	                                                <span id="button-text">
-	                                                    작성 완료
+	                                                    신청 완료
 	                                                </span>
 	                                            </span>
 	                                        </span>
@@ -43,60 +43,60 @@
 	                            </div>
 	                        </div>
 	                        <!-- 기간 선택 -->
-                        	<div class="ProductSelectMenu_container__18idj">
-	                        	<div class="ProductSelect_container__1Xa66">
-		                        	<div class="ProductSelect_title__3FqMO">
-			                        	<span class="ProductSelectMenu_defaultValue___MUYQ">상품 선택</span>
-			                        	<div class="ProductSelect_moreButton__2P_Sz ProductSelect_isOpenMoreInfo__201IV">
+                        	<div class="SelectMenu1 SelectMenu2">
+	                        	<div class="Select1 Select2">
+		                        	<div class="Select_title">
+			                        	<span class="DefaultValue">기간 선택</span>
+			                        	<div class="MoreButton1 MoreButton2">
 				                        	<svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__20lDO" aria-hidden="true">
 					                        	<path d="M16 9.6L26.4 20l-1.12 1.12L16 11.84l-9.28 9.28L5.6 20 16 9.6z"></path>
 				                        	</svg>
 		                        		</div>
-			                        	<ul class="ProductSelectMenu_content__39QFr">
-				                        	<div>
-					                        	<li>
-						                        	<div class="ProductSelectMenuItem_container__2ubAS" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
-							                        	<div class="ProductSelectMenuItem_titleWrapper__3A4A8">
-								                        	<div class="ProductSelectMenuItem_title__3v1Qt">
-									                        	<div class="ProductSelectMenuItem_name__qDMQi">1개월 패키지</div>
-								                        	</div>
-							                        	</div>
-							                        	<div class="ProductSelectMenuItem_bottom__3SuP_">
-								                        	<div>50,000원</div>
-							                        	</div>
-						                        	</div>
-					                        	</li>
-					                        	<li>
-						                        	<div class="ProductSelectMenuItem_container__2ubAS ProductSelectMenuItem_disabled__1-5Cp" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
-							                        	<div class="ProductSelectMenuItem_titleWrapper__3A4A8">
-								                        	<div class="ProductSelectMenuItem_title__3v1Qt">
-									                        	<div class="ProductSelectMenuItem_name__qDMQi">1개월 패키지</div>
-								                        	</div>
-							                        	</div>
-							                        	<div class="ProductSelectMenuItem_bottom__3SuP_">
-								                        	<div>90,000원</div>
-							                        	</div>
-						                        	</div>
-					                        	</li>
-					                        	<li>
-						                        	<div class="ProductSelectMenuItem_container__2ubAS ProductSelectMenuItem_disabled__1-5Cp" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
-							                        	<div class="ProductSelectMenuItem_titleWrapper__3A4A8">
-								                        	<div class="ProductSelectMenuItem_title__3v1Qt">
-									                        	<div class="ProductSelectMenuItem_name__qDMQi">1개월 패키지</div>
-								                        	</div>
-							                        	</div>
-							                        	<div class="ProductSelectMenuItem_bottom__3SuP_">
-								                        	<div>170,000원</div>
-							                        	</div>
-						                        	</div>
-					                        	</li>
-				                        	</div>
-			                        	</ul>
 		                        	</div>
-	                        	</div>
-                        	</div>
+		                        </div>		
+	                        	<ul class="content1 content2">
+		                        	<div>
+			                        	<li>
+				                        	<div class="MenuItem" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+					                        	<div class="TitleWrapper">
+						                        	<div class="ItemTitle">
+							                        	<div class="ItemName">1개월 패키지</div>
+						                        	</div>
+					                        	</div>
+					                        	<div class="Itembottom">
+						                        	<div>50,000원</div>
+					                        	</div>
+				                        	</div>
+			                        	</li>
+			                        	<li>
+				                        	<div class="MenuItem" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+					                        	<div class="TitleWrapper">
+						                        	<div class="ItemTitle">
+							                        	<div class="ItemName">2개월 패키지</div>
+						                        	</div>
+					                        	</div>
+					                        	<div class="Itembottom">
+						                        	<div>90,000원</div>
+					                        	</div>
+				                        	</div>
+			                        	</li>
+			                        	<li>
+				                        	<div class="MenuItem" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+					                        	<div class="TitleWrapper">
+						                        	<div class="ItemTitle">
+							                        	<div class="ItemName">4개월 패키지</div>
+						                        	</div>
+					                        	</div>
+					                        	<div class="Itembottom">
+						                        	<div>170,000원</div>
+					                        	</div>
+				                        	</div>
+			                        	</li>
+									</div>
+								</ul>
+							</div>
 	                        <!-- 글 제목 -->
-	                        <section class="Section_container__3md8M">
+<!-- 	                        <section class="Section_container__3md8M">
 	                            <div style="max-width: 600px;">
 	                                <div class="Section_header__1qwS7">
 	                                    <h2 class="Section_title__ikPIm_Section_isRequired__F8rij">글 제목</h2>
@@ -118,19 +118,20 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                        </section>
+	                        </section> -->
+	                        <!-- 글 내용 -->
 							<section class="Section_container__3md8M_StoryEditorWrapperItemWeb_container__3bMs8" style="max-width: 720px;">
 								<div class="Section_header__1qwS7 spacing-4">
-								    <h2 class="Section_title__ikPIm_Section_isRequired__F8rij">글 내용</h2>
+								    <h2 class="Section_title__ikPIm_Section_isRequired__F8rij">배너 내용</h2>
 								    <div class="Section_guide__2xeJO">
 								        <div class="Section_helperMessage__3V6GQ">
-								            <a class="link spacing-3 is-horizontal" href="https://www.wadiz.kr/link/funding_story_guide1" target="_blank" rel="nofollow noopener noreferrer" data-ga-category="펀딩_스토리_가이드" data-ga-action="클릭">펀딩 스토리 작성 가이드
+								            <a class="link spacing-3 is-horizontal" href="https://www.wadiz.kr/link/funding_story_guide1" target="_blank" rel="nofollow noopener noreferrer" data-ga-category="배너 신청 가이드" data-ga-action="클릭">작성 가이드
 								                <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon__3lrgp_withIcon_inline__3A3d_icon" aria-hidden="true" style="width: 14px; height: 14px;">
 								                    <path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
 								                    <path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
 								                </svg>
 								            </a>
-								            <a class="link" href="https://www.wadiz.kr/link/preorder_story_guide" target="_blank" rel="nofollow noopener noreferrer" data-ga-category="프리오더_스토리_가이드" data-ga-action="클릭">프리오더 스토리 작성 가이드
+								            <a class="link" href="https://www.wadiz.kr/link/preorder_story_guide" target="_blank" rel="nofollow noopener noreferrer" data-ga-category="배너 신청 가이드" data-ga-action="클릭">작성 가이드
 								                <svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon_icon__3lrgp withIcon_inline__3A3d_ icon" aria-hidden="true" style="width: 14px; height: 14px;">
 													<path d="M31.42 35.84h-27V8.4h14.76v-2H2.42v31.44h31V22.55h-2v13.29z"></path>
 													<path d="M37.32 15.41l-.01-13-12.99.01v2l9.72-.01-18.19 19.42 1.46 1.37 18-19.22.01 9.43h2z"></path>
@@ -151,9 +152,8 @@
 										<p class="MessageBox_title__23TW6">읽어주세요!</p>
 										<div class="MessageBox_description__1bCQv">
 											<ul>
-	                                            <li class="imagenotice">올바른 게시판 문화를 위해 욕설, 반말은 삼가해주세요.</li>
-	                                            <li class="imagenotice">정확한 정보 전달을 위해 제품의 상태를 상세히 기재해주세요.</li>
-	                                            <li class="imagenotice">소중한 가전제품을 기부해주셔서 감사합니다.</li>
+	                                            <li class="imagenotice">20자 이내로 작성해주세요.</li>
+	                                            <li class="imagenotice">부적절한 단어는 지양해주세요.</li>
 											</ul>
 										</div>
 									</div>
@@ -186,7 +186,7 @@
 		                                        <h2 class="Section_title__ikPIm_Section_isRequired__F8rij">사진 등록</h2>
 		                                        <div class="Section_guide__2xeJO"></div>
 		                                    </div>
-		                                    <div class="Section_description__10Uwo">기부하실 음식의 사진을 등록해주세요.</div>
+		                                    <div class="Section_description__10Uwo">배너 사진을 등록해주세요.</div>
 		                                    <div class="Section_content__3OkLZ">
 		                                        <div class="StoryVideoOrImageField_container__1lnfV">
 		                                            <div class="field_Form_field__35I9T_required_ImageFormField_field__X1jTW_StoryImageField_field__3O6yy">

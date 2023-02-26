@@ -1,7 +1,16 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap');
 
+@font-face {
+    font-family: wadizicon;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://static.wadiz.kr/static/web/media/wadizicon.1de1502a.eot#iefix) format("embedded-opentype"),url(https://static.wadiz.kr/static/web/media/wadizicon.f5cdf486.woff2) format("woff2"),url(https://static.wadiz.kr/static/web/media/wadizicon.9eb6b0a9.woff) format("woff"),url(https://static.wadiz.kr/static/web/media/wadizicon.e5379495.ttf) format("truetype"),url(https://static.wadiz.kr/static/web/media/wadizicon.077f5804.svg#wadizicon) format("svg")
+}
 
+div {
+    font-family: wadizicon;
+}
 
 body{
     pointer-events: auto!important;
@@ -266,29 +275,6 @@ body{
     margin: 0;
 }
 
-.Button_children__q9VCZ{
-    display: inline-block;
-    width: 158px;
-    overflow: hidden;
-    vertical-align: top;
-    font-family: inherit;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    text-align: left;
-    color: #fff;
-    line-height: 1.45;
-    font-size: 14px;
-    white-space: nowrap;
-    cursor: pointer;
-    font-weight: 500;
-    -webkit-font-smoothing: antialiased;
-    writing-mode: horizontal-tb !important;
-
-}
-
 .withIcon_icon__3lrgp_Button_icon__1qsE3_AppSidebarRewardProjectInfo_expandIcon__2oHiN{
     width: 20px;
     height: 20px;
@@ -457,27 +443,6 @@ ul.li{
     --vh: 7.46px;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
-}
-
-.icon-chevron-left_AppSidebarMenuList_chevronIcon__2YV-z_AppSidebarMenuList_open__bjhTR::before{
-    display: inline-block;
-    vertical-align: middle;
-    text-transform: none;
-    font-family: "wadizicon"!important;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-feature-settings: normal;
-    font-variant: normal;
-    content: "";
-    font-size: 24px;
-    color: #00a2a2;
-    cursor: pointer;
-    text-align: -webkit-match-parent;
-    line-height: 1.3;
-    word-break: keep-all;
-    overflow-wrap: break-word;
-    --vh: 7.46px;
 }
 
 .AppSidebarRewardSubList_container__2zCmr{
@@ -801,6 +766,7 @@ ul.li{
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
 }
+
 
 .DetailNavbar_container__3SkEf{
     box-shadow: 0 1px 0 0 rgb(10 22 70 / 6%);

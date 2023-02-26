@@ -7,13 +7,13 @@
 <title>와디즈</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/assets/css/main/main.css" rel="stylesheet">
-<link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 </head>
 <body style="overflow: auto;">
 	<div id="page-container">
 		<main id="main-app">
 			<!-- 헤더 적용 -->
-			<jsp:include page="../components/header.jsp"></jsp:include>
+			<jsp:include page="${pageContext.request.contextPath}/assets/components/header.jsp"></jsp:include>
 			
 			<div class="MainWrapper_content"> <!-- 메인 컨텐츠 적용 -->
 				<section class="container">
@@ -446,7 +446,7 @@
 				</div>
 			</div>
 			<!-- footer적용 -->
-			<jsp:include page="../components/footer.jsp"></jsp:include>
+			<jsp:include page="${pageContext.request.contextPath}/assets/components/footer.jsp"></jsp:include>
 		</main>
 	</div>
 </body>

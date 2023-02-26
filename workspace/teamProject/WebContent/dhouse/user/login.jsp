@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">    
-<link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
-<link href="../../assets/css/user/login.css" rel="stylesheet">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
+<link href="${pageContext.request.contextPath}/assets/css/user/login.css" rel="stylesheet">
 </head>
 <body>
 	<jsp:include page="../user/user-header.jsp"></jsp:include>
@@ -50,8 +50,10 @@
                 		</div>
                 	</div>
                 	<div class="login-action"></div>
-	                    <p class="forgot"><a href="https://www.wadiz.kr/web/waccount/find/pwd">로그인 정보를 잊으셨나요?</a>
-	                    </p>
+						<p class="forgot go-login-corp"><a href="https://www.wadiz.kr/web/waccount/find/pwd">기업회원으로 로그인</a>
+						</p>
+						<p class="forgot real-forgot"><a href="https://www.wadiz.kr/web/waccount/find/pwd">로그인 정보를 잊으셨나요?</a>
+						</p>
                    		<button class="loginbutton">로그인</button> <!-- login button -->
                 	</form>
                 	<div class="iam-account-app"> <!--SNS 사이트를 통한 로그인 -->

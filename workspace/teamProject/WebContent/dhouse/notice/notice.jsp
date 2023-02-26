@@ -13,18 +13,19 @@
 <link href="../../assets/css/notice/notice.css" rel="stylesheet">
 </head>
 <body>
-    <jsp:include page="../components/header.jsp"></jsp:include>
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
+        <!-- <jsp:include page="../components/header.jsp"></jsp:include> -->
     <div id="whole-wrapper">
         <div id="whole-inner">
-            <p id="event-title">공지/이벤트</p>
+            <p id="event-title">공지사항</p>
             <div id="menu-wrapper">
                 <div id="menu-menus">
                     <div id="menu-menu">
+                        <a href=""  id="a-2"><p class="p-in-a">자주하는 질문</p></a>
                         <a href=""  id="a-1"><p class="p-in-a" id="p-in-a-1">공지사항</p></a>
-                        <a href=""  id="a-2"><p class="p-in-a">이벤트·혜택</p></a>
-                        <a href=""  id="a-3"><p class="p-in-a">보도자료</p></a>
+                        <!-- <a href=""  id="a-3"><p class="p-in-a">보도자료</p></a>
                         <a href=""  id="a-4"><p class="p-in-a">메이커 캘린더</p></a>
-                        <a href=""  id="a-5"><p class="p-in-a">신뢰센터</p></a>
+                        <a href=""  id="a-5"><p class="p-in-a">신뢰센터</p></a> -->
                     </div>
                 </div>
             </div>
@@ -225,6 +226,7 @@
             </div>
         </div>
     </div>
-    <jsp:include page="../components/footer.jsp"></jsp:include>
+    <!-- <jsp:include page="../components/footer.jsp"></jsp:include> -->
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
 </html>

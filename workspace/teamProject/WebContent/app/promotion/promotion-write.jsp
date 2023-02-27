@@ -136,7 +136,7 @@
                                             </div>
                                         </div>
                                     </div>
-                        <section class="Section_container__3md8M">
+								<section class="Section_container__3md8M">
                                 <div style="max-width: 600px;">
                                     <div class="Section_content__3OkLZ">
                                         <div class="StorySummaryField_container__25ePA">
@@ -184,7 +184,7 @@
                             </section> 
                                 </div>
                         </form>
-               </div>
+					</div>
                     </div>
                 </div>
             </div>

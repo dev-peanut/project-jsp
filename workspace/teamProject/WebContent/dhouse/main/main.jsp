@@ -222,10 +222,10 @@
 								<div class="ranking-tab-container">
 									<div>
 										<div class="tab-button-container">
-											<button type="button" class="tab-button-ranking select-tab-button-ranking">펀딩/프리오더</button>
+											<button type="button" class="tab-button-ranking select-tab-button-ranking" id="tab-button1">펀딩/프리오더</button>
 										</div>
 										<div class="tab-button-container">
-											<button type="button" class="tab-button-ranking">스토어</button>
+											<button type="button" class="tab-button-ranking" id="tab-button2">스토어</button>
 										</div>
 									</div>
 								</div>

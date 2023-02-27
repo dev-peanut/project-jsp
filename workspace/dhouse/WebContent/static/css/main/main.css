@@ -580,7 +580,7 @@ svg:not(:root) {
     color: #212529;
 }
 
-.select-tab-button-ranking:after { /* 실시간 랭킹 탭 클릭한 부분 밑줄 가상요소 */
+/* #tab-button1:after { 
     position: absolute;
     right: 0;
     bottom: 0;
@@ -589,6 +589,26 @@ svg:not(:root) {
     height: 1px;
     content: "";
 }
+
+#tab-button2:after { 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    height: 1px;
+    content: "";
+} */
+
+/* .select-tab-button-ranking:after { 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    height: 1px;
+    content: "";
+} */
 
 .select-ranking-tab-content {
     margin-bottom: 8px;

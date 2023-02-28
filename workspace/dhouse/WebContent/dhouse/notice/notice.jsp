@@ -14,7 +14,6 @@
 </head>
 <body>
     <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
-        <!-- <jsp:include page="../components/header.jsp"></jsp:include> -->
     <div id="whole-wrapper">
         <div id="whole-inner">
             <p id="event-title">공지사항</p>
@@ -226,7 +225,7 @@
             </div>
         </div>
     </div>
-    <!-- <jsp:include page="../components/footer.jsp"></jsp:include> -->
+
     <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
 </html>

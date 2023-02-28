@@ -12,7 +12,6 @@
 <title>홍보 목록페이지</title>
 </head>
 <body>
-    <!-- <jsp:include page="../components/header.jsp"></jsp:include> -->
     <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
     <div id="whole-wrapper">
         <section class="container">
@@ -342,7 +341,6 @@
             </div>
         </main>
     </div>
-    <!-- <jsp:include page="../components/footer.jsp"></jsp:include> -->
     <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
 <script src="${pageContext.request.contextPath}/assets/js/promotion/promotion.js"></script>

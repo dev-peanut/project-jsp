@@ -1,6 +1,7 @@
 package com.dhouse.mypage.domain;
 
 public class MyPageVO {
+<<<<<<< HEAD
 	private Long memberId;
 	private String userIdentification;
 	private String userPassword;
@@ -148,5 +149,7 @@ public class MyPageVO {
 				+ ", bannerLocation=" + bannerLocation + ", filePath=" + filePath + ", fileOriginalName="
 				+ fileOriginalName + ", fileSystemName=" + fileSystemName + "]";
 	}
+=======
+>>>>>>> 7933fc08576693dc71e4ba636f32c0e6d1054c25
 
 }

@@ -1,4 +1,4 @@
-package com.dhouse.board;
+package com.dhouse.donationboard;
 
 import java.io.IOException;
 

@@ -12,16 +12,22 @@
 =======
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 >>>>>>> 8b11267ad46aa7f49eceebfe29fc11f58e3e3ff2
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
+>>>>>>> origin/master
 </head>
 <body style="overflow: auto;">
 	<div id="page-container">
 		<main id="main-app">
 			<!-- 헤더 적용 -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<jsp:include page="../components/header.jsp"></jsp:include>
 =======
 			<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
 >>>>>>> 8b11267ad46aa7f49eceebfe29fc11f58e3e3ff2
+=======
+			<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
+>>>>>>> origin/master
 			
 			<div class="MainWrapper_content"> <!-- 메인 컨텐츠 적용 -->
 				<section class="container">
@@ -455,10 +461,14 @@
 			</div>
 			<!-- footer적용 -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<jsp:include page="../components/footer.jsp"></jsp:include>
 =======
 			<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 >>>>>>> 8b11267ad46aa7f49eceebfe29fc11f58e3e3ff2
+=======
+			<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
+>>>>>>> origin/master
 		</main>
 	</div>
 </body>

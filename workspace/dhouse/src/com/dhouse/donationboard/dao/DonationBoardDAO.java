@@ -1,13 +1,13 @@
-package com.dhouse.mypagecorp.dao;
+package com.dhouse.donationboard.dao;
 
 import org.apache.ibatis.session.SqlSession;
 
 import com.dhouse.mybatis.config.MyBatisConfig;
 
-public class MyPageCorpDAO {
+public class DonationBoardDAO {
 	public SqlSession sqlSession;
 	
-	public MyPageCorpDAO() {
+	public DonationBoardDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
 }

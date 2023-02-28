@@ -13,7 +13,11 @@ public class CorpListOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+<<<<<<< HEAD
 		
+=======
+		// TODO Auto-generated method stub
+>>>>>>> master
 		return null;
 	}
 

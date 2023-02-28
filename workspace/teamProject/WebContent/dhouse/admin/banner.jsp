@@ -10,13 +10,13 @@
 
 
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/components/sanitize.css" />
+	href="${pageContext.request.contextPath}/static/css/components/sanitize.css" />
 <!-- 아레에 페이지별로 갈아 끼워야할 CSS -->
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/admin/banner.css" />
+	href="${pageContext.request.contextPath}/static/css/admin/banner.css" />
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/components/banner_modal.css" />
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">	
+	href="${pageContext.request.contextPath}/static/css/components/banner_modal.css" />
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">	
 </head>
 <body>
 	<!-- header -->
@@ -33,7 +33,7 @@
 					<input id="searchbox" type="text" placeholder="원하시는 키워드로 찾아보세요" />
 					<button type="button" class="search__searchbox__button">
 						<img
-							src="${pageContext.request.contextPath}/images/user/search.png"
+							src="${pageContext.request.contextPath}/static/images/user/search.png"
 							alt="" />
 					</button>
 				</form>
@@ -241,9 +241,9 @@
 	<!-- modal fin. -->
 </body>
 <script
-	src="${pageContext.request.contextPath}/assets/js/admin/banner.js"></script>
+	src="${pageContext.request.contextPath}/static/js/admin/banner.js"></script>
 <script
-	src="${pageContext.request.contextPath}/assets/js/components/banner_modal.js"></script>
+	src="${pageContext.request.contextPath}/static/js/components/banner_modal.js"></script>
 
 
 </html>

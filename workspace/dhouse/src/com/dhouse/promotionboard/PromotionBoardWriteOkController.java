@@ -1,4 +1,4 @@
-package com.dhouse.mypage;
+package com.dhouse.promotionboard;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.dhouse.Action;
 import com.dhouse.Result;
 
-public class MyPageDeleteOkController implements Action {
+public class PromotionBoardWriteOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {

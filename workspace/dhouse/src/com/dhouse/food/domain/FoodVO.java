@@ -5,10 +5,8 @@ public class FoodVO {
 	private String foodName;
 	private String foodAmount;
 	private String foodRequestDate;
-	private String fileOriginalName;
 	private String fileSystemName;
-	private String filePath;
-	private Long memberId;
+	private Long userId;
 	
 	public FoodVO() {;}
 
@@ -44,14 +42,6 @@ public class FoodVO {
 		this.foodRequestDate = foodRequestDate;
 	}
 
-	public String getFileOriginalName() {
-		return fileOriginalName;
-	}
-
-	public void setFileOriginalName(String fileOriginalName) {
-		this.fileOriginalName = fileOriginalName;
-	}
-
 	public String getFileSystemName() {
 		return fileSystemName;
 	}
@@ -60,26 +50,44 @@ public class FoodVO {
 		this.fileSystemName = fileSystemName;
 	}
 
-	public String getFilePath() {
-		return filePath;
+	public Long getUserId() {
+		return userId;
 	}
 
-	public void setFilePath(String filePath) {
-		this.filePath = filePath;
-	}
-
-	public Long getMemberId() {
-		return memberId;
-	}
-
-	public void setMemberId(Long memberId) {
-		this.memberId = memberId;
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 
 	@Override
 	public String toString() {
 		return "FoodVO [foodId=" + foodId + ", foodName=" + foodName + ", foodAmount=" + foodAmount
-				+ ", foodRequestDate=" + foodRequestDate + ", fileOriginalName=" + fileOriginalName
-				+ ", fileSystemName=" + fileSystemName + ", filePath=" + filePath + ", memberId=" + memberId + "]";
+				+ ", foodRequestDate=" + foodRequestDate + ", fileSystemName=" + fileSystemName + ", userId=" + userId
+				+ "]";
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((foodId == null) ? 0 : foodId.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		FoodVO other = (FoodVO) obj;
+		if (foodId == null) {
+			if (other.foodId != null)
+				return false;
+		} else if (!foodId.equals(other.foodId))
+			return false;
+		return true;
+	}
+
 }

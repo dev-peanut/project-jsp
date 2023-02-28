@@ -1,13 +1,13 @@
-package com.dhouse.board.dao;
+package com.dhouse.promotionboard.dao;
 
 import org.apache.ibatis.session.SqlSession;
 
 import com.dhouse.mybatis.config.MyBatisConfig;
 
-public class BoardDAO {
+public class PromotionBoardDAO {
 	public SqlSession sqlSession;
 	
-	public BoardDAO() {
+	public PromotionBoardDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
 }

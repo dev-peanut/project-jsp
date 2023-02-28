@@ -96,34 +96,6 @@
 											</div>
 										</div>
 									</section>
-									<!-- 쿠폰할인 -->
-									<section class="Section_container">
-										<div class="Section_titleContainer">
-											<h3 class="Section_title">레벨 별 할인</h3>
-										</div>
-										<div class="Active1 Active2">
-											<div class="select-menu medium">
-											<!-- 여기서부터 코드 정리 안함 -->
-												<div class="menu1 menu2">
-													<span aria-live="polite" aria-atomic="false" aria-relevant="additions text" class="menuText"></span>
-													<div class="control1 control2 control3">
-														<div class="value1 value2">
-														<div class="placeholder1 placeholder2">사용 가능한 쿠폰이 없습니다.</div>
-															<input id="react-select-2-input" readonly="" disabled="" tabindex="0" aria-autocomplete="list" class="dummyInput" value="">
-														</div>
-														<div class="indicators1 indicators2">
-															<span class="separator1 separator2"></span>
-															<div class="menu-indicator1 menu-indicator2 menu-indicator3" aria-hidden="true">
-																<svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon" aria-hidden="true">
-																	<path d="M16 22.4L5.6 12l1.12-1.12L16 20.16l9.28-9.28L26.4 12 16 22.4z"></path>
-																</svg>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</section>
 									<!-- 결제수단 -->
 									<section class="Section_container">
 										<div class="Section_titleContainer">
@@ -134,22 +106,22 @@
 												<ul>
 													<li>
 														<label class="NicePay1 NicePay2 NicePay3" for="nicePay">
-															<div class="StorePaymentNicePay_title__1Ppay">
-																<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon StorePaymentNicePay_checkIcon__3gaNh" aria-hidden="true">
+															<div class="NicePay_title">
+																<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon NicePay_Icon" aria-hidden="true">
 																	<path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
 																</svg>
-																<label for="nicePay" class="Radio_radio__2k70h Radio_lg__2b_Sp StorePaymentNicePay_radio__2Zx3M">
+																<label for="nicePay" class="Radio1 Radio_pay1 Radio_pay2">
 																	<input type="radio" id="nicePay" name="paymentMode" value="nicePay">
-																	<span class="Radio_icon__SObGY"></span>
-																	<span class="Radio_label__14nd4"></span>
+																	<span class="Radio_icon"></span>
+																	<span class="Radio_label"></span>
 																</label>
-																<svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon__20lDO" aria-hidden="true">
+																<svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon" aria-hidden="true">
 																	<path d="M1.6 6.4v19.2h28.8V6.4zM28.8 8v1.6H3.2V8zM3.2 24V12.8h25.6V24z"></path>
 																	<path d="M16 15.2H4.8v1.6H16v-1.6z"></path>
 																</svg>
 																<span>신용/체크카드 결제</span>
 															</div>
-															<p class="StorePaymentNicePay_notification__D1ZcP">* 할부 결제의 경우 신용/체크카드 결제를 선택하세요.</p>
+															<p class="Notification">* 할부 결제의 경우 신용/체크카드 결제를 선택하세요.</p>
 														</label>
 													</li>
 												</ul>
@@ -160,33 +132,33 @@
 							</div>
 						</div>
 						<!-- 결제금액 -->
-						<div class="PaymentLayout_floatingSectionContainer__2QCzS">
-							<div class="PaymentLayout_floatingSection__31pLD">
-								<section class="Section_container PaymentLayout_floating__3iHN0">
+						<div class="FloatingSectionContainer">
+							<div class="FloatingSection">
+								<section class="Section_container Floating">
 									<div class="Section_titleContainer">
 										<h3 class="Section_title">결제 금액</h3>
 									</div>
-									<div class="Section_sectionContent Section_active">
-										<div class="DefaultPrice_container__1gf10">
-											<div class="DefaultPrice_title__3iw65">
-												<label class="Radio_radio__2k70h Radio_md__3xeXE DefaultPrice_radioButton__1nTXN">
+									<div class="Active1 Active2">
+										<div class="DefaultPrice">
+											<div class="DefaultPrice_title">
+												<label class="Radio1 Radio2 Radio3">
 													<input type="radio" name="price" readonly="" value="DEFAULT" checked="">
-														<span class="Radio_icon__SObGY"></span>
-														<span class="Radio_label__14nd4"></span>
+														<span class="Radio_icon"></span>
+														<span class="Radio_label"></span>
 												</label>일반 금액
 											</div>
-											<div class="TitleValuePrice_container__Hcpla">
+											<div class="Price_container">
 												<dl class="">
 													<dt>상품 금액</dt>
 													<dd>
 														<span>
-															<em class="TitleValuePrice_money__1Tu-B">50,000</em>
+															<em class="Price_money">50,000</em>
 															원
 														</span>
 													</dd>
 												</dl>
 											</div>
-											<div class="TitleValuePrice_container__Hcpla">
+											<div class="Price_container">
 												<dl class="">
 													<dt>레벨 별 할인 금액</dt>
 													<dd>
@@ -194,9 +166,9 @@
 													</dd>
 												</dl>
 											</div>
-											<div class="TitleValuePrice_container__Hcpla">
-												<hr class="TitleValuePrice_divide__2bMnX">
-												<dl class="TitleValuePrice_total__oJwm4">
+											<div class="Price_container">
+												<hr class="Price_divide">
+												<dl class="Price_total">
 													<dt>최종 결제 금액</dt>
 													<dd>
 														<span><em class="">50,000 원</em></span>
@@ -206,57 +178,57 @@
 										</div>
 									</div>
 								</section>
-								<section class="Section_container PaymentLayout_floating__3iHN0">
-									<div class="Section_sectionContent Section_active">
-										<div class="StorePaymentTerms_StorePaymentTerms__1PQlB">
-											<label class="Checkbox_checkbox__pamoY Checkbox_lg__2FN3A Checkbox_labeled__zQ0mF StorePaymentTerms_termsCheckbox__3gruT">
-												<input name="paymentRequiredTerms" type="checkbox" class="Checkbox_input__3UBmW">
-												<span class="Checkbox_icon___4ktl" aria-hidden="true">
-													<svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon__20lDO Checkbox_removeIcon__2VWZr" aria-hidden="true">
+								<section class="Section_container Floating">
+									<div class="Active1 Active2">
+										<div class="PaymentTerms">
+											<label class="Checkbox1 Terms_check1 Terms_check2 Terms_check3">
+												<input name="paymentRequiredTerms" type="checkbox" class="Checkbox_input">
+												<span class="Checkbox_icon" aria-hidden="true">
+													<svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon RemoveIcon" aria-hidden="true">
 														<path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
 													</svg>
-													<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon__20lDO Checkbox_checkIcon__1uUVj" aria-hidden="true">
+													<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon CheckIcon" aria-hidden="true">
 														<path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
 													</svg>
 												</span>
-												<span class="Checkbox_content__2Ze7x">
+												<span class="Checkbox_content">
 													<span>결제 진행 필수 동의</span>
 												</span>
 											</label>
-											<div class="StorePaymentTerms_termsList__1ki8i">
-												<label for="serviceTerms" class="StorePaymentTerms_termsItem__CAG90">
-													<label for="serviceTerms" class="Checkbox_checkbox__pamoY Checkbox_sm__KgIAv StorePaymentTerms_smallCheckBox__YwfQ5">
-														<input name="serviceTerms" id="serviceTerms" type="checkbox" class="Checkbox_input__3UBmW">
-														<span class="Checkbox_icon___4ktl" aria-hidden="true">
-															<svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon__20lDO Checkbox_removeIcon__2VWZr" aria-hidden="true">
+											<div class="termsList">
+												<label for="serviceTerms" class="termsItem">
+													<label for="serviceTerms" class="Checkbox1 Checkbox2 Checkbox3">
+														<input name="serviceTerms" id="serviceTerms" type="checkbox" class="Checkbox_input">
+														<span class="Checkbox_icon" aria-hidden="true">
+															<svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon RemoveIcon" aria-hidden="true">
 																<path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
 															</svg>
-															<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon__20lDO Checkbox_checkIcon__1uUVj" aria-hidden="true">
+															<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon CheckIcon" aria-hidden="true">
 																<path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
 															</svg>
 														</span>
-														<span class="Checkbox_content__2Ze7x"></span>
+														<span class="Checkbox_content"></span>
 													</label>
-													<span class="StorePaymentTerms_text__1tYhe">구매 조건, 결제 진행 및 결제 대행 서비스 동의 (필수)</span>
+													<span class="Terms_text">구매 조건, 결제 진행 및 결제 대행 서비스 동의 (필수)</span>
 												</label>
-												<label for="privacyTerms" class="StorePaymentTerms_termsItem__CAG90">
-													<label for="privacyTerms" class="Checkbox_checkbox__pamoY Checkbox_sm__KgIAv StorePaymentTerms_smallCheckBox__YwfQ5">
-														<input name="privacyTerms" id="privacyTerms" type="checkbox" class="Checkbox_input__3UBmW">
-															<span class="Checkbox_icon___4ktl" aria-hidden="true">
-																<svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon__20lDO Checkbox_removeIcon__2VWZr" aria-hidden="true">
+												<label for="privacyTerms" class="termsItem">
+													<label for="privacyTerms" class="Checkbox1 Checkbox2 Checkbox3">
+														<input name="privacyTerms" id="privacyTerms" type="checkbox" class="Checkbox_input">
+															<span class="Checkbox_icon" aria-hidden="true">
+																<svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon RemoveIcon" aria-hidden="true">
 																	<path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
 																</svg>
-																<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon__20lDO Checkbox_checkIcon__1uUVj" aria-hidden="true">
+																<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon CheckIcon" aria-hidden="true">
 																	<path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
 																</svg>
 															</span>
-															<span class="Checkbox_content__2Ze7x"></span>
+															<span class="Checkbox_content"></span>
 													</label>
-													<span class="StorePaymentTerms_text__1tYhe">개인정보 제3자 제공 동의 (필수)</span>
-													<button class="Button_button__mRXZC Button_text__1iP4l Button_sm__1aKYg Button_iconOnly__1hahW iconButton StorePaymentTerms_termsDetailButton__29smA" type="button">
+													<span class="Terms_text">개인정보 제3자 제공 동의 (필수)</span>
+													<button class="Button1 Button2 Button3 Button4 Button5 Button6" type="button">
 														<span>
-															<span class="Button_children__3HY2l">
-																<svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon__20lDO" aria-hidden="true">
+															<span class="Button_children">
+																<svg viewBox="0 0 40 40" focusable="false" role="presentation" class="withIcon" aria-hidden="true">
 																	<path d="M28 20L15 33l-1.4-1.4L25.2 20 13.6 8.4 15 7l13 13z"></path>
 																</svg>
 															</span>
@@ -265,9 +237,9 @@
 												</label>
 											</div>
 										</div>
-										<button form="payment-submit" class="Button_button__mRXZC Button_primary__1HJqX Button_contained__k9pMW Button_lg__22YWj Button_block__1LAUA PaymentLayout_submitButton__1fQJ4" type="submit">
+										<button form="payment-submit" class="Button1 Button_p Button_c Button_i Button_b Button_s" type="submit">
 											<span>
-												<span class="Button_children__3HY2l">50,000원 결제하기</span>
+												<span class="Button_children">50,000원 결제하기</span>
 											</span>
 										</button>
 									</div>

@@ -509,7 +509,7 @@ ul.li{
 }
 
 #form_container_margin{
-    padding: 40px 66px;
+    padding: 40px 450px;
     position: relative;
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -970,7 +970,7 @@ ul.li{
     color: #fff;
     position: absolute;
     width: 25%;
-    left: 28%;
+	right: 0%;
 }
 
 #button-inner-text {

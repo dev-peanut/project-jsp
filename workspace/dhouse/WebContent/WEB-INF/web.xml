@@ -26,6 +26,14 @@
     <url-pattern>*.myPage</url-pattern>
   </servlet-mapping>
   <servlet>
+    <servlet-name>myPageCorp</servlet-name>
+    <servlet-class>com.dhouse.mypageCorp.MyPageCorpFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>myPageCorp</servlet-name>
+    <url-pattern>*.myPageCorp</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>admin</servlet-name>
     <servlet-class>com.dhouse.admin.AdminFrontController</servlet-class>
   </servlet>
@@ -66,16 +74,8 @@
     <url-pattern>*.file</url-pattern>
   </servlet-mapping>
   <servlet>
-    <servlet-name>promotionBoard</servlet-name>
-    <servlet-class>com.dhouse.promotionboard.PromotionBoardFrontController</servlet-class>
-  </servlet>
-  <servlet-mapping>
     <servlet-name>board</servlet-name>
-    <url-pattern>*.board</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>board</servlet-name>
-    <servlet-class>com.dhouse.donationboard.DonationBoardFrontController</servlet-class>
+    <servlet-class>com.dhouse.board.BoardFrontController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>board</servlet-name>

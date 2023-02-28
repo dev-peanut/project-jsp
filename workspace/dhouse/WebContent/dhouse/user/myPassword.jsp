@@ -7,7 +7,7 @@
 <title>비밀번호 변경</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/myPassword.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/myPassword.css">
 </head>
 <body>
 	<div id="page-container">

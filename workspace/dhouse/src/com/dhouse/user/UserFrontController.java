@@ -15,13 +15,27 @@ public class UserFrontController extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String uri = req.getRequestURI();
 		String contextPath = req.getContextPath();
-		String target = uri.replace(contextPath + "/", "").split("\\.")[0];
+		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
 		
-		if(target.equals("join")) {
+		if(target.equals("signUp")) {
 			result = new Result();
-			result.setPath("dhouse/user/signUp.jsp");
+			result.setPath("/dhouse/user/signUp.jsp");
 			
+		}else if(target.equals("/signUpOk")) {
+			result = new SignUpOkController().execute(req, resp);
+			
+		}else if(target.equals("/loginOk")) {
+			result = new LoginOkController().execute(req, resp);
+			
+		}else if(target.equals("/findIdOk")) {
+			result = new FindIdOkController().execute(req, resp);
+			
+		}else if(target.equals("/findPasswordOk")) {
+			result = new FindPasswordOkController().execute(req, resp);
+			
+		}else {
+			System.out.println(target);
 		}
 		
 		if(result != null) {

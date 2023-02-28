@@ -4,10 +4,10 @@ import org.apache.ibatis.session.SqlSession;
 
 import com.dhouse.mybatis.config.MyBatisConfig;
 
-public class BoardDAO {
+public class DonationBoardDAO {
 	public SqlSession sqlSession;
 	
-	public BoardDAO() {
+	public DonationBoardDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
 }

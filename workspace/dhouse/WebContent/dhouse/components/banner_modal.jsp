@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/components/sanitize.css" />
+	href="${pageContext.request.contextPath}/static/css/components/sanitize.css" />
 </head>
 <body>
 	<div class="background">
@@ -14,7 +14,7 @@
 			<div class="popup">
 				<!-- x 이미지 -->
 				<label> <img id="exit"
-					src="${pageContext.request.contextPath}/images/user/exit.png">
+					src="${pageContext.request.contextPath}/static/images/user/exit.png">
 					<button id="close"></button></label>
 				<!-- x 이미지 끝 -->
 				<!-- 배너설정 창  -->
@@ -145,13 +145,13 @@
 									</div>
 									<div role="cell" class="ColumnLayoutCell css-r24zef e3j22xw1">
 										<label class="css-1cthi19 ef3idoi0"><input
-											type="radio" name="imageStyleType"
+											type="radio" name="static/imagestyleType"
 											data-testid="RadioItem_Input" class="css-57b9tf ed83gly0"
 											value="S">1개월</label> <label class="css-1cthi19 ef3idoi0"><input
-											type="radio" name="imageStyleType"
+											type="radio" name="static/imagestyleType"
 											data-testid="RadioItem_Input" class="css-57b9tf ed83gly0"
 											value="V">2개월</label> <label class="css-1cthi19 ef3idoi0"><input
-											type="radio" name="imageStyleType"
+											type="radio" name="static/imagestyleType"
 											data-testid="RadioItem_Input" class="css-57b9tf ed83gly0"
 											value="V">4개월</label>
 									</div>
@@ -175,10 +175,10 @@
 								<div role="cell" class="ColumnLayoutCell css-r24zef e3j22xw1">
 									<div class="css-4nw4go e1kb0tv21">
 										<label class="css-1cthi19 ef3idoi0"><input
-											type="radio" name="imageShowType"
+											type="radio" name="static/imageshowType"
 											data-testid="RadioItem_Input" class="css-57b9tf ed83gly0"
 											value="B">배너로 표시</label><label class="css-1rbfts6 ef3idoi0"><input
-											type="radio" name="imageShowType"
+											type="radio" name="static/imageshowType"
 											data-testid="RadioItem_Input" class="css-57b9tf ed83gly0"
 											value="P">팝업창으로 표시</label>
 									</div>

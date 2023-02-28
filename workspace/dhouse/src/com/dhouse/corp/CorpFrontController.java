@@ -18,9 +18,7 @@ public class CorpFrontController extends HttpServlet {
 		String target = uri.replace(contextPath + "/", "").split("\\.")[0];
 		Result result = null;
 		
-		if(target.equals("join")) {
-			result = new Result();
-			result.setPath("dhouse/mypage/signUp.jsp");
+		if(target.equals("CorpFindOk")) {
 			
 		}
 		

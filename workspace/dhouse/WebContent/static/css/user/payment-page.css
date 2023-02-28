@@ -76,7 +76,7 @@ button {
     background-color: #f2f4f6;
 }
 
-.Layout .Layout_paymentNotice {
+.Layout .Notice {
     background-color: #fff;
     padding: 0 16px;
 }
@@ -239,23 +239,23 @@ button {
     min-height: 48px;
 }
 
-.PaymentProductInfo {
+.Product {
     position: relative;
 }
 /* 주문 요청 사항 */
-.PaymentProductInfo .PaymentProductInfo_container .PaymentProductInfo_textContainer {
+.Product .Product_container .TextContainer {
     float: left;
     width: 100%;
 }
 /* 상품명 */
-.PaymentProductInfo .PaymentProductInfo_container .PaymentProductInfo_textContainer .PaymentProductInfo_productName {
+.Product .Product_container .TextContainer .ProductName {
     line-height: 28px;
     letter-spacing: -.3px;
     font-size: 16px;
     font-weight: 400;
 }
 /* description */
-.PaymentProductInfo .PaymentProductInfo_container .PaymentProductInfo_textContainer .PaymentProductInfo_productDescription {
+.Product .Product_container .TextContainer .ProductDescription {
     line-height: 18px;
     letter-spacing: 0;
     font-size: 12px;
@@ -263,7 +263,7 @@ button {
     margin-top: 8px;
 }
 /* 옵션 */
-.PaymentProductInfo .PaymentProductInfo_container .PaymentProductInfo_textContainer .PaymentProductInfo_optionsContainer {
+.Product .Product_container .TextContainer .OptionsContainer {
     line-height: 18px;
     letter-spacing: 0;
     font-size: 12px;
@@ -271,13 +271,13 @@ button {
     margin-top: 4px;
 }
 /* 가상요소 */
-.PaymentProductInfo .PaymentProductInfo_container:after {
+.Product .Product_container:after {
     display: block;
     clear: both;
     content: "";
 }
 /* 가격정보 */
-.PaymentProductInfo .PaymentProductInfo_priceInfo {
+.Product .ProductInfo {
     line-height: 18px;
     letter-spacing: 0;
     font-size: 12px;
@@ -286,12 +286,12 @@ button {
     width: 100%;
 }
 /* 시작 날짜 */
-.PaymentProductInfo .PaymentProductInfo_priceInfo .PaymentProductInfo_date {
+.Product .ProductInfo .Info_date {
     vertical-align: bottom;
     line-height: 28px;
 }
 /* 금액 */
-.PaymentProductInfo .PaymentProductInfo_priceInfo .PaymentProductInfo_price {
+.Product .ProductInfo .Info_price {
     line-height: 28px;
     letter-spacing: -.3px;
     font-size: 16px;
@@ -299,20 +299,20 @@ button {
     float: right;
 }
 /* 가상요소 */
-.PaymentProductInfo .PaymentProductInfo_priceInfo:after {
+.Product .ProductInfo:after {
     display: block;
     clear: both;
     content: "";
 }
 
-.PaymentProductInfo .PaymentProductInfo_divider {
+.Product .Divider {
     margin: 14px 0 16px;
     background-color: #e6eaed;
     width: 100%;
     height: 1px;
 }
 /* 가상요소 */
-.PaymentProductInfo:after {
+.Product:after {
     display: block;
     clear: both;
     content: "";
@@ -321,24 +321,6 @@ button {
 .select-menu {
     word-break: keep-all;
     overflow-wrap: break-word;
-}
-
-.css-14jk2my-container {
-    pointer-events: none;
-    position: relative;
-    box-sizing: border-box;
-}
-
-.css-7pg0cj-a11yText {
-    z-index: 9999;
-    border: 0px;
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    width: 1px;
-    position: absolute;
-    overflow: hidden;
-    padding: 0px;
-    white-space: nowrap;
 }
 
 .select-menu__control {
@@ -422,14 +404,14 @@ button {
     box-sizing: border-box;
 }
 
-.select-menu__indicator {
+.menu-indicator1 {
     padding-right: 12px;
     padding-left: 12px;
     font-size: 24px;
 }
 
 
-.css-tlfecz-indicatorContainer {
+.menu-indicator3 {
     color: rgb(204, 204, 204);
     display: flex;
     padding: 8px;
@@ -437,7 +419,7 @@ button {
     box-sizing: border-box;
 }
 
-.withIcon__20lDO {
+.withIcon {
     display: block;
     transform: scale(1);
     transition: transform .3s ease-out;
@@ -446,11 +428,11 @@ button {
     fill: currentColor;
 }
 
-.StorePaymentChooseMode_storePaymentChooseMode__2yXk6 ul li {
+.ChooseMode ul li {
     margin-top: 16px;
 }
 
-.StorePaymentNicePay_storePaymentNicePay__1Yb59 {
+.NicePay1 {
     display: inline-block;
     position: relative;
     border: 1px solid #dde2e6;
@@ -463,12 +445,12 @@ button {
     color: #495057;
 }
 
-.StorePaymentNicePay_storePaymentNicePay__1Yb59.StorePaymentNicePay_checked__14ngZ {
+.NicePay1.NicePay2 {
     border-color: #00c4c4;
     padding: 12px 16px;
 }
 
-.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_title__1Ppay {
+.NicePay1 .StorePaymentNicePay_title__1Ppay {
     line-height: 28px;
     letter-spacing: -.3px;
     font-size: 16px;
@@ -477,7 +459,7 @@ button {
     line-height: 24px;
 }
 
-.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_title__1Ppay * {
+.NicePay1 .StorePaymentNicePay_title__1Ppay * {
     vertical-align: top;
 }
 
@@ -487,7 +469,7 @@ label.Radio_radio__2k70h>input {
     opacity: 0;
 }
 
-.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_title__1Ppay svg {
+.NicePay1 .StorePaymentNicePay_title__1Ppay svg {
     display: inline-block;
     margin-right: 8px;
     width: 24px;
@@ -500,7 +482,7 @@ label.Radio_radio__2k70h {
     margin: 16px 0;
 }
 
-.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_title__1Ppay .StorePaymentNicePay_radio__2Zx3M {
+.NicePay1 .StorePaymentNicePay_title__1Ppay .StorePaymentNicePay_radio__2Zx3M {
     display: inline-block;
     margin: 0 12px 0 0;
     cursor: pointer;
@@ -508,20 +490,20 @@ label.Radio_radio__2k70h {
     height: 24px;
 }
 
-.StorePaymentNicePay_storePaymentNicePay__1Yb59.StorePaymentNicePay_single__3-vFW .StorePaymentNicePay_checkIcon__3gaNh {
+.NicePay1.NicePay3 .StorePaymentNicePay_checkIcon__3gaNh {
     margin-right: 12px;
     color: #00c4c4;
 }
 
-.StorePaymentNicePay_storePaymentNicePay__1Yb59.StorePaymentNicePay_single__3-vFW .StorePaymentNicePay_radio__2Zx3M {
+.NicePay1.NicePay3 .StorePaymentNicePay_radio__2Zx3M {
     display: none;
 }
 
-.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_title__1Ppay>span {
+.NicePay1 .StorePaymentNicePay_title__1Ppay>span {
     vertical-align: middle;
 }
 
-.StorePaymentNicePay_storePaymentNicePay__1Yb59 .StorePaymentNicePay_notification__D1ZcP {
+.NicePay1 .StorePaymentNicePay_notification__D1ZcP {
     line-height: 18px;
     letter-spacing: 0;
     font-size: 12px;

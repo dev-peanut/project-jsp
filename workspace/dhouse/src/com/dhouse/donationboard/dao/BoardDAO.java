@@ -1,4 +1,4 @@
-package com.dhouse.board.dao;
+package com.dhouse.donationboard.dao;
 
 import org.apache.ibatis.session.SqlSession;
 

@@ -9,12 +9,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>가전제품 글쓰기 페이지</title>
-    <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/static/css/board/board_community_write.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/board/board_community_write.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../../assets/img/logo.png">
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
 </head>
 
 <body>
@@ -119,7 +118,7 @@
                         <section class="form_section">
                             <div style="max-width: 600px;">
                                 <div class="form_container">
-                                    <h2 class="section_title">글 제목
+                                    <h2 class="Section_title">글 제목
                                      </h2>
                                     <div class="Section_guide"></div>
                                 </div>
@@ -131,7 +130,7 @@
                                             <div class="wide_column_2">
                                                 <div class="wz input">
                                                     <textarea placeholder="글 제목" helper="[object Object]"
-                                                        name="storyInfo.coreMessage" rows="2" class="nameData"></textarea>
+                                                        name="storyInfo.coreMessage" rows="2" class="titleData"></textarea>
                                                     <div id="title-warning">필수 정보입니다</div>
                                                 </div>
                                             </div>
@@ -183,7 +182,7 @@
                                                 <div class="wide_column_2">
                                                     <div class="wz input">
                                                         <textarea placeholder="글 내용" helper="[object Object]"
-                                                            name="storyInfo.coreMessage" rows="3" class="nameData"></textarea>
+                                                            name="storyInfo.coreMessage" rows="3" class="contentData"></textarea>
                                                         <div id="content-warning">필수 정보입니다</div>
                                                     </div>
                                                 </div>
@@ -199,7 +198,7 @@
                                 <section class="Section_container__photo">
                                     <div style="max-width: 600px;">
                                         <div class="Section_photo_header">
-                                            <h2 class="section_title">사진 등록</h2>
+                                            <h2 class="Section_title">사진 등록</h2>
                                             <div class="Section_guide"></div>
                                         </div>
                                         <div class="Section_description"></div>
@@ -233,5 +232,6 @@
     </div>
     </div>
 </body>
-<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/board/board_community_write.js"></script>
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/static/js/board/board_community_write.js"></script>
 </html>

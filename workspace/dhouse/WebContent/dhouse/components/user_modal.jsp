@@ -17,7 +17,7 @@
 					<div id="modal-top">
 						<div id="modal-title">
 							사용자 정보 <label> <img id="exit"
-								src="${pageContext.request.contextPath}/static/images/user/exit.png">
+								src="${pageContext.request.contextPath}/images/user/exit.png">
 								<button id="close"></button></label>
 						</div>
 					</div>

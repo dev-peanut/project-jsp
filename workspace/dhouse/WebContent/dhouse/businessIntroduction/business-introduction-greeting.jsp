@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/businessIntroduction/business-introduction-greeting.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/businessIntroduction/business-introduction-greeting.css">
 <title>인사말</title>
 </head>
 <body>

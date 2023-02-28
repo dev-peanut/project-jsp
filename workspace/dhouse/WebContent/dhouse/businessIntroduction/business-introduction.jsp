@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/businessIntroduction/business-introduction.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/businessIntroduction/business-introduction.css">
 </head>
 <body>
     <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>

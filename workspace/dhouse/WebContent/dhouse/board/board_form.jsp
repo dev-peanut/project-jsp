@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="ko" style="-vh: 7.46px;" class="">
 
@@ -10,13 +11,12 @@
 <title>식품 글쓰기 페이지</title>
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/static/css/board/board_form.css">
-<style>
-</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
 	rel="stylesheet">
-<link rel="shortcut icon" href="images/logo.png">
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
 				<div id="sidebar">
 					<div class="sidebar_top">
 						<div class="sidebar_status">
-							<span>가전제품 기부</span> <span>작성중</span>
+							<span>식품 기부</span> <span>작성중</span>
 						</div>
 						<a class="sidebar_main_copy"
 							href="/web/campaign/detail/191893?preview=Y" target="_blank"
@@ -63,7 +63,7 @@
 				</div>
 				<!-- 사이드바 끝 -->
 
-				<!-- 작은 카테고리 -->
+				<!-- 본문 시작  -->
 				<div id="form_container">
 					<div id="form_container_margin">
 						<div class="category_print">
@@ -92,7 +92,7 @@
 						</nav>
 
 
-						<!-- 본문 제목 설명 -->
+						<!-- 본문 -->
 						<div class="food_donation_start">
 							<div class="food_donation_container">
 								<h2 class="food_donation_title">
@@ -110,127 +110,129 @@
 										</span> </span>
 									</button>
 								</h2>
-								<p class="food_donation_detail">사랑을 나누는 일은 결코 힘들거나 어려운 일이
-									아닙니다.</p>
-								<p class="food_donation_detail">도움이 필요한 이웃들과 음식을 함께 나누는 기쁨!
-									음식나눔은 사랑의 실천입니다.</p>
-							</div>
-						</div>
-						<!-- <form class="food_donation_form"> -->
 
-							<!-- 음식 이름 -->
-							<div class="wide_column_1"></div>
-							<div class="wide_column_2">
-								<div class="wz input">
-									<textarea placeholder="음식 이름" helper="[object Object]"
-										name="storyInfo.coreMessage" rows="2" class="nameData"></textarea>
-									<div id="name-warning">필수 정보입니다</div>
-								</div>
-							</div>
-					</div>
-				</div>
-			</div>
-
-
-		<!-- 음식 무게 -->
-		<section class="form_section">
-			<div style="max-width: 600px;">
-				<div class="form_container">
-					<h2 class="section_title">음식 무게</h2>
-					<div class="Section_guide"></div>
-				</div>
-				<div class="Section_description">기부하실 음식의 무게를 작성해주세요. (kg 기준)</div>
-				<div class="Section_content">
-					<div class="textarea_field">
-						<div class="textarea_field_form">
-							<div class="wide_column_1"></div>
-							<div class="wide_column_2">
-								<div class="wz input">
-									<textarea placeholder="음식 무게" helper="[object Object]"
-										name="storyInfo.coreMessage" rows="3" class="weightData"></textarea>
-									<div id="weight-warning">
-										<p>필수 정보입니다</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- 픽업 날짜 -->
-		<section class="form_section">
-			<div style="max-width: 600px;">
-				<div class="form_container">
-					<h2 class="section_title">픽업 날짜</h2>
-					<div class="Section_guide"></div>
-				</div>
-				<div class="Section_description">픽업차가 방문할 날짜를 작성해주세요.</div>
-				<div class="Section_content">
-					<div class="textarea_field">
-						<div class="textarea_field_form">
-							<div class="wide_column_1"></div>
-							<div class="wide_column_2">
-								<div class="wz input">
-									<textarea placeholder="픽업 날짜" helper="[object Object]"
-										name="storyInfo.coreMessage" rows="1" class="dateData"></textarea>
-									<div id="date-warning">
-										<p>필수 정보입니다</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- 사진 등록 -->
-		<section>
-			<div class="photo_submit_section"></div>
-			<section class="Section_container__photo">
-				<div style="max-width: 600px;">
-					<div class="Section_photo_header">
-						<h2 class="section_title">사진 등록</h2>
-						<div class="Section_guide"></div>
-					</div>
-					<div class="Section_description">기부하실 음식의 사진을 등록해주세요.</div>
-					<div class="Section_content">
-						<div class="ImageField">
-							<div class="ImageFormField">
-								<div class="ImageFormField_buttonWrapper">
-									<label class="ImageFileButton_label">
-										<button type="button" class="ImageFileButton" id="photosubmit">
-											<i class="icon-camera-o" aria-hidden="true"></i>등록하기
-										</button>
-										<div class="ImageFileButton_input">
-											<input type="file" id="image" accept="image/*"
-												onchange="setThumbnail(event);" />
+								<!-- 글 제목 -->
+								<section class="form_section">
+									<div style="max-width: 600px;">
+										<div class="form_container">
+											<h2 class="Section_title">음식 이름</h2>
+											<div class="Section_guide"></div>
 										</div>
-									</label> <em class="helper error"></em><em
-										class="helper_ImageFormField">2MB 이하의 JPG, JPEG, GIF, PNG
-										파일</em>
-									<div class="image_space"></div>
-									<div id="image_container"></div>
-								</div>
-			</div>
-	</div>
-	</div>
-	</section>
-                    </form>
+										<div class="Section_description">기부하실 음식의 이름을 작성해주세요.</div>
+										<div class="Section_content"></div>
+										<div class="Section_content">
+											<div class="textarea_field">
+												<div class="textarea_field_form">
+													<div class="wide_column_1"></div>
+													<div class="wide_column_2">
+														<div class="wz input">
+															<textarea placeholder="음식 이름" helper="[object Object]"
+																name="storyInfo.coreMessage" rows="2" class="nameData"></textarea>
+															<div id="name-warning">필수 정보입니다</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<!-- 글 내용 - 설명란 -->
+								<section class="form_section">
+									<div style="max-width: 600px;">
+										<div class="form_container">
+											<h2 class="Section_title">음식 무게</h2>
+											<div class="Section_guide"></div>
+										</div>
+										<div class="Section_description">기부하실 음식의 무게를 작성해주세요.
+											(kg 기준)</div>
+										<div class="Section_content"></div>
+										<div class="Section_content">
+											<div class="textarea_field">
+												<div class="textarea_field_form">
+													<div class="wide_column_1"></div>
+													<div class="wide_column_2">
+														<div class="wz input">
+															<textarea placeholder="음식 무게" helper="[object Object]"
+																name="storyInfo.coreMessage" rows="2" class="weightData"></textarea>
+															<div id="weight-warning">필수 정보입니다</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+
+
+								<section class="form_section">
+									<div style="max-width: 600px;">
+										<div class="form_container">
+											<h2 class="Section_title">픽업 날짜</h2>
+											<div class="Section_guide"></div>
+										</div>
+										<div class="Section_description">픽업차가 방문할 날짜를 작성해주세요.</div>
+										<div class="Section_content"></div>
+										<div class="Section_content">
+											<div class="textarea_field">
+												<div class="textarea_field_form">
+													<div class="wide_column_1"></div>
+													<div class="wide_column_2">
+														<div class="wz input">
+															<textarea placeholder="픽업 날짜" helper="[object Object]"
+																name="storyInfo.coreMessage" rows="2" class="dateData"></textarea>
+															<div id="date-warning">필수 정보입니다</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+
+
+								<!-- 사진 등록  -->
+								<section>
+									<div class="photo_submit_section"></div>
+									<section class="Section_container__photo">
+										<div style="max-width: 600px;">
+											<div class="Section_photo_header">
+												<h2 class="Section_title">사진 등록</h2>
+												<div class="Section_guide"></div>
+											</div>
+											<div class="Section_description">기부하실 음식의 사진을 등록해주세요.</div>
+											<div class="Section_content"></div>
+											<div class="Section_description"></div>
+											<div class="Section_content">
+												<div class="ImageField">
+													<div class="ImageFormField">
+														<div class="ImageFormField_buttonWrapper">
+															<label class="ImageFileButton_label">
+																<button type="button" class="ImageFileButton"
+																	id="photosubmit">
+																	<i class="icon-camera-o" aria-hidden="true"></i>등록하기
+																</button>
+																<div class="ImageFileButton_input">
+																	<input type="file" id="image" accept="image/*"
+																		onchange="setThumbnail(event);" />
+																</div>
+															</label> <em class="helper error"></em><em
+																class="helper_ImageFormField">2MB 이하의 JPG, JPEG,
+																GIF, PNG 파일</em>
+															<div class="image_space"></div>
+															<div id="image_container"></div>
+														</div>
+									</section>
+									</form>
+							</div>
+						</div>
 					</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-     </div>
-      </div>
-      		</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/static/js/board/board_form.js"></script>

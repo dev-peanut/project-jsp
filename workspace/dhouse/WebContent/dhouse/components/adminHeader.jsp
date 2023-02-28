@@ -8,15 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>관리자 홈</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/components/sanitize.css" />
+	href="${pageContext.request.contextPath}/static/css/components/sanitize.css" />
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/components/adminHeader.css" />
+	href="${pageContext.request.contextPath}/static/css/components/adminHeader.css" />
 <!-- 아레에 페이지별로 갈아 끼워야할 CSS -->
 </head>
 <body>
 	<header class="page">
 		<div class="page-info">
-			<img src="${pageContext.request.contextPath}/images/user/menubar.png"
+			<img src="${pageContext.request.contextPath}/static/images/user/menubar.png"
 				alt="icon" class="page-info__icon" />
 			<ul>
 				<a

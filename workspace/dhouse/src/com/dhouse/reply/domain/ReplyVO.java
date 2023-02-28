@@ -7,8 +7,8 @@ public class ReplyVO {
 	private String replyUpdateDate;
 	private String replyDepth;
 	private String replyGroup;
-	private Long memberId;
-	private Long boardId;
+	private Long donationBoardId;
+	private Long userId;
 
 	public ReplyVO() {;}
 
@@ -60,29 +60,51 @@ public class ReplyVO {
 		this.replyGroup = replyGroup;
 	}
 
-	public Long getMemberId() {
-		return memberId;
+	public Long getDonationBoardId() {
+		return donationBoardId;
 	}
 
-	public void setMemberId(Long memberId) {
-		this.memberId = memberId;
+	public void setDonationBoardId(Long donationBoardId) {
+		this.donationBoardId = donationBoardId;
 	}
 
-	public Long getBoardId() {
-		return boardId;
+	public Long getUserId() {
+		return userId;
 	}
 
-	public void setBoardId(Long boardId) {
-		this.boardId = boardId;
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 
 	@Override
 	public String toString() {
 		return "ReplyVO [replyId=" + replyId + ", replyContents=" + replyContents + ", replyRegisterDate="
 				+ replyRegisterDate + ", replyUpdateDate=" + replyUpdateDate + ", replyDepth=" + replyDepth
-				+ ", replyGroup=" + replyGroup + ", memberId=" + memberId + ", boardId=" + boardId + "]";
-	}	
-	
-	
-	
+				+ ", replyGroup=" + replyGroup + ", donationBoardId=" + donationBoardId + ", userId=" + userId + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((replyId == null) ? 0 : replyId.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ReplyVO other = (ReplyVO) obj;
+		if (replyId == null) {
+			if (other.replyId != null)
+				return false;
+		} else if (!replyId.equals(other.replyId))
+			return false;
+		return true;
+	}
 }

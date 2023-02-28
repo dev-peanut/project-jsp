@@ -7,7 +7,7 @@
 <title>마이페이지 회원탈퇴</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/myPageWithdraw.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/myPageWithdraw.css">
 </head>
 <body>
 	<div>

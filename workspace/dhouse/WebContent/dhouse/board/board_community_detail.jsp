@@ -7,17 +7,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>가전제품 본문 페이지</title>
-<link rel="stylesheet" href="../../assets/css/board/board_community_detail.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/board/board_community_detail.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../../assets/img/logo.png">
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
 </head>
 <body>
 	<div id="page-container">
 		<div class="black-bg-wrap" style="display: none;"></div>
-		<jsp:include page="../components/header.jsp"></jsp:include>
+	<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
 		<!-- 헤더 적용  -->
 		<div id="newContainer">
 			<div id="wcommunityWrap">
@@ -49,7 +49,7 @@
 									<br>
 									<p>
 										<div class="printphoto"
-											style="background-image: url(../../assets/img/notebook.jpg"></div>
+											style="background-image: url(${pageContext.request.contextPath}/static/images/user/notebook.jpg)"></div>
 									</p>
 								</div>
 								<div class="attach-list">
@@ -63,12 +63,7 @@
 						<div class="wcommunity-section2">
 							<div class="inner-wrap">
 								<!-- 캐스트 검색하기 시작 -->
-								<div class="wcommunity-search-area sub-page">
-									<input id="searchText" name="searchText" type="text"
-										placeholder="캐스트 검색하기">
-									<button type="button" class="btn-search"
-										onclick="searchInAll()"></button>
-								</div>
+
 
 								<div class="wcommunity-detail-editor">
 									<a href="#this"
@@ -273,7 +268,7 @@
 				<!-- wcommunity-wrap -->
 			</div>
 			<!-- wcommunityWrap -->
-			<jsp:include page="../components/footer.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 		</div>
 		<!-- newContainer -->
 	</div>

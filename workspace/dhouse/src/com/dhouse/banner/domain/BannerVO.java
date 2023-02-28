@@ -6,10 +6,8 @@ public class BannerVO {
 	private String bannerPeriod;
 	private String bannerStartDate;
 	private String bannerLocation;
-	private String filePath;
-	private String fileOriginalName;
 	private String fileSystemName;
-	private Long memberId;
+	private Long userId;
 	
 	public BannerVO() {;}
 
@@ -53,22 +51,6 @@ public class BannerVO {
 		this.bannerLocation = bannerLocation;
 	}
 
-	public String getFilePath() {
-		return filePath;
-	}
-
-	public void setFilePath(String filePath) {
-		this.filePath = filePath;
-	}
-
-	public String getFileOriginalName() {
-		return fileOriginalName;
-	}
-
-	public void setFileOriginalName(String fileOriginalName) {
-		this.fileOriginalName = fileOriginalName;
-	}
-
 	public String getFileSystemName() {
 		return fileSystemName;
 	}
@@ -77,20 +59,43 @@ public class BannerVO {
 		this.fileSystemName = fileSystemName;
 	}
 
-	public Long getMemberId() {
-		return memberId;
+	public Long getUserId() {
+		return userId;
 	}
 
-	public void setMemberId(Long memberId) {
-		this.memberId = memberId;
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 
 	@Override
 	public String toString() {
 		return "BannerVO [bannerId=" + bannerId + ", bannerPaymentStatus=" + bannerPaymentStatus + ", bannerPeriod="
 				+ bannerPeriod + ", bannerStartDate=" + bannerStartDate + ", bannerLocation=" + bannerLocation
-				+ ", filePath=" + filePath + ", fileOriginalName=" + fileOriginalName + ", fileSystemName="
-				+ fileSystemName + ", memberId=" + memberId + "]";
+				+ ", fileSystemName=" + fileSystemName + ", userId=" + userId + "]";
 	}
-	
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((bannerId == null) ? 0 : bannerId.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		BannerVO other = (BannerVO) obj;
+		if (bannerId == null) {
+			if (other.bannerId != null)
+				return false;
+		} else if (!bannerId.equals(other.bannerId))
+			return false;
+		return true;
+	}
 }

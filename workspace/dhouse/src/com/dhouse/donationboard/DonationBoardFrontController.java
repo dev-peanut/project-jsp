@@ -1,4 +1,4 @@
-package com.dhouse.board;
+package com.dhouse.donationboard;
 
 import java.io.IOException;
 
@@ -9,28 +9,15 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Result;
 
-public class BoardFrontController extends HttpServlet{
+public class DonationBoardFrontController extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String uri = req.getRequestURI();
 		String contextPath = req.getContextPath();
-		String target = uri.replace(contextPath + "/", "").split("\\.")[0];
+		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
 		
-		if(target.equals("join")) {
-			result = new Result();
-			result.setPath("dhouse/mypage/signUp.jsp");
-			
-		}
-		
-		if(result != null) {
-			if(result.isRedirect()) {
-				resp.sendRedirect(result.getPath());
-			}else {
-				req.getRequestDispatcher(result.getPath()).forward(req, resp);
-			}
-		}
 	}
 	
 	@Override

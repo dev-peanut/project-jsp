@@ -78,21 +78,21 @@
 											<h3 class="Section_title">상품 정보</h3>
 										</div>
 										<div class="Active1 Active2">
-											<div class="PaymentProductInfo">
-												<div class="PaymentProductInfo_container">
-													<div class="PaymentProductInfo_textContainer">
-														<p class="PaymentProductInfo_productName">홍보 배너</p>
-														<p class="PaymentProductInfo_productDescription"></p>
-														<p class="PaymentProductInfo_optionsContainer">
+											<div class="Product">
+												<div class="Product_container">
+													<div class="TextContainer">
+														<p class="ProductName">홍보 배너</p>
+														<p class="ProductDescription"></p>
+														<p class="OptionsContainer">
 															<span>1개월 패키지</span>
 														</p>
 													</div>
 												</div>
-												<div class="PaymentProductInfo_priceInfo">
-													<span class="PaymentProductInfo_date">시작날짜: 3월 1일</span>
-													<span class="PaymentProductInfo_price">50,000원</span>
+												<div class="ProductInfo">
+													<span class="Info_date">시작날짜: 3월 1일</span>
+													<span class="Info_price">50,000원</span>
 												</div>
-												<div class="PaymentProductInfo_divider"></div>
+												<div class="Divider"></div>
 											</div>
 										</div>
 									</section>
@@ -101,7 +101,7 @@
 										<div class="Section_titleContainer">
 											<h3 class="Section_title">레벨 별 할인</h3>
 										</div>
-										<div class="Section_sectionContent Section_active">
+										<div class="Active1 Active2">
 											<div class="select-menu medium">
 											<!-- 여기서부터 코드 정리 안함 -->
 												<div class="menu1 menu2">
@@ -113,8 +113,8 @@
 														</div>
 														<div class="indicators1 indicators2">
 															<span class="separator1 separator2"></span>
-															<div class="select-menu__indicator select-menu__dropdown-indicator css-tlfecz-indicatorContainer" aria-hidden="true">
-																<svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon__20lDO" aria-hidden="true">
+															<div class="menu-indicator1 menu-indicator2 menu-indicator3" aria-hidden="true">
+																<svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon" aria-hidden="true">
 																	<path d="M16 22.4L5.6 12l1.12-1.12L16 20.16l9.28-9.28L26.4 12 16 22.4z"></path>
 																</svg>
 															</div>
@@ -129,13 +129,13 @@
 										<div class="Section_titleContainer">
 											<h3 class="Section_title">결제 수단</h3>
 										</div>
-										<div class="Section_sectionContent Section_active">
-											<div class="StorePaymentChooseMode_storePaymentChooseMode__2yXk6">
+										<div class="Active1 Active2">
+											<div class="ChooseMode">
 												<ul>
 													<li>
-														<label class="StorePaymentNicePay_storePaymentNicePay__1Yb59 StorePaymentNicePay_checked__14ngZ StorePaymentNicePay_single__3-vFW" for="nicePay">
+														<label class="NicePay1 NicePay2 NicePay3" for="nicePay">
 															<div class="StorePaymentNicePay_title__1Ppay">
-																<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon__20lDO StorePaymentNicePay_checkIcon__3gaNh" aria-hidden="true">
+																<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon StorePaymentNicePay_checkIcon__3gaNh" aria-hidden="true">
 																	<path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
 																</svg>
 																<label for="nicePay" class="Radio_radio__2k70h Radio_lg__2b_Sp StorePaymentNicePay_radio__2Zx3M">

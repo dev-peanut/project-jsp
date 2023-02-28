@@ -1,22 +1,22 @@
 package com.dhouse.user.domain;
 
 public class UserVO {
-	private Long memberId;
+	private Long userId;
 	private String userIdentification;
 	private String userPassword;
 	private String userName;
 	private String userNickname;
 	private String userPhone;
 	private String userEmail;
-	
+	 
 	public UserVO() {;}
 
-	public Long getMemberId() {
-		return memberId;
+	public Long getUserId() {
+		return userId;
 	}
 
-	public void setMemberId(Long memberId) {
-		this.memberId = memberId;
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 
 	public String getUserIdentification() {
@@ -67,9 +67,10 @@ public class UserVO {
 		this.userEmail = userEmail;
 	}
 
+
 	@Override
 	public String toString() {
-		return "UserVO [memberId=" + memberId + ", userIdentification=" + userIdentification + ", userPassword="
+		return "UserVO [userId=" + userId + ", userIdentification=" + userIdentification + ", userPassword="
 				+ userPassword + ", userName=" + userName + ", userNickname=" + userNickname + ", userPhone="
 				+ userPhone + ", userEmail=" + userEmail + "]";
 	}
@@ -78,7 +79,7 @@ public class UserVO {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((memberId == null) ? 0 : memberId.hashCode());
+		result = prime * result + ((userId == null) ? 0 : userId.hashCode());
 		return result;
 	}
 
@@ -91,10 +92,10 @@ public class UserVO {
 		if (getClass() != obj.getClass())
 			return false;
 		UserVO other = (UserVO) obj;
-		if (memberId == null) {
-			if (other.memberId != null)
+		if (userId == null) {
+			if (other.userId != null)
 				return false;
-		} else if (!memberId.equals(other.memberId))
+		} else if (!userId.equals(other.userId))
 			return false;
 		return true;
 	}

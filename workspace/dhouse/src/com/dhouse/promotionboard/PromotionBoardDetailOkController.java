@@ -1,4 +1,4 @@
-package com.dhouse.board;
+package com.dhouse.promotionboard;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.dhouse.Action;
 import com.dhouse.Result;
 
-public class BoardModifyOkController implements Action {
+public class PromotionBoardDetailOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {

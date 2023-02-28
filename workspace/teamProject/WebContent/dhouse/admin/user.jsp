@@ -8,13 +8,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>회원관리</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/components/sanitize.css" />
+	href="${pageContext.request.contextPath}/static/css/components/sanitize.css" />
 <!-- 아레에 페이지별로 갈아 끼워야할 CSS -->
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/admin/user.css" />
+	href="${pageContext.request.contextPath}/static/css/admin/user.css" />
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/components/user_modal.css" />	
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">	
+	href="${pageContext.request.contextPath}/static/css/components/user_modal.css" />	
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">	
 </head>
 <body>
 	<!-- header -->
@@ -33,7 +33,7 @@
 					<button type="button" class="search__searchbox__button"
 						style="position: relative; /* right: 0px; */ left: 410px;">
 						<img
-							src="${pageContext.request.contextPath}/images/user/search.png"
+							src="${pageContext.request.contextPath}/static/images/user/search.png"
 							alt="" />
 					</button>
 				</form>
@@ -212,7 +212,7 @@
 	<jsp:include page="/dhouse/components/user_modal.jsp"></jsp:include>
 	<!-- modal fin. -->
 </body>
-<script src="${pageContext.request.contextPath}/assets/js/admin/user.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/admin/user.js"></script>
 
-	<script src="${pageContext.request.contextPath}/assets/js/components/user_modal.js"></script>
+	<script src="${pageContext.request.contextPath}/static/js/components/user_modal.js"></script>
 </html>

@@ -127,19 +127,24 @@ next.addEventListener("click", function(){
 /* 실시간 랭킹 부분 왔다 갔다 하게 */
 const $button1 = $("#tab-button1");
 const $button2 = $("#tab-button2");
+const $rank1 = $("#ranking-mark1");
+const $rank2 = $("#ranking-mark2");
 
 $button1.on("click", function(){
     console.log("들어옴");
     $button1.css('color', '#212529');
     $button2.css('color', '#868E96');
+    $rank1.css("display", "block");
+    $rank2.css("display", "none");
 })
 
 $button2.on("click", function(){
     console.log("들어옴");
     $button2.css('color', '#212529');
     $button1.css('color', '#868E96');
+    $rank1.css("display", "none");
+    $rank2.css("display", "block");
 })
-
 
 
 

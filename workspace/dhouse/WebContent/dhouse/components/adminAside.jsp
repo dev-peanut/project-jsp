@@ -8,9 +8,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>관리자 홈</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/static/css/components/sanitize.css" />
+	href="${pageContext.request.contextPath}/assets/css/components/sanitize.css" />
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/static/css/components/adminAside.css" />
+	href="${pageContext.request.contextPath}/assets/css/components/adminAside.css" />
 <!-- 아레에 페이지별로 갈아 끼워야할 CSS -->
 </head>
 <body>
@@ -33,7 +33,7 @@
 						<summary class="nav-menu">
 							<h2 class="menu__title">회원</h2>
 							<img
-								src="${pageContext.request.contextPath}/static/images/user/dropdown.png"
+								src="${pageContext.request.contextPath}/images/user/dropdown.png"
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
@@ -50,7 +50,7 @@
 						<summary class="nav-menu">
 							<h2 class="menu__title">기부 관리</h2>
 							<img
-								src="${pageContext.request.contextPath}/static/images/user/dropdown.png"
+								src="${pageContext.request.contextPath}/images/user/dropdown.png"
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
@@ -73,7 +73,7 @@
 						<summary class="nav-menu">
 							<h2 class="menu__title">배너 및 홍보</h2>
 							<img
-								src="${pageContext.request.contextPath}/static/images/user/dropdown.png"
+								src="${pageContext.request.contextPath}/images/user/dropdown.png"
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
@@ -96,7 +96,7 @@
 						<summary class="nav-menu">
 							<h2 class="menu__title">기부</h2>
 							<img
-								src="${pageContext.request.contextPath}/static/img/dropdown.png"
+								src="${pageContext.request.contextPath}/assets/img/dropdown.png"
 								alt="icon" class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">
@@ -111,7 +111,7 @@
 				<%-- <li><details>
 						<summary class="nav-menu">
 							<h2 class="menu__title">필요한것 추가하기</h2>
-							<img src="${pageContext.request.contextPath}/static/img/admin/icon/dropdown.png" alt="icon"
+							<img src="${pageContext.request.contextPath}/assets/img/admin/icon/dropdown.png" alt="icon"
 								class="menu__icon--drop-down" />
 						</summary>
 						<ul class="nav-menu-submenu">

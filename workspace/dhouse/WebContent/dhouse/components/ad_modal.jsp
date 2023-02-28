@@ -18,7 +18,7 @@
 					<div id="modal-top">
 						<div id="modal-title">
 							홍보 글쓰기 <label> <img id="exit"
-								src="${pageContext.request.contextPath}/static/images/user/exit.png">
+								src="${pageContext.request.contextPath}/images/user/exit.png">
 								<button id="close"></button></label>
 						</div>
 					</div>
@@ -59,7 +59,7 @@
 			<div class="popup">
 				<!-- x 이미지 -->
 				<label> <img id="exit"
-					src="${pageContext.request.contextPath}/static/images/user/exit.png">
+					src="${pageContext.request.contextPath}/images/user/exit.png">
 					<button id="close"></button></label> 
 			</div>
 		</div>

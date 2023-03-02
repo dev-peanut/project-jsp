@@ -14,7 +14,7 @@
 	<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
 </head>
 <body class="Wrapper" aria-hidden="true">
-    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header-my.jsp"></jsp:include>
+	<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header-my.jsp"></jsp:include>
     <div class="body1" data-react-modal-body-trap="" tabindex="0" style="position: absolute; opacity: 0;"></div>
     <div id="root">
         <div id="AppLayout_Container" class="Layout">
@@ -47,18 +47,14 @@
                         	<div class="SelectMenu1 SelectMenu2">
 	                        	<div class="Select1 Select2">
 		                        	<div class="Select_title">
-			                        	<span class="DefaultValue">기간 선택</span>
-			                        	<div class="MoreButton1 MoreButton2">
-				                        	<svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__20lDO" aria-hidden="true">
-					                        	<path d="M16 9.6L26.4 20l-1.12 1.12L16 11.84l-9.28 9.28L5.6 20 16 9.6z"></path>
-				                        	</svg>
-		                        		</div>
+			                        	<div class="DefaultValue">기간 선택</div>
+			                        	<input type="hidden" id="input_hidden" value="">
 		                        	</div>
 		                        </div>		
-	                        	<ul class="content1 content2">
+ 	                        	<ul class="content1 content2">
 		                        	<div>
 			                        	<li>
-				                        	<div class="MenuItem" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+				                        	<div class="MenuItem Item1" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
 					                        	<div class="TitleWrapper">
 						                        	<div class="ItemTitle">
 							                        	<div class="ItemName">1개월 패키지</div>
@@ -66,11 +62,12 @@
 					                        	</div>
 					                        	<div class="Itembottom">
 						                        	<div>50,000원</div>
+						                        	<span>5%할인 47,500원</span>
 					                        	</div>
 				                        	</div>
 			                        	</li>
 			                        	<li>
-				                        	<div class="MenuItem" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
+				                        	<div class="MenuItem Item2" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;">
 					                        	<div class="TitleWrapper">
 						                        	<div class="ItemTitle">
 							                        	<div class="ItemName">2개월 패키지</div>
@@ -78,11 +75,12 @@
 					                        	</div>
 					                        	<div class="Itembottom">
 						                        	<div>90,000원</div>
+						                        	<span>5%할인 85,500원</span>
 					                        	</div>
 				                        	</div>
 			                        	</li>
 			                        	<li>
-				                        	<div class="MenuItem" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+				                        	<div class="MenuItem Item3" style="border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
 					                        	<div class="TitleWrapper">
 						                        	<div class="ItemTitle">
 							                        	<div class="ItemName">4개월 패키지</div>
@@ -90,13 +88,14 @@
 					                        	</div>
 					                        	<div class="Itembottom">
 						                        	<div>170,000원</div>
+						                        	<span>5%할인 161,500원</span>
 					                        	</div>
 				                        	</div>
 			                        	</li>
 									</div>
 								</ul>
 							</div>
-	                        <!-- 글 내용 -->
+                       		 <!-- 글 내용 -->
 							<section class="Section_contents" style="max-width: 720px;">
 								<div class="Section_header1 Section_header2">
 								    <h2 class="Section_title">배너 내용</h2>
@@ -192,7 +191,7 @@
 	            </div>
 	        </div>
 	    </div>
-	<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
+	    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
 <script type="text/javascript" src="../../static/js/user/banner-register.js"></script>
 </html>

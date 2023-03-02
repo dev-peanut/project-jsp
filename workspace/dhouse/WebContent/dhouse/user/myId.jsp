@@ -64,11 +64,11 @@
 	                        <p id="emailTimeOutError" class="error-text emailMsg">시간이 종료되었습니다. 다시 인증해주세요.</p>
 	                        <p id="emailSuccessNumberCheckMsg" class="error-text emailMsg" style="color:#50e3c2;">인증이 완료되었습니다.</p>
 	                        <p id="emailError" class="error-text emailMsg">이메일 형식이 올바르지 않습니다.</p>
-                          <p id="emailJoinedError" class="error-text emailMsg">이미 회원가입된 계정입니다. 다른 이메일을 입력해주세요.</p>
-                          <p id="emailDropOutError" class="error-text emailMsg">90일 이내에 탈퇴한 이력이 있는 계정은 사용하실 수 없습니다. 다른 이메일을 입력해주세요.</p>
-                          <p id="checkEmailInfo" class="info-text emailMsg">이메일 인증이 필요합니다.</p>
-                          <p id="changeEmailInfo" class="info-text emailMsg">로그인 아이디와 안내 메일 발송 주소가 변경됩니다.</p>
-                          <p id="sendEmailInfo" class="info-text emailMsg">인증메일이 발송되었습니다.</p>
+							<p id="emailJoinedError" class="error-text emailMsg">이미 회원가입된 계정입니다. 다른 이메일을 입력해주세요.</p>
+							<p id="emailDropOutError" class="error-text emailMsg">90일 이내에 탈퇴한 이력이 있는 계정은 사용하실 수 없습니다. 다른 이메일을 입력해주세요.</p>
+							<p id="checkEmailInfo" class="info-text emailMsg">이메일 인증이 필요합니다.</p>
+							<p id="changeEmailInfo" class="info-text emailMsg">로그인 아이디와 안내 메일 발송 주소가 변경됩니다.</p>
+							<p id="sendEmailInfo" class="info-text emailMsg">인증메일이 발송되었습니다.</p>
 	                        <div class="input-btn-wrap">
 	                          <div class="input">
 	                              <input id="mobileNumber" name="mobileNumber" type="tel" class="disable input-text" placeholder="휴대폰 번호" value="01046152639" disabled="">

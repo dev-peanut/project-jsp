@@ -52,16 +52,17 @@
 												<span class="BlindText">회</span>
 											</dd>
 										</div>
+										<!--  -->
 										<div>
 											<dt></dt>
 											<dd>
-												<span class="BlindText">회</span>
+												<span class="BlindText"></span>
 											</dd>
 										</div>
 										<div>
 											<dt></dt>
 											<dd>
-												<span class="BlindText">회</span>
+												<span class="BlindText"></span>
 											</dd>
 										</div>
 									</dl>

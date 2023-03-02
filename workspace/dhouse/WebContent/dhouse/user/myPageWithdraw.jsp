@@ -70,7 +70,7 @@
 			    </dl>
 			    <p>
 				    <label class="wz checkbox">
-					<input type="checkbox" name="agree" value="Y" id="dropConfirm">
+					<input type="checkbox" name="agree" value="Y" id="dropConfirm" onclick="test()">
 					    <span>상기 와디즈 탈퇴 시 유의 사항을 확인하였습니다.</span>
 				    </label>
 			    </p>
@@ -107,4 +107,7 @@
 		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
+	<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/user/myPageWithdraw.js"></script>
+	
 </html>

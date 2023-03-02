@@ -87,6 +87,10 @@ body li, body ol, body ul {
     font-weight: normal;
 }
 /* 프로필 사진 수정 및 삭제 */
+#image {
+	visibility:hidden;
+}
+
 .profileimg-wrap {
     width: 100%;
     margin-bottom: 20px;

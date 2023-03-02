@@ -67,7 +67,7 @@
 									</dl>
 								</div>
 								<!-- 프로필 설정 버튼 -->
-								<a href="https://www.wadiz.kr/web/wmypage/myprofile/modifyprofile" class="ProfileSet Mint">
+								<a href="https://www.wadiz.kr/web/wmypage/myprofile/modifyprofile" class="ProfileSet Mint" id="apply">
 									<span>
 										<span class="ProfileSet_button">배너 신청하기</span>
 									</span>

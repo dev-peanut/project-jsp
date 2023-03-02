@@ -182,12 +182,12 @@
 									<div class="Active1 Active2">
 										<div class="PaymentTerms">
 											<label class="Checkbox1 Terms_check1 Terms_check2 Terms_check3">
-												<input name="paymentRequiredTerms" type="checkbox" class="Checkbox_input">
+												<input name="paymentRequiredTerms" type="checkbox" class="Checkbox_input" id="check_all">
 												<span class="Checkbox_icon" aria-hidden="true">
-													<svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon RemoveIcon" aria-hidden="true">
+													 <svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon RemoveIcon" aria-hidden="true">
 														<path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
 													</svg>
-													<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon CheckIcon" aria-hidden="true">
+													<svg viewBox="0 0 48 f48" focusable="false" role="presentation" class="withIcon CheckIcon" aria-hidden="true">
 														<path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
 													</svg>
 												</span>
@@ -237,7 +237,7 @@
 												</label>
 											</div>
 										</div>
-										<button form="payment-submit" class="Button1 Button_p Button_c Button_i Button_b Button_s" type="submit">
+										<button form="payment-submit" class="Button1 Button_p Button_c Button_i Button_b Button_s" type="submit" id="paymentbutton">
 											<span>
 												<span class="Button_children">50,000원 결제하기</span>
 											</span>
@@ -253,5 +253,6 @@
 			<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 		</main>
 	</div>
-</body>
+</body><script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/user/pament.js"></script>
 </html>

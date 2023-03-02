@@ -71,6 +71,7 @@
 								<button data-event="" class="header-user-button">
 									<div class="button-mypage-wrapper">
 										<span class="mypage-button-image" style="background-image: url(https://static.wadiz.kr/assets/icon/profile-icon-4.png);"></span>
+										<span class="mypage-button-image" style="background-image: url(https://static.wadiz.kr/static/icon/profile-icon-4.png);"></span>
 									</div>
 								</button>
 							</div>

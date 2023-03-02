@@ -353,13 +353,31 @@ label.wz.checkbox>span {
     line-height: 20px;
 }
 /* 가상요소 */
-label.wz.checkbox>span:before {
+/* label.wz.checkbox>span:before {
+	
     position: absolute;
     top: 2px;
     left: 0;
     transition: .25s;
     border: 1px solid rgba(0,0,0,.15);
     background-color: #fff;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    content: "";
+} */
+
+label.wz.checkbox>input:checked+span:before {
+    border-color: transparent;
+    background-color: #00c4c4;
+}
+
+label.wz.checkbox>span:before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    transition: .25s;
+    border: 1px solid rgba(0,0,0,.15);
     cursor: pointer;
     width: 16px;
     height: 16px;
@@ -389,6 +407,7 @@ label.wz.checkbox>span:after {
     font-size: 14px;
     font-weight: 700;
 }
+
 
 .account-drop .verify-box {
     position: relative;
@@ -573,6 +592,10 @@ label.wz.checkbox>span:after {
 
 .wz.button.red.disabled, .wz.button.red:disabled {
     color: hsla(0,0%,100%,.7);
+}
+
+#btnDropOut{
+	cursor: pointer;
 }
 
 /* =========================================media============================================== */

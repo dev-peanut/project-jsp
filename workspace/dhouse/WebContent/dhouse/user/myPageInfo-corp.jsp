@@ -7,7 +7,7 @@
 <title>마이페이지 정보설정-기업</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/myPageInfo.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/myPageInfo.css">
 </head>
 <body>
 	<div id="page-container">

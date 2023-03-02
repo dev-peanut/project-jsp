@@ -7,7 +7,7 @@
 <title>프로필 정보 설정</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/myProfile.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/myProfile.css">
 </head>
 <body>
 		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header-my.jsp"></jsp:include>
@@ -19,7 +19,7 @@
        				<div id="tabContent1" class="tab-content">
 	       				<h5>프로필 사진</h5>
 	       				<div class="profileimg-wrap">
-	       					<button type="button" id="resultProfileImg" class="profileimg" onclick="$('#uploadProfileImg').click();"><em id="image_container" style="background-image:url(https://static.wadiz.kr/assets/icon/profile-icon-4.png)"></em></button>
+	       					<button type="file" id="resultProfileImg" class="profileimg" onclick="setThumbnail"><em id="image_container" style="background-image:url(https://static.wadiz.kr/static/icon/profile-icon-4.png)"></em></button>
 	       					<p class="setting-profileimg">
 	       						<button type="button" onclick="$('#uploadProfileImg').click()" id="btn_updatePhoto">
 	       							<span id="img">바꾸기</span>
@@ -57,4 +57,6 @@
 		</div>
 		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
+<script type="text/javascript"
+	src="${pageContext.request.contextPath}/static/js/board/myProfile.js"></script>
 </html>

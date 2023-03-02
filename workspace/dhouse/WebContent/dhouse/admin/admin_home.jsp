@@ -8,10 +8,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>관리자 홈</title>
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/components/sanitize.css" />
+	href="${pageContext.request.contextPath}/static/css/components/sanitize.css" />
 <!-- 아레에 페이지별로 갈아 끼워야할 CSS -->
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/admin/admin_home.css" />
+	href="${pageContext.request.contextPath}/static/css/admin/admin_home.css" />
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">	
 </head>
 <body>

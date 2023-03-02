@@ -27,7 +27,7 @@
                        <input type="text" name="realName" class="input-text disable hide" maxlength="20" placeholder="이름" value="" disabled="" style="display: none;">
                        <div class="input-btn-wrap">
 	                        	<div class="input">
-	                            	<input type="email" id="userName" name="userName" class="disable input-text" placeholder="이메일 계정" value="pdy0722@gmail.com" disabled="">
+	                            	<input type="email" id="userEmail" name="userName" class="disable input-text" placeholder="이메일 계정" value="pdy0722@gmail.com" disabled="">
 	                          	</div>
 	                          	<div id="emailChangeBtn" class="emailAuthBtn btn" data-status="change">
 	                            	<a href="#" onclick="return false;">
@@ -151,4 +151,6 @@
 		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/user/myId.js"></script>
 </html>

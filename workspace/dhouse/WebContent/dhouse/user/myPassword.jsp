@@ -17,11 +17,11 @@
             <div id="newContainer">
                 <!-- account-wrap -->
                 <div class="account-wrap">
-                    <h2 class="small">비밀번호 등록</h2>
+                    <h2 class="small">비밀번호 변경</h2>
 	                    <div class="email-input-wrap">
 	                    	<form id="saveForm">
 	                        	<input type="password" id="newPassword" name="newPassword" class="input-text" placeholder="비밀번호" maxlength="17">
-	                        	<p id="passwordError" class="pwd-text">영문, 숫자, 특수문자 (!@#$%^&amp;*+=-)를 모두 조합한 8자 이상</p>
+	                        	<p id="passwordError" class="pwd-text">영문,숫자,특수문자를 조합한 8자 이상</p>
 	                        	<input type="password" id="newPasswordConfirm" name="newPasswordConfirm" class="input-text" placeholder="비밀번호 확인" maxlength="17">
 	                        	<p class="error-text">비밀번호가 같지 않습니다.</p>
 	                        	<div class="email-input-wrap small">
@@ -37,5 +37,7 @@
         </div>
 		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/user/myPassword.js"></script>
 </body>
 </html>

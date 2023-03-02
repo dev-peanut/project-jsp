@@ -18,7 +18,7 @@ const contentData = document.querySelector('.contentData');
 
 // 에러메세지 출력 변수
 const titleWarning = document.querySelector("#title-warning");
-const contentWarning = document.querySelector("#content-warning");
+const contentWarning = document.querySelector(".content-warning");
 
 // 저장하기 버튼
 const formSubmit = document.querySelector("#bottom-button");

@@ -1,4 +1,4 @@
- /*board_form.js*/
+ /*banner-register.js*/
 
 /*사진 첨부*/
      function setThumbnail(event) {

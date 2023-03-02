@@ -4609,10 +4609,6 @@ cursor: pointer;
     overflow: auto;
 }
 
-.SelectMenu1 .content2 {
-    margin: 0 -2.203px 0 -2.781px;
-}
-
 .MenuItem {
     border-top: 1px solid #dde2e6;
     cursor: pointer;
@@ -4646,7 +4642,7 @@ cursor: pointer;
 .MenuItem .Itembottom {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: normal;
     color: #212529;
     line-height: 28px;
     letter-spacing: -.3px;
@@ -4654,6 +4650,18 @@ cursor: pointer;
     font-weight: 700;
 }
 
+ .content1 {
+	display: none;
+}
+
+.Itembottom div {
+	text-decoration: line-through;
+    margin-right: 20px;
+}
+
+.Itembottom span {
+	color: red;
+}
 
 
 @media screen and (min-width: 769px) {

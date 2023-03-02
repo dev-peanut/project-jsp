@@ -1,6 +1,5 @@
- /*banner-register.js*/
+/*board_community_write*/
 
-/*사진 첨부*/
      function setThumbnail(event) {
         var reader = new FileReader();
 
@@ -12,58 +11,103 @@
 
         reader.readAsDataURL(event.target.files[0]);
       }
-
-
+      
 // textarea 변수
-const nameData = document.querySelector('.nameData');
-const weightData = document.querySelector('.weightData');
-const dateData = document.querySelector('.dateData');
+const titleData = document.querySelector('.titleData');
+const contentData = document.querySelector('.contentData');
 
 // 에러메세지 출력 변수
-const nameWarning = document.querySelector("#name-warning");
-const weightWarning = document.querySelector("#weight-warning");
-const dateWarning = document.querySelector("#date-warning");
+const titleWarning = document.querySelector("#title-warning");
+const contentWarning = document.querySelector("#content-warning");
 
 // 저장하기 버튼
-const formSubmit = document.querySelector('#formsubmit');
+const formSubmit = document.querySelector("#bottom-button");
 
-const check = false;
-
-console.log(nameData);
-console.log(weightData);
-console.log(dateData);
-console.log(formSubmit);
+console.log(titleData);
+console.log(contentData);
 
 formSubmit.addEventListener("click", function(){
-    var contentInputValue = document.querySelector(".nameData").value;
+    var contentInputValue = document.querySelector(".titleData").value;
     if(contentInputValue.length < 1){
-		nameData.style.borderColor = "red";
-    	nameWarning.style.display = "block";
-        nameWarning.innerHTML = "필수 정보입니다.";
-  		nameWarning.style.color = "red";
-    }else{``
-		nameData.style.borderColor = "#00c4c4";
-		nameWarning.style.display = "none";
+		titleData.style.borderColor = "red";
+        titleWarning.innerHTML = "필수 정보입니다.";
+    	titleWarning.style.display = "block";
+  		titleWarning.style.color = "red";
+    }
+});
+
+formSubmit.addEventListener("click", function(){
+    var contentInputValue = document.querySelector(".contentData").value;
+    if(contentInputValue.length < 1){
+		contentData.style.borderColor = "red";
+        contentWarning.innerHTML = "필수 정보입니다.";
+    	contentWarning.style.display = "block";
+  		contentWarning.style.color = "red";
+    }
+});
+
+
+// 기간선택
+const Select = document.querySelector(".Select1");
+Select.addEventListener("click", function(event) {
+	console.log(Select);
+	let content = document.querySelector(".content1");
+	if(content.style.display == 'none'){
+		content.style.display = 'block';
+	}else{
+		content.style.display = 'none';
+	}
+});
+
+/*
+const $Select = $(".Select1");
+const $content = $(".content1");
+$Select.click(function(event){
+	if($content.css("display") == 'none') {
+		$content.css("display", "block");
+	}else{
+		$content.css("display", "none");
 	}
 
 });
+*/
 
-formSubmit.addEventListener("click", function(){
-    var contentInputValue = document.querySelector(".weightData").value;
-    if(contentInputValue.length < 1){
-		weightData.style.borderColor = "red";
-    	weightWarning.style.display = "block";
-        weightWarning.innerHTML = "필수 정보입니다.";
-  		weightWarning.style.color = "red";
-    }
+// 패키지선택
+const content = document.querySelector(".content1");
+const DefaultValue = document.querySelector(".DefaultValue");
+let Item1 = document.querySelector(".Item1");
+let Item2 = document.querySelector(".Item2");
+let Item3 = document.querySelector(".Item3");
+
+Item1.addEventListener("click", function() {
+	console.log("들어옴");
+	DefaultValue.innerHTML = "1개월 패키지";
+	if(content.style.display == 'none'){
+		content.style.display = 'block';
+	}else{
+		content.style.display = 'none';
+	}	
 });
 
-formSubmit.addEventListener("click", function(){
-    var contentInputValue = document.querySelector(".dateData").value;
-    if(contentInputValue.length < 1){
-		dateData.style.borderColor = "red";
-    	dateWarning.style.display = "block";
-        dateWarning.innerHTML = "필수 정보입니다.";
-  		dateWarning.style.color = "red";
-    }
+Item2.addEventListener("click", function() {
+	console.log("들어옴");
+	DefaultValue.innerHTML = "2개월 패키지";
+	if(content.style.display == 'none'){
+		content.style.display = 'block';
+	}else{
+		content.style.display = 'none';
+	}	
 });
+
+Item3.addEventListener("click", function() {
+	console.log("들어옴");
+	DefaultValue.innerHTML = "4개월 패키지";
+	if(content.style.display == 'none'){
+		content.style.display = 'block';
+	}else{
+		content.style.display = 'none';
+	}	
+});
+
+
+

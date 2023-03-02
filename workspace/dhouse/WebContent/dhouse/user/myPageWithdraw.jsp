@@ -7,7 +7,7 @@
 <title>마이페이지 회원탈퇴</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/myPageWithdraw.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/myPageWithdraw.css">
 </head>
 <body>
 	<div>
@@ -70,7 +70,7 @@
 			    </dl>
 			    <p>
 				    <label class="wz checkbox">
-					<input type="checkbox" name="agree" value="Y" id="dropConfirm">
+					<input type="checkbox" name="agree" value="Y" id="dropConfirm" onclick="test()">
 					    <span>상기 와디즈 탈퇴 시 유의 사항을 확인하였습니다.</span>
 				    </label>
 			    </p>
@@ -107,4 +107,7 @@
 		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
+	<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/user/myPageWithdraw.js"></script>
+	
 </html>

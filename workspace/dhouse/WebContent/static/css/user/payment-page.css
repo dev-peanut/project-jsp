@@ -323,93 +323,11 @@ button {
     overflow-wrap: break-word;
 }
 
-.select-menu__control {
-    border: 1px solid #dde2e6;
-    border-radius: 3px;
-    box-shadow: none;
-}
-
-.css-1fhf3k1-control {
-    -webkit-box-align: center;
-    align-items: center;
-    background-color: rgb(242, 242, 242);
-    border-color: rgb(230, 230, 230);
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 1px;
-    cursor: default;
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    min-height: 38px;
-    position: relative;
-    transition: all 100ms ease 0s;
-    box-sizing: border-box;
-    outline: 0px !important;
-}
-
-.medium .select-menu__control {
-    height: 48px;
-    min-height: 48px;
-}
-
-.select-menu__value-container {
-    padding-right: 16px;
-    padding-left: 16px;
-}
-
-.css-1hwfws3 {
-    -webkit-box-align: center;
-    align-items: center;
-    display: flex;
-    flex: 1 1 0%;
-    flex-wrap: wrap;
-    padding: 2px 8px;
-    position: relative;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-.css-1wa3eu0-placeholder {
-    color: rgb(128, 128, 128);
-    margin-left: 2px;
-    margin-right: 2px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    box-sizing: border-box;
-}
-
-.css-62g3xt-dummyInput {
-    background: 0px center;
-    border: 0px;
-    font-size: inherit;
-    outline: 0px;
-    padding: 0px;
-    width: 1px;
-    color: transparent;
-    left: -100px;
-    opacity: 0;
-    position: relative;
-    transform: scale(0);
-}
-
-.css-1wy0on6 {
-    -webkit-box-align: center;
-    align-items: center;
-    align-self: stretch;
-    display: flex;
-    flex-shrink: 0;
-    box-sizing: border-box;
-}
-
 .menu-indicator1 {
     padding-right: 12px;
     padding-left: 12px;
     font-size: 24px;
 }
-
 
 .menu-indicator3 {
     color: rgb(204, 204, 204);
@@ -450,7 +368,7 @@ button {
     padding: 12px 16px;
 }
 
-.NicePay1 .StorePaymentNicePay_title__1Ppay {
+.NicePay1 .NicePay_title {
     line-height: 28px;
     letter-spacing: -.3px;
     font-size: 16px;
@@ -459,30 +377,30 @@ button {
     line-height: 24px;
 }
 
-.NicePay1 .StorePaymentNicePay_title__1Ppay * {
+.NicePay1 .NicePay_title * {
     vertical-align: top;
 }
 
-label.Radio_radio__2k70h>input {
+label.Radio1>input {
     position: absolute;
     visibility: hidden;
     opacity: 0;
 }
 
-.NicePay1 .StorePaymentNicePay_title__1Ppay svg {
+.NicePay1 .NicePay_title svg {
     display: inline-block;
     margin-right: 8px;
     width: 24px;
     height: 24px;
 }
 
-label.Radio_radio__2k70h {
+label.Radio1 {
     display: block;
     position: relative;
     margin: 16px 0;
 }
 
-.NicePay1 .StorePaymentNicePay_title__1Ppay .StorePaymentNicePay_radio__2Zx3M {
+.NicePay1 .NicePay_title .Radio_pay2 {
     display: inline-block;
     margin: 0 12px 0 0;
     cursor: pointer;
@@ -490,20 +408,20 @@ label.Radio_radio__2k70h {
     height: 24px;
 }
 
-.NicePay1.NicePay3 .StorePaymentNicePay_checkIcon__3gaNh {
+.NicePay1.NicePay3 .NicePay_Icon {
     margin-right: 12px;
     color: #00c4c4;
 }
 
-.NicePay1.NicePay3 .StorePaymentNicePay_radio__2Zx3M {
+.NicePay1.NicePay3 .Radio_pay2 {
     display: none;
 }
 
-.NicePay1 .StorePaymentNicePay_title__1Ppay>span {
+.NicePay1 .NicePay_title>span {
     vertical-align: middle;
 }
 
-.NicePay1 .StorePaymentNicePay_notification__D1ZcP {
+.NicePay1 .Notification {
     line-height: 18px;
     letter-spacing: 0;
     font-size: 12px;
@@ -513,12 +431,7 @@ label.Radio_radio__2k70h {
     color: #adb5bd;
 }
 
-.StoreInformation_storeInformation__nBaVr {
-    background-color: #f9fafb;
-    padding: 16px;
-}
-
-label.Radio_radio__2k70h>.Radio_icon__SObGY {
+label.Radio1>.Radio_icon {
     display: block;
     position: relative;
     transition-property: opacity,border-color,background-color;
@@ -534,27 +447,27 @@ label.Radio_radio__2k70h>.Radio_icon__SObGY {
     box-sizing: border-box;
 }
 
-label.Radio_radio__2k70h.Radio_lg__2b_Sp>span {
+label.Radio1.Radio_pay1>span {
     line-height: 28px;
     letter-spacing: -.3px;
     font-size: 16px;
     font-weight: 400;
 }
 
-label.Radio_radio__2k70h.Radio_lg__2b_Sp>.Radio_icon__SObGY {
+label.Radio1.Radio_pay1>.Radio_icon {
     font-size: 24px;
 }
 
-label.Radio_radio__2k70h>input:checked+.Radio_icon__SObGY {
+label.Radio1>input:checked+.Radio_icon {
     border-color: #00c4c4!important;
 }
 
-label.Radio_radio__2k70h .Radio_label__14nd4 {
+label.Radio1 .Radio_label {
     vertical-align: -1px;
     color: #212529;
 }
 
-.DefaultPrice_container__1gf10 {
+.DefaultPrice {
     line-height: 18px;
     letter-spacing: 0;
     font-size: 12px;
@@ -567,28 +480,28 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     -webkit-tap-highlight-color: rgba(255,255,255,0);
 }
 
-.DefaultPrice_container__1gf10 .DefaultPrice_title__3iw65 .DefaultPrice_radioButton__1nTXN {
+.DefaultPrice .DefaultPrice_title .Radio3 {
     display: inline-block;
     margin: 0 8px 0 0;
     cursor: pointer;
 }
 
-label.Radio_radio__2k70h.Radio_md__3xeXE>span {
+label.Radio1.Radio2>span {
     line-height: 28px;
     letter-spacing: -.3px;
     font-size: 16px;
     font-weight: 400;
 }
 
-label.Radio_radio__2k70h.Radio_md__3xeXE>.Radio_icon__SObGY {
+label.Radio1.Radio2>.Radio_icon {
     font-size: 20px;
 }
 
-label.Radio_radio__2k70h>input:checked+.Radio_icon__SObGY {
+label.Radio1>input:checked+.Radio_icon {
     border-color: #00c4c4!important;
 }
 
-label.Radio_radio__2k70h>.Radio_icon__SObGY:before {
+label.Radio1>.Radio_icon:before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -602,16 +515,16 @@ label.Radio_radio__2k70h>.Radio_icon__SObGY:before {
     content: "";
 }
 
-label.Radio_radio__2k70h>input:checked+.Radio_icon__SObGY:before {
+label.Radio1>input:checked+.Radio_icon:before {
     background-color: #00c4c4;
 }
 
-label.Radio_radio__2k70h .Radio_label__14nd4 {
+label.Radio1 .Radio_label {
     vertical-align: -1px;
     color: #212529;
 }
 
-.DefaultPrice_container__1gf10 .DefaultPrice_title__3iw65 {
+.DefaultPrice .DefaultPrice_title {
     line-height: 20px;
     letter-spacing: 0;
     font-size: 14px;
@@ -621,14 +534,14 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     color: #212529;
 }
 
-.TitleValuePrice_container__Hcpla {
+.Price_container {
     line-height: 20px;
     letter-spacing: 0;
     font-size: 14px;
     font-weight: 400;
 }
 
-.DefaultPrice_container__1gf10 dl {
+.DefaultPrice dl {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -636,7 +549,7 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     color: #495057;
 }
 
-.TitleValuePrice_container__Hcpla dl {
+.Price_container dl {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -644,21 +557,21 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     color: #495057;
 }
 
-.TitleValuePrice_container__Hcpla dd {
+.Price_container dd {
     display: inline-flex;
     align-items: center;
 }
 
-.TitleValuePrice_container__Hcpla .TitleValuePrice_money__1Tu-B {
+.Price_container .Price_money {
     margin-right: 4px;
 }
 
-.TitleValuePrice_container__Hcpla .TitleValuePrice_divide__2bMnX {
+.Price_container .Price_divide {
     margin: 12px -16px 2px!important;
     border: 1px solid #e6eaed;
 }
 
-.TitleValuePrice_container__Hcpla .TitleValuePrice_total__oJwm4 {
+.Price_container .Price_total {
     margin-top: 12px;
     color: #212529;
     line-height: 20px;
@@ -667,7 +580,7 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     font-weight: 700;
 }
 
-.TitleValuePrice_container__Hcpla .TitleValuePrice_total__oJwm4 em {
+.Price_container .Price_total em {
     line-height: 28px;
     letter-spacing: -.6px;
     font-size: 18px;
@@ -676,22 +589,54 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     font-size: 20px;
 }
 
-.Checkbox_checkbox__pamoY {
+
+.Checkbox_content:after {
+    display: inline-block;
+    margin-top: -0.2em;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: wadizicon!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    speak: none;
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.Checkbox1 {
     display: block;
     position: relative;
 }
 
-.Checkbox_checkbox__pamoY.Checkbox_labeled__zQ0mF {
+.Checkbox1.Terms_check2 {
     display: block;
     line-height: 1.33;
     font-size: 15px;
 }
 
-.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsCheckbox__3gruT {
+.PaymentTerms .Terms_check3 {
     cursor: pointer;
 }
 
-.Checkbox_checkbox__pamoY .Checkbox_input__3UBmW {
+/* .Checkbox_icon{
+	border: solid 1px rgba(0,0,0,.06);
+    background-color: #00c4c4;
+    font-size: 24px;
+} */
+
+.Checkbox1 .Checkbox_input {
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -701,7 +646,7 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     padding: 0;
 }
 
-.Checkbox_checkbox__pamoY .Checkbox_icon___4ktl {
+.Checkbox1 .Checkbox_icon {
     display: block;
     position: relative;
     transition-property: opacity,border-color,background-color;
@@ -710,23 +655,23 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     z-index: 1;
     border: 1px solid #cdd3d8;
     border-radius: 3px;
-    background-color: #fff;
+/*     background-color: #fff; */
     width: 1em;
     height: 1em;
     box-sizing: border-box;
 }
 
-.Checkbox_checkbox__pamoY.Checkbox_labeled__zQ0mF .Checkbox_icon___4ktl {
+.Checkbox1.Terms_check2 .Checkbox_icon {
     display: inline-block;
     margin-right: 8px;
     vertical-align: middle;
 }
 
-.Checkbox_checkbox__pamoY.Checkbox_lg__2FN3A .Checkbox_icon___4ktl {
+.Checkbox1.Terms_check1 .Checkbox_icon {
     font-size: 24px;
 }
 
-.Checkbox_checkbox__pamoY .Checkbox_icon___4ktl svg {
+.Checkbox1 .Checkbox_icon svg {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -738,32 +683,32 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     fill: #fff;
 }
 
-.Checkbox_checkbox__pamoY .Checkbox_input__3UBmW+.Checkbox_icon___4ktl .Checkbox_checkIcon__1uUVj, .Checkbox_checkbox__pamoY .Checkbox_input__3UBmW+.Checkbox_icon___4ktl .Checkbox_removeIcon__2VWZr {
-    opacity: 0;
+.Checkbox1 .Checkbox_input+.Checkbox_icon .CheckIcon, .Checkbox1 .Checkbox_input .Checkbox_icon .RemoveIcon {
+    /* opacity: 0; */
 }
 
-.Checkbox_checkbox__pamoY.Checkbox_labeled__zQ0mF .Checkbox_content__2Ze7x {
+.Checkbox1.Terms_check2 .Checkbox_content {
     display: inline-block;
     vertical-align: -0.1em;
     color: #212529;
 }
 
-.Checkbox_checkbox__pamoY.Checkbox_labeled__zQ0mF.Checkbox_lg__2FN3A .Checkbox_content__2Ze7x {
+.Checkbox1.Terms_check2.Terms_check1 .Checkbox_content {
     letter-spacing: -.6px;
     font-size: 16px;
     font-weight: 700;
 }
 
-.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i .StorePaymentTerms_termsItem__CAG90 .StorePaymentTerms_text__1tYhe {
+.PaymentTerms .termsList .termsItem .Terms_text {
     display: block;
 }
 
-.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i {
+.PaymentTerms .termsList {
     margin-top: 16px;
     padding: 0 8px;
 }
 
-.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i .StorePaymentTerms_termsItem__CAG90 {
+.PaymentTerms .termsList .termsItem {
     line-height: 20px;
     /* letter-spacing: 0; */
     font-size: 14px;
@@ -774,11 +719,11 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     padding-left: 24px;
 }
 
-.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i .StorePaymentTerms_termsItem__CAG90 * {
+.PaymentTerms .termsList .termsItem * {
     vertical-align: middle;
 }
 
-.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i .StorePaymentTerms_termsItem__CAG90 .StorePaymentTerms_smallCheckBox__YwfQ5 {
+.PaymentTerms .termsList .termsItem .Checkbox3 {
     display: inline-block;
     position: absolute;
     top: 2px;
@@ -786,11 +731,11 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     cursor: pointer;
 }
 
-.Checkbox_checkbox__pamoY.Checkbox_sm__KgIAv .Checkbox_icon___4ktl {
+.Checkbox1.Checkbox2 .Checkbox_icon {
     font-size: 16px;
 }
 
-.Button_button__mRXZC {
+.Button1 {
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
@@ -811,14 +756,14 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     -webkit-font-smoothing: antialiased;
 }
 
-.Button_button__mRXZC.Button_sm__1aKYg {
+.Button1.Button3 {
     padding: 6px 12px;
     line-height: 1.5;
     font-size: 12px;
     border: none;
 }
 
-.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i .StorePaymentTerms_termsItem__CAG90 .StorePaymentTerms_termsDetailButton__29smA {
+.PaymentTerms .termsList .termsItem .Button6 {
     position: absolute;
     top: 50%;
     right: 0;
@@ -826,26 +771,26 @@ label.Radio_radio__2k70h .Radio_label__14nd4 {
     padding: 0;
 }
 
-.Button_button__mRXZC.Button_iconOnly__1hahW.Button_sm__1aKYg {
+.Button1.Button4.Button3 {
     padding: 8px;
 }
 
-.Button_button__mRXZC.Button_iconOnly__1hahW {
+.Button1.Button4 {
     padding: 12px;
     height: auto;
 }
 
-.Button_button__mRXZC.Button_iconOnly__1hahW>span svg {
+.Button1.Button4>span svg {
     width: 16px;
     height: 16px;
 }
 
-.Button_button__mRXZC.Button_iconOnly__1hahW.Button_sm__1aKYg>span svg {
+.Button1.Button4.Button3>span svg {
     width: 16px;
     height: 16px;
 }
 
-.StorePaymentTerms_StorePaymentTerms__1PQlB .StorePaymentTerms_termsList__1ki8i .StorePaymentTerms_termsItem__CAG90 .StorePaymentTerms_termsDetailButton__29smA svg {
+.PaymentTerms .termsItem .Button6 svg {
     width: 16px;
     height: 16px;
 }
@@ -854,46 +799,50 @@ button[class*=Button_button] {
     -webkit-tap-highlight-color: transparent;
 }
 
-.Button_button__mRXZC.Button_block__1LAUA {
+.Button1.Button_b {
     width: 100%;
 }
 
-.Button_button__mRXZC.Button_contained__k9pMW {
+.Button1.Button_c {
     border-color: #dde2e6;
     background-color: #dde2e6;
 }
 
-.Button_button__mRXZC.Button_primary__1HJqX {
+.Button1.Button_p {
     border-color: #00c4c4;
     color: #00a2a2;
 }
 
-.Button_button__mRXZC.Button_lg__22YWj {
+.Button1.Button_i {
     padding: 9px 24px;
     line-height: 1.75;
     font-size: 16px;
 }
 
-.Layout .Layout_submitButton__1fQJ4 {
+.Layout .Button_s {
     margin-top: 26px;
 }
 
-.Button_button__mRXZC.Button_primary__1HJqX.Button_contained__k9pMW {
+.Button1.Button_p.Button_c {
     border-color: #00c4c4;
     background-color: #00c4c4;
     color: #fff;
 }
 
-.Button_button__mRXZC span {
+.Button1 span {
     display: inline-flex;
     align-items: center;
     vertical-align: top;
 }
 
-.Button_button__mRXZC .Button_children__3HY2l {
+.Button1 .Button_children {
     vertical-align: top;
 }
 
+#paymentbutton:hover {
+	border-color: #00b2b2;
+	background-color: #00b2b2;
+}
 
 
 
@@ -953,7 +902,19 @@ button[class*=Button_button] {
 }
 
 
+input[type=checkbox]:checked {
+   background-color: #00c4c4;
+   color: white;
+}
 
-
+input[type="checkbox"]:checked::before { /* 체크 모양 */
+            content: "\2713";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            line-height: 1px;
+            border-radius: 2px;
+            transform: scale(1) translate(-50%, -50%);
+        }
 
 }

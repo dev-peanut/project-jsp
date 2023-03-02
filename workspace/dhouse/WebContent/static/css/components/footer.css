@@ -553,29 +553,29 @@ article, main, section {
     transition: color .2s;
 }
 
-.FooterMenu_container__15kue {
+.footer-container {
     border-top: 1px solid #e6eaed;
     border-bottom: 1px solid #e6eaed;
     text-align: left;
 }
 
-.FooterMenu_bar__22KhW {
+.footer-menu-bar {
     display: flex;
     flex-direction: column;
     padding: 16px;
 }
 
-.FooterMenu_bar__22KhW .FooterMenu_left__3rQKu, .FooterMenu_bar__22KhW .FooterMenu_right__28Tuu {
+.footer-menu-bar .footer-menu-bar-left-div, .footer-menu-bar .footer-menu-bar-right-div {
     display: flex;
     flex-direction: row;
 }
 
-.Linker_btnMore__1PEzz {
+.footer-link-button {
     position: relative;
     outline: none;
 }
 
-.FooterMenu_bar__22KhW .FooterMenu_left__3rQKu .FooterMenu_menu__3nRbk, .FooterMenu_bar__22KhW .FooterMenu_right__28Tuu .FooterMenu_menu__3nRbk {
+.footer-menu-bar .footer-menu-bar-left-div .footer-onemenu, .footer-menu-bar .footer-menu-bar-right-div .footer-onemenu {
     align-items: center;
     color: #495057;
     cursor: pointer;
@@ -593,7 +593,7 @@ article, main, section {
     font-weight: 500;
 }
 
-.Linker_btnMore__1PEzz>.Linker_linkerIcon__1QJpf {
+.footer-link-button>.footer-link-button-i {
     display: inline-block!important;
     transform: rotate(90deg);
     animation: Linker_activeHide__1p9gT .5s forwards;
@@ -622,21 +622,21 @@ article, main, section {
     content: "";
 }
 
-.FooterMenu_bar__22KhW .FooterMenu_left__3rQKu .FooterMenu_menu__3nRbk i:before, .FooterMenu_bar__22KhW .FooterMenu_left__3rQKu .FooterMenu_menu__3nRbk svg, .FooterMenu_bar__22KhW .FooterMenu_right__28Tuu .FooterMenu_menu__3nRbk i:before, .FooterMenu_bar__22KhW .FooterMenu_right__28Tuu .FooterMenu_menu__3nRbk svg {
+.footer-menu-bar .footer-menu-bar-left-div .footer-onemenu i:before, .footer-menu-bar .footer-menu-bar-left-div .footer-onemenu svg, .footer-menu-bar .footer-menu-bar-right-div .footer-onemenu i:before, .footer-menu-bar .footer-menu-bar-right-div .footer-onemenu svg {
     font-size: 16px;
 }
 /* ============================/before============================= */
 
-.FooterMenu_bar__22KhW .FooterMenu_left__3rQKu .FooterMenu_menu__3nRbk.FooterMenu_bold__2zNg0, .FooterMenu_bar__22KhW .FooterMenu_right__28Tuu .FooterMenu_menu__3nRbk.FooterMenu_bold__2zNg0 {
+.footer-menu-bar .footer-menu-bar-left-div .footer-onemenu.footer-menu-bold, .footer-menu-bar .footer-menu-bar-right-div .footer-onemenu.footer-menu-bold {
     font-weight: 700;
 }
 
-.FooterMenu_bar__22KhW .FooterMenu_right__28Tuu {
+.footer-menu-bar .footer-menu-bar-right-div {
     flex-wrap: wrap;
 }
 
 
-.withIcon_icon__1ao4d {
+.footer-arrow-icon {
     display: block;
     transform: scale(1);
     transition: transform .3s ease-out;
@@ -645,13 +645,13 @@ article, main, section {
     fill: currentColor;
 }
 
-.FooterMenu_openLinkIcon__3YMFQ {
+.footer-link-arrow-icon {
     display: inline-block;
     margin-left: 6px;
     vertical-align: text-top;
 }
 
-.withIcon_icon__1ao4d {
+.footer-arrow-icon {
     display: block;
     transform: scale(1);
     transition: transform .3s ease-out;
@@ -660,32 +660,32 @@ article, main, section {
     fill: currentColor;
 }
 
-.FooterMenu_openLinkIcon__3YMFQ {
+.footer-link-arrow-icon {
     display: inline-block;
     margin-left: 6px;
     vertical-align: text-top;
 }
 
 
-.FooterContainer_container__3LibG {
+.footer-container-container {
     padding-bottom: 58px;
 }
 
-footer.inner-utils .FooterContainer_container__3LibG {
+footer.inner-utils .footer-container-container {
     padding-bottom: 0;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_inner__3Nket {
+.footer-container-container .footer-container-inner {
     display: flex;
     flex-direction: column;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF {
+.footer-container-container .footer-container-left-section {
     border-bottom: 1px solid #f2f4f6;
     padding: 16px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_title__1mcxQ {
+.footer-container-container .footer-container-left-section .footer-container-title {
     align-items: center;
     color: #212529;
     display: flex;
@@ -696,7 +696,7 @@ footer.inner-utils .FooterContainer_container__3LibG {
     font-weight: 700;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_title__1mcxQ:before {
+.footer-container-container .footer-container-left-section .footer-container-title:before {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA8UExURUdwTCUoLSEmKyEmKSElKScsLiImKiElKSElKSEmKiElKiIlKyElKiInKyIlKSIlKiImKSQqLS1AQCElKRLEMhcAAAATdFJOUwAiVJbvEoz7vm7ZSaMxdqumGwUhhJyxAAABbElEQVRIx6VW2aKEIAglcwGrafH///VW0zSh0DKXR0Q8HDYB/i/OkB8QW0/GXVtXhCHtEpDGc/M+FdJWOpY6JEGCV5A1NiliG8n+lXQJVJhPbTqVesouXNjPNy7whCJ+hqrhZ7hkzBnkLg6RO8aP3X3R8Zlgv+zWzJWZPVBd03xu2IHf88vw9p+MLOyzzIdPznk9dDBuCO0IHa+S7QGeVQB/wMCz/65EYroIsLODAFGgFjn/MQb1Aq6cZikKLLscUliYNXo5NFnQK+VZCFn5eKE+vGY/c9SFUgeDYv8CGGOuHHKSuP/CfqVJvhAn6ISWRRWSARcF9aAFPRP+UoDKtEYFKmmJ0y4YoTTeNYtoZaQ6r5KgUN6nQkIDbTEQSZAqqUW3PpX89OIQ2Po0b4XjEMjGzPZCdzItx8KZ9b7UOXVUav13czl8++PRuG8fLpR2erSycjy/LUV97dbu0WLvq2dfh+r252S49zm5lD8cD271e3tWtwAAAABJRU5ErkJggg==) no-repeat 50%/16px 16px;
     content: "";
     display: inline-block;
@@ -705,7 +705,7 @@ footer.inner-utils .FooterContainer_container__3LibG {
     width: 16px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_directBtn__2ICcT {
+.footer-container-container .footer-container-left-section .footer-container-direct-button {
     line-height: 20px;
     letter-spacing: 0;
     font-size: 14px;
@@ -719,19 +719,19 @@ footer.inner-utils .FooterContainer_container__3LibG {
     color: #495057;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_directBtn__2ICcT i {
+.footer-container-container .footer-container-left-section .footer-container-direct-button i {
     margin-left: 8px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_directBtn__2ICcT i:before {
+.footer-container-container .footer-container-left-section .footer-container-direct-button i:before {
     font-size: 16px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_directBtn__2ICcT.FooterContainer_customcenterBtn__4TIQa {
+.footer-container-container .footer-container-left-section .footer-container-direct-button.footer-container-center-button {
     width: 100%;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_enableTime__B19o3 {
+.footer-container-container .footer-container-left-section .footer-container-enable-time {
     line-height: 18px;
     letter-spacing: 0;
     font-size: 12px;
@@ -743,12 +743,12 @@ footer.inner-utils .FooterContainer_container__3LibG {
     color: #868e96;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_enableTime__B19o3 dt {
+.footer-container-container .footer-container-left-section .footer-container-enable-time dt {
     margin-bottom: 4px;
     font-weight: 700;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_rightSection__2uaQk {
+.footer-container-container .footer-container-right-section {
     padding: 24px 16px 0;
     line-height: 18px;
     letter-spacing: 0;
@@ -757,42 +757,42 @@ footer.inner-utils .FooterContainer_container__3LibG {
 }
 
 /* after */
-.FooterInfo_info__1aB0e li:after {
+.footer-info-ul li:after {
     content: "|";
     color: #dde2e6;
     margin: 0 5px;
 }
 
-.FooterInfo_info__1aB0e li {
+.footer-info-ul li {
     display: inline;
     color: #495057;
 }
 
-.FooterInfo_contactInfoWrap__2u2vv {
+.footer-contactinfo-wrap {
     display: block;
 }
 
-.FooterInfo_contactInfoWrap__2u2vv .FooterInfo_contactInfo__sPvNn {
+.footer-contactinfo-wrap .footer-contact-info {
     margin-top: 4px;
 }
 
-.FooterInfo_copyright__802qi {
+.footer-info-copyright {
     display: inline-block;
     margin-top: 4px;
     color: rgba(0,0,0,.84);
     font-weight: 900;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_rightSection__2uaQk .FooterContainer_infoNotice__3m1oJ {
+.footer-container-container .footer-container-right-section .footer-container-info-notice {
     color: #868e96;
     margin-top: 16px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_rightSection__2uaQk .FooterContainer_infoNotice__3m1oJ p {
+.footer-container-container .footer-container-right-section .footer-container-info-notice p {
     display: inline;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_rightSection__2uaQk .FooterContainer_appStoreSection__2zpAZ {
+.footer-container-container .footer-container-right-section .footer-container-appstore-section {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -806,7 +806,7 @@ footer.inner-utils .FooterContainer_container__3LibG {
     line-height: 24px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_rightSection__2uaQk .FooterContainer_appStoreSection__2zpAZ a {
+.footer-container-container .footer-container-right-section .footer-container-appstore-section a {
     line-height: 20px;
     letter-spacing: 0;
     font-size: 14px;
@@ -831,7 +831,7 @@ footer.inner-utils .FooterContainer_container__3LibG {
     font-size: 24px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_rightSection__2uaQk .FooterContainer_appStoreSection__2zpAZ a:before {
+.footer-container-container .footer-container-right-section .footer-container-appstore-section a:before {
     margin-right: 4px;
 }
 
@@ -874,44 +874,44 @@ footer.inner-utils .FooterContainer_container__3LibG {
     padding-left: 15px;
 }
 
-.FooterMenu_bar__22KhW {
+.footer-menu-bar {
     flex-direction: row;
     margin: 0 auto;
     padding: 0 80px;
     max-width: 1440px;
 }
 
-.FooterMenu_bar__22KhW .FooterMenu_left__3rQKu, .FooterMenu_bar__22KhW .FooterMenu_right__28Tuu {
+.footer-menu-bar .footer-menu-bar-left-div, .footer-menu-bar .footer-menu-bar-right-div {
     width: auto;
 }
 
-.FooterMenu_bar__22KhW .FooterMenu_left__3rQKu .FooterMenu_menu__3nRbk, .FooterMenu_bar__22KhW .FooterMenu_right__28Tuu .FooterMenu_menu__3nRbk {
+.footer-menu-bar .footer-menu-bar-left-div .footer-onemenu, .footer-menu-bar .footer-menu-bar-right-div .footer-onemenu {
     padding: 0 12px 0 16px;
     width: auto;
 }
 
-.FooterMenu_bar__22KhW .FooterMenu_right__28Tuu {
+.footer-menu-bar .footer-menu-bar-right-div {
     flex-wrap: nowrap;
     margin-left: auto;
 }
 
-.FooterContainer_container__3LibG {
+.footer-container-container {
     padding: 0 80px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_inner__3Nket {
+.footer-container-container .footer-container-inner {
     flex-direction: row;
     gap: 80px;
     margin: 0 auto;
     max-width: 1280px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF {
+.footer-container-container .footer-container-left-section {
     padding: 40px 0 80px;
     width: 255px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_title__1mcxQ {
+.footer-container-container .footer-container-left-section .footer-container-title {
     margin-bottom: 4px;
     line-height: 28px;
     letter-spacing: -.6px;
@@ -919,17 +919,17 @@ footer.inner-utils .FooterContainer_container__3LibG {
     font-weight: 700;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_title__1mcxQ:before {
+.footer-container-container .footer-container-left-section .footer-container-title:before {
     background-size: 20px 20px;
     height: 20px;
     width: 20px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_buttonBlock__FQR2E {
+.footer-container-container .footer-container-left-section .footer-container-button-div {
     flex-direction: column;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_buttonBlock__FQR2E .FooterContainer_directBtn__2ICcT {
+.footer-container-container .footer-container-left-section .footer-container-button-div .footer-container-direct-button {
     line-height: 28px;
     letter-spacing: -.3px;
     font-size: 16px;
@@ -939,19 +939,19 @@ footer.inner-utils .FooterContainer_container__3LibG {
     background: #fff;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_buttonBlock__FQR2E .FooterContainer_directBtn__2ICcT:nth-child(2) {
+.footer-container-container .footer-container-left-section .footer-container-button-div .footer-container-direct-button:nth-child(2) {
     padding-left: 0;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_buttonBlock__FQR2E .FooterContainer_directBtn__2ICcT i {
+.footer-container-container .footer-container-left-section .footer-container-button-div .footer-container-direct-button i {
     margin-left: 8px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_buttonBlock__FQR2E .FooterContainer_directBtn__2ICcT i:before {
+.footer-container-container .footer-container-left-section .footer-container-button-div .footer-container-direct-button i:before {
     font-size: 20px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_leftSection__2BtHF .FooterContainer_enableTime__B19o3 {
+.footer-container-container .footer-container-left-section .footer-container-enable-time {
     line-height: 20px;
     letter-spacing: 0;
     font-size: 14px;
@@ -960,7 +960,7 @@ footer.inner-utils .FooterContainer_container__3LibG {
     padding-top: 20px;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_rightSection__2uaQk {
+.footer-container-container .footer-container-right-section {
     padding: 40px 0 80px;
     line-height: 20px;
     letter-spacing: 0;
@@ -968,17 +968,17 @@ footer.inner-utils .FooterContainer_container__3LibG {
     font-weight: 400;
 }
 
-.FooterInfo_contactInfoWrap__2u2vv {
+.footer-contactinfo-wrap {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_rightSection__2uaQk .FooterContainer_infoNotice__3m1oJ p {
+.footer-container-container .footer-container-right-section .footer-container-info-notice p {
     display: block;
 }
 
-.FooterContainer_container__3LibG .FooterContainer_rightSection__2uaQk .FooterContainer_appStoreSection__2zpAZ {
+.footer-container-container .footer-container-right-section .footer-container-appstore-section {
     margin-bottom: 0;
     margin-top: 40px;
 }
@@ -1003,5 +1003,3 @@ footer.inner-utils .FooterContainer_container__3LibG {
 :not(svg){
 	
 }
-
-

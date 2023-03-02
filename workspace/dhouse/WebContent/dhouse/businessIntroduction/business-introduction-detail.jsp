@@ -30,7 +30,7 @@
                 <div id="text-wrapper">
                     <div id="text-top">
                         <div id="text-top-title">
-                            <span id="title-text">뷰티</span>
+                            <span id="title-text"><a>기업목록</a> > 기업소개</span>
                         </div>
                         <div id="under-title-wrapper">
                             <div id="under-title">

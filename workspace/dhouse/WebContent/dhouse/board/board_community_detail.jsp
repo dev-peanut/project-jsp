@@ -17,14 +17,15 @@
 <body>
 	<div id="page-container">
 		<div class="black-bg-wrap" style="display: none;"></div>
-	<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
+<%-- 			<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>  --%>
+				<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
 		<!-- 헤더 적용  -->
 		<div id="newContainer">
 			<div id="wcommunityWrap">
 				<div class="wcommunity-wrap">
 					<div class="wcommunity-top">
 						<h2><a href="/web/wcast/main"><em class="logo_wcommunity">wadiz</em></a></h2>
-						<!-- 배너 내 문구  -->
+						<!-- 배너 내 문구  -->	
 						<div id="wcastTopPC" class="wcommunity-topmenu"></div>
 					</div>
 					<!-- 배너 끝-->

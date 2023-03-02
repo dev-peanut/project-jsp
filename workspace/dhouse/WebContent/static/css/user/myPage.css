@@ -567,7 +567,9 @@ a.Mint {
     max-width: 327px;
 }
 
-
+.profileSet:hover{
+	color: E9ECEF;
+}
 
 
 }

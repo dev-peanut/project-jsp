@@ -10,6 +10,14 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
+    <servlet-name>main</servlet-name>
+    <servlet-class>com.dhouse.main.MainFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>main</servlet-name>
+    <url-pattern>*.main</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>user</servlet-name>
     <servlet-class>com.dhouse.user.UserFrontController</servlet-class>
   </servlet>
@@ -88,5 +96,13 @@
   <servlet-mapping>
     <servlet-name>banner</servlet-name>
     <url-pattern>*.banner</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>promotion</servlet-name>
+    <servlet-class>com.dhouse.promotionboard.PromotionBoardFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>promotion</servlet-name>
+    <url-pattern>*.promotion</url-pattern>
   </servlet-mapping>
 </web-app>

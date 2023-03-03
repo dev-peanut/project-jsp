@@ -14,7 +14,7 @@
 	<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
 </head>
 <body class="Wrapper" aria-hidden="true">
-	<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header-my.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header-my.jsp"></jsp:include>
     <div class="body1" data-react-modal-body-trap="" tabindex="0" style="position: absolute; opacity: 0;"></div>
     <div id="root">
         <div id="AppLayout_Container" class="Layout">
@@ -191,7 +191,7 @@
 	            </div>
 	        </div>
 	    </div>
-	    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
+	   <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
 <script type="text/javascript" src="../../static/js/user/banner-register.js"></script>
 </html>

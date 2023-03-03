@@ -20,10 +20,9 @@ public class CorpFrontController extends HttpServlet {
 		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
 
-		if(target.equals("/user/listOk")) {
+		if(target.equals("/listOk")) {
 			result = new CorpListOkController().execute(req, resp);
-			
-		}else if(target.equals("/corp/detailOk")){
+		}else if(target.equals("/detailOk")){
 			result = new CorpDetailOkController().execute(req, resp);
 			
 		}else if(target.equals("/write")){
@@ -34,6 +33,8 @@ public class CorpFrontController extends HttpServlet {
 			
 		}else if(target.equals("/updateOk")){
 			
+		}else if(target.equals("corp/greeting")){
+			result = new CorpGreetingController().execute(req, resp);
 		}else {
 			
 		}

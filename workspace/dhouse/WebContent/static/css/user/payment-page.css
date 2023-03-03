@@ -588,9 +588,8 @@ label.Radio1 .Radio_label {
     line-height: 30px;
     font-size: 20px;
 }
-
-
-.Checkbox_content:after {
+/* 
+ .Checkbox_icon:after {
     display: inline-block;
     margin-top: -0.2em;
     vertical-align: middle;
@@ -612,8 +611,57 @@ label.Radio1 .Radio_label {
     color: #fff;
     font-size: 14px;
     font-weight: 700;
-}
+}   */
+ 
+ 
+.withIcon CheckIcon:after{
+     display: inline-block;
+    margin-top: -0.2em;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: wadizicon!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    speak: none;
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+ }
 
+ .Checkbox_content:after {
+    display: inline-block;
+    margin-top: -0.2em;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: wadizicon!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    speak: none;
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+} 
+ 
 
 .Checkbox1 {
     display: block;
@@ -639,7 +687,7 @@ label.Radio1 .Radio_label {
 .Checkbox1 .Checkbox_input {
     position: absolute;
     visibility: hidden;
-    opacity: 0;
+    opacity: 1;
     margin: 0;
     border: none;
     background-color: transparent;
@@ -673,7 +721,7 @@ label.Radio1 .Radio_label {
 
 .Checkbox1 .Checkbox_icon svg {
     position: absolute;
-    top: 50%;
+    top: 37%;
     left: 50%;
     transform: translate(-50%,-50%);
     transition-property: opacity,width,fill;
@@ -683,9 +731,9 @@ label.Radio1 .Radio_label {
     fill: #fff;
 }
 
-.Checkbox1 .Checkbox_input+.Checkbox_icon .CheckIcon, .Checkbox1 .Checkbox_input .Checkbox_icon .RemoveIcon {
-    /* opacity: 0; */
-}
+/* .Checkbox1 .Checkbox_input+.Checkbox_icon .CheckIcon, .Checkbox1 .Checkbox_input .Checkbox_icon .RemoveIcon {
+     opacity: 0; 
+} */
 
 .Checkbox1.Terms_check2 .Checkbox_content {
     display: inline-block;
@@ -890,6 +938,10 @@ button[class*=Button_button] {
     width: 343px;
 }
 
+.FloatingSection{
+width: 350px
+}
+
 .Layout .Layout_floatingSectionContainer__2QCzS .Layout_floatingSection__31pLD {
     position: sticky;
     top: 40px;
@@ -918,3 +970,24 @@ input[type="checkbox"]:checked::before { /* 체크 모양 */
         }
 
 }
+
+/*.Checkbox1 .Checkbox_input+ .Checkbox_icon .CheckIcon .Checkbox1 .Checkbox_input .Checkbox_icon  .RemoveIcon  {
+    opacity: 1;
+    background-color: #00c4c4;
+}  
+*/
+
+/* 
+#checkboxmint{
+    opacity: 1;
+    background-color: #00c4c4;
+}
+
+ */
+ 
+ #checkbutton{
+ opacity:0;
+ }
+ 
+ 
+ 

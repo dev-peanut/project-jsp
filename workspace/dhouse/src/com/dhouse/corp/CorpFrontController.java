@@ -22,7 +22,6 @@ public class CorpFrontController extends HttpServlet {
 
 		if(target.equals("/listOk")) {
 			result = new CorpListOkController().execute(req, resp);
-			
 		}else if(target.equals("/detailOk")){
 			result = new CorpDetailOkController().execute(req, resp);
 			

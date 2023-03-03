@@ -6,6 +6,7 @@ function showCorpList(){
 	let text = "";
 	const $content = $("#contents-wrapper");
 	corps.forEach(corp => {
+		console.log(corps[corp.corpId]);
 		text += `
 			<div class="content-wrapper">
 	            <div class="content">

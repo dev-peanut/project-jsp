@@ -29,22 +29,22 @@
 						</li>
 						<li class="header-menu-category-li">
 							<a class="header-menu-category-a" href="/web/wreward/comingsoon">
-								<span>오픈예정</span>
+								<span>사업소개</span>
 							</a>
 						</li>
 						<li class="header-menu-category-li">
 							<a class="header-menu-category-a" href="/web/wreward/main">
-								<span>펀딩 +</span>
+								<span>기부하기</span>
 							</a>
 						</li>
 						<li class="header-menu-category-li">
 							<a class="header-menu-category-a" href="/web/preorder/main">
-								<span>프리오더</span>
+								<span>홍보하기</span>
 							</a>
 						</li>
 						<li class="header-menu-category-li">
 							<a class="header-menu-category-a" href="/web/store/main">
-								<span>스토어</span>
+								<span>고객센터</span>
 							</a>
 						</li>
 					</ul>

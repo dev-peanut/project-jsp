@@ -66,7 +66,6 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script>
-	console.log(`${corps}`);
 	let contextPath = "${pageContext.request.contextPath}";
 	let page = `${page}`;
 	let corps = `${corps}`;

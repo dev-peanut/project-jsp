@@ -8,6 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Result;
+import com.dhouse.banner.BannerApplyOkController;
+import com.dhouse.banner.BannerDeleteOkController;
+import com.dhouse.banner.BannerDetailOkController;
+import com.dhouse.banner.BannerModifyOkController;
+import com.dhouse.banner.BannerPaymentOkController;
 
 public class DonationBoardFrontController extends HttpServlet{
 	
@@ -17,7 +22,36 @@ public class DonationBoardFrontController extends HttpServlet{
 		String contextPath = req.getContextPath();
 		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
+
 		
+		System.out.println(target);
+		
+		if(target.equals("/liskOk")) {
+			result = new DonationBoardListOkController().execute(req, resp);
+			
+		}else if(target.equals("/deleteOk")){
+			result = new DonationBoardDeleteOkController().execute(req, resp);
+			
+		}else if(target.equals("/detailOk")){
+			result = new DonationBoardDetailOkController().execute(req, resp);
+			
+		}else if(target.equals("/modifyOk")){
+			result = new DonationBoardModifyOkController().execute(req, resp);
+			
+		}else if(target.equals("/writeOk")){
+			result = new DonationBoardWriteOkController().execute(req, resp);
+
+		}else {
+			
+		}
+
+		if (result != null) {
+			if (result.isRedirect()) {
+				resp.sendRedirect(result.getPath());
+			} else {
+				req.getRequestDispatcher(result.getPath()).forward(req, resp);
+			}
+		}	
 	}
 	
 	@Override

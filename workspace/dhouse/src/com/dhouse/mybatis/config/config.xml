@@ -10,15 +10,9 @@
       <!-- <typeAlias type="com.dhouse.user.domain.UserVO" alias="userVO"/> -->
       <!-- <typeAlias type="com.dhouse.corp.domain.CorpVO" alias="corpVO"/> -->
       <typeAlias type="com.dhouse.corp.domain.CorpDTO" alias="corpDTO"/>
-<<<<<<< HEAD
-     <!-- <typeAlias type="com.dhouse.food.domain.MyPageVO" alias="myPageVO"/> -->
-     <!-- <typeAlias type="com.dhouse.food.domain.MainVO" alias="mainVO"/> -->
-     <!-- <typeAlias type="com.dhouse.food.domain.FoodVO" alias="foodVO"/> -->
-=======
 	  <!-- <typeAlias type="com.dhouse.food.domain.MyPageVO" alias="myPageVO"/> -->
 	  <!-- <typeAlias type="com.dhouse.food.domain.MainVO" alias="mainVO"/> -->
 	  <!-- <typeAlias type="com.dhouse.food.domain.FoodVO" alias="foodVO"/> -->
->>>>>>> project/master
       <!-- <typeAlias type="com.dhouse.reply.domain.ReplyVO" alias="replyVO"/> -->
       <!-- <typeAlias type="com.dhouse.promotionfile.domain.PromotionFileVO" alias="promotionFileVO"/> -->
       <!-- <typeAlias type="com.dhouse.donationfile.domain.DonationFileVO" alias="donationFileVO"/> -->
@@ -67,7 +61,4 @@
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> project/master

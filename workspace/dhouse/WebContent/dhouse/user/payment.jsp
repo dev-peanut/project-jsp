@@ -181,8 +181,8 @@
 								<section class="Section_container Floating">
 									<div class="Active1 Active2">
 										<div class="PaymentTerms">
-											<label class="Checkbox1 Terms_check1 Terms_check2 Terms_check3">
-												<input name="paymentRequiredTerms" type="checkbox" class="Checkbox_input" id="check_all">
+									<label class="Checkbox1 Terms_check1 Terms_check2 Terms_check3">
+												<!-- <input name="paymentRequiredTerms" type="checkbox" class="Checkbox_input" id="check_all">
 												<span class="Checkbox_icon" aria-hidden="true">
 													 <svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon RemoveIcon" aria-hidden="true">
 														<path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
@@ -193,32 +193,32 @@
 												</span>
 												<span class="Checkbox_content">
 													<span>결제 진행 필수 동의</span>
-												</span>
-											</label>
-											<div class="termsList">
-												<label for="serviceTerms" class="termsItem">
-													<label for="serviceTerms" class="Checkbox1 Checkbox2 Checkbox3">
+												</span> -->
+											</label> 
+											 <div class="termsList"> 
+											 	<label for="serviceTerms" class="termsItem">
+												<!--	<label for="serviceTerms" class="Checkbox1 Checkbox2 Checkbox3">
 														<input name="serviceTerms" id="serviceTerms" type="checkbox" class="Checkbox_input">
 														<span class="Checkbox_icon" aria-hidden="true">
 															<svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon RemoveIcon" aria-hidden="true">
 																<path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
 															</svg>
-															<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon CheckIcon" aria-hidden="true">
+														 	<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon CheckIcon" aria-hidden="true">
 																<path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
 															</svg>
 														</span>
 														<span class="Checkbox_content"></span>
 													</label>
 													<span class="Terms_text">구매 조건, 결제 진행 및 결제 대행 서비스 동의 (필수)</span>
-												</label>
+												</label> -->
 												<label for="privacyTerms" class="termsItem">
 													<label for="privacyTerms" class="Checkbox1 Checkbox2 Checkbox3">
 														<input name="privacyTerms" id="privacyTerms" type="checkbox" class="Checkbox_input">
-															<span class="Checkbox_icon" aria-hidden="true">
-																<svg viewBox="0 0 16 2" focusable="false" role="presentation" class="withIcon RemoveIcon" aria-hidden="true">
+															<span class="Checkbox_icon" aria-hidden="true" id="checkboxmint">
+																<svg viewBox="0 0 16 2" focusable="false" role="presentation" id="checkbutton" class="withIcon RemoveIcon" aria-hidden="true">
 																	<path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
 																</svg>
-																<svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon CheckIcon" aria-hidden="true">
+																 <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon CheckIcon" aria-hidden="true">
 																	<path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
 																</svg>
 															</span>
@@ -253,6 +253,7 @@
 			<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 		</main>
 	</div>
-</body><script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/user/pament.js"></script>
+</body>
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/user/payment.js"></script>
 </html>

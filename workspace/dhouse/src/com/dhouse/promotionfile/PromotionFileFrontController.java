@@ -1,4 +1,4 @@
-package com.dhouse.corp;
+package com.dhouse.promotionfile;
 
 import java.io.IOException;
 
@@ -8,11 +8,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Result;
+import com.dhouse.promotionboard.PromotionBoardDeleteOkController;
 import com.dhouse.promotionboard.PromotionBoardDetailOkController;
 import com.dhouse.promotionboard.PromotionBoardListOkController;
+import com.dhouse.promotionboard.PromotionBoardModifyOkController;
+import com.dhouse.promotionboard.PromotionBoardWriteOkController;
 
-public class CorpFrontController extends HttpServlet {
-
+public class PromotionFileFrontController extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String uri = req.getRequestURI();
@@ -20,22 +22,14 @@ public class CorpFrontController extends HttpServlet {
 		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
 
-		if(target.equals("/listOk")) {
-			result = new CorpListOkController().execute(req, resp);
+		
+		System.out.println(target);
+		
+		if(target.equals("/uploadOk")) {
+			result = new PromotionFileUploadOkController().execute(req, resp);
 			
-		}else if(target.equals("/detailOk")){
-			result = new CorpDetailOkController().execute(req, resp);
-			
-		}else if(target.equals("/write")){
-			
-		}else if(target.equals("/writeOk")){
-			
-		}else if(target.equals("/update")){
-			
-		}else if(target.equals("/updateOk")){
-			
-		}else if(target.equals("corp/greeting")){
-			result = new CorpGreetingController().execute(req, resp);
+		}else if(target.equals("")){
+
 		}else {
 			
 		}
@@ -46,12 +40,11 @@ public class CorpFrontController extends HttpServlet {
 			} else {
 				req.getRequestDispatcher(result.getPath()).forward(req, resp);
 			}
-		}
+		}	
 	}
-
+	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		doGet(req, resp);
 	}
-
 }

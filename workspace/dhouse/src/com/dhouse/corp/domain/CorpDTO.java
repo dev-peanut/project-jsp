@@ -118,6 +118,14 @@ public class CorpDTO {
 		this.foodSum = foodSum;
 	}
 
+	public Long getFoodCount() {
+		return foodCount;
+	}
+
+	public void setFoodCount(Long foodCount) {
+		this.foodCount = foodCount;
+	}
+
 	public String getFoodRequestDate() {
 		return foodRequestDate;
 	}
@@ -156,9 +164,9 @@ public class CorpDTO {
 				+ userPassword + ", userName=" + userName + ", userNickname=" + userNickname + ", userPhone="
 				+ userPhone + ", userEmail=" + userEmail + ", corpAddress=" + corpAddress + ", corpRegisterNumber="
 				+ corpRegisterNumber + ", corpIntroductionText=" + corpIntroductionText + ", corpFileSystemName="
-				+ corpFileSystemName + ", foodSum=" + foodSum + ", foodRequestDate=" + foodRequestDate
-				+ ", foodFileSystemName=" + foodFileSystemName + ", levelLevel=" + levelLevel + ", levelDiscount="
-				+ levelDiscount + "]";
+				+ corpFileSystemName + ", foodSum=" + foodSum + ", foodCount=" + foodCount + ", foodRequestDate="
+				+ foodRequestDate + ", foodFileSystemName=" + foodFileSystemName + ", levelLevel=" + levelLevel
+				+ ", levelDiscount=" + levelDiscount + "]";
 	}
 
 	@Override
@@ -185,6 +193,8 @@ public class CorpDTO {
 			return false;
 		return true;
 	}
+
+	
 	
 	
 }

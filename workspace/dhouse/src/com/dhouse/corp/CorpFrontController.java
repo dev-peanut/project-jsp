@@ -20,29 +20,46 @@ public class CorpFrontController extends HttpServlet {
 		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
 
+		System.out.println("1. " + target);
+		
 		if(target.equals("/listOk")) {
+			System.out.println("2. " + target);
+			
 			result = new CorpListOkController().execute(req, resp);
+		}else if(target.equals("/list")){
+			System.out.println("2. " + target);
+			result = new CorpListController().execute(req, resp);
+//			result.setPath("/dhouse/businessIntroduction/business-introduction.jsp");
 		}else if(target.equals("/detailOk")){
+			System.out.println("2. " + target);
 			result = new CorpDetailOkController().execute(req, resp);
 			
 		}else if(target.equals("/write")){
+			System.out.println("2. " + target);
 			
 		}else if(target.equals("/writeOk")){
+			System.out.println("2. " + target);
 			
 		}else if(target.equals("/update")){
+			System.out.println("2. " + target);
 			
 		}else if(target.equals("/updateOk")){
+			System.out.println("2. " + target);
 			
 		}else if(target.equals("corp/greeting")){
 			result = new CorpGreetingController().execute(req, resp);
 		}else {
+			System.out.println("3. " + target);
+			System.err.println("cant find path");
 			
 		}
 
 		if (result != null) {
 			if (result.isRedirect()) {
+				System.out.println("redirect");
 				resp.sendRedirect(result.getPath());
 			} else {
+				System.out.println("forward");
 				req.getRequestDispatcher(result.getPath()).forward(req, resp);
 			}
 		}

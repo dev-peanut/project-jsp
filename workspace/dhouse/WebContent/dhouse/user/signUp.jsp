@@ -1,37 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>개인 회원가입</title>
+
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
 <link href="${pageContext.request.contextPath}/static/css/user/signUp.css" rel="stylesheet">
 </head>
 <body>
     <jsp:include page="${pageContext.request.contextPath}/dhouse/user/user-header.jsp"></jsp:include>
-	<!-- <header>
-		<div id="wrapper">
-			<h1 id="header-logo">
-				<a href="#" id="header-a-tag">
-					<span class="header-logo-span"></span>
-					<svg id="header-svg" xmlns="http://www.w3.org/2000/svg" width="85" height="25" viewBox="0 0 85 25"><path fill="#1D2129" fill-rule="nonzero" d="M58.49 2.23h2.11v21.29H59a1.73 1.73 0 0 1-1.62-1.16 9 9 0 0 1-10.93-.28 7.48 7.48 0 0 1-2.75-6.29 7.65 7.65 0 0 1 12.79-5.07V4.23a2 2 0 0 1 2-2zm-6.3 18.62a4.36 4.36 0 0 0 4.16-4.52 4.19 4.19 0 1 0-8.35 0 4.36 4.36 0 0 0 4.19 4.52zM42 23.52h-1.52a1.73 1.73 0 0 1-1.64-1.16 9 9 0 0 1-10.93-.28 7.48 7.48 0 0 1-2.75-6.29A7.65 7.65 0 0 1 38 10.72a2 2 0 0 1 1.9-1.79H42v14.59zm-8.41-2.67h.02a4.35 4.35 0 0 0 4.15-4.52 4.35 4.35 0 0 0-4.17-4.51 4.35 4.35 0 0 0-4.17 4.51 4.36 4.36 0 0 0 4.17 4.52zM83.47 8.94v2.11l-7.07 9.06h7.06v3.47h-13v-2.1l7.08-9.07h-6.62v-1.47a2 2 0 0 1 2-2h10.55zM65.86 7.3a2.48 2.48 0 1 1 0-4.96 2.48 2.48 0 0 1 0 4.96zM21.21 8.94h4.14l-4.86 14.59h-4.15l-3.21-9.36-3.21 9.36H5.77L.92 8.94h4.13L8 18l2.5-7.74a2 2 0 0 1 1.86-1.34h2.9l3 9.08 2.95-9.06zm42.65 14.59l-.04-12.59a2 2 0 0 1 2-2h2.11v14.59h-4.07z"></path></svg>
-				</a>
-			</h1>
-			<ul id="header-select">
-				<li class="header-selects" id="header-select-login">
-					<a class="header-selects-a-tag" href="../../app/user/login.jsp"><span class="header-selects-span-tag">로그인</span></a>
-				</li>
-				<li class="header-selects" id="header-select-signUp">
-					<a class="header-selects-a-tag" href="../../app/user/signUp.jsp"><span class="header-selects-span-tag">회원가입</span></a>
-				</li>
-			</ul>
-		</div>
-	</header> -->
 
     <div id="page-container">
         <main id="iam-account-app"> <!-- main -->
@@ -115,13 +100,18 @@
             <div class="signup-intro"> </div>
             <div class="account-container-email">
                 <h3 class="signup-intro-email">이메일 간편가입</h3>
-                <form>
+                <!-- 회원가입 정보 입력 폼 -->
+                <form action="${pageContext.request.contextPath}/signUpOk.user" name="join" method="post">
                		 <div class="email-signup-form-container">
                         <div class="email-field-container">
                             <label class="EmailAuthField">아이디</label>
                             <div class="email-field-input-continer">
                                 <div class="EmailAuthField_inputField">
-                                    <input name="identification" placeholder="아이디 입력" type="text" class="email-field" id="identification-input">
+                                    <input name="userIdentification" placeholder="아이디 입력" type="text" class="email-field id_confirm" id="identification-input">
+                                 	<!-- <div class="check_font" id="id_check"></div> -->
+                                 	<span id="id_ok" style="color:green; display:none; font-size:13px;">사용 가능한 아이디입니다.</span>
+                                 	<span id="id_already" style="color:red; display:none; font-size:13px;">중복된 아이디입니다!</span>
+                                    
                                 </div>
                             </div><!-- email-field-input-continer -->
                             <em class="identification-error error-message">아이디를 입력해주세요.</em>
@@ -129,7 +119,7 @@
                         <!-- 한줄 복사 -->
                         <div class="password-field"><label>비밀번호</label><!-- 비밀번호 -->
                             <div class="password-field-text">
-                                <input name="password" placeholder="비밀번호 입력" type="password"
+                                <input name="userPassword" placeholder="비밀번호 입력" type="password"
                                     class="input-password-container" id="password-input" aria-invalid="false">
                                 <button aria-label="비밀번호 보기" class="Button_TextField_icon" type="button">
                                     <span class="eye" id="eye1">
@@ -147,7 +137,7 @@
 
                         <div class="recheck-password"><label></label>
                             <div class="TextField_field__1B2AH">
-                                <input name="verifyPassword" placeholder="비밀번호 확인" type="password"
+                                <input name="userPassword" placeholder="비밀번호 확인" type="password"
                                     class="re-input-password-container" aria-invalid="false">
                                 <button aria-label="비밀번호 보기" class="Button_TextField_icon" id="eye-wrapper" type="button">
                                     <span class="eye">
@@ -167,7 +157,7 @@
                             <label class="EmailAuthField">닉네임</label>
                             <div class="email-field-input-continer">
                                 <div class="EmailAuthField_inputField">
-                                    <input name="nickName" placeholder="닉네임 입력" type="text" class="nickname-field email-field" id="nickname">
+                                    <input name="userNickname" placeholder="닉네임 입력" type="text" class="nickname-field email-field" id="nickname">
                                 </div>
                             </div><!-- email-field-input-continer -->
                             <em class="nickname-error error-message">최소 2자입니다.</em>
@@ -177,7 +167,7 @@
                             <label class="EmailAuthField">이메일</label>
                             <div class="email-field-input-continer">
                                 <div class="EmailAuthField_inputField">
-                                    <input name="name" placeholder="이메일 입력" type="text" class="email-field" id="email-input">
+                                    <input name="userEmail" placeholder="이메일 입력" type="text" class="email-field" id="email-input">
                                 </div>
                             </div><!-- email-field-input-continer -->
                             <em class="email-error error-message">이메일을 입력해주세요.</em>
@@ -185,14 +175,14 @@
                 	</div>
                     <div class="name-field" id="name-name"><label>이름</label>
                         <div class="TextField_field__1B2AH">
-                            <input name="email" placeholder="이름 입력" type="text" class="name-input" id="name-input">
+                            <input name="userName" placeholder="이름 입력" type="text" class="name-input" id="name-input">
                         </div>
                         <em class="name-error error-message">이름을 입력해주세요.</em>
                     </div>
                     <!-- 이름 끝 -->
                     <div class="name-field phone-field" id="phone-name"><label>핸드폰 번호</label>
                         <div class="TextField_field__1B2AH">
-                            <input name="phoneNumber" placeholder="핸드폰 번호 입력" type="text" class="name-input" id="input-phone-number" maxlength="11">
+                            <input name="userPhone" placeholder="핸드폰 번호 입력" type="text" class="name-input" id="input-phone-number" maxlength="11">
                         </div>
                         <em class="phone-error error-message">핸드폰 번호를 입력해주세요.</em>
                     </div>
@@ -221,8 +211,8 @@
                     </div>
 
 
-                    <button class="signup-submit-button" type="button" > <!-- 완료 버튼 -->
-                        <span><span class="signup-submit-button-text">완료</span></span></button>
+                    <button class="signup-submit-button" type="submit" > <!-- 완료 버튼 -->
+                        <span><span class="signup-submit-button-text" >완료</span></span></button>
                 </form>
 
                     <p class="login-page-link">이미 와디즈 계정이 있나요?<!-- 하단 메세지 -->
@@ -237,5 +227,6 @@
     
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<script src="${pageContext.request.contextPath}/assets/js/user/signUp.js"></script>
+<script>let contextPath = "${pageContext.request.contextPath}"</script>
+<script src="${pageContext.request.contextPath}/static/js/user/signUp.js"></script>
 </html>

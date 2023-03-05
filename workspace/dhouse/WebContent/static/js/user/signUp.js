@@ -9,6 +9,7 @@ let identificationFlag = false;
 $identificationInput.on("blur", function(){
     var $identificationInputVal = $identificationInput.val();
     var identificationInputVal = $identificationInput.val();
+    var $identificationInputVal = $identificationInput.val();
 
     // 검증에 사용할 정규식 변수 regExp에 저장
     
@@ -25,6 +26,9 @@ $identificationInput.on("blur", function(){
         $identificationInput.css("border-color", "#f66");
         identificationFlag = false;
     }
+    } else if{
+		
+	}
     else {
         $identificationWarning.css("display", "none");
         $identificationInput.css("border-color", "#dde2e6");

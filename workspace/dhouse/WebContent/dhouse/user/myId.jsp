@@ -7,7 +7,7 @@
 <title>기본정보 설정</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/mySet.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/mySet.css">
 </head>
 <body>
 	<div>
@@ -27,7 +27,7 @@
                        <input type="text" name="realName" class="input-text disable hide" maxlength="20" placeholder="이름" value="" disabled="" style="display: none;">
                        <div class="input-btn-wrap">
 	                        	<div class="input">
-	                            	<input type="email" id="userName" name="userName" class="disable input-text" placeholder="이메일 계정" value="pdy0722@gmail.com" disabled="">
+	                            	<input type="email" id="userEmail" name="userName" class="disable input-text" placeholder="이메일 계정" value="pdy0722@gmail.com" disabled="" onclick="click">
 	                          	</div>
 	                          	<div id="emailChangeBtn" class="emailAuthBtn btn" data-status="change">
 	                            	<a href="#" onclick="return false;">
@@ -64,18 +64,18 @@
 	                        <p id="emailTimeOutError" class="error-text emailMsg">시간이 종료되었습니다. 다시 인증해주세요.</p>
 	                        <p id="emailSuccessNumberCheckMsg" class="error-text emailMsg" style="color:#50e3c2;">인증이 완료되었습니다.</p>
 	                        <p id="emailError" class="error-text emailMsg">이메일 형식이 올바르지 않습니다.</p>
-                          <p id="emailJoinedError" class="error-text emailMsg">이미 회원가입된 계정입니다. 다른 이메일을 입력해주세요.</p>
-                          <p id="emailDropOutError" class="error-text emailMsg">90일 이내에 탈퇴한 이력이 있는 계정은 사용하실 수 없습니다. 다른 이메일을 입력해주세요.</p>
-                          <p id="checkEmailInfo" class="info-text emailMsg">이메일 인증이 필요합니다.</p>
-                          <p id="changeEmailInfo" class="info-text emailMsg">로그인 아이디와 안내 메일 발송 주소가 변경됩니다.</p>
-                          <p id="sendEmailInfo" class="info-text emailMsg">인증메일이 발송되었습니다.</p>
+							<p id="emailJoinedError" class="error-text emailMsg">이미 회원가입된 계정입니다. 다른 이메일을 입력해주세요.</p>
+							<p id="emailDropOutError" class="error-text emailMsg">90일 이내에 탈퇴한 이력이 있는 계정은 사용하실 수 없습니다. 다른 이메일을 입력해주세요.</p>
+							<p id="checkEmailInfo" class="info-text emailMsg">이메일 인증이 필요합니다.</p>
+							<p id="changeEmailInfo" class="info-text emailMsg">로그인 아이디와 안내 메일 발송 주소가 변경됩니다.</p>
+							<p id="sendEmailInfo" class="info-text emailMsg">인증메일이 발송되었습니다.</p>
 	                        <div class="input-btn-wrap">
 	                          <div class="input">
 	                              <input id="mobileNumber" name="mobileNumber" type="tel" class="disable input-text" placeholder="휴대폰 번호" value="01046152639" disabled="">
 	                          </div>
 	                          <div id="mobileCheckBtn" class="mobileAuthBtn btn" style="display:none;" data-status="check">
 	                              <a href="#" onclick="return false;">
-	                                  <span>인증하기</span>
+	                                  <span>등록하기</span>
 	                              </a>
 	                          </div>
 	                          <div id="mobileChangeBtn" class="mobileAuthBtn btn" data-status="change">
@@ -135,7 +135,7 @@
 	                        </div>
 							 <div class="email-input-wrap small">
 								 <div class="btn-wrap">
-									 <button type="button" id="saveBtn" class="wz button primary block btn-block-mint">확인</button>
+									 <button type="submit" id="saveBtn" class="wz button primary block btn-block-mint">확인</button>
 								 </div>
 							 </div>
 	                    </div>
@@ -151,4 +151,6 @@
 		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/user/myId.js"></script>
 </html>

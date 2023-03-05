@@ -17,6 +17,7 @@ public class UserFrontController extends HttpServlet {
 		String contextPath = req.getContextPath();
 		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
+<<<<<<< HEAD
 
 		if (target.equals("signUp")) {
 			result = new Result();
@@ -42,6 +43,26 @@ public class UserFrontController extends HttpServlet {
 			result = new FindPasswordOkController().execute(req, resp);
 
 		} else {
+=======
+		
+		if(target.equals("signUp")) {
+			result = new Result();
+			result.setPath("/dhouse/user/signUp.jsp");
+			
+		}else if(target.equals("/signUpOk")) {
+			result = new SignUpOkController().execute(req, resp);
+			
+		}else if(target.equals("/loginOk")) {
+			result = new LoginOkController().execute(req, resp);
+			
+		}else if(target.equals("/findIdOk")) {
+			result = new FindIdOkController().execute(req, resp);
+			
+		}else if(target.equals("/findPasswordOk")) {
+			result = new FindPasswordOkController().execute(req, resp);
+			
+		}else {
+>>>>>>> master
 			System.out.println(target);
 		}
 

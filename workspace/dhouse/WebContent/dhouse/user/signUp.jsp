@@ -12,7 +12,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+<<<<<<< HEAD
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
+=======
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
+>>>>>>> master
 <link href="${pageContext.request.contextPath}/static/css/user/signUp.css" rel="stylesheet">
 </head>
 <body>

@@ -227,7 +227,8 @@ body ol, body select, body textarea, body ul {
     left: 16px;
     margin: 0;
     line-height: 22px;
-    font-size: 32px;
+    font-size: 23px;
+    font-weight: 800;
 }
 .web-header .wadiz-logo>a {
     display: block;
@@ -258,7 +259,7 @@ svg:not(:root) {
 /* :not(svg) { 해당 선택자 제외 적용
     transform-origin: 0px 0px;
 } */
-.GNBDesktop_container__3X3Cg { /* 헤더 상단 카테고리 메뉴 - ul태그 */
+.header-menu-category-ul { /* 헤더 상단 카테고리 메뉴 - ul태그 */
     display: inline-block;
     position: static;
     right: 0;
@@ -267,18 +268,18 @@ svg:not(:root) {
     flex-shrink: 0;
     justify-content: space-between;
     z-index: 1;
-    margin-left: 24px;
+    margin-left: -15px;
     padding: 0;
     width: auto;
     list-style: none;
     vertical-align: top;
 }
-.GNBDesktop_item__H8bay { /* 헤더 상단 카테고리 메뉴 - li태그 */
+.header-menu-category-li { /* 헤더 상단 카테고리 메뉴 - li태그 */
     display: inline-block;
     text-decoration: none;
     color: #212529;
 }
-.GNBDesktop_link__1AP6q { /* 헤더 상단 카테고리 메뉴 - a태그 */
+.header-menu-category-a { /* 헤더 상단 카테고리 메뉴 - a태그 */
     line-height: 30px;
     letter-spacing: -.6px;
     font-size: 20px;
@@ -296,14 +297,14 @@ svg:not(:root) {
     right: 0;
     vertical-align: top;
 }
-.DesktopSearchApp_container__2VF9O { /* 헤더 검색창 div */
+.header-search-div { /* 헤더 검색창 div */
     display: inline-block;
     position: relative;
     padding: 8px 16px 8px 0;
     min-width: 185px;
     height: 56px;
 }
-.SearchController_container__35K5i { /* 헤더 검색창 div 내의 div */
+.header-search-index-div { /* 헤더 검색창 div 내의 div */
     line-height: 20px;
     letter-spacing: 0;
     font-size: 14px;
@@ -325,17 +326,17 @@ svg:not(:root) {
     box-sizing: border-box;
     -webkit-appearance: none;
 }
-.SearchTag_emptyTag__1Iu7r { /* 검색창 div 내 왼쪽 여백 div */
+.header-search-empty-div { /* 검색창 div 내 왼쪽 여백 div */
     position: relative;
     width: 16px;
 }
-.SearchController_keyword__3FcFo { /* 검색창 input태그로 감싼 div */
+.header-search-input-div { /* 검색창 input태그로 감싼 div */
     display: flex;
     position: relative;
     flex: 1 1 0%;
     margin-right: 40px;
 }
-.SearchController_keyword__3FcFo input { /* 검색창 input태그 */
+.header-search-input-div input { /* 검색창 input태그 */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -350,7 +351,7 @@ svg:not(:root) {
     appearance: none;
     box-sizing: border-box;
 }
-.SearchController_searchIcon__Zhy7F { /* 헤더 검색버튼 */
+.header-search-button { /* 헤더 검색버튼 */
     position: absolute;
     top: 52%;
     right: 16px;
@@ -368,17 +369,17 @@ svg:not(:root) {
     fill: currentColor;
     cursor: pointer;
 }
-.HeaderDesktop_user__3zGmM { /* 로그인, 회원가입을 감싼 div를 감싼 div태그 */
+.header-user-div { /* 로그인, 회원가입을 감싼 div를 감싼 div태그 */
     display: inline-block;
     position: relative;
     vertical-align: top;
 }
-.User_container__bqVd2 { /* 로그인, 회원가입을 감싼 div태그 */
+.header-user-container { /* 로그인, 회원가입을 감싼 div태그 */
     display: inline-block;
     vertical-align: top;
     white-space: nowrap;
 }
-.User_container__bqVd2 .User_btnSign__1URTs { /* 로그인, 회원가입 버튼 태그 */ /* 마이페이지 버튼 */
+.header-user-container .header-user-button { /* 로그인, 회원가입 버튼 태그 */
     display: inline-block;
     cursor: pointer;
     padding: 0 8px;
@@ -386,30 +387,7 @@ svg:not(:root) {
     line-height: 56px;
     color: #60656a;
     font-size: 15px;
-    width: 56px;
-    height: 56px;
 }
-.button-mypage-wrapper { /* 마이페이지 버튼 내에 div */
-    display: inline-flex;
-    position: relative;
-    outline: none;
-    border: none;
-    border-radius: 100%;
-    padding: 0;
-    width: 32px;
-    height: 32px;
-    vertical-align: middle;
-}
-.mypage-button-image {
-    display: block;
-    position: absolute;
-    opacity: 1;
-    border-radius: 100%;
-    background: no-repeat 50%/cover;
-    width: 100%;
-    height: 100%;
-}
-
 .web-header .web-header-funding-open { /* 프로젝트 만들기 버튼을 감싼 div */
     display: inline-block;
     vertical-align: top;
@@ -417,7 +395,7 @@ svg:not(:root) {
 .web-header .web-header-utils .funding-open { /* 프로젝트 만들기 버튼을 감싼 div */
     margin-left: 12px;
 }
-.Button_button__mRXZC { /* 프로젝트 버튼 */
+.header-make-button { /* 프로젝트 버튼 */
     position: relative;
     transition-property: background-color,border-color,color,opacity;
     transition-duration: .15s;
@@ -437,11 +415,11 @@ svg:not(:root) {
     -webkit-appearance: none;
     -webkit-font-smoothing: antialiased;
 }
-.Button_button__mRXZC.Button_primary__1HJqX { /* 프로젝트 만들기 버튼 */
+.header-make-button.header-make-button2 { /* 프로젝트 만들기 버튼 */
     border-color: #00c4c4;
     color: #00a2a2;
 }
-.Button_button__mRXZC.Button_md__136bx { /* 프로젝트 만들기 버튼 */
+.header-make-button.header-make-button3 { /* 프로젝트 만들기 버튼 */
     padding: 9px 16px;
     line-height: 1.45;
     font-size: 14px;
@@ -451,12 +429,12 @@ svg:not(:root) {
     border-radius: 4px;
     vertical-align: top;
 }
-.Button_button__mRXZC span { /* 프로젝트 만들기가 적힌 span태그를 감싼 span태그 */
+.header-make-button span { /* 프로젝트 만들기가 적힌 span태그를 감싼 span태그 */
     display: inline-flex;
     align-items: center;
     vertical-align: top;
 }
-.Button_button__mRXZC span { /* 프로젝트 만들기가 적힌 span태그 */
+.header-make-button span { /* 프로젝트 만들기가 적힌 span태그 */
     display: inline-flex;
     align-items: center;
     vertical-align: top;
@@ -513,12 +491,12 @@ input::placeholder {
 	}
 }
 @media screen and (min-width: 1360px){
-	.DesktopSearchApp_container__2VF9O { /* 헤더 검색창 div */
+	.header-search-div { /* 헤더 검색창 div */
 	    min-width: 360px;
 	}
 }
 @media screen and (min-width: 1097px){
-	.SearchController_container__35K5i { /* 헤더 검색창 div 내의 div */
+	.header-search-index-div { /* 헤더 검색창 div 내의 div */
 	    border: 1px solid #00c4c4;
 	}
 }

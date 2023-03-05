@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+=======
+>>>>>>> master
 <mapper namespace="myPage">
+	<update id="passwordUpdate" parameterType="myPageDTO">
+		update tbl_user
+		set userPassword = #{userPassword}
+		where userId = #{userId}
+	</update>
+	
+	<delete id="delete" parameterType="long">
+		delete from tbl_user where userId = #{userId}
+	</delete>
+
+	<update id="profileUpdate" parameterType="userVO">
+		update tbl_user
+		set userNickname userPhone userEmail
+		where userId = #{userId}
+	</update>
+	
+	<select id="countMyPagePersonal" parameterType="myPageDTO">
+		select u.user_id ,count(r.user_id) as reply_count , count(b.user_id) as board_count
+		from tbl_user u join tbl_reply r
+		on u.user_id = r.user_id 
+		join tbl_donation_board b
+		on u.user_id = b.user_id 
+		group by u.user_id
+	</select>
+	
+	<select id="boardInfoMyPagePersonal"  parameterType="myPageDTO">
+		select f.file_system_name, b.user_id, b.donation_board_title, b.donation_board_register_date
+		from tbl_donation_board b join tbl_donation_file f 
+		on b.donation_board_id = f.donation_board_id
+	</select>
 </mapper>

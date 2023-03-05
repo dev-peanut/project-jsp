@@ -25,7 +25,7 @@ const weightWarning = document.querySelector("#weight-warning");
 const dateWarning = document.querySelector("#date-warning");
 
 // 저장하기 버튼
-const formSubmit = document.querySelector('#formsubmit');
+const formSubmit = document.querySelector('#bottom-button');
 
 const check = false;
 
@@ -41,10 +41,7 @@ formSubmit.addEventListener("click", function(){
     	nameWarning.style.display = "block";
         nameWarning.innerHTML = "필수 정보입니다.";
   		nameWarning.style.color = "red";
-    }else{``
-		nameData.style.borderColor = "#00c4c4";
-		nameWarning.style.display = "none";
-	}
+    }
 
 });
 

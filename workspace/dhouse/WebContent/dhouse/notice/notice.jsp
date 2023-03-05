@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
-<link href="../../assets/css/notice/notice.css" rel="stylesheet">
+<link href="../../static/css/notice/notice.css" rel="stylesheet">
 </head>
 <body>
     <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>

@@ -8,13 +8,24 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Action;
 import com.dhouse.Result;
+import com.dhouse.mypage.dao.MyPageDAO;
+import com.dhouse.user.domain.UserVO;
 
 public class MyPageWithdrawOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		// TODO Auto-generated method stub
-		return null;
+		UserVO userVO = new UserVO(); 
+		MyPageDAO myPageDAO = new MyPageDAO();
+		Result result = new Result();
+		
+		Long userId = Long.valueOf(req.getParameter("userId"));
+		
+		myPageDAO.delete(1L); //로그인 받고 userId로 수정 
+		result.setPath(req.getContextPath() + "/dhouse/user/myPage.jsp");
+		result.setRedirect(true);
+		
+		return result;
 	}
 
 }

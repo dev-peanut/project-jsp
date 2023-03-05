@@ -12,7 +12,7 @@
 <!-- 아레에 페이지별로 갈아 끼워야할 CSS -->
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/static/css/admin/admin_home.css" />
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">	
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">	
 </head>
 <body>
 	<!-- header -->

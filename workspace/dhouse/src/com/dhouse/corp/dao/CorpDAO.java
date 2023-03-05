@@ -19,10 +19,17 @@ public class CorpDAO {
 	public List<CorpDTO> selectAll(Map<String, Object> pageMap){
 		return sqlSession.selectList("corp.selectAll", pageMap);
 	}
+	
+	
 
 //	기업 총 개수
 	public Long getTotal() {
 		return sqlSession.selectOne("corp.getTotal");
+	}
+
+//	다음 페이지 유무(무한 스크롤)
+	public boolean isNextPage(Map<String, Object> pageMap) {
+		return sqlSession.selectList("corp.isNextPage", pageMap).size() != 0;
 	}
 	
 	

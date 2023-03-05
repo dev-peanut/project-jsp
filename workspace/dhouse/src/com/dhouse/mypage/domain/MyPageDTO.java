@@ -17,7 +17,7 @@ public class MyPageDTO {
 	private String foodAmount;
 	private String foodRequestDate;
 
-	s
+	
 	
 	public MyPageDTO(){;}
 

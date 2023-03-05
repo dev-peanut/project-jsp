@@ -977,17 +977,19 @@ input[type="checkbox"]:checked::before { /* 체크 모양 */
 }  
 */
 
-/* 
+
 #checkboxmint{
     opacity: 1;
-    background-color: #00c4c4;
-}
+  background-color: #fff;
+  }
 
- */
- 
- #checkbutton{
- opacity:0;
- }
- 
- 
+
+#checkbutton{
+opacity:0;
+}
+   
+  #realbutton{
+  opcity: 1; 
+  }
+  
  

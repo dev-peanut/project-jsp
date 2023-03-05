@@ -1,9 +1,7 @@
 package com.dhouse.promotionboard;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -14,8 +12,6 @@ import org.json.JSONObject;
 
 import com.dhouse.Action;
 import com.dhouse.Result;
-import com.dhouse.file.dao.FileDAO;
-import com.dhouse.file.domain.FileVO;
 import com.dhouse.promotionboard.dao.PromotionBoardDAO;
 import com.dhouse.promotionboard.domain.PromotionBoardDTO;
 

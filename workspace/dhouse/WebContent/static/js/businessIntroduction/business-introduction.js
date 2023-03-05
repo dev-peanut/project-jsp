@@ -13,7 +13,7 @@ function showList(){
 		text += `
 			<div class="content-wrapper">
 	            <div class="content">
-	                <a href="" class="content-a">`; 
+	                <a href="javascript:location.href='${contextPath}/corp/detailOk.board'" class="content-a">`; 
 					if(corp.corpFileSystemName) {		
 	                    text += `
 							<div class="content-img" style="background-image: url('${contextPath}/upload/${corp.corpFileSystemName}')"></div>

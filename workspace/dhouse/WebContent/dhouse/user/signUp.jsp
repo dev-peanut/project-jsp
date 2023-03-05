@@ -109,7 +109,7 @@
                                 <div class="EmailAuthField_inputField">
                                     <input name="userIdentification" placeholder="아이디 입력" type="text" class="email-field id_confirm" id="identification-input">
                                  	<!-- <div class="check_font" id="id_check"></div> -->
-                                 	<span class="id_ok" style="color:green; display:none; font-size:13px;">사용 가능한 아이디입니다.</span>
+                                 	<span id="id_ok" style="color:green; display:none; font-size:13px;">사용 가능한 아이디입니다.</span>
                                  	<span id="id_already" style="color:red; display:none; font-size:13px;">중복된 아이디입니다!</span>
                                     
                                 </div>

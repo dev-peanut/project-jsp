@@ -4,12 +4,14 @@
 // 아이디 변수 - 인풋
 const $identificationInput = $("#identification-input");
 const $identificationWarning = $(".identification-error");
+const $identificationIdOk = $("#id_ok");
+const $identificationIdAlready = $("#id_already");
 
 let identificationFlag = false;
 // 아이디 정규식 이벤트 사용 및 함수
 $identificationInput.on("blur", function() {
 	var $identificationInputVal = $identificationInput.val();
-	var $identificationInputVal = $identificationInput.val();
+	let value = $(this).val();
 	
 
 	// 검증에 사용할 정규식 변수 regExp에 저장
@@ -26,15 +28,22 @@ $identificationInput.on("blur", function() {
 		$identificationWarning.css("display", "block");
 		$identificationInput.css("border-color", "#f66");
 		identificationFlag = false;
-	}
-	
+	} 
 	else {
-		$identificationWarning.css("display", "none");
-		$identificationInput.css("border-color", "#dde2e6");
-		identificationFlag = true;
-		// #dde2e6;
+		$.ajax({
+			url: contextPath + "/checkIdOk.user",
+			data: {userIdentification: value},
+			success: function(result){
+				result = JSON.parse(result);
+				if(result.check){
+					$identificationIdOk;
+				}else{
+					$identificationIdAlready;
+				}
+				identificationFlag = false;
+			}
+		});
 	}
-	
 	completeAllCheck();
 });
 

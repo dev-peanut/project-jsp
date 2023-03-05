@@ -1,0 +1,2599 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap');
+@font-face {
+    font-family: wadizicon;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://static.wadiz.kr/static/web/media/wadizicon.1de1502a.eot#iefix) format("embedded-opentype"),url(https://static.wadiz.kr/static/web/media/wadizicon.f5cdf486.woff2) format("woff2"),url(https://static.wadiz.kr/static/web/media/wadizicon.9eb6b0a9.woff) format("woff"),url(https://static.wadiz.kr/static/web/media/wadizicon.e5379495.ttf) format("truetype"),url(https://static.wadiz.kr/static/web/media/wadizicon.077f5804.svg#wadizicon) format("svg")
+}
+
+div {
+    font-family: wadizicon;
+}
+
+
+body{
+    pointer-events: auto!important;
+    height: inherit;
+    overflow: initial;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    -webkit-appearance: none;
+    border: 0;
+    display: block;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+
+.body1{
+    position: absolute;
+    opacity: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+ #root{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    border: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: 0;
+    display: block;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+} 
+
+ #AppLayout_Container{
+    position: static;
+    overflow-y: auto;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    -vh: 7.46px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -webkit-appearance: none;
+} 
+
+.total_main{
+    display: flex;
+    overflow-x: hidden;
+    height: 100%;
+    padding-top: 56px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}  
+
+#sidebar{
+    position: relative;
+    transform: none;
+    transition: none;
+    z-index: 0;
+    box-shadow: 1px 0 0 0 rgb(0 0 0 / 6%);
+    height: 100%;
+    width: 240px;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    flex-flow: column;
+    background-color: #fff;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+} 
+
+.sidebar_top{
+    background-image: linear-gradient(118deg,#75d184,#65bfce);
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 73px 24px 16px;
+    overflow: hidden;
+    color: #fff;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+}   
+
+.sidebar_status{
+    display: flex;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    color: #fff;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+} 
+
+.sidebar_status span{
+    letter-spacing: 0;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 8px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 2px 4px;
+    overflow: hidden;
+    line-height: normal;
+    font-family: inherit;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    cursor: pointer;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    --vh: 7.46px;
+    -webkit-appearance: none;
+}
+
+.sidebar_main_copy{
+    line-height: 28px;
+    letter-spacing: -.6px;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+    color: #fff;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.sidebar_button{
+    padding-right: 10px;
+    border-color: transparent;
+    position: relative;
+    padding: 0;
+    width: 192px;
+    height: 20px;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    line-height: 1.45;
+    font-size: 14px;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 500;
+    box-sizing: border-box!important;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    font-family: inherit;
+    margin: 0;
+}
+
+.sidebar_icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    display: block;
+    position: absolute;
+    top: 6%;
+    right: 0;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+    box-sizing: border-box;
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+    font-family: inherit;
+    text-align: left;
+    color: #fff;
+    line-height: 1.45;
+    font-size: 14px;
+    --vh: 7.46px;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    pointer-events: auto!important;
+}
+
+path{
+    box-sizing: border-box;
+    d: path("M 16 22.4 L 5.6 12 l 1.12 -1.12 L 16 20.16 l 9.28 -9.28 L 26.4 12 L 16 22.4 Z");
+    transform-origin: 0px 0px;
+    fill: currentColor;
+    font-family: inherit;
+    text-align: left;
+    color: #fff;
+    line-height: 1.45;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.category_container{
+    height: auto;
+    overflow-y: auto;
+    flex: 1 1;
+    padding-bottom: 120px;
+    display: block;
+    box-sizing: border-box;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.category_margin{
+    height: 8px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+}
+
+ul{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    -webkit-appearance: none;
+    border: 0;
+    padding: 0;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: -20px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+ul.li{
+    box-sizing: border-box;
+    list-style: none;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    pointer-events: auto!important;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.bigger_category{
+    color: #00a2a2;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 16px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-align: -webkit-match-parent;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.category_icon{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    margin-top: -11px;
+    font-size: 24px;
+    box-sizing: border-box;
+    font-style: italic;
+    color: #00a2a2;
+    cursor: pointer;
+    font-weight: 700;
+    list-style: none;
+    text-align: -webkit-match-parent;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.sub_category_container{
+    background-color: rgba(186,189,192,.1);
+    box-sizing: border-box;
+    list-style: none;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    text-align: -webkit-match-parent;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+}
+
+.subcategory{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 16px 24px;
+    color: #1d2129;
+    font-size: 13px;
+    font-weight: 700;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-align: -webkit-match-parent;
+    line-height: 1.3;
+    word-break: keep-all;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+}
+
+#form_container{
+    position: relative;
+    flex: 1 1;
+    overflow-x: auto;
+    overflow-y: auto;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+#form_container_margin{
+    padding: 40px 66px;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    --vh: 7.46px;
+}
+
+.category_print{
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.category_name{
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+    list-style: none;
+    -webkit-appearance: none;
+    border: 0;
+    padding: 0;
+    pointer-events: auto!important;
+    margin-block-start: 4em;
+    margin-block-end: 1em;
+    margin-inline-start: -35px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+}
+
+.form_category_small{
+    display: inline-block;
+    color: #868e96;
+    font-size: 13px;
+    box-sizing: border-box;
+    list-style: none;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-align: -webkit-match-parent;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    word-break: keep-all;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+
+}
+
+.form_category_small::after{
+    display: inline-block;
+    margin: 0 2px;
+    vertical-align: bottom;
+    font-family: "wadizicon"!important;
+    content: "\E937";
+    color: #868e96;
+    font-size: 13px;
+    list-style: none;
+    text-align: -webkit-match-parent;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    pointer-events: auto!important;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.form_category_small:last-child {
+    display: inline-block;
+    color: #212529;
+    font-size: 13px;
+    box-sizing: border-box;
+    list-style: none;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-align: -webkit-match-parent;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    pointer-events: auto!important;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.header{
+    box-shadow: 0 1px 0 0 rgb(10 22 70 / 6%);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    background-color: #fff;
+    padding: 0 24px;
+    min-height: 56px;
+    box-sizing: border-box;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+}
+
+.header_container{
+	position: relative;
+    box-shadow: 0 1px 0 0 rgb(10 22 70 / 6%);
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    background-color: #fff;
+    padding: 0 24px;
+    min-height: 56px;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    pointer-events: auto!important;
+}
+
+ .make{
+   /* background: url(https://static.wadiz.kr/studio/funding/static/media/wadiz-logo.549edcd7.svg) 50% center / contain no-repeat; */
+    width: 129px;
+    height: 48px;
+    cursor: pointer; 
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    pointer-events: auto!important;
+    line-height: 1.3;
+} 
+
+
+.header_name_container{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    transform: translateX(-50%);
+    grid-gap: 8px;
+    gap: 8px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    left: 50%;
+}
+
+.profile_icon{
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    background: url(https://static.wadiz.kr/studio/funding/static/media/default-zingugi.de76a099.svg) no-repeat 50%/cover;
+    padding: 0;
+    -webkit-appearance: none;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+}
+
+.Avatarspan{
+    display: block;
+    position: absolute;
+    opacity: 1;
+    border-radius: 100%;
+    background: inherit;
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    pointer-events: auto!important;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+	-webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    --vh: 7.46px;
+}
+
+.name{
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+}
+
+#bottom-button:hover{
+	background-color: #00b2b2;
+}
+
+.save_span{
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+    font-family: inherit;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color: #fff;
+    line-height: 1.45;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+}
+
+.button_number{
+    vertical-align: top;
+    display: inline-flex;
+        align-items: center;
+        font-family: inherit;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        color: #fff;
+        line-height: 1.45;
+        font-size: 14px;
+        cursor: pointer;
+        font-weight: 500;
+        white-space: nowrap;
+        -webkit-font-smoothing: antialiased;
+        writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        text-align: center;
+        pointer-events: auto!important;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        --vh: 7.46px;
+        -webkit-text-size-adjust: none;    
+}
+
+.exit_button{
+	 padding: 9px 16px;
+    line-height: 1.45;
+    font-size: 14px;
+    position: absolute;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 500;
+    box-sizing: border-box!important;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    font-family: inherit;
+    background: none;
+    left: 90%;
+}
+.exit_span{
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+}
+
+.food_donation_start{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+}
+
+
+.submit_button{
+	width: 116.14px;
+	height: 52px;
+    max-width: 100%;
+    border-color: #00c4c4;
+    background-color: #00c4c4;
+    color: #fff;
+}
+
+
+.food_donation_container{
+    flex: 1 1;
+    max-width: 850px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.food_donation_title{
+    display: block;
+    max-width: 850px;
+    margin: 0 0 16px;
+    line-height: 1.22;
+    letter-spacing: -.7px;
+    color: rgba(0,0,0,.84);
+    font-size: 36px;
+    font-weight: 700;
+    -webkit-appearance: none;
+    border: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+}
+
+
+#bottom-button{
+    font-family: roboto,Noto Sans KR,-apple-system,dotum,sans-serif;
+    box-sizing: border-box!important;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    padding: 9px 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    /* position: relative; */
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 6px;
+    /* border-radius: 4px; */
+    line-height: 25px;
+    /* line-height: 28px; */
+    letter-spacing: -.3px;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 500;
+    border-color: #00c4c4;
+    background-color: #00c4c4;
+    color: #fff;
+    position: absolute;
+    width: 25%;
+    left: 28%;
+}
+
+#button-inner-text {
+    white-space: nowrap;
+    cursor: pointer;
+    letter-spacing: -.3px;
+    color: #fff;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: top;
+}
+
+#button-icon {
+    cursor: pointer;
+    letter-spacing: -.3px;
+    color: #fff;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+    vertical-align: top;
+    display: inline-flex;
+    align-items: center;
+}
+
+.Section_container__3md8M{
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.community_container{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    z-index: 1;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.Section_title{
+    line-height: 28px;
+    letter-spacing: -.6px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.Section_title::after {
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 4px;
+    color: #f66;
+    content: "*";
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.Section_guide{
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    gap: 8px;
+    justify-content: end;
+    max-width: 50%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.Section_description__10Uwo{
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    color: #868e96;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    display: block;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+/* 글 내용 공지사항 */
+
+#photosubmit:hover{
+	background-color:#60656A;
+}
+
+.icon-camera-o{
+    margin-right: 4px;
+    box-sizing: border-box;
+    font-style: italic;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: inherit;
+    word-break: keep-all;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    overflow-wrap: break-word;
+}
+
+.icon.camera::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: none;
+    font-family: "wadizicon"!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 17px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+}
+
+
+.wz_input_right_ImageFileButton_input__1Dnch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 17px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 28px;
+    letter-spacing: -.3px;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.wz_input_right_ImageFileButton_input__1Dnch input {
+    font-size: 17px;
+    transition-property: border-color,height,padding-right,color;
+    transition-duration: .2s,0s;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.15);
+    background: #fff;
+    padding: 0 0.94118em;
+    width: 100%;
+    vertical-align: middle;
+    color: rgba(0,0,0,.84);
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    cursor: default;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding: initial;
+    overflow: hidden !important;
+    writing-mode: horizontal-tb !important;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    -webkit-rtl-ordering: logical;
+    --vh: 7.46px;
+    -webkit-text-size-adjust: none;
+}
+
+.wz_input_right_ImageFileButton_input__1Dnch input ::after {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: "wadizicon"!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    speak: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition-property: transform,opacity;
+    transition-duration: .2s;
+    opacity: 0;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    pointer-events: none;
+    color: #00c4c4;
+    font-size: 1.41176em;
+    letter-spacing: -.3px;
+    cursor: pointer;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-text-size-adjust: none;
+}
+
+.helper_error{
+    color: #f25555;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+    margin-top: 4px;
+    font-style: normal;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.helper_ImageFormField_helper__3XC5c{
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #90949c;
+    display: block;
+    margin-top: 4px;
+    font-style: normal;
+    box-sizing: border-box;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.Section_guideMessage__3XqrM{
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    border-radius: 4px;
+    background-color: #f2f4f6;
+    padding: 24px;
+    max-width: 240px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    display: block;
+    --vh: 7.46px;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.link{
+    transition: color .3s;
+    border-bottom: 1px solid #00c4c4;
+    cursor: pointer;
+    color: #00c4c4;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-style: normal;
+    visibility: hidden;
+    word-break: keep-all;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.Section_guideMessage__3XqrM p{
+    margin: 8px 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    visibility: hidden;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+h4{
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-style: normal;
+    visibility: hidden;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.notice{
+    margin-bottom: 0;
+    margin: 8px 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    visibility: hidden;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.Section_description__10Uwo{
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    color: #868e96;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    overflow-wrap: break-word;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    word-break: keep-all;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.StorySummaryField_container__25ePA{
+    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.field_Form_field__35I9T_FormFieldTextarea_field__33Ncu{
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin: 24px 0;
+    max-width: 850px;
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.title-warning{
+	display:none;
+}
+
+.content-warning{
+	display:none;
+}
+
+.wide_column-2{
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.wide_column-4{
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.wz-input{
+    display: block;
+    position: relative;
+    font-size: 17px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.wz.input::after {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: "wadizicon"!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    speak: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition-property: transform,opacity;
+    transition-duration: .2s;
+    opacity: 0;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    pointer-events: none;
+    color: #00c4c4;
+    font-size: 1.41176em;
+}
+
+.wz.input textarea {
+    margin-top: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 1.6em;
+    font-size: 15px;
+    font-weight: 400;
+    resize: vertical;
+    transition-property: border-color,height,padding-right,color;
+    transition-duration: .2s,0s;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.15);
+    background: #fff;
+    padding: 0 0.94118em;
+    width: 100%;
+    vertical-align: middle;
+    color: rgba(0,0,0,.84);
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+    word-break: keep-all;
+    --vh: 7.46px;
+    padding: 12px 14.1177px; /* 따로 지정함  */
+    resize: none!important;
+}
+
+textarea:focus {
+    outline: none!important; 
+    border-color: #00c4c4!important;
+	}
+
+.wz.input.inline-block, .wz.input:after {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    font-family: "wadizicon"!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    speak: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transition-property: transform,opacity;
+    transition-duration: .2s;
+    opacity: 0;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    pointer-events: none;
+    color: #00c4c4;
+    font-size: 1.41176em;
+    -webkit-text-size-adjust: none;
+    --vh: 7.46px;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    
+}
+
+
+.helper_FormFieldTextarea_helper__3-iK_{
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #90949c;
+    display: block;
+    margin-top: 4px;
+    font-style: normal;
+    overflow-wrap: break-word;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    word-break: keep-all;
+    box-sizing: border-box;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.Section_guideMessage__3XqrM{
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    border-radius: 4px;
+    background-color: #f2f4f6;
+    padding: 24px;
+    max-width: 240px;
+    display: block;
+    box-sizing: border-box;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.Section_guideMessage__3XqrM p{
+    margin-bottom: 0;
+    margin: 8px 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+.Section_title__ikPIm_Section_isRequired__F8rij{
+    line-height: 28px;
+    letter-spacing: -.6px;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.Section_title__ikPIm_Section_isRequired__F8rij::after{
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 4px;
+    color: #f66;
+    content: "*";
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.StoryMakerAgreementField_container__3GnYX{
+    margin-bottom: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.StoryMakerAgreementInfo_container__PVGPV{
+    font-size: 12px;
+    display: block;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.StoryMakerAgreementInfo_linkList__zZ8jX{
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-size: 12px;
+    list-style: none;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.li{
+    box-sizing: border-box;
+    list-style: none;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    font-size: 12px;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.guide-line{
+cursor: pointer;
+    line-height: 20px;
+    color: #00a2a2;
+    font-size: 15px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-align: -webkit-match-parent;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    word-break: keep-all;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.wz_button_gray_StoryMakerAgreementInfo_agreeBtn__35dmv{
+    border-color: #60656a;
+    background-color: #60656a;
+     color: #fff; 
+    border-radius: 2px;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .2s;
+    border: 1px solid rgba(0,0,0,.15);
+    cursor: pointer;
+    padding: 0 1.41176em;
+    height: 48px;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 17px;
+    font-weight: 400;
+    box-sizing: border-box!important;
+    -webkit-appearance: none;
+    display: inline-block;
+    padding-top: 0.07em;
+    text-decoration: none;
+    font-family: inherit;
+    margin: 0;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.icon-check{
+    box-sizing: border-box;
+    font-style: italic;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: inherit;
+    writing-mode: horizontal-tb !important;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.check-out::before{
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: none;
+    font-family: "wadizicon"!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+}
+
+.StoryMakerAgreementNoticeBox_container__3Klad_StoryMakerAgreementNoticeBox_disable__1IRzx{
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    width: 100%;
+    max-width: 850px;
+    box-sizing: border-box;
+    list-style: none;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    font-size: 12px;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.Section_title__ikPIm_Section_isRequired__F8rij{
+    line-height: 28px;
+    letter-spacing: -.6px;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.Section_title__ikPIm_Section_isRequired__F8rij::after{
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 4px;
+    color: #f66;
+    content: "*";
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+}
+
+.icon-close{
+    box-sizing: border-box;
+    font-style: italic;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 1;
+    color: rgba(0,0,0,.54);
+    font-weight: 400;
+    font-family: inherit;
+    text-rendering: auto;
+    writing-mode: horizontal-tb !important;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    --vh: 9.61px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.icon-close::before{
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: none;
+    font-family: "wadizicon"!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    content: "";
+    font-size: 14px;
+    cursor: pointer;
+    color: rgba(0,0,0,.54);
+    letter-spacing: normal;
+    word-spacing: normal;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    word-break: keep-all;
+    -webkit-text-size-adjust: none;
+    --vh: 9.61px;
+    overflow-wrap: break-word;
+}
+
+.community_container{
+    max-width: 720px;
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 9.61px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    padding-right: 0;
+}
+
+
+/* 글 내용 - 설명란 */
+
+.Section_content_notice{
+    position: relative;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    display: block;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+
+.MessageBox_basic_notice{
+    background-color: #f9fafb;
+    color: #495057;
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: "Noto Sans KR";
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 9.61px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.MessageBox_basic_notice span{
+    font-family: inherit;
+    box-sizing: border-box;
+    color: #495057;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 9.61px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.MessageBox_icon{
+    color: #868e96;
+    margin-top: 2px;
+    margin-right: 6px;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-out;
+    fill: currentColor;
+    box-sizing: border-box;
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+    font-family: inherit;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    line-height: 1.3;
+    word-break: keep-all;
+    --vh: 9.61px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.MessageBox_icon path{
+    box-sizing: border-box;
+    fill: none;
+    transform-origin: 0px 0px;
+    color: #868e96;
+    font-size: 16px;
+    line-height: 1.3;
+    word-break: keep-all;
+    font-family: inherit;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 9.61px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.MessageBox_content{
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: block;
+    color: #495057;
+    font-family: "Noto Sans KR";
+    line-height: 1.3;
+    word-break: keep-all;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    --vh: 9.61px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.MessageBox_title{
+    margin-bottom: 8px;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0 0 8px;
+    text-align: left;
+    border: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #495057;
+    font-family: "Noto Sans KR";
+    padding-right:40px;
+}
+
+.MessageBox_description{
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    text-align: left;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    color: #495057;
+    -webkit-appearance: none;
+    border: 0;
+    padding: 0;
+    display: block;
+    font-family: "Noto Sans KR";
+    --vh: 9.61px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.imagenotice{
+    display: flex;
+    margin-bottom: 4px;    
+    box-sizing: border-box;
+    list-style: none;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-align: -webkit-match-parent;
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    color: #495057;
+    font-family: "Noto Sans KR";
+    --vh: 9.61px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.imagenotice:before{
+    display: inline-block;
+    margin-right: 2px;
+    width: 7px;
+    text-align: center;
+    box-sizing: border-box;
+    content: "·";
+    padding: 0px 2px;
+    list-style: none;
+    line-height: 18px;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    color: #495057;
+    --vh: 9.61px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.form_section{
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+}
+
+/* 사진 추가 */
+
+.photo_submit_section{
+    display: none;
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+    opacity: .8;
+    z-index: 100;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+}
+
+.Section_container__photo{
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+}
+
+.Section_photo_header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    z-index: 1;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.ImageField{
+    max-width: 343px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+margin: 0;
+border: 0;
+padding: 0;
+display: block;
+line-height: 1.3;
+word-break: keep-all;
+color: #343a40;
+font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+font-size: 16px;
+font-weight: 400;
+overflow-wrap: break-word;
+--vh: 7.46px;
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust: none;
+}
+
+.ImageFormField{
+margin-bottom: 40px;
+margin: 24px 0;
+max-width: 850px;
+margin-top: 16px!important;
+padding-left: 34px;
+position: relative;
+box-sizing: border-box;
+-webkit-appearance: none;
+border: 0;
+padding: 0;
+display: block;
+line-height: 1.3;
+word-break: keep-all;
+color: #343a40;
+font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+font-size: 16px;
+font-weight: 400;
+overflow-wrap: break-word;
+--vh: 7.46px;
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust: none;
+}
+
+.ImageFormField_buttonWrapper{
+display: inline-block;
+margin-top: 8px;
+box-sizing: border-box;
+-webkit-appearance: none;
+margin: 0;
+border: 0;
+padding: 0;
+word-break: keep-all;
+color: #343a40;
+font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+font-size: 16px;
+font-weight: 400;
+overflow-wrap: break-word;
+line-height: 1.3;
+--vh: 7.46px;
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust: none;
+}
+
+.ImageFileButton_label{
+display: inline-block!important;
+position: relative;
+margin-bottom: 10px;
+line-height: 28px;
+letter-spacing: -.3px;
+font-size: 16px;
+font-weight: 400;
+font-style: normal;
+cursor: default;
+padding-bottom: 4px;
+box-sizing: border-box;
+word-break: keep-all;
+color: #343a40;
+font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+overflow-wrap: break-word;
+--vh: 7.46px;
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust: none;
+}
+
+
+.ImageFileButton{
+    background-color: #90949c;
+    color: #fff;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .2s;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0 1.41176em;
+    height: 48px;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 17px;
+    font-weight: 400;
+    box-sizing: border-box!important;
+    -webkit-appearance: none;
+    display: inline-block;
+    padding-top: 0.07em;
+    text-decoration: none;
+    font-family: inherit;
+    ackground: none;
+    margin: 0;
+    writing-mode: horizontal-tb !important;
+    text-align: center;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+#photosubmit:hover{
+	background-color:#60656A;
+}
+
+
+.icon-camera-o{
+    margin-right: 4px;
+    box-sizing: border-box;
+    font-style: italic;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: inherit;
+    word-break: keep-all;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    overflow-wrap: break-word;
+}
+
+.icon.camera::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: none;
+    font-family: "wadizicon"!important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 17px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    --vh: 7.46px;
+}
+
+.ImageFileButton_input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 17px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    line-height: 28px;
+    letter-spacing: -.3px;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    color: #343a40;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.helper_error{
+    color: #f25555;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+    margin-top: 4px;
+    font-style: normal;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.helper_ImageFormField{
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #90949c;
+    display: block;
+    margin-top: 4px;
+    font-style: normal;
+    box-sizing: border-box;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
+    --vh: 7.46px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+#title-warning{
+	display: none;
+}
+#content-warning{
+	display: none;
+}

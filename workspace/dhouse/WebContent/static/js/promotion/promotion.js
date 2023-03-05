@@ -157,3 +157,46 @@ btns.forEach((btn, i) => {
         }
     });
 });
+
+
+/* 목록  */
+function showList(){
+    console.log(promotionBoards);
+	promotionBoards = JSON.parse(promotionBoards);
+	const $ol = $("#ranking-part");
+	let text = "";
+	promotionBoards.forEach((promotionBoard, i)=> {
+		text += `
+                <li class="top10-lists">
+                    <a href="${contextPath}/promotion/detailOk.promotion?promotionBoardId=${promotionBoards[i].promotionBoardId}">
+                        <div class="list-container">
+                            <div class="list-image-wrapper">
+                                <div class="list-image" style="background-image: url(${contextPath}/static/images/main/${promotionBoards[i].fileSystemName});">
+                                </div>
+                            </div>
+                            <div class="list-text-wrapper">
+                                <div class="ranking-top-number">
+                                    <span class="ranking-number">TOP ${i + 1}</span>
+                                </div>
+                                <dl class="inner-text-wrapper">
+                                    <dd class="middle-text-wrapper">
+                                        <span class="middle-text">
+                                            ${promotionBoards[i].userNickname}
+                                        </span>
+                                    </dd>
+                                    <dd class="bottom-text-wrapper">
+                                        <span class="bottom-text">
+                                            ${promotionBoards[i].promotionBoardTitle}
+                                        </span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </a>    
+                </li>
+			`;
+	});
+	$ol.append(text);
+}
+showList();
+

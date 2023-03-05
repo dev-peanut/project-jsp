@@ -46,7 +46,7 @@
                          </h2>
                           
                           <!-- 글 제목 -->
-                          <section class="form_section">
+                          <div class="form_section">
                               <div style="max-width: 600px;">
                                   <div class="form_container">
                                       <h2 class="Section_title">글 제목
@@ -69,10 +69,10 @@
                                       </div>
                                   </div>
                               </div>
-                              </section>
+                            </div>
         
                       <!-- 글 내용 - 설명란 -->
-                        <section class="community_container" style="max-width: 720px;">
+                        <div class="community_container" style="max-width: 720px;">
                                   <div class="community_container spacing-4">
                                       <h2 class="Section_title">글 내용</h2>
                                       <div class="Section_guide">
@@ -100,7 +100,7 @@
                                       
                                       
                                 <!-- 글 내용 -->      
-                                <section class="form_section">
+                                <div class="form_section">
                                   <div style="max-width: 600px;">
                                       <div class="form_container">
                                           <div class="Section_guide"></div>
@@ -121,12 +121,12 @@
                                           </div>
                                       </div>
                                   </div>
-                                  </section>
+                                </div>
                                   
                                <!-- 사진 등록  -->   
-                               <section>
+                               <div>
                                   <div class="photo_submit_section"></div>
-                                  <section class="Section_container__photo">
+                                  <div class="Section_container__photo">
                                       <div style="max-width: 600px;">
                                           <div class="Section_photo_header">
                                               <h2 class="Section_title">사진 등록</h2>
@@ -138,14 +138,14 @@
                                                   <div class="ImageFormField">
                                                       <div class="ImageFormField_buttonWrapper">
                                                           <label
-                                                              class="ImageFileButton_label" id="button-label">
+                                                              class="ImageFileButton_label">
                                                               <button type="button"
                                                                   class="ImageFileButton"
                                                                   id="photosubmit">
                                                                   <i class="icon-camera-o" aria-hidden="true"></i>등록하기
                                                               </button>
                                                               <div class="ImageFileButton_input">
-                                                                  <input type="file" id="image" name="upload1" onchange="setThumbnail(event);">
+                                                                  <input type="file" id="image" accept="image/*" name = "upload1" onchange="setThumbnail(event);" />
                                                               </div>
                                                           </label> <em class="helper error"></em><em
                                                               class="helper_ImageFormField">2MB 이하의
@@ -153,7 +153,7 @@
                                                           <div class="image_space"></div>
                                                           <div id="image_container"></div>
                                                       </div>
-                                              </section>
+                                                    </div>
                          </div>
                       </div>
                 </form>
@@ -164,6 +164,5 @@
      </div>
      <jsp:include page="../components/footer.jsp"></jsp:include>
  </body>
- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
- <script type="text/javascript" src="../../static/js/board/board_community_write.js"></script>
+<script type="text/javascript" src="../../assets/js/board/board_community_write.js"></script>
 </html>

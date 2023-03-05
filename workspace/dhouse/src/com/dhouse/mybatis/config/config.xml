@@ -13,6 +13,7 @@
 		<typeAlias type="com.dhouse.reply.domain.ReplyVO" alias="replyVO"/>
 		<typeAlias type="com.dhouse.file.domain.FileVO" alias="fileVO"/>
 		<typeAlias type="com.dhouse.promotionboard.domain.PromotionBoardVO" alias="promotionBoardVO"/>
+		<typeAlias type="com.dhouse.promotionboard.domain.PromotionBoardDTO" alias="promotionBoardDTO"/>
 		<typeAlias type="com.dhouse.donationboard.domain.DonationBoardVO" alias="donationBoardVO"/>
 		<typeAlias type="com.dhouse.banner.domain.BannerVO" alias="bannerVO"/>
 	</typeAliases>

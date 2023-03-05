@@ -1,4 +1,4 @@
-package com.dhouse.corp;
+package com.dhouse.promotionboard;
 
 import java.io.IOException;
 
@@ -9,10 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 import com.dhouse.Action;
 import com.dhouse.Result;
 
-public class CorpListOkController implements Action {
+public class PromotionBoardUpdateOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+		
 		return null;
 	}
 

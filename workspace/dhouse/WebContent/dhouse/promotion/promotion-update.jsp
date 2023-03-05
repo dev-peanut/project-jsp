@@ -8,18 +8,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홍보 글쓰기 페이지</title>
-    <link rel="stylesheet" href="../../assets/css/promotion/promotion-write.css">
+    <link rel="stylesheet" href="../../static/css/promotion/promotion-write.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../../assets/img/logo.png">
+    <link rel="shortcut icon" href="../../static/img/logo.png">
 </head>
 <body class="ReactModal__Body--open" aria-hidden="true">
-    <jsp:include page="../components/header.jsp"></jsp:include>
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
     <div class="body1" data-react-modal-body-trap="" tabindex="0" style="position: absolute; opacity: 0;"></div>
     <div id="root">
         <div id="AppLayout_Container" class="AppLayout_container__3zbzb">
             <div class="AppLayout_main__14bCi">
+                <!-- <div class="AppSidebarLayout_contents__2thGr" id="sidebar">
+                    <div class="AppSidebarRewardProjectInfo_container__2Ykhp_AppSidebarRewardProjectInfo_defaultBackgroundImage__1rWVS">
+                        <div class="AppSidebarRewardProjectInfo_projectFlagGroup__2GdB4">
+                            <span class="AppSidebarRewardProjectInfo_flag__2Ctnr">가전제품 기부</span>
+                            <span class="AppSidebarRewardProjectInfo_flag__2Ctnr">작성중</span>
+                        </div>
+                        <a class="AppSidebarRewardProjectInfo_projectName__1Hf5o" href="/web/campaign/detail/191893?preview=Y" target="_blank" rel="nofollow noopener noreferrer">정세인님의<br>따뜻한 기부</a>
+                        <button class="Button_button__1e2A2_Button_info__Nu98q_Button_text__3KyLl_Button_md__1FRMG_Button_endIcon__3ZOY3_AppSidebarRewardProjectInfo_projectNumberButton__1izF_" type="button">
+                            <span><span class="Button_children__q9VCZ">프로젝트 번호 191893</span>
+                                <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__3lrgp_Button_icon__1qsE3_AppSidebarRewardProjectInfo_expandIcon__2oHiN{" aria-hidden="true" style="width: 20px; height: 20px;">
+                                    <path d="M16 22.4L5.6 12l1.12-1.12L16 20.16l9.28-9.28L26.4 12 16 22.4z"></path>
+                                </svg></span></button>
+                    </div>
+                    <nav class="AppSidebarMenuList_container__199gJ">
+                        <div class="AppSidebarMenuList_margin__3qjoc"></div>
+                        <ul>
+                            <li>
+                                <a class="AppSidebarMenuList_navLink__1FytL_AppSidebarMenuList_active__tbFuL" href="/studio/reward/191893/funding" aria-current="page">기부하기
+                                    <i class="icon-chevron-left_AppSidebarMenuList_chevronIcon__2YV-z_AppSidebarMenuList_open__bjhTR" aria-hidden="true"></i></a>
+                                <ul class="AppSidebarRewardSubList_container__2zCmr">
+                                    <li>
+                                        <a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa" href="/studio/reward/191893/funding/plan">식품 기부</a>
+                                    </li>
+                                    <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa_select" href="/studio/reward/191893/funding/screening">가전제품 기부</a></li>
+                            </li> 
+                        </ul>
+                    </nav>
+                </div> -->
+                <div id="AppLayout_Contents" class="AppLayout_contents__wv3DF">
                     <div id="container" class="ContentsLayout_container__11k-W">
                         <div class="FundingStoryContainer_container__33WY0">
                             <ol class="Breadcrumb_container__3YjD4">
@@ -28,17 +57,20 @@
                             </ol>
                             <div class="HeaderLayout_container__3fXkO">
                                 <div class="HeaderLayout_contents__F4hlC">
-                                    <h2 class="FundingStoryContainer_title__1r0ZE">홍보 게시글 작성하기<!-- 제출 버튼 -->
-                                        <button id="bottom-button">
-                                            <span id="button-inner-text">
-                                                <span id="button-icon">
-                                                    <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__1VB4W" aria-hidden="true"><path d="M30.4 15.2H16.8V1.6h-1.6v13.6H1.6v1.6h13.6v13.6h1.6V16.8h13.6v-1.6z"></path></svg>
-                                                    <span id="button-text">
-                                                        작성 완료
+                                    <h2 class="FundingStoryContainer_title__1r0ZE">홍보 게시글 수정하기<!-- 제출 버튼 -->
+                                        <a href="${pageContext.request.contextPath}/promotion/updateOk.promotion">
+                                            <button id="bottom-button">
+                                                <span id="button-inner-text">
+                                                    <span id="button-icon">
+                                                        <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__1VB4W" aria-hidden="true"><path d="M30.4 15.2H16.8V1.6h-1.6v13.6H1.6v1.6h13.6v13.6h1.6V16.8h13.6v-1.6z"></path></svg>
+                                                        <span id="button-text">
+                                                            수정 완료
+                                                        </span>
                                                     </span>
                                                 </span>
-                                            </span>
-                                        </button></h2>
+                                            </button>
+                                        </a>
+                                    </h2>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +194,8 @@
         </div>
     </div>
     </div>
-    <jsp:include page="../components/footer.jsp"></jsp:include>
+    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script type="text/javascript" src="../../static/js/board/board_community_write.js"></script>
 </html>

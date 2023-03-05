@@ -33,7 +33,7 @@ public class FoodApplyOkController implements Action {
 		
 		foodDAO.insert(foodVO);
 		
-		foodCurrentSequence = foaodDAO.getCurrentSequence();
+		foodCurrentSequence = foodDAO.getCurrentSequence();
 		
 		
 		return null;

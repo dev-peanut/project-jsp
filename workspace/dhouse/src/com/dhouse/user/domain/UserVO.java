@@ -8,14 +8,14 @@ public class UserVO {
 	private String userNickname;
 	private String userPhone;
 	private String userEmail;
-	 
+	
 	public UserVO() {;}
 
-	public Long getUserId() {
+	public Long getuserId() {
 		return userId;
 	}
 
-	public void setUserId(Long userId) {
+	public void setuserId(Long userId) {
 		this.userId = userId;
 	}
 
@@ -66,7 +66,6 @@ public class UserVO {
 	public void setUserEmail(String userEmail) {
 		this.userEmail = userEmail;
 	}
-
 
 	@Override
 	public String toString() {

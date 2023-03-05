@@ -27,12 +27,12 @@
                     <div id="button-wrapper">
                         <button class="title-next-buttons" id="update-button">
                             <!-- 수정해야함 -->
-                            <a href="${pageContext.request.contextPath}/promotion/update.promotion?promotionBoardId=${promotionBoard.promotionBoardId}">
+                            <a class="button-a" href="${pageContext.request.contextPath}/promotion/update.promotion?promotionBoardId=${promotionBoard.promotionBoardId}">
                                 수정
                             </a>
                         </button>
                         <button class="title-next-buttons" id="delete-button">
-                            <a href="${pageContext.request.contextPath}/promotion/deleteOk.promotion?promotionBoardId=${promotionBoard.promotionBoardId}">
+                            <a class="button-a" href="${pageContext.request.contextPath}/promotion/deleteOk.promotion?promotionBoardId=${promotionBoard.promotionBoardId}">
                                 삭제
                             </a>
                         </button>

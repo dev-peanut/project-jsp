@@ -20,34 +20,6 @@
     <div id="root">
         <div id="AppLayout_Container" class="AppLayout_container__3zbzb">
             <div class="AppLayout_main__14bCi">
-                <!-- <div class="AppSidebarLayout_contents__2thGr" id="sidebar">
-                    <div class="AppSidebarRewardProjectInfo_container__2Ykhp_AppSidebarRewardProjectInfo_defaultBackgroundImage__1rWVS">
-                        <div class="AppSidebarRewardProjectInfo_projectFlagGroup__2GdB4">
-                            <span class="AppSidebarRewardProjectInfo_flag__2Ctnr">가전제품 기부</span>
-                            <span class="AppSidebarRewardProjectInfo_flag__2Ctnr">작성중</span>
-                        </div>
-                        <a class="AppSidebarRewardProjectInfo_projectName__1Hf5o" href="/web/campaign/detail/191893?preview=Y" target="_blank" rel="nofollow noopener noreferrer">정세인님의<br>따뜻한 기부</a>
-                        <button class="Button_button__1e2A2_Button_info__Nu98q_Button_text__3KyLl_Button_md__1FRMG_Button_endIcon__3ZOY3_AppSidebarRewardProjectInfo_projectNumberButton__1izF_" type="button">
-                            <span><span class="Button_children__q9VCZ">프로젝트 번호 191893</span>
-                                <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__3lrgp_Button_icon__1qsE3_AppSidebarRewardProjectInfo_expandIcon__2oHiN{" aria-hidden="true" style="width: 20px; height: 20px;">
-                                    <path d="M16 22.4L5.6 12l1.12-1.12L16 20.16l9.28-9.28L26.4 12 16 22.4z"></path>
-                                </svg></span></button>
-                    </div>
-                    <nav class="AppSidebarMenuList_container__199gJ">
-                        <div class="AppSidebarMenuList_margin__3qjoc"></div>
-                        <ul>
-                            <li>
-                                <a class="AppSidebarMenuList_navLink__1FytL_AppSidebarMenuList_active__tbFuL" href="/studio/reward/191893/funding" aria-current="page">기부하기
-                                    <i class="icon-chevron-left_AppSidebarMenuList_chevronIcon__2YV-z_AppSidebarMenuList_open__bjhTR" aria-hidden="true"></i></a>
-                                <ul class="AppSidebarRewardSubList_container__2zCmr">
-                                    <li>
-                                        <a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa" href="/studio/reward/191893/funding/plan">식품 기부</a>
-                                    </li>
-                                    <li><a class="AppSidebarMenuList_navLink__1FytL_AppSidebarRewardSubList_subMenu__iqWsa_select" href="/studio/reward/191893/funding/screening">가전제품 기부</a></li>
-                            </li> 
-                        </ul>
-                    </nav>
-                </div> -->
                 <div id="AppLayout_Contents" class="AppLayout_contents__wv3DF">
                     <div id="container" class="ContentsLayout_container__11k-W">
                         <div class="FundingStoryContainer_container__33WY0">

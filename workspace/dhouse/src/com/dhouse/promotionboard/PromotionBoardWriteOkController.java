@@ -9,11 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Action;
 import com.dhouse.Result;
-import com.dhouse.file.dao.FileDAO;
 import com.dhouse.file.domain.FileVO;
 import com.dhouse.promotionboard.dao.PromotionBoardDAO;
 import com.dhouse.promotionboard.domain.PromotionBoardVO;
 import com.dhouse.promotionfile.dao.PromotionFileDAO;
+import com.dhouse.promotionfile.domain.PromotionFileVO;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
@@ -24,8 +24,8 @@ public class PromotionBoardWriteOkController implements Action {
 		req.setCharacterEncoding("UTF-8");
 		PromotionBoardVO promotionBoardVO = new PromotionBoardVO();
 		PromotionBoardDAO promotionBoardDAO = new PromotionBoardDAO();
-		PromotionFileDAO fileDAO = new PromotionFileDAO();
-		FileVO fileVO = new FileVO();
+		PromotionFileDAO promotionFileDAO = new PromotionFileDAO();
+		PromotionFileVO promotionFileVO = new PromotionFileVO();
 		Result result = new Result();
 		String uploadPath = req.getSession().getServletContext().getRealPath("/") + "upload/";
 		int fileSize = 1024 * 1024 * 5; //5M
@@ -47,16 +47,16 @@ public class PromotionBoardWriteOkController implements Action {
 		
 		while(fileNames.hasMoreElements()) {
 			String fileName = fileNames.nextElement();
-			String fileOriginalName = multipartRequest.getOriginalFileName(fileName);
+//			String fileOriginalName = multipartRequest.getOriginalFileName(fileName);
 			String fileSystemName = multipartRequest.getFilesystemName(fileName);
 			
-			if(fileOriginalName == null) {continue;}
+//			if(fileOriginalName == null) {continue;}
 			
-			fileVO.setFileOriginalName(fileOriginalName);
-			fileVO.setFileSystemName(fileSystemName);
-			fileVO.setPromotionBoardId(promotionBoardCurrentSequence);
+//			promotionFileVO.setFileOriginalName(fileOriginalName);
+			promotionFileVO.setFileSystemName(fileSystemName);
+			promotionFileVO.setPromotionBoardId(promotionBoardCurrentSequence);
 			
-			fileDAO.insert(fileVO);
+			promotionFileDAO.insert(promotionFileVO);
 		}
 		
 		result.setPath(req.getContextPath() + "/promotion/listOk.promotion");

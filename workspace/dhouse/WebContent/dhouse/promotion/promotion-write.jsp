@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../../assets/img/logo.png">
+    <link rel="shortcut icon" href="../../static/images/logo.png">
 </head>
 <body>
     <jsp:include page="../components/header.jsp"></jsp:include>
@@ -165,5 +165,5 @@
      <jsp:include page="../components/footer.jsp"></jsp:include>
  </body>
  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
- <script type="text/javascript" src="../../static/js/board/board_community_write.js"></script>
+ <script type="text/javascript" src="../../static/js/promotion/promotion-write.js"></script>
 </html>

@@ -82,6 +82,11 @@ body{
     vertical-align: top;
 }
 
+.button-a {
+    text-decoration: none;
+    color: #00a2a2;
+}
+
 #update-button {
     margin-right: 5px;
 }

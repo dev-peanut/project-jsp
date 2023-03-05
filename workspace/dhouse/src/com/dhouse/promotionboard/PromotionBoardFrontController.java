@@ -62,34 +62,6 @@ public class PromotionBoardFrontController extends HttpServlet {
 		}
 
 		
-		System.out.println(target);
-		
-		if(target.equals("/liskOk")) {
-			result = new PromotionBoardListOkController().execute(req, resp);
-			
-		}else if(target.equals("/deleteOk")){
-			result = new PromotionBoardDeleteOkController().execute(req, resp);
-			
-		}else if(target.equals("/detailOk")){
-			result = new PromotionBoardDetailOkController().execute(req, resp);
-			
-		}else if(target.equals("/modifyOk")){
-			result = new PromotionBoardModifyOkController().execute(req, resp);
-			
-		}else if(target.equals("/writeOk")){
-			result = new PromotionBoardWriteOkController().execute(req, resp);
-
-		}else {
-			
-		}
-
-		if (result != null) {
-			if (result.isRedirect()) {
-				resp.sendRedirect(result.getPath());
-			} else {
-				req.getRequestDispatcher(result.getPath()).forward(req, resp);
-			}
-		}	
 	}
 	
 	@Override

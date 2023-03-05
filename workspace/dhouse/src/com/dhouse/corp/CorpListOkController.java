@@ -1,82 +1,66 @@
 package com.dhouse.corp;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.dhouse.Action;
 import com.dhouse.Result;
 import com.dhouse.corp.dao.CorpDAO;
-import com.dhouse.corp.domain.CorpDTO;
+import com.dhouse.corp.domain.CorpMoreDTO;
 
 public class CorpListOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		CorpDAO corpDAO = new CorpDAO();
-		Result result = new Result();
-		JSONArray corpJsons = new JSONArray();
+		resp.setCharacterEncoding("UTF-8");
 		
-		Map<String, Object> pageMap = new HashMap<String, Object>();
-		List<CorpDTO> corpList = null;
-		
+//		한 페이지에 출력되는 게시글의 개수
+		int rowCount = 20;
 		String temp = req.getParameter("page");
 		int page = temp == null || temp.equals("null") ? 1 : Integer.parseInt(temp);
-		
-		Long total = corpDAO.getTotal();
-//		한 페이지에 출력되는 게시글의 개수
-		int rowCount = 5;
-//		한 페이지에서 나오는 페이지 버튼의 개수
-		int pageCount = 5;
 		int startRow = (page - 1) * rowCount;
+		int nextStartRow = page * rowCount;
+		Map<String, Object> pageMap = new HashMap<String, Object>();
 		
-		int endPage = (int)(Math.ceil(page / (double)pageCount) * pageCount);
-		int startPage = endPage - (pageCount - 1);
-		int realEndPage = (int)Math.ceil(total / (double)rowCount);
+		PrintWriter out = resp.getWriter();
+		CorpDAO corpDAO = new CorpDAO();
+		CorpMoreDTO corpMoreDTO = new CorpMoreDTO();
+		JSONArray jsonArray = new JSONArray();
+		JSONObject jsonObject = new JSONObject();
 		
-		boolean prev = startPage > 1;
-		boolean next = false;
-		endPage = endPage > realEndPage ? realEndPage : endPage;
-		next = endPage != realEndPage;
+//		Long total = corpDAO.getTotal();
 		
-		pageMap.put("rowCount", rowCount);
 		pageMap.put("startRow", startRow);
+		pageMap.put("nextStartRow", nextStartRow);
+		pageMap.put("rowCount", rowCount);
 		
-		corpList = corpDAO.selectAll(pageMap);
+		corpMoreDTO.setCorpDTOs(corpDAO.selectAll(pageMap));
+		corpMoreDTO.setNextPage(corpDAO.isNextPage(pageMap));
 		
-		corpList.stream().map(corp -> new JSONObject(corp)).forEach(corpJsons::put);
+		corpMoreDTO.getCorpDTOs().stream().map(corpDTO -> new JSONObject(corpDTO)).forEach(jsonArray::put);
 		
-//		corpList.stream().map(CorpDTO::getUserId).map(CorpDTO::getCorpFileSystemName).collect(Collectors.toList())
-//		.stream().filter(files -> files.size() != 0).map(files -> files.get(0)).map(file -> new JSONObject(file))
-//		.forEach(json -> {
-//			try {
-//				fileJsons.put(String.valueOf(json.get("corpId")), json);
-//			} catch (JSONException e) {
-//				e.printStackTrace();
-//			}	
-//		});
+		try {
+			jsonObject.put("isNextPage", corpMoreDTO.isNextPage());
+			jsonObject.put("corps", jsonArray);
+//			jsonObject.put("total", total);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
 		
-		req.setAttribute("corps", corpJsons.toString());
-		req.setAttribute("total", total);
-		req.setAttribute("startPage", startPage);
-		req.setAttribute("endPage", endPage);
-		req.setAttribute("page", page);
-		req.setAttribute("prev", prev);
-		req.setAttribute("next", next);
+		out.print(jsonObject.toString());
+		out.close();
 		
-		result.setPath("/dhouse/businessIntroduction/business-introduction.jsp");
-		
-		
-		return result;
+		return null;
 	}
 
 }

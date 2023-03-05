@@ -27,7 +27,7 @@
                        <input type="text" name="realName" class="input-text disable hide" maxlength="20" placeholder="이름" value="" disabled="" style="display: none;">
                        <div class="input-btn-wrap">
 	                        	<div class="input">
-	                            	<input type="email" id="userEmail" name="userName" class="disable input-text" placeholder="이메일 계정" value="pdy0722@gmail.com" disabled="">
+	                            	<input type="email" id="userEmail" name="userName" class="disable input-text" placeholder="이메일 계정" value="pdy0722@gmail.com" disabled="" onclick="click">
 	                          	</div>
 	                          	<div id="emailChangeBtn" class="emailAuthBtn btn" data-status="change">
 	                            	<a href="#" onclick="return false;">
@@ -75,7 +75,7 @@
 	                          </div>
 	                          <div id="mobileCheckBtn" class="mobileAuthBtn btn" style="display:none;" data-status="check">
 	                              <a href="#" onclick="return false;">
-	                                  <span>인증하기</span>
+	                                  <span>등록하기</span>
 	                              </a>
 	                          </div>
 	                          <div id="mobileChangeBtn" class="mobileAuthBtn btn" data-status="change">
@@ -135,7 +135,7 @@
 	                        </div>
 							 <div class="email-input-wrap small">
 								 <div class="btn-wrap">
-									 <button type="button" id="saveBtn" class="wz button primary block btn-block-mint">확인</button>
+									 <button type="submit" id="saveBtn" class="wz button primary block btn-block-mint">확인</button>
 								 </div>
 							 </div>
 	                    </div>

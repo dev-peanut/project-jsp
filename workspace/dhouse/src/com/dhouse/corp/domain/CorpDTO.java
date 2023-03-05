@@ -5,8 +5,8 @@ public class CorpDTO {
 	private Long userId;
 	private String userIdentification;
 	private String userPassword;
-	private String userName;
-	private String userNickname;
+	private String userName; // 대표자명
+	private String userNickname; // 기업명
 	private String userPhone;
 	private String userEmail;
 	private String corpAddress;
@@ -14,10 +14,12 @@ public class CorpDTO {
 	private String corpIntroductionText;
 	private String corpFileSystemName;
 	private Long foodSum;
+	private Long totalDonation;
 	private Long foodCount;
 	private String foodRequestDate;
 	private String foodFileSystemName;
 	private int levelLevel;
+	private int rankPercent;
 	private String levelDiscount;
 	
 	public CorpDTO() {;}
@@ -118,6 +120,22 @@ public class CorpDTO {
 		this.foodSum = foodSum;
 	}
 
+	public Long getTotalDonation() {
+		return totalDonation;
+	}
+
+	public void setTotalDonation(Long totalDonation) {
+		this.totalDonation = totalDonation;
+	}
+
+	public Long getFoodCount() {
+		return foodCount;
+	}
+
+	public void setFoodCount(Long foodCount) {
+		this.foodCount = foodCount;
+	}
+
 	public String getFoodRequestDate() {
 		return foodRequestDate;
 	}
@@ -142,6 +160,14 @@ public class CorpDTO {
 		this.levelLevel = levelLevel;
 	}
 
+	public int getRankPercent() {
+		return rankPercent;
+	}
+
+	public void setRankPercent(int rankPercent) {
+		this.rankPercent = rankPercent;
+	}
+
 	public String getLevelDiscount() {
 		return levelDiscount;
 	}
@@ -156,9 +182,10 @@ public class CorpDTO {
 				+ userPassword + ", userName=" + userName + ", userNickname=" + userNickname + ", userPhone="
 				+ userPhone + ", userEmail=" + userEmail + ", corpAddress=" + corpAddress + ", corpRegisterNumber="
 				+ corpRegisterNumber + ", corpIntroductionText=" + corpIntroductionText + ", corpFileSystemName="
-				+ corpFileSystemName + ", foodSum=" + foodSum + ", foodRequestDate=" + foodRequestDate
-				+ ", foodFileSystemName=" + foodFileSystemName + ", levelLevel=" + levelLevel + ", levelDiscount="
-				+ levelDiscount + "]";
+				+ corpFileSystemName + ", foodSum=" + foodSum + ", totalDonation=" + totalDonation + ", foodCount="
+				+ foodCount + ", foodRequestDate=" + foodRequestDate + ", foodFileSystemName=" + foodFileSystemName
+				+ ", levelLevel=" + levelLevel + ", rankPercent=" + rankPercent + ", levelDiscount=" + levelDiscount
+				+ "]";
 	}
 
 	@Override
@@ -185,6 +212,9 @@ public class CorpDTO {
 			return false;
 		return true;
 	}
+
+
+	
 	
 	
 }

@@ -74,9 +74,9 @@
 						<div class="web-header-funding-open funding-open">
 							<div>
 								<div>
-									<button aria-label="프로젝트 만들기" class="header-make-button header-make-button2 header-make-button3 funding-open-button" type="button">
+									<button aria-label="기부 참여하기" class="header-make-button header-make-button2 header-make-button3 funding-open-button" type="button">
 										<span>
-											<span class="header-make-project-span">프로젝트 만들기</span>
+											<span class="header-make-project-span">기부 참여하기</span>
 										</span>
 									</button>
 								</div>

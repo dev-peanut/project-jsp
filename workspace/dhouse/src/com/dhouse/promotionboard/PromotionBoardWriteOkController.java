@@ -13,6 +13,7 @@ import com.dhouse.file.dao.FileDAO;
 import com.dhouse.file.domain.FileVO;
 import com.dhouse.promotionboard.dao.PromotionBoardDAO;
 import com.dhouse.promotionboard.domain.PromotionBoardVO;
+import com.dhouse.promotionfile.dao.PromotionFileDAO;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
@@ -23,7 +24,7 @@ public class PromotionBoardWriteOkController implements Action {
 		req.setCharacterEncoding("UTF-8");
 		PromotionBoardVO promotionBoardVO = new PromotionBoardVO();
 		PromotionBoardDAO promotionBoardDAO = new PromotionBoardDAO();
-		FileDAO fileDAO = new FileDAO();
+		PromotionFileDAO fileDAO = new PromotionFileDAO();
 		FileVO fileVO = new FileVO();
 		Result result = new Result();
 		String uploadPath = req.getSession().getServletContext().getRealPath("/") + "upload/";

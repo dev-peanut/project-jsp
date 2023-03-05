@@ -31,7 +31,6 @@ public class MyPageFrontController extends HttpServlet {
 		String target = uri.replace(contextPath + "/", "").split("\\.")[0];
 		Result result = null;
 
-//      로그인 했다 치고 넣어둬서 지워야함
      	req.getSession().setAttribute("userId", 1L);
 		
 		System.out.println("1. " + target);

@@ -1,18 +1,13 @@
-package com.dhouse.file.dao;
+package com.dhouse.promotionfile.dao;
 
 import org.apache.ibatis.session.SqlSession;
 
-import com.dhouse.file.domain.FileVO;
 import com.dhouse.mybatis.config.MyBatisConfig;
 
-public class FileDAO {
+public class PromotionFileDAO {
 	public SqlSession sqlSession;
 	
-	public FileDAO() {
+	public PromotionFileDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
-	}
-	
-	public void insert(FileVO fileVO) {
-		sqlSession.insert("file.insert", fileVO);
 	}
 }

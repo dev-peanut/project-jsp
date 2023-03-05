@@ -236,7 +236,7 @@ body>#root, #wadizTopBanner, #page-container {
 .email-input-wrap span {
     margin-top: 20px;
     font-size: 15px;
-    color: #4a4a4a;
+    color: #fff;
 }
 
 .btn span {
@@ -479,9 +479,25 @@ a.btn-block-mint, button.btn-block-mint {
     color: #fff;
 }
 
+#emailChangeBtn{
+	cursor:pointer;
+}
 
+#emailChangeBtn span{
+	color: #fff;
+}
 
+#mobileChangeBtn span{
+	color: #fff;
+}
+	
+#emailCheckBtn span{
+	color: #fff;
+}
 
+#mobileCheckBtn span{
+	color: #fff;
+}
 
 /* ================================media================================ */
 @media screen and (min-width: 1000px) {

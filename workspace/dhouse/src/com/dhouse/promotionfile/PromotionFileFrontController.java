@@ -1,4 +1,4 @@
-package com.dhouse.file;
+package com.dhouse.promotionfile;
 
 import java.io.IOException;
 
@@ -8,34 +8,39 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Result;
+import com.dhouse.promotionboard.PromotionBoardDeleteOkController;
 import com.dhouse.promotionboard.PromotionBoardDetailOkController;
 import com.dhouse.promotionboard.PromotionBoardListOkController;
-import com.dhouse.promotionboard.PromotionBoardUpdateOkController;
+import com.dhouse.promotionboard.PromotionBoardModifyOkController;
 import com.dhouse.promotionboard.PromotionBoardWriteOkController;
 
-public class FileFrontController extends HttpServlet{
+public class PromotionFileFrontController extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String uri = req.getRequestURI();
 		String contextPath = req.getContextPath();
-		String target = uri.replace(contextPath + "/", "").split("\\.")[0];
+		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
+
 		
-		if(target.equals("")) {
-			result = new PromotionBoardListOkController().execute(req, resp);
+		System.out.println(target);
+		
+		if(target.equals("/uploadOk")) {
+			result = new PromotionFileUploadOkController().execute(req, resp);
 			
-		} else if(target.equals("")) {
-			result = new Result();
-			result.setPath("/dhouse/promotion/promotion-detail.jsp");	
+		}else if(target.equals("")){
+
+		}else {
 			
-		} else if(target.equals("")) {
-			result = new PromotionBoardWriteOkController().execute(req, resp);
-			
-		} else {
-			System.out.println(target);
 		}
-		
-		
+
+		if (result != null) {
+			if (result.isRedirect()) {
+				resp.sendRedirect(result.getPath());
+			} else {
+				req.getRequestDispatcher(result.getPath()).forward(req, resp);
+			}
+		}	
 	}
 	
 	@Override

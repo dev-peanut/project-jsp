@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>마이페이지-개인</title>
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/user/myPage.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/myPage.css">
 </head>
 <body>
 	<div id="page-container">
@@ -17,13 +17,13 @@
 		<div id="container">
 			<div id="mypageWrap">
 				<div class="myprofile-wrap">
-					<div id="iam-profile-app" data-profile-image="https://static.wadiz.kr/assets/icon/profile-icon-4.png" data-nickname="익명의 서포터 993" data-accnttype-name="개인 회원" data-is-valid-joined-premium-membership="false" data-my-self="true" data-my-funding-all-count="0" data-signature-cnt="0" data-follower-cnt="0" data-following-cnt="0" data-target-enc-user-id="" data-target-user-id="6034797" data-introduceme="" data-is-following="false" data-my-interest-user-keyword="">
+					<div id="iam-profile-app" data-profile-image="https://static.wadiz.kr/static/icon/profile-icon-4.png" data-nickname="익명의 서포터 993" data-accnttype-name="개인 회원" data-is-valid-joined-premium-membership="false" data-my-self="true" data-my-funding-all-count="0" data-signature-cnt="0" data-follower-cnt="0" data-following-cnt="0" data-target-enc-user-id="" data-target-user-id="6034797" data-introduceme="" data-is-following="false" data-my-interest-user-keyword="">
 						<section class="ProfileCorp">
 							<div class="ProfileCorp_inner">
 								<h3 class="BlindText"></h3>
 								<!-- 프로필 이미지 -->
 								<div aria-hidden="true" class="Avatar">
-									<span class="Avatar_image" style="background-image: url('https://static.wadiz.kr/assets/icon/profile-icon-4.png'); border: 1px solid rgb(221, 226, 230);"></span>
+									<span class="Avatar_image" style="background-image: url('https://static.wadiz.kr/static/icon/profile-icon-4.png'); border: 1px solid rgb(221, 226, 230);"></span>
 								</div>
 								<!-- 사업자 회원 정보 -->
 								<div class="ProfileCorp_info">
@@ -52,22 +52,23 @@
 												<span class="BlindText">회</span>
 											</dd>
 										</div>
+										<!--  -->
 										<div>
 											<dt></dt>
 											<dd>
-												<span class="BlindText">회</span>
+												<span class="BlindText"></span>
 											</dd>
 										</div>
 										<div>
 											<dt></dt>
 											<dd>
-												<span class="BlindText">회</span>
+												<span class="BlindText"></span>
 											</dd>
 										</div>
 									</dl>
 								</div>
 								<!-- 프로필 설정 버튼 -->
-								<a href="https://www.wadiz.kr/web/wmypage/myprofile/modifyprofile" class="ProfileSet Mint">
+								<a href="https://www.wadiz.kr/web/wmypage/myprofile/modifyprofile" class="ProfileSet Mint" id="apply">
 									<span>
 										<span class="ProfileSet_button">배너 신청하기</span>
 									</span>
@@ -165,4 +166,7 @@
 		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
+<script>
+let contextPath = "${pageContext.request.contextPath}";
+</script>
 </html>

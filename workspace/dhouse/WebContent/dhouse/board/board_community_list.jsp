@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>수정 가전제품 목록 페이지</title>
 <link rel="stylesheet"
-	href="../../assets/css/board/board_community_list.css">
+	href="${pageContext.request.contextPath}/static/css/board/board_community_list.css">
 <link
 	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
 	rel="stylesheet">
@@ -16,12 +16,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"
 	rel="stylesheet">
-<link rel="shortcut icon" href="../../assets/img/logo.png">
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
 </head>
 <body>
 	<div id="page-container">
 		<div class="black-bg-wrap" style="display: none;"></div>
-		<jsp:include page="../components/header.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
 		<!-- 헤더 적용  -->
 		<div id="newContainer">
 			<div id="wcommunityWrap">
@@ -57,7 +57,7 @@
 											</div>
 											<div class="img-wrap">
 												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/assets/img/notebook.jpg)"></div>
+													style="background-image: url(${pageContext.request.contextPath}/static/images/user/notebook.jpg)"></div>
 											</div>
 										</div>
 									</li>
@@ -73,7 +73,7 @@
 											</div>
 											<div class="img-wrap">
 												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/assets/img/refrigerator.jpg)"></div>
+													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
 											</div>
 										</div>
 									</li>
@@ -89,7 +89,7 @@
 											</div>
 											<div class="img-wrap">
 												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/assets/img/refrigerator.jpg)"></div>
+													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
 											</div>
 										</div>
 									</li>
@@ -105,7 +105,7 @@
 											</div>
 											<div class="img-wrap">
 												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/assets/img/refrigerator.jpg)"></div>
+													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
 											</div>
 										</div>
 									</li>
@@ -121,7 +121,7 @@
 											</div>
 											<div class="img-wrap">
 												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/assets/img/refrigerator.jpg)"></div>
+													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
 											</div>
 										</div>
 									</li>
@@ -137,7 +137,7 @@
 											</div>
 											<div class="img-wrap">
 												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/assets/img/refrigerator.jpg)"></div>
+													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
 											</div>
 										</div>
 									</li>
@@ -154,7 +154,7 @@
 											</div>
 											<div class="img-wrap">
 												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/assets/img/refrigerator.jpg)"></div>
+													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
 											</div>
 										</div>
 									</li>
@@ -170,7 +170,7 @@
 											</div>
 											<div class="img-wrap">
 												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/assets/img/refrigerator.jpg)"></div>
+													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
 											</div>
 										</div>
 									</li>
@@ -244,7 +244,7 @@
 		</div>
 		<!-- newContainer -->
 		<!-- 푸터 -->
-		<jsp:include page="../components/footer.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

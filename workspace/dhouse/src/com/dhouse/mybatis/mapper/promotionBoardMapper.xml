@@ -34,4 +34,5 @@
 	<select id="getCurrentSequence" resultType="long">
 		select last_insert_id()
 	</select>
+<mapper namespace="promotionBoard">
 </mapper>

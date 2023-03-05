@@ -8,13 +8,22 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Action;
 import com.dhouse.Result;
+import com.dhouse.corp.dao.CorpDAO;
+import com.dhouse.corp.domain.CorpDTO;
 
 public class CorpDetailOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		// TODO Auto-generated method stub
-		return null;
+		CorpDAO corpDAO = new CorpDAO();
+		CorpDTO corpDTO = new CorpDTO();
+		Result result = new Result();
+		
+		
+		
+		
+		
+		return result;
 	}
 
 }

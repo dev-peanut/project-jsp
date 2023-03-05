@@ -87,10 +87,13 @@ body li, body ol, body ul {
     font-weight: normal;
 }
 /* 프로필 사진 수정 및 삭제 */
+#image {
+	visibility:hidden;
+}
+
 .profileimg-wrap {
     width: 100%;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .profileimg-wrap .profileimg {
@@ -301,6 +304,48 @@ body li, body ol, body ul {
 	background-color:#60656A;
 }
 
+#imageAdd{
+	background-color: #fff;
+	border-color: #fff;
+}
+
+#file {
+  display: none;
+}
+
+.setting-profileimg{
+	position: relative;
+    display: flex;
+	height: 110px;
+}
+
+.btn-upload{
+    left: 45%;
+	cursor:pointer;
+	position: absolute;
+    top: 99px;
+}
+
+.btn-upload span{
+font-size: 13px;
+}
+
+#btn_deletePhoto{
+	right: 36%;
+	margin: 0;
+	position: absolute;
+	top:107px;
+	text-decoration: none;
+}
+
+#btn_deletePhoto span{
+	font-size: 13px;
+	text-decoration: none!important;
+}
+#preview{
+	width: 100px;
+	height: 100px;
+}
 
 /* ===================================media=================================== */
 @media screen and (min-width: 960px) {

@@ -9,8 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
-<link href="${pageContext.request.contextPath}/assets/css/user/signUp-corp.css" rel="stylesheet">
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
+<link href="${pageContext.request.contextPath}/static/css/user/signUp-corp.css" rel="stylesheet">
 </head>
 <body>
     <jsp:include page="${pageContext.request.contextPath}/dhouse/user/user-header.jsp"></jsp:include>
@@ -250,5 +250,5 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<script src="${pageContext.request.contextPath}/assets/js/user/signUp-corp.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/user/signUp-corp.js"></script>
 </html>

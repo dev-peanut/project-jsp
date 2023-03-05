@@ -70,8 +70,7 @@
 				<div class="user-list__info-container">
 					<div class="user-list__info-unit">
 						<input type="checkbox" class="user__checkbox" id="kus"
-							name="checkbox" /> <label for="kus"
-							class="user__checkbox--label">
+							name="checkbox" /> 
 							<ul class="user-list__info">
 								<!-- <li>등록된 회원이 없습니다.</li> -->
 								<li class="user__id" name="userId">00000</li>
@@ -85,15 +84,14 @@
 										class="custom-btn btn-16" style="font-weight: 10px;" id="show">상세
 										정보</button></li>
 							</ul>
-						</label>
+						
 					</div>
 				</div>
 				<!-- 회원 추가 -->
 				<div class="user-list__info-container">
 					<div class="user-list__info-unit">
 						<input type="checkbox" class="user__checkbox" id="kus"
-							name="checkbox" /> <label for="kus"
-							class="user__checkbox--label">
+							name="checkbox" /> 
 							<ul class="user-list__info">
 								<!-- <li>등록된 회원이 없습니다.</li> -->
 								<li class="user__id" name="userId">00003</li>
@@ -107,14 +105,13 @@
 										class="custom-btn btn-16" style="font-weight: 10px;">상세
 										정보</button></li>
 							</ul>
-						</label>
+						
 					</div>
 				</div>
 				<div class="user-list__info-container">
 					<div class="user-list__info-unit">
 						<input type="checkbox" class="user__checkbox" id="kus"
-							name="checkbox" /> <label for="kus"
-							class="user__checkbox--label">
+							name="checkbox" /> 
 							<ul class="user-list__info">
 								<!-- <li>등록된 회원이 없습니다.</li> -->
 								<li class="user__id" name="userId">00001</li>
@@ -128,14 +125,13 @@
 										class="custom-btn btn-16" style="font-weight: 10px;">상세
 										정보</button></li>
 							</ul>
-						</label>
+						
 					</div>
 				</div>
 				<div class="user-list__info-container">
 					<div class="user-list__info-unit">
 						<input type="checkbox" class="user__checkbox" id="kus"
-							name="checkbox" /> <label for="kus"
-							class="user__checkbox--label">
+							name="checkbox" />
 							<ul class="user-list__info">
 								<!-- <li>등록된 회원이 없습니다.</li> -->
 								<li class="user__id" name="userId">00004</li>
@@ -149,14 +145,13 @@
 										class="custom-btn btn-16" style="font-weight: 10px;">상세
 										정보</button></li>
 							</ul>
-						</label>
+						
 					</div>
 				</div>
 				<div class="user-list__info-container">
 					<div class="user-list__info-unit">
 						<input type="checkbox" class="user__checkbox" id="kus"
-							name="checkbox" /> <label for="kus"
-							class="user__checkbox--label">
+							name="checkbox" /> 
 							<ul class="user-list__info">
 								<!-- <li>등록된 회원이 없습니다.</li> -->
 								<li class="user__id" name="userId">00003</li>
@@ -170,7 +165,7 @@
 										class="custom-btn btn-16" style="font-weight: 10px;">상세
 										정보</button></li>
 							</ul>
-						</label>
+						
 					</div>
 				</div>
 				<!-- 회원 추가 끝 -->

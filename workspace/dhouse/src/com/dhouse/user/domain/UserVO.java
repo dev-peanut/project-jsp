@@ -11,19 +11,11 @@ public class UserVO {
 	 
 	public UserVO() {;}
 
-<<<<<<< HEAD
-	public Long getuserId() {
-		return userId;
-	}
-
-	public void setuserId(Long userId) {
-=======
 	public Long getUserId() {
 		return userId;
 	}
 
 	public void setUserId(Long userId) {
->>>>>>> master
 		this.userId = userId;
 	}
 

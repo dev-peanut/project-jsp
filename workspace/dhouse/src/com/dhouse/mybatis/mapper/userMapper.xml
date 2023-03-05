@@ -1,17 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-=======
->>>>>>> master
 <mapper namespace="user">
-<!-- 회원가입 -->
-	<insert id="join" parameterType="userVO">
-		insert into tbl_user(user_identification, user_password, user_name, user_nickname, user_phone, user_email)
-		values(#{userIdentification}, #{userPassword}, #{userName}, #{userNickname}, #{userPhone}, #{userEmail})
-	</insert>
-	
-<!-- 아이디 중복체크 -->
-	<select id="checkId" parameterType="string" resultType="long">
-		select user_id from tbl_user where user_identification = #{userIdentification}
-	</select>
-</mapper> 	
+</mapper>

@@ -8,7 +8,6 @@ let identificationFlag = false;
 // 아이디 정규식 이벤트 사용 및 함수
 $identificationInput.on("blur", function(){
     var $identificationInputVal = $identificationInput.val();
-    var identificationInputVal = $identificationInput.val();
     var $identificationInputVal = $identificationInput.val();
 
     // 검증에 사용할 정규식 변수 regExp에 저장
@@ -25,7 +24,6 @@ $identificationInput.on("blur", function(){
         $identificationWarning.css("display", "block");
         $identificationInput.css("border-color", "#f66");
         identificationFlag = false;
-    }
     } else if{
 		
 	}

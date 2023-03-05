@@ -135,7 +135,7 @@
 	                        </div>
 							 <div class="email-input-wrap small">
 								 <div class="btn-wrap">
-									 <button type="button" id="saveBtn" class="wz button primary block btn-block-mint">확인</button>
+									 <button type="submit" id="saveBtn" class="wz button primary block btn-block-mint">확인</button>
 								 </div>
 							 </div>
 	                    </div>

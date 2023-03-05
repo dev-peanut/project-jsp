@@ -213,12 +213,12 @@
 												</label> -->
 												<label for="privacyTerms" class="termsItem">
 													<label for="privacyTerms" class="Checkbox1 Checkbox2 Checkbox3">
-														<input name="privacyTerms" id="privacyTerms" type="checkbox" class="Checkbox_input">
+														<input name="privacyTerms" id="checkboxtf" type="checkbox" class="Checkbox_input">
 															<span class="Checkbox_icon" aria-hidden="true" id="checkboxmint">
 																<svg viewBox="0 0 16 2" focusable="false" role="presentation" id="checkbutton" class="withIcon RemoveIcon" aria-hidden="true">
 																	<path fill-rule="evenodd" d="M0 0h16v2H0z"></path>
 																</svg>
-																 <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon CheckIcon" aria-hidden="true">
+																 <svg viewBox="0 0 48 48" focusable="false" role="presentation" id="realbutton" class="withIcon CheckIcon" aria-hidden="true">
 																	<path d="M18 39.6L4.8 26.4l3.36-3.36L18 32.76l21.84-21.72 3.36 3.36z"></path>
 																</svg>
 															</span>

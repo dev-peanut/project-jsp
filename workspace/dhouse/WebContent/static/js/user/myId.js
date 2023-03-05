@@ -1,4 +1,6 @@
 /*myId.js */
+/*닉네임 변경 AJAX*/
+
 
 /*이메일 인증 버튼*/
 const $emailChangeBtn = $("#emailChangeBtn");
@@ -53,9 +55,6 @@ $inputEmail.on("blur", function() {
 mobileNumber input phone
 mobileNumberError 유효한 전화번호를 입력해주세요
 */
-
-
-
 
 /* 이메일 변경 버튼 클릭 시 변경*/
 $("#mobileChangeBtn").on("click", $("#mobileChangeBtn"), function(){

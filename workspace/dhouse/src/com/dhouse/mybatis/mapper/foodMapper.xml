@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mapper namespace="food">
-	<insert id="foodApply" parameterType="foodVO">
-		insert into tbl_food(food_name, food_amount, food_request_date, file_system_name, user_id) 
-		value (#{foodName}, #{foodAmount}, #{foodRequestDate}, #{fileSystemName}, #{userId})
-	</insert>
-</mapper>

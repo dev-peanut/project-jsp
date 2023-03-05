@@ -32,5 +32,10 @@ public class CorpDAO {
 		return sqlSession.selectList("corp.isNextPage", pageMap).size() != 0;
 	}
 	
+//	기업 상세 소개 - 최근 기부 목록 3건 제외한 나머지 다
+//	public List<CorpDTO> selectDetail 
+	
+//	기업 상세 소개 페이지 - 최근 기부 목록 3건
+	
 	
 }

@@ -9,8 +9,8 @@
    <typeAliases>
       <!-- <typeAlias type="com.dhouse.user.domain.UserVO" alias="userVO"/> -->
       <!-- <typeAlias type="com.dhouse.corp.domain.CorpVO" alias="corpVO"/> -->
-      <typeAlias type="com.dhouse.corp.domain.CorpDTO" alias="corpDTO"/>
-	  <!-- <typeAlias type="com.dhouse.food.domain.MyPageVO" alias="myPageVO"/> -->
+      <typeAlias type="com.dhouse.corp.domain.CorpDTO" alias="corpDTO"/> 
+	  <!-- <typeAlias type="com.dhouse.food.domain.MyPageVO" alias="myPageDTO"/> --> 
 	  <!-- <typeAlias type="com.dhouse.food.domain.MainVO" alias="mainVO"/> -->
 	  <!-- <typeAlias type="com.dhouse.food.domain.FoodVO" alias="foodVO"/> -->
       <!-- <typeAlias type="com.dhouse.reply.domain.ReplyVO" alias="replyVO"/> -->
@@ -36,9 +36,9 @@
    
    <mappers>
       <!-- <mapper resource="com/dhouse/mybatis/mapper/userMapper.xml"/> -->
-      <mapper resource="com/dhouse/mybatis/mapper/corpMapper.xml"/>
-      <!-- <mapper resource="com/dhouse/mybatis/mapper/adminMapper.xml"/> -->
-      <!-- <mapper resource="com/dhouse/mybatis/mapper/myPageMapper.xml"/> -->
+		<mapper resource="com/dhouse/mybatis/mapper/corpMapper.xml"/>
+		<!-- <mapper resource="com/dhouse/mybatis/mapper/adminMapper.xml"/> -->  
+		<!-- <mapper resource="com/dhouse/mybatis/mapper/myPageMapper.xml"/> -->
       <!-- <mapper resource="com/dhouse/mybatis/mapper/myPageCorpMapper.xml"/> -->
       <!-- <mapper resource="com/dhouse/mybatis/mapper/foodMapper.xml"/> -->
       <!-- <mapper resource="com/dhouse/mybatis/mapper/replyMapper.xml"/> -->

@@ -60,9 +60,9 @@ Select.addEventListener("click", function(event) {
 });
 
 /*
-const $Select = $(".Select1");
+const $select = $(".Select1");
 const $content = $(".content1");
-$Select.click(function(event){
+$select.click(function(event){
 	if($content.css("display") == 'none') {
 		$content.css("display", "block");
 	}else{

@@ -47,7 +47,7 @@
                         <div id="top-bottom-wrapper">
                             <div id="top-bottom1">
                                 <div id="top-bottom1-info">
-                                    <span id="span-number"><%-- ${corpRanking.rankPercent} --%></span>
+                                    <span id="span-number">${corpRanking.rankPercent}</span>
                                     <span id="span-text">%</span>
                                 </div>
                                 <span id="top-bottom1-info-behind">
@@ -113,9 +113,15 @@
                     <div id="under-left-top">
                         <span id="under-left-title">최근 기부 목록</span>
                     </div>
+                    <c:if test="${not empty corpDetail[0].foodName}">
                         <div class="under-left-bottom-texts">💚${corpDetail[0].foodName}💚 , 기부량: ${corpDetail[0].foodAmount}, 기부날짜: ${corpDetail[0].foodRequestDate}</div>
-                        <div class="under-left-bottom-texts">💚${corpDetail[0].foodName}💚 , 기부량: ${corpDetail[1].foodAmount}, 기부날짜: ${corpDetail[0].foodRequestDate}</div>
-                        <div class="under-left-bottom-texts">💚${corpDetail[0].foodName}💚 , 기부량: ${corpDetail[2].foodAmount}, 기부날짜: ${corpDetail[0].foodRequestDate}</div>
+                    </c:if>
+                    <c:if test="${not empty corpDetail[1].foodName}">
+                        <div class="under-left-bottom-texts">💚${corpDetail[1].foodName}💚 , 기부량: ${corpDetail[1].foodAmount}, 기부날짜: ${corpDetail[1].foodRequestDate}</div>
+                    </c:if>    
+                   	<c:if test="${not empty corpDetail[2].foodName}">
+                        <div class="under-left-bottom-texts">💚${corpDetail[2].foodName}💚 , 기부량: ${corpDetail[2].foodAmount}, 기부날짜: ${corpDetail[2].foodRequestDate}</div>
+                   	</c:if>
                 </div>
             </a>
         </div>

@@ -32,7 +32,7 @@
 								<img id="preview" />
 						</label>
 					</div>
-<!-- 세인 수정/프로필 사진 변경 JS 적용-->
+					<!-- 세인 수정/프로필 사진 변경 JS 적용-->
 				<h5>회사 / 직책</h5>
       					<ul class="input-div2">
       						<li><input type="text" class="input-text" maxlength="50" id="belongsTo" placeholder="회사" value=""></li>

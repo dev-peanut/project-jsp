@@ -8,8 +8,9 @@
    
    <typeAliases>
       <typeAlias type="com.dhouse.user.domain.UserVO" alias="userVO"/>
-      <!-- <typeAlias type="com.dhouse.corp.domain.CorpVO" alias="corpVO"/> -->
+      <typeAlias type="com.dhouse.corp.domain.CorpVO" alias="corpVO"/>
       <typeAlias type="com.dhouse.corp.domain.CorpDTO" alias="corpDTO"/> 
+<<<<<<< HEAD
 	  <!-- <typeAlias type="com.dhouse.food.domain.MyPageVO" alias="myPageDTO"/> --> 
 	  <!-- <typeAlias type="com.dhouse.food.domain.MainVO" alias="mainVO"/> -->
 	  <!-- <typeAlias type="com.dhouse.food.domain.FoodVO" alias="foodVO"/> -->
@@ -20,6 +21,19 @@
       <!-- <typeAlias type="com.dhouse.promotionboard.domain.PromotionBoardDTO" alias="promotionBoardDTO"/> -->
       <!-- <typeAlias type="com.dhouse.donationboard.domain.DonationBoardVO" alias="donationBoardVO"/> -->
       <!-- <typeAlias type="com.dhouse.banner.domain.BannerVO" alias="bannerVO"/> -->
+=======
+	  <typeAlias type="com.dhouse.mypage.domain.MyPageDTO" alias="myPageDTO"/> 
+	  <typeAlias type="com.dhouse.food.domain.FoodVO" alias="foodVO"/>
+      <typeAlias type="com.dhouse.reply.domain.ReplyVO" alias="replyVO"/>
+      <typeAlias type="com.dhouse.promotionfile.domain.PromotionFileVO" alias="promotionFileVO"/>
+      <typeAlias type="com.dhouse.donationfile.domain.DonationFileVO" alias="donationFileVO"/> 
+      <typeAlias type="com.dhouse.promotionboard.domain.PromotionBoardVO" alias="promotionBoardVO"/> 
+      <typeAlias type="com.dhouse.promotionboard.domain.PromotionBoardDTO" alias="promotionBoardDTO"/> 
+      <typeAlias type="com.dhouse.donationboard.domain.DonationBoardVO" alias="donationBoardVO"/>
+      <typeAlias type="com.dhouse.donationboard.domain.DonationBoardDTO" alias="donationBoardDTO"/>
+      <typeAlias type="com.dhouse.banner.domain.BannerVO" alias="bannerVO"/>
+      <typeAlias type="com.dhouse.file.domain.FileVO" alias="fileVO"/>
+>>>>>>> origin/master
 	</typeAliases>
    
    <environments default="mysql">
@@ -34,9 +48,10 @@
       </environment>
    </environments>
    
-   <mappers>
+	<mappers>
 		<mapper resource="com/dhouse/mybatis/mapper/userMapper.xml"/>
 		<mapper resource="com/dhouse/mybatis/mapper/corpMapper.xml"/>
+<<<<<<< HEAD
 		<!-- <mapper resource="com/dhouse/mybatis/mapper/adminMapper.xml"/> -->  
 	 <mapper resource="com/dhouse/mybatis/mapper/myPageMapper.xml"/>
       <!-- <mapper resource="com/dhouse/mybatis/mapper/myPageCorpMapper.xml"/> -->
@@ -46,6 +61,19 @@
       <!-- <mapper resource="com/dhouse/mybatis/mapper/promotionBoardMapper.xml"/> -->
       <!-- <mapper resource="com/dhouse/mybatis/mapper/donationBoardMapper.xml"/> -->
       <!-- <mapper resource="com/dhouse/mybatis/mapper/bannerMapper.xml"/> -->
+=======
+		<mapper resource="com/dhouse/mybatis/mapper/adminMapper.xml"/>  
+		<mapper resource="com/dhouse/mybatis/mapper/myPageMapper.xml"/>
+      	<mapper resource="com/dhouse/mybatis/mapper/myPageCorpMapper.xml"/>
+        <mapper resource="com/dhouse/mybatis/mapper/foodMapper.xml"/>
+	    <mapper resource="com/dhouse/mybatis/mapper/replyMapper.xml"/>
+	    <mapper resource="com/dhouse/mybatis/mapper/fileMapper.xml"/>
+	    <mapper resource="com/dhouse/mybatis/mapper/promotionBoardMapper.xml"/>
+	    <mapper resource="com/dhouse/mybatis/mapper/promotionFileMapper.xml"/>
+	    <mapper resource="com/dhouse/mybatis/mapper/donationBoardMapper.xml"/>
+	    <mapper resource="com/dhouse/mybatis/mapper/donationFileMapper.xml"/>
+	    <mapper resource="com/dhouse/mybatis/mapper/bannerMapper.xml"/> 
+>>>>>>> origin/master
    </mappers>
 </configuration>
 

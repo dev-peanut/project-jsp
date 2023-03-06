@@ -1,58 +1,49 @@
 package com.dhouse.donationfile.domain;
 
 public class DonationFileVO {
-	private Long fileId;
-	private String fileSystemName;
+	private Long donationFileId;
+	private String donationFileSystemName;
 	private Long donationBoardId;
 	
 	public DonationFileVO() {;}
 
-	
-	public Long getFileId() {
-		return fileId;
+	public Long getDonationFileId() {
+		return donationFileId;
 	}
 
-
-	public void setFileId(Long fileId) {
-		this.fileId = fileId;
+	public void setDonationFileId(Long donationFileId) {
+		this.donationFileId = donationFileId;
 	}
 
-
-	public String getFileSystemName() {
-		return fileSystemName;
+	public String getDonationFileSystemName() {
+		return donationFileSystemName;
 	}
 
-
-	public void setFileSystemName(String fileSystemName) {
-		this.fileSystemName = fileSystemName;
+	public void setDonationFileSystemName(String donationFileSystemName) {
+		this.donationFileSystemName = donationFileSystemName;
 	}
-
 
 	public Long getDonationBoardId() {
 		return donationBoardId;
 	}
 
-
 	public void setDonationBoardId(Long donationBoardId) {
 		this.donationBoardId = donationBoardId;
 	}
 
-
 	@Override
 	public String toString() {
-		return "DonationFileVO [fileId=" + fileId + ", fileSystemName=" + fileSystemName + ", donationBoardId="
-				+ donationBoardId + "]";
+		return "DonationFileVO [donationFileId=" + donationFileId + ", donationFileSystemName=" + donationFileSystemName
+				+ ", donationBoardId=" + donationBoardId + "]";
 	}
-
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((fileId == null) ? 0 : fileId.hashCode());
+		result = prime * result + ((donationFileId == null) ? 0 : donationFileId.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -63,12 +54,11 @@ public class DonationFileVO {
 		if (getClass() != obj.getClass())
 			return false;
 		DonationFileVO other = (DonationFileVO) obj;
-		if (fileId == null) {
-			if (other.fileId != null)
+		if (donationFileId == null) {
+			if (other.donationFileId != null)
 				return false;
-		} else if (!fileId.equals(other.fileId))
+		} else if (!donationFileId.equals(other.donationFileId))
 			return false;
 		return true;
 	}
-	
 }

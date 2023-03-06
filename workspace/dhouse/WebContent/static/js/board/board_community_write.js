@@ -6,7 +6,14 @@
         reader.onload = function(event) {
           var img = document.createElement("img");
           img.setAttribute("src", event.target.result);
-          document.querySelector("div#image_container").appendChild(img);
+          
+          if(document.querySelector("#image_container").childElementCount < 1){
+            document.querySelector("#image_container").appendChild(img);
+            document.querySelector("#photosubmit").style.display = 'none';
+          } else {
+            document.querySelector("#photosubmit").style.display = 'none';
+            alert("이미지는 1개만 등록할 수 있습니다.");
+          }
         };
 
         reader.readAsDataURL(event.target.files[0]);

@@ -7,11 +7,11 @@
 }
 
 body {
-	overflow-x: hidden;
+   overflow-x: hidden;
 }
 
 .MainWrapper_content {
-	width: 100%;
+   width: 100%;
 }
 
 
@@ -129,18 +129,18 @@ div.next-icon:before {
     top: 8px;
 }
 .banner-text-inner-wrapper{
-	display: block;
-	z-index: 3;
+   display: block;
+   z-index: 3;
     margin: 0 auto;
     padding: 16px;
     box-sizing: border-box!important;
 }
 .banner-text-inner-wrapper {
-	position: absolute;
-	left: 120px;
+   position: absolute;
+   left: 120px;
 }
 .banner-text-inner-wrapper {
-	display: block;
+   display: block;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -151,24 +151,24 @@ div.next-icon:before {
 }
 
 @media screen and (min-width: 769px) {
-	.banner-text-inner-wrapper{
-	    padding: 44px 44px 45px;
-	}
+   .banner-text-inner-wrapper{
+       padding: 44px 44px 45px;
+   }
 }
 
 @media screen and (min-width: 1097px) {
-	.banner-text-inner-wrapper{
-	    padding: 40px 0 45px;
+   .banner-text-inner-wrapper{
+       padding: 40px 0 45px;
         padding-left: 80px;
-	}
+   }
 }
 
 
 
 
 .banner-text-title {
-	display: block;
-	z-index: 3;
+   display: block;
+   z-index: 3;
     margin-bottom: 8px;
     width: 280px;
     line-height: 28px;
@@ -180,17 +180,17 @@ div.next-icon:before {
 }
 
 @media screen and (min-width: 769px) {
-	.banner-text-title {
-	    width: 460px;
-	    line-height: 40px;
-	    font-size: 32px;
-	    font-weight: 700;
-	}
+   .banner-text-title {
+       width: 460px;
+       line-height: 40px;
+       font-size: 32px;
+       font-weight: 700;
+   }
 }
 
 .banner-text-badge {
-	z-index: 3;
-	line-height: 18px;
+   z-index: 3;
+   line-height: 18px;
     font-size: 13px;
     font-weight: 400;
     display: inline-block;
@@ -292,7 +292,7 @@ thead, time, tr, ul, video{
 }
 
 ol {
-	list-style: none;	
+   list-style: none;   
 }
 a, em, div {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -529,8 +529,8 @@ svg:not(:root) {
 }
 
 .ranking-section-container {
-	padding: 0 16px;
-	margin: 0;
+   padding: 0 16px;
+   margin: 0;
     position: relative;
 }
 
@@ -552,7 +552,7 @@ svg:not(:root) {
 }
 
 .ranking-tab-container {
-	display: inline-flex;
+   display: inline-flex;
     justify-content: space-between;
     padding-bottom: 15px;
     width: 100%;
@@ -560,7 +560,7 @@ svg:not(:root) {
 }
 
 .tab-button-container {
-	display: inline-flex;
+   display: inline-flex;
     align-items: center;
     margin-right: 16px;
 }
@@ -580,7 +580,7 @@ svg:not(:root) {
     color: #212529;
 }
 
-.select-tab-button-ranking:after { /* 실시간 랭킹 탭 클릭한 부분 밑줄 가상요소 */
+/* #tab-button1:after { 
     position: absolute;
     right: 0;
     bottom: 0;
@@ -590,12 +590,32 @@ svg:not(:root) {
     content: "";
 }
 
+#tab-button2:after { 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    height: 1px;
+    content: "";
+} */
+
+/* .select-tab-button-ranking:after { 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    height: 1px;
+    content: "";
+} */
+
 .select-ranking-tab-content {
     margin-bottom: 8px;
 }
 
 .card-type-content-ranking {
-	border-radius: 3px;
+   border-radius: 3px;
     background-color: #fff;
     width: 100%;
     overflow: hidden;
@@ -605,17 +625,17 @@ svg:not(:root) {
 }
 
 .ranking-content {
-	float: left;
+   float: left;
     width: calc(100% - 109px);
-	height: 60px;
+   height: 60px;
     box-sizing: border-box;
     position: relative;
     padding-left: 21px;
-	
+   
 }
 
 .ranking-order {
-	line-height: 24px;
+   line-height: 24px;
     font-size: 19px;
     font-weight: 700;
     position: absolute;
@@ -624,7 +644,7 @@ svg:not(:root) {
 }
 
 .ranking-content-title {
-	overflow: hidden;
+   overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     white-space: normal;
@@ -665,7 +685,7 @@ svg:not(:root) {
 }
 
 .ranking-content-thumbnail {
-	position: relative;
+   position: relative;
     background-color: #f2f4f6;
     width: 93px;
     height: 66px;
@@ -689,6 +709,7 @@ svg:not(:root) {
     height: 100%;
     transform: scale(1);
     opacity: 1;
+    background-image: url(https://cdn.wadiz.kr/wwwwadiz/green001/2023/0127/20230127145839949_184450.jpg/wadiz/resize/150/format/jpg/quality/85/);
 }
 
 
@@ -718,7 +739,7 @@ svg:not(:root) {
 }
 
 /* .content-wrapper:not(:first-child) {
-	margin-left: 10px;
+   margin-left: 10px;
 } */
 
 .content {
@@ -941,62 +962,66 @@ li{
 }
 
 @media screen and (min-width: 1097px) {
-	.ranking-section-container {
-	    margin-top: 0;
-	    margin-bottom: 0;
-	    padding-right: 0;
-	    padding-left: 60px;
-	}
+   .ranking-section-container {
+       margin-top: 0;
+       margin-bottom: 0;
+       padding-right: 0;
+       padding-left: 60px;
+   }
 }
 
 @media screen and (min-width: 769px) {
-	.ranking-section-container {
+   .ranking-section-container {
         min-width: 427px;
-   		max-width: 427px;
-	}
+         max-width: 427px;
+   }
 }
 
 @media screen and (min-width: 1441px) {
-	.ranking-section-inner-container-title {
-	    line-height: 32px;
-	    font-size: 24px;
-	}
+   .ranking-section-inner-container-title {
+       line-height: 32px;
+       font-size: 24px;
+   }
 }
 @media screen and (min-width: 1097px) {
-	.ranking-section-inner-container-title {
-	    line-height: 20px;
-	    font-size: 15px;
-	    font-weight: 700;
-	    margin-bottom: 16px;
-	}
+   .ranking-section-inner-container-title {
+       line-height: 20px;
+       font-size: 15px;
+       font-weight: 700;
+       margin-bottom: 16px;
+   }
 }
 
 @media screen and (min-width: 769px) {
-	.ranking-section-inner-container-title {
-	    margin-bottom: 16px;
-	}
+   .ranking-section-inner-container-title {
+       margin-bottom: 16px;
+   }
 }
 
 
 @media screen and (min-width: 1097px) {
-	.ranking-section-title {
-	    line-height: 38px;
-	    letter-spacing: -.6px;
-	    font-size: 28px;
-	    font-weight: 700;
-	}
+   .ranking-section-title {
+       line-height: 38px;
+       letter-spacing: -.6px;
+       font-size: 28px;
+       font-weight: 700;
+   }
 }
 
 @media screen and (min-width: 1096px) {
-	.select-ranking-tab-content {
-	    margin-bottom: 16px;
-	}
+   .select-ranking-tab-content {
+       margin-bottom: 16px;
+   }
 }
 
 @media screen and (min-width: 1097px) {
-	.ranking-order {
-	    line-height: 28px;
-	    font-size: 21px;
-	}
+   .ranking-order {
+       line-height: 28px;
+       font-size: 21px;
+   }
 }
 
+
+#ranking-mark2 {
+    display: none;
+}

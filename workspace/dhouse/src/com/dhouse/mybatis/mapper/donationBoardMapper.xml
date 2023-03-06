@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mapper namespace="donationBoard">
+	<insert id="insert" parameterType="donationBoardVO">
+		insert into tbl_donation_board(donation_board_title, donation_board_contents, user_id)
+		values(#{donationBoardTitle}, #{donationBoardContents}, #{userId})
+	</insert>
 </mapper>

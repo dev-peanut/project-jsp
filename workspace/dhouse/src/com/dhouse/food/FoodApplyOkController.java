@@ -1,6 +1,7 @@
 package com.dhouse.food;
 
 import java.io.IOException;
+import java.util.Enumeration;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -27,14 +28,20 @@ public class FoodApplyOkController implements Action {
 //		multipartRequest : 파일 들어갈때 필요
 		MultipartRequest multipartRequest = new MultipartRequest(req, uploadPath, fileSize, "UTF-8", new DefaultFileRenamePolicy());
 		
+		Enumeration<String> fileNames = multipartRequest.getFileNames();
+		String fileName = fileNames.nextElement();//파일 한개씩 가져옴
+		String fileSystemName = multipartRequest.getFilesystemName(fileName);
+		
 		foodVO.setFoodName(multipartRequest.getParameter("foodName"));
 		foodVO.setFoodAmount(multipartRequest.getParameter("amountContent"));
+		foodVO.setFoodRequestDate(multipartRequest.getParameter("foodRequestDate"));
+		foodVO.setFileSystemName(multipartRequest.getParameter("fileSystemName"));
 		foodVO.setUserId((Long)req.getSession().getAttribute("userId"));
+		foodVO.setFileSystemName(fileSystemName);
 		
 		foodDAO.insert(foodVO);
 		
-		foodCurrentSequence = foaodDAO.getCurrentSequence();
-		
+		foodCurrentSequence = foodDAO.getCurrentSequence();
 		
 		return null;
 	}

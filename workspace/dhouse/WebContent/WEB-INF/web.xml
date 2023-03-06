@@ -107,4 +107,12 @@
     <servlet-name>promotion</servlet-name>
     <url-pattern>*.promotion</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>donation</servlet-name>
+    <servlet-class>com.dhouse.donationboard.DonationBoardFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>donation</servlet-name>
+    <url-pattern>*.donation</url-pattern>
+  </servlet-mapping>
 </web-app>

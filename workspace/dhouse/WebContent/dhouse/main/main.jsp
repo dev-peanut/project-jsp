@@ -88,8 +88,8 @@
                   <section class="recommendation-section-container">
                      <div class="recommendation-section-inner-container-title-container">
                         <div class="recommendation-section-inner-container-subtitle">
-                           <h2 class="recommendation-title">취향 맞춤 프로젝트</h2>
-                           <p class="recommendation-subtitle">지금 함께 만드는 성공</p>
+                           <h2 class="recommendation-title">나눔 게시판</h2>
+                           <p class="recommendation-subtitle">최근 작성된 게시물</p>
                         </div>
                         <div class="recommendation-section-inner-container-tooltip-container">
                            <div class="recommendation-tooltip-symbol">
@@ -116,9 +116,9 @@
                                        <div aria-hidden="true" class="CardType_thumbnail_image" style="background-image: url(&quot;https://cdn.wadiz.kr/wwwwadiz/green001/2023/0201/20230201144847483_180055.png/wadiz/resize/240/format/jpg/quality/85/&quot;);"></div>
                                     </div>
                                     <div class="CardType_content">
-                                       <em class="commons_title_CardType_content">[월 2.5억인증]단 1년만에 억대연봉,월3천 벌게한 스마트스토어 노하우</em>
+                                       <em class="commons_title_CardType_content">${donationBoardList[0].donationBoardTitle}</em>
                                        <p class="commons_summary_CardType_content">
-                                          <span class="commons_rate_CardType_content">24,292%</span>출판
+                                          <span class="commons_rate_CardType_content">작성자 : ${donationBoardList[0].userNickname}</span> 
                                        </p>
                                     </div>
                                  </article>
@@ -133,9 +133,9 @@
                                        <div aria-hidden="true" class="CardType_thumbnail_image" style="background-image: url(&quot;https://cdn.wadiz.kr/wwwwadiz/green001/2023/0201/20230201144847483_180055.png/wadiz/resize/240/format/jpg/quality/85/&quot;);"></div>
                                     </div>
                                     <div class="CardType_content">
-                                       <em class="commons_title_CardType_content">[월 2.5억인증]단 1년만에 억대연봉,월3천 벌게한 스마트스토어 노하우</em>
+                                       <em class="commons_title_CardType_content">${donationBoardList[1].donationBoardTitle}</em>
                                        <p class="commons_summary_CardType_content">
-                                          <span class="commons_rate_CardType_content">24,292%</span>출판
+                                          <span class="commons_rate_CardType_content">작성자 : ${donationBoardList[1].userNickname}</span> 
                                        </p>
                                     </div>
                                  </article>
@@ -150,9 +150,9 @@
                                        <div aria-hidden="true" class="CardType_thumbnail_image" style="background-image: url(&quot;https://cdn.wadiz.kr/wwwwadiz/green001/2023/0201/20230201144847483_180055.png/wadiz/resize/240/format/jpg/quality/85/&quot;);"></div>
                                     </div>
                                     <div class="CardType_content">
-                                       <em class="commons_title_CardType_content">[월 2.5억인증]단 1년만에 억대연봉,월3천 벌게한 스마트스토어 노하우</em>
+                                       <em class="commons_title_CardType_content">${donationBoardList[2].donationBoardTitle}</em>
                                        <p class="commons_summary_CardType_content">
-                                          <span class="commons_rate_CardType_content">24,292%</span>출판
+                                          <span class="commons_rate_CardType_content">작성자 : ${donationBoardList[2].userNickname}</span> 
                                        </p>
                                     </div>
                                  </article>
@@ -167,9 +167,9 @@
                                        <div aria-hidden="true" class="CardType_thumbnail_image" style="background-image: url(&quot;https://cdn.wadiz.kr/wwwwadiz/green001/2023/0201/20230201144847483_180055.png/wadiz/resize/240/format/jpg/quality/85/&quot;);"></div>
                                     </div>
                                     <div class="CardType_content">
-                                       <em class="commons_title_CardType_content">[월 2.5억인증]단 1년만에 억대연봉,월3천 벌게한 스마트스토어 노하우</em>
+                                       <em class="commons_title_CardType_content">${donationBoardList[3].donationBoardTitle}</em>
                                        <p class="commons_summary_CardType_content">
-                                          <span class="commons_rate_CardType_content">24,292%</span>출판
+                                          <span class="commons_rate_CardType_content">작성자 : ${donationBoardList[3].userNickname}</span> 
                                        </p>
                                     </div>
                                  </article>
@@ -184,9 +184,9 @@
                                        <div aria-hidden="true" class="CardType_thumbnail_image" style="background-image: url(&quot;https://cdn.wadiz.kr/wwwwadiz/green001/2023/0201/20230201144847483_180055.png/wadiz/resize/240/format/jpg/quality/85/&quot;);"></div>
                                     </div>
                                     <div class="CardType_content">
-                                       <em class="commons_title_CardType_content">[월 2.5억인증]단 1년만에 억대연봉,월3천 벌게한 스마트스토어 노하우</em>
+                                       <em class="commons_title_CardType_content">${donationBoardList[4].donationBoardTitle}</em>
                                        <p class="commons_summary_CardType_content">
-                                          <span class="commons_rate_CardType_content">24,292%</span>출판
+                                          <span class="commons_rate_CardType_content">작성자 : ${donationBoardList[4].userNickname}</span> 
                                        </p>
                                     </div>
                                  </article>
@@ -195,15 +195,15 @@
                         </div>
                         <div class="recommendation-card"> <!-- 추천 카드 썸네일 -->
                            <div>
-                              <a class="card-type-recommendation-a" href="/web/campaign/detail/180055?_refer_section_st=PersonalCurator_0">
+                              <a class="card-type-recommendation-a" href="${pageContext.request.contextPath}/donation/detailOk.donation?donationBoardId=${donationBoardList[5].donationBoardId}">
                                  <article>
                                     <div class="CardType_thumbnail">
                                        <div aria-hidden="true" class="CardType_thumbnail_image" style="background-image: url(&quot;https://cdn.wadiz.kr/wwwwadiz/green001/2023/0201/20230201144847483_180055.png/wadiz/resize/240/format/jpg/quality/85/&quot;);"></div>
                                     </div>
                                     <div class="CardType_content">
-                                       <em class="commons_title_CardType_content">[월 2.5억인증]단 1년만에 억대연봉,월3천 벌게한 스마트스토어 노하우</em>
+                                       <em class="commons_title_CardType_content">${donationBoardList[5].donationBoardTitle}</em>
                                        <p class="commons_summary_CardType_content">
-                                          <span class="commons_rate_CardType_content">24,292%</span>출판
+                                          <span class="commons_rate_CardType_content">작성자 : ${donationBoardList[5].userNickname}</span>
                                        </p>
                                     </div>
                                  </article>
@@ -223,10 +223,10 @@
                         <div class="ranking-tab-container">
                            <div>
                               <div class="tab-button-container">
-                                 <button type="button" class="tab-button-ranking select-tab-button-ranking" id="tab-button1">펀딩/프리오더</button>
+                                 <button type="button" class="tab-button-ranking select-tab-button-ranking" id="tab-button1">기부량 랭킹</button>
                               </div>
                               <div class="tab-button-container">
-                                 <button type="button" class="tab-button-ranking" id="tab-button2">스토어</button>
+                                 <button type="button" class="tab-button-ranking" id="tab-button2">나눔 게시판 조회수 랭킹</button>
                               </div>
                            </div>
                         </div>
@@ -239,10 +239,10 @@
                                        <article>
                                           <div class="ranking-content">
                                              <div class="ranking-order">1</div>
-                                             <em class="ranking-content-title">[역대뷰티 1위] 면봉 태워 속눈썹 올리기. 알죠? 그 비법이 컬링기로!</em>
+                                             <em class="ranking-content-title">${promotionBoardRankings[0].userNickname}</em>
                                              <p class="ranking-content-summary">
-                                                <span class="ranking-content-rate">2000명</span>
-                                                홈·리빙
+                                                <span class="ranking-content-rate">총 기부량</span>
+                                                <!-- kg -->${promotionBoardRankings[0].foodSum} kg
                                              </p>
                                           </div>
                                           <div class="ranking-content-thumbnail">
@@ -450,8 +450,8 @@
                   <div class="contents-wrapper-title">
                      <div class="recommendation-section-inner-container-title-container">
                         <div class="recommendation-section-inner-container-subtitle">
-                           <h2 class="recommendation-title">취향 맞춤 프로젝트</h2>
-                           <p class="recommendation-subtitle">지금 함께 만드는 성공</p>
+                           <h2 class="recommendation-title">홍보 게시판</h2>
+                           <p class="recommendation-subtitle">최근 작성된 게시물</p>
                         </div>
                         <div class="recommendation-section-inner-container-tooltip-container">
                            <div class="recommendation-tooltip-symbol">

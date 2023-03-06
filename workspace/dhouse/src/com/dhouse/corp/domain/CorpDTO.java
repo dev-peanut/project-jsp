@@ -15,6 +15,7 @@ public class CorpDTO {
 	private String corpFileSystemName;
 	private Long foodSum;
 	private Long totalDonation;
+	private Long donationCount;
 	private Long foodCount;
 	private Long foodAmount;
 	private String foodName;
@@ -23,15 +24,23 @@ public class CorpDTO {
 	private int levelLevel;
 	private int rankPercent;
 	private int ranking;
+	private Long levelLowPoint;
+	private Long levelHighPoint;
 	private String levelDiscount;
 	
 	public CorpDTO() {;}
 
+
 	
-	
+
+
+
 	public Long getUserId() {
 		return userId;
 	}
+
+
+
 
 
 
@@ -41,9 +50,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getUserIdentification() {
 		return userIdentification;
 	}
+
+
+
 
 
 
@@ -53,9 +68,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getUserPassword() {
 		return userPassword;
 	}
+
+
+
 
 
 
@@ -65,9 +86,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getUserName() {
 		return userName;
 	}
+
+
+
 
 
 
@@ -77,9 +104,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getUserNickname() {
 		return userNickname;
 	}
+
+
+
 
 
 
@@ -89,9 +122,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getUserPhone() {
 		return userPhone;
 	}
+
+
+
 
 
 
@@ -101,9 +140,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getUserEmail() {
 		return userEmail;
 	}
+
+
+
 
 
 
@@ -113,9 +158,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getCorpAddress() {
 		return corpAddress;
 	}
+
+
+
 
 
 
@@ -125,9 +176,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getCorpRegisterNumber() {
 		return corpRegisterNumber;
 	}
+
+
+
 
 
 
@@ -137,9 +194,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getCorpIntroductionText() {
 		return corpIntroductionText;
 	}
+
+
+
 
 
 
@@ -149,9 +212,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getCorpFileSystemName() {
 		return corpFileSystemName;
 	}
+
+
+
 
 
 
@@ -161,9 +230,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public Long getFoodSum() {
 		return foodSum;
 	}
+
+
+
 
 
 
@@ -173,9 +248,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public Long getTotalDonation() {
 		return totalDonation;
 	}
+
+
+
 
 
 
@@ -185,9 +266,33 @@ public class CorpDTO {
 
 
 
+
+
+
+	public Long getDonationCount() {
+		return donationCount;
+	}
+
+
+
+
+
+
+	public void setDonationCount(Long donationCount) {
+		this.donationCount = donationCount;
+	}
+
+
+
+
+
+
 	public Long getFoodCount() {
 		return foodCount;
 	}
+
+
+
 
 
 
@@ -197,9 +302,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public Long getFoodAmount() {
 		return foodAmount;
 	}
+
+
+
 
 
 
@@ -209,9 +320,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getFoodName() {
 		return foodName;
 	}
+
+
+
 
 
 
@@ -221,9 +338,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getFoodRequestDate() {
 		return foodRequestDate;
 	}
+
+
+
 
 
 
@@ -233,9 +356,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public String getFoodFileSystemName() {
 		return foodFileSystemName;
 	}
+
+
+
 
 
 
@@ -245,9 +374,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public int getLevelLevel() {
 		return levelLevel;
 	}
+
+
+
 
 
 
@@ -257,9 +392,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public int getRankPercent() {
 		return rankPercent;
 	}
+
+
+
 
 
 
@@ -269,9 +410,15 @@ public class CorpDTO {
 
 
 
+
+
+
 	public int getRanking() {
 		return ranking;
 	}
+
+
+
 
 
 
@@ -281,9 +428,51 @@ public class CorpDTO {
 
 
 
+
+
+
+	public Long getLevelLowPoint() {
+		return levelLowPoint;
+	}
+
+
+
+
+
+
+	public void setLevelLowPoint(Long levelLowPoint) {
+		this.levelLowPoint = levelLowPoint;
+	}
+
+
+
+
+
+
+	public Long getLevelHighPoint() {
+		return levelHighPoint;
+	}
+
+
+
+
+
+
+	public void setLevelHighPoint(Long levelHighPoint) {
+		this.levelHighPoint = levelHighPoint;
+	}
+
+
+
+
+
+
 	public String getLevelDiscount() {
 		return levelDiscount;
 	}
+
+
+
 
 
 
@@ -291,7 +480,10 @@ public class CorpDTO {
 		this.levelDiscount = levelDiscount;
 	}
 
+
 	
+
+
 
 	@Override
 	public String toString() {
@@ -299,11 +491,16 @@ public class CorpDTO {
 				+ userPassword + ", userName=" + userName + ", userNickname=" + userNickname + ", userPhone="
 				+ userPhone + ", userEmail=" + userEmail + ", corpAddress=" + corpAddress + ", corpRegisterNumber="
 				+ corpRegisterNumber + ", corpIntroductionText=" + corpIntroductionText + ", corpFileSystemName="
-				+ corpFileSystemName + ", foodSum=" + foodSum + ", totalDonation=" + totalDonation + ", foodCount="
-				+ foodCount + ", foodAmount=" + foodAmount + ", foodName=" + foodName + ", foodRequestDate="
-				+ foodRequestDate + ", foodFileSystemName=" + foodFileSystemName + ", levelLevel=" + levelLevel
-				+ ", rankPercent=" + rankPercent + ", ranking=" + ranking + ", levelDiscount=" + levelDiscount + "]";
+				+ corpFileSystemName + ", foodSum=" + foodSum + ", totalDonation=" + totalDonation + ", donationCount="
+				+ donationCount + ", foodCount=" + foodCount + ", foodAmount=" + foodAmount + ", foodName=" + foodName
+				+ ", foodRequestDate=" + foodRequestDate + ", foodFileSystemName=" + foodFileSystemName
+				+ ", levelLevel=" + levelLevel + ", rankPercent=" + rankPercent + ", ranking=" + ranking
+				+ ", levelLowPoint=" + levelLowPoint + ", levelHighPoint=" + levelHighPoint + ", levelDiscount="
+				+ levelDiscount + "]";
 	}
+
+
+
 
 
 

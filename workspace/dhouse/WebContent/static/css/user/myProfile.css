@@ -316,7 +316,7 @@ body li, body ol, body ul {
 .setting-profileimg{
 	position: relative;
     display: flex;
-	height: 110px;
+	height: 45px;
 }
 
 .btn-upload{

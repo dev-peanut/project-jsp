@@ -22,7 +22,7 @@ public class MyPageWithdrawOkController implements Action {
 		//Long userId = Long.valueOf(req.getParameter("userId"));
 		
 		req.getSession().setAttribute("userId", 1L);
-		myPageDAO.delete(1L); //로그인 받고 userId로 수정 
+		myPageDAO.delete(1L); //로그인 받고 userId로 수정
 		result.setPath(req.getContextPath() + "/dhouse/user/myPage.jsp");
 		result.setRedirect(true);
 		

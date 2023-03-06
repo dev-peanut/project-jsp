@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.dhouse.Action;
 import com.dhouse.Result;
 import com.dhouse.mypage.dao.MyPageDAO;
-import com.dhouse.user.dao.UserDAO;
 import com.dhouse.user.domain.UserVO;
 
 public class MyPasswordOkController implements Action {

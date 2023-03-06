@@ -29,7 +29,7 @@ public class MyPageDAO {
 		 sqlSession.update("updatenicknamePhoneEmail.myPage", userVO);
 	}
 	
-	//닉네임 중복검사(ajax)
+	//닉네임 중복검사(ajax) 추후에 하기
 	public void checkNickname(String userNickname) {
 		sqlSession.selectOne(userNickname);
 	}

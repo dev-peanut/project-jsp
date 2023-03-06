@@ -19,10 +19,13 @@ public class myIdOkController implements Action {
 		MyPageDAO myPageDAO = new MyPageDAO();
 		Result result = new Result();
 	
-		Long userId = Long.valueOf(req.getParameter("1L"));
 
-		//userVO에 세팅
-		userVO.setUserId(userId);
+		//Long userId = Long.valueOf(req.getParameter("userId"));
+		Long userId = Long.valueOf(req.getParameter("1L"));
+		
+		//입력값 userVO에 세팅		
+		//userVO.setuserId(userId); //->1L?
+		userVO.setuserId(1L); //->1L?
 		userVO.setUserNickname(req.getParameter("userNickname"));
 		userVO.setUserPhone(req.getParameter("userPhone"));
 		userVO.setUserEmail(req.getParameter("userEmail"));

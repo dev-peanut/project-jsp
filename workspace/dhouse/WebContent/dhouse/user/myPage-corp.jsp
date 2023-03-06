@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마이페이지-사업자</title>
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/staitc/images/logo.png">
+<title>1.마이페이지-사업자</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/myPage.css">
 </head>

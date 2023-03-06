@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>프로필 정보 설정</title>
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
+<title>3.(사)프로필 정보 설정</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/myProfile.css">
 </head>
@@ -19,12 +19,14 @@
                    <div id="tabContent1" class="tab-content">
                       <h5>프로필 사진</h5>
                       <div class="profileimg-wrap">
-                         <button type="file" id="resultProfileImg" class="profileimg" onclick="setThumbnail"><em id="image_container" style="background-image:url(https://static.wadiz.kr/static/icon/profile-icon-4.png)"></em></button>
+                         <input type="file" id="resultProfileImg" class="profileimg" onchange="setThumbnail(event);">
+                         <div class="image_space"></div>
+                              <div id="image_container"></div> </button>
                          <p class="setting-profileimg">
-                            <button type="button" onclick="$('#uploadProfileImg').click()" id="btn_updatePhoto">
+                            <button type="button" id="btn_updatePhoto"/>
                                <span id="img">바꾸기</span>
                             </button>
-                            <button type="button" onclick="deletePhoto()" id="btn_deletePhoto">삭제</button>
+                         <!--    <button type="button" onclick="deletePhoto()" id="btn_deletePhoto">삭제</button> -->
                          </p>
                       </div>
                       <h5>회사 / 직책</h5>
@@ -57,6 +59,5 @@
       </div>
       <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
-<script type="text/javascript"
-   src="${pageContext.request.contextPath}/static/js/board/myProfile.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/user/myProfile.js"></script>
 </html>

@@ -17,7 +17,7 @@ $("#emailChangeBtn").on("click", $("#emailChangeBtn"), function(){
 	$('#emailChangeBtn').css('borderColor', "#00c4c4");
    	$("#userEmail").attr("disabled", false, "placeholder", "이메일 계정");
 	$("#userEmail").css('backgroundColor','#fff', 'borderColor', "#00c4c4");
-/*	$("#changeEmailInfo").text('로그인 아이디와 안내 메일 발송 주소가 변경됩니다.');*/
+/*	$("#changeEmailInfo").text('안내 메일 발송 주소가 변경됩니다.');*/
 	$("#changeEmailInfo").css('display','block');
 });
 

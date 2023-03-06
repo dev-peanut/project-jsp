@@ -6,7 +6,7 @@
         reader.onload = function(event) {
           var img = document.createElement("#resultProfileImg");
           img.setAttribute("src", event.target.result);
-          document.querySelector("em#image_container").appendChild(img);
+          document.querySelector("div#image_container").appendChild(img);
         };
 
         reader.readAsDataURL(event.target.files[0]);

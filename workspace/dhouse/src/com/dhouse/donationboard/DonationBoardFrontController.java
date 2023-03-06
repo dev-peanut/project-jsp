@@ -26,20 +26,25 @@ public class DonationBoardFrontController extends HttpServlet{
 		
 		System.out.println(target);
 		
-		if(target.equals("/listOk")) {
+		if(target.equals("/donation/listOk")) {
 			result = new DonationBoardListOkController().execute(req, resp);
 			
-		}else if(target.equals("/deleteOk")){
+		}else if(target.equals("/donation/write")){
+			result = new Result();
+			result.setPath("/dhouse/donation/donation-write.jsp");	
+			
+		}else if(target.equals("/donation/writeOk")){
+			System.out.println("13123");
+			result = new DonationBoardWriteOkController().execute(req, resp);
+			
+		}else if(target.equals("/donation/deleteOk")){
 			result = new DonationBoardDeleteOkController().execute(req, resp);
 			
-		}else if(target.equals("/detailOk")){
+		}else if(target.equals("/donation/detailOk")){
 			result = new DonationBoardDetailOkController().execute(req, resp);
 			
-		}else if(target.equals("/modifyOk")){
+		}else if(target.equals("/donation/modifyOk")){
 			result = new DonationBoardModifyOkController().execute(req, resp);
-			
-		}else if(target.equals("/writeOk")){
-			result = new DonationBoardWriteOkController().execute(req, resp);
 
 		}else {
 			

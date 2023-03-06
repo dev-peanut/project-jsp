@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="donationFile">
+	<insert id="insert" parameterType="donationFileVO">
+		insert into tbl_donation_file(file_system_name, donation_board_id)
+		values(#{fileSystemName}, #{donationBoardId})
+	</insert>
+	<select id="select" parameterType="long" resultType="donationFileVO">
+		select file_id, donation_board_id, file_system_name
+		from tbl_donation_file where donation_board_id = #{donationBoardId}
+	</select>
 </mapper>

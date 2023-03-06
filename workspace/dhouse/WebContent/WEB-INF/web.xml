@@ -85,10 +85,12 @@
     <servlet-name>board</servlet-name>
     <servlet-class>com.dhouse.board.BoardFrontController</servlet-class>
   </servlet>
+  
   <servlet-mapping>
     <servlet-name>board</servlet-name>
     <url-pattern>*.board</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>banner</servlet-name>
     <servlet-class>com.dhouse.banner.BannerFrontController</servlet-class>

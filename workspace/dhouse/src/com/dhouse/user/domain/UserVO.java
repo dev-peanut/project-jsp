@@ -11,11 +11,11 @@ public class UserVO {
 	
 	public UserVO() {;}
 
-	public Long getuserId() {
+	public Long getUserId() {
 		return userId;
 	}
 
-	public void setuserId(Long userId) {
+	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
 

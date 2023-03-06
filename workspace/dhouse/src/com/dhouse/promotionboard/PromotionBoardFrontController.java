@@ -23,7 +23,7 @@ public class PromotionBoardFrontController extends HttpServlet {
 		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
 		
-		if(target.equals("/promotion/listOk")) {
+		if(target.equals("/donation/listOk")) {
 			result = new PromotionBoardListOkController().execute(req, resp);
 			
 		} else if(target.equals("/promotion/detail")) {

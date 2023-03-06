@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="donationBoard">
 	<insert id="insert" parameterType="donationBoardVO">
-		insert into tbl_donation_board(donation_board_title, donation_board_contents, user_id)
-		values(#{donationBoardTitle}, #{donationBoardContents}, #{userId})
+		insert into tbl_donation_board (donation_board_title, donation_board_contents, donation_board_register_date, donation_board_update_date, user_id, donation_board_read_count) 
+		values (#{donationBoardTitle}, #{donationBoardContents}, now(), now(), #{userId}, 0)
 	</insert>
+	
+	<select id="select" resultType="donationBoardDTO" parameterType="long">
+		select user_id, user_nickname, donation_board_title, donation_board_contents, donation_board_register_date, food_sum, file_system_name, promotion_board_id, corp_address
+		from view_promotion_all
+		where promotion_board_id = #{promotionBoardId}
+	</select>
+	
+	<select id="getCurrentSequence" resultType="long">
+		select last_insert_id()
+	</select>
 </mapper>

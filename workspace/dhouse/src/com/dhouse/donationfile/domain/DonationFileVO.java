@@ -1,26 +1,26 @@
 package com.dhouse.donationfile.domain;
 
 public class DonationFileVO {
-	private Long donationFileId;
-	private String donationFileSystemName;
+	private Long fileId;
+	private String fileSystemName;
 	private Long donationBoardId;
 	
 	public DonationFileVO() {;}
 
-	public Long getDonationFileId() {
-		return donationFileId;
+	public Long getFileId() {
+		return fileId;
 	}
 
-	public void setDonationFileId(Long donationFileId) {
-		this.donationFileId = donationFileId;
+	public void setFileId(Long fileId) {
+		this.fileId = fileId;
 	}
 
-	public String getDonationFileSystemName() {
-		return donationFileSystemName;
+	public String getFileSystemName() {
+		return fileSystemName;
 	}
 
-	public void setDonationFileSystemName(String donationFileSystemName) {
-		this.donationFileSystemName = donationFileSystemName;
+	public void setFileSystemName(String fileSystemName) {
+		this.fileSystemName = fileSystemName;
 	}
 
 	public Long getDonationBoardId() {
@@ -33,15 +33,15 @@ public class DonationFileVO {
 
 	@Override
 	public String toString() {
-		return "DonationFileVO [donationFileId=" + donationFileId + ", donationFileSystemName=" + donationFileSystemName
-				+ ", donationBoardId=" + donationBoardId + "]";
+		return "DonationFileVO [fileId=" + fileId + ", fileSystemName=" + fileSystemName + ", donationBoardId="
+				+ donationBoardId + "]";
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((donationFileId == null) ? 0 : donationFileId.hashCode());
+		result = prime * result + ((fileId == null) ? 0 : fileId.hashCode());
 		return result;
 	}
 
@@ -54,10 +54,10 @@ public class DonationFileVO {
 		if (getClass() != obj.getClass())
 			return false;
 		DonationFileVO other = (DonationFileVO) obj;
-		if (donationFileId == null) {
-			if (other.donationFileId != null)
+		if (fileId == null) {
+			if (other.fileId != null)
 				return false;
-		} else if (!donationFileId.equals(other.donationFileId))
+		} else if (!fileId.equals(other.fileId))
 			return false;
 		return true;
 	}

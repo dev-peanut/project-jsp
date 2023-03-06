@@ -48,19 +48,16 @@ public class DonationBoardWriteOkController implements Action {
 			String fileName = fileNames.nextElement();//파일 한개씩 가져옴
 			String fileSystemName = multipartRequest.getFilesystemName(fileName);
 			
-			if(fileSystemName == null) {continue;}
-			
 			donationFileVO.setFileSystemName(fileSystemName);
 			donationFileVO.setDonationBoardId(donationBoardCurrentSequence);
 			
 			donationFileDAO.insert(donationFileVO);
 		}
 		
-		result.setPath(req.getContextPath() + "/donationBoard/WriteOk.board");
+		result.setPath(req.getContextPath() + "/donation/write.donation");
 		result.setRedirect(true);
 	    
-	      
-		return null;
+		return result;
 	}
 
 }

@@ -1,15 +1,17 @@
 package com.dhouse.donationboard.domain;
 
-public class DonationBoardVO {
+public class DonationBoardDTO {
 	private Long donationBoardId;
 	private String donationBoardTitle;
 	private String donationBoardContents;
 	private String donationBoardRegisterDate;
 	private String donationBoardUpdateDate;
-	private String donationBoardReadCount;
-	private Long userId;
+	private Long donationBoardReadCount;
+//	추가
+	private String userNickname;
+	private String donationFileSystemName;
 	
-	public DonationBoardVO() {;}
+	public DonationBoardDTO() {;}
 
 	public Long getDonationBoardId() {
 		return donationBoardId;
@@ -51,28 +53,28 @@ public class DonationBoardVO {
 		this.donationBoardUpdateDate = donationBoardUpdateDate;
 	}
 
-	public String getDonationBoardReadCount() {
+	public Long getDonationBoardReadCount() {
 		return donationBoardReadCount;
 	}
 
-	public void setDonationBoardReadCount(String donationBoardReadCount) {
+	public void setDonationBoardReadCount(Long donationBoardReadCount) {
 		this.donationBoardReadCount = donationBoardReadCount;
 	}
 
-	public Long getUserId() {
-		return userId;
+	public String getUserNickname() {
+		return userNickname;
 	}
 
-	public void setUserId(Long userId) {
-		this.userId = userId;
+	public void setUserNickname(String userNickname) {
+		this.userNickname = userNickname;
 	}
 
-	@Override
-	public String toString() {
-		return "DonationBoardVO [donationBoardId=" + donationBoardId + ", donationBoardTitle=" + donationBoardTitle
-				+ ", donationBoardContents=" + donationBoardContents + ", donationBoardRegisterDate="
-				+ donationBoardRegisterDate + ", donationBoardUpdateDate=" + donationBoardUpdateDate
-				+ ", donationBoardReadCount=" + donationBoardReadCount + ", userId=" + userId + "]";
+	public String getDonationFileSystemName() {
+		return donationFileSystemName;
+	}
+
+	public void setDonationFileSystemName(String donationFileSystemName) {
+		this.donationFileSystemName = donationFileSystemName;
 	}
 
 	@Override
@@ -91,7 +93,7 @@ public class DonationBoardVO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		DonationBoardVO other = (DonationBoardVO) obj;
+		DonationBoardDTO other = (DonationBoardDTO) obj;
 		if (donationBoardId == null) {
 			if (other.donationBoardId != null)
 				return false;
@@ -99,4 +101,14 @@ public class DonationBoardVO {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "DonationBoardDTO [donationBoardId=" + donationBoardId + ", donationBoardTitle=" + donationBoardTitle
+				+ ", donationBoardContents=" + donationBoardContents + ", donationBoardRegisterDate="
+				+ donationBoardRegisterDate + ", donationBoardUpdateDate=" + donationBoardUpdateDate
+				+ ", donationBoardReadCount=" + donationBoardReadCount + ", userNickname=" + userNickname
+				+ ", donationFileSystemName=" + donationFileSystemName + "]";
+	}
+
 }

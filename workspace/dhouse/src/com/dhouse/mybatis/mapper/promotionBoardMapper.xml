@@ -9,6 +9,13 @@
 		limit 0, 10
 	</select>
 	
+	<select id="selectList" resultType="promotionBoardDTO">
+		select user_id, user_nickname, promotion_board_id, promotion_board_title, file_system_name, food_sum
+		from view_promotion_all
+		order by promotion_board_id desc
+		limit 0, 5
+	</select>
+	
 	<select id="select" resultType="promotionBoardDTO" parameterType="long">
 		select user_id, user_nickname, promotion_board_title, promotion_board_contents, promotion_board_register_date, food_sum, file_system_name, promotion_board_id, corp_address
 		from view_promotion_all

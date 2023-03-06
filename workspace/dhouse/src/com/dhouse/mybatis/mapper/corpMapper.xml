@@ -25,22 +25,21 @@
 	
 	<!-- 기업 상세 페이지 detail -->
 	<select id="selectDetail" parameterType="long" resultType="corpDTO">
-		select c.user_id , c.file_system_name , 
-			u.user_nickname , c.corp_introduction_text , 
-			u.user_phone , u.user_name , c.corp_address ,  
-			f.food_id , f.food_name , f.food_amount , f.food_request_date  
-		from tbl_corp c join tbl_user u
-			on c.user_id = u.user_id 
-			join tbl_food f on c.user_id = f.user_id 
-		and c.user_id = #{userId}
+		select u.user_id , f.food_id , f.food_name , f.food_amount , f.food_request_date 
+		from tbl_user u join tbl_food f on u.user_id = f.user_id 
+		and u.user_id = #{userId}
 		order by f.food_request_date desc
 		limit 3
 	</select>
 	
 	<!-- 기업 상세 페이지 ranking -->
-	<select id="selectRanking" resultType="corpDTO">
-		select user_id, ranking, rank_percent, total_donation
-		from view_corp_ranking
+	<select id="selectRanking" parameterType="long" resultType="corpDTO">
+		select user_id, ranking, rank_percent, total_donation, donation_count, 
+			corp_address, corp_register_number, corp_introduction_text, corp_file_system_name ,
+			user_name, user_nickname, user_phone, user_email , 
+			level_level, level_low_point, level_high_point, level_discount 
+		from view_ranking_level 
+		where user_id = #{userId}
 	</select>
 	
 	

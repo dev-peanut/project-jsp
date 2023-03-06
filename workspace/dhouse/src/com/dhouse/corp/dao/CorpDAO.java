@@ -38,8 +38,8 @@ public class CorpDAO {
 	}
 	
 //	기업 상세 소개 - ranking - 랭킹이랑 group by 사용 부분
-	public List<CorpDTO> selectRanking() {
-		return sqlSession.selectList("corp.selectRanking");
+	public CorpDTO selectRanking(Long userId) {
+		return sqlSession.selectOne("corp.selectRanking", userId);
 	}
 	
 	

@@ -23,6 +23,7 @@ Servers/
 .mtj.tmp/
 
 # Package Files #
+*.jar
 *.war
 *.ear
 
@@ -159,6 +160,7 @@ local.properties
 .mtj.tmp/
 
 # Package Files #
+*.jar
 *.war
 *.nar
 *.ear

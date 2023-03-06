@@ -8,11 +8,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/promotion/promotion.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/promotion/promotion-version2.css">
 <title>홍보 목록페이지</title>
 </head>
 <body>
-    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
+    <jsp:include page="../components/header-black.jsp"></jsp:include>
     <div id="whole-wrapper">
         <section class="container">
             <div class="arrow prev">&lt;</div>
@@ -341,7 +341,7 @@
             </div>
         </main>
     </div>
-    <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
+    <jsp:include page="../components/footer.jsp"></jsp:include>
 </body>
 <script src="${pageContext.request.contextPath}/assets/js/promotion/promotion.js"></script>
 </html>

@@ -49,7 +49,7 @@
 						</li>
 					</ul>
 					<div class="web-header-utils">
-						<!-- <div class="header-search-div">
+						<div class="header-search-div">
 							<form>
 								<div class="header-search-index-div" tabindex="-1">
 									<div class="header-search-empty-div"></div>
@@ -64,7 +64,7 @@
 									</button>
 								</div>
 							</form>
-						</div> -->
+						</div>
 						<div class="header-user-div">
 							<div class="header-user-container">
 								<button type="button" class="header-user-button">로그인</button>

@@ -225,10 +225,7 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD:workspace/dhouse/WebContent/dhouse/notice/notice.jsp
 
-=======
->>>>>>> 02.22/businessIntroduction:workspace/teamProject/WebContent/dhouse/notice/notice.jsp
     <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
 </html>

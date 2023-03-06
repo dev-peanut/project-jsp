@@ -1,32 +1,38 @@
 package com.dhouse.mypage;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.dhouse.Action;
 import com.dhouse.Result;
 import com.dhouse.mypage.dao.MyPageDAO;
-import com.dhouse.user.domain.UserVO;
-
-public class MyPageWithdrawOkController implements Action {
+/*
+public class myPageCheckNickname implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		UserVO userVO = new UserVO(); 
+		PrintWriter out = resp.getWriter();
 		MyPageDAO myPageDAO = new MyPageDAO();
-		Result result = new Result();
+		JSONObject json = new JSONObject();
+		try {
+			json.put("check", MyPageDAO.checkNickname(req.getParameter("userNickname")));
+			out.print(json.toString());
+		} catch (JSONException e) {
+			e.printStackTrace();
+		} finally {
+			out.close();
+		}
 		
-		//Long userId = Long.valueOf(req.getParameter("userId"));
-		
-		req.getSession().setAttribute("userId", 1L);
-		myPageDAO.delete(1L); //로그인 받고 userId로 수정 
-		result.setPath(req.getContextPath() + "/dhouse/user/myPage.jsp");
-		result.setRedirect(true);
-		
-		return result;
+		return null;
 	}
 
-}
+}*/
+
+

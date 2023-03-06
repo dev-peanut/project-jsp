@@ -53,6 +53,26 @@ public class MyPageFrontController extends HttpServlet {
 			System.out.println("2. " + target);
 			result = new myPageInfoController().execute(req, resp);
 			
+		}else if(target.equals("/myPageInfo")) {
+			System.out.println("2. " + target);
+			result = new myPageInfoController().execute(req, resp);
+			
+		}else if(target.equals("/myPageInfo")) {
+			System.out.println("2. " + target);
+			result = new myPageInfoController().execute(req, resp);
+			
+		}else if(target.equals("/myPageInfo")) {
+			System.out.println("2. " + target);
+			result = new myPageInfoController().execute(req, resp);
+			
+		}else if(target.equals("/myPageInfo")) {
+			System.out.println("2. " + target);
+			result = new myPageInfoController().execute(req, resp);
+			
+		}else if(target.equals("/myPageInfo")) {
+			System.out.println("2. " + target);
+			result = new myPageInfoController().execute(req, resp);
+			
 		}else {
 			System.out.println("3. " + target);
 			System.err.println("cant find path");

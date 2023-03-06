@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mapper namespace="myPage">
-	<update id="passwordUpdate" parameterType="myPageDTO">
+	<update id="passwordUpdate" parameterType="string" resultType="string">
 		update tbl_user
 		set userPassword = #{userPassword}
 		where userId = #{userId}
@@ -10,7 +10,7 @@
 		delete from tbl_user where userId = #{userId}
 	</delete>
 
-	<update id="profileUpdate" parameterType="userVO">
+	<update id="updatenicknamePhoneEmail" parameterType="userVO">
 		update tbl_user
 		set userNickname userPhone userEmail
 		where userId = #{userId}
@@ -30,4 +30,9 @@
 		from tbl_donation_board b join tbl_donation_file f 
 		on b.donation_board_id = f.donation_board_id
 	</select>
+	
+	<select id="checkNickname" parameterType="string" resultType="string">
+	select user_nickname from tbl_user where user_nickname = #{userNickname}
+	</select>
+	
 </mapper>

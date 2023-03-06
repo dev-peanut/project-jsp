@@ -41,7 +41,16 @@ public class PromotionBoardDAO {
 		return sqlSession.selectOne("promotionBoard.select", promotionBoardId);
 	}
 	
+//	최근 추가된 게시글의 id 조회
 	public Long getCurrentSequence() {
 		return sqlSession.selectOne("promotionBoard.getCurrentSequence");
 	}
+	
+	public List<PromotionBoardDTO> selectList(){
+		return sqlSession.selectList("promotionBoard.selectList");
+	}
+	
+	
+	
+	
 }

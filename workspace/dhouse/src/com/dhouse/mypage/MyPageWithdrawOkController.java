@@ -6,8 +6,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.json.JSONObject;
-
 import com.dhouse.Action;
 import com.dhouse.Result;
 import com.dhouse.mypage.dao.MyPageDAO;
@@ -21,15 +19,9 @@ public class MyPageWithdrawOkController implements Action {
 		MyPageDAO myPageDAO = new MyPageDAO();
 		Result result = new Result();
 		
-		//Long userId = Long.valueOf(req.getParameter("userId"));
-//      final Long USER = (Long)req.getSession().getAttribute("memberId");
-	      
-		final Long USER = 20L;
-      	myPageDAO.delete(USER);
-      	System.out.println("들어옴");
+		Long userId = Long.valueOf(req.getParameter("userId"));
 		
-		//req.getSession().setAttribute("userId", 1L);
-		//myPageDAO.delete(1L); //로그인 받고 userId로 수정
+		myPageDAO.delete(1L); //로그인 받고 userId로 수정 
 		result.setPath(req.getContextPath() + "/dhouse/user/myPage.jsp");
 		result.setRedirect(true);
 		

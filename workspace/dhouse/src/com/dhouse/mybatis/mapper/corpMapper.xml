@@ -12,6 +12,7 @@
 		limit #{startRow}, #{rowCount}
 	</select>
 
+	<!-- 기업 총 개수 -->
 	<select id="getTotal" resultType="long">
 		select count(user_id) from view_corp_food_level 
 	</select>
@@ -21,5 +22,25 @@
 		from view_corp_food_level 
 		limit #{nextStartRow}, #{rowCount}
 	</select>
+	
+	<!-- 기업 상세 페이지 detail -->
+	<select id="selectDetail" parameterType="long" resultType="corpDTO">
+		select u.user_id , f.food_id , f.food_name , f.food_amount , f.food_request_date 
+		from tbl_user u join tbl_food f on u.user_id = f.user_id 
+		and u.user_id = #{userId}
+		order by f.food_request_date desc
+		limit 3
+	</select>
+	
+	<!-- 기업 상세 페이지 ranking -->
+	<select id="selectRanking" parameterType="long" resultType="corpDTO">
+		select user_id, ranking, rank_percent, total_donation, donation_count, 
+			corp_address, corp_register_number, corp_introduction_text, corp_file_system_name ,
+			user_name, user_nickname, user_phone, user_email , 
+			level_level, level_low_point, level_high_point, level_discount 
+		from view_ranking_level 
+		where user_id = #{userId}
+	</select>
+	
 	
 </mapper>

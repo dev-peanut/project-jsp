@@ -19,6 +19,6 @@ public class MyPasswordController implements Action {
 		result.setRedirect(false);
 		
 		return result;
-		
 	}
+
 }

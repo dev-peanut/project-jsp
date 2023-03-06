@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>3.비밀번호 변경</title>
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
+<title>비밀번호 변경</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/myPassword.css">
 </head>
@@ -19,7 +19,7 @@
                 <div class="account-wrap">
                     <h2 class="small">비밀번호 변경</h2>
 	                    <div class="email-input-wrap">
-	                    	<form action="${pageContext.request.contextPath}/MyPasswordOk.myPage" id="saveForm">
+	                    	<form id="saveForm">
 	                        	<input type="password" id="newPassword" name="newPassword" class="input-text passwordval" placeholder="비밀번호" maxlength="17">
 	                        	<p id="passwordError" class="pwd-text">영문,숫자,특수문자를 조합한 8자 이상</p>
 	                        	<input type="password" id="newPasswordConfirm" name="newPasswordConfirm" class="input-text passwordvalconfirm" placeholder="비밀번호 확인" maxlength="17">

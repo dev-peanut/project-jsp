@@ -10,7 +10,7 @@
 }
 
 body {
-    line-height: 1.33;	
+    line-height: 1.33;
     font-family: Noto Sans KR;
 }
 
@@ -167,7 +167,7 @@ body>#root, #wadizTopBanner, #page-container {
 /* 가상요소 */
 [class*=icon-]:before, i.icon:before, i.wadizicon {
     display: inline-block;
-    margin-top: 1.2em;
+    margin-top: -0.2em;
     vertical-align: middle;
     text-transform: none;
     line-height: 1;
@@ -191,9 +191,8 @@ body>#root, #wadizTopBanner, #page-container {
     display: block;
 }
 
-i.wadizicon {
-    margin-top: 1.2em;	
-	}
+
+
 
 
 

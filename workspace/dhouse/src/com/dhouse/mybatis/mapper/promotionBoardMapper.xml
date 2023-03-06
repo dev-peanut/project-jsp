@@ -1,4 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="promotionBoard">
+	<!-- Top 10  -->
+	<select id="selectAll" resultType="promotionBoardDTO">
+		select user_id, user_nickname, promotion_board_id, promotion_board_title, file_system_name, food_sum
+		from view_promotion_all
+		order by food_sum desc
+		limit 0, 10
+	</select>
+	
+	<select id="selectList" resultType="promotionBoardDTO">
+		select user_id, user_nickname, promotion_board_id, promotion_board_title, file_system_name, food_sum
+		from view_promotion_all
+		order by promotion_board_id desc
+		limit 0, 5
+	</select>
+	
+	<select id="select" resultType="promotionBoardDTO" parameterType="long">
+		select user_id, user_nickname, promotion_board_title, promotion_board_contents, promotion_board_register_date, food_sum, file_system_name, promotion_board_id, corp_address
+		from view_promotion_all
+		where promotion_board_id = #{promotionBoardId}
+	</select>
+	
+	<insert id="insert" parameterType="promotionBoardVO">
+		insert into tbl_promotion_board (promotion_board_title, promotion_board_contents, promotion_board_register_date, promotion_board_update_date, user_id, promotion_board_read_count) 
+		values (#{promotionBoardTitle}, #{promotionBoardContents}, now(), now(), #{userId}, 0)
+	</insert>
+	
+	<update id="update" parameterType="promotionBoardVO">
+		update tbl_promotion_board
+		set promotion_board_title = #{promotionBoardTitle}, promotion_board_contents = #{promotionBoardContents}, promotion_board_update_date = now() 
+		where promotion_board_id = #{promotionBoardId}
+	</update>
+	
+	<delete id="delete" parameterType="long">
+		delete from tbl_promotion_board 
+		where promotion_board_id = #{promotionBoardId}
+	</delete>
+	
+	<select id="getCurrentSequence" resultType="long">
+		select last_insert_id()
+	</select>
 </mapper>

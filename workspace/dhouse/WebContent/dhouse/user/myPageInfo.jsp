@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>2.마이페이지 정보설정</title>
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
+<title>마이페이지 정보설정</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/myPageInfo.css">
 </head>
@@ -21,7 +21,7 @@
 	                <!-- account-wrap with-footer -->
 	                <div class="account-wrap with-footer">
 	                    <h2 class="big">MY 정보설정</h2>
-	                    <a class="my-info" href="javascript:location.href='${pageContext.request.contextPath}/user/myPageInfo.myPage?userId=${myPage.userId}'">
+	                    <a class="my-info" href="${pageContext.request.contextPath}/dhouse/user/myId.jsp">
 	                        <div class="my-info-text">
 	                            <h3>기본 정보 설정</h3>
 	                            <p>이름, 이메일, 휴대폰, SNS연동 등</p>

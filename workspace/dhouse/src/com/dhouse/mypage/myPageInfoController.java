@@ -9,31 +9,29 @@ import javax.servlet.http.HttpServletResponse;
 import com.dhouse.Action;
 import com.dhouse.Result;
 import com.dhouse.mypage.dao.MyPageDAO;
-import com.dhouse.user.domain.UserVO;
+import com.dhouse.mypage.domain.MyPageDTO;
 
 public class myPageInfoController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		UserVO userVO = new UserVO();
+		MyPageDTO myPageDTO = new MyPageDTO();
 		MyPageDAO myPageDAO = new MyPageDAO();
 		Result result = new Result();
 	
 		//userId 쓰기
-		//Long userId = Long.valueOf(req.getParameter("userId"));
-		//userVO.setuserId(userId);
+		Long userId = Long.valueOf(req.getParameter("1L"));
 		
-		//임의로 지정
-		req.getSession().setAttribute("userId", 3L);
+		/*
+		 * req.setAttribute("myInfo", mypageDAO.selectMyInfo(1L));
+		 * req.setAttribute("countMyBoards", mypageDAO.countMyBoards(1L));
+		 * req.setAttribute("likedIGot", mypageDAO.countLikedIGot(1L));
+		 * req.setAttribute("countMyComments", mypageDAO.countMyComments(1L));
+		 */
 		
-//		req.getSession().getAttribute("userId");
 		
 		
-		result.setPath(req.getContextPath() + "/dhouse/user/myPage.jsp");
-		result.setRedirect(true);
-		
-		return result;
-		
+		return null;
 	}
 
 }

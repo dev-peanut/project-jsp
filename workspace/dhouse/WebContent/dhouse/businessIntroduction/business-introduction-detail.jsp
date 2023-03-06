@@ -21,7 +21,7 @@
             <div id="inner-left">
                 <div id="image-wrapper">
                     <div id="image">
-                        <div id="image-back" style="background-image: url(${pageContext.request.contextPath}/upload/${corpDetail[0].corpFileSystemName})"> <!-- 기업 이미지 -->
+                        <div id="image-back" style="background-image: url(${pageContext.request.contextPath}/upload/${corpRanking.corpFileSystemName})"> <!-- 기업 이미지 -->
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                 <div id="text-wrapper">
                     <div id="text-top">
                         <div id="text-top-title">
-                            <span id="title-text"><a href="javascript:location.href='/corp/list.corp">기업목록</a> > 기업소개</span>
+                            <span id="title-text"><a href="javascript:location.href='/corp/list.corp'">기업목록</a> > 기업소개</span>
                         </div>
                         <div id="under-title-wrapper">
                             <div id="under-title">
@@ -39,10 +39,10 @@
                             </div>
                         </div>
                         <p id="p-info-title">
-                            ${corpDetail[0].userNickname}
+                            ${corpRanking.userNickname}
                         </p>
                         <p id="under-p-info-title">
-                            ${corpDetail[0].corpIntroductionText}
+                            ${corpRanking.corpIntroductionText}
                         </p>
                         <div id="top-bottom-wrapper">
                             <div id="top-bottom1">
@@ -58,7 +58,7 @@
                             </div>
                             <div id="top-bottom2">
                                 <p id="top-bottom2-p">
-                                    ${corpDetail[0].userPhone}<span id="top-bottom2-p-inner"></span>
+                                    ${corpRanking.userPhone}<span id="top-bottom2-p-inner"></span>
                                 </p>
                                 <span id="top-bottom2-span">
                                     <span id="top-bottom2-span-inner">
@@ -85,10 +85,10 @@
                         </div>
                         <div id="text-middle-middle">
                             <p id="text-middle-middle-top">
-                                <span id="div-span-top">대표자명 : ${corpDetail[0].userName}</span>
+                                <span id="div-span-top">대표자명 : ${corpRanking.userName}</span>
                             </p>
                             <p id="text-middle-middle-bottom">
-                                ${corpDetail[0].corpAddress}<!-- 기본 주소
+                                ${corpRanking.corpAddress}<!-- 기본 주소
                                 <br>
                                 상세 주소  -->
                             </p>
@@ -138,7 +138,7 @@
                                 </div>
                                 <div id="right-top-left-text-wrapper">
                                     <span id="right-top-left-text">
-                                        ${corpDetail[0].userNickname}
+                                        ${corpRanking.userNickname}
                                     </span>
                                 </div>
                             </a>

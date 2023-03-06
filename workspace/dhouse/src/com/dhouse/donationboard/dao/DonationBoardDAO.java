@@ -34,7 +34,7 @@ public class DonationBoardDAO {
 		
 //		현재 시퀀스 조회
 		public Long getCurrentSequence() {
-			return sqlSession.selectOne("board.getCurrentSequence");
+			return sqlSession.selectOne("donationBoard.getCurrentSequence");
 		}
 		
 ////		게시글 수정

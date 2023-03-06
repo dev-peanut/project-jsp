@@ -11,7 +11,7 @@ import com.dhouse.Result;
 import com.dhouse.food.FoodDeleteOkController;
 import com.dhouse.food.FoodDetailOkController;
 import com.dhouse.food.FoodModifyOkController;
-import com.dhouse.food.FoodApplyOkController;
+import com.dhouse.food.FoodWriteOkController;
 
 public class AdminFrontController extends HttpServlet{
 

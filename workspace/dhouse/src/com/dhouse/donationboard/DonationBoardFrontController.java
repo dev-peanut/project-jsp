@@ -26,14 +26,13 @@ public class DonationBoardFrontController extends HttpServlet{
 		
 		System.out.println(target);
 		
-		if(target.equals("/donation/listOk")) {
+		if(target.equals("/listOk")) {
 			result = new DonationBoardListOkController().execute(req, resp);
 			
 		}else if(target.equals("/deleteOk")){
 			result = new DonationBoardDeleteOkController().execute(req, resp);
 			
 		}else if(target.equals("/detailOk")){
-			System.out.println("donation 들어옴");
 			result = new DonationBoardDetailOkController().execute(req, resp);
 			
 		}else if(target.equals("/modifyOk")){

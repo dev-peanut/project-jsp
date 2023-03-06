@@ -32,10 +32,15 @@ public class CorpDAO {
 		return sqlSession.selectList("corp.isNextPage", pageMap).size() != 0;
 	}
 	
-//	기업 상세 소개 - 최근 기부 목록 3건 제외한 나머지 다
-//	public List<CorpDTO> selectDetail 
+//	기업 상세 소개 - 랭킹이랑 group by 함수 사용 제외 부분
+	public List<CorpDTO> selectDetail(CorpDTO corpDTO) {
+		return sqlSession.selectList("corp.selectDetail", corpDTO);
+	}
 	
-//	기업 상세 소개 페이지 - 최근 기부 목록 3건
+//	기업 상세 소개 - 랭킹이랑 group by 사용 부분
+	public List<CorpDTO> selectRanking(CorpDTO corpDTO) {
+		return sqlSession.selectList("corp.selectRanking", corpDTO);
+	}
 	
 	
 }

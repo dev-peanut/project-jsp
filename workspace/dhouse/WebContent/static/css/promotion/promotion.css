@@ -428,7 +428,8 @@ main {
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 96%;
+    /* width: 100%; */
     /* width: 344px; */
     height: 48px;
     margin-top: 24px;

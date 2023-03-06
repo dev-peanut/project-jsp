@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홍보 글쓰기 페이지</title>
-    <link rel="stylesheet" href="../../static/css/promotion/test.css">
+    <link rel="stylesheet" href="../../static/css/promotion/promotion-write.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -24,7 +24,9 @@
                 <div id="form_container_margin">
                    <div class="category_print">
                       <ol class="category_name">
-                         <li class="form_category_small">홍보하기</li>
+                        <a href="${pageContext.request.contextPath}/promotion/listOk.promotion" style="text-decoration: none;">
+                            <li class="form_category_small">홍보하기</li>
+                        </a>
                          <li class="form_category_small">홍보 게시글 작성</li>
                       </ol>
                           

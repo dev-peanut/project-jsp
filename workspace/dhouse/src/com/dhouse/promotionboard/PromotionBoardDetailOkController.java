@@ -21,9 +21,9 @@ public class PromotionBoardDetailOkController implements Action {
 		Result result = new Result();
 		
 		Long promotionBoardId = Long.valueOf(req.getParameter("promotionBoardId"));
-		System.out.println(promotionBoardId);
+//		System.out.println(promotionBoardId);
 		promotionBoardDTO = promotionBoardDAO.select(promotionBoardId);
-		System.out.println(promotionBoardDTO);
+//		System.out.println(promotionBoardDTO);
 		
 		
 		req.setAttribute("promotionBoard", promotionBoardDTO);

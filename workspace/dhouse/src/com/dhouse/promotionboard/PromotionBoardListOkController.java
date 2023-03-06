@@ -26,11 +26,11 @@ public class PromotionBoardListOkController implements Action {
 		List<PromotionBoardDTO> promotionBoardList = null;
 		
 		promotionBoardList = promotionBoardDAO.selectAll();
-		System.out.println(promotionBoardList);
+//		System.out.println(promotionBoardList);
 		
 		promotionBoardList.stream().map(promotionBoard -> new JSONObject(promotionBoard)).forEach(promotionBoardJsons::put);
 
-		System.out.println(promotionBoardList.toString());
+//		System.out.println(promotionBoardList.toString());
 		
 		req.setAttribute("promotionBoards", promotionBoardJsons.toString());
 //		req.setAttribute("promotionBoards", promotionBoardDAO.selectAll());

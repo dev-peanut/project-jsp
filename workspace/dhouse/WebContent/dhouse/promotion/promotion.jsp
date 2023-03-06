@@ -43,7 +43,7 @@
                 <div id="ranking-title">
                     <h2 id="title-text">TOP 10</h2>
                     <p id="title">
-                        서포터가 직접 뽑은 영예의 주인공<br id="title-br">10명을 소개합니다.
+                        기부량이 가장 높은<br id="title-br">10개의 업체들을 소개합니다.
                     </p>
                 </div>
                 <ol id="ranking-part">

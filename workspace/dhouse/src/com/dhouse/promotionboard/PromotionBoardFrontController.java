@@ -13,6 +13,7 @@ import com.dhouse.donationboard.DonationBoardDetailOkController;
 import com.dhouse.donationboard.DonationBoardListOkController;
 import com.dhouse.donationboard.DonationBoardModifyOkController;
 import com.dhouse.donationboard.DonationBoardWriteOkController;
+import com.dhouse.promotionboard.dao.PromotionBoardDAO;
 
 public class PromotionBoardFrontController extends HttpServlet {
 	@Override
@@ -34,6 +35,10 @@ public class PromotionBoardFrontController extends HttpServlet {
 			
 		} else if(target.equals("/promotion/update")) {
 			result = new Result();
+			PromotionBoardDAO promotionBoardDAO = new PromotionBoardDAO();
+			req.setAttribute("promotionBoard", promotionBoardDAO.select(Long.valueOf(req.getParameter("promotionBoardId"))));
+			req.setAttribute("promotionBoardId", Long.valueOf(req.getParameter("promotionBoardId")));
+			
 			result.setPath("/dhouse/promotion/promotion-update.jsp");
 			
 		} else if(target.equals("/promotion/updateOk")) {

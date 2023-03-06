@@ -22,7 +22,7 @@
 	
 	<update id="update" parameterType="promotionBoardVO">
 		update tbl_promotion_board
-		set promotion_board_title = #{promotionBoardTitle}, promotion_board_contents = #{promotionBoardContents}, promotion_board_update_date = now()
+		set promotion_board_title = #{promotionBoardTitle}, promotion_board_contents = #{promotionBoardContents}, promotion_board_update_date = now() 
 		where promotion_board_id = #{promotionBoardId}
 	</update>
 	

@@ -5,6 +5,7 @@ function setThumbnail(event) {
 
   reader.onload = function(event) {
     var img = document.createElement("img");
+    img.setAttribute("id", "inner-image");
     img.setAttribute("src", event.target.result);
     
     if(document.querySelector("#image_container").childElementCount < 1){

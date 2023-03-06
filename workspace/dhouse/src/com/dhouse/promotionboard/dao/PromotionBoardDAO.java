@@ -33,7 +33,7 @@ public class PromotionBoardDAO {
 	
 //	게시글 수정
 	public void update(PromotionBoardVO promotionBoardVO){
-		sqlSession.delete("promotionBoard.update", promotionBoardVO);
+		sqlSession.update("promotionBoard.update", promotionBoardVO);
 	}
 	
 //	게시글 조회

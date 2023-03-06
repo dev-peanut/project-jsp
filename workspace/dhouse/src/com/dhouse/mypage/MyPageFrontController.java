@@ -28,51 +28,37 @@ public class MyPageFrontController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String uri = req.getRequestURI();
 		String contextPath = req.getContextPath();
-		String target = uri.replace(contextPath + "/", "").split("\\.")[0];
+		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
 
-     	req.getSession().setAttribute("userId", 1L);
-		
 		System.out.println("1. " + target);
 		if(target.equals("/myPassword")) {
 			System.out.println("2. " + target);
 			result = new MyPasswordController().execute(req, resp);
-		}else if(target.equals("/myPasswordOk")) {
+			
+		}else if(target.equals("/MyPasswordOk")) {
 			System.out.println("2. " + target);
 			result = new MyPasswordOkController().execute(req, resp);
 			
-		}else if(target.equals("/myPageWithdraw")) {
+		}else if(target.equals("/myPageWithdrawOk")) {
 			System.out.println("2. " + target);
 			result = new MyPageWithdrawOkController().execute(req, resp);
 			
-		}else if(target.equals("/myId")) {
+		}else if(target.equals("/updateNicknamePhoneEmail")) {
 			System.out.println("2. " + target);
-			result = new myIdOkController().execute(req, resp);
-			
+			result = new updateNicknamePhoneEmailOkController().execute(req, resp);
+
 		}else if(target.equals("/myPageInfo")) {
 			System.out.println("2. " + target);
 			result = new myPageInfoController().execute(req, resp);
-			
-		}else if(target.equals("/myPageInfo")) {
+
+		}else if(target.equals("/updatePhotoCorpIntroduction")) {
 			System.out.println("2. " + target);
-			result = new myPageInfoController().execute(req, resp);
-			
-		}else if(target.equals("/myPageInfo")) {
+			result = new updatePhotoCorpIntroductionController().execute(req, resp);
+
+		}else if(target.equals("/myPageMain")) {
 			System.out.println("2. " + target);
-			result = new myPageInfoController().execute(req, resp);
-			
-		}else if(target.equals("/myPageInfo")) {
-			System.out.println("2. " + target);
-			result = new myPageInfoController().execute(req, resp);
-			
-		}else if(target.equals("/myPageInfo")) {
-			System.out.println("2. " + target);
-			result = new myPageInfoController().execute(req, resp);
-			
-		}else if(target.equals("/myPageInfo")) {
-			System.out.println("2. " + target);
-			result = new myPageInfoController().execute(req, resp);
-			
+			result = new myPageMainController().execute(req, resp);
 		}else {
 			System.out.println("3. " + target);
 			System.err.println("cant find path");

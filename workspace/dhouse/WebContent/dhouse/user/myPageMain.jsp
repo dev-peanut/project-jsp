@@ -73,7 +73,7 @@
 										<span class="ProfileSet_button">배너 신청하기</span>
 									</span>
 								</a>
-								<a href="https://www.wadiz.kr/web/wmypage/myprofile/modifyprofile" class="ProfileSet">
+								<a href="javascript:location.href='${pageContext.request.contextPath}/user/myPageInfo.myPage?userId=${myPage.userId}'" class="ProfileSet">
 									<span>
 										<span class="ProfileSet_button">프로필 설정</span>
 									</span>

@@ -194,7 +194,7 @@ body li, body ol, body ul {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    padding: 0 17px;
+    padding: 5px 17px;
     margin-bottom: 7px;
     height: 100px;
     line-height: 20px;
@@ -316,7 +316,7 @@ body li, body ol, body ul {
 .setting-profileimg{
 	position: relative;
     display: flex;
-	height: 45px;
+	height: 110px;
 }
 
 .btn-upload{

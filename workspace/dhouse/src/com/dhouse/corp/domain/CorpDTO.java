@@ -16,6 +16,8 @@ public class CorpDTO {
 	private Long foodSum;
 	private Long totalDonation;
 	private Long foodCount;
+	private Long foodAmount;
+	private String foodName;
 	private String foodRequestDate;
 	private String foodFileSystemName;
 	private int levelLevel;
@@ -26,7 +28,7 @@ public class CorpDTO {
 	public CorpDTO() {;}
 
 	
-
+	
 	public Long getUserId() {
 		return userId;
 	}
@@ -195,6 +197,30 @@ public class CorpDTO {
 
 
 
+	public Long getFoodAmount() {
+		return foodAmount;
+	}
+
+
+
+	public void setFoodAmount(Long foodAmount) {
+		this.foodAmount = foodAmount;
+	}
+
+
+
+	public String getFoodName() {
+		return foodName;
+	}
+
+
+
+	public void setFoodName(String foodName) {
+		this.foodName = foodName;
+	}
+
+
+
 	public String getFoodRequestDate() {
 		return foodRequestDate;
 	}
@@ -274,9 +300,9 @@ public class CorpDTO {
 				+ userPhone + ", userEmail=" + userEmail + ", corpAddress=" + corpAddress + ", corpRegisterNumber="
 				+ corpRegisterNumber + ", corpIntroductionText=" + corpIntroductionText + ", corpFileSystemName="
 				+ corpFileSystemName + ", foodSum=" + foodSum + ", totalDonation=" + totalDonation + ", foodCount="
-				+ foodCount + ", foodRequestDate=" + foodRequestDate + ", foodFileSystemName=" + foodFileSystemName
-				+ ", levelLevel=" + levelLevel + ", rankPercent=" + rankPercent + ", ranking=" + ranking
-				+ ", levelDiscount=" + levelDiscount + "]";
+				+ foodCount + ", foodAmount=" + foodAmount + ", foodName=" + foodName + ", foodRequestDate="
+				+ foodRequestDate + ", foodFileSystemName=" + foodFileSystemName + ", levelLevel=" + levelLevel
+				+ ", rankPercent=" + rankPercent + ", ranking=" + ranking + ", levelDiscount=" + levelDiscount + "]";
 	}
 
 

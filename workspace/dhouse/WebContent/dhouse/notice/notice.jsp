@@ -215,20 +215,16 @@
                     </div>
                 </div>
                 <!-- middle 이너 끝 -->
-                <div id="middle-bottom">
+                <!-- <div id="middle-bottom">
                     <div id="middle-bottom-inner">
                         <button id="left"><svg id="left-svg" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="left-path" d="M21 24L15 18L21 12" stroke="#868E96" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
                         <span class="page-numbers"><button class="button-numbers">1</button>
                         <button id="right"><svg id="right-svg" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="right-path" d="M15 12L21 18L15 24" stroke="#868E96" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
-<<<<<<< HEAD:workspace/dhouse/WebContent/dhouse/notice/notice.jsp
-
-=======
->>>>>>> 02.22/businessIntroduction:workspace/teamProject/WebContent/dhouse/notice/notice.jsp
     <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
 </html>

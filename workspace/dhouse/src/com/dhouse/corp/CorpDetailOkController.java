@@ -9,21 +9,47 @@ import javax.servlet.http.HttpServletResponse;
 import com.dhouse.Action;
 import com.dhouse.Result;
 import com.dhouse.corp.dao.CorpDAO;
-import com.dhouse.corp.domain.CorpDTO;
 
 public class CorpDetailOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		CorpDAO corpDAO = new CorpDAO();
-		CorpDTO corpDTO = new CorpDTO();
+		Long userId = Long.valueOf(req.getParameter("userId"));
 		Result result = new Result();
+		CorpDAO corpDAO = new CorpDAO();
+
+//		JSONArray corpJsons = new JSONArray();
+//		JSONArray rankJsons = new JSONArray();
 		
+				
 		
+//		corpDAO.selectRanking().stream().filter(corpDTO -> corpDTO.getUserId() == userId).forEach(corpDTO -> rankJsons.put(corpDTO));
+//		corpDAO.selectDetail(userId).stream().forEach(corpJsons::put);
 		
+		corpDAO.selectRanking().stream().filter(corpDTO -> corpDTO.getUserId() == userId);
+
+		req.setAttribute("corpDetail", corpDAO.selectDetail(userId));
+		req.setAttribute("corpRanking", corpDAO.selectRanking().stream().filter(corpDTO -> corpDTO.getUserId() == userId));
 		
+		result.setPath("/dhouse/businessIntroduction/business-introduction-detail.jsp");
 		
 		return result;
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

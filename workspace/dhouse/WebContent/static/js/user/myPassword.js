@@ -74,13 +74,12 @@ $passwordCheckInput.on("blur", function(){
     completeAllCheck();
 });
 
-	/*비밀번호 암호화*/
-	$(".passwordval").val(btoa($(".passwordval").val()));
-	$(".passwordvalconfirm").val(btoa($(".passwordvalconfirm").val()));
+/*비밀번호 암호화*/
+$(".passwordval").val(btoa($(".passwordval").val()));
+$(".passwordvalconfirm").val(btoa($(".passwordvalconfirm").val()));
 
 // 비밀번호 저장하기 버튼
 const $formSubmit = $("#saveBtn");
-
 
 const $completeButton = $("#saveBtn");
 /* 모든 정규식 완료 및 전체 동의 체크 시 버튼 활성화 */

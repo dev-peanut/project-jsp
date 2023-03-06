@@ -7,7 +7,7 @@
    </settings>
    
    <typeAliases>
-      <!-- <typeAlias type="com.dhouse.user.domain.UserVO" alias="userVO"/> -->
+      <typeAlias type="com.dhouse.user.domain.UserVO" alias="userVO"/>
       <!-- <typeAlias type="com.dhouse.corp.domain.CorpVO" alias="corpVO"/> -->
       <typeAlias type="com.dhouse.corp.domain.CorpDTO" alias="corpDTO"/> 
 	  <!-- <typeAlias type="com.dhouse.food.domain.MyPageVO" alias="myPageDTO"/> --> 
@@ -20,7 +20,7 @@
       <!-- <typeAlias type="com.dhouse.promotionboard.domain.PromotionBoardDTO" alias="promotionBoardDTO"/> -->
       <!-- <typeAlias type="com.dhouse.donationboard.domain.DonationBoardVO" alias="donationBoardVO"/> -->
       <!-- <typeAlias type="com.dhouse.banner.domain.BannerVO" alias="bannerVO"/> -->
-</typeAliases>
+	</typeAliases>
    
    <environments default="mysql">
       <environment id="mysql">
@@ -38,7 +38,7 @@
       <!-- <mapper resource="com/dhouse/mybatis/mapper/userMapper.xml"/> -->
 		<mapper resource="com/dhouse/mybatis/mapper/corpMapper.xml"/>
 		<!-- <mapper resource="com/dhouse/mybatis/mapper/adminMapper.xml"/> -->  
-		<!-- <mapper resource="com/dhouse/mybatis/mapper/myPageMapper.xml"/> -->
+	 <mapper resource="com/dhouse/mybatis/mapper/myPageMapper.xml"/>
       <!-- <mapper resource="com/dhouse/mybatis/mapper/myPageCorpMapper.xml"/> -->
       <!-- <mapper resource="com/dhouse/mybatis/mapper/foodMapper.xml"/> -->
       <!-- <mapper resource="com/dhouse/mybatis/mapper/replyMapper.xml"/> -->

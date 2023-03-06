@@ -26,7 +26,7 @@ public class MyPageDAO {
 
 	//닉네임, 이메일, 휴대폰 수정
 	public void updatenicknamePhoneEmail(UserVO userVO) {
-		 sqlSession.update("profileUpdate.myPage", userVO);
+		 sqlSession.update("updatenicknamePhoneEmail.myPage", userVO);
 	}
 	
 	//닉네임 중복검사(ajax)

@@ -40,7 +40,7 @@ public class SignUpOkController implements Action {
 			System.out.println("기업 회원가입 들어옴");
 			corpVO.setCorpAddress(req.getParameter("corpAddress"));
 			corpVO.setCorpRegisterNumber(req.getParameter("corpRegisterNumber"));
-			corpVO.setUserId(userDAO.getSequence());
+			corpVO.setUserId(new CorpDAO().getSequence());
 			corpVO.setCorpIntroductionText("");
 			corpVO.setFileSystemName("");
 			corpDAO.insertCorp(corpVO);

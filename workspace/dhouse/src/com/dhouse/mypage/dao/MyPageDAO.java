@@ -19,7 +19,7 @@ public class MyPageDAO {
 	}
 	
 	//	비밀번호 수정
-	public void updatePassword(String userPassword, Long userId) {
+	public void passwordUpdate(String userPassword, Long userId) {
 		Map<Object, Object> map = new HashMap<Object, Object>();
 		map.put("userPassword", userPassword);
 		map.put("userId", userId);

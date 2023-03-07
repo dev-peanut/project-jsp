@@ -25,6 +25,10 @@ public class UserFrontController extends HttpServlet {
 		} else if (target.equals("/user/signUpOk")) {
 			result = new SignUpOkController().execute(req, resp);
 
+		} else if (target.equals("/user/signUpCorp")) {
+			result = new Result();
+			result.setPath("/dhouse/user/signUp-corp.jsp");
+
 		} else if (target.equals("/user/login")) {
 			result = new Result();
 			result.setPath("/dhouse/user/login.jsp");

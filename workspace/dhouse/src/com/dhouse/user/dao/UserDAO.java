@@ -20,6 +20,11 @@ public class UserDAO {
 		return sqlSession.selectOne("user.checkId", userIdentification) != null;
 	}
 	
+//	이메일 중복검사
+	public boolean checkEmail(String userEmail) {
+		return sqlSession.selectOne("user.checkEmail", userEmail) != null;
+	}
+	
 //	회원가입
 	public void join(UserVO userVO) {
 		sqlSession.insert("user.join", userVO);

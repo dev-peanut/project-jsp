@@ -224,8 +224,7 @@ main {
     column-gap: 16px;
     margin-top: 18px;
     text-align: left;
-    /* justify-content: space-between; */
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .top10-lists {
@@ -299,11 +298,12 @@ main {
     height: auto;
     min-height: 10px;
     opacity: 1;
-    /* background-image: url(https://cdn.wadiz.kr/wwwwadiz/green001/2022/0707/20220707105517889_150229.png/wadiz/resize/300/format/jpg/quality/85/); */
+    background-image: url(https://cdn.wadiz.kr/wwwwadiz/green001/2022/0707/20220707105517889_150229.png/wadiz/resize/300/format/jpg/quality/85/);
 }
 
 .list-image2{
-    /* background-image: url(https://cdn.wadiz.kr/wwwwadiz/green001/2022/0221/20220221171434768_141202.jpg/wadiz/resize/300/format/jpg/quality/85/);     */
+    background-image: url(https://cdn.wadiz.kr/wwwwadiz/green001/2022/0221/20220221171434768_141202.jpg/wadiz/resize/300/format/jpg/quality/85/);    
+    /* background-image: url(https://cdn.wadiz.kr/wwwwadiz/green001/2022/0530/20220530114000416_149115.jpg/wadiz/resize/300/format/jpg/quality/85/);     */
 }
 
 .list-text-wrapper {
@@ -415,7 +415,6 @@ main {
     font-weight: 400;
     margin-top: 6px;
 }
-/* 랭킹 10등까지 목록 끝 */
 
 .promotion-write-button {
     white-space: nowrap;

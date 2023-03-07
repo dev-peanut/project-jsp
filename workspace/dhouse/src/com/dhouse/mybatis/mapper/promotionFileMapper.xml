@@ -1,17 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="promotionFile">
-	<insert id="insert" parameterType="promotionFileVO">
-		insert into tbl_promotion_file(file_system_name, promotion_board_id)
-		values(#{fileSystemName}, #{promotionBoardId})
-	</insert>
-	
-	<select id="select" parameterType="long" resultType="promotionFileVO">
-		select file_id, promotion_board_id, file_system_name
-		from tbl_promotion_file where promotion_board_id = #{prmotionBoardId}
-	</select>
-	
-	<delete id="delete" parameterType="long">
-		delete from tbl_promotion_file where promotion_board_id = #{promotionBoardId}
-	</delete>
 </mapper>

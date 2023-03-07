@@ -9,23 +9,24 @@ import javax.servlet.http.HttpServletResponse;
 import com.dhouse.Action;
 import com.dhouse.Result;
 import com.dhouse.mypage.dao.MyPageDAO;
-import com.dhouse.user.dao.UserDAO;
 import com.dhouse.user.domain.UserVO;
 
 public class MyPasswordOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+		req.setCharacterEncoding("UTF-8");
 		UserVO userVO = new UserVO();
-		MyPageDAO mypageDAO = new MyPageDAO();
+		MyPageDAO myPageDAO = new MyPageDAO();
 		Result result = new Result();
 		
+		System.out.println("ë“¤ì–´ì˜´");
+		// ë¡œê·¸ì¸ í–ˆë‹¤ ì¹˜ê³  ë„£ì–´ë‘¬ì„œ ì§€ì›Œì•¼í•¨
+		req.getSession().setAttribute("userId", 23L);
+		//userVO.setUserId((Long)req.getSession().getAttribute("1L"));
 		
-		//      ·Î±×ÀÎ Çß´Ù Ä¡°í ³Ö¾îµÖ¼­ Áö¿ö¾ßÇÔ
-		req.getSession().setAttribute("userId", 1L);
-      
-		userVO.setUserId((Long)req.getSession().getAttribute("1L"));
-		userVO.setUserPassword(req.getParameter("newPassword"));
+		/* userVO.setUserId(23L); */
+		//userVO.setUserPassword(req.getParameter("newPassword"));
 
 		/*
 		 * req.setAttribute("myInfo", mypageDAO.selectMyInfo(1L));
@@ -34,10 +35,13 @@ public class MyPasswordOkController implements Action {
 		 * req.setAttribute("countMyComments", mypageDAO.countMyComments(1L));
 		 */
 		
-	      result.setPath(req.getContextPath() + "/dhouse/user/myHomePage.jsp");
-			/* result.setRedirect(true); ¾ÏÈ£È­ Ã³¸®µÇ´ÂÁö È®ÀÎÇÏ°í È°¼ºÈ­*/
+		myPageDAO.updatePassword(req.getParameter("newPassword"), 23L);
+		/* req.setAttribute("updatePassword", myPageDAO.updatePassword(23L)); */
+		
+	    result.setPath(req.getContextPath() + "/dhouse/user/myProfile.jsp");
+	    result.setRedirect(true);
 	      
-	      return result;
+	    return result;
 	      
 	}
 }

@@ -1,11 +1,8 @@
 package com.dhouse.promotionboard.dao;
 
-import java.util.List;
-
 import org.apache.ibatis.session.SqlSession;
 
 import com.dhouse.mybatis.config.MyBatisConfig;
-import com.dhouse.promotionboard.domain.PromotionBoardDTO;
 import com.dhouse.promotionboard.domain.PromotionBoardVO;
 
 public class PromotionBoardDAO {
@@ -50,8 +47,4 @@ public class PromotionBoardDAO {
 	public List<PromotionBoardDTO> selectList(){
 		return sqlSession.selectList("promotionBoard.selectList");
 	}
-	
-	
-	
-	
 }

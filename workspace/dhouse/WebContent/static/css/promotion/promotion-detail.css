@@ -60,37 +60,6 @@ body{
     padding: 24px 40px 58px;
 }
 
-#button-wrapper {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.title-next-buttons {
-    text-decoration: none;
-    font-weight: 500;
-    cursor: pointer;
-    border-color: #00c4c4;
-    border: 1px solid #00c4c4;
-    color: #00a2a2;
-    /* color: #00a2a2; */
-    padding: 9px 16px;
-    line-height: 1.45;
-    font-size: 14px;
-    margin-top: 9px;
-    border-radius: 4px;
-    vertical-align: top;
-}
-
-.button-a {
-    text-decoration: none;
-    color: #00a2a2;
-}
-
-#update-button {
-    margin-right: 5px;
-}
-
 /* test */
 #bottom::before {
     display: block;
@@ -124,7 +93,6 @@ body{
     padding: 0;
     position: relative;
     padding-right: 42px;
-    display: flex;
 }
 
 #top-title {

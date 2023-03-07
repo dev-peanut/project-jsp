@@ -18,30 +18,40 @@ public class UserFrontController extends HttpServlet {
 		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
 
-		if (target.equals("signUp")) {
+		if (target.equals("/user/signUp")) {
 			result = new Result();
 			result.setPath("/dhouse/user/signUp.jsp");
 
-		} else if (target.equals("/signUpOk")) {
+		} else if (target.equals("/user/signUpOk")) {
 			result = new SignUpOkController().execute(req, resp);
 
-		} else if (target.equals("/login")) {
+		} else if (target.equals("/user/login")) {
 			result = new Result();
 			result.setPath("/dhouse/user/login.jsp");
 
-		} else if (target.equals("/loginOk")) {
+		} else if (target.equals("/user/loginOk")) {
 			result = new LoginOkController().execute(req, resp);
-
-		} else if (target.equals("/checkIdOk")) {
+			
+		} else if (target.equals("/user/checkIdOk")) {
 			new CheckIdOkController().execute(req, resp);
 
-		} else if (target.equals("/findIdOk")) {
+		} else if (target.equals("/user/checkEmailOk")) {
+			new CheckEmailOkController().execute(req, resp);
+			
+		} else if (target.equals("/user/findIdOk")) {
 			result = new FindIdOkController().execute(req, resp);
 
-		} else if (target.equals("/findPasswordOk")) {
+		} else if (target.equals("/user/findPasswordOk")) {
 			result = new FindPasswordOkController().execute(req, resp);
 
-		} else {
+		} else if (target.equals("/user/logout")) {
+			result = new LogoutController().execute(req, resp);
+			
+		} else if (target.equals("/user/user-header")) {
+			result = new Result();
+			result.setPath("/dhouse/main/main.jsp");
+			
+		}  else {
 			System.out.println(target);
 		}
 

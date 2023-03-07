@@ -251,4 +251,3 @@ function showList(){
     $contents.append(text2);
 }
 showList();
-

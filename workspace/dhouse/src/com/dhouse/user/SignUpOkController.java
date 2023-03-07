@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Action;
 import com.dhouse.Result;
+import com.dhouse.corp.dao.CorpDAO;
 import com.dhouse.user.dao.UserDAO;
 import com.dhouse.user.domain.UserVO;
 
@@ -17,6 +18,7 @@ public class SignUpOkController implements Action {
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		req.setCharacterEncoding("UTF-8");
 		UserDAO userDAO = new UserDAO();
+		CorpDAO corpDAO = new CorpDAO();
 		UserVO userVO = new UserVO();
 		Result result = new Result();
 		
@@ -26,10 +28,9 @@ public class SignUpOkController implements Action {
 		userVO.setUserNickname(req.getParameter("userNickname"));
 		userVO.setUserPhone(req.getParameter("userPhone"));
 		userVO.setUserEmail(req.getParameter("userEmail"));
-		
 		userDAO.join(userVO);
 		
-		result.setPath(req.getContextPath() + "/login.user");
+		result.setPath(req.getContextPath() + "/user/login.user");
 		result.setRedirect(true);
 		
 		return result;

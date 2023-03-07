@@ -9,13 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Action;
 import com.dhouse.Result;
-import com.dhouse.file.domain.FileVO;
 import com.dhouse.promotionboard.dao.PromotionBoardDAO;
 import com.dhouse.promotionboard.domain.PromotionBoardVO;
 import com.dhouse.promotionfile.dao.PromotionFileDAO;
 import com.dhouse.promotionfile.domain.PromotionFileVO;
 import com.oreilly.servlet.MultipartRequest;
-import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
 public class PromotionBoardWriteOkController implements Action {
 

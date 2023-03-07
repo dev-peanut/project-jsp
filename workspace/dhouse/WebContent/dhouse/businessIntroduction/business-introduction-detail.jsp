@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/businessIntroduction/business-introduction-detail.css">
 <title>기부기업 소개 상세</title>
 </head>

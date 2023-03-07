@@ -19,9 +19,15 @@ public class MyPageWithdrawOkController implements Action {
 		MyPageDAO myPageDAO = new MyPageDAO();
 		Result result = new Result();
 		
-		Long userId = Long.valueOf(req.getParameter("userId"));
+		//Long userId = Long.valueOf(req.getParameter("userId"));
+//      final Long USER = (Long)req.getSession().getAttribute("memberId");
+	      
+		final Long USER = 4L;
+      	myPageDAO.delete(USER);
+      	System.out.println("ë“¤ì–´ì˜´");
 		
-		myPageDAO.delete(1L); //·Î±×ÀÎ ¹Ş°í userId·Î ¼öÁ¤ 
+		//req.getSession().setAttribute("userId", 1L);
+		//myPageDAO.delete(1L); //ë¡œê·¸ì¸ ë°›ê³  userIdë¡œ ìˆ˜ì •
 		result.setPath(req.getContextPath() + "/dhouse/user/myPage.jsp");
 		result.setRedirect(true);
 		

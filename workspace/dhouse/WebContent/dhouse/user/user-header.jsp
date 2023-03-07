@@ -17,10 +17,10 @@
 			</h1>
 			<ul id="header-select">
 				<li class="header-selects" id="header-select-login">
-					<a class="header-selects-a-tag" href="../../app/user/login.jsp"><span class="header-selects-span-tag">로그인</span></a>
+					<a class="header-selects-a-tag" href="${pageContext.request.contextPath}/user/login.user"><span class="header-selects-span-tag">로그인</span></a>
 				</li>
 				<li class="header-selects" id="header-select-signUp">
-					<a class="header-selects-a-tag" href="../../app/user/signUp.jsp"><span class="header-selects-span-tag">회원가입</span></a>
+					<a class="header-selects-a-tag" href="${pageContext.request.contextPath}/user/signUp.user"><span class="header-selects-span-tag">회원가입</span></a>
 				</li>
 			</ul>
 		</div>

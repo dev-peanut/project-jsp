@@ -12,7 +12,22 @@
 		where donation_board_id = #{donationBoardId}
 	</select>
 	
+	<select id="selectRanking" resultType="donationBoardDTO">
+		select donation_board_id, donation_board_title, user_nickname, donation_file_system_name, donation_board_read_count 
+		from view_donation_all
+		order by donation_board_read_count desc
+		limit 0,5
+	</select>
+	
 	<select id="getCurrentSequence" resultType="long">
 		select last_insert_id()
 	</select>
+	
+	<select id="selectList" resultType="donationBoardDTO">
+		select donation_board_id, donation_board_title, user_nickname, donation_file_system_name
+		from view_donation_all
+		order by donation_board_id desc
+		limit 0, 6
+	</select>
+	
 </mapper>

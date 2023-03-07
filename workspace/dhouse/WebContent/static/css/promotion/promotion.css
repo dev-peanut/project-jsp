@@ -160,9 +160,11 @@ main {
     box-sizing: content-box;
     padding-top: 80px;
     letter-spacing: -.02em;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    background: ghostwhite;
 }
 
-#ranking-title{
+.ranking-title{
     margin: 0;
     border: 0;
     padding: 0;
@@ -173,7 +175,7 @@ main {
     overflow-wrap: break-word;
 }
 
-#title-text {
+.title-text {
     font-size: 50px;
     margin: 0;
     padding: 0;
@@ -183,7 +185,7 @@ main {
     font-weight: bold;
 }
 
-#title {
+.title {
     margin: 0;
     border: 0;
     padding: 0;
@@ -199,7 +201,7 @@ main {
     font-weight: 400;
     color: #adb5bd;}
 
-#title-br {
+.title-br {
     line-height: 28px;
     letter-spacing: -.6px;
     font-size: 18px;
@@ -222,7 +224,8 @@ main {
     column-gap: 16px;
     margin-top: 18px;
     text-align: left;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: space-around;
 }
 
 .top10-lists {
@@ -296,12 +299,11 @@ main {
     height: auto;
     min-height: 10px;
     opacity: 1;
-    background-image: url(https://cdn.wadiz.kr/wwwwadiz/green001/2022/0707/20220707105517889_150229.png/wadiz/resize/300/format/jpg/quality/85/);
+    /* background-image: url(https://cdn.wadiz.kr/wwwwadiz/green001/2022/0707/20220707105517889_150229.png/wadiz/resize/300/format/jpg/quality/85/); */
 }
 
 .list-image2{
-    background-image: url(https://cdn.wadiz.kr/wwwwadiz/green001/2022/0221/20220221171434768_141202.jpg/wadiz/resize/300/format/jpg/quality/85/);    
-    /* background-image: url(https://cdn.wadiz.kr/wwwwadiz/green001/2022/0530/20220530114000416_149115.jpg/wadiz/resize/300/format/jpg/quality/85/);     */
+    /* background-image: url(https://cdn.wadiz.kr/wwwwadiz/green001/2022/0221/20220221171434768_141202.jpg/wadiz/resize/300/format/jpg/quality/85/);     */
 }
 
 .list-text-wrapper {
@@ -413,6 +415,37 @@ main {
     font-weight: 400;
     margin-top: 6px;
 }
-
-
 /* 랭킹 10등까지 목록 끝 */
+
+.promotion-write-button {
+    white-space: nowrap;
+    font-weight: 500;
+    position: relative;
+    transition-property: background-color,border-color,color,opacity;
+    transition-duration: .15s;
+    border: 1px solid #cdd3d8;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    /* width: 100%; */
+    /* width: 344px; */
+    height: 48px;
+    margin-top: 24px;
+    padding: 9px 24px;
+    line-height: 1.75;
+    font-size: 16px;
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#first-rank {
+    width: calc(100%/2.7);
+    top: 0;
+}

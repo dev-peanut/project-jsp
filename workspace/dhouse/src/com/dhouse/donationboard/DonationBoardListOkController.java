@@ -25,10 +25,10 @@ public class DonationBoardListOkController implements Action {
 		JSONArray donationBoardJsons = new JSONArray();
 		List<PromotionBoardDTO> donationBoardList = null;
 		
-		donationBoardList = donationBoardDAO.selectAll();
+//		donationBoardList = donationBoardDAO.selectAll();
 //		System.out.println(donationBoardList);
 		
-		donationBoardList.stream().map(promotionBoard -> new JSONObject(promotionBoard)).forEach(promotionBoardJsons::put);
+		donationBoardList.stream().map(donationBoard -> new JSONObject(donationBoard)).forEach(donationBoardJsons::put);
 
 //		System.out.println(promotionBoardList.toString());
 		

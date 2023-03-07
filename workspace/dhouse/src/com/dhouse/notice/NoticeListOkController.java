@@ -14,8 +14,8 @@ import org.json.JSONObject;
 
 import com.dhouse.Action;
 import com.dhouse.Result;
-import com.dhouse.domain.NoticeDTO;
 import com.dhouse.notice.dao.NoticeDAO;
+import com.dhouse.notice.domain.NoticeDTO;
 
 public class NoticeListOkController implements Action {
 
@@ -36,8 +36,10 @@ public class NoticeListOkController implements Action {
 //		한 페이지에 출력되는 게시글의 개수
 		int rowCount = 10;
 //		한 페이지에서 나오는 페이지 버튼의 개수
-		int pageCount = 1;
+		int pageCount = 5;
 		int startRow = (page - 1) * rowCount;
+		
+		System.out.println("3. startRow: " + startRow);
 		
 		int endPage = (int)(Math.ceil(page / (double)pageCount) * pageCount);
 		int startPage = endPage - (pageCount - 1);

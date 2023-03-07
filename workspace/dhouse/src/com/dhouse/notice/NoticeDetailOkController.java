@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Action;
 import com.dhouse.Result;
-import com.dhouse.domain.NoticeDTO;
 import com.dhouse.notice.dao.NoticeDAO;
+import com.dhouse.notice.domain.NoticeDTO;
 
 public class NoticeDetailOkController implements Action {
 
@@ -26,9 +26,9 @@ public class NoticeDetailOkController implements Action {
 		
 		req.setAttribute("notice", noticeDTO);
 		
+		result.setPath("/dhouse/notice/notice-detail.jsp");
 		
-		
-		return null;
+		return result;
 	}
 
 }

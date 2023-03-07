@@ -27,17 +27,17 @@ public class NoticeFrontController extends HttpServlet {
 			
 		}else if(target.equals("/notice/list")){
 			result = new Result();
-			result.setPath("/notice/listOk");
+			result.setPath("/notice/listOk.notice");
 			
 		}else if(target.equals("/notice/listOk")){
 			result = new NoticeListOkController().execute(req, resp);
 			
 		}else if(target.equals("/notice/detail")){
 			result = new Result();
-			result.setPath("/notice/detailOk");
+			result.setPath("/notice/detailOk.notice");
 			
 		}else if(target.equals("/notice/detailOk")){
-			result = new NoticeListOkController().execute(req, resp);
+			result = new NoticeDetailOkController().execute(req, resp);
 			
 		}else {
 			System.out.println("3. " + target);

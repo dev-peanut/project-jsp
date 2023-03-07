@@ -82,6 +82,14 @@
     <url-pattern>*.file</url-pattern>
   </servlet-mapping>
   <servlet>
+    <servlet-name>board</servlet-name>
+    <servlet-class>com.dhouse.board.BoardFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>board</servlet-name>
+    <url-pattern>*.board</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>banner</servlet-name>
     <servlet-class>com.dhouse.banner.BannerFrontController</servlet-class>
   </servlet>
@@ -98,12 +106,20 @@
     <url-pattern>*.promotion</url-pattern>
   </servlet-mapping>
   <servlet>
-    <servlet-name>donation</servlet-name>
-    <servlet-class>com.dhouse.donationboard.DonationBoardFrontController</servlet-class>
+    <servlet-name>donationBoard</servlet-name>
+    <servlet-class>com.dhouse.donationBoard.donationBoardFrontController</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>donation</servlet-name>
-    <url-pattern>*.donation</url-pattern>
+    <servlet-name>donationBoard</servlet-name>
+    <url-pattern>*.donationBoard</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>notice</servlet-name>
+    <servlet-class>com.dhouse.notice.NoticeFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>notice</servlet-name>
+    <url-pattern>*.notice</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>notice</servlet-name>

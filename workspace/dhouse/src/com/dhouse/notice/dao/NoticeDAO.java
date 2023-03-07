@@ -5,8 +5,8 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 
-import com.dhouse.domain.NoticeDTO;
 import com.dhouse.mybatis.config.MyBatisConfig;
+import com.dhouse.notice.domain.NoticeDTO;
 
 public class NoticeDAO {
 	public SqlSession sqlSession;

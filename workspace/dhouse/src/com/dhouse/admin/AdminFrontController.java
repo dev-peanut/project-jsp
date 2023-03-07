@@ -8,10 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Result;
-import com.dhouse.food.FoodDeleteOkController;
-import com.dhouse.food.FoodDetailOkController;
-import com.dhouse.food.FoodModifyOkController;
-import com.dhouse.food.FoodApplyOkController;
 
 public class AdminFrontController extends HttpServlet{
 
@@ -64,21 +60,18 @@ public class AdminFrontController extends HttpServlet{
 		}else if(target.equals("/modifyOk")){
 			result = new AdminBannerModifyOkController().execute(req, resp);
 			
-		}else if(target.equals("/board/equipment/list")){
+		}else if(target.equals("/admin/donationBoard/list")){
 			result = new Result();
-			result.setPath("/board/equipment/listOk");
+			result.setPath("/admin/donationBoard/listOk.admin");
 			
-		}else if(target.equals("/board/equipment/listOk")){
-			result = new AdminEquipmentBoardListOkController().execute(req, resp);
+		}else if(target.equals("/admin/donationBoard/listOk")){
+			result = new AdminDonationBoardListOkController().execute(req, resp);
 			
-		}else if(target.equals("/board/equipment/detailOk")){
-			result = new AdminEquipmentBoardDetailOkController().execute(req, resp);
+		}else if(target.equals("/admin/donationBoard/detailOk")){
+			result = new AdminDonationBoardDetailOkController().execute(req, resp);
 			
-		}else if(target.equals("/board/equipment/deleteOk")){
-			result = new AdminEquipmentBoardDeleteOkController().execute(req, resp);
-			
-		}else if(target.equals("/board/equipment/modifyOk")){
-			result = new AdminEquipmentBoardModifyOkController().execute(req, resp);
+		}else if(target.equals("/admin/donationBoard/deleteOk")){
+			result = new AdminDonationBoardDeleteOkController().execute(req, resp);
 			
 		}else {
 			

@@ -23,11 +23,6 @@ public class MainOkController implements Action{
 		DonationBoardDAO donationBoardDAO = new DonationBoardDAO();
 		Result result = new Result();
 
-//		지워야 하는 부분(임시로 세션에 담아둠)
-		HttpSession session = req.getSession();
-		session.setAttribute("userId", 1L);
-//		session.invalidate();
-
 		req.setAttribute("promotionBoardRankings", promotionBoardDAO.selectAll());
 		req.setAttribute("promotionBoardList", promotionBoardDAO.selectList());
 		req.setAttribute("donationBoardRankings", donationBoardDAO.selectRanking());

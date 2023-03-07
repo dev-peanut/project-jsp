@@ -46,6 +46,7 @@ public class PromotionBoardDAO {
 		return sqlSession.selectOne("promotionBoard.getCurrentSequence");
 	}
 	
+//	최신 홍보 게시글 조회
 	public List<PromotionBoardDTO> selectList(){
 		return sqlSession.selectList("promotionBoard.selectList");
 	}

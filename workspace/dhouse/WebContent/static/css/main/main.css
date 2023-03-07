@@ -343,6 +343,7 @@ svg:not(:root) {
     display: flex;
     margin: 0 auto;
     width: 100%;
+    padding-bottom: 0;
 }
 
 .recommendation-section-container {
@@ -652,7 +653,8 @@ svg:not(:root) {
     -webkit-box-orient: vertical;
     line-height: 20px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: bold;
+    /* font-weight: 400; */
     margin-bottom: 3px;
     width: 100%;
     height: auto;
@@ -677,11 +679,11 @@ svg:not(:root) {
 .ranking-content-rate {
     letter-spacing: 0;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     font-family: Roboto;
     color: #00b2b2;
-    margin-right: 4px;
+    margin-right: 10px;
 }
 
 .ranking-content-thumbnail {
@@ -782,6 +784,7 @@ svg:not(:root) {
     height: 100%;
     border-bottom: 1px solid rgba(0,0,0,.06);
     content: "";
+    border-radius: 2%;
 }
 
 .content-img2{
@@ -1024,4 +1027,24 @@ li{
 
 #ranking-mark2 {
     display: none;
+}
+
+.writer {
+    font-family: 'Noto Sans KR';
+    font-size: 12px;
+}
+
+.writer-nickName {
+    color: #00b2b2 !important;
+}
+
+.corp-name-bold{
+    font-weight: bold;
+}
+
+.middle-banner {
+    width: 76%;
+    height: 231px;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }

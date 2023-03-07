@@ -160,9 +160,11 @@ main {
     box-sizing: content-box;
     padding-top: 80px;
     letter-spacing: -.02em;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    background: ghostwhite;
 }
 
-#ranking-title{
+.ranking-title{
     margin: 0;
     border: 0;
     padding: 0;
@@ -173,7 +175,7 @@ main {
     overflow-wrap: break-word;
 }
 
-#title-text {
+.title-text {
     font-size: 50px;
     margin: 0;
     padding: 0;
@@ -183,7 +185,7 @@ main {
     font-weight: bold;
 }
 
-#title {
+.title {
     margin: 0;
     border: 0;
     padding: 0;
@@ -199,7 +201,7 @@ main {
     font-weight: 400;
     color: #adb5bd;}
 
-#title-br {
+.title-br {
     line-height: 28px;
     letter-spacing: -.6px;
     font-size: 18px;
@@ -441,4 +443,9 @@ main {
     color: #fff;
     margin: 0 auto;
     margin-top: 100px;
+}
+
+#first-rank {
+    width: calc(100%/2.7);
+    top: 0;
 }

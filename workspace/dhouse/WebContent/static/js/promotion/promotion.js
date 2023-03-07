@@ -164,14 +164,16 @@ function showList(){
     console.log(promotionBoards);
 	promotionBoards = JSON.parse(promotionBoards);
 	const $ol = $("#ranking-part");
+	const $contents = $("#contents-wrapper");
 	let text = "";
+    let text2 = "";
 	promotionBoards.forEach((promotionBoard, i)=> {
 		text += `
                 <li class="top10-lists">
                     <a href="${contextPath}/promotion/detailOk.promotion?promotionBoardId=${promotionBoards[i].promotionBoardId}">
                         <div class="list-container">
                             <div class="list-image-wrapper">
-                                <div class="list-image" style="background-image: url(${contextPath}/static/images/main/${promotionBoards[i].fileSystemName});">
+                                <div class="list-image" style="background-image: url(${contextPath}/upload/${promotionBoards[i].fileSystemName});">
                                 </div>
                             </div>
                             <div class="list-text-wrapper">
@@ -196,7 +198,57 @@ function showList(){
                 </li>
 			`;
 	});
+    for (let index = 0; index < 1; index++) {
+        text2 += `
+        <div class="content-wrapper">
+            <div class="content">
+                <div id="medal${index+2}"></div>
+                <a href="${contextPath}/promotion/detailOk.promotion?promotionBoardId=${promotionBoards[index+1].promotionBoardId}" class="content-a">
+                    <div class="content-img" style="background-image: url(${contextPath}/upload/${promotionBoards[index+1].fileSystemName});"></div>
+                    <div class="text-box">
+                        <p class="text-top">${promotionBoards[index+1].promotionBoardTitle}</p>
+                        <ul class="text-box-ul">
+                            <li class="ul-lists">총 기부량 : <em>${promotionBoards[index+1].foodSum}</em> kg</li>
+                            <li class="ul-lists"><span class="star"></span> <div><span>작성자</span> <em>${promotionBoards[index+1].userNickname}</em></div></li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="content-wrapper" id="first-rank">
+            <div class="content">
+                <div id="medal${index+1}"></div>
+                <a href="${contextPath}/promotion/detailOk.promotion?promotionBoardId=${promotionBoards[index].promotionBoardId}" class="content-a">
+                    <div class="content-img" style="background-image: url(${contextPath}/upload/${promotionBoards[index].fileSystemName}); height: 328px;"></div>
+                    <div class="text-box">
+                        <p class="text-top">${promotionBoards[index].promotionBoardTitle}</p>
+                        <ul class="text-box-ul">
+                            <li class="ul-lists">총 기부량 : <em>${promotionBoards[index].foodSum}</em> kg</li>
+                            <li class="ul-lists"><span class="star"></span> <div><span>작성자</span> <em>${promotionBoards[index].userNickname}</em></div></li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="content">
+                <div id="medal${index+3}"></div>
+                <a href="${contextPath}/promotion/detailOk.promotion?promotionBoardId=${promotionBoards[index+2].promotionBoardId}" class="content-a">
+                    <div class="content-img" style="background-image: url(${contextPath}/upload/${promotionBoards[index+2].fileSystemName});"></div>
+                    <div class="text-box">
+                        <p class="text-top">${promotionBoards[index+2].promotionBoardTitle}</p>
+                        <ul class="text-box-ul">
+                            <li class="ul-lists">총 기부량 : <em>${promotionBoards[index+2].foodSum}</em> kg</li>
+                            <li class="ul-lists"><span class="star"></span> <div><span>작성자</span> <em>${promotionBoards[index+2].userNickname}</em></div></li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+        `;
+    };
 	$ol.append(text);
+    $contents.append(text2);
 }
 showList();
 

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,12 +19,12 @@
 					<%-- <h1 class="wadiz-logo">
 						<a href="/web/main" style="width: 100px;">
 							<span class="label">나눔의집</span>
-							<img alt="" src="${pageContext.request.contextPath}/static/images/components/dhouse.png" style="width: 88%;">
+							<img alt="" src="" style="width: 88%;">
 						</a>
 					</h1> --%>
 					<ul class="header-menu-category-ul">
 						<li class="header-menu-category-li">
-							<a class="header-menu-category-a" href="/web/wreward/comingsoon">
+							<a class="header-menu-category-a" href="${pageContext.request.contextPath}/main/mainOk.main">
 								<h1 class="wadiz-logo"><span>나눔의집</span></h1>
 							</a>
 						</li>
@@ -33,17 +34,17 @@
 							</a>
 						</li>
 						<li class="header-menu-category-li">
-							<a class="header-menu-category-a" href="/web/wreward/main">
+							<a class="header-menu-category-a" href="${pageContext.request.contextPath}/donation/listOk.donation">
 								<span>기부하기</span>
 							</a>
 						</li>
 						<li class="header-menu-category-li">
-							<a class="header-menu-category-a" href="/web/preorder/main">
+							<a class="header-menu-category-a" href="${pageContext.request.contextPath}/promotion/listOk.promotion">
 								<span>홍보하기</span>
 							</a>
 						</li>
 						<li class="header-menu-category-li">
-							<a class="header-menu-category-a" href="/web/store/main">
+							<a class="header-menu-category-a" href="${pageContext.request.contextPath}/">
 								<span>고객센터</span>
 							</a>
 						</li>
@@ -67,8 +68,12 @@
 						</div> -->
 						<div class="header-user-div">
 							<div class="header-user-container">
-								<button type="button" class="header-user-button">로그인</button>
-								<button data-event="iam.signup" class="header-user-button">회원가입</button>
+								<a href="${pageContext.request.contextPath}/user/login.user" style="list-style: none;">
+									<button type="button" class="header-user-button">로그인</button>
+								</a>
+								<a href="${pageContext.request.contextPath}/user/signUp.user" style="list-style: none;">
+									<button data-event="iam.signup" class="header-user-button">회원가입</button>
+								</a>
 							</div>
 						</div>
 						<div class="web-header-funding-open funding-open">

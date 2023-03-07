@@ -24,7 +24,8 @@
                 <div id="form_container_margin">
                    <div class="category_print">
                       <ol class="category_name">
-                        <a href="${pageContext.request.contextPath}/promotion/listOk.promotion" style="text-decoration: none;">
+                        <!-- <a href="${pageContext.request.contextPath}/promotion/listOk.promotion" style="text-decoration: none;"> -->
+                        <a href="javascript:window.history.back();" style="text-decoration: none;">
                             <li class="form_category_small">홍보하기</li>
                         </a>
                          <li class="form_category_small">홍보 게시글 작성</li>

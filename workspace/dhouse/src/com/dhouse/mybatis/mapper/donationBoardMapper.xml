@@ -9,7 +9,7 @@
 	</select>
 	
 	<select id="selectRanking" resultType="donationBoardDTO">
-		select donation_board_id, donation_board_title, user_nickname, donation_file_system_name
+		select donation_board_id, donation_board_title, user_nickname, donation_file_system_name, donation_board_read_count 
 		from view_donation_all
 		order by donation_board_read_count desc
 		limit 0,5

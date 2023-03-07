@@ -31,7 +31,7 @@ public class PromotionBoardWriteOkController implements Action {
 		int fileSize = 1024 * 1024 * 5; //5M
 		Long promotionBoardCurrentSequence = 0L;
 //		테스트 용으로 세션에 담아둔 거 지워야 함
-		req.getSession().setAttribute("userId", 1L);
+//		req.getSession().setAttribute("userId", 1L);
 		
 		MultipartRequest multipartRequest = new MultipartRequest(req, uploadPath, fileSize, "UTF-8", new DefaultFileRenamePolicy());
 		

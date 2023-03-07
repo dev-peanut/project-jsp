@@ -16,10 +16,8 @@ public class MainFrontController extends HttpServlet {
 		String contextPath = req.getContextPath();
 		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
-		System.out.println("MainFrontController 들어옴");
 		
 		if(target.equals("/main/mainOk")) {
-			System.out.println("MainFrontOKController 들어옴");
 			result = new MainOkController().execute(req, resp);
 		}else {
 			System.out.println(target);

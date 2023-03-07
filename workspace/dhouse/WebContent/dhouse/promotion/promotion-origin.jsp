@@ -9,7 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/promotion/promotion.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/promotion/promotion-list.css">
 <title>홍보 목록페이지</title>
 </head>
 <body>
@@ -39,27 +38,11 @@
                 <button class="btn"></button>
             </div>
         </section>
-         <!-- 테스트로 추가 해봄 -->
-         <div id="under-banner">
-             <div class="ranking-title">
-                    <h2 class="title-text">TOP 3</h2>
-                    <p class="title">
-                        기부량이 가장 높은<br class="title-br">3개의 업체들을 소개합니다.
-                    </p>
-                </div>
-                <div class="Main_inner_wrap Main_inner_wrap_2">
-                 <div id="contents-wrapper">
-                        <!------------------------------------------- 1 ----------------------------------------- -->
-                        
-                    </div>
-              </div>
-              <!-- 테스트 추가 -->
-         </div>
         <main>
             <div id="ranking-part-wrapper">
-                <div class="ranking-title">
-                    <h2 class="title-text">TOP 10</h2>
-                    <p class="title">
+                <div id="ranking-title">
+                    <h2 id="title-text">TOP 10</h2>
+                    <p id="title">
                         기부량이 가장 높은<br id="title-br">10개의 업체들을 소개합니다.
                     </p>
                 </div>

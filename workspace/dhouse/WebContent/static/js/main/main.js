@@ -33,7 +33,7 @@ buttons.forEach(button => {
     });
 });
 // imageDiv.forEach((div, i) => div.style.backgroundImage = `url(/images/main/00${i+1}.jpg)`); // 배너 리스트 안에 각 배너들에 이미지를 style을 줌.
-imageDiv.forEach((div, i) => div.style.backgroundImage = `url(/images/main/00${i}.jpg)`); // 배너 리스트 안에 각 배너들에 이미지를 style을 줌.
+imageDiv.forEach((div, i) => div.style.backgroundImage = `url(../static/images/main/00${i}.jpg)`); // 배너 리스트 안에 각 배너들에 이미지를 style을 줌.
 // imageDiv[0].style.backgroundImage = `url(/images/main/00${imageDiv.length}.jpg)`;
 // imageDiv[parseInt(${imageDiv.length})].style.backgroundImage = `url(/images/main/00${imageDiv.length}.jpg)`;
 

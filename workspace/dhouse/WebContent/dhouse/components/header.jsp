@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -66,10 +67,18 @@
 							</form>
 						</div> -->
 						<div class="header-user-div">
+							<c:if test="${not empty sessionScope.userId}">
 							<div class="header-user-container">
-								<button type="button" class="header-user-button">로그인</button>
-								<button data-event="iam.signup" class="header-user-button">회원가입</button>
+								<button type="button" class="header-user-button" onclick="location.href='${pageContext.request.contextPath}/user/login.user'">로그아웃</button>
+								<button data-event="iam.signup" class="header-user-button" onclick="location.href='${pageContext.request.contextPath}/dhouse/user/mypage.user'">마이페이지</button>
 							</div>
+							</c:if>
+							<c:if test="${empty sessionScope.userId}">
+							<div class="header-user-container">
+								<button type="button" class="header-user-button" onclick="location.href='${pageContext.request.contextPath}/user/login.user'">로그인</button>
+								<button data-event="iam.signup" class="header-user-button" onclick="location.href='${pageContext.request.contextPath}/user/signUp.user'">회원가입</button>
+							</div>
+							</c:if>
 						</div>
 						<div class="web-header-funding-open funding-open">
 							<div>

@@ -29,7 +29,7 @@ public class SignUpOkController implements Action {
 		
 		userDAO.join(userVO);
 		
-		result.setPath(req.getContextPath() + "/login.user");
+		result.setPath(req.getContextPath() + "/user/login.user");
 		result.setRedirect(true);
 		
 		return result;

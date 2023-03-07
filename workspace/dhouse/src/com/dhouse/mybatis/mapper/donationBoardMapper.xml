@@ -7,9 +7,9 @@
 	</insert>
 	
 	<select id="select" resultType="donationBoardDTO" parameterType="long">
-		select user_id, user_nickname, donation_board_title, donation_board_contents, donation_board_register_date, food_sum, file_system_name, promotion_board_id, corp_address
-		from view_promotion_all
-		where promotion_board_id = #{promotionBoardId}
+		select user_id, user_nickname, donation_board_id, donation_board_title, donation_board_contents, donation_board_register_date, donation_board_update_date, file_id, file_system_name
+		from view_donation_user;
+		where donation_board_id = #{donationBoardId}
 	</select>
 	
 	<select id="getCurrentSequence" resultType="long">

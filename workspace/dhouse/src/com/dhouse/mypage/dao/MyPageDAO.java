@@ -1,8 +1,12 @@
 package com.dhouse.mypage.dao;
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.ibatis.session.SqlSession;
 
+import com.dhouse.corp.domain.CorpVO;
 import com.dhouse.mybatis.config.MyBatisConfig;
 import com.dhouse.mypage.domain.MyPageDTO;
 import com.dhouse.user.domain.UserVO;
@@ -14,29 +18,40 @@ public class MyPageDAO {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	}
 	
-	//	ºñ¹Ğ¹øÈ£ ¼öÁ¤
-	public void updatePassword(String userPassword) {
-		 sqlSession.update("passwordUpdate.myPage", userPassword);
+	//	ë¹„ë°€ë²ˆí˜¸ ìˆ˜ì •
+	public void updatePassword(String userPassword, Long userId) {
+		Map<Object, Object> map = new HashMap<Object, Object>();
+		map.put("userPassword", userPassword);
+		map.put("userId", userId);
+		 sqlSession.update("myPage.passwordUpdate", map);
 	}
 	
-	//È¸¿ø Å»Åğ
+	//íšŒì› íƒˆí‡´
 	public void delete(Long userId) {
-		 sqlSession.delete("delete.myPage", userId);
+		 sqlSession.delete("myPage.delete", userId);
 	}
 
-	//´Ğ³×ÀÓ, ÀÌ¸ŞÀÏ, ÈŞ´ëÆù ¼öÁ¤
-	public void updatenicknamePhoneEmail(UserVO userVO) {
-		 sqlSession.update("profileUpdate.myPage", userVO);
+	//ë‹‰ë„¤ì„, ì´ë©”ì¼, íœ´ëŒ€í° ìˆ˜ì •
+	public void updateNicknamePhoneEmail(UserVO userVO) {
+		 sqlSession.update("myPage.updateNicknamePhoneEmail", userVO);
 	}
 	
-	//´Ğ³×ÀÓ Áßº¹°Ë»ç(ajax)
+	//ë‹‰ë„¤ì„ ì¤‘ë³µê²€ì‚¬(ajax) ì¶”í›„ì— í•˜ê¸°
 	public void checkNickname(String userNickname) {
 		sqlSession.selectOne(userNickname);
 	}
 	
-	//Ä«¿îÆ® Ãâ·Â
-	public void countPrint(MyPageDTO myPageDTO) {
-		sqlSession.selectMap("countMyPagePersonal", null);
+	/*
+	 * ì¹´ìš´íŠ¸ ì¶œë ¥ public void countPrint(MyPageDTO myPageDTO) {
+	 * sqlSession.selectMap("countMyPagePersonal", null); }
+	 */
+	
+	public void updatePhotoCorpIntroduction(CorpVO corpVO) {
+		 sqlSession.update("myPage.updatePhotoCorpIntroduction", corpVO);
+	}
+	
+	public MyPageDTO select(Long userId) {
+		return sqlSession.selectOne("myPage.select", userId);
 		
 	}
 	

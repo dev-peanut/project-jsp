@@ -27,10 +27,20 @@ public class MyPageFrontController extends HttpServlet {
 			System.out.println("2. " + target);
 			result = new MyPasswordOkController().execute(req, resp);
 			
-		}else if(target.equals("/myPageWithdrawOk")) {
+		}else if(target.equals("/myPage/myPageWithdraw")) {
+			System.out.println("2. " + target);
+			result = new Result();
+			result.setPath("/dhouse/user/myPageWithdraw.jsp");
+			
+		}else if(target.equals("/myPage//myPageWithdrawOk")) {
 			System.out.println("2. " + target);
 			result = new MyPageWithdrawOkController().execute(req, resp);
 			
+		}else if(target.equals("/updateNicknamePhoneEmail")) {
+			System.out.println("2. " + target);
+			result = new Result();
+			result.setPath("/dhouse/user/updateNicknamePhoneEmail.jsp");
+
 		}else if(target.equals("/updateNicknamePhoneEmail")) {
 			System.out.println("2. " + target);
 			result = new updateNicknamePhoneEmailOkController().execute(req, resp);

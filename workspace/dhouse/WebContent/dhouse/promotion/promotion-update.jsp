@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko" style="--vh:7.46px;" class="">
 <head>
@@ -11,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../../static/images/logo.png">
+    <link rel="shortcut icon" href="../../static/img/logo.png">
 </head>
 <body>
     <jsp:include page="../components/header.jsp"></jsp:include>
@@ -24,19 +23,16 @@
                 <div id="form_container_margin">
                    <div class="category_print">
                       <ol class="category_name">
-                        <!-- <a href="${pageContext.request.contextPath}/promotion/listOk.promotion" style="text-decoration: none;"> -->
                         <a href="javascript:window.history.back();" style="text-decoration: none;">
-                            <li class="form_category_small">홍보하기</li>
+                            <li class="form_category_small">수정하기</li>
                         </a>
-                         <li class="form_category_small">홍보 게시글 작성</li>
+                         <li class="form_category_small">홍보 게시글 수정</li>
                       </ol>
-                          
- 
                    <!-- 본문 -->
-                <form action="${pageContext.request.contextPath}/promotion/writeOk.promotion" name="promotionWriteForm" method="post" enctype="multipart/form-data">
+                <form action="${pageContext.request.contextPath}/promotion/updateOk.promotion" name="promotionUpdateForm" method="post" enctype="multipart/form-data">
                     <div class="food_donation_start">
                        <div class="food_donation_container">
-                         <h2 class="food_donation_title">홍보 게시글 작성하기
+                         <h2 class="food_donation_title">홍보 게시글 수정
                              <!-- 제출 버튼 -->
                              <button id="bottom-button" type="submit">
                                  <span id="button-inner-text"> 
@@ -47,7 +43,7 @@
                                  </span>
                              </button>
                          </h2>
-                          
+                          <input type="hidden" name="promotionBoardId" value="${promotionBoardId}">
                           <!-- 글 제목 -->
                           <section class="form_section">
                               <div style="max-width: 600px;">
@@ -64,7 +60,7 @@
                                               <div class="wide_column_2">
                                                   <div class="wz input">
                                                       <textarea placeholder="글 제목" helper="[object Object]"
-                                                          name="promotionBoardTitle" rows="2" class="titleData"></textarea>
+                                                          name="promotionBoardTitle" rows="2" class="titleData">${promotionBoard.promotionBoardTitle}</textarea>
                                                       <div id="title-warning">필수 정보입니다</div>
                                                   </div>
                                               </div>
@@ -116,7 +112,7 @@
                                                   <div class="wide_column_2">
                                                       <div class="wz input">
                                                           <textarea placeholder="글 내용" helper="[object Object]"
-                                                              name="promotionBoardContents" rows="3" class="contentData"></textarea>
+                                                              name="promotionBoardContents" rows="3" class="contentData">${promotionBoard.promotionBoardContents}</textarea>
                                                           <div id="content-warning">필수 정보입니다</div>
                                                       </div>
                                                   </div>
@@ -159,7 +155,7 @@
                                               </section>
                          </div>
                       </div>
-                </form>
+                    </form>
                  </div>
              </div>
          </div>
@@ -167,6 +163,6 @@
      </div>
      <jsp:include page="../components/footer.jsp"></jsp:include>
  </body>
- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
- <script type="text/javascript" src="../../static/js/promotion/promotion-write.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../../static/js/promotion/promotion-write.js"></script>
 </html>

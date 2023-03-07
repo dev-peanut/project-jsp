@@ -8,6 +8,7 @@
 <title>와디즈</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link href="${pageContext.request.contextPath}/static/css/main/main.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://static.wadiz.kr/static/icon/favicon.ico">
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
 </head>
 <body style="overflow: auto;">
@@ -569,10 +570,17 @@
                          
                      </div>
                </div>
-			<!-- footer적용 -->
-			<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
-		</main>
-	</div>
+
+            </div>
+            <div class="Main_wrap_3 Main_wrap"> <!-- 메인 컨텐츠3 -->
+            </div>
+            <div class="Main_wrap_4 Main_wrap"> <!-- 메인 컨텐츠4 -->
+            </div>
+         </div>
+         <!-- footer적용 -->
+         <jsp:include page="../components/footer.jsp"></jsp:include>
+      </main>
+   </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/main/main.js"></script>

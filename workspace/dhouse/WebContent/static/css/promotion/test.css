@@ -2602,9 +2602,3 @@ overflow-wrap: break-word;
 #content-warning{
    display: none;
 }
-
-
-#inner-image {
-    margin-top: 30px;
-    width: 90%;
-}

@@ -22,6 +22,7 @@ public class MainOkController implements Action{
 		PromotionBoardDAO promotionBoardDAO = new PromotionBoardDAO();
 		DonationBoardDAO donationBoardDAO = new DonationBoardDAO();
 		Result result = new Result();
+		
 
 		req.setAttribute("promotionBoardRankings", promotionBoardDAO.selectAll());
 		req.setAttribute("promotionBoardList", promotionBoardDAO.selectList());

@@ -18,14 +18,14 @@
         <section class="container">
             <div class="arrow prev">&lt;</div>
             <div class="banner">
-                <div><img src="${pageContext.request.contextPath}/images/user/006.png"></div>
-                <div><img src="${pageContext.request.contextPath}/images/user/001.png"></div>
-                <div><img src="${pageContext.request.contextPath}/images/user/002.png"></div>
-                <div><img src="${pageContext.request.contextPath}/images/user/003.png"></div>
-                <div><img src="${pageContext.request.contextPath}/images/user/004.png"></div>
-                <div><img src="${pageContext.request.contextPath}/images/user/005.png"></div>
-                <div><img src="${pageContext.request.contextPath}/images/user/006.png"></div>
-                <div><img src="${pageContext.request.contextPath}/images/user/001.png"></div>
+                <div><img src="${pageContext.request.contextPath}/static/images/user/006.png"></div>
+                <div><img src="${pageContext.request.contextPath}/static/images/user/001.png"></div>
+                <div><img src="${pageContext.request.contextPath}/static/images/user/002.png"></div>
+                <div><img src="${pageContext.request.contextPath}/static/images/user/003.png"></div>
+                <div><img src="${pageContext.request.contextPath}/static/images/user/004.png"></div>
+                <div><img src="${pageContext.request.contextPath}/static/images/user/005.png"></div>
+                <div><img src="${pageContext.request.contextPath}/static/images/user/006.png"></div>
+                <div><img src="${pageContext.request.contextPath}/static/images/user/001.png"></div>
             </div>
             <div id="mark-bottom"></div>
             <div id="mark-bottom2"></div>
@@ -65,300 +65,20 @@
                 </div>
                 <ol id="ranking-part">
                    <!-- 리스트 하나 시작 -->
-                   <li class="top10-lists">
-                    <div class="list-container">
-                        <!-- 이미지 감싸는 애 -->
-                        <div class="list-image-wrapper">
-                            <div class="list-image"></div>
-                        </div>
-                        <!-- 옆에 랭킹과 내용 -->
-                        <a href="#" class="list-text-wrapper">
-                            <!-- ::before -->
-                            <div class="ranking-top-number">
-                                <span class="ranking-number">TOP 1</span>
-                            </div>
-                            <dl class="inner-text-wrapper">
-                                <dd class="middle-text-wrapper">
-                                    <span class="middle-text">
-                                        마스터마인딩그룹
-                                    </span>
-                                </dd>
-                                <dd class="bottom-text-wrapper">
-                                    <span class="bottom-text">
-                                        홈바&홈술 필수템! 녹지 않는 얼음 쥬얼아이스
-                                    </span>
-                                </dd>
-                            </dl>
-                        </a>
-                    </div>
-                   </li>
-                   <!-- 리스트 하나 끝-->
-                   <!-- 리스트 하나 시작 -->
-                   <li class="top10-lists">
-                    <div class="list-container">
-                        <!-- 이미지 감싸는 애 -->
-                        <div class="list-image-wrapper">
-                            <div class="list-image list-image2"></div>
-                        </div>
-                        <!-- 옆에 랭킹과 내용 -->
-                        <a href="#" class="list-text-wrapper">
-                            <!-- ::before -->
-                            <div class="ranking-top-number">
-                                <span class="ranking-number">TOP 2</span>
-                            </div>
-                            <dl class="inner-text-wrapper">
-                                <dd class="middle-text-wrapper">
-                                    <span class="middle-text">
-                                        마스터마인딩그룹
-                                    </span>
-                                </dd>
-                                <dd class="bottom-text-wrapper">
-                                    <span class="bottom-text">
-                                        홈바&홈술 필수템! 녹지 않는 얼음 쥬얼아이스
-                                    </span>
-                                </dd>
-                            </dl>
-                        </a>
-                    </div>
-                   </li>
-                   <!-- 리스트 하나 끝-->
-                   <!-- 리스트 하나 시작 -->
-                   <li class="top10-lists">
-                    <div class="list-container">
-                        <!-- 이미지 감싸는 애 -->
-                        <div class="list-image-wrapper">
-                            <div class="list-image"></div>
-                        </div>
-                        <!-- 옆에 랭킹과 내용 -->
-                        <a href="#" class="list-text-wrapper">
-                            <!-- ::before -->
-                            <div class="ranking-top-number">
-                                <span class="ranking-number">TOP 3</span>
-                            </div>
-                            <dl class="inner-text-wrapper">
-                                <dd class="middle-text-wrapper">
-                                    <span class="middle-text">
-                                        마스터마인딩그룹
-                                    </span>
-                                </dd>
-                                <dd class="bottom-text-wrapper">
-                                    <span class="bottom-text">
-                                        홈바&홈술 필수템! 녹지 않는 얼음 쥬얼아이스
-                                    </span>
-                                </dd>
-                            </dl>
-                        </a>
-                    </div>
-                   </li>
-                   <!-- 리스트 하나 끝-->
-                   <!-- 리스트 하나 시작 -->
-                   <li class="top10-lists">
-                    <div class="list-container">
-                        <!-- 이미지 감싸는 애 -->
-                        <div class="list-image-wrapper">
-                            <div class="list-image list-image2"></div>
-                        </div>
-                        <!-- 옆에 랭킹과 내용 -->
-                        <a href="#" class="list-text-wrapper">
-                            <!-- ::before -->
-                            <div class="ranking-top-number">
-                                <span class="ranking-number">TOP 4</span>
-                            </div>
-                            <dl class="inner-text-wrapper">
-                                <dd class="middle-text-wrapper">
-                                    <span class="middle-text">
-                                        마스터마인딩그룹
-                                    </span>
-                                </dd>
-                                <dd class="bottom-text-wrapper">
-                                    <span class="bottom-text">
-                                        홈바&홈술 필수템! 녹지 않는 얼음 쥬얼아이스
-                                    </span>
-                                </dd>
-                            </dl>
-                        </a>
-                    </div>
-                   </li>
-                   <!-- 리스트 하나 끝-->
-                   <!-- 리스트 하나 시작 -->
-                   <li class="top10-lists">
-                    <div class="list-container">
-                        <!-- 이미지 감싸는 애 -->
-                        <div class="list-image-wrapper">
-                            <div class="list-image"></div>
-                        </div>
-                        <!-- 옆에 랭킹과 내용 -->
-                        <a href="#" class="list-text-wrapper">
-                            <!-- ::before -->
-                            <div class="ranking-top-number">
-                                <span class="ranking-number">TOP 5</span>
-                            </div>
-                            <dl class="inner-text-wrapper">
-                                <dd class="middle-text-wrapper">
-                                    <span class="middle-text">
-                                        마스터마인딩그룹
-                                    </span>
-                                </dd>
-                                <dd class="bottom-text-wrapper">
-                                    <span class="bottom-text">
-                                        홈바&홈술 필수템! 녹지 않는 얼음 쥬얼아이스
-                                    </span>
-                                </dd>
-                            </dl>
-                        </a>
-                    </div>
-                   </li>
-                   <!-- 리스트 하나 끝-->
-                   <!-- 리스트 하나 시작 -->
-                   <li class="top10-lists">
-                    <div class="list-container">
-                        <!-- 이미지 감싸는 애 -->
-                        <div class="list-image-wrapper">
-                            <div class="list-image list-image2"></div>
-                        </div>
-                        <!-- 옆에 랭킹과 내용 -->
-                        <a href="#" class="list-text-wrapper">
-                            <!-- ::before -->
-                            <div class="ranking-top-number">
-                                <span class="ranking-number">TOP 6</span>
-                            </div>
-                            <dl class="inner-text-wrapper">
-                                <dd class="middle-text-wrapper">
-                                    <span class="middle-text">
-                                        마스터마인딩그룹
-                                    </span>
-                                </dd>
-                                <dd class="bottom-text-wrapper">
-                                    <span class="bottom-text">
-                                        홈바&홈술 필수템! 녹지 않는 얼음 쥬얼아이스
-                                    </span>
-                                </dd>
-                            </dl>
-                        </a>
-                    </div>
-                   </li>
-                   <!-- 리스트 하나 끝-->
-                   <!-- 리스트 하나 시작 -->
-                   <li class="top10-lists">
-                    <div class="list-container">
-                        <!-- 이미지 감싸는 애 -->
-                        <div class="list-image-wrapper">
-                            <div class="list-image"></div>
-                        </div>
-                        <!-- 옆에 랭킹과 내용 -->
-                        <a href="#" class="list-text-wrapper">
-                            <!-- ::before -->
-                            <div class="ranking-top-number">
-                                <span class="ranking-number">TOP 7</span>
-                            </div>
-                            <dl class="inner-text-wrapper">
-                                <dd class="middle-text-wrapper">
-                                    <span class="middle-text">
-                                        마스터마인딩그룹
-                                    </span>
-                                </dd>
-                                <dd class="bottom-text-wrapper">
-                                    <span class="bottom-text">
-                                        홈바&홈술 필수템! 녹지 않는 얼음 쥬얼아이스
-                                    </span>
-                                </dd>
-                            </dl>
-                        </a>
-                    </div>
-                   </li>
-                   <!-- 리스트 하나 끝-->
-                   <!-- 리스트 하나 시작 -->
-                   <li class="top10-lists">
-                    <div class="list-container">
-                        <!-- 이미지 감싸는 애 -->
-                        <div class="list-image-wrapper">
-                            <div class="list-image list-image2"></div>
-                        </div>
-                        <!-- 옆에 랭킹과 내용 -->
-                        <a href="#" class="list-text-wrapper">
-                            <!-- ::before -->
-                            <div class="ranking-top-number">
-                                <span class="ranking-number">TOP 8</span>
-                            </div>
-                            <dl class="inner-text-wrapper">
-                                <dd class="middle-text-wrapper">
-                                    <span class="middle-text">
-                                        마스터마인딩그룹
-                                    </span>
-                                </dd>
-                                <dd class="bottom-text-wrapper">
-                                    <span class="bottom-text">
-                                        홈바&홈술 필수템! 녹지 않는 얼음 쥬얼아이스
-                                    </span>
-                                </dd>
-                            </dl>
-                        </a>
-                    </div>
-                   </li>
-                   <!-- 리스트 하나 끝-->
-                   <!-- 리스트 하나 시작 -->
-                   <li class="top10-lists">
-                    <div class="list-container">
-                        <!-- 이미지 감싸는 애 -->
-                        <div class="list-image-wrapper">
-                            <div class="list-image"></div>
-                        </div>
-                        <!-- 옆에 랭킹과 내용 -->
-                        <a href="#" class="list-text-wrapper">
-                            <!-- ::before -->
-                            <div class="ranking-top-number">
-                                <span class="ranking-number">TOP 9</span>
-                            </div>
-                            <dl class="inner-text-wrapper">
-                                <dd class="middle-text-wrapper">
-                                    <span class="middle-text">
-                                        마스터마인딩그룹
-                                    </span>
-                                </dd>
-                                <dd class="bottom-text-wrapper">
-                                    <span class="bottom-text">
-                                        홈바&홈술 필수템! 녹지 않는 얼음 쥬얼아이스
-                                    </span>
-                                </dd>
-                            </dl>
-                        </a>
-                    </div>
-                   </li>
-                   <!-- 리스트 하나 끝-->
-                   <!-- 리스트 하나 시작 -->
-                   <li class="top10-lists">
-                    <div class="list-container">
-                        <!-- 이미지 감싸는 애 -->
-                        <div class="list-image-wrapper">
-                            <div class="list-image list-image2"></div>
-                        </div>
-                        <!-- 옆에 랭킹과 내용 -->
-                        <a href="#" class="list-text-wrapper">
-                            <!-- ::before -->
-                            <div class="ranking-top-number">
-                                <span class="ranking-number">TOP 10</span>
-                            </div>
-                            <dl class="inner-text-wrapper">
-                                <dd class="middle-text-wrapper">
-                                    <span class="middle-text">
-                                        마스터마인딩그룹
-                                    </span>
-                                </dd>
-                                <dd class="bottom-text-wrapper">
-                                    <span class="bottom-text">
-                                        홈바&홈술 필수템! 녹지 않는 얼음 쥬얼아이스
-                                    </span>
-                                </dd>
-                            </dl>
-                        </a>
-                    </div>
-                   </li>
                    <!-- 리스트 하나 끝-->
                 </ol>
+                <a href="${pageContext.request.contextPath}/promotion/write.promotion">
+                    <button class="promotion-write-button">홍보 게시글 작성하기</button>
+                </a>
             </div>
         </main>
     </div>
     <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
-<script src="${pageContext.request.contextPath}/assets/js/promotion/promotion.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+	let contextPath = "${pageContext.request.contextPath}";
+    let promotionBoards = `${promotionBoards}`;
+</script>
+<script src="${pageContext.request.contextPath}/static/js/promotion/promotion.js"></script>
 </html>

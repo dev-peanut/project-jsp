@@ -33,7 +33,7 @@
 					<input id="searchbox" type="text" placeholder="원하시는 키워드로 찾아보세요" />
 					<button type="button" class="search__searchbox__button">
 						<img
-							src="${pageContext.request.contextPath}/images/user/search.png"
+							src="${pageContext.request.contextPath}/static/images/user/search.png"
 							alt="" />
 					</button>
 				</form>
@@ -81,7 +81,7 @@
 								<li class="content__date">2023-02-23</li>
 								<li class="content__type">11</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;" id="show">상세
+										class="custom-btn btn-16 show" style="font-weight: 10px;" id="show">상세
 										정보</button></li>
 							</ul>
 						</label>
@@ -101,7 +101,7 @@
 							<li class="content__date">2022-10-23</li>
 							<li class="content__type">03</li>
 							<li class="user__detail" name="userDetail"><button
-									class="custom-btn btn-16" style="font-weight: 10px;">상세
+									class="custom-btn btn-16 show" style="font-weight: 10px;">상세
 									정보</button></li>
 						</ul>
 
@@ -122,7 +122,7 @@
 								<li class="content__date">2023-01-23</li>
 								<li class="content__type">03</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">상세
+										class="custom-btn btn-16 show" style="font-weight: 10px;">상세
 										정보</button></li>
 							</ul>
 						</label>
@@ -143,7 +143,7 @@
 								<li class="content__date">yyyy-mm-dd</li>
 								<li class="content__type">nn</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
+										class="custom-btn btn-16 show" style="font-weight: 10px;">test</button></li>
 							</ul>
 						</label>
 					</div>
@@ -164,7 +164,26 @@
 								<li class="content__date">yyyy-mm-dd</li>
 								<li class="content__type">nn</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
+										class="custom-btn btn-16 show" style="font-weight: 10px;">test</button></li>
+							</ul>
+						</label>
+					</div>
+				</div>
+				<div class="custom-btn btn-16 shownfo-container">
+					<div class="content-list__info-unit">
+						<input type="checkbox" class="content__checkbox" id="ymw"
+							name="checkbox" /> <label for="ymw"
+							class="content__checkbox--label">
+							<ul class="content-list__info">
+								<li class="content__id">test</li>
+								<li class="content__title">test</li>
+								<li class="content__contents">test</li>
+								<li class="content__user">test</li>
+								<!--2개월 ,4개월  -->
+								<li class="content__date">yyyy-mm-dd</li>
+								<li class="content__type">nn</li>
+								<li class="user__detail" name="userDetail"><button
+										class="custom-btn btn-16 show" style="font-weight: 10px;">test</button></li>
 							</ul>
 						</label>
 					</div>
@@ -183,7 +202,7 @@
 								<li class="content__date">yyyy-mm-dd</li>
 								<li class="content__type">nn</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
+										class="custom-btn btn-16 show" style="font-weight: 10px;">test</button></li>
 							</ul>
 						</label>
 					</div>
@@ -202,7 +221,7 @@
 								<li class="content__date">yyyy-mm-dd</li>
 								<li class="content__type">nn</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
+										class="custom-btn btn-16 show" style="font-weight: 10px;">test</button></li>
 							</ul>
 						</label>
 					</div>
@@ -221,7 +240,7 @@
 								<li class="content__date">yyyy-mm-dd</li>
 								<li class="content__type">nn</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
+										class="custom-btn btn-16 show" style="font-weight: 10px;">test</button></li>
 							</ul>
 						</label>
 					</div>
@@ -240,26 +259,7 @@
 								<li class="content__date">yyyy-mm-dd</li>
 								<li class="content__type">nn</li>
 								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
-							</ul>
-						</label>
-					</div>
-				</div>
-				<div class="content-list__info-container">
-					<div class="content-list__info-unit">
-						<input type="checkbox" class="content__checkbox" id="ymw"
-							name="checkbox" /> <label for="ymw"
-							class="content__checkbox--label">
-							<ul class="content-list__info">
-								<li class="content__id">test</li>
-								<li class="content__title">test</li>
-								<li class="content__contents">test</li>
-								<li class="content__user">test</li>
-								<!--2개월 ,4개월  -->
-								<li class="content__date">yyyy-mm-dd</li>
-								<li class="content__type">nn</li>
-								<li class="user__detail" name="userDetail"><button
-										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
+										class="custom-btn btn-16 show" style="font-weight: 10px;">test</button></li>
 							</ul>
 						</label>
 					</div>

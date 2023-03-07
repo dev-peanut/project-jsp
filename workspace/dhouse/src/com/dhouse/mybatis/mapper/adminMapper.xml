@@ -1,4 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="admin">
+	<sql id="search">
+		<if test="types != null">
+			where
+			<trim prefixOverrides="or">
+				<foreach item="type" collection="types">
+					<trim prefix="or">
+						<choose>
+							<when test="type == 'title'.toString()">
+								donation_board_title like concat('%', #{keyword}, '%')
+							</when>
+							<when test="type == 'content'.toString()">
+								donation_board_contents like concat('%', #{keyword}, '%')
+							</when>
+							<when test="type == 'writer'.toString()">
+								user_nickname like concat('%', #{keyword}, '%')
+							</when>
+						</choose>
+					</trim>
+				</foreach>
+			</trim>
+		</if>
+	</sql>
+
+	<!-- 가전 기부 시작 -->
+	<!-- 가전 기부 목록용 -->
+	<select id="selectAllDonationBoard" parameterType="map" resultType="donationBoardDTO">
+		select b.donation_board_id, donation_board_title, donation_board_contents, u.user_nickname, donation_board_register_date, count(r.reply_id) reply_count   
+		from tbl_donation_board b join tbl_reply r
+		on b.donation_board_id = r.donation_board_id 
+		join tbl_user u on b.user_id = u.user_id 
+		<include refid="search"/> 
+		group by r.donation_board_id 
+		order by donation_board_id desc 
+		limit #{startRow}, #{rowCount}
+	</select>
+	
+	<!-- 가전 기부 board total -->
+	<select id="getTotalDonationBoard" parameterType="map" resultType="long">
+		select count(donation_board_id) from tbl_donation_board
+		<include refid="search"/>
+	</select>
+	
+	<!-- 가전 기부 상세(모달) -->
+	<select id="selectDonationBoard" parameterType="long" resultType="donationBoardDTO">
+		select b.donation_board_id , b.donation_board_title , b.donation_board_contents , f.file_system_name 
+		from tbl_donation_board b join tbl_donation_file f 
+		on b.donation_board_id = f.donation_board_id 
+		where b.donation_board_id = #{donationBoardId}
+	</select>
+
+	<!-- 가전 기부 게시글 삭제 -->
+	<delete id="deleteDonationBoard" parameterType="long">
+		delete from tbl_donation_board where donation_board_id = #{donationBoardId}
+	</delete>
+	<!-- 가전 기부 끝 -->
 </mapper>

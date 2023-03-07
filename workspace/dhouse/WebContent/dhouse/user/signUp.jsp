@@ -93,15 +93,16 @@
                 </div><!-- sns 로그인 끝 -->
 
                 <div class="equity-signup">
-                    <a class="corporate" href="../../app/user/signUp-corp.jsp">기업 회원가입</a>
-                    <a href="/web/waccount/wAccountRegistAsso">투자조합 가입</a>
+                
+                <!-- 기업 회원가입 경로설정해야함 -->
+                    <a class="corporate" href="${pageContext.request.contextPath}/dhouse/user/signUp-corp.jsp">기업 회원가입</a>
                 </div><!-- equity signup -->
             </div>
             <div class="signup-intro"> </div>
             <div class="account-container-email">
                 <h3 class="signup-intro-email">이메일 간편가입</h3>
                 <!-- 회원가입 정보 입력 폼 -->
-                <form action="${pageContext.request.contextPath}/signUpOk.user" name="join" method="post">
+                <form action="${pageContext.request.contextPath}/user/signUpOk.user" name="joinForm" method="post">
                		 <div class="email-signup-form-container">
                         <div class="email-field-container">
                             <label class="EmailAuthField">아이디</label>
@@ -211,7 +212,8 @@
                     </div>
 
 
-                    <button class="signup-submit-button" type="submit" > <!-- 완료 버튼 -->
+                    <button class="signup-submit-button"  type="button" onclick="send()"> <!-- 완료 버튼 -->
+<%--                     <button class="signup-submit-button" type="submit" onclick="${pageContext.request.contextPath}/user/signUpOk.user"> <!-- 완료 버튼 --> --%>
                         <span><span class="signup-submit-button-text" >완료</span></span></button>
                 </form>
 
@@ -227,6 +229,9 @@
     
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-<script>let contextPath = "${pageContext.request.contextPath}"</script>
+<script>
+	let contextPath = "${pageContext.request.contextPath}"
+</script>
+
 <script src="${pageContext.request.contextPath}/static/js/user/signUp.js"></script>
 </html>

@@ -4,48 +4,46 @@
 // 아이디 변수 - 인풋
 const $identificationInput = $("#identification-input");
 const $identificationWarning = $(".identification-error");
-const $identificationIdOk = $("#id_ok");
-const $identificationIdAlready = $("#id_already");
+var regExp = /^[A-Za-z0-9]([-_.]?[0-9a-z]){5,20}$/;
 
 let identificationFlag = false;
 // 아이디 정규식 이벤트 사용 및 함수
 $identificationInput.on("blur", function() {
-	var $identificationInputVal = $identificationInput.val();
-	let value = $(this).val();
-	
-
-	// 검증에 사용할 정규식 변수 regExp에 저장
-
-	var regExp = /^[A-Za-z0-9]([-_.]?[0-9a-z]){5,20}$/;
-	if ($identificationInputVal.length < 1) {
-		// $identificationWarning.text("아이디를 입력해주세요.");
-		$identificationWarning.css("display", "block");
-		$identificationInput.css("border-color", "#f66");
-		identificationFlag = false;
-		// !isPhoneNum.test(mobile.value)
-	} else if (!regExp.test($identificationInputVal)) {
-		$identificationWarning.text("6~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.");
-		$identificationWarning.css("display", "block");
-		$identificationInput.css("border-color", "#f66");
-		identificationFlag = false;
-	} 
-	else {
-		$.ajax({
-			url: contextPath + "/checkIdOk.user",
-			data: {userIdentification: value},
-			success: function(result){
-				result = JSON.parse(result);
-				if(result.check){
-					$identificationIdOk;
-				}else{
-					$identificationIdAlready;
-				}
+	$.ajax({
+		url: contextPath + "/user/checkIdOk.user",
+		data: {userIdentification: $identificationInput.val()},
+		success: function(result) {
+			result = JSON.parse(result);
+			/*console.log(result);*/
+			if (result.check) {
+				/*	alert("성공");*/
+				$identificationWarning.text("중복된 아이디입니다.");
+				$identificationWarning.css("display", "block");
+				$identificationInput.css("border-color", "#f66");
 				identificationFlag = false;
+			} else if ($identificationInput.val() < 1) {
+				//$identificationWarning.text("아이디를 입력해주세요.");
+				$identificationWarning.css("display", "block");
+				$identificationInput.css("border-color", "#f66");
+				identificationFlag = false;
+				// !isPhoneNum.test(mobile.value)
+			} else if (!regExp.test($identificationInput.val())) {
+				$identificationWarning.text("6~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.");
+				$identificationWarning.css("display", "block");
+				$identificationInput.css("border-color", "#f66");
+				identificationFlag = false;
+			} else {
+				$identificationWarning.css("display", "none");
+				$identificationInput.css("border-color", "#dde2e6");
+				identificationFlag = true;
+				// #dde2e6;
 			}
-		});
-	}
-	completeAllCheck();
+			completeAllCheck();
+		}
+	})
 });
+
+
 
 // 비밀번호 변수
 const $passwordInput = $("#password-input");
@@ -153,36 +151,40 @@ const $emailInput = $("#email-input");
 // 이메일 에러 변수
 const $emailWarning = $(".email-error");
 let emailFlag = false;
+var emailPattern = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
 // 이메일 정규식 이벤트 사용 및 함수
 $emailInput.on("blur", function() {
-	var $emailInputVal = $emailInput.val();
-	var emailInputVal = $emailInput.val();
-	var $emailWarningVal = $emailWarning.val();
+	$.ajax({
+		url: contextPath + "/user/checkEmailOk.user",
+		data: {userEmail: $emailInput.val()},
+		success: function(result) {
+			result = JSON.parse(result);
+			/*console.log(result);*/
+			if (result.check) {
+				$emailWarning.text("중복된 이메일입니다.");
+				$emailWarning.css("display", "block");
+				$emailInput.css("border-color", "#f66");
+				emailFlag = false;
+			} else if ($emailInput.val() < 1) {
+				$emailWarning.text("이메일을 입력해주세요.");
+				$emailWarning.css("display", "block");
+				$emailInput.css("border-color", "#f66");
+				emailFlag = false;
 
-	var emailPattern = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
-
-	// $nicknameInput.css("border-color", "#f66");
-	// $nicknameInput.css("border-color", "#dde2e6");
-
-	if ($emailInputVal.length < 1) {
-		$emailWarning.text("이메일을 입력해주세요.");
-		$emailWarning.css("display", "block");
-		$emailInput.css("border-color", "#f66");
-		emailFlag = false;
-
-	} else if (!emailPattern.test($emailInputVal)) {
-		$emailWarning.text("이메일 주소를 다시 확인해주세요.");
-		$emailWarning.css("display", "block");
-		$emailInput.css("border-color", "#f66");
-		emailFlag = false;
-	} else {
-		$emailWarning.css("display", "none");
-		$emailInput.css("border-color", "#dde2e6");
-		emailFlag = true;
-	}
-	completeAllCheck();
+			} else if (!emailPattern.test($emailInput.val())) {
+				$emailWarning.text("이메일 주소를 다시 확인해주세요.");
+				$emailWarning.css("display", "block");
+				$emailInput.css("border-color", "#f66");
+				emailFlag = false;
+			} else {
+				$emailWarning.css("display", "none");
+				$emailInput.css("border-color", "#dde2e6");
+				emailFlag = true;
+			}
+			completeAllCheck();
+			}
+})
 });
-
 
 const $nameInput = $("#name-input");
 const $nameWarning = $(".name-error");
@@ -315,50 +317,11 @@ function completeAllCheck() {
 	}
 }
 
-/*const $identificationIdOk = $(".id_ok");
-const $identificationIdAlready = $(".id_already");
+function send() {
+	/*비밀번호 암호화*/
+	$("input[name='userPassword']").val(btoa($("input[name='userPassword']").val()));
+	$("#password-check").val(btoa($("#password-check").val()));
 
-$identificationInput.on("blur", function(){
-	$.ajax({
-			url: contextPath + "/checkIdOk.member",
-			data: {memberIdentification: value},
-			success: function(result){
-				let message, icon;
-				result = JSON.parse(result);
-				if(result.check){
-					$joinHelp.eq(i).css('color', 'red')
-				}else{
-					message = "사용 가능한 아이디입니다.";
-					$joinHelp.eq(i).css('color', '#2bb673')
-					icon = "pass.png";
-				}
-				$joinHelp.eq(i).text(message);
-	    		showHelp($joinInputs.eq(i), icon);
-				joinCheckAll[i] = !result.check
-			}
-		});
-	
-});*/
+	document.joinForm.submit();
+}
 
-/* 아이디 중복 체크*/
-$("#identification-input").blur(function(){
-	let value = $(this).val();
-	$.ajax({
-			url : contextPath + "/checkIdOk.user",
-			data: {userIdentification: value},
-			success : function(result) {
-				result = JSON.parse(result);
-				if (result.check) {
-						$("#id_check").text("사용중인 아이디입니다 :p");
-						$("#id_check").css("color", "red");
-						$("#reg_submit").attr("disabled", true);
-					} else {
-						
-						
-					}
-				}, error : function() {
-						console.log("실패");
-				}
-			});
-			
-});

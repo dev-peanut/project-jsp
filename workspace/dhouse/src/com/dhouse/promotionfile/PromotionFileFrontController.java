@@ -1,5 +1,6 @@
 package com.dhouse.promotionfile;
 
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -11,7 +12,6 @@ import com.dhouse.Result;
 import com.dhouse.promotionboard.PromotionBoardDeleteOkController;
 import com.dhouse.promotionboard.PromotionBoardDetailOkController;
 import com.dhouse.promotionboard.PromotionBoardListOkController;
-import com.dhouse.promotionboard.PromotionBoardModifyOkController;
 import com.dhouse.promotionboard.PromotionBoardWriteOkController;
 
 public class PromotionFileFrontController extends HttpServlet{

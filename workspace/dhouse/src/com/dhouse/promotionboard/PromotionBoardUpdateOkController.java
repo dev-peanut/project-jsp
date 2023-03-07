@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Action;
 import com.dhouse.Result;
-import com.dhouse.file.domain.FileVO;
 import com.dhouse.promotionboard.dao.PromotionBoardDAO;
 import com.dhouse.promotionboard.domain.PromotionBoardVO;
 import com.dhouse.promotionfile.dao.PromotionFileDAO;
@@ -17,7 +16,7 @@ import com.dhouse.promotionfile.domain.PromotionFileVO;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
-public class PromotionBoardWriteOkController implements Action {
+public class PromotionBoardUpdateOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
@@ -29,19 +28,20 @@ public class PromotionBoardWriteOkController implements Action {
 		Result result = new Result();
 		String uploadPath = req.getSession().getServletContext().getRealPath("/") + "upload/";
 		int fileSize = 1024 * 1024 * 5; //5M
-		Long promotionBoardCurrentSequence = 0L;
-//		테스트 용으로 세션에 담아둔 거 지워야 함
-//		req.getSession().setAttribute("userId", 1L);
-		
 		MultipartRequest multipartRequest = new MultipartRequest(req, uploadPath, fileSize, "UTF-8", new DefaultFileRenamePolicy());
+		Long promotionBoardId = Long.valueOf(multipartRequest.getParameter("promotionBoardId"));
+//		테스트 용으로 세션에 담아둔 거 지워야 함
+		req.getSession().setAttribute("userId", 1L);
 		
+		
+		promotionBoardVO.setPromotionBoardId(promotionBoardId);
 		promotionBoardVO.setPromotionBoardTitle(multipartRequest.getParameter("promotionBoardTitle"));
 		promotionBoardVO.setPromotionBoardContents(multipartRequest.getParameter("promotionBoardContents"));
-		promotionBoardVO.setUserId((Long)req.getSession().getAttribute("userId"));
+//		promotionBoardVO.setUserId((Long)req.getSession().getAttribute("userId"));
 		
-		promotionBoardDAO.insert(promotionBoardVO);
+		promotionBoardDAO.update(promotionBoardVO);
+		promotionFileDAO.delete(promotionBoardId);
 		
-		promotionBoardCurrentSequence = promotionBoardDAO.getCurrentSequence();
 		
 		Enumeration<String> fileNames =  multipartRequest.getFileNames();	// getFileNames()는 내가 적어놓은 name값으로 가져오는 것
 		
@@ -54,7 +54,7 @@ public class PromotionBoardWriteOkController implements Action {
 			
 //			promotionFileVO.setFileOriginalName(fileOriginalName);
 			promotionFileVO.setFileSystemName(fileSystemName);
-			promotionFileVO.setPromotionBoardId(promotionBoardCurrentSequence);
+			promotionFileVO.setPromotionBoardId(promotionBoardId);
 			
 			promotionFileDAO.insert(promotionFileVO);
 		}

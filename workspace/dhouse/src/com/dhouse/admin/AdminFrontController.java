@@ -64,6 +64,22 @@ public class AdminFrontController extends HttpServlet{
 		}else if(target.equals("/modifyOk")){
 			result = new AdminBannerModifyOkController().execute(req, resp);
 			
+		}else if(target.equals("/board/equipment/list")){
+			result = new Result();
+			result.setPath("/board/equipment/listOk");
+			
+		}else if(target.equals("/board/equipment/listOk")){
+			result = new AdminEquipmentBoardListOkController().execute(req, resp);
+			
+		}else if(target.equals("/board/equipment/detailOk")){
+			result = new AdminEquipmentBoardDetailOkController().execute(req, resp);
+			
+		}else if(target.equals("/board/equipment/deleteOk")){
+			result = new AdminEquipmentBoardDeleteOkController().execute(req, resp);
+			
+		}else if(target.equals("/board/equipment/modifyOk")){
+			result = new AdminEquipmentBoardModifyOkController().execute(req, resp);
+			
 		}else {
 			
 		}

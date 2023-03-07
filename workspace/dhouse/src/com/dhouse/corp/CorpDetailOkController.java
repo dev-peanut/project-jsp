@@ -33,10 +33,6 @@ public class CorpDetailOkController implements Action {
 		
 		corpList = corpDAO.selectDetail(userId);
 		
-		corpList.stream().forEach(System.out::println);
-		System.out.println("===========================");
-		System.out.println(corpDAO.selectRanking(userId));
-		
 		req.setAttribute("corpDetail", corpList);
 		req.setAttribute("corpRanking", corpDAO.selectRanking(userId));
 		

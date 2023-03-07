@@ -37,7 +37,7 @@ public class NoticeFrontController extends HttpServlet {
 			result.setPath("/notice/detailOk");
 			
 		}else if(target.equals("/notice/detailOk")){
-			result = new NoticeListOkController().execute(req, resp);
+			result = new NoticeDetailOkController().execute(req, resp);
 			
 		}else {
 			System.out.println("3. " + target);

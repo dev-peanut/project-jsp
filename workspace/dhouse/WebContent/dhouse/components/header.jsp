@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,35 +24,29 @@
 					<%-- <h1 class="wadiz-logo">
 						<a href="/web/main" style="width: 100px;">
 							<span class="label">나눔의집</span>
-							<img alt="" src="" style="width: 88%;">
+							<img alt="" src="${pageContext.request.contextPath}/static/images/components/dhouse.png" style="width: 88%;">
 						</a>
 					</h1> --%>
 					<ul class="header-menu-category-ul">
-						<li class="header-menu-category-li">
-							<a class="header-menu-category-a" href="${pageContext.request.contextPath}/main/mainOk.main">
-								<h1 class="wadiz-logo"><span>나눔의집</span></h1>
-							</a>
-						</li>
-						<li class="header-menu-category-li">
-							<a class="header-menu-category-a" href="/web/wreward/comingsoon">
+						<li class="header-menu-category-li"><a
+							class="header-menu-category-a" href="/web/wreward/comingsoon">
+								<h1 class="wadiz-logo">
+									<span>나눔의집</span>
+								</h1>
+						</a></li>
+						<li class="header-menu-category-li"><a
+							class="header-menu-category-a" href="/web/wreward/comingsoon">
 								<span>사업소개</span>
-							</a>
-						</li>
-						<li class="header-menu-category-li">
-							<a class="header-menu-category-a" href="${pageContext.request.contextPath}/donation/listOk.donation">
-								<span>기부하기</span>
-							</a>
-						</li>
-						<li class="header-menu-category-li">
-							<a class="header-menu-category-a" href="${pageContext.request.contextPath}/promotion/listOk.promotion">
-								<span>홍보하기</span>
-							</a>
-						</li>
-						<li class="header-menu-category-li">
-							<a class="header-menu-category-a" href="${pageContext.request.contextPath}/">
-								<span>고객센터</span>
-							</a>
-						</li>
+						</a></li>
+						<li class="header-menu-category-li"><a
+							class="header-menu-category-a" href="/web/wreward/main"> <span>기부하기</span>
+						</a></li>
+						<li class="header-menu-category-li"><a
+							class="header-menu-category-a" href="/web/preorder/main"> <span>홍보하기</span>
+						</a></li>
+						<li class="header-menu-category-li"><a
+							class="header-menu-category-a" href="/web/store/main"> <span>고객센터</span>
+						</a></li>
 					</ul>
 					<div class="web-header-utils">
 						<div class="header-search-div">
@@ -76,6 +70,16 @@
 								</div>
 							</form>
 						</div>
+						<%-- <c:if
+							test="${not empty sessionScope.memberId || not empty cookie.memberIdentification }">
+							<!-- 로그아웃 버튼! -->
+							<div class="buttonWrap headerButton">
+								<button class="listButton logoutButton"
+									onclick="location.href = '${pageContext.request.contextPath}/user/loging.user'">
+								</button>
+							</div>
+							<!-- // 로그아웃 버튼! -->
+						</c:if> --%>
 						<div class="header-user-div">
 							<c:if test="${not empty sessionScope.userId}">
 							<div class="header-user-container">

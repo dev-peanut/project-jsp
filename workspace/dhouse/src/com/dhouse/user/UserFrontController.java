@@ -31,7 +31,7 @@ public class UserFrontController extends HttpServlet {
 
 		} else if (target.equals("/user/loginOk")) {
 			result = new LoginOkController().execute(req, resp);
-			
+
 		} else if (target.equals("/user/checkIdOk")) {
 			new CheckIdOkController().execute(req, resp);
 
@@ -47,11 +47,11 @@ public class UserFrontController extends HttpServlet {
 		} else if (target.equals("/user/logout")) {
 			result = new LogoutController().execute(req, resp);
 			
-		} else if (target.equals("/user/user-header")) {
+		} else if (target.equals("/user/main")) {
 			result = new Result();
 			result.setPath("/dhouse/main/main.jsp");
 			
-		}  else {
+		} else {
 			System.out.println(target);
 		}
 

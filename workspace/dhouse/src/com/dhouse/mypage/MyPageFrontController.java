@@ -10,19 +10,20 @@ import javax.servlet.http.HttpServletResponse;
 import com.dhouse.Result;
 
 public class MyPageFrontController extends HttpServlet {
-	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String uri = req.getRequestURI();
 		String contextPath = req.getContextPath();
 		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
 
-		System.out.println("1. " + target);
-		if(target.equals("/myPassword")) {
+		System.out.println("1. " + target.equals("/myPage/myPassword"));
+		
+		if(target.equals("/myPage/myPassword")) {
 			System.out.println("2. " + target);
-			result = new MyPasswordController().execute(req, resp);
+			result = new Result();
+			result.setPath("/dhouse/user/myPassword.jsp");
 			
-		}else if(target.equals("/MyPasswordOk")) {
+		}else if(target.equals("/myPage/MyPasswordOk")) {
 			System.out.println("2. " + target);
 			result = new MyPasswordOkController().execute(req, resp);
 			

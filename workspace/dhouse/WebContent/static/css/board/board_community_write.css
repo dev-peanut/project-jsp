@@ -356,6 +356,7 @@ ul{
     border: 0;
     padding: 0;
     margin-block-start: 0em;
+    margin-block-end: 1em;
     margin-inline-start: -20px;
     margin-inline-end: 0px;
     padding-inline-start: 20px;
@@ -943,9 +944,6 @@ ul.li{
     font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
 }
 
-form {
-	width: 50%;
-}
 
 #bottom-button{
     font-family: roboto,Noto Sans KR,-apple-system,dotum,sans-serif;
@@ -971,8 +969,8 @@ form {
     background-color: #00c4c4;
     color: #fff;
     position: absolute;
-	width: 18%;
-    right: 5%;
+    width: 25%;
+    left: 28%;
 }
 
 #button-inner-text {
@@ -2100,7 +2098,7 @@ cursor: pointer;
     position: relative;
     box-sizing: border-box;
     -webkit-appearance: none;
-    margin-bottom: 10px;
+    margin: 0;
     border: 0;
     padding: 0;
     line-height: 1.3;

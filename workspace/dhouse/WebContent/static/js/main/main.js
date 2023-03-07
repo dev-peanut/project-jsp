@@ -37,7 +37,7 @@ imageDiv.forEach((div, i) => div.style.backgroundImage = `url(/images/main/00${i
 // imageDiv[0].style.backgroundImage = `url(/images/main/00${imageDiv.length}.jpg)`;
 // imageDiv[parseInt(${imageDiv.length})].style.backgroundImage = `url(/images/main/00${imageDiv.length}.jpg)`;
 
-// imageDiv.forEach((div, i) => console.log(div, i));
+imageDiv.forEach((div, i) => console.log(div, i));
 
 // banners.appendChild(lastImageDiv); // 총 배너의 자식인 배너 div(lastImageDiv) 하나 추가
 // lastImageDiv.style.backgroundImage = `url(/images/main/001.jpg)`;
@@ -70,7 +70,7 @@ function changeButtonStyle() {
 function autoSlide(){
     banners.style.transition = "transform 0.3s"; // 0.3초동안 이동하는 애니메이션 효과
     banners.style.transform = `translate(${-1519 * ++count}px)`;
-    // console.log(count);
+    console.log(count);
 
     if(count == 7) { /* 6->7로 넘어가게 되면*/
         count = 1; /* count는 다시 1 */
@@ -121,30 +121,4 @@ next.addEventListener("click", function(){
     auto = setInterval(autoSlide, 2000);
     setTimeout(()=>{checkArrow = false}, 300);
 });
-
-
-
-/* 실시간 랭킹 부분 왔다 갔다 하게 */
-const $button1 = $("#tab-button1");
-const $button2 = $("#tab-button2");
-const $rank1 = $("#ranking-mark1");
-const $rank2 = $("#ranking-mark2");
-
-$button1.on("click", function(){
-    console.log("들어옴");
-    $button1.css('color', '#212529');
-    $button2.css('color', '#868E96');
-    $rank1.css("display", "block");
-    $rank2.css("display", "none");
-})
-
-$button2.on("click", function(){
-    console.log("들어옴");
-    $button2.css('color', '#212529');
-    $button1.css('color', '#868E96');
-    $rank1.css("display", "none");
-    $rank2.css("display", "block");
-})
-
-
 

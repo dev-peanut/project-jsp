@@ -6,6 +6,7 @@ import java.util.Map;
 import org.apache.ibatis.session.SqlSession;
 
 import com.dhouse.corp.domain.CorpDTO;
+import com.dhouse.corp.domain.CorpVO;
 import com.dhouse.mybatis.config.MyBatisConfig;
 
 public class CorpDAO {
@@ -40,6 +41,11 @@ public class CorpDAO {
 //	기업 상세 소개 - ranking - 랭킹이랑 group by 사용 부분
 	public CorpDTO selectRanking(Long userId) {
 		return sqlSession.selectOne("corp.selectRanking", userId);
+	}
+
+//	기업회원가입 기업 정보 추가
+	public void insertCorp(CorpVO corpVO) {
+		sqlSession.insert("user.insertCorp", corpVO);
 	}
 	
 	

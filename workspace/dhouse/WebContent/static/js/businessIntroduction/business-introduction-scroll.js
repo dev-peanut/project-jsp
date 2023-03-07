@@ -9,6 +9,7 @@ const corpService = (function(){
 			data: {page: page},
 			dataType: "json",
 			success: function(corps){
+				alert("아악");
 				if(callback){
 					callback(corps);
 				}

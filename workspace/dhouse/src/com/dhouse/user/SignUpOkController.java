@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.dhouse.Action;
 import com.dhouse.Result;
 import com.dhouse.corp.dao.CorpDAO;
+import com.dhouse.corp.domain.CorpVO;
 import com.dhouse.user.dao.UserDAO;
 import com.dhouse.user.domain.UserVO;
 
@@ -20,6 +21,7 @@ public class SignUpOkController implements Action {
 		UserDAO userDAO = new UserDAO();
 		CorpDAO corpDAO = new CorpDAO();
 		UserVO userVO = new UserVO();
+		CorpVO corpVO = new CorpVO();
 		Result result = new Result();
 		
 		userVO.setUserIdentification(req.getParameter("userIdentification"));
@@ -28,7 +30,14 @@ public class SignUpOkController implements Action {
 		userVO.setUserNickname(req.getParameter("userNickname"));
 		userVO.setUserPhone(req.getParameter("userPhone"));
 		userVO.setUserEmail(req.getParameter("userEmail"));
+		
 		userDAO.join(userVO);
+		
+		if(req.getParameter("corp") == "true") {
+			corpVO.setCorpAddress(req.getParameter(null));
+			corpVO.setCorpRegisterNumber(req.getParameter(null));
+			corpDAO.insertCorp(corpVO);
+		}
 		
 		result.setPath(req.getContextPath() + "/user/login.user");
 		result.setRedirect(true);

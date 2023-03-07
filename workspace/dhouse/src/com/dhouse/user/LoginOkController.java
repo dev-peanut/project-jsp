@@ -27,8 +27,7 @@ public class LoginOkController implements Action {
 		
 		if(userId != null) {
 			session.setAttribute("userId", userId);
-			path = req.getContextPath() + "/user/user-header.user";
-			path = req.getContextPath() + "/user/login.user";
+			path = req.getContextPath() + "/user/main.user";
 		}else {
 			path = req.getContextPath() + "/user/login.user?login=false";
 		}

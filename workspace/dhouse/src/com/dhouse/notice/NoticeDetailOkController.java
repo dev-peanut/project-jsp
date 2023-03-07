@@ -30,7 +30,7 @@ public class NoticeDetailOkController implements Action {
 		
 		
 		
-		return null;
+		return result;
 	}
 
 }

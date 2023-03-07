@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,19 +73,21 @@
 	                	<c:forEach var="i" begin="${startPage}" end="${endPage}">
 	                    	<c:choose>
 	                    		<c:when test="${i eq page}">
-				                    <a href="javascript:void(0)" class="paging paging-checked"><c:out value="${i}"/></a>
+				                    <a href="javascript:void(0)" class="paging paging-checked">
+				                    	<c:out value="${i}"/>
+				                    </a>
 	                    		</c:when>
 	                    		<c:otherwise>
-				                    <a href="javascript:location.href='/board/listOk.board?page=${i}'" class="paging">
+				                    <a href="javascript:location.href='/notice/list.notice?page=${i}'" class="paging">
 				                    	<c:out value="${i}"/>
-				                    	<span class="page-numbers"><button class="button-numbers">1</button>
+				                    	<!-- <span class="page-numbers"><button class="button-numbers">1</button> -->
 				                    </a>
 	                    		</c:otherwise>
 	                    	</c:choose>
 	                    </c:forEach>
                         <!-- <span class="page-numbers"><button class="button-numbers">1</button> -->
                         <c:if test="${next}">
-	                    	<a href="javascript:location.href='/notice/listOk.notice?page=${endPage + 1}'">
+	                    	<a href="javascript:location.href='/notice/list.notice?page=${endPage + 1}'">
 		                        <button id="right"><svg id="right-svg" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="right-path" d="M15 12L21 18L15 24" stroke="#868E96" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
 	                    	</a>
 	                    </c:if>

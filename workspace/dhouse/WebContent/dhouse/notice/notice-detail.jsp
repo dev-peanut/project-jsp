@@ -15,22 +15,23 @@
 <body>
     <jsp:include page="${pageContext.request.contextPath}/dhouse/components/header.jsp"></jsp:include>
     <div id="whole">
-    	<c:if test="${not empty corpDetail[0].foodName}">
-	        <%-- <div id="image" style="background-image: url(${contextPath}/static/images/main/${promotionBoard.fileSystemName});"> --%>
-	        <div id="image" style="background-image: url(${pageContext.request.contextPath}/static/images/user/005.png);">
-	        </div>
-        </c:if>
-        <c:otherwise>
-	        <div id="image" style="background-image: url(${pageContext.request.contextPath}/static/images/main/005.jpg);">
-	        </div>
-        </c:otherwise>
+    	<c:choose>
+	    	<c:when test="${not empty notice.noticeFileSystemName}">
+		        <div id="image" style="background-image: url(${contextPath}/upload/${notice.noticeFileSystemName});">
+		        </div>
+	        </c:when>
+	        <c:otherwise>
+		        <div id="image" style="background-image: url(${pageContext.request.contextPath}/static/images/main/005.jpg);">
+		        </div>
+	        </c:otherwise>
+        </c:choose>
         <!-- 이미지 끝 -->
         <div id="bottom">
             <!-- ::before -->
             <div id="bottom-top">
                 <div id="bottom-top-title">
                     <strong id="top-title">
-                        ${promotionBoard.promotionBoardTitle}
+                        ${notice.noticeTitle}
                         공지사항 제목입니다.
                     </strong>
                 </div>
@@ -41,14 +42,14 @@
             <div id="bottom-middle">
                 <div class="bottom-middle-wrappers" id="bottom-middle-top-wrapper">
                     <span class="text">
-                        ${promotionBoard.userNickname}
+                        ${notice.noticeContents}
                         공지사항 내용입니다.<br>
                     </span>
                 </div>
             </div>
             <div id="bottom-bottom">
                 <button id="bottom-button">
-                    <a href="${contextPath}/promotion/listOk.promotion">
+                    <a href="javascript:location.href='/notice/list.notice'">
                         <span id="button-inner-text">
                             <span id="button-icon">
                                 <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__1VB4W" aria-hidden="true"><path d="M30.4 15.2H16.8V1.6h-1.6v13.6H1.6v1.6h13.6v13.6h1.6V16.8h13.6v-1.6z"></path></svg>

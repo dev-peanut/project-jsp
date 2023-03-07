@@ -18,9 +18,9 @@
 	
 	<!-- 공지사항 상세 페이지 -->
 	<select id="selectDetail" resultType="noticeDTO">
-		select notice_id, notice_title, notice_register_date, rank() over (order by notice_id) as notice_number
-			notice_contents, notice_file_system_name
+		select notice_id, notice_title, notice_register_date, notice_contents, notice_file_system_name
 		from tbl_notice 
+		where notice_id = #{noticeId}
 	</select>
 	
 </mapper>

@@ -10,8 +10,6 @@ import com.dhouse.Action;
 import com.dhouse.Result;
 import com.dhouse.notice.dao.NoticeDAO;
 import com.dhouse.notice.domain.NoticeDTO;
-import com.dhouse.promotionboard.dao.PromotionBoardDAO;
-import com.dhouse.promotionboard.domain.PromotionBoardDTO;
 
 public class NoticeDetailOkController implements Action {
 
@@ -28,7 +26,7 @@ public class NoticeDetailOkController implements Action {
 		
 		req.setAttribute("notice", noticeDTO);
 		
-		
+		result.setPath("/dhouse/notice/notice-detail.jsp");
 		
 		return result;
 	}

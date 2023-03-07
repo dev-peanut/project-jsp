@@ -1,75 +1,85 @@
 package com.dhouse.donationboard.domain;
 
 public class DonationBoardVO {
-	private Long boardId;
-	private String boardTitle;
-	private String boardContent;
-	private String boardRegisterDate;
-	private String boardUpdateDate;
-	private Long boardReadCount;
+	private Long donationBoardId;
+	private String donationBoardTitle;
+	private String donationBoardContents;
+	private String donationBoardRegisterDate;
+	private String donationBoardUpdateDate;
+	private String donationBoardReadCount;
+	private	Long userId;
 
 	public DonationBoardVO() {;}
 
-	public Long getBoardId() {
-		return boardId;
+	public Long getDonationBoardId() {
+		return donationBoardId;
 	}
 
-	public void setBoardId(Long boardId) {
-		this.boardId = boardId;
+	public void setDonationBoardId(Long donationBoardId) {
+		this.donationBoardId = donationBoardId;
 	}
 
-	public String getBoardTitle() {
-		return boardTitle;
+	public String getDonationBoardTitle() {
+		return donationBoardTitle;
 	}
 
-	public void setBoardTitle(String boardTitle) {
-		this.boardTitle = boardTitle;
+	public void setDonationBoardTitle(String donationBoardTitle) {
+		this.donationBoardTitle = donationBoardTitle;
 	}
 
-	public String getBoardContent() {
-		return boardContent;
+	public String getDonationBoardContents() {
+		return donationBoardContents;
 	}
 
-	public void setBoardContent(String boardContent) {
-		this.boardContent = boardContent;
+	public void setDonationBoardContents(String donationBoardContents) {
+		this.donationBoardContents = donationBoardContents;
 	}
 
-	public String getBoardRegisterDate() {
-		return boardRegisterDate;
+	public String getDonationBoardRegisterDate() {
+		return donationBoardRegisterDate;
 	}
 
-	public void setBoardRegisterDate(String boardRegisterDate) {
-		this.boardRegisterDate = boardRegisterDate;
+	public void setDonationBoardRegisterDate(String donationBoardRegisterDate) {
+		this.donationBoardRegisterDate = donationBoardRegisterDate;
 	}
 
-	public String getBoardUpdateDate() {
-		return boardUpdateDate;
+	public String getDonationBoardUpdateDate() {
+		return donationBoardUpdateDate;
 	}
 
-	public void setBoardUpdateDate(String boardUpdateDate) {
-		this.boardUpdateDate = boardUpdateDate;
+	public void setDonationBoardUpdateDate(String donationBoardUpdateDate) {
+		this.donationBoardUpdateDate = donationBoardUpdateDate;
 	}
 
-	public Long getBoardReadCount() {
-		return boardReadCount;
+	public String getDonationBoardReadCount() {
+		return donationBoardReadCount;
 	}
 
-	public void setBoardReadCount(Long boardReadCount) {
-		this.boardReadCount = boardReadCount;
+	public void setDonationBoardReadCount(String donationBoardReadCount) {
+		this.donationBoardReadCount = donationBoardReadCount;
+	}
+
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 
 	@Override
 	public String toString() {
-		return "DonationBoardVO [boardId=" + boardId + ", boardTitle=" + boardTitle + ", boardContent=" + boardContent
-				+ ", boardRegisterDate=" + boardRegisterDate + ", boardUpdateDate=" + boardUpdateDate
-				+ ", boardReadCount=" + boardReadCount + "]";
+		return "DonationBoardVO [donationBoardId=" + donationBoardId + ", donationBoardTitle=" + donationBoardTitle
+				+ ", donationBoardContents=" + donationBoardContents + ", donationBoardRegisterDate="
+				+ donationBoardRegisterDate + ", donationBoardUpdateDate=" + donationBoardUpdateDate
+				+ ", donationBoardReadCount=" + donationBoardReadCount + ", userId=" + userId + "]";
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((boardId == null) ? 0 : boardId.hashCode());
+		result = prime * result + ((donationBoardId == null) ? 0 : donationBoardId.hashCode());
 		return result;
 	}
 
@@ -82,12 +92,11 @@ public class DonationBoardVO {
 		if (getClass() != obj.getClass())
 			return false;
 		DonationBoardVO other = (DonationBoardVO) obj;
-		if (boardId == null) {
-			if (other.boardId != null)
+		if (donationBoardId == null) {
+			if (other.donationBoardId != null)
 				return false;
-		} else if (!boardId.equals(other.boardId))
+		} else if (!donationBoardId.equals(other.donationBoardId))
 			return false;
 		return true;
 	}
-	
 }

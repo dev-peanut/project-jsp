@@ -21,8 +21,8 @@ public class DonationBoardDAO {
 	}
 	
 //	게시글 총 개수
-	public Long getTotal(Map<String, Object> searchMap) {
-		return sqlSession.selectOne("donationBoard.getTotal", searchMap);
+	public Long getTotal() {
+		return sqlSession.selectOne("donationBoard.getTotal");
 	}
 	
 //	게시글 조회

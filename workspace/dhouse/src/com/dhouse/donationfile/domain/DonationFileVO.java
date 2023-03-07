@@ -8,9 +8,13 @@ public class DonationFileVO {
 	public DonationFileVO() {;}
 
 	
+	
+	
 	public Long getFileId() {
 		return fileId;
 	}
+
+
 
 
 	public void setFileId(Long fileId) {
@@ -18,9 +22,13 @@ public class DonationFileVO {
 	}
 
 
+
+
 	public String getFileSystemName() {
 		return fileSystemName;
 	}
+
+
 
 
 	public void setFileSystemName(String fileSystemName) {
@@ -28,14 +36,20 @@ public class DonationFileVO {
 	}
 
 
+
+
 	public Long getDonationBoardId() {
 		return donationBoardId;
 	}
 
 
+
+
 	public void setDonationBoardId(Long donationBoardId) {
 		this.donationBoardId = donationBoardId;
 	}
+
+
 
 
 	@Override
@@ -45,6 +59,8 @@ public class DonationFileVO {
 	}
 
 
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -52,6 +68,8 @@ public class DonationFileVO {
 		result = prime * result + ((fileId == null) ? 0 : fileId.hashCode());
 		return result;
 	}
+
+
 
 
 	@Override

@@ -25,17 +25,12 @@ public class FoodFrontController extends HttpServlet {
 		
 		System.out.println(target);
 		
-		if(target.equals("/applyOk")) {
-			result = new FoodApplyOkController().execute(req, resp);
-			
-		}else if(target.equals("/deleteOk")){
-			result = new FoodDeleteOkController().execute(req, resp);
-			
-		}else if(target.equals("/detailOk")){
-			result = new FoodDetailOkController().execute(req, resp);
-			
-		}else if(target.equals("/modifyOk")){
-			result = new FoodModifyOkController().execute(req, resp);
+		if(target.equals("/food/write")) {
+			result = new Result();
+			result.setPath("/dhouse/donation/food-write.jsp");	
+						
+		}else if(target.equals("/food/writeOk")){
+			result = new FoodWriteOkController().execute(req, resp);
 			
 		}else {
 			

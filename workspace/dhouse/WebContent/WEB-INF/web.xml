@@ -106,12 +106,12 @@
     <url-pattern>*.promotion</url-pattern>
   </servlet-mapping>
   <servlet>
-    <servlet-name>donationBoard</servlet-name>
-    <servlet-class>com.dhouse.donationBoard.donationBoardFrontController</servlet-class>
+    <servlet-name>donation</servlet-name>
+    <servlet-class>com.dhouse.donationboard.DonationBoardFrontController</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>donationBoard</servlet-name>
-    <url-pattern>*.donationBoard</url-pattern>
+    <servlet-name>donation</servlet-name>
+    <url-pattern>*.donation</url-pattern>
   </servlet-mapping>
   <servlet>
     <servlet-name>notice</servlet-name>

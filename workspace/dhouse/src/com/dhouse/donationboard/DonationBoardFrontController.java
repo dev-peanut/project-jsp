@@ -8,11 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.dhouse.Result;
-import com.dhouse.banner.BannerApplyOkController;
-import com.dhouse.banner.BannerDeleteOkController;
-import com.dhouse.banner.BannerDetailOkController;
-import com.dhouse.banner.BannerModifyOkController;
-import com.dhouse.banner.BannerPaymentOkController;
 
 public class DonationBoardFrontController extends HttpServlet{
 	
@@ -34,7 +29,7 @@ public class DonationBoardFrontController extends HttpServlet{
 			result.setPath("/dhouse/donation/donation-write.jsp");	
 			
 		}else if(target.equals("/donation/writeOk")){
-			System.out.println("13123");
+			System.out.println("들어옴");
 			result = new DonationBoardWriteOkController().execute(req, resp);
 			
 		}else if(target.equals("/donation/deleteOk")){

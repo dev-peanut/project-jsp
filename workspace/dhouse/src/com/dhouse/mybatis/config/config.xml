@@ -20,6 +20,7 @@
       <typeAlias type="com.dhouse.donationboard.domain.DonationBoardVO" alias="donationBoardVO"/>
       <typeAlias type="com.dhouse.donationboard.domain.DonationBoardDTO" alias="donationBoardDTO"/>
       <typeAlias type="com.dhouse.banner.domain.BannerVO" alias="bannerVO"/>
+            <typeAlias type="com.dhouse.notice.domain.NoticeDTO" alias="noticeDTO"/>
 	</typeAliases>
    
    <environments default="mysql">
@@ -47,6 +48,7 @@
 	    <mapper resource="com/dhouse/mybatis/mapper/donationBoardMapper.xml"/>
 	    <mapper resource="com/dhouse/mybatis/mapper/donationFileMapper.xml"/>
 	    <mapper resource="com/dhouse/mybatis/mapper/bannerMapper.xml"/> 
+	    <mapper resource="com/dhouse/mybatis/mapper/noticeMapper.xml"/> 
    </mappers>
 </configuration>
 

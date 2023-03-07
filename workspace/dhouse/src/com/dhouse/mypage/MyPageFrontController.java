@@ -16,7 +16,6 @@ public class MyPageFrontController extends HttpServlet {
 		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
 
-		System.out.println("어쩌라는거야");
 		System.out.println("1. " + target.equals("/myPage/myPassword"));
 		
 		if(target.equals("/myPage/myPassword")) {

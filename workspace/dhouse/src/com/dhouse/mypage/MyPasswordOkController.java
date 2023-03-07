@@ -35,7 +35,7 @@ public class MyPasswordOkController implements Action {
 		 * req.setAttribute("countMyComments", mypageDAO.countMyComments(1L));
 		 */
 		
-		myPageDAO.updatePassword(req.getParameter("newPassword"), 23L);
+		myPageDAO.passwordUpdate(req.getParameter("newPassword"), 23L);
 		/* req.setAttribute("updatePassword", myPageDAO.updatePassword(23L)); */
 		
 	    result.setPath(req.getContextPath() + "/dhouse/user/myProfile.jsp");

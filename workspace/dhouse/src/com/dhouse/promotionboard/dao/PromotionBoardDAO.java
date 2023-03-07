@@ -1,5 +1,7 @@
 package com.dhouse.promotionboard.dao;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 
 import com.dhouse.mybatis.config.MyBatisConfig;

@@ -944,6 +944,9 @@ ul.li{
     font-family: roboto,"Noto Sans KR",-apple-system,dotum,sans-serif;
 }
 
+form {
+	width: 50%;
+}
 
 #bottom-button{
     font-family: roboto,Noto Sans KR,-apple-system,dotum,sans-serif;
@@ -969,8 +972,8 @@ ul.li{
     background-color: #00c4c4;
     color: #fff;
     position: absolute;
-    width: 25%;
-    left: 28%;
+	width: 18%;
+    right: 5%;
 }
 
 #button-inner-text {

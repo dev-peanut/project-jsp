@@ -93,8 +93,9 @@
                 </div><!-- sns 로그인 끝 -->
 
                 <div class="equity-signup">
-                    <a class="corporate" href="../../app/user/signUp-corp.jsp">기업 회원가입</a>
-                    <a href="/web/waccount/wAccountRegistAsso">투자조합 가입</a>
+                
+                <!-- 기업 회원가입 경로설정해야함 -->
+                    <a class="corporate" href="${pageContext.request.contextPath}/dhouse/user/signUp-corp.jsp">기업 회원가입</a>
                 </div><!-- equity signup -->
             </div>
             <div class="signup-intro"> </div>

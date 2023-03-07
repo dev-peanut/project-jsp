@@ -4,13 +4,16 @@ showList();
 function showList(){
 	
 	corps = JSON.parse(corps);
+	console.log(corps); 
+	console.log(contextPath);
 	let text = "";
 	const $content = $("#contents-wrapper");
 	corps.forEach(corp => {
+		console.log(corp.foodCount);
 		text += `
 			<div class="content-wrapper">
 	            <div class="content">
-	                <a href="javascript:location.href='${contextPath}/corp/detailOk.corp?userId=${corp.userId}'" class="content-a">`; 
+	                <a href="javascript:location.href='${contextPath}/corp/detailOk.board'" class="content-a">`; 
 					if(corp.corpFileSystemName) {		
 	                    text += `
 							<div class="content-img" style="background-image: url('${contextPath}/upload/${corp.corpFileSystemName}')"></div>

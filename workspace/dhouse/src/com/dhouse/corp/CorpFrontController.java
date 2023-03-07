@@ -48,7 +48,9 @@ public class CorpFrontController extends HttpServlet {
 			
 		}else if(target.equals("/corp/greeting")){
 			result = new CorpGreetingController().execute(req, resp);
-		}else {
+		}
+		
+		else {
 			System.out.println("3. " + target);
 			System.err.println("cant find path");
 			

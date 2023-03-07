@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +22,7 @@
             <div id="inner-left">
                 <div id="image-wrapper">
                     <div id="image">
-                        <div id="image-back"> <!-- 기업 이미지 -->
+                        <div id="image-back" style="background-image: url(${pageContext.request.contextPath}/upload/${corpRanking.corpFileSystemName})"> <!-- 기업 이미지 -->
                         </div>
                     </div>
                 </div>
@@ -31,7 +32,7 @@
                 <div id="text-wrapper">
                     <div id="text-top">
                         <div id="text-top-title">
-                            <span id="title-text"><a href="javascript:location.href='/corp/list.corp">기업목록</a> > 기업소개</span>
+                            <span id="title-text"><a href="javascript:location.href='/corp/list.corp'">기업목록</a> > 기업소개</span>
                         </div>
                         <div id="under-title-wrapper">
                             <div id="under-title">
@@ -39,15 +40,15 @@
                             </div>
                         </div>
                         <p id="p-info-title">
-                            기업명
+                            ${corpRanking.userNickname}
                         </p>
                         <p id="under-p-info-title">
-                            마이페이지에서 작성한 기업 소개 글
+                            ${corpRanking.corpIntroductionText}
                         </p>
                         <div id="top-bottom-wrapper">
                             <div id="top-bottom1">
                                 <div id="top-bottom1-info">
-                                    <span id="span-number">80</span>
+                                    <span id="span-number">${corpRanking.rankPercent}</span>
                                     <span id="span-text">%</span>
                                 </div>
                                 <span id="top-bottom1-info-behind">
@@ -58,7 +59,7 @@
                             </div>
                             <div id="top-bottom2">
                                 <p id="top-bottom2-p">
-                                    대표자번호<span id="top-bottom2-p-inner"></span>
+                                    ${corpRanking.userPhone}<span id="top-bottom2-p-inner"></span>
                                 </p>
                                 <span id="top-bottom2-span">
                                     <span id="top-bottom2-span-inner">
@@ -85,12 +86,12 @@
                         </div>
                         <div id="text-middle-middle">
                             <p id="text-middle-middle-top">
-                                <span id="div-span-top">대표자명 </span>
+                                <span id="div-span-top">대표자명 : ${corpRanking.userName}</span>
                             </p>
                             <p id="text-middle-middle-bottom">
-                                기본 주소
+                                ${corpRanking.corpAddress}<!-- 기본 주소
                                 <br>
-                                상세 주소 
+                                상세 주소  -->
                             </p>
                         </div>
                         <div id="text-middle-bottom">
@@ -113,9 +114,15 @@
                     <div id="under-left-top">
                         <span id="under-left-title">최근 기부 목록</span>
                     </div>
-                        <div class="under-left-bottom-texts">💚이벤트💚 36,000% 달성 이벤트 + 메이커 팔로우</div>
-                        <div class="under-left-bottom-texts">💚이벤트💚 36,000% 달성 이벤트 + 메이커 팔로우</div>
-                        <div class="under-left-bottom-texts">💚이벤트💚 36,000% 달성 이벤트 + 메이커 팔로우</div>
+                    <c:if test="${not empty corpDetail[0].foodName}">
+                        <div class="under-left-bottom-texts">💚${corpDetail[0].foodName}💚 , 기부량: ${corpDetail[0].foodAmount}, 기부날짜: ${corpDetail[0].foodRequestDate}</div>
+                    </c:if>
+                    <c:if test="${not empty corpDetail[1].foodName}">
+                        <div class="under-left-bottom-texts">💚${corpDetail[1].foodName}💚 , 기부량: ${corpDetail[1].foodAmount}, 기부날짜: ${corpDetail[1].foodRequestDate}</div>
+                    </c:if>    
+                   	<c:if test="${not empty corpDetail[2].foodName}">
+                        <div class="under-left-bottom-texts">💚${corpDetail[2].foodName}💚 , 기부량: ${corpDetail[2].foodAmount}, 기부날짜: ${corpDetail[2].foodRequestDate}</div>
+                   	</c:if>
                 </div>
             </a>
         </div>
@@ -132,7 +139,7 @@
                                 </div>
                                 <div id="right-top-left-text-wrapper">
                                     <span id="right-top-left-text">
-                                        기업명
+                                        ${corpRanking.userNickname}
                                     </span>
                                 </div>
                             </a>
@@ -142,19 +149,19 @@
                         <div id="right-bottom-top">
                             <div class="right-bottom-shape"><span id="shape-star"></span></div>
                             <span class="right-bottom-text">등급</span>
-                            <span class="right-bottom-text text-value">1</span>
+                            <span class="right-bottom-text text-value">${corpRanking.levelLevel}</span>
                         </div>
                         <div id="right-bottom-middle">
                             <div class="right-bottom-shape"><span id="shape-money"></span></div>
                             <span class="right-bottom-text">누적 기부량</span>
-                            <span class="right-bottom-text text-value">2500</span>
+                            <span class="right-bottom-text text-value">${corpRanking.totalDonation}</span>
                             <span class="right-bottom-text text-value">kg</span>
                             
                         </div>
                         <div id="right-bottom-bottom">
                             <div class="right-bottom-shape"><span id="shape-person"></span></div>
                             <span class="right-bottom-text">누적 기부횟수</span>
-                            <span class="right-bottom-text text-value">10</span>
+                            <span class="right-bottom-text text-value">${corpRanking.donationCount}</span>
                             <span class="right-bottom-text text-value">회</span>
                         </div>
                     </div>
@@ -166,4 +173,6 @@
 <p></p>
 <jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
 </html>

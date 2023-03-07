@@ -3,12 +3,100 @@ package com.dhouse.donationboard.domain;
 public class DonationBoardVO {
 	private Long donationBoardId;
 	private String donationBoardTitle;
-	private String donationBoardContent;
+	private String donationBoardContents;
 	private String donationBoardRegisterDate;
 	private String donationBoardUpdateDate;
-	private Long donationBoardReadCount;
+	private String donationBoardReadCount;
+	private	Long userId;
 
 	public DonationBoardVO() {;}
 
-	
+	public Long getDonationBoardId() {
+		return donationBoardId;
+	}
+
+	public void setDonationBoardId(Long donationBoardId) {
+		this.donationBoardId = donationBoardId;
+	}
+
+	public String getDonationBoardTitle() {
+		return donationBoardTitle;
+	}
+
+	public void setDonationBoardTitle(String donationBoardTitle) {
+		this.donationBoardTitle = donationBoardTitle;
+	}
+
+	public String getDonationBoardContents() {
+		return donationBoardContents;
+	}
+
+	public void setDonationBoardContents(String donationBoardContents) {
+		this.donationBoardContents = donationBoardContents;
+	}
+
+	public String getDonationBoardRegisterDate() {
+		return donationBoardRegisterDate;
+	}
+
+	public void setDonationBoardRegisterDate(String donationBoardRegisterDate) {
+		this.donationBoardRegisterDate = donationBoardRegisterDate;
+	}
+
+	public String getDonationBoardUpdateDate() {
+		return donationBoardUpdateDate;
+	}
+
+	public void setDonationBoardUpdateDate(String donationBoardUpdateDate) {
+		this.donationBoardUpdateDate = donationBoardUpdateDate;
+	}
+
+	public String getDonationBoardReadCount() {
+		return donationBoardReadCount;
+	}
+
+	public void setDonationBoardReadCount(String donationBoardReadCount) {
+		this.donationBoardReadCount = donationBoardReadCount;
+	}
+
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+
+	@Override
+	public String toString() {
+		return "DonationBoardVO [donationBoardId=" + donationBoardId + ", donationBoardTitle=" + donationBoardTitle
+				+ ", donationBoardContents=" + donationBoardContents + ", donationBoardRegisterDate="
+				+ donationBoardRegisterDate + ", donationBoardUpdateDate=" + donationBoardUpdateDate
+				+ ", donationBoardReadCount=" + donationBoardReadCount + ", userId=" + userId + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((donationBoardId == null) ? 0 : donationBoardId.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		DonationBoardVO other = (DonationBoardVO) obj;
+		if (donationBoardId == null) {
+			if (other.donationBoardId != null)
+				return false;
+		} else if (!donationBoardId.equals(other.donationBoardId))
+			return false;
+		return true;
+	}
 }

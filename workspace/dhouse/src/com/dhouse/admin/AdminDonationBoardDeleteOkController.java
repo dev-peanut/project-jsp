@@ -1,5 +1,6 @@
 package com.dhouse.admin;
 
+import java.io.File;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -16,18 +17,18 @@ public class AdminDonationBoardDeleteOkController implements Action {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		AdminDAO adminDAO = new AdminDAO();
-//		FileDAO fileDAO = new FileDAO();
+		FileDAO fileDAO = new FileDAO();
 		Result result = new Result();
 		Long donationBoardId = Long.valueOf(req.getParameter("donationBoardId"));
 		String uploadPath = req.getSession().getServletContext().getRealPath("/") + "upload/";
 		
-//		fileDAO.select(donationBoardId).stream().map(file -> new File(uploadPath + file.getFileSystemName())).forEach(file -> {
-//			if(file.exists()) {
-//				file.delete();
-//			}
-//		});
+		fileDAO.selectDonationBoard(donationBoardId).stream().map(file -> new File(uploadPath + file.getFileSystemName())).forEach(file -> {
+			if(file.exists()) {
+				file.delete();
+			}
+		});
 		
-//		fileDAO.delete(donationBoardId);
+		fileDAO.deleteDonationBoard(donationBoardId);
 		adminDAO.deleteDonationBoard(donationBoardId);
 		result.setPath(req.getContextPath() + "/admin/donationBoard/list.admin");
 		result.setRedirect(true);

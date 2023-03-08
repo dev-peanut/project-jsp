@@ -37,7 +37,7 @@
 		limit #{startRow}, #{rowCount}
 	</select>
 	
-	<!-- 가전 기부 board total -->
+	<!-- 가전 기부 총 개수 -->
 	<select id="getTotalDonationBoard" parameterType="map" resultType="long">
 		select count(donation_board_id) from tbl_donation_board
 		<include refid="search"/>
@@ -48,7 +48,7 @@
 		select b.donation_board_id , b.donation_board_title , b.donation_board_contents , f.file_system_name 
 		from tbl_donation_board b join tbl_donation_file f 
 		on b.donation_board_id = f.donation_board_id 
-		where b.donation_board_id = #{donationBoardId}
+		and b.donation_board_id = #{donationBoardId}
 	</select>
 
 	<!-- 가전 기부 게시글 삭제 -->
@@ -56,4 +56,38 @@
 		delete from tbl_donation_board where donation_board_id = #{donationBoardId}
 	</delete>
 	<!-- 가전 기부 끝 -->
+	
+	<!-- 홍보 게시글 시작 -->
+	<!-- 홍보 목록용 -->
+	<select id="selectAllPromotionBoard" parameterType="map" resultType="donationBoardDTO">
+		select b.promotion_board_id , u.user_nickname , b.promotion_board_title , b.promotion_board_contents , b.promotion_board_register_date  
+		from tbl_user u join tbl_promotion_board b 
+		on u.user_id = b.user_id 
+		<include refid="search"/> 
+		order by b.promotion_board_id desc 
+		limit #{startRow}, #{rowCount}
+	</select>
+	
+	<!-- 홍보 게시글 총 개수 -->
+	<select id="getTotalPromotionBoard" parameterType="map" resultType="long">
+		select count(promotion_board_id) from tbl_promotion_board
+		<include refid="search"/>
+	</select>
+	
+	<!-- 홍보 게시글 상세(모달) -->
+	<select id="selectPromotionBoard" parameterType="long" resultType="donationBoardDTO">
+		select b.promotion_board_id , b.promotion_board_title , b.promotion_board_contents , f.file_system_name  
+		from tbl_promotion_board b join tbl_promotion_file f 
+		on b.promotion_board_id = f.promotion_board_id 
+		and b.promotion_board_id = #{promotionBoardId}
+	</select>
+
+	<!-- 홍보 게시글 게시글 삭제 -->
+	<delete id="deletePromotionBoard" parameterType="long">
+		delete from tbl_donation_board where donation_board_id = #{promotionBoardId}
+	</delete>
+	<!-- 홍보 게시글 끝 -->
+	
+	
+	
 </mapper>

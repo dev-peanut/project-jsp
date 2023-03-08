@@ -23,7 +23,6 @@ public class AdminDonationBoardListOkController implements Action {
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		Result result = new Result();
 		AdminDAO adminDAO = new AdminDAO();
-		DonationBoardDTO donationBoardDTO = new DonationBoardDTO();
 		JSONArray boardJsons = new JSONArray();
 		
 		Map<String, Object> pageMap = new HashMap<String, Object>();
@@ -54,7 +53,6 @@ public class AdminDonationBoardListOkController implements Action {
 		boolean next = false;
 		endPage = endPage > realEndPage ? realEndPage : endPage;
 		next = endPage != realEndPage;
-		
 		
 		pageMap.put("rowCount", rowCount);
 		pageMap.put("startRow", startRow);

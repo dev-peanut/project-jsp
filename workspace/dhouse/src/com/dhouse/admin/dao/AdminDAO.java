@@ -5,9 +5,9 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 
-import com.dhouse.corp.domain.CorpDTO;
 import com.dhouse.donationboard.domain.DonationBoardDTO;
 import com.dhouse.mybatis.config.MyBatisConfig;
+import com.dhouse.promotionboard.domain.PromotionBoardDTO;
 
 public class AdminDAO {
 	public SqlSession sqlSession;
@@ -33,15 +33,15 @@ public class AdminDAO {
 		sqlSession.delete("admin.deleteDonationBoard", donationBoardId);
 	}
 //	홍보 게시글 목록
-	public List<DonationBoardDTO> selectAllPromotionBoard(Map<String, Object> pageMap){
-		return sqlSession.selectList("admin.selectAllDonationBoard", pageMap);
+	public List<PromotionBoardDTO> selectAllPromotionBoard(Map<String, Object> pageMap){
+		return sqlSession.selectList("admin.selectAllPromotionBoard", pageMap);
 	}
 //	홍보 게시글 총 개수
 	public Long getTotalPromotionBoard(Map<String, Object> searchMap) {
 		return sqlSession.selectOne("admin.getTotalPromotionBoard", searchMap);
 	}
 //	홍보 게시글 상세 
-	public DonationBoardDTO selectPromotionBoard(Long promotionBoardId) {
+	public PromotionBoardDTO selectPromotionBoard(Long promotionBoardId) {
 		return sqlSession.selectOne("admin.selectPromotionBoard", promotionBoardId);
 	}
 //	홍보 게시글 삭제

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>2.마이페이지 정보설정</title>
+<title>2.마이페이지 정보설정-기업</title>
 <link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/myPageInfo.css">
@@ -21,7 +21,7 @@
 	                <!-- account-wrap with-footer -->
 	                <div class="account-wrap with-footer">
 	                    <h2 class="big">MY 정보설정</h2>
-	                    <a class="my-info" href="javascript:location.href='${pageContext.request.contextPath}/myPage/updateNicknamePhoneEmail.myPage?userId=${myPage.userId}'">
+	                      <a class="my-info" href="javascript:location.href='${pageContext.request.contextPath}/myPage/updateNicknamePhoneEmail.myPage?userId=${myPage.userId}'">
 	                        <div class="my-info-text">
 	                            <h3>기본 정보 설정</h3>
 	                            <p>이름, 이메일, 휴대폰, SNS연동 등</p>
@@ -30,7 +30,7 @@
 	                            <i class="wadizicon wa-chevron-right"></i>
 	                        </div>
 	                    </a>
-	                    <a class="my-info" href="javascript:location.href='${pageContext.request.contextPath}/myPage/myPassword.myPage?userId=${myPage.userId}'">
+	                   <a class="my-info" href="javascript:location.href='${pageContext.request.contextPath}/myPage/myPassword.myPage?userId=${myPage.userId}'">
 	                       <div class="my-info-text">
 	                         <h3>비밀번호 등록</h3>
 	                         <p>계정 비밀번호 등록</p>
@@ -39,8 +39,17 @@
 	                         <i class="wadizicon wa-chevron-right"></i>
 	                       </div>
 	                    </a>
+	                   <a class="my-info" href="javascript:location.href='${pageContext.request.contextPath}/myPage/updatePhotoCorpIntroduction.myPage?userId=${myPage.userId}'">
+	                        <div class="my-info-text">
+	                            <h3>프로필 정보 설정</h3>
+	                            <p>프로필 사진, 주소</p>
+	                        </div>
+	                        <div class="my-info-btn">
+	                            <i class="wadizicon wa-chevron-right"></i>
+	                        </div>
+	                    </a>
 	                    <div class="my-info">
-	                        <h3><a class="my-info" href="javascript:location.href='${pageContext.request.contextPath}/myPage/myPageWithdraw.myPage?userId=${myPage.userId}'">
+	                      <h3><a class="my-info" href="javascript:location.href='${pageContext.request.contextPath}/myPage/myPageWithdraw.myPage?userId=${myPage.userId}'">
 회원 탈퇴</a></h3>
 	                    </div>
 	                </div>
@@ -50,7 +59,7 @@
         	</div>
         </main>
        	<!-- footer적용 -->
-	<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
+		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

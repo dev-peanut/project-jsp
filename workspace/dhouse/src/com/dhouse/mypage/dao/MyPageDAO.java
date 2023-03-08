@@ -54,8 +54,9 @@ public class MyPageDAO {
 		return sqlSession.selectOne("myPage.select", userId);
 		
 	}
-	public MyPageDTO selectId(Long userId) {
-		return sqlSession.selectOne("myPage.selectId", userId);
+	
+	public MyPageDTO selectUser(Long userId) {
+		return sqlSession.selectOne("myPage.selectUser", userId);
 		
 	}
 	

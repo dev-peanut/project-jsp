@@ -31,6 +31,7 @@ public class updatePhotoCorpIntroductionOkController implements Action {
 		corpVO.setCorpRegisterNumber(multipartRequest.getParameter("registerNumber"));
 		corpVO.setCorpAddress(multipartRequest.getParameter("address"));
 		corpVO.setCorpIntroductionText(multipartRequest.getParameter("introduction"));
+		
 		 
 		/*
 		 * Enumeration<String> fileNames = multipartRequest.getFileNames(); String

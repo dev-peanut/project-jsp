@@ -32,6 +32,8 @@ public class AdminDAO {
 	public void deleteDonationBoard(Long donationBoardId) {
 		sqlSession.delete("admin.deleteDonationBoard", donationBoardId);
 	}
+	
+	
 //	홍보 게시글 목록
 	public List<PromotionBoardDTO> selectAllPromotionBoard(Map<String, Object> pageMap){
 		return sqlSession.selectList("admin.selectAllPromotionBoard", pageMap);
@@ -47,6 +49,23 @@ public class AdminDAO {
 //	홍보 게시글 삭제
 	public void deletePromotionBoard(Long promotionBoardId) {
 		sqlSession.delete("admin.deletePromotionBoard", promotionBoardId);
+	}
+	
+//	식품 게시글 목록
+	public List<FoodDTO> selectAllFood(Map<String, Object> pageMap){
+		return sqlSession.selectList("admin.selectAllPromotionBoard", pageMap);
+	}
+//	식품 총 개수
+	public Long getTotalFood(Map<String, Object> searchMap) {
+		return sqlSession.selectOne("admin.getTotalPromotionBoard", searchMap);
+	}
+//	식품 게시글 상세 
+	public PromotionBoardDTO selectFood(Long foodId) {
+		return sqlSession.selectOne("admin.selectPromotionBoard", foodId);
+	}
+//	홍보 게시글 삭제
+	public void deleteFood(Long foodId) {
+		sqlSession.delete("admin.deletePromotionBoard", foodId);
 	}
 
 }

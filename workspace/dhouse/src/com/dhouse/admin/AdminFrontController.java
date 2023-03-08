@@ -36,30 +36,30 @@ public class AdminFrontController extends HttpServlet{
 		}else if(target.equals("/detailOk")){
 			result = new AdminCorpDetailOkController().execute(req, resp);
 			
-		}else if(target.equals("admin/foodList")){
+		}else if(target.equals("/admin/food/list")){
 			result = new Result();
-			result.setPath("admin/foodListOk.admin");
+			result.setPath("/admin/food/listOk.admin");
 			
-		}else if(target.equals("admin/foodListOk")){
+		}else if(target.equals("/admin/food/listOk")){
 			result = new AdminFoodListOkController().execute(req, resp);
 			
-		}else if(target.equals("admin/foodDeleteOk")){
+		}else if(target.equals("/admin/food/deleteOk")){
 			result = new AdminFoodDeleteOkController().execute(req, resp);
 			
-		}else if(target.equals("admin/foodDetailOk")){
+		}else if(target.equals("/admin/food/detailOk")){
 			result = new AdminFoodDetailOkController().execute(req, resp);
 			
-		}else if(target.equals("admin/promotionList")){
+		}else if(target.equals("/admin/promotionBoard/list")){
 			result = new Result();
-			result.setPath("admin/promotionListOk.admin");
+			result.setPath("/admin/promotionBoard/listOk.admin");
 			
-		}else if(target.equals("admin/promotionListOk")){
+		}else if(target.equals("/admin/promotionBoard/listOk")){
 			result = new AdminPromotionListOkController().execute(req, resp);
 			
-		}else if(target.equals("admin/promotionDeleteOk")){
+		}else if(target.equals("/admin/promotionBoard/deleteOk")){
 			result = new AdminPromotionDeleteOkController().execute(req, resp);
 			
-		}else if(target.equals("admin/promotionDetailOk")){
+		}else if(target.equals("/admin/promotionBoard/detailOk")){
 			result = new AdminPromotionDetailOkController().execute(req, resp);
 			
 		}else if(target.equals("/listOk")){

@@ -1,85 +1,61 @@
-// content 목록 생성
-/*const contentInfoContainer = document.getElementsByClassName(
-  "content-list__info-container"
-)[0];
+// 검색바
+const $searchForm = $('.search__searchbox__form');
+// 
+const $bannerUpdate = $
 
-let content = {
-  id: "1589073",
-  title: "동네주민이 가는 진짜 맛집",
-  userID: "bugbug",
-  location: "서울",
-  locationDetail: "역삼",
-  ip: "1.234.567.89",
-  datePost: "2022.10.17",
-  dateUpdate: "2022.10.25",
-  dateDelete: "NULL",
-  detail: "모달창팝업",
-};
+function checkStatus(status) {
+  var result;
+  switch (status) {
+    case '0':
+      result = '대기';
+      break;
+    case '1':
+      result = '승인';
+      break;
+    case '-1':
+      result = '거절';
+      break;
+    default:
+      alert('상태 표시 오류');
+      break;
+  }
 
-const addcontent = function (content, i) {
-  console.log(content.datePost);
-  let newcontent = document.createElement("div");
-  newcontent.classList.add("content-list__info-unit");
-  let contentInfoTemplate = `
+  return result;
+}
+
+function loadData(data, i) {
+  return `
+  <label for='hds${i}'>
+  <div class="content-list__info-container">
   <div class="content-list__info-unit">
-    <input
-      type="checkbox"
-      class="content__checkbox"
-      id="content__${content.id + i}"
-      name="checkbox"
-    />
-    <label for="content__${content.id + i}" class="content__checkbox--label">
+    <input type="radio" class="content__checkbox" id="hds${i}" name="checkbox" />
       <ul class="content-list__info">
-        <li class="content__id">${content.id}</li>
-        <li class="content__title">${content.title}</li>
-        <li class="content__user-id">${content.userID}</li>
-        <li class="content__location">${content.location}</li>
-        <li class="content__location-detail">${content.locationDetail}</li>
-        <li class="content__ip">${content.ip}</li>
-        <li class="content__date-post">${content.datePost}</li>
-        <li class="content__date-update">${content.dateUpdate}</li>
-        <li class="content__date-delete">${content.dateDelete}</li>
-        <li class="content__detail">${content.detail}</li>
+        <li class="content__id">${data.bannerId}</li>
+        <li class="content__user-id">${data.userIdentification}</li>
+        <li class="content__status">${checkStatus(data.bannerPaymentStatus)}</li>
+        <li class="content__date-detail">${data.bannerPeriod}</li>
+        <!--2개월 ,4개월  -->
+        <li class="content__date">${data.bannerStartDate}</li>
       </ul>
-    </label>
   </div>
-  `;
-  newcontent.innerHTML = contentInfoTemplate;
-  contentInfoContainer.appendChild(newcontent);
-};
+</div>
+</label>
+    `;
+}
 
-for (let i = 0; i < 8; i++) {
-  addcontent(content, i);
-}*/
+// 컨텐트로드
+app.service.load(banners, loadData);
 
-// 전체 선택 체크박스
-const checkBoxAll = document.getElementsByName("checkbox-all");
-const checkBox = document.querySelectorAll('input[name = "checkbox"]');
-const checkBoxChecked = document.querySelectorAll(
-  'input[name = "checkbox"]:checked'
-);
+/* 
+===================================================================
+  이벤트
+===================================================================
+*/
+$searchForm.on('submit', function (e) {
+  e.preventDefault();
 
-const selectAll = function () {
-  if (checkBoxAll[0].checked) {
-    checkBox.forEach((e) => (e.checked = true));
-  }
-  if (!checkBoxAll[0].checked) {
-    checkBox.forEach((e) => (e.checked = false));
-  }
-};
+  var url = contextPath + '/admin/banner/listSearchOk.admin';
+  var data = { keyword: $(this).find('input').val() };
 
-const checkSelectAll = function () {
-  if (checkBox.length === checkBoxChecked.length) {
-    checkBoxAll[0].checked = true;
-  } else if (checkBox.length != checkBoxChecked.length) {
-    checkBoxAll[0].checked = false;
-  }
-  console.log(checkBox.length);
-};
-
-checkBoxAll[0].addEventListener("click", selectAll);
-checkBox.forEach((e) => {
-  e.addEventListener("click", checkSelectAll);
+  app.service.ajax(url, data, app.service.load);
 });
-
-console.log(checkBoxChecked);

@@ -10,6 +10,8 @@ public class DonationBoardDTO {
 //	추가
 	private String userNickname;
 	private String donationFileSystemName;
+//	추가-mw- 2023-03-08 02:21 사용처 : admin donation board list
+	private Long replyCount;
 	
 	public DonationBoardDTO() {;}
 
@@ -77,6 +79,14 @@ public class DonationBoardDTO {
 		this.donationFileSystemName = donationFileSystemName;
 	}
 
+	public Long getReplyCount() {
+		return replyCount;
+	}
+
+	public void setReplyCount(Long replyCount) {
+		this.replyCount = replyCount;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -108,7 +118,7 @@ public class DonationBoardDTO {
 				+ ", donationBoardContents=" + donationBoardContents + ", donationBoardRegisterDate="
 				+ donationBoardRegisterDate + ", donationBoardUpdateDate=" + donationBoardUpdateDate
 				+ ", donationBoardReadCount=" + donationBoardReadCount + ", userNickname=" + userNickname
-				+ ", donationFileSystemName=" + donationFileSystemName + "]";
+				+ ", donationFileSystemName=" + donationFileSystemName + ", replyCount=" + replyCount + "]";
 	}
 
 }

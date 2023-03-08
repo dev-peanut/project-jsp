@@ -395,9 +395,9 @@ button {
 }
 
 .css-1vr7vmn {
-	-webkit-box-align: center;
 	align-items: center;
 	display: flex;
+	justify-content: center;
 }
 
 .css-31q4q7 {

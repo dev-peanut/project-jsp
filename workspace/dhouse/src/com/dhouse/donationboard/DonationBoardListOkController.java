@@ -29,7 +29,6 @@ public class DonationBoardListOkController implements Action {
 		Map<String, Object> pageMap = new HashMap<String, Object>();
 		List<DonationBoardDTO> donationBoardList = null;
 		
-		
 		String temp = req.getParameter("page"); 
 		
 		int page = temp == null || temp.equals("null") ? 1 : Integer.parseInt(temp);

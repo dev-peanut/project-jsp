@@ -45,7 +45,7 @@
 							<!-- top-category-menu -->
 							<div id="category-list" class="wcommunity-webzine-list">
  								<ul>
- 									<li>
+<%--  									<li>
 										<div class="wcommunity-story">
 											<div class="story-info">
 												<p class="title">노트북, 마우스, 헤드폰 기부합니다</p>
@@ -61,7 +61,7 @@
 											</div>
 										</div>
 									</li>
-								</ul>
+ --%>								</ul>
 							</div>
 							<!-- 페이징 시작 -->
 							<div class="wcommunity-page-list">

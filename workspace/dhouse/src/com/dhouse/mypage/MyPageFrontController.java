@@ -16,7 +16,7 @@ public class MyPageFrontController extends HttpServlet {
 		String target = uri.replace(contextPath, "").split("\\.")[0];
 		Result result = null;
 
-		System.out.println("1. " + target.equals("/myPage/myPassword"));
+		System.out.println("1. " + target);
 		
 		if(target.equals("/myPage/myPassword")) {
 			System.out.println("2. " + target);
@@ -32,30 +32,36 @@ public class MyPageFrontController extends HttpServlet {
 			result = new Result();
 			result.setPath("/dhouse/user/myPageWithdraw.jsp");
 			
-		}else if(target.equals("/myPage//myPageWithdrawOk")) {
+		}else if(target.equals("/myPage/myPageWithdrawOk")) {
 			System.out.println("2. " + target);
 			result = new MyPageWithdrawOkController().execute(req, resp);
 			
-		}else if(target.equals("/updateNicknamePhoneEmail")) {
+		}else if(target.equals("/myPage/updateNicknamePhoneEmail")) {
 			System.out.println("2. " + target);
 			result = new Result();
 			result.setPath("/dhouse/user/updateNicknamePhoneEmail.jsp");
 
-		}else if(target.equals("/updateNicknamePhoneEmail")) {
+		}else if(target.equals("/myPage/updateNicknamePhoneEmailOk")) {
 			System.out.println("2. " + target);
 			result = new updateNicknamePhoneEmailOkController().execute(req, resp);
-
-		}else if(target.equals("/myPageInfo")) {
+		
+		}else if(target.equals("/myPage/updatePhotoCorpIntroduction")) {
 			System.out.println("2. " + target);
-			result = new myPageInfoController().execute(req, resp);
+			result = new Result();
+			result.setPath("/dhouse/user/updatePhotoCorpIntroduction.jsp");
 
-		}else if(target.equals("/updatePhotoCorpIntroduction")) {
+		}else if(target.equals("/myPage/updatePhotoCorpIntroductionOk")) {
 			System.out.println("2. " + target);
-			result = new updatePhotoCorpIntroductionController().execute(req, resp);
+			result = new updatePhotoCorpIntroductionOkController().execute(req, resp);
 
-		}else if(target.equals("/myPageMain")) {
+		}else if(target.equals("/myPage/myPageMain")) {
 			System.out.println("2. " + target);
 			result = new myPageMainController().execute(req, resp);
+			
+		}else if(target.equals("/myPage/myPageInfo")) {
+			System.out.println("2. " + target);
+			result = new myPageInfoController().execute(req, resp);
+			
 		}else {
 			System.out.println("3. " + target);
 			System.err.println("cant find path");

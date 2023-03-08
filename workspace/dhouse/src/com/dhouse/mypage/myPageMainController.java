@@ -19,8 +19,9 @@ public class myPageMainController implements Action {
 		UserVO userVO = new UserVO();
 		Result result = new Result();
 		
-		req.getSession().setAttribute("userId", 23L);
+		System.out.println("들어옴");
 		Long userId = Long.valueOf(req.getParameter("userId"));
+		//req.getSession().setAttribute("userId", 23L);
 		
  		req.setAttribute("myPage", myPageDAO.select(userId));
 		

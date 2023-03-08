@@ -13,7 +13,7 @@ import com.dhouse.mypage.dao.MyPageDAO;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
-public class updatePhotoCorpIntroductionController implements Action {
+public class updatePhotoCorpIntroductionOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {

@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마이페이지 정보설정</title>
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">
+<title>2.마이페이지 정보설정</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/myPageInfo.css">
 </head>
@@ -21,7 +21,7 @@
 	                <!-- account-wrap with-footer -->
 	                <div class="account-wrap with-footer">
 	                    <h2 class="big">MY 정보설정</h2>
-	                    <a class="my-info" href="${pageContext.request.contextPath}/dhouse/user/myId.jsp">
+	                    <a class="my-info" href="javascript:location.href='${pageContext.request.contextPath}/user/myPageInfo.myPage?userId=${userInfo.userId}'">
 	                        <div class="my-info-text">
 	                            <h3>기본 정보 설정</h3>
 	                            <p>이름, 이메일, 휴대폰, SNS연동 등</p>
@@ -30,7 +30,7 @@
 	                            <i class="wadizicon wa-chevron-right"></i>
 	                        </div>
 	                    </a>
-	                    <a class="my-info" href="${pageContext.request.contextPath}/dhouse/user/myPassword.jsp">
+	                    <a class="my-info" href="javascript:location.href='${pageContext.request.contextPath}/user/myPassword.myPage?userId=${myPage.userId}'">
 	                       <div class="my-info-text">
 	                         <h3>비밀번호 등록</h3>
 	                         <p>계정 비밀번호 등록</p>
@@ -40,7 +40,8 @@
 	                       </div>
 	                    </a>
 	                    <div class="my-info">
-	                        <h3><a href="${pageContext.request.contextPath}/dhouse/user/myPageWithdraw.jsp">회원 탈퇴</a></h3>
+	                        <h3><a class="my-info" href="javascript:location.href='${pageContext.request.contextPath}/user/myPageWithdraw.myPage?userId=${myPage.userId}'">
+회원 탈퇴</a></h3>
 	                    </div>
 	                </div>
 	                <!-- //account-wrap with-footer -->

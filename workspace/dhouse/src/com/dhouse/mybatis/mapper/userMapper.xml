@@ -8,9 +8,9 @@
 	</insert>
 	
 <!-- 기업 회원가입 -->
-	<insert id="joinCorp" parameterType="CorpVO">
-		insert into tbl_user(corp_address, corp_register_number, user_id)
-		values(#{cropAddress}, #{corpRegisterNumber}, #{userId})
+	<insert id="insertCorp" parameterType="CorpVO">
+		insert into tbl_corp(corp_address, corp_register_number, user_id, corp_introduction_text, file_system_name)
+		values(#{corpAddress}, #{corpRegisterNumber}, #{userId}, #{corpIntroductionText}, #{fileSystemName})
 	</insert>	
 	
 <!-- 아이디 중복체크 -->
@@ -29,4 +29,9 @@
 		where user_identification = #{userIdentification} and user_password = #{userPassword}
 	</select>
 	
+	<!-- 제일 최근에 증가한 시퀀스 값 가져오기 -->
+	<select id="getCurrentSequence" resultType="long">
+      select last_insert_id()
+   </select>
+   
 </mapper> 	

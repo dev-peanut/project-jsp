@@ -24,6 +24,9 @@ public class SignUpOkController implements Action {
 		CorpVO corpVO = new CorpVO();
 		Result result = new Result();
 		
+		String corp = req.getParameter("corp");
+		System.out.println(corp);
+		
 		userVO.setUserIdentification(req.getParameter("userIdentification"));
 		userVO.setUserPassword(req.getParameter("userPassword"));
 		userVO.setUserName(req.getParameter("userName"));
@@ -33,9 +36,13 @@ public class SignUpOkController implements Action {
 		
 		userDAO.join(userVO);
 		
-		if(req.getParameter("corp") == "true") {
-			corpVO.setCorpAddress(req.getParameter(null));
-			corpVO.setCorpRegisterNumber(req.getParameter(null));
+		if(corp != null) {
+			System.out.println("기업 회원가입 들어옴");
+			corpVO.setCorpAddress(req.getParameter("corpAddress"));
+			corpVO.setCorpRegisterNumber(req.getParameter("corpRegisterNumber"));
+			corpVO.setUserId(new CorpDAO().getSequence());
+			corpVO.setCorpIntroductionText("");
+			corpVO.setFileSystemName("");
 			corpDAO.insertCorp(corpVO);
 		}
 		

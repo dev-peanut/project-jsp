@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">  
 <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
-<link href="../../assets/css/user/findPassword.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/static/css/user/findPassword.css" rel="stylesheet">
 <title>비밀번호 찾기</title>
 </head>
 <body>
@@ -43,10 +43,10 @@
                     <div class="tab-list">
                         <ul>
                             <li class="active">
-                                <a href="/web/waccount/find/id">아이디 찾기</a>
+                                <a href="${pageContext.request.contextPath}/user/findId.user">아이디 찾기</a>
                             </li>
                             <li class="password">
-                                <a href="/web/waccount/find/pwd">비밀번호 찾기</a>
+                                <a href="${pageContext.request.contextPath}/user/findPassword.user">비밀번호 찾기</a>
                             </li>
                         </ul>
                     </div>

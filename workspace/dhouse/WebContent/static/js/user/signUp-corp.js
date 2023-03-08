@@ -367,7 +367,7 @@ function send() {
 	$("input[name='userPassword']").val(btoa($("input[name='userPassword']").val()));
 	$("#password-check").val(btoa($("#password-check").val()));
 
-	document.joinForm.submit();
+	document.join.submit();
 }
 
 

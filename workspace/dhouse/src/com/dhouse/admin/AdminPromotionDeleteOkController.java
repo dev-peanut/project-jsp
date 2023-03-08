@@ -29,7 +29,7 @@ public class AdminPromotionDeleteOkController implements Action {
 		});
 		
 		fileDAO.deletePromotionBoard(promotionBoardId);
-		adminDAO.deleteDonationBoard(promotionBoardId);
+		adminDAO.deletePromotionBoard(promotionBoardId);
 		result.setPath(req.getContextPath() + "/admin/promotionBoard/list.admin");
 		result.setRedirect(true);
 		

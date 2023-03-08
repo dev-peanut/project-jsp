@@ -57,7 +57,7 @@
 	</delete>
 	<!-- 가전 기부 끝 -->
 	
-	<!-- 홍보 게시글 시작 -->
+	<!-- Food 게시글 시작 -->
 	<!-- 홍보 목록용 -->
 	<select id="selectAllPromotionBoard" parameterType="map" resultType="donationBoardDTO">
 		select b.promotion_board_id , u.user_nickname , b.promotion_board_title , b.promotion_board_contents , b.promotion_board_register_date  
@@ -88,6 +88,35 @@
 	</delete>
 	<!-- 홍보 게시글 끝 -->
 	
+	<!-- 식품 기부 시작 -->
+	<!-- 식품 기부 목록용 -->
+	<select id="selectAllFood" parameterType="map" resultType="donationBoardDTO">
+		select f.food_id , f.food_name , u.user_nickname , f.food_request_date 
+		from tbl_user u join tbl_food f
+		on u.user_id = f.user_id 
+		<include refid="search"/> 
+		order by food_id desc
+		limit #{startRow}, #{rowCount}
+	</select>
+	
+	<!-- 식품 기부 총 개수 -->
+	<select id="getTotalFood" parameterType="map" resultType="long">
+		select count(food_id) from tbl_food
+		<include refid="search"/>
+	</select>
+	
+	<!-- 식품 기부 상세(모달) -->
+	<select id="selectFood" parameterType="long" resultType="donationBoardDTO">
+		select food_id , food_name , food_amount , food_request_date , file_system_name 
+		from tbl_food
+		where food_id = #{foodId}
+	</select>
+
+	<!-- 식품 기부 삭제 -->
+	<delete id="deleteFood" parameterType="long">
+		delete from tbl_food where food_id = #{foodId}
+	</delete>
+	<!-- 식품 기부 끝 -->
 	
 	
 </mapper>

@@ -17,7 +17,7 @@
 					<div id="modal-top">
 						<div id="modal-title">
 							식품 기부하기 <label> <img id="exit"
-								src="${pageContext.request.contextPath}/images/user/exit.png">
+								src="${pageContext.request.contextPath}/static/images/user/exit.png">
 								<button id="close"></button></label>
 						</div>
 					</div>
@@ -38,15 +38,6 @@
 								<div class="input-text">픽업날짜</div>
 								<input type="text" id="pickUp-date" value="2023-02-25"
 									class="user-input" readonly>
-							</div>
-							<div class="input-wrapper">
-								<div class="input-text">상태</div>
-								<div class="ColumnLayoutCell css-r24zef e3j22xw1"
-									style="letter-spacing: 2px;">
-									<label><input type="radio" name="processStatus">대기</label><label><input
-										type="radio" name="processStatus" value="I">승인</label><label><input
-										type="radio" name="processStatus" value="E">거절</label>
-								</div>
 							</div>
 							<div id="image">
 								<div class="input-wrapper">

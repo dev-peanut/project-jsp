@@ -10,13 +10,13 @@
 
 
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/components/sanitize.css" />
+	href="${pageContext.request.contextPath}/static/css/components/sanitize.css" />
 <!-- 아레에 페이지별로 갈아 끼워야할 CSS -->
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/admin/food_board.css" />
+	href="${pageContext.request.contextPath}/static/css/admin/food_board.css" />
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/assets/css/components/food_modal.css" />	
-<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/logo.png">	
+	href="${pageContext.request.contextPath}/static/css/components/food_modal.css" />	
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/static/images/logo.png">	
 </head>
 <body>
 	<!-- header -->
@@ -33,7 +33,7 @@
 					<input id="searchbox" type="text" placeholder="원하시는 키워드로 찾아보세요" />
 					<button type="button" class="search__searchbox__button">
 						<img
-							src="${pageContext.request.contextPath}/images/user/search.png"
+							src="${pageContext.request.contextPath}/static/images/user/search.png"
 							alt="" />
 					</button>
 				</form>
@@ -58,7 +58,6 @@
 						<li class="title__user">작성자</li>
 						<!-- <li class="title__date-detail">신청일수</li> -->
 						<li class="title__date">등록일</li>
-						<li class="title__type">승인현황</li>
 						<li class="title__detail">상세</li>
 
 					</ul>
@@ -80,7 +79,6 @@
 							<!-- 	<li class="content__date-detail">2개월</li> -->
 								<!--2개월 ,4개월  -->
 								<li class="content__date">2023-02-23</li>
-								<li class="content__type">승인</li>
 								<li class="user__detail" name="userDetail"><button
 										class="custom-btn btn-16" style="font-weight: 10px;" id="show">상세
 										정보</button></li>
@@ -100,7 +98,6 @@
 							<!-- <li class="content__date-detail">4개월</li> -->
 							<!--2개월 ,4개월  -->
 							<li class="content__date">2022-10-23</li>
-							<li class="content__type">거절</li>
 							<li class="user__detail" name="userDetail"><button
 									class="custom-btn btn-16" style="font-weight: 10px;">상세
 									정보</button></li>
@@ -121,7 +118,6 @@
 							<!-- 	<li class="content__date-detail">2개월</li> -->
 								<!--2개월 ,4개월  -->
 								<li class="content__date">2023-01-23</li>
-								<li class="content__type">대기</li>
 								<li class="user__detail" name="userDetail"><button
 										class="custom-btn btn-16" style="font-weight: 10px;">상세
 										정보</button></li>
@@ -142,7 +138,6 @@
 							<!-- 	<li class="content__date-detail">test</li> -->
 								<!--2개월 ,4개월  -->
 								<li class="content__date">yyyy-mm-dd</li>
-								<li class="content__type">nn</li>
 								<li class="user__detail" name="userDetail"><button
 										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
 							</ul>
@@ -162,7 +157,6 @@
 							<!-- 	<li class="content__date-detail">test</li> -->
 								<!--2개월 ,4개월  -->
 								<li class="content__date">yyyy-mm-dd</li>
-								<li class="content__type">nn</li>
 								<li class="user__detail" name="userDetail"><button
 										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
 							</ul>
@@ -181,7 +175,6 @@
 							<!-- 	<li class="content__date-detail">test</li> -->
 								<!--2개월 ,4개월  -->
 								<li class="content__date">yyyy-mm-dd</li>
-								<li class="content__type">nn</li>
 								<li class="user__detail" name="userDetail"><button
 										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
 							</ul>
@@ -200,7 +193,6 @@
 							<!-- 	<li class="content__date-detail">test</li> -->
 								<!--2개월 ,4개월  -->
 								<li class="content__date">yyyy-mm-dd</li>
-								<li class="content__type">nn</li>
 								<li class="user__detail" name="userDetail"><button
 										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
 							</ul>
@@ -219,7 +211,6 @@
 							<!-- 	<li class="content__date-detail">test</li> -->
 								<!--2개월 ,4개월  -->
 								<li class="content__date">yyyy-mm-dd</li>
-								<li class="content__type">nn</li>
 								<li class="user__detail" name="userDetail"><button
 										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
 							</ul>
@@ -238,7 +229,6 @@
 							<!-- 	<li class="content__date-detail">test</li> -->
 								<!--2개월 ,4개월  -->
 								<li class="content__date">yyyy-mm-dd</li>
-								<li class="content__type">nn</li>
 								<li class="user__detail" name="userDetail"><button
 										class="custom-btn btn-16" style="font-weight: 10px;">test</button></li>
 							</ul>
@@ -284,8 +274,8 @@
 	
 </body>
 <script
-	src="${pageContext.request.contextPath}/assets/js/admin/banner.js"></script>
-<script src="${pageContext.request.contextPath}/assets/js/components/food_modal.js"></script>
+	src="${pageContext.request.contextPath}/static/js/admin/banner.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/components/food_modal.js"></script>
 
 
 </html>

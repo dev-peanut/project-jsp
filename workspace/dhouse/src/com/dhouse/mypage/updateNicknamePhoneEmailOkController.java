@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.dhouse.Action;
 import com.dhouse.Result;
 import com.dhouse.mypage.dao.MyPageDAO;
+import com.dhouse.mypage.domain.MyPageDTO;
 import com.dhouse.user.domain.UserVO;
 
 public class updateNicknamePhoneEmailOkController implements Action {
@@ -17,11 +18,14 @@ public class updateNicknamePhoneEmailOkController implements Action {
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		UserVO userVO = new UserVO();
 		MyPageDAO myPageDAO = new MyPageDAO();
+		MyPageDTO myPageDTO = new MyPageDTO();
 		Result result = new Result();
-
+		
+		req.setAttribute("myPage", myPageDAO.selectUser(Long.valueOf(req.getParameter("userId"))));
+		req.setAttribute("userId", Long.valueOf(req.getParameter("userId")));
 		System.out.println("들어옴");
-
-		// Long userId = Long.valueOf(req.getParameter("userId"));
+		Long userId = (Long)req.getSession().getAttribute("userId");
+		// Long userId = Long.valueOf(req.getParameter("userId"));s
 		req.getSession().setAttribute("userId", 23L);
 
 		// 입력값 userVO에 세팅

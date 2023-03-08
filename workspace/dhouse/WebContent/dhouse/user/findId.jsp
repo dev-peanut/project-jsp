@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">  
 <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
-<link href="../../static/css/user/findId.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/static/css/user/findId.css" rel="stylesheet">
 <title>아이디 찾기</title>
 </head>
 <body>
@@ -25,10 +25,10 @@
                     <div class="tab-list">
                         <ul>
                             <li class="active">
-                                <a href="/web/waccount/find/id">아이디 찾기</a>
+                                <a href="${pageContext.request.contextPath}/user/findId.user">아이디 찾기</a>
                             </li>
                             <li class="password">
-                                <a href="/web/waccount/find/pwd">비밀번호 찾기</a>
+                                <a href="${pageContext.request.contextPath}/user/findPassword.user">비밀번호 찾기</a>
                             </li>
                         </ul>
                     </div>
@@ -36,22 +36,21 @@
                     <div class="page-body">
                         <div class="wz-containder-id-check" style="min-height:calc(100vh - 187px);">
                         <p class="wz-text-body1">
-                            와디즈는 이메일을 아이디로 사용합니다.
+                            소유하고 계신 이메일을 적어주세요.
                             <br>
-                            소유하고 계신 계정을 입력해보세요.
-                            <br>
+                              <br>
                             가입여부를 확인해드립니다.
                             </p>
-
-                            <form class="wz-form" id="form-findId" onsubmit="checkEmail(); return false;">
+	
+                            <form action="${pageContext.request.contextPath}/user/findIdOK.user"name="login" method="post" class="wz-form" id="form-findId" onsubmit="checkEmail(); return false;">
                                 <div class="label-hidden field">
-                                    <label class="text-hidden" for="userName">이메일 주소</label>
+                                    <label class="text-hidden" for="userName">이메일</label>
                                     <div class="wz-input">
-                                        <input id="userName" class="input-text" type="email" name="userName" value="" placeholder="이메일 계정" onkeydown="hitEnterkey(event);">
+                                        <input id="userName" class="input-text" type="email" name="userName" value="" placeholder="이메일" onkeydown="hitEnterkey(event);">
                                     </div>
                                     </div>
                                     <p class="helper-error"></p>
-                                <button id="btnIsJoinedEmail" class="wz-primary-block-button" type="button" onclick="checkEmail()"><span id="ok-button">확인</span>
+                                <button id="btnIsJoinedEmail" class="wz-primary-block-button" type="button" onclick="checkEmail()"><span id="ok-button">확인하기</span>
                                 </button>
                             </form>
                         </div>

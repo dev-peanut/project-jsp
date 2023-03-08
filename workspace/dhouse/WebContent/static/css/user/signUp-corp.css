@@ -648,6 +648,65 @@ header{
     border: 1px solid #dde2e6;
 }
 
+.address-input{
+	 height: 48px;
+    min-height: 44.67px;
+    display: block;
+    outline: none;
+    border: 1px solid #dde2e6;
+    border-radius: 3px;
+    padding-right: 140px;
+    padding-left: 16px;
+    margin-bottom: 2px;
+    height: auto;
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR';
+    border: 1px solid #dde2e6;
+}
+
+.address-inputFirst{
+	 height: 48px;
+    min-height: 44.67px;
+    display: block;
+    outline: none;
+    border: 1px solid #dde2e6;
+    border-radius: 3px;
+    padding-right: 140px;
+    padding-left: 16px;
+    margin-bottom: 2px;
+    height: auto;
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR';
+    border: 1px solid #dde2e6;
+}
+
+.address-inputButton{
+	 height: 48px;
+    min-height: 44.67px;
+    display: block;
+    outline: none;
+    border: 1px solid #dde2e6;
+    color: #fff;
+    background-color: #5de2e2cc;
+    border-radius: 3px;
+    padding-right: 140px;
+    padding-left: 16px;
+    margin-bottom: 2px;
+    height: auto;
+    line-height: 28px;
+    letter-spacing: -.3px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR';
+    border: 1px solid #dde2e6;
+}
+
 .password-field{
     margin-top: 24px;
     display: block;

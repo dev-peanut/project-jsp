@@ -48,5 +48,10 @@ public class CorpDAO {
 		sqlSession.insert("user.insertCorp", corpVO);
 	}
 	
+//	방금전에 증가한 userId가져오기
+	
+	public Long getSequence() {
+		return sqlSession.selectOne("user.getCurrentSequence");
+	}
 	
 }

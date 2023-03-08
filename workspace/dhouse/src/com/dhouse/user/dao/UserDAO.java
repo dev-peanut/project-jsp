@@ -37,5 +37,9 @@ public class UserDAO {
 		loginMap.put("userPassword", userPassword);
 		return sqlSession.selectOne("user.login", loginMap);
 	}
+
+	public Long getSequence() {
+		return sqlSession.selectOne("user.getCurrentSequence");
+	}
 	
 }

@@ -43,25 +43,9 @@
 								<h3>가전제품 기부</h3>
 							</div>
 							<!-- top-category-menu -->
-							<div class="wcommunity-webzine-list">
-								<ul>
-									<li>
-										<div class="wcommunity-story">
-											<div class="story-info">
-												<p class="title">냉장고 나눔</p>
-												<p class="summary">사용하던 냉장고 나눔합니다. 곧 이사갈 예정이라서요.</p>
-												<p class="info">
-												<p class="editor">개인회원1</p>
-												<p class="date">23.02.22</p>
-												</p>
-											</div>
-											<div class="img-wrap">
-												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/static/images/user/notebook.jpg)"></div>
-											</div>
-										</div>
-									</li>
-									<li>
+							<div id="category-list" class="wcommunity-webzine-list">
+ 								<ul>
+<%--  									<li>
 										<div class="wcommunity-story">
 											<div class="story-info">
 												<p class="title">노트북, 마우스, 헤드폰 기부합니다</p>
@@ -77,128 +61,52 @@
 											</div>
 										</div>
 									</li>
-									<li>
-										<div class="wcommunity-story">
-											<div class="story-info">
-												<p class="title">노트북, 마우스, 헤드폰 기부합니다</p>
-												<p class="summary">새 제품을 선물받아 기부합니다. 역삼역 3번 출구로 오실 분</p>
-												<p class="info">
-												<p class="editor">개인회원2</p>
-												<p class="date">23.02.19</p>
-												</p>
-											</div>
-											<div class="img-wrap">
-												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="wcommunity-story">
-											<div class="story-info">
-												<p class="title">노트북, 마우스, 헤드폰 기부합니다</p>
-												<p class="summary">새 제품을 선물받아 기부합니다. 역삼역 3번 출구로 오실 분</p>
-												<p class="info">
-												<p class="editor">개인회원2</p>
-												<p class="date">23.02.19</p>
-												</p>
-											</div>
-											<div class="img-wrap">
-												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="wcommunity-story">
-											<div class="story-info">
-												<p class="title">노트북, 마우스, 헤드폰 기부합니다</p>
-												<p class="summary">새 제품을 선물받아 기부합니다. 역삼역 3번 출구로 오실 분</p>
-												<p class="info">
-												<p class="editor">개인회원2</p>
-												<p class="date">23.02.19</p>
-												</p>
-											</div>
-											<div class="img-wrap">
-												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="wcommunity-story">
-											<div class="story-info">
-												<p class="title">노트북, 마우스, 헤드폰 기부합니다</p>
-												<p class="summary">새 제품을 선물받아 기부합니다. 역삼역 3번 출구로 오실 분</p>
-												<p class="info">
-												<p class="editor">개인회원2</p>
-												<p class="date">23.02.19</p>
-												</p>
-											</div>
-											<div class="img-wrap">
-												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="wcommunity-story">
-											<div class="story-info">
-												<p class="title">와디즈는 왜 광고심의를 진행할까요?</p>
-												<p class="summary">광고심의 척척박사가 되지 않아도 괜찮아요. 와디즈 프로젝트심사팀이
-													도와드릴게요.</p>
-												<p class="info">
-												<p class="editor">개인회원7</p>
-												<p class="date">22.12.25</p>
-												</p>
-											</div>
-											<div class="img-wrap">
-												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="wcommunity-story">
-											<div class="story-info">
-												<p class="title">스토리와 콘텐츠 제작, 전문가의 도움을 받을 수 있나요?</p>
-												<p class="summary">와디즈의 콘텐츠 관련 서비스, 한 눈에 살펴보기</p>
-												<p class="info">
-												<p class="editor">개인회원8</p>
-												<p class="date">22.12.24</p>
-												</p>
-											</div>
-											<div class="img-wrap">
-												<div class="story-img"
-													style="background-image: url(${pageContext.request.contextPath}/static/images/user/refrigerator.jpg)"></div>
-											</div>
-										</div>
-									</li>
-								</ul>
+ --%>								</ul>
 							</div>
 							<!-- 페이징 시작 -->
-							<div class="wcommunity-page-list">
+<!-- 							<div class="wcommunity-page-list">
 								<ul>
 									<li><button type="button" onclick="movePage(1)">1</button></li>
-									<li class="active"><button type="button"
-											onclick="movePage(2)">2</button></li>
+									<li class="active"><button type="button" onclick="movePage(2)">2</button></li>
 									<li><button type="button" onclick="movePage(3)">3</button></li>
 									<li><button type="button" onclick="movePage(4)">4</button></li>
 									<li><button type="button" onclick="movePage(5)">5</button></li>
-									<li class="next-btn"><button type="button"
-											onclick="movePage(6)">&gt;</button></li>
+									<li class="next-btn"><button type="button" onclick="movePage(6)">&gt;</button></li>
 								</ul>
 							</div>
-							<!-- //wcommunity-page-list -->
-
+ -->							<!-- //wcommunity-page-list -->
 						</div>
 						<!-- section1 -->
-
-
-
 						<!-- 사이드바 -->
 						<div class="wcommunity-section2">
 							<div class="inner-wrap">
+								<c:if test="${prev}">
+				                    <a href="javascript:location.href='/donation/listOk.donation?page=${startPage - 1}'">
+			                        	<button id="left"><svg id="left-svg" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="left-path" d="M21 24L15 18L21 12" stroke="#868E96" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+			                        </a>
+			                	</c:if>
+			                	<c:forEach var="i" begin="${startPage}" end="${endPage}">
+			                    	<c:choose>
+			                    		<c:when test="${i eq page}">
+						                    <a href="javascript:void(0)" class="paging paging-checked">
+						                    	<c:out value="${i}"/>
+						                    </a>
+			                    		</c:when>
+			                    		<c:otherwise>
+						                    <a href="javascript:location.href='/donation/list.donation?page=${i}'" class="paging">
+						                    	<c:out value="${i}"/>
+						                    	<!-- <span class="page-numbers"><button class="button-numbers">1</button> -->
+						                    </a>
+			                    		</c:otherwise>
+			                    	</c:choose>
+			                    </c:forEach>
+		                        <!-- <span class="page-numbers"><button class="button-numbers">1</button> -->
+		                        <c:if test="${next}">
+			                    	<a href="javascript:location.href='/donation/list.donation?page=${endPage + 1}'">
+				                        <button id="right"><svg id="right-svg" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="right-path" d="M15 12L21 18L15 24" stroke="#868E96" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+			                    	</a>
+			                    </c:if>
+								
 								<div class="wcommunity-category-info">
 									<h4>나눔의집 소개</h4>
 									<p class="summary">나눔의집에 대해 알고 싶다면?</p>
@@ -247,4 +155,11 @@
 		<jsp:include page="${pageContext.request.contextPath}/dhouse/components/footer.jsp"></jsp:include>
 	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+	let contextPath = "${pageContext.request.contextPath}";
+	let page = `${page}`;
+	let donationBoards = `${donationBoards}`;
+</script>
+<script src="${pageContext.request.contextPath}/static/js/board/donation-list.js"></script>
 </html>

@@ -12,8 +12,27 @@
 		limit #{startRow}, #{rowCount}
 	</select>
 	
+	<select id="select" parameterType="long" resultType="bannerDTO">
+		select banner_payment_status, banner_period, banner_id,
+		banner_start_date, banner_location, file_system_name
+		from tbl_banner b 
+		where banner_id = #{bannerId}
+	</select>
+	
 	<select id="getTotal" resultType="long">
 		select count(banner_id)
 		from tbl_banner
 	</select>
+	
+	<update id="update" parameterType="bannerVO">
+		update tbl_banner
+		set banner_payment_status=#{bannerPaymentStatus}, banner_period=#{bannerPeriod}, 
+		banner_location=#{bannerLocation}
+		where banner_id= #{bannerId}
+	</update>
+	
+	<delete id="delete" parameterType="long">
+		delete from tbl_banner
+		where banner_id = #{bannerId}
+	</delete>
 </mapper>

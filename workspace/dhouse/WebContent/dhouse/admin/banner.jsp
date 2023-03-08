@@ -41,7 +41,7 @@ uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
         <button type="button" style="margin: 0 0 0 -33px; font-size: 16px">배너 설정</button>
       </article>
       <article class="module module--content-summary">
-        <button type="button" class="modal_test" style="margin: 0 0 0 -33px; font-size: 16px">
+        <button type="button" class="banner-delete" style="margin: 0 0 0 -33px; font-size: 16px">
           선택 삭제
         </button>
       </article>
@@ -51,6 +51,7 @@ uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
             <ul class="content-list__title">
               <li style="margin: 0 12px;">선택</li>
               <li class="title__id">번호</li>
+              <li class="title__id">순서</li>
               <li class="title__user-id">ID</li>
               <li class="title__status">상태</li>
               <li class="title__date-detail">기간</li>

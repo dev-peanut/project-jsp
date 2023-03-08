@@ -42,10 +42,18 @@ public class UserFrontController extends HttpServlet {
 		} else if (target.equals("/user/checkEmailOk")) {
 			new CheckEmailOkController().execute(req, resp);
 			
-		} else if (target.equals("/user/findIdOk")) {
+		} else if (target.equals("/user/findId")) {
+			result = new Result();
+			result.setPath("/dhouse/user/findId.jsp");
+		} 
+		else if (target.equals("/user/findIdOk")) {
 			result = new FindIdOkController().execute(req, resp);
 
-		} else if (target.equals("/user/findPasswordOk")) {
+		}else if (target.equals("/user/findPassword")) {
+			result = new Result();
+			result.setPath("/dhouse/user/findPassword.jsp");
+		}  
+		else if (target.equals("/user/findPasswordOk")) {
 			result = new FindPasswordOkController().execute(req, resp);
 
 		} else if (target.equals("/user/logout")) {

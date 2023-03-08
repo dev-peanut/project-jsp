@@ -20,6 +20,7 @@
       <typeAlias type="com.dhouse.donationboard.domain.DonationBoardVO" alias="donationBoardVO"/>
       <typeAlias type="com.dhouse.donationboard.domain.DonationBoardDTO" alias="donationBoardDTO"/>
       <typeAlias type="com.dhouse.banner.domain.BannerVO" alias="bannerVO"/>
+      <typeAlias type="com.dhouse.banner.domain.BannerDTO" alias="bannerDTO"/>
       <typeAlias type="com.dhouse.notice.domain.NoticeDTO" alias="noticeDTO"/>
 	</typeAliases>
    

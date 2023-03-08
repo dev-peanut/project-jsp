@@ -50,9 +50,9 @@
 				<div class="support-list__title-unit">
 					<input type="checkbox" id="title__checkbox" name="checkbox-all" />
 					<ul class="support-list__title">
-						<li class="title__id">회원번호</li>
+						<li class="title__id">게시글번호</li>
 						<li class="title__type">글유형</li>
-						<li class="title__user-id">회원 ID</li>
+						<li class="title__user-id">회원 닉네임</li>
 						<li class="title__title">제목</li>
 						<li class="title__content">내용</li>
 						<li class="title__date-post">등록시간</li>

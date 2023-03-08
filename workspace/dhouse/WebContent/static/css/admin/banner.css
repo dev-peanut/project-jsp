@@ -227,8 +227,8 @@ body {
 /* content-info */
 .content-list__info-container {
   width: 100%;
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .content-list__info-unit {
@@ -271,7 +271,7 @@ body {
 }
 
 .content__title {
-  flex: 1.5;
+  flex: 0.5;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -437,7 +437,7 @@ span {
   position: absolute;
   grid-area: d;
   bottom: 13%;
-  font-size: 14px;
-  margin: 0 0 0px 0px;
+  font-size: 17px;
+  maring: 0 0 0px 0px;
   letter-spacing: 9px;
 }

@@ -1,7 +1,7 @@
 // 검색바
 const $searchForm = $('.search__searchbox__form');
-// 
-const $bannerUpdate = $
+// 배너 삭제
+const $bannerUpdate = $('button.banner-delete');
 
 function checkStatus(status) {
   var result;
@@ -31,6 +31,7 @@ function loadData(data, i) {
     <input type="radio" class="content__checkbox" id="hds${i}" name="checkbox" />
       <ul class="content-list__info">
         <li class="content__id">${data.bannerId}</li>
+        <li class="content__title">${data.bannerLocation}</li>
         <li class="content__user-id">${data.userIdentification}</li>
         <li class="content__status">${checkStatus(data.bannerPaymentStatus)}</li>
         <li class="content__date-detail">${data.bannerPeriod}</li>
@@ -58,4 +59,16 @@ $searchForm.on('submit', function (e) {
   var data = { keyword: $(this).find('input').val() };
 
   app.service.ajax(url, data, app.service.load);
+});
+
+$bannerUpdate.on('click', function () {
+  var url = contextPath + '/admin/banner/bannerDeleteOk.admin';
+  var bannerId = $("input[name='checkbox']:checked").next().find('.content__id').text();
+  var data = { bannerId: bannerId };
+
+  if (!confirm('정말 삭제하시겠습니까?')) return;
+
+  app.service.ajax(url, data, function () {
+    location.reload();
+  });
 });

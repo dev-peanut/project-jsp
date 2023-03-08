@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="file">
+	<!-- 기부 게시글 시작 -->
+	<select id="selectDonationBoard" parameterType="long" resultType="fileVO">
+		select file_id, file_system_name, donation_board_id
+		from tbl_donation_file where board_id = #{targetId}
+	</select>
+	
+	<delete id="deleteDonationBoard" parameterType="long">
+		delete from tbl_donation_file where board_id = #{targetId}
+	</delete>
+	<!-- 기부 게시글 끝 -->
+	
+	
+	<!-- 기부 게시글 시작 -->
+	<select id="selectPromotionBoard" parameterType="long" resultType="fileVO">
+		select file_id, file_system_name, promotion_board_id
+		from tbl_promotion_file where board_id = #{targetId}
+	</select>
+	
+	<delete id="deletePromotionBoard" parameterType="long">
+		delete from tbl_promotion_file where board_id = #{targetId}
+	</delete>
+	<!-- 기부 게시글 끝 -->
 </mapper>

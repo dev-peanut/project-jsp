@@ -64,7 +64,7 @@
  --%>								</ul>
 							</div>
 							<!-- 페이징 시작 -->
-							<div class="wcommunity-page-list">
+<!-- 							<div class="wcommunity-page-list">
 								<ul>
 									<li><button type="button" onclick="movePage(1)">1</button></li>
 									<li class="active"><button type="button" onclick="movePage(2)">2</button></li>
@@ -74,7 +74,7 @@
 									<li class="next-btn"><button type="button" onclick="movePage(6)">&gt;</button></li>
 								</ul>
 							</div>
-							<!-- //wcommunity-page-list -->
+ -->							<!-- //wcommunity-page-list -->
 						</div>
 						<!-- section1 -->
 						<!-- 사이드바 -->

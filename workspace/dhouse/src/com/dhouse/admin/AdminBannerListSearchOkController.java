@@ -1,10 +1,8 @@
-
 package com.dhouse.admin;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.io.PrintWriter;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.ServletException;
@@ -18,17 +16,20 @@ import com.dhouse.Action;
 import com.dhouse.Result;
 import com.dhouse.banner.dao.BannerDAO;
 
-public class AdminBannerListOkController implements Action {
+public class AdminBannerListSearchOkController implements Action {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		Result result = new Result();
+		resp.setCharacterEncoding("UTF-8");
 		BannerDAO bannerDAO = new BannerDAO();
 		Map<String, Object> searchMap = new HashMap<String, Object>();
 		JSONArray jsons = new JSONArray();
+		PrintWriter out = resp.getWriter();
 		
+		String keyword = req.getParameter("keyword");
 		String temp = req.getParameter("page"); 
 		
+		keyword = keyword == "" ? null : keyword;
 		int page = temp == null || temp.equals("null") ? 1 : Integer.parseInt(temp);
 		
 		Long total = bannerDAO.getTotal();
@@ -49,20 +50,14 @@ public class AdminBannerListOkController implements Action {
 		
 		searchMap.put("rowCount", rowCount);
 		searchMap.put("startRow", startRow);
+		searchMap.put("keyword", keyword);
 		
 		bannerDAO.selectAll(searchMap).stream().map(e -> new JSONObject(e)).forEach(jsons::put);
 		
-		req.setAttribute("banners", jsons.toString());
-		req.setAttribute("total", total);
-		req.setAttribute("startPage", startPage);
-		req.setAttribute("endPage", endPage);
-		req.setAttribute("page", page);
-		req.setAttribute("prev", prev);
-		req.setAttribute("next", next);
+		out.append(jsons.toString());
+		out.close();
 		
-		result.setPath("/dhouse/admin/banner.jsp");
-		
-		return result;
+		return null;
 	}
 
 }

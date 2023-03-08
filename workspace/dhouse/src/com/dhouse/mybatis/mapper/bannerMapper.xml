@@ -6,5 +6,14 @@
 		banner_period, banner_start_date, banner_location, file_system_name
 		from tbl_user u join tbl_banner b
 		on u.user_id = b.user_id
+		<if test="keyword != null">
+			where user_identification like concat('%', #{keyword}, '%')
+		</if>
+		limit #{startRow}, #{rowCount}
+	</select>
+	
+	<select id="getTotal" resultType="long">
+		select count(banner_id)
+		from tbl_banner
 	</select>
 </mapper>

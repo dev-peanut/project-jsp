@@ -36,17 +36,31 @@ public class AdminFrontController extends HttpServlet{
 		}else if(target.equals("/detailOk")){
 			result = new AdminCorpDetailOkController().execute(req, resp);
 			
-		}else if(target.equals("/listOk")){
+		}else if(target.equals("admin/foodList")){
+			result = new Result();
+			result.setPath("admin/foodListOk.admin");
+			
+		}else if(target.equals("admin/foodListOk")){
 			result = new AdminFoodListOkController().execute(req, resp);
 			
-		}else if(target.equals("/deleteOk")){
+		}else if(target.equals("admin/foodDeleteOk")){
 			result = new AdminFoodDeleteOkController().execute(req, resp);
 			
-		}else if(target.equals("/detailOk")){
+		}else if(target.equals("admin/foodDetailOk")){
 			result = new AdminFoodDetailOkController().execute(req, resp);
 			
-		}else if(target.equals("/modifyOk")){
-			result = new AdminFoodModifyOkController().execute(req, resp);
+		}else if(target.equals("admin/promotionList")){
+			result = new Result();
+			result.setPath("admin/promotionListOk.admin");
+			
+		}else if(target.equals("admin/promotionListOk")){
+			result = new AdminPromotionListOkController().execute(req, resp);
+			
+		}else if(target.equals("admin/promotionDeleteOk")){
+			result = new AdminPromotionDeleteOkController().execute(req, resp);
+			
+		}else if(target.equals("admin/promotionDetailOk")){
+			result = new AdminPromotionDetailOkController().execute(req, resp);
 			
 		}else if(target.equals("/listOk")){
 			result = new AdminBannerListOkController().execute(req, resp);

@@ -53,12 +53,11 @@
 					</div>
 					<div class="login-action"></div>
 					<p class="forgot go-login-corp">
-						<a
-							href="${pageContext.request.contextPath}/dhouse/user/login-corp.jsp">기업회원으로
-							로그인</a>
+						<a 
+							></a>
 					</p>
 					<p class="forgot real-forgot">
-						<a href="https://www.wadiz.kr/web/waccount/find/pwd">로그인 정보를
+						<a href="${pageContext.request.contextPath}/user/findId.user">로그인 정보를
 							잊으셨나요?</a>
 					</p>
 					<!-- <button type="submit" class="login" >로그인</button> -->
@@ -93,7 +92,7 @@
 					<!-- 하단 메세지 -->
 					<p>
 						아직 와디즈 계정이 없나요? <a class="join"
-							href="${pageContext.request.contextPath}/dhouse/user/login.jsp">회원가입</a>
+							href="${pageContext.request.contextPath}/user/signUp.user">회원가입</a>
 					</p>
 				</div>
 			</div>

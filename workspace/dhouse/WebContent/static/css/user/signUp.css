@@ -518,7 +518,7 @@ header{
 }
 
 .corporate::after{
-    display: inline;
+    display: none;
     padding: 0 12px;
     content: "|";
     font-size: 12px;

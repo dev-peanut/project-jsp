@@ -18,4 +18,8 @@ public class BannerDAO {
 	public List<BannerDTO> selectAll(Map<String, Object> searchMap){
 		return sqlSession.selectList("banner.selectAll", searchMap);
 	}
+	
+	public Long getTotal() {
+		return sqlSession.selectOne("banner.getTotal");
+	}
 }
